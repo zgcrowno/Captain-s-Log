@@ -44,38 +44,141 @@ All levels are introduced with their titles, and these titles are taken from the
 Klem:
 --Species: Native
 --Ship: HAL.1T0515
---Backstory: There are perhaps a number of more important figures in the war, but none so easily recognizable or readily associated with it as Klem. As grizzled a vet as any among the Hintaacians may proclaim themselves to be, he was mere weeks from retirement when he caught wind of the Niagara Relocation Rebellion, and were it not for the brevity of the "battle", he would have been there. He postponed his retirement, recruited a specialized crew (who were only too happy to stand alongside him, as his accomplishments and decorations were many), and would have immediately set about preparing his peoples' retaliation had he not begun doing so decades prior. It was, in fact, in the midst of his formative years that Klem became uncomfortably aware of the tensions his peers and elders would dismiss as trivial or non-existent. By late adolescence, he saw the futility in his communication of such facts as he observed, and attributed this to his menial station as a factory worker (either because his opinions were thus undervalued or his contemporaries unreceptive to them). Lamenting his lot, he put forth great efforts to enter into Hintaak's most prestigious University--Oxford (a startlingly accurate recreation of the terrestrial institution of the same name). It was here that he studied under, of all possibilities, Aarakis' adoptive father, Stuart. The two had a productive, if not untumultuous relationship, their respective personalities and ideologies so strong that each individual's argumentative victory served as a spur to the other's hindside. As we win, we lose. The two would carry on a lifelong dialogue as friends even after Klem's graduation; even after his failed attempts at authorship; even after he donned military garb, a gun in his hands, and his tail between his legs. "No matter", thought Klem, "this world is not a thinker's world, though the occasional thinker may inhabit it. If we two are to be a people, I shall offer my body sans mind to that cause, lest ours be forgotten in both action and word. This too is honorable." And thus Klem would lie to himself until the day Niagara fell. The day which he, admittedly in poor taste, always dreamed would come.   
+--Backstory: There are perhaps a number of more important figures in the war, but none so easily recognizable or readily associated with it as Klem. As grizzled a vet as any among the 
+Hintaacians may proclaim themselves to be, he was mere weeks from retirement when he caught wind of the Niagara Relocation Rebellion, and were it not for the brevity of the "battle", he 
+would have been there. He postponed his retirement, recruited a specialized crew (who were only too happy to stand alongside him, as his accomplishments and decorations were many), and 
+would have immediately set about preparing his peoples' retaliation had he not begun doing so decades prior. It was, in fact, in the midst of his formative years that Klem became 
+uncomfortably aware of the tensions his peers and elders would dismiss as trivial or non-existent. By late adolescence, he saw the futility in his communication of such facts as he 
+observed, and attributed this to his menial station as a factory worker (either because his opinions were thus undervalued or his contemporaries unreceptive to them). Lamenting his lot, 
+he put forth great efforts to enter into Hintaak's most prestigious University--Oxford (a startlingly accurate recreation of the terrestrial institution of the same name). It was here 
+that he studied under, of all possibilities, Aarakis' adoptive father, Stuart. The two had a productive, if not untumultuous relationship, their respective personalities and ideologies so 
+strong that each individual's argumentative victory served as a spur to the other's hindside. As we win, we lose. The two would carry on a lifelong dialogue as friends even after Klem's 
+graduation; even after his failed attempts at authorship; even after he donned military garb, a gun in his hands, and his tail between his legs. "No matter", thought Klem, "this world is 
+not a thinker's world, though the occasional thinker may inhabit it. If we two are to be a people, I shall offer my body sans mind to that cause, lest ours be forgotten in both action and 
+word. This too is honorable." And thus Klem would lie to himself until the day Niagara fell. The day which he, admittedly in poor taste, always dreamed would come.   
 --Loyalty: Native
 
 Frederickson:
 --Species: Human
 --Ship: Ricecake
---Backstory: Frederickson is not a smart man, nor were his parents possessed of the ability to ensure that he turned out otherwise. They were not bad people, of course, but incapable of being so, as they were devoid of the requisite level of agency for such a designation--that afforded the educated and cognitively proficient. They followed all the rules, toed all the lines, and lived as comfortably and amiably as just about anyone else in the Humans' lower class. They did not question those laws to which they adhered, and they instinctively resented anyone who did. "Laws" were to them justice manifest, God's will writ in stone and gifted to God's people, few though they were. Thus the boy, thus the man. When the war unofficially began (it would be deemed a "Peoples' Disparity" by the reigning government for some time), Frederickson was constitutionally and very nearly familially obligated to join his people's movement; that was just "what you did" in such circumstances. Though the boy possessed no special talents, he had what his superiors would refer to as "heaps of heart", and was thus given somewhat preferential treatment when the war efforts reached a head, and the Humans' number of qualified pilots was found wanting. Frederickson was named captain of the derisively nicknamed "Ricecake", and it was expected that he would have little to no lasting impact on the conflict. The higher-ups could not have known the role he was to play with their blessing, but is ignorance ever a complete justification for one's actions?
+--Backstory: Frederickson is not a smart man, nor were his parents possessed of the ability to ensure that he turned out otherwise. They were not bad people, of course, but incapable of 
+being so, as they were devoid of the requisite level of agency for such a designation--that afforded the educated and cognitively proficient. They followed all the rules, toed all the 
+lines, and lived as comfortably and amiably as just about anyone else in the Humans' lower class. They did not question those laws to which they adhered, and they instinctively resented 
+anyone who did. "Laws" were to them justice manifest, God's will writ in stone and gifted to God's people, few though they were. Thus the boy, thus the man. When the war unofficially 
+began (it would be deemed a "Peoples' Disparity" by the reigning government for some time), Frederickson was constitutionally and very nearly familially obligated to join his people's 
+movement; that was just "what you did" in such circumstances. Though the boy possessed no special talents, he had what his superiors would refer to as "heaps of heart", and was thus given 
+somewhat preferential treatment when the war efforts reached a head, and the Humans' number of qualified pilots was found wanting. Frederickson was named captain of the derisively 
+nicknamed "Ricecake", and it was expected that he would have little to no lasting impact on the conflict. The higher-ups could not have known the role he was to play with their blessing, 
+but is ignorance ever a complete justification for one's actions?
 --Loyalty: Human
 
 Tsing:
 --Species: Human
 --Ship: Mezzanine
---Backstory: The product of a rather traditional (that is to say, governmentally effected) upbringing, it was expected that Tsing would become an official of at least modest importance within the Human government. Early into her adulthood, however, it became apparent that she possessed a seemingly innate distaste for people (not just people, actually, but most sentient beings). This fact coupled with her inability to "fake it" practically barring her from the realm of diplomacy, she pursued the only other avenue favored by her family--military service...And she performed admirably until the Niagara Relocation Rebellion, during which her natural propensity towards disassociation failed her, and she began to question the morality of her actions (She'd always disliked most, certainly, but did that orientation afford her the right to exercise such great power upon them? And to such a relatively negative effect?). She would find Klem shortly after the rebellion, and put her violent demeanor to what she deemed justifiable use.
+--Backstory: The product of a rather traditional (that is to say, governmentally effected) upbringing, it was expected that Tsing would become an official of at least modest importance 
+within the Human government. Early into her adulthood, however, it became apparent that she possessed a seemingly innate distaste for people (not just people, actually, but most sentient 
+beings). This fact coupled with her inability to "fake it" practically barring her from the realm of diplomacy, she pursued the only other avenue favored by her family--military service...
+And she performed admirably until the Niagara Relocation Rebellion, during which her natural propensity towards disassociation failed her, and she began to question the morality of her 
+actions (She'd always disliked most, certainly, but did that orientation afford her the right to exercise such great power upon them? And to such a relatively negative effect?). She would 
+find Klem shortly after the rebellion, and put her violent demeanor to what she deemed justifiable use.
 --Loyalty: Native
 
 Miller:
 --Species: Native
 --Ship: Sidecar
---Backstory: Miller is the daughter of a well-to-do native family that has brought her up under the conventions, teachings and assumed name of their planet's captors. Her father being a high diplomat within the human government (a position made possible and encouraged by the Humans' "Solidarity Ordinance"), she was understandably comfortable with her station for many years, even enlisting as an officer in the Humans' Expansion and Life Preservation Authority, eventually working her way up to Captain of the UPHS (United Peoples of Hintaak Ship) Bush, known coloquially as the Sidecar. She worked earnestly in this position until the Niagara Relocation Rebellion, during which she saw firsthand the priorities of her benefactors.
+--Backstory: Miller is the daughter of a well-to-do native family that has brought her up under the conventions, teachings and assumed name of their planet's captors. Her father being a 
+high diplomat within the human government (a position made possible and encouraged by the Humans' "Solidarity Ordinance"), she was understandably comfortable with her station for many 
+years, even enlisting as an officer in the Humans' Expansion and Life Preservation Authority, eventually working her way up to Captain of the UPHS (United Peoples of Hintaak Ship) Bush, 
+known coloquially as the Sidecar. She worked earnestly in this position until the Niagara Relocation Rebellion, during which she saw firsthand the priorities of her benefactors.
 --Loyalty: Native
 
 Howitt:
 --Species: Human
 --Ship: Pincer
---Backstory: Howitt is a savant of sorts; throughout his childhood and adolescence, he performed passably in his studies, but was possessed of a blatant distaste for academia and authority. This likely stemmed largely (though not completely) from his home life, which admitted of little parental supervision, save for the occassional beating. Upon barely graduating from secondary education, he entered into a non-violent, non-noticeable existence; he would perform sexual services for those in need (prostitution having always been legal for the Hintaacians, but only recently decriminalized by the Humans), ultimately scraping by just enough to both live and finance his hobby of participating in a small handful of video environments, excelling particularly in flight simulations. Come the Humans' official declaration of retaliation, he was expectedly drafted into their military (expectedly, because he had neither any higher education nor publicly advertised talents). During training, however, he showed such an aptitude for flight that he was quickly named the helmsman of his own ship. In time, his excitement over the proposition would give way to idealogical differences that would come to reinforce the anti-authoritarianism which characterized his youth.
+--Backstory: Howitt is a savant of sorts; throughout his childhood and adolescence, he performed passably in his studies, but was possessed of a blatant distaste for academia and 
+authority. This likely stemmed largely (though not completely) from his home life, which admitted of little parental supervision, save for the occassional beating. Upon barely graduating 
+from secondary education, he entered into a non-violent, non-noticeable existence; he would perform sexual services for those in need (prostitution having always been legal for the 
+Hintaacians, but only recently decriminalized by the Humans), ultimately scraping by just enough to both live and finance his hobby of participating in a small handful of video 
+environments, excelling particularly in flight simulations. Come the Humans' official declaration of retaliation, he was expectedly drafted into their military (expectedly, because he had 
+neither any higher education nor publicly advertised talents). During training, however, he showed such an aptitude for flight that he was quickly named the helmsman of his own ship. In 
+time, his excitement over the proposition would give way to idealogical differences that would come to reinforce the anti-authoritarianism which characterized his youth.
 --Loyalty: Human (Conflicted)
 
 Aarakis:
 --Species: Native
 --Ship: Flasher
---Backstory: The adoptive child of a Human widower, Aarakis fired "the shot heard 'round the galaxy". He did not do so out of malice or mistake, however, but for the sake of utility. His father, an amateur philosopher and prominent politician in the Human government, instilled in him at a young age the notion that difference breeds discord. "Only through cultural subsumption may peace escape the realm of childish fantasy, and be put into practice." Thus opened Aarakis' father's doctoral thesis which, though polarazing, may be said by noone to be devoid of psychological merit. Aarakis, headstrong as he is, would likely never have "bought into" his father's teachings had the latter not been such a generous, genuine and loving benefactor; had his father not been decent. Aarakis had not gone into the Niagara Project with the express intention of causing harm, but saw in the locals' animosity an opportunity to realize his father's teachings. This was an opportunity at which Aarakis jumped, and which his father would soon come to lament (the latter would never have advocated the actual subsumption of one culture by another, but merely remarked on the effect such a subsumption would have). In spite of this, however, Aarakis' father's position and pride necessitated his eventual and diplomatic embrace of the resulting situation. Aarakis would thereon move wherever the conflict would take him, fueled by a desire to repay the kindness offered him.
+--Backstory: The adoptive child of a Human widower, Aarakis fired "the shot heard 'round the galaxy". He did not do so out of malice or mistake, however, but for the sake of utility. His 
+father, an amateur philosopher and prominent politician in the Human government, instilled in him at a young age the notion that difference breeds discord. "Only through cultural 
+subsumption may peace escape the realm of childish fantasy, and be put into practice." Thus opened Aarakis' father's doctoral thesis which, though polarazing, may be said by noone to be 
+devoid of psychological merit. Aarakis, headstrong as he is, would likely never have "bought into" his father's teachings had the latter not been such a generous, genuine and loving 
+benefactor; had his father not been decent. Aarakis had not gone into the Niagara Project with the express intention of causing harm, but saw in the locals' animosity an opportunity to 
+realize his father's teachings. This was an opportunity at which Aarakis jumped, and which his father would soon come to lament (the latter would never have advocated the actual 
+subsumption of one culture by another, but merely remarked on the effect such a subsumption would have). In spite of this, however, Aarakis' father's position and pride necessitated his 
+eventual and diplomatic embrace of the resulting situation. Aarakis would thereon move wherever the conflict would take him, fueled by a desire to repay the kindness offered him.
 --Loyalty: Human
+
+//////////////////////////////Character Narrative Progression/////////////////////////////////////
+
+Miller -> Howitt || Frederickson || Tsing -> Klem -> Aarakis -> Frederickson || Klem || Aarakis
+
+1.3372                                               1.3372
+                                    1.3372
+          1.3373                             1.3373
+2.3373    2.3373                    2.3373
+          3.3374    1.3374
+3.3374                                       2.3374
+                    2.3375          3.3375           2.3375
+                                                                3.3375          3.3375  3.3375
+
+////////////////////////////////Character Mission Synopses////////////////////////////////////////
+
+Miller:
+--1. Miller deals with the repercussions of Aarakis' actions, deserting her squad in the middle of combat. Of course, they don't take kindly to this behavior, and attack her as she flees.
+--2. After having spent some time in solitude, evading her pursuers through inactivity, Miller decides once again to take up arms...Only this time, she does so in defense of the natives.
+in the final large-scale battle of 3373, she largely succeeds in combatting the enemy forces until Howitt nearly downs her ship. She is saved only by Tsing's last-minute intervention, the
+latter apparently sacrificing herself for the former.
+--3. Miller here participates in Klem's desperate display of violence, killing enemies and innocents with reckless abandon. She is afterwards disillusioned, retreating to the shadows,
+never to be heard from again.
+
+Howitt:
+--1. Howitt, originally excited about his new venture, is left disquieted after his first battle (that over the woefully finite body of physically stored human knowledge). Towards the end
+of this mission, Klem (who orchestrated the natives' part in it) broadcasts a message to the human military, pleading with them to still their rape of Hintaacian culture. This message 
+resonates with Howitt, though he does not find himself in a position to heed it.
+--2. In the final large-scale battle of 3373, Howitt vents his newfound frustration (the product of his and his employers' conflicting ideologies) upon the "enemy", nearly killing Miller
+and her crew, but instead downing Tsing's ship. Howitt slips deeper into instability.
+--3. Having continued to be deemed "adequate" in all of his many psyche evaluations, Howitt is cleared for yet another tour of duty, resulting in his untimely demise at the hands of 
+Frederickson (after the former loses it, and begins attacking his own squadron).
+
+Frederickson:
+--1. Frederickson is sent as one among few to quell a small rebellion when his squadmate, Howitt, unexpectedly begins to attack his brethren. Though the Human collective begins to scatter,
+Frederickson remains unfettered, and terminates his troubled teammate.
+--2. In this particular battle, Frederickson--the only remaining captain/crew besides Aarakis--is tasked by Aarakis himself with staying Tsing's backup. Frederickson succeeds in this task 
+as Aarakis kills Tsing with cold calculation.
+--3. As both sides of the war once again converge at "Niagara"...Frederickson happens upon Klem annihilating Aarakis' ship, and kills the Hintaacian figurehead.
+
+Tsing:
+--1. Having just found Klem, Tsing is subsequently taken under his wing, and put to the test against drone-like facsimiles of the enemy.
+--2. In the final large-scale battle of 3373, Tsing progressively wittles down the enemy forces until she encounters a comrade--Miller--under fire by Howitt and his crew. She promptly
+jumps to Miller's aid, though ultimately loses the fight. She is later recovered by one of Klem's scouts, after which the Hintaacian slowly but surely nurses her back to health.
+--3. Tsing, newly returned to both her feet and her command, is tasked with her most daunting feat yet: the repellance of Aarakis' newly allocated and unprecedentedly large forces. She
+performs admirably up until the point Aarakis ultimately downs her ship for the final time.
+
+Klem:
+--1. Klem here instigates the Hintaacian destruction of the Humans' body of knowledge. As he departs, he leaves them with a message of empathy, appealing to their higher passions.
+--2. Klem, fed up with the progress his people are making (or aren't, rather), resorts to the methodologies of his enemies. He leads the destruction of a civilian territory, thus 
+demonstrating the lengths to which the Hintaacians are willing to go in order to preserve their sovereignty, culture and identity. In doing so, his crew--mortified at his actions and
+theirs--renounce their subordination, denying his commands and ultimately retreating from the massacre.
+--3. As both sides of the war once again converge at "Niagara"...Klem encounters Aarakis, at which point the two idealists engage in a grueling duel. This persists for some time before
+Frederickson joins in the battle, though the Humans' military efforts are in vain. Klem overcomes his opposition, comforting himself in the "knowledge" that the end has indeed justified 
+the means.
+
+Aarakis:
+--1. This mission begins directly after Aarakis fired the "shot heard 'round the galaxy", and consists of little more than him wiping out the under-armed Hintaacian populace.
+--2. After being decommissioned for over a year following his unordered and unwarranted assault at "Niagara", Aarakis is put back into the field once the Hintaacians have amassed a truly
+threatening anti-Human force. As the Humans are dwindled to all but Aarakis and Frederickson, the former commands the latter to hold off Hintaacian forces while he approaches their leader,
+Tsing. In the conflict that follows, Aarakis succeeds in offing Klem's protege.
+--3. As both sides of the war once again converge at "Niagara"...Aarakis finally comes bow to bow with Klem. The two trade blows for some time before Frederickson comes to Aarakis' aid.
+Once Klem has been defeated, Aarakis muses over the peace and solidarity which is to come.
 
 //////////////////////////////////////////History/////////////////////////////////////////////////
 
@@ -107,7 +210,16 @@ The Cultural Preservation Initiative Begins (3329 CT):
 The Grand Canyon Project is Completed (3369 CT):
 The Christ, the Redeemer Project is Completed (3371 CT):
 The Niagara Relocation Rebellion (3372 CT):
---A number of decades into the Human occupation of Hintaak, the Humans began to realize their most egregious rape of the Hintaacians culture to date--The Cultural Preservation Initiative. The goal of the effort was to terraform piecemeal the lands of Hintaak into facsimiles of well-documented Earthen wonders. They began with the Grand Canyon, carving it out with disturbing accuracy into the Southern border of Doulada; next, they would erect a spitting likeness of Christ, the Redeemer atop the mountain of Doi'thana, later attributing the widespread Atheism of the local populous to "utter coincidence". The final straw was placed when, after scouring the entire planet for appropriate locales on which to recreate Niagara Falls, the Human officials settled on the island of Rokoko, home to one of the last indiginous peoples of the planet. Unable to understand the words or directions of their land's appropriators, the natives understandably retaliated with what little weaponry they had, none of which could be considered efficacious against the Humans' advanced weaponry and defense systems. The Humans responded in kind, and wiped out almost the entire population, leaving only a few survivors to marvel at the destruction of their homeland in the name of cultural preservation. Miller would go AWOL in the middle of the conflict, while Frederickson and Aarakis would see the battle through to it's expected conclusion. It was after this "battle" that the first instigators of the wartime rebellion would begin to commune. Once the war was officially underway, Howitt would be drafted by the Human military, and Tsing would "desert" her biological people in the name of her principles.
+--A number of decades into the Human occupation of Hintaak, the Humans began to realize their most egregious rape of the Hintaacians culture to date--The Cultural Preservation Initiative. 
+The goal of the effort was to terraform piecemeal the lands of Hintaak into facsimiles of well-documented Earthen wonders. They began with the Grand Canyon, carving it out with disturbing 
+accuracy into the Southern border of Doulada; next, they would erect a spitting likeness of Christ, the Redeemer atop the mountain of Doi'thana, later attributing the widespread Atheism of
+the local populous to "utter coincidence". The final straw was placed when, after scouring the entire planet for appropriate locales on which to recreate Niagara Falls, the Human officials 
+settled on the island of Rokoko, home to one of the last indiginous peoples of the planet. Unable to understand the words or directions of their land's appropriators, the natives 
+understandably retaliated with what little weaponry they had, none of which could be considered efficacious against the Humans' advanced weaponry and defense systems. The Humans responded 
+in kind, and wiped out almost the entire population, leaving only a few survivors to marvel at the destruction of their homeland in the name of cultural preservation. Miller would go AWOL 
+in the middle of the conflict, while Aarakis would see the battle through to it's expected conclusion. It was after this "battle" that the first instigators of the wartime 
+rebellion would begin to commune. Once the war was officially underway, Howitt would be drafted by the Human military, and Tsing would "desert" her biological people in the name of her 
+principles.
 
 //////////////////////////////////////////////Monologues////////////////////////////////////////////////
 
