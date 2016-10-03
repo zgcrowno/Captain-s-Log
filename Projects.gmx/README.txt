@@ -182,35 +182,36 @@ Once Klem has been defeated, Aarakis muses over the peace and solidarity which i
 
 //////////////////////////////////////////History/////////////////////////////////////////////////
 
-Human Occupation of Hintaak (3089 CT):
-Alliance for the Protection and Furtherance of Hintaacian Inerests Established by Natives (3090 CT):
-Sovereign Human Government Established on Hintaak (3090 CT):
-Treaty of  Non-Intervention Drafted by Humans and Hintaacians (3091 CT):
-Humans Attempt to Settle Hintaacian-Owned Territory (3095 CT):
-Treaty of Non-Intervention Amended to Allow for Inter-Species Commerce (3108 CT):
-Humans Sold 17% of Doulada in Exchange for Technology (3108 CT):
-Hintaacian-Disavowed Native Caught Attempting to Syphon Human Technological Secrets (3117 CT): 
-Precedent Set When Hintaacian Spy is Denied Extradition, and sentenced to 272 Earth Years (3118 CT):
-Small Hintaacian Cell Launches Attack on Human Prison Housing Hintaacian Spy, Are All Killed (3120 CT):
-Humans and Hintaacians Enter into Cold War (3120 CT):
-Cold War Comes to a Head When Hintaacians Construct Missile Silos Along Borders (3145 CT):
-Humans Retaliate by Executing Simultaneous Destruction of all Hintaacian Silos, Citing Breach of Non-Intervention Treaty as Justification (3145 CT):
-Respective Officials from Both Peoples Meet to Discuss Resolution of Cold War (3146 CT):
-Agreement is Reached; Treaty of Non-Intervention is Dissolved; Humans Pardon Hintaacian Spy as Sign of Good Faith(3147 CT):
-Humans Achieve Eligibility for Hintaacian Government; Human History is Entered into Hintaacian Education Curriculum (3166 CT):
-The United Peoples of Hintaak is Formed , With High-Standing Officials From Both Governments Holding office (3180 CT):
-Charges of Nepotism are Directed Towards the Establishment by Hintaacian Officials; Charges are Thrown out by Supreme Court (All Humans) (3184 CT):
-Elements of Hintaacian History Begin to be Subtly Thrown out/Replaced in Education Curriculum (3192 CT):
-Last of Hintaacian Officials Dies (3218 CT):
-A Number of Government Programs Indirectly Relegate Majority of Hintaacian Populous to Ghettos (3220-3232 CT):
-Hintaacian Movement Forms from Dissatisfied Public; Large Strikes are Organized, Depriving Humanity of Cheap Labor (3281 CT):
-The Solidarity Ordinance is Instated; Hintaacians are Explicitly Allowed Entrance into Government After Decades of Implicit Denial (3284 CT):
-Hintaacian History is Effectively Subsumed by Human Recreation Thereof (3323 CT):
-The Cultural Preservation Initiative Begins (3329 CT):
-The Grand Canyon Project is Completed (3369 CT):
-The Christ, the Redeemer Project is Completed (3371 CT):
-The Niagara Relocation Rebellion (3372 CT):
---A number of decades into the Human occupation of Hintaak, the Humans began to realize their most egregious rape of the Hintaacians culture to date--The Cultural Preservation Initiative. 
+--Human occupation of hintaak. (3089 CT)
+--Alliance for the protection and furtherance of hintaacian interests established by natives. (3090 CT)
+--Sovereign human government established on hintaak. (3090 CT)
+--Treaty of Non-Intervention drafted by humans and hintaacians. (3091 CT)
+--Humans attempt to settle Hintaacian-owned territory. (3095 CT)
+--Treaty of Non-Intervention amended to allow for inter-species commerce. (3108 CT)
+--Humans sold 17% of Doulada in exchange for technology. (3108 CT)
+--Hintaacian-disavowed native (Designated "Charlie" by Human higher-ups) caught attempting to syphon Human technological secrets. (3117 CT) 
+--Precedent set when Charlie is denied extradition, and sentenced to 272 Earth years. (3118 CT)
+--Small Hintaacian cell launches attack on Human prison housing Charlie, are all killed. (3120 CT)
+--Humans and Hintaacians enter into cold war. (3120 CT)
+--Cold war comes to a head when Hintaacians construct missile silos along borders. (3145 CT)
+--Humans retaliate by executing simultaneous destruction of all Hintaacian silos, citing breach of Non-Intervention Treaty as justification. (3145 CT)
+--Respective officials from both peoples meet to discuss resolution of cold war. (3146 CT)
+--Agreement is reached; Treaty of Non-Intervention is dissolved; Humans pardon Charlie as sign of good faith. (3147 CT)
+--Humans achieve eligibility for Hintaacian government; Human history is entered into Hintaacian education curriculum. (3166 CT)
+--The United Peoples of Hintaak is formed , with high-standing officials from both governments holding office. (3180 CT)
+--Charges of nepotism are directed towards the establishment by Hintaacian officials; charges are thrown out by Supreme Court (which consists of only Humans). (3184 CT)
+--Elements of Hintaacian history begin to be subtly thrown out/replaced in education curriculum. (3192 CT)
+--Last of Hintaacian officials dies. (3218 CT)
+--A number of government programs indirectly relegate majority of Hintaacian populus to ghettos. (3220-3232 CT)
+--Hintaacian movement forms from dissatisfied public; large strikes are organized, depriving Humanity of cheap labor. (3281 CT)
+--The Solidarity Ordinance is instated; Hintaacians are explicitly allowed entrance into government after decades of implicit denial. (3284 CT)
+--Hintaacian history is effectively subsumed by Human recreation thereof. (3323 CT)
+--The Cultural Preservation Initiative begins. (3329 CT)
+--Klem is accepted to Oxford, where he begins a lifelong friendship/rivalry with the opinionated, but amiable Stuart. (3339)
+--The Grand Canyon Project is completed. (3369 CT)
+--The Christ, the Redeemer Project is completed. (3371 CT)
+--The Niagara Relocation Rebellion. (3372 CT)
+A number of decades into the Human occupation of Hintaak, the Humans began to realize their most egregious rape of the Hintaacians culture to date--The Cultural Preservation Initiative. 
 The goal of the effort was to terraform piecemeal the lands of Hintaak into facsimiles of well-documented Earthen wonders. They began with the Grand Canyon, carving it out with disturbing 
 accuracy into the Southern border of Doulada; next, they would erect a spitting likeness of Christ, the Redeemer atop the mountain of Doi'thana, later attributing the widespread Atheism of
 the local populous to "utter coincidence". The final straw was placed when, after scouring the entire planet for appropriate locales on which to recreate Niagara Falls, the Human officials 
@@ -220,6 +221,20 @@ in kind, and wiped out almost the entire population, leaving only a few survivor
 in the middle of the conflict, while Aarakis would see the battle through to it's expected conclusion. It was after this "battle" that the first instigators of the wartime 
 rebellion would begin to commune. Once the war was officially underway, Howitt would be drafted by the Human military, and Tsing would "desert" her biological people in the name of her 
 principles.
+--Aarakis is decommissioned. (3372 CT)
+--Klem begins discretely recruiting rebels, including Tsing. (3372 CT)
+--Klem successfully leads the assault on Humanity's Central Intelligence and History Repository. (3373 CT)
+--The Humans retaliate to Klem's previous attack by instituting McCarthian practices upon their Hintaacian subjects. (3373 CT)
+--Klem's crew begin attacking pockets of internment camps, gradually freeing or at least attempting to free the growing numbers of Hintaacian prisoners. (3373 CT)
+--The Human government once again captures and imprisons Charlie (the former Hintaacian scapegoat) for "conspiring with the enemy". This is merely a ploy to lower Hintaacian morale. (3374 CT)
+En route to the humans' home base, Howitt is tasked with transporting the prisoner. Eventually, the squadron comes under fire by a relatively small group of rebels (certainly one Howitt
+and his crew are capable of handling), but with the old Hintaacian's words in his ear, Howitt finally snaps, attacking friend and foe alike until Frederickson takes it upon himself to down
+Howitt, Howitt's crew, and their special cargo.
+--News of Charlie's death spreads. Hintaacians the world over enter into a period of mourning and resignation. Klem himself leads his final solution in a last-ditch attempt to deprive the Humans of their most effective distinction from the Hintaacian forces: The willingness to cross the line. (3374 CT)
+--After Klem's final solution, Humanity sees its greatest solidarity since the beginning of the war effort. Unprecedented resources are poured into an all-out assault on the Hintaacian rebels. (3375 CT)
+--Aarakis is recommissioned. (3375 CT)
+--The Humans manage to locate the Hintaacian hideout with the help of Stuart (who has been in contact with Klem since shortly after the NRR). Stuart justifies this to himself with reminders that his son is once again involved. (3375 CT)
+--The Humans launch their final attack on the Hintaacians' base. The outcome is indeterminent. (3375 CT)
 
 //////////////////////////////////////////////Monologues////////////////////////////////////////////////
 
