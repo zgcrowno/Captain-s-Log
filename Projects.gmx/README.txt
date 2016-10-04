@@ -238,6 +238,56 @@ Howitt, Howitt's crew, and their special cargo.
 
 //////////////////////////////////////////////Monologues////////////////////////////////////////////////
 
+--Miller:
+Mission 1 (An Idle Army): 
+"Captain's Log > Orders came down at 0400 hours--another grape. I shouldn't complain; an idle army, a happy people and all that. Still...Father would shoot me that knowing, piercing glare 
+of his if he knew I entertained thoughts like this. Still...I didn't join this outfit for the body count; then again, I didn't join it so I could accompany some derelict mud movers to a 
+glorified chicken run, I don't care how 'important' the mission is. Frankly, the whole operation sounds a bit self-indulgent, if you ask me--not that anyone would, of course.Oh well, at 
+least it's an attractive outing. Can't say that I've ever been to Rokoko, but I hear from those in the know that it's beautiful, quaint. I should count my blessings, not my druthers. I 
+should check my privilege. I should've taken it easy while out with the guys last night. I should take an aspirin. Still...We're entering the designated airspace now. Damn, they weren't 
+lying. This place is gorgeous. I can only imagine what it'll look like in a few years...And to think that I will have played a small part? Forget how small; I'll take some pride in the 
+that. Nothing like a change of scenery to clear up the headspace. I think today's going to be a good day, after all."
+
+"Captain's Log > FUCK. What the fuck was that!? Uh, out of nowhere, goddammit! I've never seen anything like that before...My guys...those were MY FUCKING GUYS! What should I expect, 
+though? It's not like we were trained for this. That wasn't a battle, it was a goddamn massacre. I couldn't have done anything...Jesus Christ, I swear I couldn't have done anything. 
+There's no shame in running a way. Not like that. Not when it's warranted, and it was sure as hell warranted. It can't not have been warranted. Still, I can't go back. They'll be looking 
+for me now, and not as a sister in arms, but a deserter...an enemy of the state...a villain. I've got to find a place to lay low for a little while. Fuck, maybe a long while. Maybe 
+forever. Dad...Mom...Fuck. I can't for the life of me think of any way to get in touch with them without compromising my location...but they need to know--they DESERVE to know that I'm not
+a traitor. Dad's position practically prohibits it, but maybe I can get in touch with my Mom. Certainly not via the plane--that's all monitored. Maybe face to face...but how to orchestrate
+it? And without endangering her? Hell, without endangering myself? Of course, this is all assuming that I even have a home to endanger once my 'transgression' is all blown over...and it 
+will be. Dad and the rest of those UPH stiffs are about to have their hands full with more pressing matters. More inter-fucking-galactic matters."
+
+Mission 2 ():
+"Captain's Log > Well, it's been...too long since I've had anything to report. Hell, I'm just reporting to myself at this point, but posterity...Oh, who am I kidding? This is for me. It's
+definitely not for posterity. The way things are going, there likely won't be any in a few years' time, and that's a liberal estimate. It's not for my parents, either. My mother...well, I 
+suppose I should be grateful that she at least tried to hide her shame as she cast me off without so much as a kiss goodbye. Probably in my best interests considering that acid tongue of 
+hers. No matter. They say wartime combs the friends from the foes. Well, it also combs the family from the facsimile. There's my big word for the day. It's not all bad, though. I've made
+some friends in the underground (calling it 'the resistance' just sounds so Hollywood). The blood of the covenant, right? I'm a little late to the game, for sure, but they need as many
+hands as they can get, especially ones that know their way around a stick. I haven't spoken to the leader personally, but from everything I've been told by people I've grown to trust, he
+seems...decent. And decency's a hard thing to come by these days. Still, decency's a din to the deaf without the will to assert it. Here's hoping he lives up to his reputation."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Level 1: A Precipatory Showing of Teeth
 "Captain's Log > The alien threat, ever-present since well before my birth, had become such a constant to my people that it was all but taken for granted by their majority...and what's more damning, treated as just another foreign affair by those who found themselves in positions to rally public opinion against these intruders. This efficacious minority opted rather to encourage a defeated obedience which, until some time in my adolescent years, I--like so many others--displayed unquestioningly...But even the well-trained bitch, obedient to a point, resorts to her bite when for so long her bark goes unheeded by an unjust master. This day would serve as a precursor, a precipatory showing of teeth."
 "Captain's Log > Much had been accomplished. The enemy's net personnel losses were minor, to be sure, but my crew and I had served as diligent messenger-boys, tossing out weighty, long-delayed correspondence with such enthusiasm as to arouse the attention and ire of some very important figures whose pristine new Porsches we had damaged with the occasional stray parcel. We had amassed interest on both sides of a fight which had barely yet begun, but to our would-be conspirators seemed, for perhaps the first time in their lives, a possibility. In time, my people would come to see it as I do--a necessity."
