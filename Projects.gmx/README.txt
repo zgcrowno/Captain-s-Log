@@ -136,7 +136,7 @@ Miller:
 --1. Miller deals with the repercussions of Aarakis' actions, deserting her squad in the middle of combat. Of course, they don't take kindly to this behavior, and attack her as she flees.
 --2. After having spent some time in solitude, evading her pursuers through inactivity, Miller decides once again to take up arms...Only this time, she does so in defense of the natives.
 in the final large-scale battle of 3373, she largely succeeds in combatting the enemy forces until Howitt nearly downs her ship. She is saved only by Tsing's last-minute intervention, the
-latter apparently sacrificing herself for the former.
+latter apparently sacrificing herself for the former (though ultimately on a power trim).
 --3. Miller here participates in Klem's desperate display of violence, killing enemies and innocents with reckless abandon. She is afterwards disillusioned, retreating to the shadows,
 never to be heard from again.
 
@@ -242,7 +242,7 @@ Howitt, Howitt's crew, and their special cargo.
 Mission 1 (An Idle Army): 
 "Captain's Log > Orders came down at 0400 hours--another grape. I shouldn't complain; an idle army, a happy people and all that. Still...Father would shoot me that knowing, piercing glare 
 of his if he knew I entertained thoughts like this. Still...I didn't join this outfit for the body count; then again, I didn't join it so I could accompany some derelict mud movers to a 
-glorified chicken run, I don't care how 'important' the mission is. Frankly, the whole operation sounds a bit self-indulgent, if you ask me--not that anyone would, of course.Oh well, at 
+glorified chicken run, I don't care how 'important' the mission is. Frankly, the whole operation sounds a bit self-indulgent, if you ask me--not that anyone would, of course. Oh well, at 
 least it's an attractive outing. Can't say that I've ever been to Rokoko, but I hear from those in the know that it's beautiful, quaint. I should count my blessings, not my druthers. I 
 should check my privilege. I should've taken it easy while out with the guys last night. I should take an aspirin. Still...We're entering the designated airspace now. Damn, they weren't 
 lying. This place is gorgeous. I can only imagine what it'll look like in a few years...And to think that I will have played a small part? Forget how small; I'll take some pride in the 
@@ -257,7 +257,7 @@ a traitor. Dad's position practically prohibits it, but maybe I can get in touch
 it? And without endangering her? Hell, without endangering myself? Of course, this is all assuming that I even have a home to endanger once my 'transgression' is all blown over...and it 
 will be. Dad and the rest of those UPH stiffs are about to have their hands full with more pressing matters. More inter-fucking-galactic matters."
 
-Mission 2 ():
+Mission 2 (The Blood of the Covenant):
 "Captain's Log > Well, it's been...too long since I've had anything to report. Hell, I'm just reporting to myself at this point, but posterity...Oh, who am I kidding? This is for me. It's
 definitely not for posterity. The way things are going, there likely won't be any in a few years' time, and that's a liberal estimate. It's not for my parents, either. My mother...well, I 
 suppose I should be grateful that she at least tried to hide her shame as she cast me off without so much as a kiss goodbye. Probably in my best interests considering that acid tongue of 
@@ -265,6 +265,35 @@ hers. No matter. They say wartime combs the friends from the foes. Well, it also
 some friends in the underground (calling it 'the resistance' just sounds so Hollywood). The blood of the covenant, right? I'm a little late to the game, for sure, but they need as many
 hands as they can get, especially ones that know their way around a stick. I haven't spoken to the leader personally, but from everything I've been told by people I've grown to trust, he
 seems...decent. And decency's a hard thing to come by these days. Still, decency's a din to the deaf without the will to assert it. Here's hoping he lives up to his reputation."
+
+"Captain's Log > Twice: That's the number of times I've bitched out to the detriment of my squadron. Twice. Whoever that was...I could've saved them. It's unlikely, sure, but I COULD
+HAVE. That's the line of thought a soldier ought to have. That's the line of thought they had. I saw that person--those people--not as an aid, but a substitute. Twice. Sure, we saved a 
+good number of our people today, but the fact remains that I should have and could have saved more. Isn't that what Dad meant when he spoke of 'solidarity'? Well, I won't run again. If I
+can't survive this war, I'll at least survive my own goddamn conscience."
+
+Mission 3 (No Running): "Captain's Log > It's decided. at 0900 hours, we ship out for our most ambitious mission yet. The head of this outfit has finally seen fit to take our efforts to the aliens'
+front door. No more trudging about in the slums, at best staving off their advances when we could be doing some real damage. After all, no war is won by stalemates, but 'by grand strategy,
+concerted attacks, an indominable spirit and an irrefutable ideal'. So says the man in charge, at least, and I'm inclined to agree. Jesus, to hear him speak...He really makes you believe
+it. Not that I didn't already, of course...He just has this ability to perfectly articulate those emotions and ambitions you didn't know you had; or if you did know, you didn't think them
+feasible until he said them out loud. Like he's your favorite author endorsing a forgotten, but foregone conclusion. This time, no running."
+
+"Captain's Log > I guess I shouldn't be surprised by this turn of events. I was born a turncoat, for Christ's sake, so it's only fitting I should die a traitor. All of us are taught that
+war is ugly, but noone ever tells you that the participants are too. all of them. Kudos to those of us that can look in the mirror and deal with it; that can counterweight every scar with
+a good deed done; that can justify their crimes--and they are crimes--with some believed nearness of justice. This isn't justice. It's a means to an end, and that end is no greater than
+the sum of its parts. That end is fucked. If years down the line anyone is alive and unlucky enough to find this log, know that I didn't divest all virtue. Know that in spite of the 
+ugliness, in spite of the injustice, this time, I didn't run. But I sure as hell walked away."
+
+--Howitt:
+Mission 1 (On Rails): "Captain's Log > <--Never thought I'd start out a journal entry like that. I guess we're supposed to take these logs seriously, but I'm pretty sure nobody's reading this
+shit. Anyway, they said just to jot down our thoughts and expectations, so here I am. I should probably be scared, but I feel more at ease than I have in a long, long time. I've dealt
+with shady tricks and shadier pimps that promised more than a quick death, and I was good at that life. I'm better at this. To be honest, it feels like coming home. This is what I've been
+working towards--er--aimlessly, accidentally nudging up against for the past few years now, just in a different capacity. Yeah, it's not a simulation, but it doesn't feel a whole lot 
+different. It doesn't feel any different, actually (It really ramps up my respect for Hudson, Cave, Treasure and the other greats. Such attention to detail!). The fact that I HAVE to do it
+is kind of a drag, but I do HAVE to do it, so what's the point in complaining? If life's on rails, you might as well make a ride of it."
+
+"Captain's Log > WHOOOOOOO! What a rush! That's the difference between a save-scum and a roguelike right there, fuck! I gotta admit, though, that turnip made some good points. I'd be lying
+if I said I wasn't tempted to switch sides or at least hear the dude out. But that sort of decision's outside of my pay-range. I'd probably make the wrong one anyway. Better to leave these 
+things to the professionals. 'Let the flyers fly and the criers cri!'. I heard that in an environ once; can't help but find it appropriate."
 
 
 
