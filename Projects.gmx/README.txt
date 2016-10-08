@@ -291,9 +291,25 @@ working towards--er--aimlessly, accidentally nudging up against for the past few
 different. It doesn't feel any different, actually (It really ramps up my respect for Hudson, Cave, Treasure and the other greats. Such attention to detail!). The fact that I HAVE to do it
 is kind of a drag, but I do HAVE to do it, so what's the point in complaining? If life's on rails, you might as well make a ride of it."
 
-"Captain's Log > WHOOOOOOO! What a rush! That's the difference between a save-scum and a roguelike right there, fuck! I gotta admit, though, that turnip made some good points. I'd be lying
-if I said I wasn't tempted to switch sides or at least hear the dude out. But that sort of decision's outside of my pay-range. I'd probably make the wrong one anyway. Better to leave these 
-things to the professionals. 'Let the flyers fly and the criers cri!'. I heard that in an environ once; can't help but find it appropriate."
+"Captain's Log > WHOOOOOOO! What a rush! That's the difference between a save-scum and a roguelike right there, fuck! My first assessment was mostly on point (this is almost identical to 
+the environs I cut my teeth on), but I am a little shakier than usual. Maybe it's because we got some wounded in the turbulence (I'm used to running solo, and the thought of relying on and 
+being relied upon by others messes with you a bit). Or maybe it's because that Tip made some good points. I'd be lying if I said I wasn't tempted to switch sides or at least hear the 
+dude out. But that sort of decision's outside of my pay-range. I'd probably make the wrong one anyway. Better to leave these things to the professionals. 'Let the flyers fly and the criers
+cri!'. I heard that in an environ once; can't help but find it appropriate. That philosophy's gotten me this far; let's see where it takes me next."
+
+Mission 2 (Rumors): "Captain's Log > Word from the top is we're doing good. REALLY GOOD. So good in fact that the Tips are getting careless, attacking our facilities with little to no planning.
+We should all be psyched, but there's been some lower-level dissatisfaction with the way we've been running our side of the war...with the sorts of prisoners we've been taking and the 
+reasons we've been taking them. My bosses have been quick to dispel these rumors, but when I look around, I can tell that a good lot of my crew don't want to be here. Do I? I've been 
+thinking more about that Tip transmission, about the sort of work we've been doing, the questions we haven't been asking until now...But the brass didn't just WIND UP there. They're there
+because they've got the chops to make these sorts of decisions. We're here because we've got the chops to carry them out. At least that's what I tell myself...The shakes are setting in 
+earlier now, prior to the fight and flight even. I threw out a line to some of my old contacts for a bit of the Pam, but none bit. I'm sure they're just busy. With the war on, everyone
+needs a pick-me-up or a pull-me-down. I'm sure they're doing a hell of a lot better than I am. I'm sure of it."
+
+"Captain's Log > There it is--that old aggression. There's that twitch-perfection that caught the brass' attention in the first place. I don't know why it took me this long to realize
+what I've been doing wrong. I've been so in my head about the rightness/wrongness of what we're doing here that I forgot one's head is the last place they should be when their hand's on
+the stick. In my environs, I never once thought of the enemy as anything more than a moving target; I never thought at all, actually. In the time it takes to think, you can react twofold,
+and if the enemy's not following that same strategy, you've already won. And winning feels good. Not later, when you think back on it, but then; right there; in that moment; when the hull
+starts to glow, and you know it's only a matter of time. If you can't join 'em, beat 'em. And take some fucking pleasure in it."
 
 
 
