@@ -311,6 +311,25 @@ the stick. In my environs, I never once thought of the enemy as anything more th
 and if the enemy's not following that same strategy, you've already won. And winning feels good. Not later, when you think back on it, but then; right there; in that moment; when the hull
 starts to glow, and you know it's only a matter of time. If you can't join 'em, beat 'em. And take some fucking pleasure in it."
 
+Mission 3 (The Shakes): "Captain's Log > Here I am dt-ing from the lack of skirmishes we've been assigned lately, and I get a message on the big line. 'This is it!', I'm thinking, 'The Tips have shot up the
+homestead, and we're to go in and round 'em all up.' No such luck. Stuart himself comes on the line and tells me we've been tasked with a goddamn transport mission. Turns out old Charlie
+himself's been made, and we're to head over there pronto, pick him up, and bring him back to the stiff-shirts unharmed. God knows what they want with the poor bastard. What's worse is he's too
+valuable an asset to keep in the hold with the rest of the rabble we've been rounding up for the past THREE FUCKING DAYS, so I've been ordered to keep an eye on him personally, making sure
+he's comfortable up until the point they lynch him or worse. I don't like this. I haven't seen any real action in over two weeks, and the shakes started back a couple of days ago. Here's
+hoping we come across an odd vigilante or two to take the edge off."
+
+--Frederickson:
+Mission 1 (Men and Women and God): "Captain's Log > We were scaning our perimiter as always when boss phoned in that thered been an attack not far from were we are so we are doubletiming it there rite now. Its
+suppose to be pretty importent so im worried we might be goin up against more than we ever have but I know my boys can handle it. We got good men and women and God on our side so all we
+need is a lil luck too and well be good. If I dont make it out of this one tell mama I love her and ill miss her cookin haha. Tell my daddy I fought hard cuz I will and give bunny a good
+rub on the belly for me. But please dont tell em there were any tips on my crew. There not as progresiv as me and they aint seen how hard some of these good ones like mine fight the good
+fight. My soul to Jesus if my body to the earth. Amen."
+
+"Captain's Log > Me and my boys pulled it off. We had to shoot down one of our own tho. I dont know why but he just started in on all of us frendlies. I didnt want to but if it comes down
+to my boys or some other captains Im pickin mine every time same side or not. We killed all the tips tho so Id say the mission was a succes. Now theres just a little bit of cleanup and
+paperwork between me and my leave. I can smell mamas homemade casserole rite now and its putting all this uglyness out of my head. Well I got a call comin through on the big line so I
+better finish this up rite quik. Cpt. Andrew Frederickson of the 202nd out."
+
 
 
 
