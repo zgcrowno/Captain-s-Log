@@ -313,7 +313,7 @@ starts to glow, and you know it's only a matter of time. If you can't join 'em, 
 
 Mission 3 (The Shakes): "Captain's Log > Here I am dt-ing from the lack of skirmishes we've been assigned lately, and I get a message on the big line. 'This is it!', I'm thinking, 'The Tips have shot up the
 homestead, and we're to go in and round 'em all up.' No such luck. Stuart himself comes on the line and tells me we've been tasked with a goddamn transport mission. Turns out old Charlie
-himself's been made, and we're to head over there pronto, pick him up, and bring him back to the stiff-shirts unharmed. God knows what they want with the poor bastard. What's worse is he's too
+himself's been raised, and we're to head over there pronto, pick him up, and bring him back to the stiff-shirts unharmed. God knows what they want with the poor bastard. What's worse is he's too
 valuable an asset to keep in the hold with the rest of the rabble we've been rounding up for the past THREE FUCKING DAYS, so I've been ordered to keep an eye on him personally, making sure
 he's comfortable up until the point they lynch him or worse. I don't like this. I haven't seen any real action in over two weeks, and the shakes started back a couple of days ago. Here's
 hoping we come across an odd vigilante or two to take the edge off."
@@ -328,7 +328,21 @@ fight. My soul to Jesus if my body to the earth. Amen."
 "Captain's Log > Me and my boys pulled it off. We had to shoot down one of our own tho. I dont know why but he just started in on all of us frendlies. I didnt want to but if it comes down
 to my boys or some other captains Im pickin mine every time same side or not. We killed all the tips tho so Id say the mission was a succes. Now theres just a little bit of cleanup and
 paperwork between me and my leave. I can smell mamas homemade casserole rite now and its putting all this uglyness out of my head. Well I got a call comin through on the big line so I
-better finish this up rite quik. Cpt. Andrew Frederickson of the 202nd out."
+better finish this up rite quik. Cpt. Andrew Frederickson of the 202nd signin off."
+
+Mission 2 (A Real To-Do): "Captain's Log > Its good to be back. The family was pretty upset with how I came home. They wasnt upset with me mind you but with the politichins who sent me there. Truth
+be told I was pretty upset myself but I always figgured the boys up top would make things right and here we are. I mean really strippin a man of his stayshen for savin his crew I dont care
+if that psycho I gunned down was the president himself. But I guess they finally come around or maybe there just really hurtin for people cuz they even brought benny back and
+hes caught fratternizin with one of his tips a lil too close if you know what I mean. No matter tho as I got my honner my ship and my crew. Mama and daddy put on a real to-do when I left 
+this time so I think there afraid I wont find my way back home from this one but I told em not to worry and that id sooner swear allegence to a tip then let one shoot me down. And I dont
+suspect ill be swearin allegence to anybody other than my country or my God anytime soon. Still if I dont make it back from this one give my love to mama and daddy and tell em to give my
+spot at the table to bunny. If they cant spoil me they can at least spoil her as she deservs it. My soul to Jesus if my body to the earth. Amen."
+
+"Captain's Log > We had us a close one today. I never seen so much killin in my life and I dont care to again if I can avoid it even if its for a cause as good as ours is. As frazzled as I
+am tho I cant wait to tell mama and daddy that I personelly protected the guy who single handed first broght this fight to the tips. He called me by name even. Id say I have a real shot at
+the medal of honner after today but I wont count my chickens fore there hatched. Plus weve still got some work to do before anyone gos awardin anythin to anybody else. Weve got a beed on
+the few remainin tips current location and words comin down from the top that we know where there headin. This is lookin like the end of the road and someones brakes aint gonna hold out.
+Cpt. Andrew Frederickson of the 202nd signin off."
 
 
 
