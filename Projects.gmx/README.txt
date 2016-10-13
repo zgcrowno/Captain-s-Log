@@ -344,6 +344,51 @@ the medal of honner after today but I wont count my chickens fore there hatched.
 the few remainin tips current location and words comin down from the top that we know where there headin. This is lookin like the end of the road and someones brakes aint gonna hold out.
 Cpt. Andrew Frederickson of the 202nd signin off."
 
+Mission 3 (The Big Lobby): "Captain's Log > There aint no award ceramony round the corner but looks as tho theyve seen fit to give me early leave. Were headin to niagara. Far as I know
+nobody cept the natives and the workers seen it since the NRR got this war started a few years ago so you could say I get to be there for the unvailin. Just wish I was goin to see the show
+stead of the crowd. I reckon theyll have a few hecklers mongst em dont know a good bit when they see it. Me and minell just hafta teach em some manners or scort em to the big libby and
+maybe well get a good look fore they raise the lights. As always if they bring me home a lil lighter this go round tell mama I did my part for history and tell daddy I did it hard. And
+tell em I was real sorry to here about bunny but at least I know ill see one of my family soon. My soul to Jesus if my body to the earth. Amen."
+
+"Captain's Log > Mission acomplished. Ive had word come down the big line that this is it. The wars over. There may be a few stragglers here and there but with the loss in numbers and
+leadership the boys back home dont think the tipsll come back from this one. If they got any wits bout em theyll do as me and head on home to there mamas there bunnies and some such other
+things that make a war worth fightin and worth comin home from. Assumin they still got all that they oughta get down on there knees and thank Jesus the war shut down before they didnt.
+There a stubbern lot so I dont spect they will but no matter. If they come back to toss the third stone ill still be right here to pick up the forth and coach always said I had a good arm.
+Until then ill fly by the smell of that sweet sweet casserole and there wont be no fear that ill lose my way. Cpt. Andrew Frederickson of the 202nd signin off."
+
+--Tsing:
+Mission 1 (Mimic): "Captain's Log > The big cheese around here has insisted that we mimic actual deployment to a nauseating degree, hence this pre-mission diary entry. This shit really does
+turn my stomach, though. I can't speak for the rest of these asshats, but I came here to mow down some bigoted, white-bread, alien gutter trash; if you'll notice, that mission statement does not
+include jotting down my thoughts like some fuck-starved pre-teen in a sticky moleskin. But whatever, life is compromise and compromise sucks an equal amount of unwashed cock for all
+parties involved. So here's the plan: We've cracked the location of the next CPI recreation, and determined it's about 1200 clicks Southeast of our base. We should arrive at approximately
+0500 hours tomorrow, at which point we will execute a surprise attack on the motherfuckers, down every single one of them, comb the fields for any survivors, interrogate them, and then
+execute them one by one with as little (or much?) humanity as possible, preferably slowly. I've gotta admit, as much as I generally hate writing this shit, it feels nice as fuck to not 
+have to conform to any more established behavioral standards like those instituted by every other squad of which I've been loathe to be a part. Hell, maybe I'm not that different from the
+flatchest with her diary. All this talk of death and destruction's making me feel all warm and fuzzy inside."
+
+"Captain's Log > Well, we beat 'em. Big fuckin' surprise. It wasn't as much of a cake walk as I expected, though, and the heart got to racing ever so slightly if only because those drones 
+were armed with live rounds. Still, it had no 'UMPH', no real payoff; the whole thing was just metal on metal; in training exercises like these, I just can't suspend my disbelief to the 
+point of really imagining my fire rending the enemy's flesh, maybe even instilling in them a barrage of regrets before they finally snuff it. Call me old fashioned, but if I'm going to 
+lay waste to my enemy, I at least want them to have the capacity to FEEL it. Oh well, I'm told there won't be too many more of these before we're finally sent out on real missions with
+real targets with real heartbeats and real stakes. I'm salivating at the thought."
+
+Mission 2 (Fucked): "Captain's Log > I'm nothing if not a patient woman, but god-fucking-dammit, I was about ready filate this popsicle stand tell I reached the gooey center. For months, 
+Klem's been sending other (far less qualified, mind you) pilots out to the front, while I've been up to my tits in literature and one-on-one banter with the dude, to the point where I was 
+beginning to think he fingered me for upper management or some shit. After our last encounter, though, he must have picked up on the fact that I was fed up with this shit, because finally,
+I've been assigned some real action. Perfect timing too, as those bastards are getting more and more McCarthian by the day--all the better to relish their deaths. At the risk of sounding
+wistful, all this talk of McCarthyism brings to mind my school days, and that head of security who so exemplified the disgusting practice. He would regularly orchestrate searches of the
+students' lockers based on nothing more than 'reasonable suspicion', so one day, I waltzed into his office when I knew that only he and maybe a few other non-proximal teachers would be on
+the campus, and I fucked his brains out. Of course, I had a camera in my glasses--he wanted me to leave them on. Needless to say, suspicion of his felonious doings soon became very
+reasonable indeed. Today, I'm going to fuck those cunts just like an overweight, under-educated, weak-willed high-school-dropout-turned-sec-off, but with one principle difference: This 
+time, I might just cum."
+
+Mission 3 (): "Captain's Log > Goddamn, it feels good to be back. I've been impotent for so long, I almost forgot what it was like to ready yourself for the hunt; to envision your enemy,
+their missteps, your taking advantage of them; to think on their family and the fact that with every shot fired you're fucking up at least as many lives as they've spawned plus one (or 
+even more if spouses/parents/grandparents/grandkids are included in the equation). Beautiful. I've been doing my part, of course, spreading the hate for posterity, but nothing beats the 
+feeling of gripping a stick and letting fly the seed of destruction first-hand. It almost brings a tear to my eye. But enough of this sappy sentimental bullshit. That's not me. I'm a warm 
+set of entrails on a cold Winter's eve; I'm that buried, murderous thought you mistakenly believed ephemeral; I'm entropy. And if I seem to you long-winded and pretentious, no matter. You 
+and your assessments will be dead before the universe even has an opportunity to consider caring. I'm ready. Let's fucking kill. Them. All."
+
 
 
 
