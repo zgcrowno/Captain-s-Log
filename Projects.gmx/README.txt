@@ -374,7 +374,7 @@ real targets with real heartbeats and real stakes. I'm salivating at the thought
 
 Mission 2 (Fucked): "Captain's Log > I'm nothing if not a patient woman, but god-fucking-dammit, I was about ready filate this popsicle stand tell I reached the gooey center. For months, 
 Klem's been sending other (far less qualified, mind you) pilots out to the front, while I've been up to my tits in literature and one-on-one banter with the dude, to the point where I was 
-beginning to think he fingered me for upper management or some shit. After our last encounter, though, he must have picked up on the fact that I was fed up with this shit, because finally,
+beginning to think he fingered me for upper management or some shit. After our last encounter, though, he must have picked up on the fact that I was fed up with this nonsense, because finally,
 I've been assigned some real action. Perfect timing too, as those bastards are getting more and more McCarthian by the day--all the better to relish their deaths. At the risk of sounding
 wistful, all this talk of McCarthyism brings to mind my school days, and that head of security who so exemplified the disgusting practice. He would regularly orchestrate searches of the
 students' lockers based on nothing more than 'reasonable suspicion', so one day, I waltzed into his office when I knew that only he and maybe a few other non-proximal teachers would be on
@@ -382,12 +382,47 @@ the campus, and I fucked his brains out. Of course, I had a camera in my glasses
 reasonable indeed. Today, I'm going to fuck those cunts just like an overweight, under-educated, weak-willed high-school-dropout-turned-sec-off, but with one principle difference: This 
 time, I might just cum."
 
-Mission 3 (): "Captain's Log > Goddamn, it feels good to be back. I've been impotent for so long, I almost forgot what it was like to ready yourself for the hunt; to envision your enemy,
+Mission 3 (Entropy): "Captain's Log > Goddamn, it feels good to be back. I've been impotent for so long, I almost forgot what it was like to ready yourself for the hunt; to envision your enemy,
 their missteps, your taking advantage of them; to think on their family and the fact that with every shot fired you're fucking up at least as many lives as they've spawned plus one (or 
 even more if spouses/parents/grandparents/grandkids are included in the equation). Beautiful. I've been doing my part, of course, spreading the hate for posterity, but nothing beats the 
 feeling of gripping a stick and letting fly the seed of destruction first-hand. It almost brings a tear to my eye. But enough of this sappy sentimental bullshit. That's not me. I'm a warm 
 set of entrails on a cold Winter's eve; I'm that buried, murderous thought you mistakenly believed ephemeral; I'm entropy. And if I seem to you long-winded and pretentious, no matter. You 
-and your assessments will be dead before the universe even has an opportunity to consider caring. I'm ready. Let's fucking kill. Them. All."
+and your assessments will be dead before the universe even has an opportunity to consider caring. I'm ready. Let's fucking kill."
+
+--Klem:
+Mission 1 (): "Captain's Log > We have lain low for too long. In an effort to both gauge our cause's support, and to avoid any retaliatory action our surfacing may invite, we have adopted 
+a relative idleness that, however effective at disguising our growing numbers and efficacy, would soon render our movement ash from ember should it continue. Already, the enemy has begun 
+to distribute propagandistic pamphlets across the net in an effort to dissuade any more of our brethren from taking up arms against their malefactors. Our next target, then, seems 
+obvious...We shall dam their misinformation at its source. The impressionable among us will not be impressed upon."
+
+"Captain's Log > Though we have prevailed, the Library proved more heavily fortified than we expected--and in hindsight it seems so obvious that it ought to have been. Is knowledge not the
+most valuable weapon at any intelligent creature's disposal? Upon their entrance into our world, did the alien not steal first our tongue, our ideologies, our history? It was only then 
+that they could guarantee the theft of our will. No longer would the alien among us have recourse to the words of their progenitors, by which venomous rhetoric they had undoubtedly 
+enslaved the feeble-minded amongst themselves before ever turning it upon us...At this thought, though, I cannot help but feel a pang of sympathy for the alien as conscious being, 
+vulnerable to the same sophistry as us, so long as it is confidently voiced...No. This course of thought will not do. He is a fool who rushes into battle without his sidearm, but he is 
+even more so who makes one of pity. I shall then bury this worry as quickly as it sprouted from the topsoil of my mind, where in another existence may have grown the identity of my own 
+people, and not another."
+
+Mission 2 (): "Captain's Log >"
+
+"Captain's Log >"
+
+Mission 3 (): "Captain's Log >"
+
+"Captain's Log >"
+
+--Aarakis:
+Mission 1 (): "Captain's Log >"
+
+"Captain's Log >"
+
+Mission 2 (): "Captain's Log >"
+
+"Captain's Log >"
+
+Mission 3 (): "Captain's Log >"
+
+"Captain's Log >"
 
 
 
