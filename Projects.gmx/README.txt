@@ -391,7 +391,7 @@ and your assessments will be dead before the universe even has an opportunity to
 
 --Klem:
 Mission 1 (): "Captain's Log > We have lain low for too long. In an effort to both gauge our cause's support, and to avoid any retaliatory action our surfacing may invite, we have adopted 
-a relative idleness that, however effective at disguising our growing numbers and efficacy, would soon render our movement ash from ember should it continue. Already, the enemy has begun 
+a relative idleness that, however effective at disguising our growing numbers and efficacy, shall soon render our movement ash from ember should it continue. Already, the enemy has begun 
 to distribute propagandistic pamphlets across the net in an effort to dissuade any more of our brethren from taking up arms against their malefactors. Our next target, then, seems 
 obvious...We shall dam their misinformation at its source. The impressionable among us will not be impressed upon."
 
@@ -403,9 +403,21 @@ vulnerable to the same sophistry as us, so long as it is confidently voiced...No
 even more so who makes one of pity. I shall then bury this worry as quickly as it sprouted from the topsoil of my mind, where in another existence may have grown the identity of my own 
 people, and not another."
 
-Mission 2 (): "Captain's Log >"
+Mission 2 (Soldiers After All): "Captain's Log > If performance be measured in attention, our success seems incapable of plotting. Now is no time to make a bed of our laurels, though, as the alien finks 
+have begun instituting safeguards the likes of which McCarthy would have found reckless. Millions of our people now lay in alien custody...assuming they're not already in the ground, offed
+via trial-less execution in the name of global welfare. I had planned on gauging our success in proportion to reciprocal alien action, but I had always hoped that action would have some 
+semblance of direction. I never expected this...Though had I, would I have pursued a different course? Nevertheless, the alien's recourse will have been in vain. If detachment's demanded 
+of my position, I'll gladly walk into the battlefield crucifix ashoulder. Our enemy speaks in barbarisms? We shall respond in kind. We are soldiers, after all. If God should exist--a 
+possibility that seems less and less likely by the day--His job's about to become a lot harder than mine."
 
-"Captain's Log >"
+"Captain's Log > Engineers, pilots, officers, mechanics, programmers, strategists, informants, propogandists...These are the major players one associates with a militaristic movement. 
+These are the individuals that, throughout history, have fanned the flame of revolution when the tinder has lay in the Sun a bit too long, carefully placed by the philosophers and the odd 
+carpetbagger. But are these participants not synthetic? Are they not first and foremost persons, albeit bettered with the training and direction requisite their stations? Are they not 
+susceptible to the same degredation, the same denigration, suffered by and directed towards their charges, respectively? Certainly, in wartime, there is a maintenance primary to all others,
+and one without which our company presently finds itself: The maintenance of the mind. Like an engine unoiled, when this object enters into disrepair from overuse or--as is invariably the 
+case with war--misuse, it begins to sputter and spit with the misgivings of the heavy-hearted. It is those very misgivings which plague our great machine now, and threaten to stall our 
+efforts as they've only just begun. Though I've neither the background nor the inclination for it, to whom can the rehabilitation of my crew fall but me? I've doubtless been neglectful of
+my duties, but it is clear to me now that reparations must be put in order, and I shall undertake them in the only way I know how: By the light of the enemy's fire."
 
 Mission 3 (): "Captain's Log >"
 
