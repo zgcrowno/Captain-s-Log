@@ -390,7 +390,7 @@ set of entrails on a cold Winter's eve; I'm that buried, murderous thought you m
 and your assessments will be dead before the universe even has an opportunity to consider caring. I'm ready. Let's fucking kill."
 
 --Klem:
-Mission 1 (): "Captain's Log > We have lain low for too long. In an effort to both gauge our cause's support, and to avoid any retaliatory action our surfacing may invite, we have adopted 
+Mission 1 (Ash from Ember): "Captain's Log > We have lain low for too long. In an effort to both gauge our cause's support, and to avoid any retaliatory action our surfacing may invite, we have adopted 
 a relative idleness that, however effective at disguising our growing numbers and efficacy, shall soon render our movement ash from ember should it continue. Already, the enemy has begun 
 to distribute propagandistic pamphlets across the net in an effort to dissuade any more of our brethren from taking up arms against their malefactors. Our next target, then, seems 
 obvious...We shall dam their misinformation at its source. The impressionable among us will not be impressed upon."
@@ -419,7 +419,15 @@ case with war--misuse, it begins to sputter and spit with the misgivings of the 
 efforts as they've only just begun. Though I've neither the background nor the inclination for it, to whom can the rehabilitation of my crew fall but me? I've doubtless been neglectful of
 my duties, but it is clear to me now that reparations must be put in order, and I shall undertake them in the only way I know how: By the light of the enemy's fire."
 
-Mission 3 (): "Captain's Log >"
+Mission 3 (Devils): "Captain's Log > I've been remiss. I have participated in smaller engagements here and there, and I believe I have succeeded in demonstrating to my brethren the aliens' 
+brutality--their inhumanity, for lack of a better word. But where are the stories? I've led squadrons through levelled sectors as the inhabitants thereof danced across my visor, aglow with
+the flames of Hell itself even as their defiance of Death's knell shone ever more brightly, however briefly. I've seen the devils responsible, for they are many, and I've taken great 
+pleasure in that order upon their capture: "Slowly." I've seen firing squads press their muzzles to the temples of the newly born and the not yet, and I've failed to stay their fingers.
+Time and time again. I've heard the rhetoric, and I've echoed in kind. But where lies the document? By what light may our progeny one day freely partake of our history, unadulterated, and
+say "No, that will not do." I've no excuses to those who come after, if they do. The transcription of history is hard, perhaps even moreso than the commission of it, because at that point,
+when one writes it down, it transcends the fallability of memory to become unquestionable...to become real. It frees itself from the shackles of context, and in so doing becomes a matter
+of fact. There was a time when I had the shoulders for such responsibility, and that time has long since passed. I write this now only because I feel very strongly that it may be my last 
+opportunity to create, to bequeath, lest the courageous historians of tomorrow see fit to record only my theft of life and limb. To you, Dr. Stuart. And yours."
 
 "Captain's Log >"
 
