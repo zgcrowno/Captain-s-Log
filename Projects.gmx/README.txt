@@ -429,7 +429,18 @@ when one writes it down, it transcends the fallability of memory to become unque
 of fact. There was a time when I had the shoulders for such responsibility, and that time has long since passed. I write this now only because I feel very strongly that it may be my last 
 opportunity to create, to bequeath, lest the courageous historians of tomorrow see fit to record only my theft of life and limb. To you, Dr. Stuart. And yours."
 
-"Captain's Log >"
+"Captain's Log > What thoughts have occupied those who, throughout history, have found themselves at a juncture such as this? What dissonance rings within the ears of the dreadfully 
+ambivalent? Is there some unified form? Does the widower resist the seduction of lamentation, and treat his child in the manner befitting a father even as the infant's birth ushered in the
+death of his beloved? Does he instead give in to a conflicting but no less natural inclination towards resentment, and would he be wrong to do so? Of course, I cannot speak to the experience of
+the emotionally irresolute as such, but only insofar as I now count myself among them. Certainly, I do not feel well. We have today purchased the sovereignty due all conscious beings, but
+at the cost of countless lives lost or ruined by proxy. I have done right by an entire people--my people--though in so doing, I've relegated my closest friend to the realm of the bereaved.
+Justice's scales are very clearly imbalanced, but I cannot say which side hangs the lower, nor could I accept the responsibility that accompanies such a judgment. Yet, even as I take 
+comfort in these self-lacerations, there stirs in me a shameless delight that excites all the more as we near the ground; a great swell envelopes and warms my heart as I leave the cockpit
+and traverse the halls towards the exit, my pulse and my pace quickening with each shout of merriment from those of my crew that still remain. This fever-dream culminates in the near total
+blotting out of all my misgivings as I take that first step onto the bloodstained soil that makes up the Eastern end of Niagara. I make every attempt to survey the destruction that litters
+the land, with each being foiled by tears too long dammed, so that I collapse to run the blood, dirt and metal through my fingers. But in this moment, I weep not for Stuart or Tsing or 
+even Aarakis. I weep in the knowledge that I clutch in my fists a land which, for the first time in my life, I can call mine. Should the clarity of history judge our war a mistake, should
+I have at my deathbed only the ghosts of my crimes for solace, in this moment I know that some mistakes are worth fighting for."
 
 --Aarakis:
 Mission 1 (): "Captain's Log >"
