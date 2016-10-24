@@ -250,7 +250,7 @@ that. Nothing like a change of scenery to clear up the headspace. I think today'
 
 "Captain's Log > FUCK. What the fuck was that!? Uh, out of nowhere, goddammit! I've never seen anything like that before...My guys...those were MY FUCKING GUYS! What should I expect, 
 though? It's not like we were trained for this. That wasn't a battle, it was a goddamn massacre. I couldn't have done anything...Jesus Christ, I swear I couldn't have done anything. 
-There's no shame in running a way. Not like that. Not when it's warranted, and it was sure as hell warranted. It can't not have been warranted. Still, I can't go back. They'll be looking 
+There's no shame in running away. Not like that. Not when it's warranted, and it was sure as hell warranted. It can't not have been warranted. Still, I can't go back. They'll be looking 
 for me now, and not as a sister in arms, but a deserter...an enemy of the state...a villain. I've got to find a place to lay low for a little while. Fuck, maybe a long while. Maybe 
 forever. Dad...Mom...Fuck. I can't for the life of me think of any way to get in touch with them without compromising my location...but they need to know--they DESERVE to know that I'm not
 a traitor. Dad's position practically prohibits it, but maybe I can get in touch with my Mom. Certainly not via the plane--that's all monitored. Maybe face to face...but how to orchestrate
@@ -439,11 +439,14 @@ comfort in these self-lacerations, there stirs in me a shameless delight that ex
 and traverse the halls towards the exit, my pulse and my pace quickening with each shout of merriment from those of my crew that still remain. This fever-dream culminates in the near total
 blotting out of all my misgivings as I take that first step onto the bloodstained soil that makes up the Eastern end of Niagara. I make every attempt to survey the destruction that litters
 the land, with each being foiled by tears too long dammed, so that I collapse to run the blood, dirt and metal through my fingers. But in this moment, I weep not for Stuart or Tsing or 
-even Aarakis. I weep in the knowledge that I clutch in my fists a land which, for the first time in my life, I can call mine. Should the clarity of history judge our war a mistake, should
+even Aarakis. I weep in the knowledge that I clutch in my fists a land which, for the first time in my life, I can call mine. Should the arbiter of history judge our war a mistake, should
 I have at my deathbed only the ghosts of my crimes for solace, in this moment I know that some mistakes are worth fighting for."
 
 --Aarakis:
-Mission 1 (): "Captain's Log >"
+Mission 1 (): "Captain's Log > 0400 hours: Reception of orders
+			       0448 hours: Departure for target
+			       0515 hours: Stimulating conversation with Dr. Francis Stuart
+					   --Subject: "
 
 "Captain's Log >"
 
