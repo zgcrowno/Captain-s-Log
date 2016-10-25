@@ -443,14 +443,37 @@ even Aarakis. I weep in the knowledge that I clutch in my fists a land which, fo
 I have at my deathbed only the ghosts of my crimes for solace, in this moment I know that some mistakes are worth fighting for."
 
 --Aarakis:
-Mission 1 (): "Captain's Log > 0400 hours: Reception of orders
-			       0448 hours: Departure for target
-			       0515 hours: Stimulating conversation with Dr. Francis Stuart
-					   --Subject: "
+Mission 1 (Assimilation): "Captain's Log > 0400 hours: Reception of orders
+			       0448 hours: Departure for Rokoko
+			       0515 hours: Stimulating conversation with Dr. Francis Stuart (Father) via The Plane
+					   --Subject: Modern and contemporary examinations into assimilation theory
+			       0658 hours: Arrival at target
+			       0720 hours: Escort begun"
 
-"Captain's Log >"
+"Captain's Log > 0740 hours: Indigenous populous begins to display uneasiness
+		 0838 hours: First recorded attack on UPH property
+		 	     --Implements: Crude, small, ineffectual projectiles of metallic composition
+		 0902 hours: Attacks, persistent for past 24 minutes, now grow in number; participation estimated at 1 in 2400 residents
+		 0927 hours: Attacks continue, payload carries on as planned, unhindered
+		 0934 hours: Recollect earlier conversation with Dr. Francis Stuart (Father), and many more shared prior
+		 0936 hours: Contemplate situation, weigh pros and cons, consult ship's onboard calculus
+		 0944 hours: Issue order to retaliate, and disseminate said order to squadron upon initial compliance of personal crew
+		 0951 hours: Attacks, now persistent for past 1.216666666667 hours, grow exponentially; participation estimated at 1.72 in 2 residents
+		 1001 hours: Dr. Francis Stuart (Father) attempts to make contact via The Plane, is denied
+		 1003 hours: UPH President attempts to make contact via The Plane, is denied; this course of attempted contact continues for 0.2 hours before communication is disabled
+		 1145 hours: Indigenous rebellion quelled
+		 1159 hours: UPH contact re-established, course set for home, revocation of commission anticipated"
 
-Mission 2 (): "Captain's Log >"
+Mission 2 (Lower Passions): "Captain's Log > 0230 hours: Recommissioned
+			       0259 hours: Debriefed
+					   --Target: Klem's hideout; location ironic, unexpected
+			       0320 hours: Departure for Niagara
+			       0345 hours: Nostalgic conversation with Dr. Francis Stuart (Father) via The Plane
+					   --Subject: Recent interpretations of and revisions suggested to assimilation theory; Higher and lower passions, by way of personal experience
+					   --Note: Dissonance recognized, commented upon, denied; Closing demeanor is sorrowful, proud
+			       0553 hours: Arrival at target
+			       0556 hours: Assessment of opposition
+					   --Quantification difficult; losses will be many"
 
 "Captain's Log >"
 
