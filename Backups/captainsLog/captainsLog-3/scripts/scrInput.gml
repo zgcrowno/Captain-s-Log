@@ -1,12 +1,4 @@
-//A collection of all the pawns in the room (in the future, this will be a collection of all enemies)
-pawns = null;
-maxPawnsDesignationLength = 0;
-for(i = 0; i < instance_number(objPawn); i++) {
-    pawns[i] = instance_find(objPawn, i);
-    if(string_length(pawns[i].designation) > maxPawnsDesignationLength) {
-        maxPawnsDesignationLength = string_length(pawns[i].designation);
-    }
-}
+script_execute(scrGetEnemies);
 
 if(keyboard_check_pressed(vk_tab)) {
     //In the future, it might be wise to configure the instance data states in such
@@ -239,45 +231,7 @@ if(keyboard_check_pressed(vk_tab)) {
     } else if(keyboard_check_pressed(vk_numpad9)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
-        if(!(requiredPPThrusters > currentPP) && !thrustersPort) {
-            distanceToCoverPort += real(input);
-            distanceToCover += real(input);
-            currentState = initState;
-            thrustersPort = true;
-            input = "";
-            currentPP -= requiredPPThrusters;
-            currentPPThrustersPort += requiredPPThrusters;
-        } else if(thrustersPort) {
-            distanceToCoverPort += real(input);
-            distanceToCover += real(input);
-            currentState = initState;
-            input = "";
-        } else {
-            currentState = initState;
-            input = "";
-            //To Do: Error to user about lack of power
-        }
-        destination.x = x;
-        destination.y = y;
-        destination.image_angle = image_angle;
-        destination.thrustersPort = thrustersPort;
-        destination.thrustersStarboard = thrustersStarboard;
-        destination.thrustersBow = thrustersBow;
-        destination.thrustersStern = thrustersStern;
-        destination.thrustersRotateClockwise = thrustersRotateClockwise;
-        destination.thrustersRotateCounterclockwise = thrustersRotateCounterclockwise;
-        destination.distanceToCover = distanceToCover;
-        destination.distanceToCoverPort = distanceToCoverPort;
-        destination.distanceToCoverStarboard = distanceToCoverStarboard;
-        destination.distanceToCoverBow = distanceToCoverBow;
-        destination.distanceToCoverStern = distanceToCoverStern;
-        destination.degreesToRotateClockwise = degreesToRotateClockwise;
-        destination.degreesToRotateCounterclockwise = degreesToRotateCounterclockwise;
-        destination.degreesRotatedClockwise = degreesRotatedClockwise;
-        destination.degreesRotatedCounterclockwise = degreesRotatedCounterclockwise;
-        destination.numActiveThrusters = numActiveThrusters;
-        destination.distanceToCoverPort += real(input);
-        destination.distanceToCover += real(input);
+        script_execute(scrThrustersPort);
     } 
 } else if(currentState == thrusterStarboardState) { //thrusterStarboardState checks
     if(keyboard_check_pressed(vk_numpad0)) {

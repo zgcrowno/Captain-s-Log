@@ -10,7 +10,7 @@ if(currentHP <= 0) {
 }
 if(position_meeting(x, y, specialContact)) {
     currentHP -= 0.1;
-    if(point_distance(x, y, specialContact.x, specialContact.y) > 3) {
+    if(point_distance(x, y, specialContact.x, specialContact.y) > 5) {
         move_towards_point(specialContact.x, specialContact.y, 1);
     } else {
         speed = 0

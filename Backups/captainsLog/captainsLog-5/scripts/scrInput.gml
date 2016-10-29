@@ -1,12 +1,4 @@
-//A collection of all the pawns in the room (in the future, this will be a collection of all enemies)
-pawns = null;
-maxPawnsDesignationLength = 0;
-for(i = 0; i < instance_number(objPawn); i++) {
-    pawns[i] = instance_find(objPawn, i);
-    if(string_length(pawns[i].designation) > maxPawnsDesignationLength) {
-        maxPawnsDesignationLength = string_length(pawns[i].designation);
-    }
-}
+script_execute(scrGetEnemies);
 
 if(keyboard_check_pressed(vk_tab)) {
     //In the future, it might be wise to configure the instance data states in such

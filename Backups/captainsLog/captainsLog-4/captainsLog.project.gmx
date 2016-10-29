@@ -56,6 +56,10 @@
     <script>scripts\scrSpecialBehavior.gml</script>
     <script>scripts\scrSpecialContactData.gml</script>
     <script>scripts\scrSpecialContactBehavior.gml</script>
+    <script>scripts\scrPPManagement.gml</script>
+    <script>scripts\scrGetEnemies.gml</script>
+    <script>scripts\script29.gml</script>
+    <script>scripts\scrThrustersPort.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntMain</font>
