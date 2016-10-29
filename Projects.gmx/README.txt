@@ -234,7 +234,7 @@ Howitt, Howitt's crew, and their special cargo.
 --After Klem's final solution, Humanity sees its greatest solidarity since the beginning of the war effort. Unprecedented resources are poured into an all-out assault on the Hintaacian rebels. (3375 CT)
 --Aarakis is recommissioned. (3375 CT)
 --The Humans manage to locate the Hintaacian hideout with the help of Stuart (who has been in contact with Klem since shortly after the NRR). Stuart justifies this to himself with reminders that his son is once again involved. (3375 CT)
---The Humans launch their final attack on the Hintaacians' base. The outcome is indeterminent. (3375 CT)
+--The Humans launch their final attack on the Hintaacians' base. The outcome is indeterminate. (3375 CT)
 
 //////////////////////////////////////////////Monologues////////////////////////////////////////////////
 
@@ -445,7 +445,7 @@ I have at my deathbed only the ghosts of my crimes for solace, in this moment I 
 --Aarakis:
 Mission 1 (Assimilation): "Captain's Log > 0400 hours: Reception of orders
 			       0448 hours: Departure for Rokoko
-			       0515 hours: Stimulating conversation with Dr. Francis Stuart (Father) via The Plane
+			       0515 hours: Stimulating conversation with Father via The Plane
 					   --Subject: Modern and contemporary examinations into assimilation theory
 			       0658 hours: Arrival at target
 			       0720 hours: Escort begun"
@@ -455,7 +455,7 @@ Mission 1 (Assimilation): "Captain's Log > 0400 hours: Reception of orders
 		 	     --Implements: Crude, small, ineffectual projectiles of metallic composition
 		 0902 hours: Attacks, persistent for past 24 minutes, now grow in number; participation estimated at 1 in 2400 residents
 		 0927 hours: Attacks continue, payload carries on as planned, unhindered
-		 0934 hours: Recollect earlier conversation with Dr. Francis Stuart (Father), and many more shared prior
+		 0934 hours: Recollect earlier conversation with Father, and many more shared prior
 		 0936 hours: Contemplate situation, weigh pros and cons, consult ship's onboard calculus
 		 0944 hours: Issue order to retaliate, and disseminate said order to squadron upon initial compliance of personal crew
 		 0951 hours: Attacks, now persistent for past 1.216666666667 hours, grow exponentially; participation estimated at 1.72 in 2 residents
@@ -464,22 +464,58 @@ Mission 1 (Assimilation): "Captain's Log > 0400 hours: Reception of orders
 		 1145 hours: Indigenous rebellion quelled
 		 1159 hours: UPH contact re-established, course set for home, revocation of commission anticipated"
 
-Mission 2 (Lower Passions): "Captain's Log > 0230 hours: Recommissioned
+Mission 2 (Higher Passions): "Captain's Log > 0230 hours: Recommissioned
 			       0259 hours: Debriefed
 					   --Target: Klem's hideout; location ironic, unexpected
 			       0320 hours: Departure for Niagara
-			       0345 hours: Nostalgic conversation with Dr. Francis Stuart (Father) via The Plane
-					   --Subject: Recent interpretations of and revisions suggested to assimilation theory; Higher and lower passions, by way of personal experience
+			       0345 hours: Nostalgic conversation with Father via The Plane
+					   --Subject: Recent interpretations of and revisions suggested to assimilation theory; Lower and higher passions, by way of personal experience
 					   --Note: Dissonance recognized, commented upon, denied; Closing demeanor is sorrowful, proud
 			       0553 hours: Arrival at target
 			       0556 hours: Assessment of opposition
 					   --Quantification difficult; losses will be many"
 
-"Captain's Log >"
+"Captain's Log > 0607 hours: Enemy engaged
+		 0744 hours: Approached by destroyer class vessel
+		 0745 hours: Dispense order to nearest Cpt., Andrew Frederickson
+			     --Nature: To stay the destroyer's backup
+			     --Outcome: Success
+		 0747 hours: Destroyer engaged
+		 0820 hours: Destroyer downed
+		 0830 hours: Remaining enemy ships begin retreat; pursuit initiated
+		 0830 hours: Battle assessment
+			     --Enemy losses: In excess of 3 in 4
+			     --Friendly losses: Nearing 1 in 3
+			     --Projection: Success in spite of regrettable performance
+		 0832 hours: Father attempts to make contact via The Plane, is denied" (Here, Stuart is trying to warn Aarakis about the latter's descent into dense enemy territory. Aarakis denies because he feels Stuart will only try to dissuade him from engaging the remaining Hintaacians. Stuart's knowledge must be accounted for by some correspondence with Klem)
 
-Mission 3 (): "Captain's Log >"
+Mission 3 (Projection: Indeterminate): "Captain's Log > 0834 hours: Evasive maneuvers wholly undetected amongst enemy fleet; a matter of some concern given any cursory comparisan between their engines and ours
+			       0835 hours: Distance from nearest enemy ship...20 kilometers
+			       0836 hours: Distance from nearest enemy ship...17 kilometers
+			       0837 hours: Distance from nearest enemy ship...14 kilometers
+			       0838 hours: Distance from nearest enemy ship...10 kilometers
+			       0838 hours: Distance from nearest enemy ship...7 kilometers
+			       0839 hours: Distance from nearest enemy ship...4 kilometers
+			       0839 hours: Movement detected from 4 to 9 O'clock; density disconcerting
+			       0840 hours: Distance from nearest enemy ship...1 kilometer
+			       0840 hours: Multiple bogeys emerge from overgrowth; guerillas an unforeseen contingency
+					   --Projection: Indeterminate"
 
-"Captain's Log >"
+"Captain's Log > 0841 hours: Compromised
+			     --Nature: Immediate flank formation on the part of the enemy; evasive maneuvers adopted
+		 0854 hours: Immediate disadvantage shed
+			     --First wave of enemy fighters downed
+		 0924 hours: Personnel losses estimated at 1 in 2
+		 1023 hours: Personnel losses estimated at 4 in 5
+		 1101 hours: Approximate equality holds between native and alien losses
+		 1137 hours: Battle is symetrically segmented
+			     --What dogfights still rage do so between small pockets of equally matched adversaries
+		 1150 hours: A ship coasts into range; Klem
+		 1154 hours: Words are exchanged; reason unseen; combat commenced
+		 1215 hours: Battle progress negligible; an ally approaches
+			     --Identity: Cpt. Andrew Frederickson; providence
+		 1259 hours: Klem downed
+		 1300 hours: Peace a possibility"
 
 
 
