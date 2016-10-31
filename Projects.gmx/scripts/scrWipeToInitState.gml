@@ -1,0 +1,2 @@
+input = "";
+currentState = initState;

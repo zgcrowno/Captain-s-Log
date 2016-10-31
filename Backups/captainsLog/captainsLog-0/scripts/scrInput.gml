@@ -3,8 +3,7 @@ script_execute(scrGetEnemies);
 if(keyboard_check_pressed(vk_tab)) {
     //In the future, it might be wise to configure the instance data states in such
     //a way that currentState will be decremented here.
-    currentState = initState;
-    input = "";
+    script_execute(scrWipeToInitState);
 } else if(keyboard_check_pressed(vk_backspace)) {
     if(input != "") {
         input = string_delete(input, string_length(input), 1);
@@ -477,20 +476,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "starboard") {
         if(keyboard_check_pressed(vk_enter)) {
-            if(!(requiredPPShields > currentPP) && !shieldsStarboard) {
-                shieldsStarboard = true;
-                currentState = initState;
-                input = "";
-                currentPP -= requiredPPShields;
-                currentPPShieldsStarboard += requiredPPShields;
-            } else if(shieldsStarboard) {
-                currentState = initState;
-                input = "";
-            } else {
-                currentState = initState;
-                input = "";
-                //To Do: Error to user about lack of power...
-            }
+            script_execute(scrShieldsStarboard);
         }
     } else if(input == "b") {
         if(keyboard_check_pressed(ord("O"))) {
@@ -502,20 +488,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "bow") {
         if(keyboard_check_pressed(vk_enter)) {
-            if(!(requiredPPShields > currentPP) && !shieldsBow) {
-                shieldsBow = true;
-                currentState = initState;
-                input = "";
-                currentPP -= requiredPPShields;
-                currentPPShieldsBow += requiredPPShields;
-            } else if(shieldsBow) {
-                currentState = initState;
-                input = "";
-            } else {
-                currentState = initState;
-                input = "";
-                //To Do: Error to user about lack of power...
-            }
+            script_execute(scrShieldsBow);
         }
     } else if(input == "ste") {
         if(keyboard_check_pressed(ord("R"))) {
@@ -527,20 +500,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "stern") {
         if(keyboard_check_pressed(vk_enter)) {
-            if(!(requiredPPShields > currentPP) && !shieldsStern) {
-                shieldsStern = true;
-                currentState = initState;
-                input = "";
-                currentPP -= requiredPPShields;
-                currentPPShieldsStern += requiredPPShields;
-            } else if(shieldsStern) {
-                currentState = initState;
-                input = "";
-            } else {
-                currentState = initState;
-                input = "";
-                //To Do: Error to user about lack of power...
-            }
+           script_execute(scrShieldsStern);
         }
     } else if(input == "a") {
         if(keyboard_check_pressed(ord("L"))) {
@@ -552,138 +512,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "all") {
         if(keyboard_check_pressed(vk_enter)) {
-            if(!((requiredPPShields * 4) > currentPP) && !shieldsPort && !shieldsStarboard && !shieldsBow && !shieldsStern) {
-                shieldsPort = true;
-                shieldsStarboard = true;
-                shieldsBow = true;
-                shieldsStern = true;
-                currentState = initState;
-                input = "";
-                currentPP -= (requiredPPShields * 4);
-                currentPPShieldsPort += requiredPPShields;
-                currentPPShieldsStarboard += requiredPPShields;
-                currentPPShieldsBow += requiredPPShields;
-                currentPPShieldsStern += requiredPPShields;
-            } else if(!((requiredPPShields * 3) > currentPP) && shieldsPort && !shieldsStarboard && !shieldsBow && !shieldsStern) {
-                shieldsStarboard = true;
-                shieldsBow = true;
-                shieldsStern = true;
-                currentState = initState;
-                input = "";
-                currentPP -= (requiredPPShields * 3);
-                currentPPShieldsStarboard += requiredPPShields;
-                currentPPShieldsBow += requiredPPShields;
-                currentPPShieldsStern += requiredPPShields;
-            } else if(!((requiredPPShields * 3) > currentPP) && !shieldsPort && shieldsStarboard && !shieldsBow && !shieldsStern) {
-                shieldsPort = true;
-                shieldsBow = true;
-                shieldsStern = true;
-                currentState = initState;
-                input = "";
-                currentPP -= (requiredPPShields * 3);
-                currentPPShieldsPort += requiredPPShields;
-                currentPPShieldsBow += requiredPPShields;
-                currentPPShieldsStern += requiredPPShields;
-            } else if(!((requiredPPShields * 3) > currentPP) && !shieldsPort && !shieldsStarboard && shieldsBow && !shieldsStern) {
-                shieldsPort = true;
-                shieldsStarboard = true;
-                shieldsStern = true;
-                currentState = initState;
-                input = "";
-                currentPP -= (requiredPPShields * 3);
-                currentPPShieldsPort += requiredPPShields;
-                currentPPShieldsStarboard += requiredPPShields;
-                currentPPShieldsStern += requiredPPShields;
-            } else if(!((requiredPPShields * 3) > currentPP) && !shieldsPort && !shieldsStarboard && !shieldsBow && shieldsStern) {
-                shieldsPort = true;
-                shieldsStarboard = true;
-                shieldsBow = true;
-                currentState = initState;
-                input = "";
-                currentPP -= (requiredPPShields * 3);
-                currentPPShieldsPort += requiredPPShields;
-                currentPPShieldsStarboard += requiredPPShields;
-                currentPPShieldsBow += requiredPPShields;
-            } else if(!((requiredPPShields * 2) > currentPP) && shieldsPort && shieldsStarboard && !shieldsBow && !shieldsStern) {
-                shieldsBow = true;
-                shieldsStern = true;
-                currentState = initState;
-                input = "";
-                currentPP -= (requiredPPShields * 2);
-                currentPPShieldsBow += requiredPPShields;
-                currentPPShieldsStern += requiredPPShields;
-            } else if(!((requiredPPShields * 2) > currentPP) && shieldsPort && !shieldsStarboard && shieldsBow && !shieldsStern) {
-                shieldsStarboard = true;
-                shieldsStern = true;
-                currentState = initState;
-                input = "";
-                currentPP -= (requiredPPShields * 2);
-                currentPPShieldsStarboard += requiredPPShields;
-                currentPPShieldsStern += requiredPPShields;
-            } else if(!((requiredPPShields * 2) > currentPP) && shieldsPort && !shieldsStarboard && !shieldsBow && shieldsStern) {
-                shieldsStarboard = true;
-                shieldsBow = true;
-                currentState = initState;
-                input = "";
-                currentPP -= (requiredPPShields * 2);
-                currentPPShieldsStarboard += requiredPPShields;
-                currentPPShieldsBow += requiredPPShields;
-            } else if(!((requiredPPShields * 2) > currentPP) && !shieldsPort && shieldsStarboard && shieldsBow && !shieldsStern) {
-                shieldsPort = true;
-                shieldsStern = true;
-                currentState = initState;
-                input = "";
-                currentPP -= (requiredPPShields * 2);
-                currentPPShieldsPort += requiredPPShields;
-                currentPPShieldsStern += requiredPPShields;
-            } else if(!((requiredPPShields * 2) > currentPP) && !shieldsPort && shieldsStarboard && !shieldsBow && shieldsStern) {
-                shieldsPort = true;
-                shieldsBow = true;
-                currentState = initState;
-                input = "";
-                currentPP -= (requiredPPShields * 2);
-                currentPPShieldsPort += requiredPPShields;
-                currentPPShieldsBow += requiredPPShields;
-            } else if(!((requiredPPShields * 2) > currentPP) && !shieldsPort && !shieldsStarboard && shieldsBow && shieldsStern) {
-                shieldsPort = true;
-                shieldsStarboard = true;
-                currentState = initState;
-                input = "";
-                currentPP -= (requiredPPShields * 2);
-                currentPPShieldsPort += requiredPPShields;
-                currentPPShieldsStarboard += requiredPPShields;
-            } else if(!(requiredPPShields > currentPP) && !shieldsPort && shieldsStarboard && shieldsBow && shieldsStern) {
-                shieldsPort = true;
-                currentState = initState;
-                input = "";
-                currentPP -= requiredPPShields;
-                currentPPShieldsPort += requiredPPShields;
-            } else if(!(requiredPPShields > currentPP) && shieldsPort && !shieldsStarboard && shieldsBow && shieldsStern) {
-                shieldsStarboard = true;
-                currentState = initState;
-                input = "";
-                currentPP -= requiredPPShields;
-                currentPPShieldsStarboard += requiredPPShields;
-            } else if(!(requiredPPShields > currentPP) && shieldsPort && shieldsStarboard && !shieldsBow && shieldsStern) {
-                shieldsBow = true;
-                currentState = initState;
-                input = "";
-                currentPP -= requiredPPShields;
-                currentPPShieldsBow += requiredPPShields;
-            } else if(!(requiredPPShields > currentPP) && shieldsPort && shieldsStarboard && shieldsBow && !shieldsStern) {
-                shieldsStern = true;
-                currentState = initState;
-                input = "";
-                currentPP -= requiredPPShields;
-                currentPPShieldsStern += requiredPPShields;
-            } else if(shieldsPort && shieldsStarboard && shieldsBow && shieldsStern) {
-                currentState = initState;
-                input = "";
-            } else {
-                currentState = initState;
-                input = "";
-                //To Do: Error to user about lack of power
-            }
+            script_execute(scrShieldsAll);
         }
     }
 } else if(currentState == gunState) {   //gunState checks
@@ -713,25 +542,7 @@ if(keyboard_check_pressed(vk_tab)) {
                 } else if(keyboard_check_pressed(vk_numpad9) && real(string_char_at(pawns[j].designation, i + 1)) == 9) {
                     input += "9";
                 } else if(keyboard_check_pressed(vk_enter)) {
-                    for(k = 0; k < array_length_1d(pawns); k++) {
-                        if(pawns[k].designation == input) {
-                            if(!(requiredPPGuns > currentPP) && !guns) {
-                                target = pawns[k];
-                                targetID = pawns[k].id;
-                                guns = true;
-                                currentPP -= requiredPPGuns;
-                                currentPPGuns += requiredPPGuns;
-                            } else if(guns) {
-                                target = pawns[k];
-                                targetID = pawns[k].id;
-                                guns = true;
-                            } else {
-                                //Error to user about lack of power
-                            }
-                        }
-                    }
-                    currentState = initState;
-                    input = ""; 
+                    script_execute(scrGuns); 
                 }
             }
         }
@@ -755,19 +566,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "fire") {
         if(keyboard_check_pressed(vk_enter)) {
-            currentState = initState;
-            input = "";
-            if(currentPPCannon == 0) {
-                if(currentPP >= requiredPPCannon) {
-                    currentPPCannon += requiredPPCannon;
-                    currentPP -= requiredPPCannon;
-                    script_execute(scrAttackCannon);
-                } else {
-                    //To Do: Error message to user about insufficient power
-                }
-            } else {
-                //To Do: Error message to user about cooldown
-            }
+            script_execute(scrCannon);
         }
     }
 } else if(currentState == cutState) {   //cutState checks
@@ -853,14 +652,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "guns") {
         if(keyboard_check_pressed(vk_enter)) {
-            input = "";
-            currentState = initState;
-            if(guns) {
-                guns = false;
-                bulletTimer = 0;
-                currentPPGuns = 0;
-                currentPP += requiredPPGuns;
-            }
+            script_execute(scrCutGuns);
         }
     } else if(input == "c") {
         if(keyboard_check_pressed(ord("A"))) {
@@ -884,12 +676,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "cannon") {
         if(keyboard_check_pressed(vk_enter)) {
-            if(cannon) {
-                input = "";
-                currentState = initState;
-                cannon = false;
-                currentPPCannon = 0;
-            }
+            script_execute(scrCutCannon);
         }
     } else if(input == "a") {
         if(keyboard_check_pressed(ord("L"))) {
@@ -901,90 +688,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "all") {
         if(keyboard_check_pressed(vk_enter)) {
-            input = "";
-            currentState = initState;
-            if(thrustersPort) {
-                currentPP += requiredPPThrusters;
-                currentPPThrustersPort -= requiredPPThrustersRotate;
-            }
-            if(thrustersStarboard) {
-                currentPP += requiredPPThrusters;
-                currentPPThrustersStarboard -= requiredPPThrusters;
-            }
-            if(thrustersBow) {
-                currentPP += requiredPPThrusters;
-                currentPPThrustersBow -= requiredPPThrusters;
-            }
-            if(thrustersStern) {
-                currentPP += requiredPPThrusters;
-                currentPPThrustersStern -= requiredPPThrusters;
-            }
-            if(thrustersRotateClockwise) {
-                currentPP += requiredPPThrustersRotate;
-                currentPPThrustersRotateClockwise -= requiredPPThrustersRotate;
-            }
-            if(thrustersRotateCounterclockwise) {
-                currentPP += requiredPPThrustersRotate;
-                currentPPThrustersRotateCounterclockwise -= requiredPPThrustersRotate;
-            }
-            if(shieldsPort) {
-                currentPP += requiredPPShields;
-                currentPPShieldsPort -= requiredPPShields;
-            } 
-            if(shieldsStarboard) {
-                currentPP += requiredPPShields;
-                currentPPShieldsStarboard -= requiredPPShields;
-            } 
-            if(shieldsBow) {
-                currentPP += requiredPPShields;
-                currentPPShieldsBow -= requiredPPShields;
-            }
-            if(shieldsStern) {
-                currentPP += requiredPPShields;
-                currentPPShieldsStern -= requiredPPShields;
-            }
-            if(guns) {
-                currentPP += requiredPPGuns;
-                currentPPGuns -= requiredPPGuns;
-                bulletTimer = 0;
-            }
-            if(cannon) {
-                currentPP += requiredPPCannon;
-                currentPPCannon -= requiredPPCannon;
-            }
-            thrustersPort = false;
-            thrustersStarboard = false;
-            thrustersBow = false;
-            thrustersStern = false;
-            thrustersRotateClockwise = false;
-            thrustersRotateCounterclockwise = false;
-            shieldsPort = false;
-            shieldsStarboard = false;
-            shieldsBow = false;
-            shieldsStern = false;
-            guns = false;
-            cannon = false;
-            destination.x = x;
-            destination.y = y;
-            destination.image_angle = image_angle;
-            destination.thrustersPort = thrustersPort;
-            destination.thrustersStarboard = thrustersStarboard;
-            destination.thrustersBow = thrustersBow;
-            destination.thrustersStern = thrustersStern;
-            destination.thrustersRotateClockwise = thrustersRotateClockwise;
-            destination.thrustersRotateCounterclockwise = thrustersRotateCounterclockwise;
-            destination.distanceToCover = distanceToCover;
-            destination.distanceToCoverPort = distanceToCoverPort;
-            destination.distanceToCoverStarboard = distanceToCoverStarboard;
-            destination.distanceToCoverBow = distanceToCoverBow;
-            destination.distanceToCoverStern = distanceToCoverStern;
-            destination.degreesToRotateClockwise = degreesToRotateClockwise;
-            destination.degreesToRotateCounterclockwise = degreesToRotateCounterclockwise;
-            destination.degreesRotatedClockwise = degreesRotatedClockwise;
-            destination.degreesRotatedCounterclockwise = degreesRotatedCounterclockwise;
-            destination.numActiveThrusters = numActiveThrusters;
-            destination.distanceToCoverPort += real(input);
-            destination.distanceToCover += real(input);
+            script_execute(scrCutAll);
         }
     }
 } else if(currentState == cutThrustersState) {  //cutThrustersState checks
@@ -1014,34 +718,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "port") {
         if(keyboard_check_pressed(vk_enter)) {
-            input = "";
-            currentState = initState;
-            if(thrustersPort) {
-                currentPP += requiredPPThrusters;
-                currentPPThrustersPort -= requiredPPThrusters;
-                thrustersPort = false;
-            }
-            destination.x = x;
-            destination.y = y;
-            destination.image_angle = image_angle;
-            destination.thrustersPort = thrustersPort;
-            destination.thrustersStarboard = thrustersStarboard;
-            destination.thrustersBow = thrustersBow;
-            destination.thrustersStern = thrustersStern;
-            destination.thrustersRotateClockwise = thrustersRotateClockwise;
-            destination.thrustersRotateCounterclockwise = thrustersRotateCounterclockwise;
-            destination.distanceToCover = distanceToCover;
-            destination.distanceToCoverPort = distanceToCoverPort;
-            destination.distanceToCoverStarboard = distanceToCoverStarboard;
-            destination.distanceToCoverBow = distanceToCoverBow;
-            destination.distanceToCoverStern = distanceToCoverStern;
-            destination.degreesToRotateClockwise = degreesToRotateClockwise;
-            destination.degreesToRotateCounterclockwise = degreesToRotateCounterclockwise;
-            destination.degreesRotatedClockwise = degreesRotatedClockwise;
-            destination.degreesRotatedCounterclockwise = degreesRotatedCounterclockwise;
-            destination.numActiveThrusters = numActiveThrusters;
-            destination.distanceToCoverPort += real(input);
-            destination.distanceToCover += real(input);
+            script_execute(scrCutThrustersPort);
         }
     } else if(input == "s") {
         if(keyboard_check_pressed(ord("T"))) {
@@ -1079,34 +756,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "starboard") {
         if(keyboard_check_pressed(vk_enter)) {
-            input = "";
-            currentState = initState;
-            if(thrustersStarboard) {
-                currentPP += requiredPPThrusters;
-                currentPPThrustersStarboard -= requiredPPThrusters;
-                thrustersStarboard = false;
-            }
-            destination.x = x;
-            destination.y = y;
-            destination.image_angle = image_angle;
-            destination.thrustersPort = thrustersPort;
-            destination.thrustersStarboard = thrustersStarboard;
-            destination.thrustersBow = thrustersBow;
-            destination.thrustersStern = thrustersStern;
-            destination.thrustersRotateClockwise = thrustersRotateClockwise;
-            destination.thrustersRotateCounterclockwise = thrustersRotateCounterclockwise;
-            destination.distanceToCover = distanceToCover;
-            destination.distanceToCoverPort = distanceToCoverPort;
-            destination.distanceToCoverStarboard = distanceToCoverStarboard;
-            destination.distanceToCoverBow = distanceToCoverBow;
-            destination.distanceToCoverStern = distanceToCoverStern;
-            destination.degreesToRotateClockwise = degreesToRotateClockwise;
-            destination.degreesToRotateCounterclockwise = degreesToRotateCounterclockwise;
-            destination.degreesRotatedClockwise = degreesRotatedClockwise;
-            destination.degreesRotatedCounterclockwise = degreesRotatedCounterclockwise;
-            destination.numActiveThrusters = numActiveThrusters;
-            destination.distanceToCoverPort += real(input);
-            destination.distanceToCover += real(input);
+            script_execute(scrCutThrustersStarboard);
         }
     } else if(input == "b") {
         if(keyboard_check_pressed(ord("O"))) {
@@ -1118,34 +768,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "bow") {
         if(keyboard_check_pressed(vk_enter)) {
-            input = "";
-            currentState = initState;
-            if(thrustersBow) {
-                currentPP += requiredPPThrusters;
-                currentPPThrustersBow -= requiredPPThrusters;
-                thrustersBow = false;
-            }
-            destination.x = x;
-            destination.y = y;
-            destination.image_angle = image_angle;
-            destination.thrustersPort = thrustersPort;
-            destination.thrustersStarboard = thrustersStarboard;
-            destination.thrustersBow = thrustersBow;
-            destination.thrustersStern = thrustersStern;
-            destination.thrustersRotateClockwise = thrustersRotateClockwise;
-            destination.thrustersRotateCounterclockwise = thrustersRotateCounterclockwise;
-            destination.distanceToCover = distanceToCover;
-            destination.distanceToCoverPort = distanceToCoverPort;
-            destination.distanceToCoverStarboard = distanceToCoverStarboard;
-            destination.distanceToCoverBow = distanceToCoverBow;
-            destination.distanceToCoverStern = distanceToCoverStern;
-            destination.degreesToRotateClockwise = degreesToRotateClockwise;
-            destination.degreesToRotateCounterclockwise = degreesToRotateCounterclockwise;
-            destination.degreesRotatedClockwise = degreesRotatedClockwise;
-            destination.degreesRotatedCounterclockwise = degreesRotatedCounterclockwise;
-            destination.numActiveThrusters = numActiveThrusters;
-            destination.distanceToCoverPort += real(input);
-            destination.distanceToCover += real(input);
+            script_execute(scrCutThrustersBow);
         }
     } else if(input == "ste") {
         if(keyboard_check_pressed(ord("R"))) {
@@ -1157,34 +780,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "stern") {
         if(keyboard_check_pressed(vk_enter)) {
-            input = "";
-            currentState = initState;
-            if(thrustersStern) {
-                currentPP += requiredPPThrusters;
-                currentPPThrustersStern -= requiredPPThrusters;
-                thrustersStern = false;
-            }
-            destination.x = x;
-            destination.y = y;
-            destination.image_angle = image_angle;
-            destination.thrustersPort = thrustersPort;
-            destination.thrustersStarboard = thrustersStarboard;
-            destination.thrustersBow = thrustersBow;
-            destination.thrustersStern = thrustersStern;
-            destination.thrustersRotateClockwise = thrustersRotateClockwise;
-            destination.thrustersRotateCounterclockwise = thrustersRotateCounterclockwise;
-            destination.distanceToCover = distanceToCover;
-            destination.distanceToCoverPort = distanceToCoverPort;
-            destination.distanceToCoverStarboard = distanceToCoverStarboard;
-            destination.distanceToCoverBow = distanceToCoverBow;
-            destination.distanceToCoverStern = distanceToCoverStern;
-            destination.degreesToRotateClockwise = degreesToRotateClockwise;
-            destination.degreesToRotateCounterclockwise = degreesToRotateCounterclockwise;
-            destination.degreesRotatedClockwise = degreesRotatedClockwise;
-            destination.degreesRotatedCounterclockwise = degreesRotatedCounterclockwise;
-            destination.numActiveThrusters = numActiveThrusters;
-            destination.distanceToCoverPort += real(input);
-            destination.distanceToCover += real(input);
+            script_execute(scrCutThrustersStern);
         }
     } else if(input == "a") {
         if(keyboard_check_pressed(ord("L"))) {
@@ -1196,49 +792,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "all") {
         if(keyboard_check_pressed(vk_enter)) {
-            input = "";
-            currentState = initState;
-            if(thrustersPort) {
-                currentPP += requiredPPThrusters;
-                currentPPThrustersPort -= requiredPPThrusters;
-                thrustersPort = false;
-            }
-            if(thrustersStarboard) {
-                currentPP += requiredPPThrusters;
-                currentPPThrustersStarboard -= requiredPPThrusters;
-                thrustersStarboard = false;
-            }
-            if(thrustersBow) {
-                currentPP += requiredPPThrusters;
-                currentPPThrustersBow -= requiredPPThrusters;
-                thrustersBow = false;
-            }
-            if(thrustersStern) {
-                currentPP += requiredPPThrusters;
-                currentPPThrustersStern -= requiredPPThrusters;
-                thrustersStern = false;
-            }
-            destination.x = x;
-            destination.y = y;
-            destination.image_angle = image_angle;
-            destination.thrustersPort = thrustersPort;
-            destination.thrustersStarboard = thrustersStarboard;
-            destination.thrustersBow = thrustersBow;
-            destination.thrustersStern = thrustersStern;
-            destination.thrustersRotateClockwise = thrustersRotateClockwise;
-            destination.thrustersRotateCounterclockwise = thrustersRotateCounterclockwise;
-            destination.distanceToCover = distanceToCover;
-            destination.distanceToCoverPort = distanceToCoverPort;
-            destination.distanceToCoverStarboard = distanceToCoverStarboard;
-            destination.distanceToCoverBow = distanceToCoverBow;
-            destination.distanceToCoverStern = distanceToCoverStern;
-            destination.degreesToRotateClockwise = degreesToRotateClockwise;
-            destination.degreesToRotateCounterclockwise = degreesToRotateCounterclockwise;
-            destination.degreesRotatedClockwise = degreesRotatedClockwise;
-            destination.degreesRotatedCounterclockwise = degreesRotatedCounterclockwise;
-            destination.numActiveThrusters = numActiveThrusters;
-            destination.distanceToCoverPort += real(input);
-            destination.distanceToCover += real(input);
+            script_execute(scrCutThrustersAll);
         }
     } else if(input == "r") {
         if(keyboard_check_pressed(ord("O"))) {
@@ -1304,34 +858,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "clockwise") {
         if(keyboard_check_pressed(vk_enter)) {
-            input = "";
-            currentState = initState;
-            if(thrustersRotateClockwise) {
-                currentPP += requiredPPThrustersRotate;
-                currentPPThrustersRotateClockwise -= requiredPPThrustersRotate;
-                thrustersRotateClockwise = false;
-            }
-            destination.x = x;
-            destination.y = y;
-            destination.image_angle = image_angle;
-            destination.thrustersPort = thrustersPort;
-            destination.thrustersStarboard = thrustersStarboard;
-            destination.thrustersBow = thrustersBow;
-            destination.thrustersStern = thrustersStern;
-            destination.thrustersRotateClockwise = thrustersRotateClockwise;
-            destination.thrustersRotateCounterclockwise = thrustersRotateCounterclockwise;
-            destination.distanceToCover = distanceToCover;
-            destination.distanceToCoverPort = distanceToCoverPort;
-            destination.distanceToCoverStarboard = distanceToCoverStarboard;
-            destination.distanceToCoverBow = distanceToCoverBow;
-            destination.distanceToCoverStern = distanceToCoverStern;
-            destination.degreesToRotateClockwise = degreesToRotateClockwise;
-            destination.degreesToRotateCounterclockwise = degreesToRotateCounterclockwise;
-            destination.degreesRotatedClockwise = degreesRotatedClockwise;
-            destination.degreesRotatedCounterclockwise = degreesRotatedCounterclockwise;
-            destination.numActiveThrusters = numActiveThrusters;
-            destination.distanceToCoverPort += real(input);
-            destination.distanceToCover += real(input);
+            script_execute(scrCutThrustersRotateClockwise);
         }
     } else if(input == "co") {
         if(keyboard_check_pressed(ord("U"))) {
@@ -1355,34 +882,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "counter") {
         if(keyboard_check_pressed(vk_enter)) {
-            input = "";
-            currentState = initState;
-            if(thrustersRotateCounterclockwise) {
-                currentPP += requiredPPThrustersRotate;
-                currentPPThrustersRotateCounterclockwise -= requiredPPThrustersRotate;
-                thrustersRotateCounterclockwise = false;
-            }
-            destination.x = x;
-            destination.y = y;
-            destination.image_angle = image_angle;
-            destination.thrustersPort = thrustersPort;
-            destination.thrustersStarboard = thrustersStarboard;
-            destination.thrustersBow = thrustersBow;
-            destination.thrustersStern = thrustersStern;
-            destination.thrustersRotateClockwise = thrustersRotateClockwise;
-            destination.thrustersRotateCounterclockwise = thrustersRotateCounterclockwise;
-            destination.distanceToCover = distanceToCover;
-            destination.distanceToCoverPort = distanceToCoverPort;
-            destination.distanceToCoverStarboard = distanceToCoverStarboard;
-            destination.distanceToCoverBow = distanceToCoverBow;
-            destination.distanceToCoverStern = distanceToCoverStern;
-            destination.degreesToRotateClockwise = degreesToRotateClockwise;
-            destination.degreesToRotateCounterclockwise = degreesToRotateCounterclockwise;
-            destination.degreesRotatedClockwise = degreesRotatedClockwise;
-            destination.degreesRotatedCounterclockwise = degreesRotatedCounterclockwise;
-            destination.numActiveThrusters = numActiveThrusters;
-            destination.distanceToCoverPort += real(input);
-            destination.distanceToCover += real(input);
+            script_execute(scrCutThrustersRotateCounterclockwise);
         }
     } else if(input == "a") {
         if(keyboard_check_pressed(ord("L"))) {
@@ -1394,39 +894,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "all") {
         if(keyboard_check_pressed(vk_enter)) {
-            input = "";
-            currentState = initState;
-            if(thrustersRotateClockwise) {
-                currentPP += requiredPPThrustersRotate;
-                currentPPThrustersRotateClockwise -= requiredPPThrustersRotate;
-                thrustersRotateClockwise = false;
-            }
-            if(thrustersRotateCounterclockwise) {
-                currentPP += requiredPPThrustersRotate;
-                currentPPThrustersRotateCounterclockwise -= requiredPPThrustersRotate;
-                thrustersRotateCounterclockwise = false;
-            }
-            destination.x = x;
-            destination.y = y;
-            destination.image_angle = image_angle;
-            destination.thrustersPort = thrustersPort;
-            destination.thrustersStarboard = thrustersStarboard;
-            destination.thrustersBow = thrustersBow;
-            destination.thrustersStern = thrustersStern;
-            destination.thrustersRotateClockwise = thrustersRotateClockwise;
-            destination.thrustersRotateCounterclockwise = thrustersRotateCounterclockwise;
-            destination.distanceToCover = distanceToCover;
-            destination.distanceToCoverPort = distanceToCoverPort;
-            destination.distanceToCoverStarboard = distanceToCoverStarboard;
-            destination.distanceToCoverBow = distanceToCoverBow;
-            destination.distanceToCoverStern = distanceToCoverStern;
-            destination.degreesToRotateClockwise = degreesToRotateClockwise;
-            destination.degreesToRotateCounterclockwise = degreesToRotateCounterclockwise;
-            destination.degreesRotatedClockwise = degreesRotatedClockwise;
-            destination.degreesRotatedCounterclockwise = degreesRotatedCounterclockwise;
-            destination.numActiveThrusters = numActiveThrusters;
-            destination.distanceToCoverPort += real(input);
-            destination.distanceToCover += real(input);
+            script_execute(scrCutThrustersRotateAll);
         }
     }
 } else if(currentState == cutShieldsState) {    //cutShieldsState checks
@@ -1454,13 +922,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "port") {
         if(keyboard_check_pressed(vk_enter)) {
-            input = "";
-            currentState = initState;
-            if(shieldsPort) {
-                currentPP += requiredPPShields;
-                currentPPShieldsPort -= requiredPPShields;
-                shieldsPort = false;
-            }
+            script_execute(scrCutShieldsPort);
         }
     } else if(input == "s") {
         if(keyboard_check_pressed(ord("T"))) {
@@ -1498,13 +960,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "starboard") {
         if(keyboard_check_pressed(vk_enter)) {
-            input = "";
-            currentState = initState;
-            if(shieldsStarboard) {
-                currentPP += requiredPPShields;
-                currentPPShieldsStarboard -= requiredPPShields;
-                shieldsStarboard = false;
-            }
+            script_execute(scrCutShieldsStarboard);
         }
     } else if(input == "b") {
         if(keyboard_check_pressed(ord("O"))) {
@@ -1516,13 +972,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "bow") {
         if(keyboard_check_pressed(vk_enter)) {
-            input = "";
-            currentState = initState;
-            if(shieldsBow) {
-                currentPP += requiredPPShields;
-                currentPPShieldsBow -= requiredPPShields;
-                shieldsBow = false;
-            }
+            script_execute(scrCutShieldsBow);
         }       
     } else if(input == "ste") {
         if(keyboard_check_pressed(ord("R"))) {
@@ -1534,13 +984,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "stern") {
         if(keyboard_check_pressed(vk_enter)) {
-            input = "";
-            currentState = initState;
-            if(shieldsStern) {
-                currentPP += requiredPPShields;
-                currentPPShieldsStern -= requiredPPShields;
-                shieldsStern = false;
-            }
+            script_execute(scrCutShieldsStern);
         }
     } else if(input == "a") {
         if(keyboard_check_pressed(ord("L"))) {
@@ -1552,28 +996,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "all") {
         if(keyboard_check_pressed(vk_enter)) {
-            input = "";
-            currentState = initState;
-            if(shieldsPort) {
-                currentPP += requiredPPShields;
-                currentPPShieldsPort -= requiredPPShields;
-                shieldsPort = false;
-            }
-            if(shieldsStarboard) {
-                currentPP += requiredPPShields;
-                currentPPShieldsStarboard -= requiredPPShields;
-                shieldsStarboard = false;
-            }
-            if(shieldsBow) {
-                currentPP += requiredPPShields;
-                currentPPShieldsBow -= requiredPPShields;
-                shieldsBow = false;
-            }
-            if(shieldsStern) {
-                currentPP += requiredPPShields;
-                currentPPShieldsStern -= requiredPPShields;
-                shieldsStern = false;
-            }
+            script_execute(scrCutShieldsAll);
         }
     }
 }

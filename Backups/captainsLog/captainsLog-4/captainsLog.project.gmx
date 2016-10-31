@@ -58,8 +58,19 @@
     <script>scripts\scrSpecialContactBehavior.gml</script>
     <script>scripts\scrPPManagement.gml</script>
     <script>scripts\scrGetEnemies.gml</script>
-    <script>scripts\script29.gml</script>
     <script>scripts\scrThrustersPort.gml</script>
+    <script>scripts\scrThrustersStarboard.gml</script>
+    <script>scripts\scrThrustersBow.gml</script>
+    <script>scripts\scrThrustersStern.gml</script>
+    <script>scripts\scrThrustersRotateClockwise.gml</script>
+    <script>scripts\scrThrustersRotateCounterclockwise.gml</script>
+    <script>scripts\scrShieldsPort.gml</script>
+    <script>scripts\scrShieldsStarboard.gml</script>
+    <script>scripts\scrShieldsBow.gml</script>
+    <script>scripts\scrShieldsStern.gml</script>
+    <script>scripts\scrShieldsAll.gml</script>
+    <script>scripts\scrGuns.gml</script>
+    <script>scripts\scrCannon.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntMain</font>
