@@ -1,5 +1,4 @@
-currentState = initState;
-input = "";
+script_execute(scrWipeToInitState);
 if(currentPPCannon == 0) {
     if(currentPP >= requiredPPCannon) {
         currentPPCannon += requiredPPCannon;

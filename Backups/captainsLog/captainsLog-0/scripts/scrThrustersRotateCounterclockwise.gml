@@ -1,19 +1,14 @@
 if(!(requiredPPThrustersRotate > currentPP) && !thrustersRotateCounterclockwise) {
     degreesToRotateCounterclockwise = real(input);
-    currentState = initState;
-    input = "";
     thrustersRotateCounterclockwise = true;
     currentPP -= requiredPPThrustersRotate;
     currentPPThrustersRotateCounterclockwise += requiredPPThrustersRotate;
 } else if(thrustersRotateCounterclockwise) {
     degreesToRotateCounterclockwise += real(input);
-    currentState = initState;
-    input = "";
 } else {
-    currentState = initState;
-    input = "";
     //To Do: Error to user about lack of power...
 }
+script_execute(scrWipeToInitState);
 destination.x = x;
 destination.y = y;
 destination.image_angle = image_angle;

@@ -15,5 +15,4 @@ for(k = 0; k < array_length_1d(pawns); k++) {
         }
     }
 }
-currentState = initState;
-input = "";
+script_execute(scrWipeToInitState);

@@ -1,21 +1,16 @@
 if(!(requiredPPThrusters > currentPP) && !thrustersBow) {
     distanceToCoverBow += real(input);
     distanceToCover += real(input);
-    currentState = initState;
     thrustersBow = true;
-    input = "";
     currentPP -= requiredPPThrusters;
     currentPPThrustersBow += requiredPPThrusters;
 } else if(thrustersBow) {
     distanceToCoverBow += real(input);
     distanceToCover += real(input);
-    currentState = initState;
-    input = "";
 } else {
-    currentState = initState;
-    input = "";
     //To Do: Error to user about lack of power
 }
+script_execute(scrWipeToInitState);
 destination.x = x;
 destination.y = y;
 destination.image_angle = image_angle;

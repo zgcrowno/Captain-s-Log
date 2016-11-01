@@ -1,6 +1,5 @@
+script_execute(scrWipeToInitState);
 if(cannon) {
-    input = "";
-    currentState = initState;
     cannon = false;
     currentPPCannon = 0;
 }

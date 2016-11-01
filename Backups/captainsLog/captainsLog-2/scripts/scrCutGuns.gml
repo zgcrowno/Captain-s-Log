@@ -1,5 +1,4 @@
-input = "";
-currentState = initState;
+script_execute(scrWipeToInitState);
 if(guns) {
     guns = false;
     bulletTimer = 0;

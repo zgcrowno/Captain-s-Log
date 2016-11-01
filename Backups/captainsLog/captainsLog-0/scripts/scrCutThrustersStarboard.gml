@@ -1,10 +1,9 @@
-input = "";
-currentState = initState;
 if(thrustersStarboard) {
     currentPP += requiredPPThrusters;
     currentPPThrustersStarboard -= requiredPPThrusters;
     thrustersStarboard = false;
 }
+script_execute(scrWipeToInitState);
 destination.x = x;
 destination.y = y;
 destination.image_angle = image_angle;

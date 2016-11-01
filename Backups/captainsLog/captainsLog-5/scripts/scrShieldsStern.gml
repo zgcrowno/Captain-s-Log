@@ -1,14 +1,11 @@
 if(!(requiredPPShields > currentPP) && !shieldsStern) {
     shieldsStern = true;
-    currentState = initState;
-    input = "";
+    script_execute(scrWipeToInitState);
     currentPP -= requiredPPShields;
     currentPPShieldsStern += requiredPPShields;
 } else if(shieldsStern) {
-    currentState = initState;
-    input = "";
+    script_execute(scrWipeToInitState);
 } else {
-    currentState = initState;
-    input = "";
+    script_execute(scrWipeToInitState);
     //To Do: Error to user about lack of power...
 }

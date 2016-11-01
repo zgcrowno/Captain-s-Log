@@ -71,6 +71,23 @@
     <script>scripts\scrShieldsAll.gml</script>
     <script>scripts\scrGuns.gml</script>
     <script>scripts\scrCannon.gml</script>
+    <script>scripts\scrCutGuns.gml</script>
+    <script>scripts\scrCutCannon.gml</script>
+    <script>scripts\scrCutAll.gml</script>
+    <script>scripts\scrCutThrustersPort.gml</script>
+    <script>scripts\scrCutThrustersStarboard.gml</script>
+    <script>scripts\scrCutThrustersBow.gml</script>
+    <script>scripts\scrCutThrustersStern.gml</script>
+    <script>scripts\scrCutThrustersAll.gml</script>
+    <script>scripts\scrCutThrustersRotateClockwise.gml</script>
+    <script>scripts\scrCutThrustersRotateCounterclockwise.gml</script>
+    <script>scripts\scrCutThrustersRotateAll.gml</script>
+    <script>scripts\scrCutShieldsPort.gml</script>
+    <script>scripts\scrCutShieldsStarboard.gml</script>
+    <script>scripts\scrCutShieldsBow.gml</script>
+    <script>scripts\scrCutShieldsStern.gml</script>
+    <script>scripts\scrCutShieldsAll.gml</script>
+    <script>scripts\scrWipeToInitState.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntMain</font>

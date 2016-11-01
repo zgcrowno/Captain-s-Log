@@ -1,5 +1,4 @@
-input = "";
-currentState = initState;
+script_execute(scrWipeToInitState);
 if(shieldsPort) {
     currentPP += requiredPPShields;
     currentPPShieldsPort -= requiredPPShields;
