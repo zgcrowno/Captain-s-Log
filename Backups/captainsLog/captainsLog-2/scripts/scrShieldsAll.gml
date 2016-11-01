@@ -1,4 +1,3 @@
-script_execute(scrWipeToInitState);
 if(!((requiredPPShields * 4) > currentPP) && !shieldsPort && !shieldsStarboard && !shieldsBow && !shieldsStern) {
     shieldsPort = true;
     shieldsStarboard = true;
@@ -96,3 +95,4 @@ if(!((requiredPPShields * 4) > currentPP) && !shieldsPort && !shieldsStarboard &
 } else if(!(shieldsPort && shieldsStarboard && shieldsBow && shieldsStern)) {
     //To Do: Error to user about lack of power...
 }
+script_execute(scrWipeToInitState);

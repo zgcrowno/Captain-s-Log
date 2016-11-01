@@ -1,4 +1,3 @@
-script_execute(scrWipeToInitState);
 if(thrustersPort) {
     currentPP += requiredPPThrusters;
     currentPPThrustersPort -= requiredPPThrustersRotate;
@@ -48,6 +47,7 @@ if(cannon) {
     currentPP += requiredPPCannon;
     currentPPCannon -= requiredPPCannon;
 }
+script_execute(scrWipeToInitState);
 thrustersPort = false;
 thrustersStarboard = false;
 thrustersBow = false;

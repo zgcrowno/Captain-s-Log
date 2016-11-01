@@ -1,16 +1,3 @@
-script_execute(scrWipeToInitState);
-if(!(requiredPPThrusters > currentPP) && !thrustersBow) {
-    distanceToCoverBow += real(input);
-    distanceToCover += real(input);
-    thrustersBow = true;
-    currentPP -= requiredPPThrusters;
-    currentPPThrustersBow += requiredPPThrusters;
-} else if(thrustersBow) {
-    distanceToCoverBow += real(input);
-    distanceToCover += real(input);
-} else {
-    //To Do: Error to user about lack of power
-}
 destination.x = x;
 destination.y = y;
 destination.image_angle = image_angle;

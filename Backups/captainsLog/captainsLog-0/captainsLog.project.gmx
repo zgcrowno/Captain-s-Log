@@ -30,12 +30,10 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scrInput.gml</script>
-    <script>scripts\scrShipData.gml</script>
     <script>scripts\scrStateManagement.gml</script>
     <script>scripts\scrMovement.gml</script>
     <script>scripts\scrDebug.gml</script>
     <script>scripts\scrNumActiveThrustersManagement.gml</script>
-    <script>scripts\scrDestinationData.gml</script>
     <script>scripts\scrDrawGUI.gml</script>
     <script>scripts\scrPawnData.gml</script>
     <script>scripts\scrPawnBehavior.gml</script>
@@ -88,6 +86,11 @@
     <script>scripts\scrCutShieldsStern.gml</script>
     <script>scripts\scrCutShieldsAll.gml</script>
     <script>scripts\scrWipeToInitState.gml</script>
+    <script>scripts\scrDestination.gml</script>
+    <scripts name="objectData">
+      <script>scripts\scrShipData.gml</script>
+      <script>scripts\scrDestinationData.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntMain</font>

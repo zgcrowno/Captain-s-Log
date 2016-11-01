@@ -88,6 +88,7 @@
     <script>scripts\scrCutShieldsStern.gml</script>
     <script>scripts\scrCutShieldsAll.gml</script>
     <script>scripts\scrWipeToInitState.gml</script>
+    <script>scripts\scrDestination.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntMain</font>

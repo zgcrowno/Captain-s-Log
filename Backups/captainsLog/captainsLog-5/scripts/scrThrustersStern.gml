@@ -1,16 +1,14 @@
+script_execute(scrWipeToInitState);
 if(!(requiredPPThrusters > currentPP) && !thrustersStern) {
     distanceToCoverStern += real(input);
     distanceToCover += real(input);
     thrustersStern = true;
-    script_execute(scrWipeToInitState);
     currentPP -= requiredPPThrusters;
     currentPPThrustersStern += requiredPPThrusters;
 } else if(thrustersStern) {
     distanceToCoverStern += real(input);
     distanceToCover += real(input);
-    script_execute(scrWipeToInitState);
 } else {
-    script_execute(scrWipeToInitState);
     //To Do: Error to user about lack of power
 }
 destination.x = x;

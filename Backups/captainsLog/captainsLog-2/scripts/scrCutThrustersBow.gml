@@ -1,9 +1,9 @@
-script_execute(scrWipeToInitState);
 if(thrustersBow) {
     currentPP += requiredPPThrusters;
     currentPPThrustersBow -= requiredPPThrusters;
     thrustersBow = false;
 }
+script_execute(scrWipeToInitState);
 destination.x = x;
 destination.y = y;
 destination.image_angle = image_angle;

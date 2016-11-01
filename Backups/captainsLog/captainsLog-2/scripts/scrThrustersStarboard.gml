@@ -1,4 +1,3 @@
-script_execute(scrWipeToInitState);
 if(!(requiredPPThrusters > currentPP) && !thrustersStarboard) {
     distanceToCoverStarboard += real(input);
     distanceToCover += real(input);
@@ -11,6 +10,7 @@ if(!(requiredPPThrusters > currentPP) && !thrustersStarboard) {
 } else {
     //To Do: Error to user about lack of power
 }
+script_execute(scrWipeToInitState);
 destination.x = x;
 destination.y = y;
 destination.image_angle = image_angle;

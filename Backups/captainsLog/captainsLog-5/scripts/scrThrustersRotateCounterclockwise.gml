@@ -1,14 +1,12 @@
+script_execute(scrWipeToInitState);
 if(!(requiredPPThrustersRotate > currentPP) && !thrustersRotateCounterclockwise) {
     degreesToRotateCounterclockwise = real(input);
-    script_execute(scrWipeToInitState);
     thrustersRotateCounterclockwise = true;
     currentPP -= requiredPPThrustersRotate;
     currentPPThrustersRotateCounterclockwise += requiredPPThrustersRotate;
 } else if(thrustersRotateCounterclockwise) {
     degreesToRotateCounterclockwise += real(input);
-    script_execute(scrWipeToInitState);
 } else {
-    script_execute(scrWipeToInitState);
     //To Do: Error to user about lack of power...
 }
 destination.x = x;

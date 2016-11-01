@@ -1,4 +1,3 @@
-script_execute(scrWipeToInitState);
 if(!(requiredPPThrustersRotate > currentPP) && !thrustersRotateClockwise) {
     degreesToRotateClockwise = real(input);
     thrustersRotateClockwise = true;
@@ -9,6 +8,7 @@ if(!(requiredPPThrustersRotate > currentPP) && !thrustersRotateClockwise) {
 } else {
     //To Do: Error to user about lack of power...
 }
+script_execute(scrWipeToInitState);
 destination.x = x;
 destination.y = y;
 destination.image_angle = image_angle;
