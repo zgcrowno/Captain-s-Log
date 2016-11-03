@@ -1,4 +1,3 @@
-script_execute(scrWipeToInitState);
 if(currentPPCannon == 0) {
     if(currentPP >= requiredPPCannon) {
         currentPPCannon += requiredPPCannon;
@@ -10,3 +9,4 @@ if(currentPPCannon == 0) {
 } else {
     //To Do: Error message to user about cooldown
 }
+script_execute(scrWipeToInitState);

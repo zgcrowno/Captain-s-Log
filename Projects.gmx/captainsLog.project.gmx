@@ -32,13 +32,15 @@
     <scripts name="objectData">
       <script>scripts\scrShipData.gml</script>
       <script>scripts\scrDestinationData.gml</script>
-      <script>scripts\scrPawnData.gml</script>
+      <script>scripts\scrEnemyData.gml</script>
       <script>scripts\scrBulletData.gml</script>
       <script>scripts\scrEnemyDesignationData.gml</script>
       <script>scripts\scrHomingBulletData.gml</script>
       <script>scripts\scrHud2Data.gml</script>
       <script>scripts\scrSpecialData.gml</script>
       <script>scripts\scrSpecialContactData.gml</script>
+      <script>scripts\scrRicecakeData.gml</script>
+      <script>scripts\scrPawnData.gml</script>
     </scripts>
     <scripts name="input">
       <script>scripts\scrInput.gml</script>
@@ -78,7 +80,7 @@
     <scripts name="behavior">
       <script>scripts\scrBulletBehavior.gml</script>
       <script>scripts\scrSpecialContactBehavior.gml</script>
-      <script>scripts\scrPawnBehavior.gml</script>
+      <script>scripts\scrEnemyBehavior.gml</script>
       <script>scripts\scrHomingBulletBehavior.gml</script>
       <script>scripts\scrSpecialBehavior.gml</script>
     </scripts>
@@ -86,6 +88,7 @@
       <script>scripts\scrDrawGUI.gml</script>
       <script>scripts\scrDrawDesignation.gml</script>
       <script>scripts\scrDrawInput.gml</script>
+      <script>scripts\scrTypingPrompt.gml</script>
     </scripts>
     <scripts name="util">
       <script>scripts\scrGetEnemies.gml</script>
@@ -137,6 +140,8 @@
     <object>objects\objHud2</object>
     <object>objects\objSpecialRiceCake</object>
     <object>objects\objSpecialRiceCakeContact</object>
+    <object>objects\objPlayerShip</object>
+    <object>objects\objEnemyShip</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTest2</room>

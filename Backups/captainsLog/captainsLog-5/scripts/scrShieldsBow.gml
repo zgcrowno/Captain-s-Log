@@ -1,4 +1,3 @@
-script_execute(scrWipeToInitState);
 if(!(requiredPPShields > currentPP) && !shieldsBow) {
     shieldsBow = true;
     currentPP -= requiredPPShields;
@@ -6,3 +5,4 @@ if(!(requiredPPShields > currentPP) && !shieldsBow) {
 } else if(!shieldsBow) {
     //To Do: Error to user about lack of power...
 }
+script_execute(scrWipeToInitState);

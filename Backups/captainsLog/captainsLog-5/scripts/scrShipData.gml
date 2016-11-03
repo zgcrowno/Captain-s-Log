@@ -57,22 +57,22 @@ guns = false;
 cannon = false;
 
 //Maximum overall health and power of the ship
-maxHP = 100;
-maxPP = 100;
+maxHP = 0;
+maxPP = 0;
 
 //Current overall health and power of the ship
 currentHP = maxHP;
 currentPP = maxPP;
 
 //Maximum health of the ship's individual components
-maxHPThrustersPort = 100;
-maxHPThrustersStarboard = 100;
-maxHPThrustersBow = 100;
-maxHPThrustersStern = 100;
-maxHPShieldsPort = 100;
-maxHPShieldsStarboard = 100;
-maxHPShieldsBow = 100;
-maxHPShieldsStern = 100;
+maxHPThrustersPort = 0;
+maxHPThrustersStarboard = 0;
+maxHPThrustersBow = 0;
+maxHPThrustersStern = 0;
+maxHPShieldsPort = 0;
+maxHPShieldsStarboard = 0;
+maxHPShieldsBow = 0;
+maxHPShieldsStern = 0;
 
 //Current health of the ship's individual components
 currentHPThrustersPort = maxHPThrustersPort;
@@ -112,19 +112,19 @@ percentPPGuns = 0;
 percentPPCannon = 0; 
 
 //Ship speed
-shipSpeed = 0.5;
+shipSpeed = 0;
 
 //Bullet speed
-bulletSpeed = 0.75;
+bulletSpeed = 0;
 
 //Special speed
-specialSpeed = 0.5;
+specialSpeed = 0;
 
 //Rate at which the cannon cools down
-cannonCooldownRate = 0.07;
+cannonCooldownRate = 0;
 
 //Ship angle speed
-shipAngleSpeed = 0.5;
+shipAngleSpeed = 0;
 
 //Number of thrusters activated
 numActiveThrusters = 0;
@@ -179,3 +179,22 @@ shieldBow.visible = false;
 shieldStern = instance_create(x, y, objShieldStern);
 shieldStern.depth = -1;
 shieldStern.visible = false;
+
+//Ship-specific data
+maxHPRicecake = 100;
+maxPPRicecake = 100;
+
+maxHPThrustersPortRicecake = 100;
+maxHPThrustersStarboardRicecake = 100;
+maxHPThrustersBowRicecake = 100;
+maxHPThrustersSternRicecake = 100;
+maxHPShieldsPortRicecake = 100;
+maxHPShieldsStarboardRicecake = 100;
+maxHPShieldsBowRicecake = 100;
+maxHPShieldsSternRicecake = 100;
+
+shipSpeedRicecake = 0.5
+bulletSpeedRicecake = 0.75
+specialSpeedRicecake = 0.5
+cannonCooldownRateRicecake = 0.07
+shipAngleSpeedRicecake = 0.5

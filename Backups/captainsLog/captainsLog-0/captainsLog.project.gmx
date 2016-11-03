@@ -29,67 +29,90 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scrInput.gml</script>
-    <script>scripts\scrStateManagement.gml</script>
-    <script>scripts\scrMovement.gml</script>
-    <script>scripts\scrDebug.gml</script>
-    <script>scripts\scrNumActiveThrustersManagement.gml</script>
-    <script>scripts\scrDrawGUI.gml</script>
-    <script>scripts\scrPawnData.gml</script>
-    <script>scripts\scrPawnBehavior.gml</script>
-    <script>scripts\scrBulletBehavior.gml</script>
-    <script>scripts\scrBulletData.gml</script>
-    <script>scripts\scrShieldManagement.gml</script>
-    <script>scripts\scrEnemyDesignationData.gml</script>
-    <script>scripts\scrHomingBulletData.gml</script>
-    <script>scripts\scrHomingBulletBehavior.gml</script>
-    <script>scripts\scrAttackGuns.gml</script>
-    <script>scripts\scrDrawDesignation.gml</script>
-    <script>scripts\scrDrawInput.gml</script>
-    <script>scripts\scrPlaceDestination.gml</script>
-    <script>scripts\scrHud2Data.gml</script>
-    <script>scripts\scrCannonCooldown.gml</script>
-    <script>scripts\scrAttackCannon.gml</script>
-    <script>scripts\scrSpecialData.gml</script>
-    <script>scripts\scrSpecialBehavior.gml</script>
-    <script>scripts\scrSpecialContactData.gml</script>
-    <script>scripts\scrSpecialContactBehavior.gml</script>
-    <script>scripts\scrPPManagement.gml</script>
-    <script>scripts\scrGetEnemies.gml</script>
-    <script>scripts\scrThrustersPort.gml</script>
-    <script>scripts\scrThrustersStarboard.gml</script>
-    <script>scripts\scrThrustersBow.gml</script>
-    <script>scripts\scrThrustersStern.gml</script>
-    <script>scripts\scrThrustersRotateClockwise.gml</script>
-    <script>scripts\scrThrustersRotateCounterclockwise.gml</script>
-    <script>scripts\scrShieldsPort.gml</script>
-    <script>scripts\scrShieldsStarboard.gml</script>
-    <script>scripts\scrShieldsBow.gml</script>
-    <script>scripts\scrShieldsStern.gml</script>
-    <script>scripts\scrShieldsAll.gml</script>
-    <script>scripts\scrGuns.gml</script>
-    <script>scripts\scrCannon.gml</script>
-    <script>scripts\scrCutGuns.gml</script>
-    <script>scripts\scrCutCannon.gml</script>
-    <script>scripts\scrCutAll.gml</script>
-    <script>scripts\scrCutThrustersPort.gml</script>
-    <script>scripts\scrCutThrustersStarboard.gml</script>
-    <script>scripts\scrCutThrustersBow.gml</script>
-    <script>scripts\scrCutThrustersStern.gml</script>
-    <script>scripts\scrCutThrustersAll.gml</script>
-    <script>scripts\scrCutThrustersRotateClockwise.gml</script>
-    <script>scripts\scrCutThrustersRotateCounterclockwise.gml</script>
-    <script>scripts\scrCutThrustersRotateAll.gml</script>
-    <script>scripts\scrCutShieldsPort.gml</script>
-    <script>scripts\scrCutShieldsStarboard.gml</script>
-    <script>scripts\scrCutShieldsBow.gml</script>
-    <script>scripts\scrCutShieldsStern.gml</script>
-    <script>scripts\scrCutShieldsAll.gml</script>
-    <script>scripts\scrWipeToInitState.gml</script>
-    <script>scripts\scrDestination.gml</script>
     <scripts name="objectData">
       <script>scripts\scrShipData.gml</script>
       <script>scripts\scrDestinationData.gml</script>
+      <script>scripts\scrEnemyData.gml</script>
+      <script>scripts\scrBulletData.gml</script>
+      <script>scripts\scrEnemyDesignationData.gml</script>
+      <script>scripts\scrHomingBulletData.gml</script>
+      <script>scripts\scrHud2Data.gml</script>
+      <script>scripts\scrSpecialData.gml</script>
+      <script>scripts\scrSpecialContactData.gml</script>
+      <script>scripts\scrRicecakeData.gml</script>
+      <script>scripts\scrPawnData.gml</script>
+    </scripts>
+    <scripts name="input">
+      <script>scripts\scrInput.gml</script>
+      <scripts name="inputManipulation">
+        <script>scripts\scrDestination.gml</script>
+        <script>scripts\scrCutShieldsAll.gml</script>
+        <script>scripts\scrCutShieldsStern.gml</script>
+        <script>scripts\scrCutShieldsBow.gml</script>
+        <script>scripts\scrCutShieldsStarboard.gml</script>
+        <script>scripts\scrCutShieldsPort.gml</script>
+        <script>scripts\scrCutThrustersRotateAll.gml</script>
+        <script>scripts\scrCutThrustersRotateCounterclockwise.gml</script>
+        <script>scripts\scrCutThrustersRotateClockwise.gml</script>
+        <script>scripts\scrCutThrustersAll.gml</script>
+        <script>scripts\scrCutThrustersStern.gml</script>
+        <script>scripts\scrCutThrustersBow.gml</script>
+        <script>scripts\scrCutThrustersStarboard.gml</script>
+        <script>scripts\scrCutThrustersPort.gml</script>
+        <script>scripts\scrCutAll.gml</script>
+        <script>scripts\scrCutCannon.gml</script>
+        <script>scripts\scrCutGuns.gml</script>
+        <script>scripts\scrCannon.gml</script>
+        <script>scripts\scrGuns.gml</script>
+        <script>scripts\scrShieldsAll.gml</script>
+        <script>scripts\scrShieldsStern.gml</script>
+        <script>scripts\scrShieldsBow.gml</script>
+        <script>scripts\scrShieldsStarboard.gml</script>
+        <script>scripts\scrShieldsPort.gml</script>
+        <script>scripts\scrThrustersRotateCounterclockwise.gml</script>
+        <script>scripts\scrThrustersRotateClockwise.gml</script>
+        <script>scripts\scrThrustersStern.gml</script>
+        <script>scripts\scrThrustersBow.gml</script>
+        <script>scripts\scrThrustersStarboard.gml</script>
+        <script>scripts\scrThrustersPort.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="behavior">
+      <script>scripts\scrBulletBehavior.gml</script>
+      <script>scripts\scrSpecialContactBehavior.gml</script>
+      <script>scripts\scrEnemyBehavior.gml</script>
+      <script>scripts\scrHomingBulletBehavior.gml</script>
+      <script>scripts\scrSpecialBehavior.gml</script>
+    </scripts>
+    <scripts name="gui">
+      <script>scripts\scrDrawGUI.gml</script>
+      <script>scripts\scrDrawDesignation.gml</script>
+      <script>scripts\scrDrawInput.gml</script>
+      <script>scripts\scrTypingPrompt.gml</script>
+    </scripts>
+    <scripts name="util">
+      <script>scripts\scrGetEnemies.gml</script>
+      <script>scripts\scrWipeToInitState.gml</script>
+    </scripts>
+    <scripts name="abilities">
+      <script>scripts\scrAttackGuns.gml</script>
+      <script>scripts\scrAttackCannon.gml</script>
+      <scripts name="cooldown">
+        <script>scripts\scrCannonCooldown.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="stateManagement">
+      <script>scripts\scrStateManagement.gml</script>
+      <script>scripts\scrShieldManagement.gml</script>
+      <script>scripts\scrNumActiveThrustersManagement.gml</script>
+      <script>scripts\scrPPManagement.gml</script>
+    </scripts>
+    <scripts name="movement">
+      <script>scripts\scrMovement.gml</script>
+      <script>scripts\scrPlaceDestination.gml</script>
+    </scripts>
+    <scripts name="debugging">
+      <script>scripts\scrDebug.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -117,6 +140,8 @@
     <object>objects\objHud2</object>
     <object>objects\objSpecialRiceCake</object>
     <object>objects\objSpecialRiceCakeContact</object>
+    <object>objects\objPlayerShip</object>
+    <object>objects\objEnemyShip</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTest2</room>
