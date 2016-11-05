@@ -1,6 +1,3 @@
-//The destination object
-destination = instance_find(objDestination, 0);
-
 //The HUD object
 hud = instance_find(objHud2, 0);
 

@@ -2,6 +2,9 @@ event_inherited();
 maxHP =  maxHPRicecake;
 maxPP = maxPPRicecake;
 
+currentHP = maxHP;
+currentPP = maxPP;
+
 maxHPThrustersPort = maxHPThrustersPortRicecake;
 maxHPThrustersStarboard = maxHPThrustersStarboardRicecake;
 maxHPThrustersBow = maxHPThrustersBowRicecake;

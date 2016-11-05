@@ -1,8 +1,11 @@
-//The destination object
-destination = instance_find(objDestination, 0);
-
 //The HUD object
 hud = instance_find(objHud2, 0);
+
+//The Action Queue
+actionQueue = ds_queue_create();
+
+//The Distance the Ship Moves per Turn
+moveDistance = 20;
 
 //Hud States
 initState = 0;
@@ -24,18 +27,6 @@ cutThrustersRotateState = 15;
 cannonChargeState = 16;
 currentState = initState;
 
-//The enemy the player is currently targeting
-target = null;
-
-//The id of the enemy the player is currently targeting
-targetID = 0;
-
-//Timer counting down to next shot fired
-bulletTimer = 0;
-
-//Timer counting down to availability of next cannon shot
-specialTimer = 0;
-
 //Thruster states
 thrustersPort = false;
 thrustersStarboard = false;
@@ -49,12 +40,6 @@ shieldsPort = false;
 shieldsStarboard = false;
 shieldsBow = false;
 shieldsStern = false;
-
-//Gun state
-guns = false;
-
-//Cannon state
-cannon = false;
 
 //Maximum overall health and power of the ship
 maxHP = 0;
@@ -109,48 +94,13 @@ currentPPCannon = 0;
 percentPPThrusters = 0;
 percentPPShields = 0;
 percentPPGuns = 0;
-percentPPCannon = 0; 
-
-//Ship speed
-shipSpeed = 0;
-
-//Bullet speed
-bulletSpeed = 0;
-
-//Special speed
-specialSpeed = 0;
+percentPPCannon = 0;
 
 //Rate at which the cannon cools down
 cannonCooldownRate = 0;
 
-//Ship angle speed
-shipAngleSpeed = 0;
-
 //Number of thrusters activated
 numActiveThrusters = 0;
-
-//Distance ship is to travel
-distanceToCover = 0;
-
-//Distance ship is to travel by port thrusters
-distanceToCoverPort = 0;
-
-//Distance ship is to travel by starboard thrusters
-distanceToCoverStarboard = 0;
-
-//Distance ship is to travel by bow thrusters
-distanceToCoverBow = 0;
-
-//Distance ship is to travel by stern thrusters
-distanceToCoverStern = 0;
-
-//Degrees ship is to rotate
-degreesToRotateClockwise = 0;
-degreesToRotateCounterclockwise = 0;
-
-//Degrees ship has rotated
-degreesRotatedClockwise = 0;
-degreesRotatedCounterclockwise = 0;
 
 //String representing user input
 input = "";
@@ -161,24 +111,6 @@ shieldsText = "shields";
 gunsText = "guns";
 cannonText = "cannon";
 cutText = "cut";
-
-//Horizontal and vertical ship speeds
-xspeed = 0;
-yspeed = 0;
-
-//Shield objects associated with the ship
-shieldPort = instance_create(x, y, objShieldPort);
-shieldPort.depth = -1;
-shieldPort.visible = false;
-shieldStarboard = instance_create(x, y, objShieldStarboard);
-shieldStarboard.depth = -1;
-shieldStarboard.visible = false;
-shieldBow = instance_create(x, y, objShieldBow);
-shieldBow.depth = -1;
-shieldBow.visible = false;
-shieldStern = instance_create(x, y, objShieldStern);
-shieldStern.depth = -1;
-shieldStern.visible = false;
 
 //Ship-specific data
 maxHPRicecake = 100;

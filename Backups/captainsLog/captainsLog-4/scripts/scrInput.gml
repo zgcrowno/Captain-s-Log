@@ -516,30 +516,30 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     }
 } else if(currentState == gunState) {   //gunState checks
-    for(i = 0; i <= maxPawnsDesignationLength; i++) {
-        for(j = 0; j < array_length_1d(pawns); j++) {
+    for(i = 0; i <= maxEnemiesDesignationLength; i++) {
+        for(j = 0; j < array_length_1d(enemies); j++) {
             if(string_length(input) == i) {
-                if(keyboard_check_pressed(ord(string_char_at(string_upper(pawns[j].designation), i + 1)))) {
-                    input += string_char_at(pawns[j].designation, i + 1);
-                } else if(keyboard_check_pressed(vk_numpad0) && real(string_char_at(pawns[j].designation, i + 1)) == 0) {
+                if(keyboard_check_pressed(ord(string_char_at(string_upper(enemies[j].designation), i + 1)))) {
+                    input += string_char_at(enemies[j].designation, i + 1);
+                } else if(keyboard_check_pressed(vk_numpad0) && real(string_char_at(enemies[j].designation, i + 1)) == 0) {
                     input += "0";
-                } else if(keyboard_check_pressed(vk_numpad1) && real(string_char_at(pawns[j].designation, i + 1)) == 1) {
+                } else if(keyboard_check_pressed(vk_numpad1) && real(string_char_at(enemies[j].designation, i + 1)) == 1) {
                     input += "1";
-                } else if(keyboard_check_pressed(vk_numpad2) && real(string_char_at(pawns[j].designation, i + 1)) == 2) {
+                } else if(keyboard_check_pressed(vk_numpad2) && real(string_char_at(enemies[j].designation, i + 1)) == 2) {
                     input += "2";
-                } else if(keyboard_check_pressed(vk_numpad3) && real(string_char_at(pawns[j].designation, i + 1)) == 3) {
+                } else if(keyboard_check_pressed(vk_numpad3) && real(string_char_at(enemies[j].designation, i + 1)) == 3) {
                     input += "3";
-                } else if(keyboard_check_pressed(vk_numpad4) && real(string_char_at(pawns[j].designation, i + 1)) == 4) {
+                } else if(keyboard_check_pressed(vk_numpad4) && real(string_char_at(enemies[j].designation, i + 1)) == 4) {
                     input += "4";
-                } else if(keyboard_check_pressed(vk_numpad5) && real(string_char_at(pawns[j].designation, i + 1)) == 5) {
+                } else if(keyboard_check_pressed(vk_numpad5) && real(string_char_at(enemies[j].designation, i + 1)) == 5) {
                     input += "5";
-                } else if(keyboard_check_pressed(vk_numpad6) && real(string_char_at(pawns[j].designation, i + 1)) == 6) {
+                } else if(keyboard_check_pressed(vk_numpad6) && real(string_char_at(enemies[j].designation, i + 1)) == 6) {
                     input += "6";
-                } else if(keyboard_check_pressed(vk_numpad7) && real(string_char_at(pawns[j].designation, i + 1)) == 7) {
+                } else if(keyboard_check_pressed(vk_numpad7) && real(string_char_at(enemies[j].designation, i + 1)) == 7) {
                     input += "7";
-                } else if(keyboard_check_pressed(vk_numpad8) && real(string_char_at(pawns[j].designation, i + 1)) == 8) {
+                } else if(keyboard_check_pressed(vk_numpad8) && real(string_char_at(enemies[j].designation, i + 1)) == 8) {
                     input += "8";
-                } else if(keyboard_check_pressed(vk_numpad9) && real(string_char_at(pawns[j].designation, i + 1)) == 9) {
+                } else if(keyboard_check_pressed(vk_numpad9) && real(string_char_at(enemies[j].designation, i + 1)) == 9) {
                     input += "9";
                 } else if(keyboard_check_pressed(vk_enter)) {
                     script_execute(scrGuns); 

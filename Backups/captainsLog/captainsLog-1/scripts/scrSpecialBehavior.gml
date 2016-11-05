@@ -11,8 +11,8 @@ if(x > hud.playAreaRightBound + (sprite_width / 2)
 }
 
 //Detect interaction with enemies
-for(i = 0; i < array_length_1d(pawns); i++) {
-    if(position_meeting(x, y, pawns[i])) {
+for(i = 0; i < array_length_1d(enemies); i++) {
+    if(position_meeting(x, y, enemies[i])) {
         instance_create(x, y, objSpecialRiceCakeContact);
         instance_destroy();
     }

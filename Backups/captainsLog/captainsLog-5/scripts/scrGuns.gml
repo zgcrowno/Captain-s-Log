@@ -1,14 +1,14 @@
-for(k = 0; k < array_length_1d(pawns); k++) {
-    if(pawns[k].designation == input) {
+for(k = 0; k < array_length_1d(enemies); k++) {
+    if(enemies[k].designation == input) {
         if(!(requiredPPGuns > currentPP) && !guns) {
-            target = pawns[k];
-            targetID = pawns[k].id;
+            target = enemies[k];
+            targetID = enemies[k].id;
             guns = true;
             currentPP -= requiredPPGuns;
             currentPPGuns += requiredPPGuns;
         } else if(guns) {
-            target = pawns[k];
-            targetID = pawns[k].id;
+            target = enemies[k];
+            targetID = enemies[k].id;
             guns = true;
         } else {
             //Error to user about lack of power

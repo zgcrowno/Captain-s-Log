@@ -6,25 +6,14 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprRiceCake</sprite>
-    <sprite>sprites\sprHud</sprite>
-    <sprite>sprites\sprPawn</sprite>
     <sprite>sprites\sprBullet</sprite>
-    <sprite>sprites\sprShield</sprite>
-    <sprite>sprites\sprShieldPort</sprite>
-    <sprite>sprites\sprShieldStarboard</sprite>
-    <sprite>sprites\sprShieldBow</sprite>
-    <sprite>sprites\sprShieldStern</sprite>
     <sprite>sprites\sprHomingBullet</sprite>
     <sprite>sprites\sprTypingPrompt</sprite>
-    <sprite>sprites\sprDestination</sprite>
-    <sprite>sprites\sprCoordinate</sprite>
-    <sprite>sprites\sprCoordinateSmall</sprite>
-    <sprite>sprites\sprCoordinateY</sprite>
-    <sprite>sprites\sprCoordinateYSmall</sprite>
     <sprite>sprites\sprHud2</sprite>
     <sprite>sprites\sprSpecialRiceCake</sprite>
     <sprite>sprites\sprSpecialRiceCakeContact</sprite>
+    <sprite>sprites\sprite19</sprite>
+    <sprite>sprites\sprRiceCake</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -32,7 +21,7 @@
     <scripts name="objectData">
       <script>scripts\scrShipData.gml</script>
       <script>scripts\scrDestinationData.gml</script>
-      <script>scripts\scrPawnData.gml</script>
+      <script>scripts\scrEnemyData.gml</script>
       <script>scripts\scrBulletData.gml</script>
       <script>scripts\scrEnemyDesignationData.gml</script>
       <script>scripts\scrHomingBulletData.gml</script>
@@ -40,6 +29,7 @@
       <script>scripts\scrSpecialData.gml</script>
       <script>scripts\scrSpecialContactData.gml</script>
       <script>scripts\scrRicecakeData.gml</script>
+      <script>scripts\scrPawnData.gml</script>
     </scripts>
     <scripts name="input">
       <script>scripts\scrInput.gml</script>
@@ -79,13 +69,12 @@
     <scripts name="behavior">
       <script>scripts\scrBulletBehavior.gml</script>
       <script>scripts\scrSpecialContactBehavior.gml</script>
-      <script>scripts\scrPawnBehavior.gml</script>
+      <script>scripts\scrEnemyBehavior.gml</script>
       <script>scripts\scrHomingBulletBehavior.gml</script>
       <script>scripts\scrSpecialBehavior.gml</script>
     </scripts>
     <scripts name="gui">
       <script>scripts\scrDrawGUI.gml</script>
-      <script>scripts\scrDrawDesignation.gml</script>
       <script>scripts\scrDrawInput.gml</script>
       <script>scripts\scrTypingPrompt.gml</script>
     </scripts>
@@ -108,7 +97,6 @@
     </scripts>
     <scripts name="movement">
       <script>scripts\scrMovement.gml</script>
-      <script>scripts\scrPlaceDestination.gml</script>
     </scripts>
     <scripts name="debugging">
       <script>scripts\scrDebug.gml</script>
@@ -135,11 +123,11 @@
     <object>objects\objHomingBullet</object>
     <object>objects\objInput</object>
     <object>objects\objTypingPrompt</object>
-    <object>objects\objDestination</object>
     <object>objects\objHud2</object>
     <object>objects\objSpecialRiceCake</object>
     <object>objects\objSpecialRiceCakeContact</object>
     <object>objects\objPlayerShip</object>
+    <object>objects\objEnemyShip</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTest2</room>

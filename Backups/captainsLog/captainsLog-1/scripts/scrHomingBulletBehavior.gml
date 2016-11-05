@@ -6,9 +6,9 @@ if(instance_exists(player.targetID) && prevTarget == player.target) {
     y += (y - yprevious);
 }
 
-for(i = 0; i < array_length_1d(pawns); i++) {
-    if(position_meeting(x, y, pawns[i])) {
-        pawns[i].currentHP -= 10;
+for(i = 0; i < array_length_1d(enemies); i++) {
+    if(position_meeting(x, y, enemies[i])) {
+        enemies[i].currentHP -= 10;
         instance_destroy();
     }
 }

@@ -338,47 +338,15 @@ if(player.currentState == player.initState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 4 * string_height("Commands: "), "All");
 }
 
-/*************Begin drawing the coordinate system*****************/
-draw_set_color(c_green);
-draw_set_font(fntCoordinate);
-
-//X-axis
-draw_sprite(sprCoordinate, 0, player.x, hud.gameScreenLowerBound);
-draw_text(player.x, hud.gameScreenLowerBound - 45, "0");
-for(i = 0; i < hud.playAreaRightBound - player.x; i++) {
-    if(i % 100 == 0) {
-        draw_sprite(sprCoordinate, 0, player.x + i, hud.gameScreenLowerBound);
-        draw_text(player.x + i, hud.gameScreenLowerBound - 45, i);
-    } else if(i % 25 == 0) {
-        draw_sprite(sprCoordinateSmall, 0, player.x + i, hud.gameScreenLowerBound);
-    }
-}
-for(i = 0; i < player.x - hud.playAreaLeftBound; i++) {
-    if(i % 100 == 0) {
-        draw_sprite(sprCoordinate, 0, player.x - i, hud.gameScreenLowerBound);
-        draw_text(player.x - i, hud.gameScreenLowerBound - 45, i);
-    } else if(i % 25 == 0) {
-        draw_sprite(sprCoordinateSmall, 0, player.x - i, hud.gameScreenLowerBound);
+/*************Begin drawing the grid***********************/
+for(i = hud.gameScreenLeftBound; i < hud.gameScreenRightBound; i++) {
+    if(i % 20 == 0) {
+        draw_line_width_color(i, hud.gameScreenUpperBound, i, hud.gameScreenLowerBound, 1, c_green, c_green);
     }
 }
 
-//Y-axis
-draw_sprite(sprCoordinateY, 0, hud.gameScreenLeftBound, player.y);
-draw_text(hud.gameScreenLeftBound + 32, player.y - string_height(string(i)), "0");
-for(i = 0; i < hud.playAreaLowerBound - player.y; i++) {
-    if(i % 100 == 0) {
-        draw_sprite(sprCoordinateY, 0, hud.gameScreenLeftBound, player.y + i);
-        draw_text(hud.gameScreenLeftBound + 32, player.y + i - string_height(string(i)), i);
-    } else if(i % 25 == 0) {
-        draw_sprite(sprCoordinateYSmall, 0, hud.gameScreenLeftBound, player.y + i);
+for(i = hud.gameScreenUpperBound; i < hud.gameScreenLowerBound; i++) {
+    if(i % 20 == 0) {
+        draw_line_width_color(hud.gameScreenLeftBound, i, hud.gameScreenRightBound, i, 1, c_green, c_green);
     }
 }
-for(i = 0; i < player.y - hud.playAreaUpperBound; i++) {
-    if(i % 100 == 0) {
-        draw_sprite(sprCoordinateY, 0, hud.gameScreenLeftBound, player.y - i);
-        draw_text(hud.gameScreenLeftBound + 32, player.y - i - string_height(string(i)), i);
-    } else if(i % 25 == 0) {
-        draw_sprite(sprCoordinateYSmall, 0, hud.gameScreenLeftBound, player.y - i);
-    }
-}
-/****************End drawing the coordinate system*****************/

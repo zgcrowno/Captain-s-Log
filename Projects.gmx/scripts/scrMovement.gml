@@ -1,4 +1,4 @@
-if(numActiveThrusters == 0) {
+/*if(numActiveThrusters == 0) {
     distanceToCover = 0;
 }
 if(distanceToCover < 0) {
@@ -186,4 +186,4 @@ shieldBow.y = y;
 shieldBow.image_angle = image_angle;
 shieldStern.x = x;
 shieldStern.y = y;
-shieldStern.image_angle = image_angle;
+shieldStern.image_angle = image_angle;*/

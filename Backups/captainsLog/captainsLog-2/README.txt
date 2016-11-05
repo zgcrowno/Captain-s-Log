@@ -23,27 +23,38 @@ Different types, each of which extends Projectile.
 Power bar which determines amount of available power to route to various parts of the ship.
 Health bar which determines overall integrity of the ship.
 individual components of the ship have independent health bars which feed into the primary health bar.
-Shields for the front, rear, sides, corners or totality of the ship.
-Thrusters for the front, rear, sides or corners of the ship.
-Engines which determines movement speed.
+individual components of the ship have independent power bars which pull from the primary power bar.
+Shields for the front, rear, sides or totality of the ship.
+Thrusters for the front, rear, sides or totality of the ship.
 Weapon (referred to as "guns").
-Special weapon (referred to as "cannon").
-Cut, which cuts power to specific ship components or any combination thereof.
+Cannon weapon (referred to as "cannon").
+Active ability
+Passive ability
+Cut, which cuts power to specific ship components.
 Inputting commands (all text-based):
 	Initial display: thrusters | engines | shields | guns | cannon | cut 
 	"thrusters" --> bow (front) | stern (rear) | port (left) | starboard (right) | bow left (front left) | 
 	bow right (front right) | stern left (rear left) | stern right (rear right) --> "starboard" --> distance
 	| continuous --> "distance" --> 0-1000 --> "470" --> (ship moves 470 units to the left)
 
-/////////////////////////////////////////Levels//////////////////////////////////////////////////
+///////////////////////////////////////Miscellaneous//////////////////////////////////////////////
 
 All levels are introduced with their titles, and these titles are taken from the precursor text. The rest of the text disappears as the level title remains.
+
+Instead of having enemies' designations be equal to their names plus some arbitrary number, maybe set them equal to a captainName attribute (to be added to enemyShipData)
 
 /////////////////////////////////////////Characters//////////////////////////////////////////////
 
 Klem:
 --Species: Native
 --Ship: HAL.1T0515
+--Guns: 2
+--Cannon: The cannon on this ship opens up to release a barrage of slow-moving energy balls from both silos. The cannon's power may be increased by judicious use of this ship's active ability.
+--Active Ability: The ship's silos briefly open up to consume projectiles, thereby increasing the cannon's power when fired (maybe just increasing the number of projectiles released).
+--Passive Ability: This ship has the ability to transform between mid and small sized at will.
+--Build: Mid/small
+--Loyalty: Native
+--Notes: This ship's passive ability allows it to switch between small and mid builds; only in its mid build are its cannon and active ability available for use.
 --Backstory: There are perhaps a number of more important figures in the war, but none so easily recognizable or readily associated with it as Klem. As grizzled a vet as any among the 
 Hintaacians may proclaim themselves to be, he was mere weeks from retirement when he caught wind of the Niagara Relocation Rebellion, and were it not for the brevity of the "battle", he 
 would have been there. He postponed his retirement, recruited a specialized crew (who were only too happy to stand alongside him, as his accomplishments and decorations were many), and 
@@ -56,11 +67,17 @@ strong that each individual's argumentative victory served as a spur to the othe
 graduation; even after his failed attempts at authorship; even after he donned military garb, a gun in his hands, and his tail between his legs. "No matter", thought Klem, "this world is 
 not a thinker's world, though the occasional thinker may inhabit it. If we two are to be a people, I shall offer my body sans mind to that cause, lest ours be forgotten in both action and 
 word. This too is honorable." And thus Klem would lie to himself until the day Niagara fell. The day which he, admittedly in poor taste, always dreamed would come.   
---Loyalty: Native
 
 Frederickson:
 --Species: Human
 --Ship: Ricecake
+--Guns: 1
+--Cannon: This cannon fires a highly powerful singularity burst that pulls enemies to its center upon detonation, doing continual damage while active.
+--Active Ability:
+--Passive Ability:
+--Build: Small
+--Loyalty: Human
+--Notes: More maneuverable than the Sidecar, but not quite as fast. It has the lowest health/shields in the game, and only one regular gun. Its cannon is quite powerful, though.
 --Backstory: Frederickson is not a smart man, nor were his parents possessed of the ability to ensure that he turned out otherwise. They were not bad people, of course, but incapable of 
 being so, as they were devoid of the requisite level of agency for such a designation--that afforded the educated and cognitively proficient. They followed all the rules, toed all the 
 lines, and lived as comfortably and amiably as just about anyone else in the Humans' lower class. They did not question those laws to which they adhered, and they instinctively resented 
@@ -70,31 +87,49 @@ movement; that was just "what you did" in such circumstances. Though the boy pos
 somewhat preferential treatment when the war efforts reached a head, and the Humans' number of qualified pilots was found wanting. Frederickson was named captain of the derisively 
 nicknamed "Ricecake", and it was expected that he would have little to no lasting impact on the conflict. The higher-ups could not have known the role he was to play with their blessing, 
 but is ignorance ever a complete justification for one's actions?
---Loyalty: Human
 
 Tsing:
 --Species: Human
 --Ship: Mezzanine
+--Guns: 4
+--Cannon: This ship's cannon fires a barrage of powerful homing missiles
+--Active Ability:
+--Passive Ability: The ship's shields slowly repair themselves.
+--Build: Large
+--Loyalty: Native
+--Notes: This ship has the strongest regular guns in the game, but its immense surface area leaves it very susceptible to attack.
 --Backstory: The product of a rather traditional (that is to say, governmentally effected) upbringing, it was expected that Tsing would become an official of at least modest importance 
 within the Human government. Early into her adulthood, however, it became apparent that she possessed a seemingly innate distaste for people (not just people, actually, but most sentient 
 beings). This fact coupled with her inability to "fake it" practically barring her from the realm of diplomacy, she pursued the only other avenue favored by her family--military service...
 And she performed admirably until the Niagara Relocation Rebellion, during which her natural propensity towards disassociation failed her, and she began to question the morality of her 
 actions (She'd always disliked most, certainly, but did that orientation afford her the right to exercise such great power upon them? And to such a relatively negative effect?). She would 
 find Klem shortly after the rebellion, and put her violent demeanor to what she deemed justifiable use.
---Loyalty: Native
 
 Miller:
 --Species: Native
 --Ship: Sidecar
+--Guns: 2
+--Cannon: This cannon fires a single shell that bursts into clusters of smaller shells upon impact, doing AOE damage.
+--Active Ability:
+--Passive Ability:
+--Build: Small
+--Loyalty: Native
+--Notes: This ship is extremely fast/maneuverable, but with very little health/shields.
 --Backstory: Miller is the daughter of a well-to-do native family that has brought her up under the conventions, teachings and assumed name of their planet's captors. Her father being a 
 high diplomat within the human government (a position made possible and encouraged by the Humans' "Solidarity Ordinance"), she was understandably comfortable with her station for many 
 years, even enlisting as an officer in the Humans' Expansion and Life Preservation Authority, eventually working her way up to Captain of the UPHS (United Peoples of Hintaak Ship) Bush, 
 known coloquially as the Sidecar. She worked earnestly in this position until the Niagara Relocation Rebellion, during which she saw firsthand the priorities of her benefactors.
---Loyalty: Native
 
 Howitt:
 --Species: Human
 --Ship: Pincer
+--Guns: 3
+--Cannon: This ship's cannon fires a large laser from its core for a number of seconds.
+--Active Ability: The ship deploys an AOE attack from its core, destroying incoming projectiles.
+--Passive Ability:
+--Build: Large
+--Loyalty: Human (Conflicted)
+--Notes: One shot to the core will obliterate the entire ship. (Also, this ship may have a shield core which will permanently disable all shields when hit with just one projectile.)
 --Backstory: Howitt is a savant of sorts; throughout his childhood and adolescence, he performed passably in his studies, but was possessed of a blatant distaste for academia and 
 authority. This likely stemmed largely (though not completely) from his home life, which admitted of little parental supervision, save for the occassional beating. Upon barely graduating 
 from secondary education, he entered into a non-violent, non-noticeable existence; he would perform sexual services for those in need (prostitution having always been legal for the 
@@ -102,11 +137,17 @@ Hintaacians, but only recently decriminalized by the Humans), ultimately scrapin
 environments, excelling particularly in flight simulations. Come the Humans' official declaration of retaliation, he was expectedly drafted into their military (expectedly, because he had 
 neither any higher education nor publicly advertised talents). During training, however, he showed such an aptitude for flight that he was quickly named the helmsman of his own ship. In 
 time, his excitement over the proposition would give way to idealogical differences that would come to reinforce the anti-authoritarianism which characterized his youth.
---Loyalty: Human (Conflicted)
 
 Aarakis:
 --Species: Native
 --Ship: Flasher
+--Guns: 2
+--Cannon: This ship's cannon consists of three short-lived laser bursts from its bow (these lasers shoot in a spread formation)
+--Active Ability: Teleport (maybe port, starboard, bow or stern)
+--Passive Ability:
+--Build: Mid
+--Loyalty: Human
+--Notes: This is the only ship in the game with the ability to teleport.
 --Backstory: The adoptive child of a Human widower, Aarakis fired "the shot heard 'round the galaxy". He did not do so out of malice or mistake, however, but for the sake of utility. His 
 father, an amateur philosopher and prominent politician in the Human government, instilled in him at a young age the notion that difference breeds discord. "Only through cultural 
 subsumption may peace escape the realm of childish fantasy, and be put into practice." Thus opened Aarakis' father's doctoral thesis which, though polarazing, may be said by noone to be 
@@ -115,7 +156,6 @@ benefactor; had his father not been decent. Aarakis had not gone into the Niagar
 realize his father's teachings. This was an opportunity at which Aarakis jumped, and which his father would soon come to lament (the latter would never have advocated the actual 
 subsumption of one culture by another, but merely remarked on the effect such a subsumption would have). In spite of this, however, Aarakis' father's position and pride necessitated his 
 eventual and diplomatic embrace of the resulting situation. Aarakis would thereon move wherever the conflict would take him, fueled by a desire to repay the kindness offered him.
---Loyalty: Human
 
 //////////////////////////////Character Narrative Progression/////////////////////////////////////
 

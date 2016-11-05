@@ -52,12 +52,7 @@
   </views>
   <instances>
     <instance objName="objHud2" x="0" y="0" name="inst_487F7812" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRiceCake" x="992" y="608" name="inst_6F136495" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDestination" x="992" y="608" name="inst_9EFE5FAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPawn" x="992" y="160" name="inst_344564E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPawn" x="864" y="160" name="inst_2B59539C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPawn" x="1120" y="160" name="inst_133855DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objEnemyDesignationData" x="992" y="64" name="inst_F9365F63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objRiceCake" x="989" y="611" name="inst_6F136495" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGUI" x="992" y="832" name="inst_2472D6F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objInput" x="32" y="1024" name="inst_5A13797B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTypingPrompt" x="64" y="1024" name="inst_BCCC84AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
