@@ -3,10 +3,6 @@ if(util.turnTime == 0) {
     starboardShieldsIndex = 0;
     bowShieldsIndex = 0;
     sternShieldsIndex = 0;
-    portShields = null;
-    starboardShields = null;
-    bowShields = null;
-    sternShields = null;
     
     //Set the shield blocks
     for(i = 0; i < array_length_1d(adjacentGridBoxes); i++) {
@@ -18,6 +14,7 @@ if(util.turnTime == 0) {
             if(adjacentGridBoxes[i].y > y) {
                 sternShields[sternShieldsIndex] = adjacentGridBoxes[i];
                 sternShieldsIndex++;
+                show_debug_message(sternShieldsIndex);
             } 
             if(adjacentGridBoxes[i].x < (x - (sprite_width / 2) - util.gridBlockWidth)) {
                 portShields[portShieldsIndex] = adjacentGridBoxes[i];

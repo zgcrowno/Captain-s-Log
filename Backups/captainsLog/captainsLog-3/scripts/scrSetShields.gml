@@ -1,4 +1,5 @@
 if(util.turnTime == 0) {
+    adjacentGridBoxes = script_execute(scrGetAdjacentGridBoxes);
     portShieldsIndex = 0;
     starboardShieldsIndex = 0;
     bowShieldsIndex = 0;

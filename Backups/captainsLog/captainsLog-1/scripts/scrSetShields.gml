@@ -1,4 +1,5 @@
 if(util.turnTime == 0) {
+    adjacentGridBoxes = script_execute(scrGetAdjacentGridBoxes);
     portShieldsIndex = 0;
     starboardShieldsIndex = 0;
     bowShieldsIndex = 0;
@@ -14,7 +15,6 @@ if(util.turnTime == 0) {
             if(adjacentGridBoxes[i].y > y) {
                 sternShields[sternShieldsIndex] = adjacentGridBoxes[i];
                 sternShieldsIndex++;
-                show_debug_message(sternShieldsIndex);
             } 
             if(adjacentGridBoxes[i].x < (x - (sprite_width / 2) - util.gridBlockWidth)) {
                 portShields[portShieldsIndex] = adjacentGridBoxes[i];

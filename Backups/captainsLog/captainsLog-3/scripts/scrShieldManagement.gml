@@ -19,8 +19,4 @@ if(util.turnTime == 0) {
             sternShields[i].sprite_index = sprGridBoxShield;
         }
     }
-    show_debug_message(array_length_1d(portShields));
-    show_debug_message(array_length_1d(starboardShields));
-    show_debug_message(array_length_1d(bowShields));
-    show_debug_message(array_length_1d(sternShields));
 }
