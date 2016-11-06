@@ -4,4 +4,3 @@ if(thrustersBow) {
     thrustersBow = false;
 }
 script_execute(scrWipeToInitState);
-script_execute(scrDestination);

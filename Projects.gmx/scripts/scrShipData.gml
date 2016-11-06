@@ -1,16 +1,14 @@
 //The HUD object
 hud = instance_find(objHud2, 0);
 
-//The Action Queues
-thrustersQueue = ds_queue_create();
-shieldsQueue = ds_queue_create();
-miscQueue = ds_queue_create();
+//The Util Object
+util = instance_find(objUtil, 0);
 
-//The Distance the Ship Moves per Turn
-moveDistance = 20;
-
-//The number of Seconds Which Passes Between Turns
-turnTime = 3 * room_speed;
+//The Grid Boxes That Will Represent the Ship's Shields
+portShields = null;
+starboardShields = null;
+bowShields = null;
+sternShields = null;
 
 //Hud States
 initState = 0;
@@ -45,6 +43,10 @@ shieldsPort = false;
 shieldsStarboard = false;
 shieldsBow = false;
 shieldsStern = false;
+
+//Gun and cannon states
+guns = false;
+cannon = false;
 
 //Maximum overall health and power of the ship
 maxHP = 0;
@@ -116,6 +118,21 @@ shieldsText = "shields";
 gunsText = "guns";
 cannonText = "cannon";
 cutText = "cut";
+
+//The Distances to Cover
+distanceToCover = 0;
+distanceToCoverPort = 0;
+distanceToCoverStarboard = 0;
+distanceToCoverBow = 0;
+distanceToCoverStern = 0;
+
+//The Degrees to Rotate the Ship
+degreesToRotateClockwise = 0;
+degreesToRotateCounterclockwise = 0;
+
+//The Degrees Rotated by the Ship
+degreesRotatedClockwise = 0;
+degreesRotatedCounterclockwise = 0;
 
 //Ship-specific data
 maxHPRicecake = 100;

@@ -7,34 +7,33 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprBullet</sprite>
-    <sprite>sprites\sprHomingBullet</sprite>
     <sprite>sprites\sprTypingPrompt</sprite>
     <sprite>sprites\sprHud2</sprite>
     <sprite>sprites\sprSpecialRiceCake</sprite>
     <sprite>sprites\sprSpecialRiceCakeContact</sprite>
-    <sprite>sprites\sprite19</sprite>
     <sprite>sprites\sprRiceCake</sprite>
+    <sprite>sprites\sprGridBox</sprite>
+    <sprite>sprites\sprGridBoxShield</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="objectData">
       <script>scripts\scrShipData.gml</script>
-      <script>scripts\scrDestinationData.gml</script>
       <script>scripts\scrEnemyData.gml</script>
       <script>scripts\scrBulletData.gml</script>
-      <script>scripts\scrEnemyDesignationData.gml</script>
-      <script>scripts\scrHomingBulletData.gml</script>
       <script>scripts\scrHud2Data.gml</script>
       <script>scripts\scrSpecialData.gml</script>
       <script>scripts\scrSpecialContactData.gml</script>
       <script>scripts\scrRicecakeData.gml</script>
       <script>scripts\scrPawnData.gml</script>
+      <script>scripts\scrUtilData.gml</script>
+      <script>scripts\scrGUIData.gml</script>
+      <script>scripts\scrGridBoxData.gml</script>
     </scripts>
     <scripts name="input">
       <script>scripts\scrInput.gml</script>
       <scripts name="inputManipulation">
-        <script>scripts\scrDestination.gml</script>
         <script>scripts\scrCutShieldsAll.gml</script>
         <script>scripts\scrCutShieldsStern.gml</script>
         <script>scripts\scrCutShieldsBow.gml</script>
@@ -77,10 +76,16 @@
       <script>scripts\scrDrawGUI.gml</script>
       <script>scripts\scrDrawInput.gml</script>
       <script>scripts\scrTypingPrompt.gml</script>
+      <script>scripts\scrCreateGridBoxes.gml</script>
     </scripts>
     <scripts name="util">
-      <script>scripts\scrGetEnemies.gml</script>
       <script>scripts\scrWipeToInitState.gml</script>
+      <script>scripts\scrIncrementTurn.gml</script>
+      <script>scripts\scrGetEnemies.gml</script>
+      <script>scripts\scrSetShields.gml</script>
+      <script>scripts\scrGetGridBoxes.gml</script>
+      <script>scripts\scrGetAdjacentGridBoxes.gml</script>
+      <script>scripts\scrResetNonShield.gml</script>
     </scripts>
     <scripts name="abilities">
       <script>scripts\scrAttackGuns.gml</script>
@@ -113,14 +118,7 @@
     <object>objects\objWordPP</object>
     <object>objects\objGUI</object>
     <object>objects\objPawn</object>
-    <object>objects\objBullet</object>
     <object>objects\objPhraseGameOver</object>
-    <object>objects\objShieldPort</object>
-    <object>objects\objShieldStarboard</object>
-    <object>objects\objShieldBow</object>
-    <object>objects\objShieldStern</object>
-    <object>objects\objEnemyDesignationData</object>
-    <object>objects\objHomingBullet</object>
     <object>objects\objInput</object>
     <object>objects\objTypingPrompt</object>
     <object>objects\objHud2</object>
@@ -128,6 +126,8 @@
     <object>objects\objSpecialRiceCakeContact</object>
     <object>objects\objPlayerShip</object>
     <object>objects\objEnemyShip</object>
+    <object>objects\objUtil</object>
+    <object>objects\objGridBox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTest2</room>

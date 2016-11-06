@@ -11,4 +11,3 @@ if(!(requiredPPThrusters > currentPP) && !thrustersBow) {
     //To Do: Error to user about lack of power
 }
 script_execute(scrWipeToInitState);
-script_execute(scrDestination);

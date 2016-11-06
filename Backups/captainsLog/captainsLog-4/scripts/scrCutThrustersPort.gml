@@ -4,4 +4,3 @@ if(thrustersPort) {
     currentPPThrustersPort -= requiredPPThrusters;
     thrustersPort = false;
 }
-script_execute(scrDestination);

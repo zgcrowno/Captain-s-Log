@@ -1,20 +1,23 @@
-if(shieldsPort) {
-    shieldPort.visible = true;
-} else {
-    shieldPort.visible = false;
-}
-if(shieldsStarboard) {
-    shieldStarboard.visible = true;
-} else {
-    shieldStarboard.visible = false;
-}
-if(shieldsBow) {
-    shieldBow.visible = true;
-} else {
-    shieldBow.visible = false;
-}
-if(shieldsStern) {
-    shieldStern.visible = true;
-} else {
-    shieldStern.visible = false;
+if(util.turnTime == 0) {
+    for(i = 0; i < array_length_1d(portShields); i++) {
+        if(shieldsPort) {
+            portShields[i].sprite_index = sprGridBoxShield;
+        }
+    }
+    for(i = 0; i < array_length_1d(starboardShields); i++) {
+        if(shieldsStarboard) {
+            starboardShields[i].sprite_index = sprGridBoxShield;
+        }
+    }
+    for(i = 0; i < array_length_1d(bowShields); i++) {
+        if(shieldsBow) {
+            bowShields[i].sprite_index = sprGridBoxShield;
+        }
+    }
+    for(i = 0; i < array_length_1d(sternShields); i++) {
+        if(shieldsStern) {
+            sternShields[i].sprite_index = sprGridBoxShield;
+        }
+    }
+    show_debug_message(array_length_1d(sternShields));
 }

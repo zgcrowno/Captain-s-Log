@@ -1,9 +1,3 @@
-player = instance_find(objPlayerShip, 0);
-hud = instance_find(objHud2, 0);
-draw_set_color(c_white);
-draw_set_font(fntMain);
-depth = -1;
-
 //Draw the overall HP bar
 draw_healthbar(hud.powerLeftBound + 50, 
                hud.powerUpperBound + 25, 
@@ -338,7 +332,7 @@ if(player.currentState == player.initState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 4 * string_height("Commands: "), "All");
 }
 
-/*************Begin drawing the grid***********************/
+/*************Begin drawing the grid***********************
 for(i = hud.gameScreenLeftBound; i < hud.gameScreenRightBound; i++) {
     if(i % 20 == 0) {
         draw_line_width_color(i, hud.gameScreenUpperBound, i, hud.gameScreenLowerBound, 1, c_green, c_green);
@@ -349,4 +343,4 @@ for(i = hud.gameScreenUpperBound; i < hud.gameScreenLowerBound; i++) {
     if(i % 20 == 0) {
         draw_line_width_color(hud.gameScreenLeftBound, i, hud.gameScreenRightBound, i, 1, c_green, c_green);
     }
-}
+}*/

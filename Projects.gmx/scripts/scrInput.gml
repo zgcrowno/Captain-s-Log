@@ -1,5 +1,3 @@
-script_execute(scrGetEnemies);
-
 if(keyboard_check_pressed(vk_tab)) {
     //In the future, it might be wise to configure the instance data states in such
     //a way that currentState will be decremented here.

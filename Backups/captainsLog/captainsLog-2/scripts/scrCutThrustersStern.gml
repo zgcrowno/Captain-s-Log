@@ -4,4 +4,3 @@ if(thrustersStern) {
     currentPPThrustersStern -= requiredPPThrusters;
     thrustersStern = false;
 }
-script_execute(scrDestination);

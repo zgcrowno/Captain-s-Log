@@ -60,4 +60,3 @@ shieldsBow = false;
 shieldsStern = false;
 guns = false;
 cannon = false;
-script_execute(scrDestination);

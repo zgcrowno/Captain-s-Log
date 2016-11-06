@@ -4,4 +4,3 @@ if(thrustersStarboard) {
     thrustersStarboard = false;
 }
 script_execute(scrWipeToInitState);
-script_execute(scrDestination);

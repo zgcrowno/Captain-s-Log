@@ -4,4 +4,3 @@ if(thrustersRotateClockwise) {
     currentPPThrustersRotateClockwise -= requiredPPThrustersRotate;
     thrustersRotateClockwise = false;
 }
-script_execute(scrDestination);
