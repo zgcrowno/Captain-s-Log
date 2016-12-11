@@ -1,5 +1,5 @@
 //The Difficulty Modifier for the Game
-difficultyModifier = 5;
+difficultyModifier = 4;
 
 //The Number of Seconds Which Passes Between Turns
 turnTime = difficultyModifier * room_speed;

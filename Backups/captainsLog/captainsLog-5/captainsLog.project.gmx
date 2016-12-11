@@ -14,6 +14,8 @@
     <sprite>sprites\sprRiceCake</sprite>
     <sprite>sprites\sprGridBox</sprite>
     <sprite>sprites\sprGridBoxShield</sprite>
+    <sprite>sprites\sprHud</sprite>
+    <sprite>sprites\sprTimeline</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -22,7 +24,7 @@
       <script>scripts\scrShipData.gml</script>
       <script>scripts\scrEnemyData.gml</script>
       <script>scripts\scrBulletData.gml</script>
-      <script>scripts\scrHud2Data.gml</script>
+      <script>scripts\scrHudData.gml</script>
       <script>scripts\scrSpecialData.gml</script>
       <script>scripts\scrSpecialContactData.gml</script>
       <script>scripts\scrRicecakeData.gml</script>
@@ -30,6 +32,7 @@
       <script>scripts\scrUtilData.gml</script>
       <script>scripts\scrGUIData.gml</script>
       <script>scripts\scrGridBoxData.gml</script>
+      <script>scripts\scrTimelineData.gml</script>
     </scripts>
     <scripts name="input">
       <script>scripts\scrInput.gml</script>
@@ -106,6 +109,9 @@
     <scripts name="debugging">
       <script>scripts\scrDebug.gml</script>
     </scripts>
+    <scripts name="timeline">
+      <script>scripts\scrMoveTimeline.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntMain</font>
@@ -113,7 +119,6 @@
   </fonts>
   <objects name="objects">
     <object>objects\objRiceCake</object>
-    <object>objects\objHud</object>
     <object>objects\objWordHP</object>
     <object>objects\objWordPP</object>
     <object>objects\objGUI</object>
@@ -121,13 +126,14 @@
     <object>objects\objPhraseGameOver</object>
     <object>objects\objInput</object>
     <object>objects\objTypingPrompt</object>
-    <object>objects\objHud2</object>
+    <object>objects\objHud</object>
     <object>objects\objSpecialRiceCake</object>
     <object>objects\objSpecialRiceCakeContact</object>
     <object>objects\objPlayerShip</object>
     <object>objects\objEnemyShip</object>
     <object>objects\objUtil</object>
     <object>objects\objGridBox</object>
+    <object>objects\objTimeline</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTest2</room>

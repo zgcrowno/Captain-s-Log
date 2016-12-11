@@ -21,10 +21,10 @@ if(util.turnTime == 0) {
         distanceToCover -= numActiveThrusters * util.gridBlockWidth;
     }
     if(thrustersPort) {
-        if(!(sin(degtorad(image_angle + 90)) > 0 && x >= (hud.gameScreenRightBound - (sprite_width / 2)))
-           && !(sin(degtorad(image_angle + 90)) < 0 && x <= hud.gameScreenLeftBound + (sprite_width / 2))
-           && !(cos(degtorad(image_angle + 90)) > 0 && y >= (hud.gameScreenLowerBound - (sprite_width / 2)))
-           && !(cos(degtorad(image_angle + 90)) < 0 && y <= hud.gameScreenUpperBound + (sprite_width / 2))) {
+        if(!(sin(degtorad(image_angle + 90)) > 0 && x >= (hud.playAreaRightBound - (sprite_width / 2)))
+           && !(sin(degtorad(image_angle + 90)) < 0 && x <= hud.playAreaLeftBound + (sprite_width / 2))
+           && !(cos(degtorad(image_angle + 90)) > 0 && y >= (hud.playAreaLowerBound - (sprite_width / 2)))
+           && !(cos(degtorad(image_angle + 90)) < 0 && y <= hud.playAreaUpperBound + (sprite_width / 2))) {
             x += util.gridBlockWidth * sin(degtorad(image_angle + 90));
             y += util.gridBlockWidth * cos(degtorad(image_angle + 90));
             distanceToCoverPort--;
@@ -49,10 +49,10 @@ if(util.turnTime == 0) {
         distanceToCoverPort = 0;
     } 
     if(thrustersStarboard) {
-        if(!(sin(degtorad(image_angle + 90)) > 0 && x <= hud.gameScreenLeftBound + (sprite_width / 2))
-           && !(sin(degtorad(image_angle + 90)) < 0 && x >= (hud.gameScreenRightBound - (sprite_width / 2)))
-           && !(cos(degtorad(image_angle + 90)) > 0 && y <= hud.gameScreenUpperBound + (sprite_width / 2))
-           && !(cos(degtorad(image_angle + 90)) < 0 && y >= (hud.gameScreenLowerBound - (sprite_width / 2)))) {
+        if(!(sin(degtorad(image_angle + 90)) > 0 && x <= hud.playAreaLeftBound + (sprite_width / 2))
+           && !(sin(degtorad(image_angle + 90)) < 0 && x >= (hud.playAreaRightBound - (sprite_width / 2)))
+           && !(cos(degtorad(image_angle + 90)) > 0 && y <= hud.playAreaUpperBound + (sprite_width / 2))
+           && !(cos(degtorad(image_angle + 90)) < 0 && y >= (hud.playAreaLowerBound - (sprite_width / 2)))) {
             x -= util.gridBlockWidth * sin(degtorad(image_angle + 90));
             y -= util.gridBlockWidth * cos(degtorad(image_angle + 90));
             distanceToCoverStarboard--;
@@ -77,10 +77,10 @@ if(util.turnTime == 0) {
         distanceToCoverStarboard = 0;
     } 
     if(thrustersBow) {
-        if(!(sin(degtorad(image_angle + 90)) > 0 && y >= (hud.gameScreenLowerBound - (sprite_width / 2)))
-           && !(sin(degtorad(image_angle + 90)) < 0 && y <= hud.gameScreenUpperBound + (sprite_width / 2))
-           && !(cos(degtorad(image_angle + 90)) > 0 && x <= hud.gameScreenLeftBound + (sprite_width / 2))
-           && !(cos(degtorad(image_angle + 90)) < 0 && x >= (hud.gameScreenRightBound - (sprite_width / 2)))) {
+        if(!(sin(degtorad(image_angle + 90)) > 0 && y >= (hud.playAreaLowerBound - (sprite_width / 2)))
+           && !(sin(degtorad(image_angle + 90)) < 0 && y <= hud.playAreaUpperBound + (sprite_width / 2))
+           && !(cos(degtorad(image_angle + 90)) > 0 && x <= hud.playAreaLeftBound + (sprite_width / 2))
+           && !(cos(degtorad(image_angle + 90)) < 0 && x >= (hud.playAreaRightBound - (sprite_width / 2)))) {
             x -= util.gridBlockWidth * cos(degtorad(image_angle + 90));
             y += util.gridBlockWidth * sin(degtorad(image_angle + 90));
             distanceToCoverBow--;
@@ -105,10 +105,10 @@ if(util.turnTime == 0) {
         distanceToCoverBow = 0;
     }
     if(thrustersStern) {
-        if(!(sin(degtorad(image_angle + 90)) > 0 && y <= hud.gameScreenUpperBound + (sprite_width / 2))
-           && !(sin(degtorad(image_angle + 90)) < 0 && y >= (hud.gameScreenLowerBound - (sprite_width / 2)))
-           && !(cos(degtorad(image_angle + 90)) > 0 && x >= (hud.gameScreenRightBound - (sprite_width / 2)))
-           && !(cos(degtorad(image_angle + 90)) < 0 && x <= hud.gameScreenLeftBound + (sprite_width / 2))) {
+        if(!(sin(degtorad(image_angle + 90)) > 0 && y <= hud.playAreaUpperBound + (sprite_width / 2))
+           && !(sin(degtorad(image_angle + 90)) < 0 && y >= (hud.playAreaLowerBound - (sprite_width / 2)))
+           && !(cos(degtorad(image_angle + 90)) > 0 && x >= (hud.playAreaRightBound - (sprite_width / 2)))
+           && !(cos(degtorad(image_angle + 90)) < 0 && x <= hud.playAreaLeftBound + (sprite_width / 2))) {
             x += util.gridBlockWidth * cos(degtorad(image_angle + 90));
             y -= util.gridBlockWidth * sin(degtorad(image_angle + 90));
             distanceToCoverStern--;

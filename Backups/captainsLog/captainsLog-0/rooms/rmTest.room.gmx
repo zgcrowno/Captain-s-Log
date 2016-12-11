@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="objRiceCake" x="512" y="864" name="inst_E48F1F3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objHud" x="0" y="1679" name="inst_A50F5DA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWordHP" x="14" y="1700" name="inst_F99B6FDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWordPP" x="555" y="1701" name="inst_338E730B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGUI" x="288" y="1696" name="inst_4826B87F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

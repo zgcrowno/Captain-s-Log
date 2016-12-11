@@ -49,7 +49,7 @@ Klem:
 --Species: Native
 --Ship: HAL.1T0515
 --Guns: 2
---Cannon: The cannon on this ship opens up to release a barrage of slow-moving energy balls from both silos. The cannon's power may be increased by judicious use of this ship's active ability.
+--Cannon: The cannon on this ship opens up to release a barrage of energy balls from both silos. The cannon's power may be increased by judicious use of this ship's active ability.
 --Active Ability: The ship's silos briefly open up to consume projectiles, thereby increasing the cannon's power when fired (maybe just increasing the number of projectiles released).
 --Passive Ability: This ship has the ability to transform between mid and small sized at will.
 --Build: Mid/small
@@ -72,9 +72,9 @@ Frederickson:
 --Species: Human
 --Ship: Ricecake
 --Guns: 1
---Cannon: This cannon fires a highly powerful singularity burst that pulls enemies to its center upon detonation, doing continual damage while active.
+--Cannon: This cannon fires a highly powerful singularity burst from its stern, doing continual damage each turn to enemies in its radius.
 --Active Ability:
---Passive Ability:
+--Passive Ability: Diverts energy to its rotating thrusters, thus allowing it to turn 180 degrees in a single turn.
 --Build: Small
 --Loyalty: Human
 --Notes: More maneuverable than the Sidecar, but not quite as fast. It has the lowest health/shields in the game, and only one regular gun. Its cannon is quite powerful, though.
@@ -92,8 +92,8 @@ Tsing:
 --Species: Human
 --Ship: Mezzanine
 --Guns: 4
---Cannon: This ship's cannon fires a barrage of powerful homing missiles
---Active Ability:
+--Cannon: This ship's cannon fires a barrage of powerful missiles
+--Active Ability: The ship unleashes a blanket of greypalm on a number of gridblocks in front of the ship, thus dealing damage to any ship that inhabits them each turn.
 --Passive Ability: The ship's shields slowly repair themselves.
 --Build: Large
 --Loyalty: Native
@@ -111,7 +111,7 @@ Miller:
 --Guns: 2
 --Cannon: This cannon fires a single shell that bursts into clusters of smaller shells upon impact, doing AOE damage.
 --Active Ability:
---Passive Ability:
+--Passive Ability: Diverts energy to its port/starboard/bow/stern thrusters, thus allowing it to move two gridblocks in a single turn.
 --Build: Small
 --Loyalty: Native
 --Notes: This ship is extremely fast/maneuverable, but with very little health/shields.
@@ -124,9 +124,9 @@ Howitt:
 --Species: Human
 --Ship: Pincer
 --Guns: 3
---Cannon: This ship's cannon fires a large laser from its core for a number of seconds.
+--Cannon: This ship's cannon fires a large laser from its core for a number of turns.
 --Active Ability: The ship deploys an AOE attack from its core, destroying incoming projectiles.
---Passive Ability:
+--Passive Ability: Disable cannon in order to move in fewer turns.
 --Build: Large
 --Loyalty: Human (Conflicted)
 --Notes: One shot to the core will obliterate the entire ship. (Also, this ship may have a shield core which will permanently disable all shields when hit with just one projectile.)
@@ -144,7 +144,7 @@ Aarakis:
 --Guns: 2
 --Cannon: This ship's cannon consists of three short-lived laser bursts from its bow (these lasers shoot in a spread formation)
 --Active Ability: Teleport (maybe port, starboard, bow or stern)
---Passive Ability:
+--Passive Ability: Change formation of cannon from spread to straight-forward (each taking up one of three columns to the bow of the ship).
 --Build: Mid
 --Loyalty: Human
 --Notes: This is the only ship in the game with the ability to teleport.

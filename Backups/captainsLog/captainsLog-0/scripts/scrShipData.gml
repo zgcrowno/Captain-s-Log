@@ -1,5 +1,5 @@
 //The HUD object
-hud = instance_find(objHud2, 0);
+hud = instance_find(objHud, 0);
 
 //The Util Object
 util = instance_find(objUtil, 0);

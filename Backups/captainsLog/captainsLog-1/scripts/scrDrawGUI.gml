@@ -1,8 +1,8 @@
 //Draw the overall HP bar
-draw_healthbar(hud.powerLeftBound + 50, 
-               hud.powerUpperBound + 25, 
-               hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2) - 25, 
-               hud.powerUpperBound + 50, 
+draw_healthbar(hud.aggregateLeftBound + 50, 
+               hud.aggregateUpperBound + 25, 
+               hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2) - 25, 
+               hud.aggregateUpperBound + 50, 
                (player.currentHP / player.maxHP) * 100, 
                c_black, 
                c_maroon, 
@@ -12,9 +12,9 @@ draw_healthbar(hud.powerLeftBound + 50,
                true);
 
 //Draw the overall PP bar
-draw_healthbar(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2) + 50, 
-               hud.powerUpperBound + 25, hud.powerRightBound - 25, 
-               hud.powerUpperBound + 50, 
+draw_healthbar(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2) + 50, 
+               hud.aggregateUpperBound + 25, hud.aggregateRightBound - 25, 
+               hud.aggregateUpperBound + 50, 
                (player.currentPP / player.maxPP) * 100, 
                c_black, 
                c_teal, 
@@ -240,10 +240,10 @@ draw_healthbar(hud.shieldsLeftBound + (5 * (hud.shieldsRightBound - hud.shieldsL
                true);
 
 //Draw the gunsPP bar
-draw_healthbar(hud.gunsLeftBound + (5 * (hud.gunsRightBound - hud.gunsLeftBound) / 16), 
-               hud.gunsUpperBound + (3 *((hud.gunsLowerBound - hud.gunsUpperBound) / 16)), 
-               hud.gunsRightBound - (5 * (hud.gunsRightBound - hud.gunsLeftBound) / 16), 
-               hud.gunsUpperBound + (2 *((hud.gunsLowerBound - hud.gunsUpperBound) / 16)), 
+draw_healthbar(hud.gunsAndCannonLeftBound + (5 * (hud.gunsAndCannonRightBound - hud.gunsAndCannonLeftBound) / 16), 
+               hud.gunsAndCannonUpperBound + (3 *((hud.gunsAndCannonLowerBound - hud.gunsAndCannonUpperBound) / 16)), 
+               hud.gunsAndCannonRightBound - (5 * (hud.gunsAndCannonRightBound - hud.gunsAndCannonLeftBound) / 16), 
+               hud.gunsAndCannonUpperBound + (2 *((hud.gunsAndCannonLowerBound - hud.gunsAndCannonUpperBound) / 16)), 
                (player.currentPPGuns / player.requiredPPGuns) * 100, 
                c_black, 
                c_teal, 
@@ -253,10 +253,10 @@ draw_healthbar(hud.gunsLeftBound + (5 * (hud.gunsRightBound - hud.gunsLeftBound)
                true);
 
 //Draw the cannonPP bar
-draw_healthbar(hud.cannonLeftBound + (5 * (hud.cannonRightBound - hud.cannonLeftBound) / 16), 
-               hud.cannonUpperBound + (3 *((hud.cannonLowerBound - hud.cannonUpperBound) / 16)), 
-               hud.cannonRightBound - (5 * (hud.cannonRightBound - hud.cannonLeftBound) / 16), 
-               hud.cannonUpperBound + (2 *((hud.cannonLowerBound - hud.cannonUpperBound) / 16)), 
+draw_healthbar(hud.gunsAndCannonLeftBound + (5 * (hud.gunsAndCannonRightBound - hud.gunsAndCannonLeftBound) / 16), 
+               hud.gunsAndCannonUpperBound + (3 *((hud.gunsAndCannonLowerBound - hud.gunsAndCannonUpperBound) / 16)), 
+               hud.gunsAndCannonRightBound - (5 * (hud.gunsAndCannonRightBound - hud.gunsAndCannonLeftBound) / 16), 
+               hud.gunsAndCannonUpperBound + (2 *((hud.gunsAndCannonLowerBound - hud.gunsAndCannonUpperBound) / 16)), 
                (player.currentPPCannon / player.requiredPPCannon) * 100, 
                c_black, 
                c_teal, 
@@ -265,9 +265,15 @@ draw_healthbar(hud.cannonLeftBound + (5 * (hud.cannonRightBound - hud.cannonLeft
                true, 
                true);
 
-//Draw "Commands:" and "Console:"
+//Draw "Commands:", "Console:" and "Actions:"
 draw_text(hud.commandsLeftBound, hud.commandsUpperBound, "Commands:");
 draw_text(hud.consoleLeftBound, hud.consoleUpperBound, "Console:");
+draw_text(hud.consoleLeftBound + string_width("Console:  /  "), hud.consoleUpperBound, "Actions:");
+
+//Draw console/actions partition
+for(i = 0; i < 17; i++) {
+    draw_text(hud.consoleLeftBound + string_width("Console:  "), hud.consoleUpperBound + ((i / 2) * string_height("/")), "/");
+}
 
 //Draw the state-dependent word prompts
 if(player.currentState == player.initState) {
