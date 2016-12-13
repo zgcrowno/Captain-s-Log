@@ -1,4 +1,3 @@
-if(util.turnTime == 0) {
     adjacentGridBoxes = script_execute(scrGetAdjacentGridBoxes);
     
     //Reset the shield blocks in case of movement
@@ -11,4 +10,3 @@ if(util.turnTime == 0) {
     starboardShields = null;
     bowShields = null;
     sternShields = null;
-}

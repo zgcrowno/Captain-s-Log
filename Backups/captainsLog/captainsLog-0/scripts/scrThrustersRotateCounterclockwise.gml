@@ -1,10 +1,12 @@
 if(!(requiredPPThrustersRotate > currentPP) && !thrustersRotateCounterclockwise) {
     degreesToRotateCounterclockwise = real(input);
+    actionMap[? "Thrusters Count"] = real(input);
     thrustersRotateCounterclockwise = true;
     currentPP -= requiredPPThrustersRotate;
     currentPPThrustersRotateCounterclockwise += requiredPPThrustersRotate;
 } else if(thrustersRotateCounterclockwise) {
     degreesToRotateCounterclockwise += real(input);
+    actionMap[? "Thrusters Count"] = actionMap[? "Thrusters Count"] + real(input);
 } else {
     //To Do: Error to user about lack of power...
 }

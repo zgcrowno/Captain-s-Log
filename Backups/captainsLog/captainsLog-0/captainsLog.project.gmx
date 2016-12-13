@@ -33,6 +33,7 @@
       <script>scripts\scrGUIData.gml</script>
       <script>scripts\scrGridBoxData.gml</script>
       <script>scripts\scrTimelineData.gml</script>
+      <script>scripts\scrObjectData.gml</script>
     </scripts>
     <scripts name="input">
       <script>scripts\scrInput.gml</script>
@@ -80,15 +81,17 @@
       <script>scripts\scrDrawInput.gml</script>
       <script>scripts\scrTypingPrompt.gml</script>
       <script>scripts\scrCreateGridBoxes.gml</script>
+      <script>scripts\scrDrawActions.gml</script>
     </scripts>
     <scripts name="util">
       <script>scripts\scrWipeToInitState.gml</script>
-      <script>scripts\scrIncrementTurn.gml</script>
       <script>scripts\scrGetEnemies.gml</script>
       <script>scripts\scrSetShields.gml</script>
       <script>scripts\scrGetGridBoxes.gml</script>
       <script>scripts\scrGetAdjacentGridBoxes.gml</script>
       <script>scripts\scrResetNonShield.gml</script>
+      <script>scripts\scrResetActionMap.gml</script>
+      <script>scripts\scrTimelineActions.gml</script>
     </scripts>
     <scripts name="abilities">
       <script>scripts\scrAttackGuns.gml</script>
@@ -112,6 +115,10 @@
     <scripts name="timeline">
       <script>scripts\scrMoveTimeline.gml</script>
     </scripts>
+    <scripts name="object">
+      <script>scripts\scrResetTouched.gml</script>
+      <script>scripts\scrIsTouchingTimeline.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntMain</font>
@@ -124,7 +131,6 @@
     <object>objects\objGUI</object>
     <object>objects\objPawn</object>
     <object>objects\objPhraseGameOver</object>
-    <object>objects\objInput</object>
     <object>objects\objTypingPrompt</object>
     <object>objects\objHud</object>
     <object>objects\objSpecialRiceCake</object>
@@ -134,6 +140,7 @@
     <object>objects\objUtil</object>
     <object>objects\objGridBox</object>
     <object>objects\objTimeline</object>
+    <object>objects\objObject</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTest2</room>

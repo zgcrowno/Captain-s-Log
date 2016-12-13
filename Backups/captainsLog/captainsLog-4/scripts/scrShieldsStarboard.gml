@@ -1,4 +1,5 @@
 if(!(requiredPPShields > currentPP) && !shieldsStarboard) {
+    actionMap[? "Shields Starboard"] = true;
     shieldsStarboard = true;
     currentPP -= requiredPPShields;
     currentPPShieldsStarboard += requiredPPShields;

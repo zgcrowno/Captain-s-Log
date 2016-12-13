@@ -1,8 +1,47 @@
+event_inherited();
+
 //The HUD object
 hud = instance_find(objHud, 0);
 
 //The Util Object
 util = instance_find(objUtil, 0);
+
+//The ship's action map
+ds_map_add(actionMap, "Thrusters Port", 0);
+ds_map_add(actionMap, "Thrusters Starboard", 0);
+ds_map_add(actionMap, "Thrusters Bow", 0);
+ds_map_add(actionMap, "Thrusters Stern", 0);
+ds_map_add(actionMap, "Thrusters Count", 0);
+ds_map_add(actionMap, "Thrusters Clock", 0);
+ds_map_add(actionMap, "Shields Port", false);
+ds_map_add(actionMap, "Shields Starboard", false);
+ds_map_add(actionMap, "Shields Bow", false);
+ds_map_add(actionMap, "Shields Stern", false);
+ds_map_add(actionMap, "Shields All", false);
+ds_map_add(actionMap, "Cut Thrusters Port", false);
+ds_map_add(actionMap, "Cut Thrusters Starboard", false);
+ds_map_add(actionMap, "Cut Thrusters Bow", false);
+ds_map_add(actionMap, "Cut Thrusters Stern", false);
+ds_map_add(actionMap, "Cut Thrusters Count", false);
+ds_map_add(actionMap, "Cut Thrusters Clock", false);
+ds_map_add(actionMap, "Cut Thrusters Rotate", false);
+ds_map_add(actionMap, "Cut Thrusters All", false);
+ds_map_add(actionMap, "Cut Shields Port", false);
+ds_map_add(actionMap, "Cut Shields Starboard", false);
+ds_map_add(actionMap, "Cut Shields Bow", false);
+ds_map_add(actionMap, "Cut Shields Stern", false);
+ds_map_add(actionMap, "Cut Shields All", false);
+ds_map_add(actionMap, "Cut Guns", false);
+ds_map_add(actionMap, "Cut Cannon", false);
+ds_map_add(actionMap, "Cut Active", false);
+ds_map_add(actionMap, "Cut Passive", false);
+ds_map_add(actionMap, "Cut Target", false);
+ds_map_add(actionMap, "Cut All", false);
+ds_map_add(actionMap, "Target", null);
+ds_map_add(actionMap, "Guns", false);
+ds_map_add(actionMap, "Cannon", false);
+ds_map_add(actionMap, "Active", false);
+ds_map_add(actionMap, "Passive", false);
 
 //The Grid Boxes That Will Represent the Ship's Shields
 portShields = null;

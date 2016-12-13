@@ -1,5 +1,5 @@
 if(y < hud.playAreaLowerBound) {
-    y += difficultyModifier;
+    y += util.difficultyModifier;
 } else {
     y = hud.playAreaUpperBound;
 }

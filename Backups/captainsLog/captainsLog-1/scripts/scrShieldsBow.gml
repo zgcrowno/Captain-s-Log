@@ -1,4 +1,5 @@
 if(!(requiredPPShields > currentPP) && !shieldsBow) {
+    actionMap[? "Shields Bow"] = true;
     shieldsBow = true;
     currentPP -= requiredPPShields;
     currentPPShieldsBow += requiredPPShields;

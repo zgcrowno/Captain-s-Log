@@ -1,4 +1,4 @@
-if(util.turnTime == 0) {
+if(script_execute(scrIsTouchingTimeline) && !touchedTimeline) {
     for(i = 0; i < array_length_1d(portShields); i++) {
         if(shieldsPort) {
             portShields[i].sprite_index = sprGridBoxShield;

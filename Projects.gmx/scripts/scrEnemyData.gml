@@ -1,3 +1,5 @@
+event_inherited();
+
 //The Util Object
 util = instance_find(objUtil, 0);
 

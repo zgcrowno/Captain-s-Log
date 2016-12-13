@@ -1,4 +1,5 @@
 if(!(requiredPPShields > currentPP) && !shieldsPort) {
+    actionMap[? "Shields Port"] = true;
     shieldsPort = true;
     currentPP -= requiredPPShields;
     currentPPShieldsPort += requiredPPShields;

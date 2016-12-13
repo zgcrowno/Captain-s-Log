@@ -58,7 +58,6 @@
     <instance objName="objPawn" x="512" y="224" name="inst_71651D5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPawn" x="192" y="224" name="inst_77ED688E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPawn" x="864" y="224" name="inst_96426DBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objInput" x="122" y="1883" name="inst_EE82915E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTypingPrompt" x="124" y="1884" name="inst_12E99B98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

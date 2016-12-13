@@ -1,4 +1,3 @@
-if(util.turnTime == 0) {
     if(numActiveThrusters == 0) {
         distanceToCover = 0;
     }
@@ -158,4 +157,3 @@ if(util.turnTime == 0) {
         degreesToRotateCounterclockwise = 0;
         degreesRotatedCounterclockwise = 0;
     }
-}

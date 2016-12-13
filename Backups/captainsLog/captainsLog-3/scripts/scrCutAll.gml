@@ -47,6 +47,12 @@ if(cannon) {
     currentPP += requiredPPCannon;
     currentPPCannon -= requiredPPCannon;
 }
+if(thrustersPort || thrustersStarboard || thrustersBow || thrustersStern
+   || thrustersRotateClockwise || thrustersRotateCounterclockwise
+   || shieldsPort || shieldsStarboard || shieldsBow || shieldsStern
+   || guns || cannon) {
+    actionMap[? "Cut All"] = true;
+}
 script_execute(scrWipeToInitState);
 thrustersPort = false;
 thrustersStarboard = false;
