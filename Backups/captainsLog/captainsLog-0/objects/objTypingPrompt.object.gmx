@@ -50,7 +50,7 @@ hud = instance_find(objHud, 0);
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scrTypingPrompt</script>
+            <script>scrTypingPromptData</script>
           </argument>
           <argument>
             <kind>0</kind>

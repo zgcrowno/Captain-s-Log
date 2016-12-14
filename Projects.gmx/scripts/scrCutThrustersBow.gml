@@ -1,7 +1,4 @@
-if(thrustersBow) {
-    currentPP += requiredPPThrusters;
-    currentPPThrustersBow -= requiredPPThrusters;
+if(actionMap[? "Thrusters Bow"] > 0) {
     actionMap[? "Thrusters Bow"] = 0;
-    thrustersBow = false;
 }
 script_execute(scrWipeToInitState);

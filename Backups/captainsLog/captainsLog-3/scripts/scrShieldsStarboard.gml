@@ -1,8 +1,5 @@
-if(!(requiredPPShields > currentPP) && !shieldsStarboard) {
+if(!(requiredPPShields > currentPP) && !actionMap[? "Shields Starboard"]) {
     actionMap[? "Shields Starboard"] = true;
-    shieldsStarboard = true;
-    currentPP -= requiredPPShields;
-    currentPPShieldsStarboard += requiredPPShields;
 } else if(!shieldsStarboard) {
     //To Do: Error to user about lack of power...
 }

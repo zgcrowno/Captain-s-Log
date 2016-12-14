@@ -1,7 +1,4 @@
 script_execute(scrWipeToInitState);
-if(shieldsStarboard) {
-    currentPP += requiredPPShields;
-    currentPPShieldsStarboard -= requiredPPShields;
-    actionMap[? "Cut Shields Starboard"] = true;
-    shieldsStarboard = false;
+if(actionMap[? "Shields Starboard"]) {
+    actionMap[? "Shields Starboard"] = false;
 }

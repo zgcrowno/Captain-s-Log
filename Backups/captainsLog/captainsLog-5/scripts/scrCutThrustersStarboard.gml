@@ -1,7 +1,4 @@
-if(thrustersStarboard) {
-    currentPP += requiredPPThrusters;
-    currentPPThrustersStarboard -= requiredPPThrusters;
-    actionMap[? "Cut Thrusters Starboard"] = true;
-    thrustersStarboard = false;
+if(actionMap[? "Thrusters Starboard"] > 0) {
+    actionMap[? "Thrusters Starboard"] = 0;
 }
 script_execute(scrWipeToInitState);

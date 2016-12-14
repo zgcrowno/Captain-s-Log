@@ -17,26 +17,6 @@ ds_map_add(actionMap, "Shields Port", false);
 ds_map_add(actionMap, "Shields Starboard", false);
 ds_map_add(actionMap, "Shields Bow", false);
 ds_map_add(actionMap, "Shields Stern", false);
-ds_map_add(actionMap, "Shields All", false);
-ds_map_add(actionMap, "Cut Thrusters Port", false);
-ds_map_add(actionMap, "Cut Thrusters Starboard", false);
-ds_map_add(actionMap, "Cut Thrusters Bow", false);
-ds_map_add(actionMap, "Cut Thrusters Stern", false);
-ds_map_add(actionMap, "Cut Thrusters Count", false);
-ds_map_add(actionMap, "Cut Thrusters Clock", false);
-ds_map_add(actionMap, "Cut Thrusters Rotate", false);
-ds_map_add(actionMap, "Cut Thrusters All", false);
-ds_map_add(actionMap, "Cut Shields Port", false);
-ds_map_add(actionMap, "Cut Shields Starboard", false);
-ds_map_add(actionMap, "Cut Shields Bow", false);
-ds_map_add(actionMap, "Cut Shields Stern", false);
-ds_map_add(actionMap, "Cut Shields All", false);
-ds_map_add(actionMap, "Cut Guns", false);
-ds_map_add(actionMap, "Cut Cannon", false);
-ds_map_add(actionMap, "Cut Active", false);
-ds_map_add(actionMap, "Cut Passive", false);
-ds_map_add(actionMap, "Cut Target", false);
-ds_map_add(actionMap, "Cut All", false);
 ds_map_add(actionMap, "Target", null);
 ds_map_add(actionMap, "Guns", false);
 ds_map_add(actionMap, "Cannon", false);
@@ -68,24 +48,6 @@ cutShieldsState = 14;
 cutThrustersRotateState = 15;
 cannonChargeState = 16;
 currentState = initState;
-
-//Thruster states
-thrustersPort = false;
-thrustersStarboard = false;
-thrustersBow = false;
-thrustersStern = false;
-thrustersRotateClockwise = false;
-thrustersRotateCounterclockwise = false;
-
-//Shield states
-shieldsPort = false;
-shieldsStarboard = false;
-shieldsBow = false;
-shieldsStern = false;
-
-//Gun and cannon states
-guns = false;
-cannon = false;
 
 //Maximum overall health and power of the ship
 maxHP = 0;
@@ -145,9 +107,6 @@ percentPPCannon = 0;
 //Rate at which the cannon cools down
 cannonCooldownRate = 0;
 
-//Number of thrusters activated
-numActiveThrusters = 0;
-
 //String representing user input
 input = "";
 
@@ -157,21 +116,6 @@ shieldsText = "shields";
 gunsText = "guns";
 cannonText = "cannon";
 cutText = "cut";
-
-//The Distances to Cover
-distanceToCover = 0;
-distanceToCoverPort = 0;
-distanceToCoverStarboard = 0;
-distanceToCoverBow = 0;
-distanceToCoverStern = 0;
-
-//The Degrees to Rotate the Ship
-degreesToRotateClockwise = 0;
-degreesToRotateCounterclockwise = 0;
-
-//The Degrees Rotated by the Ship
-degreesRotatedClockwise = 0;
-degreesRotatedCounterclockwise = 0;
 
 //Ship-specific data
 maxHPRicecake = 100;

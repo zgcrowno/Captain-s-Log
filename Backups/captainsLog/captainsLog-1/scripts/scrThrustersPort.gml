@@ -1,13 +1,6 @@
-if(!(requiredPPThrusters > currentPP) && !thrustersPort) {
-    distanceToCoverPort += real(input);
-    distanceToCover += real(input);
+if(!(requiredPPThrusters > currentPP) && !(actionMap[? "Thrusters Port"] > 0)) {
     actionMap[? "Thrusters Port"] = real(input);
-    thrustersPort = true;
-    currentPP -= requiredPPThrusters;
-    currentPPThrustersPort += requiredPPThrusters;
-} else if(thrustersPort) {
-    distanceToCoverPort += real(input);
-    distanceToCover += real(input);
+} else if(actionMap[? "Thrusters Port"] > 0) {
     actionMap[? "Thrusters Port"] = actionMap[? "Thrusters Port"] + real(input);
 } else {
     //To Do: Error to user about lack of power

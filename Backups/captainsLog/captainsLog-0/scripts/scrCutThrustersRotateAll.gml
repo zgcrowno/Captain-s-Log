@@ -1,11 +1,7 @@
 script_execute(scrWipeToInitState);
-if(thrustersRotateClockwise) {
-    currentPP += requiredPPThrustersRotate;
-    currentPPThrustersRotateClockwise -= requiredPPThrustersRotate;
-    thrustersRotateClockwise = false;
+if(actionMap[? "Thrusters Clock"] > 0) {
+    actionMap[? "Thrusters Clock"] = 0;
 }
-if(thrustersRotateCounterclockwise) {
-    currentPP += requiredPPThrustersRotate;
-    currentPPThrustersRotateCounterclockwise -= requiredPPThrustersRotate;
-    thrustersRotateCounterclockwise = false;
+if(actionMap[? "Thrusters Count"] > 0) {
+    actionMap[? "Thrusters Count"] = 0;
 }

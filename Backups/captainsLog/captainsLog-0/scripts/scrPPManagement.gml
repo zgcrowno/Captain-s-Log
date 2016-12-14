@@ -1,77 +1,67 @@
-if(currentPP > maxPP) {
-    currentPP = maxPP;
-} else if(currentPP < 0) {
-    currentPP = 0;
-}
-
-if(currentPPThrustersPort > requiredPPThrusters) {
+if(actionMap[? "Thrusters Port"] > 0) {
     currentPPThrustersPort = requiredPPThrusters;
-} else if(currentPPThrustersPort < 0) {
+} else {
     currentPPThrustersPort = 0;
 }
-
-if(currentPPThrustersStarboard > requiredPPThrusters) {
+if(actionMap[? "Thrusters Starboard"] > 0) {
     currentPPThrustersStarboard = requiredPPThrusters;
-} else if(currentPPThrustersStarboard < 0) {
+} else {
     currentPPThrustersStarboard = 0;
 }
-
-if(currentPPThrustersBow > requiredPPThrusters) {
-    currentPPThrustersBow = requiredPPThrusters; 
-} else if(currentPPThrustersBow < 0) {
+if(actionMap[? "Thrusters Bow"] > 0) {
+    currentPPThrustersBow = requiredPPThrusters;
+} else {
     currentPPThrustersBow = 0;
 }
-
-if(currentPPThrustersStern > requiredPPThrusters) {
+if(actionMap[? "Thrusters Stern"] > 0) {
     currentPPThrustersStern = requiredPPThrusters;
-} else if(currentPPThrustersStern < 0) {
+} else {
     currentPPThrustersStern = 0;
 }
-
-if(currentPPThrustersRotateClockwise > requiredPPThrustersRotate) {
+if(actionMap[? "Thrusters Clock"] > 0) {
     currentPPThrustersRotateClockwise = requiredPPThrustersRotate;
-} else if(currentPPThrustersRotateClockwise < 0) {
+} else {
     currentPPThrustersRotateClockwise = 0;
 }
-
-if(currentPPThrustersRotateCounterclockwise > requiredPPThrustersRotate) {
+if(actionMap[? "Thrusters Count"] > 0) {
     currentPPThrustersRotateCounterclockwise = requiredPPThrustersRotate;
-} else if(currentPPThrustersRotateCounterclockwise < 0) {
+} else {
     currentPPThrustersRotateCounterclockwise = 0;
 }
-
-if(currentPPShieldsPort > requiredPPShields) {
+if(actionMap[? "Shields Port"] == "Active" || actionMap[? "Shields Port"] == "To Activate") {
     currentPPShieldsPort = requiredPPShields;
-} else if(currentPPShieldsPort < 0) {
+} else {
     currentPPShieldsPort = 0;
 }
-
-if(currentPPShieldsStarboard > requiredPPShields) {
+if(actionMap[? "Shields Starboard"] == "Active" || actionMap[? "Shields Starboard"] == "To Activate") {
     currentPPShieldsStarboard = requiredPPShields;
-} else if(currentPPShieldsStarboard < 0) {
+} else {
     currentPPShieldsStarboard = 0;
 }
-
-if(currentPPShieldsBow > requiredPPShields) {
+if(actionMap[? "Shields Bow"] == "Active" || actionMap[? "Shields Bow"] == "To Activate") {
     currentPPShieldsBow = requiredPPShields;
-} else if(currentPPShieldsBow < 0) {
+} else {
     currentPPShieldsBow = 0;
 }
-
-if(currentPPShieldsStern > requiredPPShields) {
-    currentPPShieldsStern = requiredPPShields
-} else if(currentPPShieldsStern < 0) {
+if(actionMap[? "Shields Stern"] == "Active" || actionMap[? "Shields Stern"] == "To Activate") {
+    currentPPShieldsStern = requiredPPShields;
+} else {
     currentPPShieldsStern = 0;
 }
-
-if(currentPPGuns > requiredPPGuns) {
+if(actionMap[? "Guns"]) {
     currentPPGuns = requiredPPGuns;
-} else if(currentPPGuns < 0) {
+} else {
     currentPPGuns = 0;
 }
-
-if(currentPPCannon > requiredPPCannon) {
+if(actionMap[? "Cannon"]) {
     currentPPCannon = requiredPPCannon;
-} else if(currentPPCannon < 0) {
+} else {
     currentPPCannon = 0;
 }
+
+currentPP = maxPP - currentPPThrustersPort - currentPPThrustersStarboard -
+            currentPPThrustersBow - currentPPThrustersStern - 
+            currentPPThrustersRotateClockwise - 
+            currentPPThrustersRotateCounterclockwise -
+            currentPPShieldsPort - currentPPShieldsStarboard - currentPPShieldsBow -
+            currentPPShieldsStern - currentPPGuns - currentPPCannon;

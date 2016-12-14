@@ -1,13 +1,11 @@
-if(!(requiredPPGuns > currentPP) && !guns) {
+if(!(requiredPPGuns > currentPP) && !actionMap[? "Guns"]) {
     target = enemies[k];
     targetID = enemies[k].id;
-    guns = true;
-    currentPP -= requiredPPGuns;
-    currentPPGuns += requiredPPGuns;
-} else if(guns) {
+    actionMap[? "Guns"] = true;
+} else if(actionMap[? "Guns"]) {
     target = enemies[k];
     targetID = enemies[k].id;
-    guns = true;
+    actionMap[? "Guns"] = true;
 } else {
     //Error to user about lack of power
 }

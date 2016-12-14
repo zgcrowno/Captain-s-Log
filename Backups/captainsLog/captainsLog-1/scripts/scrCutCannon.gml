@@ -1,5 +1,5 @@
-if(cannon) {
-    cannon = false;
+if(actionMap[? "Cannon"]) {
+    actionMap[? "Cannon"] = false;
     currentPPCannon = 0;
 }
 script_execute(scrWipeToInitState);

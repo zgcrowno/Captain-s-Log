@@ -1,7 +1,4 @@
 script_execute(scrWipeToInitState);
-if(shieldsBow) {
-    currentPP += requiredPPShields;
-    currentPPShieldsBow -= requiredPPShields;
-    actionMap[? "Cut Shields Bow"] = true;
-    shieldsBow = false;
+if(actionMap[? "Shields Bow"]) {
+    actionMap[? "Shields Bow"] = false;
 }

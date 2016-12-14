@@ -1,13 +1,6 @@
-if(!(requiredPPThrusters > currentPP) && !thrustersBow) {
-    distanceToCoverBow += real(input);
-    distanceToCover += real(input);
+if(!(requiredPPThrusters > currentPP) && !(actionMap[? "Thrusters Bow"] > 0)) {
     actionMap[? "Thrusters Bow"] = real(input);
-    thrustersBow = true;
-    currentPP -= requiredPPThrusters;
-    currentPPThrustersBow += requiredPPThrusters;
-} else if(thrustersBow) {
-    distanceToCoverBow += real(input);
-    distanceToCover += real(input);
+} else if(actionMap[? "Thrusters Bow"] > 0) {
     actionMap[? "Thrusters Bow"] = actionMap[? "Thrusters Bow"] + real(input);
 } else {
     //To Do: Error to user about lack of power

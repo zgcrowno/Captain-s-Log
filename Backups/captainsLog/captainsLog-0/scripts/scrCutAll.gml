@@ -1,74 +1,45 @@
-if(thrustersPort) {
-    currentPP += requiredPPThrusters;
-    currentPPThrustersPort -= requiredPPThrustersRotate;
+if(actionMap[? "Thrusters Port"] > 0) {
     actionMap[? "Thrusters Port"] = 0;
 }
-if(thrustersStarboard) {
-    currentPP += requiredPPThrusters;
-    currentPPThrustersStarboard -= requiredPPThrusters;
+if(actionMap[? "Thrusters Starboard"] > 0) {
     actionMap[? "Thrusters Starboard"] = 0;
 }
-if(thrustersBow) {
-    currentPP += requiredPPThrusters;
-    currentPPThrustersBow -= requiredPPThrusters;
+if(actionMap[? "Thrusters Bow"] > 0) {
     actionMap[? "Thrusters Bow"] = 0;
 }
-if(thrustersStern) {
-    currentPP += requiredPPThrusters;
-    currentPPThrustersStern -= requiredPPThrusters;
+if(actionMap[? "Thrusters Stern"] > 0) {
     actionMap[? "Thrusters Stern"] = 0;
 }
-if(thrustersRotateClockwise) {
-    currentPP += requiredPPThrustersRotate;
-    currentPPThrustersRotateClockwise -= requiredPPThrustersRotate;
+if(actionMap[? "Thrusters Clock"] > 0) {
     actionMap[? "Thrusters Clock"] = 0;
 }
-if(thrustersRotateCounterclockwise) {
-    currentPP += requiredPPThrustersRotate;
-    currentPPThrustersRotateCounterclockwise -= requiredPPThrustersRotate;
+if(actionMap[? "Thrusters Count"] > 0) {
     actionMap[? "Thrusters Count"] = 0;
 }
-if(shieldsPort) {
-    currentPP += requiredPPShields;
-    currentPPShieldsPort -= requiredPPShields;
-    actionMap[? "Shields Port"] = false;
-} 
-if(shieldsStarboard) {
-    currentPP += requiredPPShields;
-    currentPPShieldsStarboard -= requiredPPShields;
-    actionMap[? "Shields Starboard"] = false;
-} 
-if(shieldsBow) {
-    currentPP += requiredPPShields;
-    currentPPShieldsBow -= requiredPPShields;
-    actionMap[? "Shields Bow"] = false;
+if(actionMap[? "Shields Port"] == "Active") {
+    actionMap[? "Shields Port"] = "To Deactivate";
+} else if(actionMap[? "Shields Port"] == "To Activate") {
+    actionMap[? "Shields Port"] = "Inactive";
 }
-if(shieldsStern) {
-    currentPP += requiredPPShields;
-    currentPPShieldsStern -= requiredPPShields;
-    actionMap[? "Shields Stern"] = false;
+if(actionMap[? "Shields Starboard"] == "Active") {
+    actionMap[? "Shields Starboard"] = "To Deactivate";
+} else if(actionMap[? "Shields Starboard"] == "To Activate") {
+    actionMap[? "Shields Starboard"] = "Inactive";
 }
-if(guns) {
-    currentPP += requiredPPGuns;
-    currentPPGuns -= requiredPPGuns;
-    bulletTimer = 0;
+if(actionMap[? "Shields Bow"] == "Active") {
+    actionMap[? "Shields Bow"] = "To Deactivate";
+} else if(actionMap[? "Shields Bow"] == "To Activate") {
+    actionMap[? "Shields Bow"] = "Inactive";
+}
+if(actionMap[? "Shields Stern"] == "Active") {
+    actionMap[? "Shields Stern"] = "To Deactivate";
+} else if(actionMap[? "Shields Stern"] == "To Activate") {
+    actionMap[? "Shields Stern"] = "Inactive";
+}
+if(actionMap[? "Guns"]) {
     actionMap[? "Guns"] = false;
 }
-if(cannon) {
-    currentPP += requiredPPCannon;
-    currentPPCannon -= requiredPPCannon;
+if(actionMap[? "Cannon"]) {
     actionMap[? "Cannon"] = false;
 }
 script_execute(scrWipeToInitState);
-thrustersPort = false;
-thrustersStarboard = false;
-thrustersBow = false;
-thrustersStern = false;
-thrustersRotateClockwise = false;
-thrustersRotateCounterclockwise = false;
-shieldsPort = false;
-shieldsStarboard = false;
-shieldsBow = false;
-shieldsStern = false;
-guns = false;
-cannon = false;

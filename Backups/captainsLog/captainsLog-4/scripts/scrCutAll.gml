@@ -1,68 +1,37 @@
-if(thrustersPort) {
-    currentPP += requiredPPThrusters;
-    currentPPThrustersPort -= requiredPPThrustersRotate;
+if(actionMap[? "Thrusters Port"] > 0) {
+    actionMap[? "Thrusters Port"] = 0;
 }
-if(thrustersStarboard) {
-    currentPP += requiredPPThrusters;
-    currentPPThrustersStarboard -= requiredPPThrusters;
+if(actionMap[? "Thrusters Starboard"] > 0) {
+    actionMap[? "Thrusters Starboard"] = 0;
 }
-if(thrustersBow) {
-    currentPP += requiredPPThrusters;
-    currentPPThrustersBow -= requiredPPThrusters;
+if(actionMap[? "Thrusters Bow"] > 0) {
+    actionMap[? "Thrusters Bow"] = 0;
 }
-if(thrustersStern) {
-    currentPP += requiredPPThrusters;
-    currentPPThrustersStern -= requiredPPThrusters;
+if(actionMap[? "Thrusters Stern"] > 0) {
+    actionMap[? "Thrusters Stern"] = 0;
 }
-if(thrustersRotateClockwise) {
-    currentPP += requiredPPThrustersRotate;
-    currentPPThrustersRotateClockwise -= requiredPPThrustersRotate;
+if(actionMap[? "Thrusters Clock"] > 0) {
+    actionMap[? "Thrusters Clock"] = 0;
 }
-if(thrustersRotateCounterclockwise) {
-    currentPP += requiredPPThrustersRotate;
-    currentPPThrustersRotateCounterclockwise -= requiredPPThrustersRotate;
+if(actionMap[? "Thrusters Count"] > 0) {
+    actionMap[? "Thrusters Count"] = 0;
 }
-if(shieldsPort) {
-    currentPP += requiredPPShields;
-    currentPPShieldsPort -= requiredPPShields;
+if(actionMap[? "Shields Port"]) {
+    actionMap[? "Shields Port"] = false;
 } 
-if(shieldsStarboard) {
-    currentPP += requiredPPShields;
-    currentPPShieldsStarboard -= requiredPPShields;
+if(actionMap[? "Shields Starboard"]) {
+    actionMap[? "Shields Starboard"] = false;
 } 
-if(shieldsBow) {
-    currentPP += requiredPPShields;
-    currentPPShieldsBow -= requiredPPShields;
+if(actionMap[? "Shields Bow"]) {
+    actionMap[? "Shields Bow"] = false;
 }
-if(shieldsStern) {
-    currentPP += requiredPPShields;
-    currentPPShieldsStern -= requiredPPShields;
+if(actionMap[? "Shields Stern"]) {
+    actionMap[? "Shields Stern"] = false;
 }
-if(guns) {
-    currentPP += requiredPPGuns;
-    currentPPGuns -= requiredPPGuns;
-    bulletTimer = 0;
+if(actionMap[? "Guns"]) {
+    actionMap[? "Guns"] = false;
 }
-if(cannon) {
-    currentPP += requiredPPCannon;
-    currentPPCannon -= requiredPPCannon;
-}
-if(thrustersPort || thrustersStarboard || thrustersBow || thrustersStern
-   || thrustersRotateClockwise || thrustersRotateCounterclockwise
-   || shieldsPort || shieldsStarboard || shieldsBow || shieldsStern
-   || guns || cannon) {
-    actionMap[? "Cut All"] = true;
+if(actionMap[? "Cannon"]) {
+    actionMap[? "Cannon"] = false;
 }
 script_execute(scrWipeToInitState);
-thrustersPort = false;
-thrustersStarboard = false;
-thrustersBow = false;
-thrustersStern = false;
-thrustersRotateClockwise = false;
-thrustersRotateCounterclockwise = false;
-shieldsPort = false;
-shieldsStarboard = false;
-shieldsBow = false;
-shieldsStern = false;
-guns = false;
-cannon = false;

@@ -1,7 +1,6 @@
 script_execute(scrWipeToInitState);
-if(shieldsStarboard) {
-    currentPP += requiredPPShields;
-    currentPPShieldsStarboard -= requiredPPShields;
-    actionMap[? "Shields Starboard"] = false;
-    shieldsStarboard = false;
+if(actionMap[? "Shields Starboard"] == active) {
+    actionMap[? "Shields Starboard"] = toDeactivate;
+} else if(actionMap[? "Shields Starboard"] == toActivate) {
+    actionMap[? "Shields Starboard"] = inactive;
 }

@@ -1,7 +1,4 @@
-if(guns) {
-    guns = false;
-    bulletTimer = 0;
-    currentPPGuns = 0;
-    currentPP += requiredPPGuns;
+if(actionMap[? "Guns"]) {
+    actionMap[? "Guns"] = false;
 }
 script_execute(scrWipeToInitState);

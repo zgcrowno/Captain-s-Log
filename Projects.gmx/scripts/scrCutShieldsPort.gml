@@ -1,7 +1,6 @@
 script_execute(scrWipeToInitState);
-if(shieldsPort) {
-    currentPP += requiredPPShields;
-    currentPPShieldsPort -= requiredPPShields;
-    actionMap[? "Shields Port"] = false;
-    shieldsPort = false;
+if(actionMap[? "Shields Port"] == active) {
+    actionMap[? "Shields Port"] = toDeactivate;
+} else if(actionMap[? "Shields Port"] == toActivate) {
+    actionMap[? "Shields Port"] = inactive;
 }

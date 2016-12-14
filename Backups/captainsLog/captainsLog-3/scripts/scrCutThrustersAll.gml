@@ -1,25 +1,13 @@
 script_execute(scrWipeToInitState);
-if(thrustersPort) {
-    currentPP += requiredPPThrusters;
-    currentPPThrustersPort -= requiredPPThrusters;
-    actionMap[? "Cut Thrusters All"] = true;
-    thrustersPort = false;
+if(actionMap[? "Thrusters Port"] > 0) {
+    actionMap[? "Thrusters Port"] = 0;
 }
-if(thrustersStarboard) {
-    currentPP += requiredPPThrusters;
-    currentPPThrustersStarboard -= requiredPPThrusters;
-    actionMap[? "Cut Thrusters All"] = true;
-    thrustersStarboard = false;
+if(actionMap[? "Thrusters Starboard"] > 0) {
+    actionMap[? "Thrusters Starboard"] = 0;
 }
-if(thrustersBow) {
-    currentPP += requiredPPThrusters;
-    currentPPThrustersBow -= requiredPPThrusters;
-    actionMap[? "Cut Thrusters All"] = true;
-    thrustersBow = false;
+if(actionMap[? "Thrusters Bow"] > 0) {
+    actionMap[? "Thrusters Bow"] = 0;
 }
-if(thrustersStern) {
-    currentPP += requiredPPThrusters;
-    currentPPThrustersStern -= requiredPPThrusters;
-    actionMap[? "Cut Thrusters All"] = true;
-    thrustersStern = false;
+if(actionMap[? "Thrusters Stern"] > 0) {
+    actionMap[? "Thrusters Stern"] = 0;
 }

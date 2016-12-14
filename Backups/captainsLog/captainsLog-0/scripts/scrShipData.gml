@@ -13,11 +13,10 @@ ds_map_add(actionMap, "Thrusters Bow", 0);
 ds_map_add(actionMap, "Thrusters Stern", 0);
 ds_map_add(actionMap, "Thrusters Count", 0);
 ds_map_add(actionMap, "Thrusters Clock", 0);
-ds_map_add(actionMap, "Shields Port", false);
-ds_map_add(actionMap, "Shields Starboard", false);
-ds_map_add(actionMap, "Shields Bow", false);
-ds_map_add(actionMap, "Shields Stern", false);
-ds_map_add(actionMap, "Shields All", false);
+ds_map_add(actionMap, "Shields Port", "Inactive"); //Inactive, Active, To Activate, To Deactivate
+ds_map_add(actionMap, "Shields Starboard", "Inactive"); //Inactive, Active, To Activate, To Deactivate
+ds_map_add(actionMap, "Shields Bow", "Inactive"); //Inactive, Active, To Activate, To Deactivate
+ds_map_add(actionMap, "Shields Stern", "Inactive"); //Inactive, Active, To Activate, To Deactivate
 ds_map_add(actionMap, "Target", null);
 ds_map_add(actionMap, "Guns", false);
 ds_map_add(actionMap, "Cannon", false);
@@ -49,24 +48,6 @@ cutShieldsState = 14;
 cutThrustersRotateState = 15;
 cannonChargeState = 16;
 currentState = initState;
-
-//Thruster states
-thrustersPort = false;
-thrustersStarboard = false;
-thrustersBow = false;
-thrustersStern = false;
-thrustersRotateClockwise = false;
-thrustersRotateCounterclockwise = false;
-
-//Shield states
-shieldsPort = false;
-shieldsStarboard = false;
-shieldsBow = false;
-shieldsStern = false;
-
-//Gun and cannon states
-guns = false;
-cannon = false;
 
 //Maximum overall health and power of the ship
 maxHP = 0;
@@ -126,9 +107,6 @@ percentPPCannon = 0;
 //Rate at which the cannon cools down
 cannonCooldownRate = 0;
 
-//Number of thrusters activated
-numActiveThrusters = 0;
-
 //String representing user input
 input = "";
 
@@ -138,21 +116,6 @@ shieldsText = "shields";
 gunsText = "guns";
 cannonText = "cannon";
 cutText = "cut";
-
-//The Distances to Cover
-distanceToCover = 0;
-distanceToCoverPort = 0;
-distanceToCoverStarboard = 0;
-distanceToCoverBow = 0;
-distanceToCoverStern = 0;
-
-//The Degrees to Rotate the Ship
-degreesToRotateClockwise = 0;
-degreesToRotateCounterclockwise = 0;
-
-//The Degrees Rotated by the Ship
-degreesRotatedClockwise = 0;
-degreesRotatedCounterclockwise = 0;
 
 //Ship-specific data
 maxHPRicecake = 100;

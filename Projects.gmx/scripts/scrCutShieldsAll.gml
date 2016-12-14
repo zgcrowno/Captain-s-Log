@@ -1,25 +1,21 @@
 script_execute(scrWipeToInitState);
-if(shieldsPort) {
-    currentPP += requiredPPShields;
-    currentPPShieldsPort -= requiredPPShields;
-    actionMap[? "Shields Port"] = false;
-    shieldsPort = false;
+if(actionMap[? "Shields Port"] == active) {
+    actionMap[? "Shields Port"] = toDeactivate;
+} else if(actionMap[? "Shields Port"] == toActivate) {
+    actionMap[? "Shields Port"] = inactive;
 }
-if(shieldsStarboard) {
-    currentPP += requiredPPShields;
-    currentPPShieldsStarboard -= requiredPPShields;
-    actionMap[? "Shields Starboard"] = false;
-    shieldsStarboard = false;
+if(actionMap[? "Shields Starboard"] == active) {
+    actionMap[? "Shields Starboard"] = toDeactivate;
+} else if(actionMap[? "Shields Starboard"] == toActivate) {
+    actionMap[? "Shields Starboard"] = inactive;
 }
-if(shieldsBow) {
-    currentPP += requiredPPShields;
-    currentPPShieldsBow -= requiredPPShields;
-    actionMap[? "Shields Bow"] = false;
-    shieldsBow = false;
+if(actionMap[? "Shields Bow"] == active) {
+    actionMap[? "Shields Bow"] = toDeactivate;
+} else if(actionMap[? "Shields Bow"] == toActivate) {
+    actionMap[? "Shields Bow"] = inactive;
 }
-if(shieldsStern) {
-    currentPP += requiredPPShields;
-    currentPPShieldsStern -= requiredPPShields;
-    actionMap[? "Shields Stern"] = false;
-    shieldsStern = false;
+if(actionMap[? "Shields Stern"] == active) {
+    actionMap[? "Shields Stern"] = toDeactivate;
+} else if(actionMap[? "Shields Stern"] == toActivate) {
+    actionMap[? "Shields Stern"] = inactive;
 }

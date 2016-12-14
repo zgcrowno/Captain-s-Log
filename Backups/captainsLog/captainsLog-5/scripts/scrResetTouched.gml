@@ -1,3 +1,3 @@
-if(timeline.y < 500) {
+if(timeline.y == hud.playAreaUpperBound) {
     touchedTimeline = false;
 }

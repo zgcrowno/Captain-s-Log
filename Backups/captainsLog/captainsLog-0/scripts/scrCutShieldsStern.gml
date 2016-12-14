@@ -1,6 +1,6 @@
 script_execute(scrWipeToInitState);
-if(shieldsStern) {
-    currentPP += requiredPPShields;
-    currentPPShieldsStern -= requiredPPShields;
-    shieldsStern = false;
+if(actionMap[? "Shields Stern"] == "Active") {
+    actionMap[? "Shields Stern"] = "To Deactivate";
+} else if(actionMap[? "Shields Stern"] == "To Activate") {
+    actionMap[? "Shields Stern"] = "Inactive";
 }

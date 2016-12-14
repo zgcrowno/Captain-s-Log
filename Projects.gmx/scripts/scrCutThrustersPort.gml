@@ -1,7 +1,4 @@
 script_execute(scrWipeToInitState);
-if(thrustersPort) {
-    currentPP += requiredPPThrusters;
-    currentPPThrustersPort -= requiredPPThrusters;
+if(actionMap[? "Thrusters Port"] > 0) {
     actionMap[? "Thrusters Port"] = 0;
-    thrustersPort = false;
 }

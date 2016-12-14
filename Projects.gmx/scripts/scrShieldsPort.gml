@@ -1,9 +1,6 @@
-if(!(requiredPPShields > currentPP) && !shieldsPort) {
-    actionMap[? "Shields Port"] = true;
-    shieldsPort = true;
-    currentPP -= requiredPPShields;
-    currentPPShieldsPort += requiredPPShields;
-} else if(!shieldsPort) {
+if(!(requiredPPShields > currentPP) && !(actionMap[? "Shields Port"] == active)) {
+    actionMap[? "Shields Port"] = toActivate;
+} else if(!(actionMap[? "Shields Port"] == active)) {
     //To Do: Error to user about lack of power...
 } 
 script_execute(scrWipeToInitState);
