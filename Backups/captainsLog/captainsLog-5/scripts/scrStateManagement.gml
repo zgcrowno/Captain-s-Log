@@ -1,4 +1,3 @@
-show_debug_message(currentState + " " + input);
 if(currentState == initState) {
     if(input == "thrusters") {
         currentState = thrusterState;

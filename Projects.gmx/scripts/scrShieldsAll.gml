@@ -1,6 +1,8 @@
 if(!((requiredPPShields * 4) > currentPP) && !(actionMap[? "Shields Port"] == active) && !(actionMap[? "Shields Starboard"] == active) && !(actionMap[? "Shields Bow"] == active) && !(actionMap[? "Shields Stern"] == active)) {
     actionMap[? "Shields Port"] = toActivate;
     actionMap[? "Shields Starboard"] = toActivate;
+    actionMap[? "Shields Bow"] = toActivate;
+    actionMap[? "Shields Stern"] = toActivate;
 } else if(!((requiredPPShields * 3) > currentPP) && (actionMap[? "Shields Port"] == active) && !(actionMap[? "Shields Starboard"] == active) && !(actionMap[? "Shields Bow"] == active) && !(actionMap[? "Shields Stern"] == active)) {
     actionMap[? "Shields Starboard"] = toActivate;
     actionMap[? "Shields Bow"] = toActivate;

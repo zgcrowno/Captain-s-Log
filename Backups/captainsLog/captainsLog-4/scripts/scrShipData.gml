@@ -13,10 +13,10 @@ ds_map_add(actionMap, "Thrusters Bow", 0);
 ds_map_add(actionMap, "Thrusters Stern", 0);
 ds_map_add(actionMap, "Thrusters Count", 0);
 ds_map_add(actionMap, "Thrusters Clock", 0);
-ds_map_add(actionMap, "Shields Port", false);
-ds_map_add(actionMap, "Shields Starboard", false);
-ds_map_add(actionMap, "Shields Bow", false);
-ds_map_add(actionMap, "Shields Stern", false);
+ds_map_add(actionMap, "Shields Port", "Inactive"); //Inactive, Active, To Activate, To Deactivate
+ds_map_add(actionMap, "Shields Starboard", "Inactive"); //Inactive, Active, To Activate, To Deactivate
+ds_map_add(actionMap, "Shields Bow", "Inactive"); //Inactive, Active, To Activate, To Deactivate
+ds_map_add(actionMap, "Shields Stern", "Inactive"); //Inactive, Active, To Activate, To Deactivate
 ds_map_add(actionMap, "Target", null);
 ds_map_add(actionMap, "Guns", false);
 ds_map_add(actionMap, "Cannon", false);

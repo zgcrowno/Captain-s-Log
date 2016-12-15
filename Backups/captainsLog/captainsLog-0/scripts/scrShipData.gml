@@ -29,6 +29,12 @@ starboardShields = null;
 bowShields = null;
 sternShields = null;
 
+//The Shield Input States
+active = 0;
+inactive = 1;
+toActivate = 2;
+toDeactivate = 3;
+
 //Hud States
 initState = 0;
 thrusterState = 1;

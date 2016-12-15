@@ -16,13 +16,28 @@ if(actionMap[? "Thrusters Count"] > 0) {
 if(actionMap[? "Thrusters Clock"] > 0) {
     actionMap[? "Thrusters Clock"]--;
 }
-actionMap[? "Shields Port"] = false;
-actionMap[? "Shields Starboard"] = false;
-actionMap[? "Shields Bow"] = false;
-actionMap[? "Shields Stern"] = false;
-actionMap[? "Shields All"] = false;
+if(actionMap[? "Shields Port"] == toActivate) {
+    actionMap[? "Shields Port"] = active;
+} else if(actionMap[? "Shields Port"] == toDeactivate) {
+    actionMap[? "Shields Port"] = inactive;
+}
+if(actionMap[? "Shields Starboard"] == toActivate) {
+    actionMap[? "Shields Starboard"] = active;
+} else if(actionMap[? "Shields Starboard"] == toDeactivate) {
+    actionMap[? "Shields Starboard"] = inactive;
+}
+if(actionMap[? "Shields Bow"] == toActivate) {
+    actionMap[? "Shields Bow"] = active;
+} else if(actionMap[? "Shields Bow"] == toDeactivate) {
+    actionMap[? "Shields Bow"] = inactive;
+}
+if(actionMap[? "Shields Stern"] == toActivate) {
+    actionMap[? "Shields Stern"] = active;
+} else if(actionMap[? "Shields Stern"] == toDeactivate) {
+    actionMap[? "Shields Stern"] = inactive;
+}
 actionMap[? "Target"] = null;
 actionMap[? "Guns"] = false;
 actionMap[? "Cannon"] = false;
-actionMap[? "Active"] = false;
+actionMap[? active] = false;
 actionMap[? "Passive"] = false;

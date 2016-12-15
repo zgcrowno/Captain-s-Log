@@ -1,4 +1,6 @@
 script_execute(scrWipeToInitState);
-if(actionMap[? "Shields Bow"]) {
-    actionMap[? "Shields Bow"] = false;
+if(actionMap[? "Shields Bow"] == active) {
+    actionMap[? "Shields Bow"] = toDeactivate;
+} else if(actionMap[? "Shields Bow"] == toActivate) {
+    actionMap[? "Shields Bow"] = inactive;
 }
