@@ -23,7 +23,7 @@
                 starboardShields[starboardShieldsIndex] = adjacentGridBoxes[i];
                 starboardShieldsIndex++;
             }
-        } else if(image_angle % 360 == 90) {
+        } else if(abs(image_angle % 360) == 90) {
             if(adjacentGridBoxes[i].y < (y - (sprite_height / 2) - util.gridBlockWidth)) {
                 starboardShields[starboardShieldsIndex] = adjacentGridBoxes[i];
                 starboardShieldsIndex++;
@@ -40,7 +40,7 @@
                 sternShields[sternShieldsIndex] = adjacentGridBoxes[i];
                 sternShieldsIndex++;
             }
-        } else if(image_angle % 360 == 180) {
+        } else if(abs(image_angle % 360) == 180) {
             if(adjacentGridBoxes[i].y < (y - (sprite_height / 2) - util.gridBlockWidth)) {
                 sternShields[sternShieldsIndex] = adjacentGridBoxes[i];
                 sternShieldsIndex++;
@@ -57,7 +57,7 @@
                 portShields[portShieldsIndex] = adjacentGridBoxes[i];
                 portShieldsIndex++;
             }
-        } else if(image_angle % 360 == 270) {
+        } else if(abs(image_angle % 360) == 270) {
             if(adjacentGridBoxes[i].y < (y - (sprite_height / 2) - util.gridBlockWidth)) {
                 portShields[portShieldsIndex] = adjacentGridBoxes[i];
                 portShieldsIndex++;

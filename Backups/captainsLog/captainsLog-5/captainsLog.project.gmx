@@ -107,7 +107,6 @@
         <scripts name="draw">
           <script>scripts\scrDrawGUI.gml</script>
           <script>scripts\scrDrawInput.gml</script>
-          <script>scripts\scrDrawActions.gml</script>
           <script>scripts\scrCreateGridBoxes.gml</script>
         </scripts>
       </scripts>

@@ -28,22 +28,22 @@ if(actionMap[? "Thrusters Count"] > 0) {
 } else {
     currentPPThrustersRotateCounterclockwise = 0;
 }
-if(actionMap[? "Shields Port"] == "Active" || actionMap[? "Shields Port"] == "To Activate") {
+if(actionMap[? "Shields Port"] == active || actionMap[? "Shields Port"] == toActivate) {
     currentPPShieldsPort = requiredPPShields;
 } else {
     currentPPShieldsPort = 0;
 }
-if(actionMap[? "Shields Starboard"] == "Active" || actionMap[? "Shields Starboard"] == "To Activate") {
+if(actionMap[? "Shields Starboard"] == active || actionMap[? "Shields Starboard"] == toActivate) {
     currentPPShieldsStarboard = requiredPPShields;
 } else {
     currentPPShieldsStarboard = 0;
 }
-if(actionMap[? "Shields Bow"] == "Active" || actionMap[? "Shields Bow"] == "To Activate") {
+if(actionMap[? "Shields Bow"] == active || actionMap[? "Shields Bow"] == toActivate) {
     currentPPShieldsBow = requiredPPShields;
 } else {
     currentPPShieldsBow = 0;
 }
-if(actionMap[? "Shields Stern"] == "Active" || actionMap[? "Shields Stern"] == "To Activate") {
+if(actionMap[? "Shields Stern"] == active || actionMap[? "Shields Stern"] == toActivate) {
     currentPPShieldsStern = requiredPPShields;
 } else {
     currentPPShieldsStern = 0;

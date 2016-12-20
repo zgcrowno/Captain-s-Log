@@ -1,6 +1,6 @@
 script_execute(scrWipeToInitState);
-if(actionMap[? "Shields Stern"] == "Active") {
-    actionMap[? "Shields Stern"] = "To Deactivate";
-} else if(actionMap[? "Shields Stern"] == "To Activate") {
-    actionMap[? "Shields Stern"] = "Inactive";
+if(actionMap[? "Shields Stern"] == active) {
+    actionMap[? "Shields Stern"] = toDeactivate;
+} else if(actionMap[? "Shields Stern"] == toActivate) {
+    actionMap[? "Shields Stern"] = inactive;
 }

@@ -6,6 +6,12 @@ hud = instance_find(objHud, 0);
 //The Util Object
 util = instance_find(objUtil, 0);
 
+//The Shield Input States
+active = 0;
+inactive = 1;
+toActivate = 2;
+toDeactivate = 3;
+
 //The ship's action map
 ds_map_add(actionMap, "Thrusters Port", 0);
 ds_map_add(actionMap, "Thrusters Starboard", 0);
@@ -13,10 +19,10 @@ ds_map_add(actionMap, "Thrusters Bow", 0);
 ds_map_add(actionMap, "Thrusters Stern", 0);
 ds_map_add(actionMap, "Thrusters Count", 0);
 ds_map_add(actionMap, "Thrusters Clock", 0);
-ds_map_add(actionMap, "Shields Port", "Inactive"); //Inactive, Active, To Activate, To Deactivate
-ds_map_add(actionMap, "Shields Starboard", "Inactive"); //Inactive, Active, To Activate, To Deactivate
-ds_map_add(actionMap, "Shields Bow", "Inactive"); //Inactive, Active, To Activate, To Deactivate
-ds_map_add(actionMap, "Shields Stern", "Inactive"); //Inactive, Active, To Activate, To Deactivate
+ds_map_add(actionMap, "Shields Port", inactive);
+ds_map_add(actionMap, "Shields Starboard", inactive);
+ds_map_add(actionMap, "Shields Bow", inactive);
+ds_map_add(actionMap, "Shields Stern", inactive);
 ds_map_add(actionMap, "Target", null);
 ds_map_add(actionMap, "Guns", false);
 ds_map_add(actionMap, "Cannon", false);
@@ -28,12 +34,6 @@ portShields = null;
 starboardShields = null;
 bowShields = null;
 sternShields = null;
-
-//The Shield Input States
-active = 0;
-inactive = 1;
-toActivate = 2;
-toDeactivate = 3;
 
 //Hud States
 initState = 0;

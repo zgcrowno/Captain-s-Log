@@ -76,3 +76,4 @@
             }
         }
     }
+    show_debug_message(adjacentGridBoxes);

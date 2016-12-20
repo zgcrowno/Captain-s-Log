@@ -265,15 +265,17 @@ draw_healthbar(hud.gunsAndCannonLeftBound + (5 * (hud.gunsAndCannonRightBound - 
                true, 
                true);
 
-//Draw "Commands:", "Console:" and "Actions:"
+//Draw Screen Titles
+draw_text(hud.thrustersLeftBound, hud.thrustersUpperBound, "Thrusters:");
+draw_text(hud.shieldsLeftBound, hud.shieldsUpperBound, "Shields:");
 draw_text(hud.commandsLeftBound, hud.commandsUpperBound, "Commands:");
 draw_text(hud.consoleLeftBound, hud.consoleUpperBound, "Console:");
-draw_text(hud.consoleLeftBound + string_width("Console:  /  "), hud.consoleUpperBound, "Actions:");
-
-//Draw console/actions partition
-for(i = 0; i < 17; i++) {
-    draw_text(hud.consoleLeftBound + string_width("Console:  "), hud.consoleUpperBound + ((i / 2) * string_height("/")), "/");
-}
+draw_text(hud.targetLeftBound, hud.targetUpperBound, "Target:");
+draw_text(hud.gunsLeftBound, hud.gunsUpperBound, "Guns:");
+draw_text(hud.cannonLeftBound, hud.cannonUpperBound, "Cannon:");
+draw_text(hud.activeLeftBound, hud.activeUpperBound, "Active:");
+draw_text(hud.passiveLeftBound, hud.passiveUpperBound, "Passive:");
+draw_text(hud.aggregateLeftBound, hud.aggregateUpperBound, "Aggregate:");
 
 //Draw the state-dependent word prompts
 if(player.currentState == player.initState) {
