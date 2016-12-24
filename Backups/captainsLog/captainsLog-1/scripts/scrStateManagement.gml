@@ -33,10 +33,10 @@ if(currentState == initState) {
         input = "";
     }
 } else if(currentState == thrusterRotateState) {
-    if(input == "clockwise") {
+    if(input == "clock") {
         currentState = thrusterRotateDegreesClockwiseState;
         input = "";
-    } else if(input == "counter") {
+    } else if(input == "count") {
         currentState = thrusterRotateDegreesCounterclockwiseState;
         input = "";
     }

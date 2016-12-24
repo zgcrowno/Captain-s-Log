@@ -13,6 +13,7 @@ toActivate = 2;
 toDeactivate = 3;
 
 //The ship's action map
+actionMap = ds_map_create();
 ds_map_add(actionMap, "Thrusters Port", 0);
 ds_map_add(actionMap, "Thrusters Starboard", 0);
 ds_map_add(actionMap, "Thrusters Bow", 0);

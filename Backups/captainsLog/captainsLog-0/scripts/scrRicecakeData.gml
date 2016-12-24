@@ -1,4 +1,3 @@
-event_inherited();
 maxHP =  maxHPRicecake;
 maxPP = maxPPRicecake;
 
@@ -29,8 +28,4 @@ requiredPPShields = maxPP / 4;
 requiredPPGuns = maxPP / 2;
 requiredPPCannon = maxPP * 0.75;
 
-shipSpeed = shipSpeedRicecake;
-bulletSpeed = bulletSpeedRicecake;
-specialSpeed = specialSpeedRicecake;
 cannonCooldownRate = cannonCooldownRateRicecake;
-shipAngleSpeed = shipAngleSpeedRicecake;

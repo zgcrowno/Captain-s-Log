@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="objHud" x="0" y="0" name="inst_487F7812" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRiceCake" x="990" y="610" name="inst_6F136495" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objRiceCake" x="956" y="585" name="inst_6F136495" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGUI" x="992" y="832" name="inst_2472D6F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTypingPrompt" x="64" y="1024" name="inst_BCCC84AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objUtil" x="1088" y="832" name="inst_810C2B25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

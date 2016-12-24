@@ -240,10 +240,10 @@ draw_healthbar(hud.shieldsLeftBound + (5 * (hud.shieldsRightBound - hud.shieldsL
                true);
 
 //Draw the gunsPP bar
-draw_healthbar(hud.gunsAndCannonLeftBound + (5 * (hud.gunsAndCannonRightBound - hud.gunsAndCannonLeftBound) / 16), 
-               hud.gunsAndCannonUpperBound + (3 *((hud.gunsAndCannonLowerBound - hud.gunsAndCannonUpperBound) / 16)), 
-               hud.gunsAndCannonRightBound - (5 * (hud.gunsAndCannonRightBound - hud.gunsAndCannonLeftBound) / 16), 
-               hud.gunsAndCannonUpperBound + (2 *((hud.gunsAndCannonLowerBound - hud.gunsAndCannonUpperBound) / 16)), 
+draw_healthbar(hud.gunsLeftBound + ((hud.gunsRightBound - hud.gunsLeftBound) / 6), 
+               hud.gunsUpperBound + ((hud.gunsLowerBound - hud.gunsUpperBound) / 6), 
+               hud.gunsRightBound - ((hud.gunsRightBound - hud.gunsLeftBound) / 6), 
+               hud.gunsLowerBound - ((hud.gunsLowerBound - hud.gunsUpperBound) / 6), 
                (player.currentPPGuns / player.requiredPPGuns) * 100, 
                c_black, 
                c_teal, 
@@ -253,10 +253,10 @@ draw_healthbar(hud.gunsAndCannonLeftBound + (5 * (hud.gunsAndCannonRightBound - 
                true);
 
 //Draw the cannonPP bar
-draw_healthbar(hud.gunsAndCannonLeftBound + (5 * (hud.gunsAndCannonRightBound - hud.gunsAndCannonLeftBound) / 16), 
-               hud.gunsAndCannonUpperBound + (3 *((hud.gunsAndCannonLowerBound - hud.gunsAndCannonUpperBound) / 16)), 
-               hud.gunsAndCannonRightBound - (5 * (hud.gunsAndCannonRightBound - hud.gunsAndCannonLeftBound) / 16), 
-               hud.gunsAndCannonUpperBound + (2 *((hud.gunsAndCannonLowerBound - hud.gunsAndCannonUpperBound) / 16)), 
+draw_healthbar(hud.cannonLeftBound + ((hud.cannonRightBound - hud.cannonLeftBound) / 6), 
+               hud.cannonUpperBound + ((hud.cannonLowerBound - hud.cannonUpperBound) / 6), 
+               hud.cannonRightBound - ((hud.cannonRightBound - hud.cannonLeftBound) / 6), 
+               hud.cannonLowerBound - ((hud.cannonLowerBound - hud.cannonUpperBound) / 6), 
                (player.currentPPCannon / player.requiredPPCannon) * 100, 
                c_black, 
                c_teal, 
@@ -315,8 +315,8 @@ if(player.currentState == player.initState) {
 } else if(player.currentState == player.thrusterSternState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "[\#]");
 } else if(player.currentState == player.thrusterRotateState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Clockwise");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + string_height("Commands: "), "Counter");
+    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Clock");
+    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + string_height("Commands: "), "Count");
 } else if(player.currentState == player.thrusterRotateDegreesClockwiseState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "[\#]");
 } else if(player.currentState == player.thrusterRotateDegreesCounterclockwiseState) {
@@ -329,8 +329,8 @@ if(player.currentState == player.initState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 4 * string_height("Commands: "), "Rotate");
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 5 * string_height("Commands: "), "All");
 } else if(player.currentState == player.cutThrustersRotateState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Clockwise");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + string_height("Commands: "), "Counter");
+    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Clock");
+    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + string_height("Commands: "), "Count");
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 2 * string_height("Commands: "), "All");
 } else if(player.currentState == player.cutShieldsState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Port");

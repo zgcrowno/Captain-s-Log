@@ -12,17 +12,15 @@
     <sprite>sprites\sprGridBoxShield</sprite>
     <sprite>sprites\sprHud</sprite>
     <sprite>sprites\sprTimeline</sprite>
+    <sprite>sprites\sprPlayerBullet</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="object">
       <script>scripts\scrResetTouched.gml</script>
-      <script>scripts\scrIsTouchingTimeline.gml</script>
+      <script>scripts\scrTouchedTimelineThisTurn.gml</script>
       <scripts name="ship">
-        <scripts name="movement">
-          <script>scripts\scrMovement.gml</script>
-        </scripts>
         <scripts name="management">
           <script>scripts\scrStateManagement.gml</script>
           <script>scripts\scrShieldManagement.gml</script>
@@ -36,7 +34,6 @@
           <script>scripts\scrGetAdjacentGridBoxes.gml</script>
           <script>scripts\scrResetNonShield.gml</script>
           <script>scripts\scrResetActionMap.gml</script>
-          <script>scripts\scrTimelineActions.gml</script>
         </scripts>
         <scripts name="data">
           <script>scripts\scrShipData.gml</script>
@@ -80,9 +77,12 @@
             <script>scripts\scrThrustersPort.gml</script>
           </scripts>
         </scripts>
+        <scripts name="guns">
+          <script>scripts\scrGunsFire.gml</script>
+          <script>scripts\scrGunsDivertPower.gml</script>
+        </scripts>
       </scripts>
       <scripts name="timeline">
-        <script>scripts\scrMoveTimeline.gml</script>
         <scripts name="data">
           <script>scripts\scrTimelineData.gml</script>
         </scripts>
@@ -96,6 +96,7 @@
         <scripts name="data">
           <script>scripts\scrUtilData.gml</script>
         </scripts>
+        <script>scripts\scrTimelineActions.gml</script>
       </scripts>
       <scripts name="data">
         <script>scripts\scrObjectData.gml</script>
@@ -120,6 +121,12 @@
           <script>scripts\scrTypingPromptData.gml</script>
         </scripts>
       </scripts>
+      <scripts name="projectile">
+        <scripts name="bullet"/>
+      </scripts>
+      <scripts name="movement">
+        <script>scripts\scrMovement.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -136,6 +143,11 @@
     <object>objects\objGridBox</object>
     <object>objects\objTimeline</object>
     <object>objects\objObject</object>
+    <object>objects\objPlayerBullet</object>
+    <object>objects\objProjectile</object>
+    <object>objects\objBullet</object>
+    <object>objects\objShip</object>
+    <object>objects\object15</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTest2</room>

@@ -325,22 +325,6 @@ if(keyboard_check_pressed(vk_tab)) {
         if(keyboard_check_pressed(ord("K"))) {
             input += "k";
         }
-    } else if(input == "clock") {
-        if(keyboard_check_pressed(ord("W"))) {
-            input += "w";
-        }
-    } else if(input == "clockw") {
-        if(keyboard_check_pressed(ord("I"))) {
-            input += "i";
-        }
-    } else if(input == "clockwi") {
-        if(keyboard_check_pressed(ord("S"))) {
-            input += "s";
-        }
-    } else if(input == "clockwis") {
-        if(keyboard_check_pressed(ord("E"))) {
-            input += "e";
-        }
     } else if(input == "co") {
         if(keyboard_check_pressed(ord("U"))) {
             input += "u";
@@ -353,15 +337,7 @@ if(keyboard_check_pressed(vk_tab)) {
         if(keyboard_check_pressed(ord("T"))) {
             input += "t";
         }
-    } else if(input == "count") {
-        if(keyboard_check_pressed(ord("E"))) {
-            input += "e";
-        }
-    } else if(input == "counte") {
-        if(keyboard_check_pressed(ord("R"))) {
-            input += "r";
-        }
-    }
+    } 
 } else if(currentState == thrusterRotateDegreesClockwiseState) {    //thrusterRotateDegreesClockwiseState checks
     if(keyboard_check_pressed(vk_numpad0)) {
         input += "0";
@@ -514,35 +490,25 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     }
 } else if(currentState == gunState) {   //gunState checks
-    for(i = 0; i <= maxEnemiesDesignationLength; i++) {
-        for(j = 0; j < array_length_1d(enemies); j++) {
-            if(string_length(input) == i) {
-                if(keyboard_check_pressed(ord(string_char_at(string_upper(enemies[j].designation), i + 1)))) {
-                    input += string_char_at(enemies[j].designation, i + 1);
-                } else if(keyboard_check_pressed(vk_numpad0) && real(string_char_at(enemies[j].designation, i + 1)) == 0) {
-                    input += "0";
-                } else if(keyboard_check_pressed(vk_numpad1) && real(string_char_at(enemies[j].designation, i + 1)) == 1) {
-                    input += "1";
-                } else if(keyboard_check_pressed(vk_numpad2) && real(string_char_at(enemies[j].designation, i + 1)) == 2) {
-                    input += "2";
-                } else if(keyboard_check_pressed(vk_numpad3) && real(string_char_at(enemies[j].designation, i + 1)) == 3) {
-                    input += "3";
-                } else if(keyboard_check_pressed(vk_numpad4) && real(string_char_at(enemies[j].designation, i + 1)) == 4) {
-                    input += "4";
-                } else if(keyboard_check_pressed(vk_numpad5) && real(string_char_at(enemies[j].designation, i + 1)) == 5) {
-                    input += "5";
-                } else if(keyboard_check_pressed(vk_numpad6) && real(string_char_at(enemies[j].designation, i + 1)) == 6) {
-                    input += "6";
-                } else if(keyboard_check_pressed(vk_numpad7) && real(string_char_at(enemies[j].designation, i + 1)) == 7) {
-                    input += "7";
-                } else if(keyboard_check_pressed(vk_numpad8) && real(string_char_at(enemies[j].designation, i + 1)) == 8) {
-                    input += "8";
-                } else if(keyboard_check_pressed(vk_numpad9) && real(string_char_at(enemies[j].designation, i + 1)) == 9) {
-                    input += "9";
-                } else if(keyboard_check_pressed(vk_enter)) {
-                    script_execute(scrGuns); 
-                }
-            }
+    if(input == "") {
+        if(keyboard_check_pressed(ord("F"))) {
+            input += "f";
+        }
+    } else if(input == "f") {
+        if(keyboard_check_pressed(ord("I"))) {
+            input += "i";
+        }
+    } else if(input == "fi") {
+        if(keyboard_check_pressed(ord("R"))) {
+            input += "r";
+        }
+    } else if(input == "fir") {
+        if(keyboard_check_pressed(ord("E"))) {
+            input += "e";
+        }
+    } else if(input == "fire") {
+        if(keyboard_check_pressed(vk_enter)) {
+            script_execute(scrGunsDivertPower);
         }
     }
 } else if(currentState == cannonState) {    //cannonState checks
@@ -839,22 +805,6 @@ if(keyboard_check_pressed(vk_tab)) {
             input += "k";
         }
     } else if(input == "clock") {
-        if(keyboard_check_pressed(ord("W"))) {
-            input += "w";
-        }
-    } else if(input == "clockw") {
-        if(keyboard_check_pressed(ord("I"))) {
-            input += "i";
-        }
-    } else if(input == "clockwi") {
-        if(keyboard_check_pressed(ord("S"))) {
-            input += "s";
-        }
-    } else if(input == "clockwis") {
-        if(keyboard_check_pressed(ord("E"))) {
-            input += "e";
-        }
-    } else if(input == "clockwise") {
         if(keyboard_check_pressed(vk_enter)) {
             script_execute(scrCutThrustersRotateClockwise);
         }
@@ -871,18 +821,10 @@ if(keyboard_check_pressed(vk_tab)) {
             input += "t";
         }
     } else if(input == "count") {
-        if(keyboard_check_pressed(ord("E"))) {
-            input += "e";
-        }
-    } else if(input == "counte") {
-        if(keyboard_check_pressed(ord("R"))) {
-            input += "r";
-        }
-    } else if(input == "counter") {
         if(keyboard_check_pressed(vk_enter)) {
             script_execute(scrCutThrustersRotateCounterclockwise);
         }
-    } else if(input == "a") {
+    }  else if(input == "a") {
         if(keyboard_check_pressed(ord("L"))) {
             input += "l";
         }

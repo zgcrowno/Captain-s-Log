@@ -67,7 +67,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scrMoveTimeline</script>
+            <script>scrMovement</script>
           </argument>
           <argument>
             <kind>0</kind>
