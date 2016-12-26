@@ -1,8 +1,8 @@
 //Draw the overall HP bar
-draw_healthbar(hud.aggregateLeftBound + 50, 
-               hud.aggregateUpperBound + 25, 
-               hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2) - 25, 
-               hud.aggregateUpperBound + 50, 
+draw_healthbar(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 6), 
+               hud.aggregateUpperBound + ((hud.aggregateLowerBound - hud.aggregateUpperBound) / 6), 
+               hud.aggregateRightBound - ((hud.aggregateRightBound - hud.aggregateLeftBound) / 6), 
+               hud.aggregateUpperBound + ((hud.aggregateLowerBound - hud.aggregateUpperBound) / 6) + 20, 
                (player.currentHP / player.maxHP) * 100, 
                c_black, 
                c_maroon, 
@@ -12,9 +12,10 @@ draw_healthbar(hud.aggregateLeftBound + 50,
                true);
 
 //Draw the overall PP bar
-draw_healthbar(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2) + 50, 
-               hud.aggregateUpperBound + 25, hud.aggregateRightBound - 25, 
-               hud.aggregateUpperBound + 50, 
+draw_healthbar(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 6), 
+               hud.aggregateUpperBound + ((hud.aggregateLowerBound - hud.aggregateUpperBound) / 6) + 20, 
+               hud.aggregateRightBound - ((hud.aggregateRightBound - hud.aggregateLeftBound) / 6), 
+               hud.aggregateUpperBound + ((hud.aggregateLowerBound - hud.aggregateUpperBound) / 6) + 40,
                (player.currentPP / player.maxPP) * 100, 
                c_black, 
                c_teal, 
@@ -277,6 +278,14 @@ draw_text(hud.activeLeftBound, hud.activeUpperBound, "Active:");
 draw_text(hud.passiveLeftBound, hud.passiveUpperBound, "Passive:");
 draw_text(hud.aggregateLeftBound, hud.aggregateUpperBound, "Aggregate:");
 
+//Draw Aggregate Info
+draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (5 * string_height("Something")), "Thrusters: " + string(player.percentPPThrusters) + "%");
+draw_text(hud.aggregateLeftBound + 110, hud.aggregateLowerBound - (5 * string_height("Something")), "Shields: " + string(player.percentPPShields) + "%");
+draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (3 * string_height("Something")), "Guns: " + string(player.percentPPGuns) + "%");
+draw_text(hud.aggregateLeftBound + 110, hud.aggregateLowerBound - (3 * string_height("Something")), "Cannon: " + string(player.percentPPCannon) + "%");
+draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - string_height("Something"), "Active: " + string(player.percentPPActive) + "%");
+draw_text(hud.aggregateLeftBound + 110, hud.aggregateLowerBound - string_height("Something"), "Passive: " + string(player.percentPPPassive) + "%");
+
 //Draw the state-dependent word prompts
 if(player.currentState == player.initState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Thrusters");
@@ -297,7 +306,7 @@ if(player.currentState == player.initState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 3 * string_height("Commands: "), "Stern");
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 4 * string_height("Commands: "), "All");
 } else if(player.currentState == player.gunState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "[Enemy]");
+    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Fire");
 } else if(player.currentState == player.cannonState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Fire");
 } else if(player.currentState == player.cutState) {
@@ -339,16 +348,3 @@ if(player.currentState == player.initState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 3 * string_height("Commands: "), "Stern");
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 4 * string_height("Commands: "), "All");
 }
-
-/*************Begin drawing the grid***********************
-for(i = hud.gameScreenLeftBound; i < hud.gameScreenRightBound; i++) {
-    if(i % 20 == 0) {
-        draw_line_width_color(i, hud.gameScreenUpperBound, i, hud.gameScreenLowerBound, 1, c_green, c_green);
-    }
-}
-
-for(i = hud.gameScreenUpperBound; i < hud.gameScreenLowerBound; i++) {
-    if(i % 20 == 0) {
-        draw_line_width_color(hud.gameScreenLeftBound, i, hud.gameScreenRightBound, i, 1, c_green, c_green);
-    }
-}*/

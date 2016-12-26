@@ -108,6 +108,8 @@ percentPPThrusters = 0;
 percentPPShields = 0;
 percentPPGuns = 0;
 percentPPCannon = 0;
+percentPPActive = 0;
+percentPPPassive = 0;
 
 //Rate at which the cannon cools down
 cannonCooldownRate = 0;

@@ -15,5 +15,8 @@ if(script_execute(scrTouchedTimelineThisTurn) && !alreadyTouchedTimeline) {
     if(object_is_ancestor(object_index, objShip)) {
         script_execute(scrShieldManagement);
     }
+    if(object_is_ancestor(object_index, objBullet)) {
+        script_execute(scrDestroyOutOfBounds);
+    }
     alreadyTouchedTimeline = true;
 }

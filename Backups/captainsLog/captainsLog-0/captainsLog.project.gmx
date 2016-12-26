@@ -18,8 +18,6 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="object">
-      <script>scripts\scrResetTouched.gml</script>
-      <script>scripts\scrTouchedTimelineThisTurn.gml</script>
       <scripts name="ship">
         <scripts name="management">
           <script>scripts\scrStateManagement.gml</script>
@@ -98,6 +96,8 @@
         </scripts>
         <script>scripts\scrTimelineActions.gml</script>
         <script>scripts\scrEventInherited.gml</script>
+        <script>scripts\scrTouchedTimelineThisTurn.gml</script>
+        <script>scripts\scrResetTouched.gml</script>
       </scripts>
       <scripts name="data">
         <script>scripts\scrObjectData.gml</script>
@@ -124,7 +124,12 @@
       </scripts>
       <scripts name="projectile">
         <scripts name="bullet">
-          <script>scripts\scrBulletData.gml</script>
+          <scripts name="data">
+            <script>scripts\scrBulletData.gml</script>
+          </scripts>
+          <scripts name="behavior">
+            <script>scripts\scrDestroyOutOfBounds.gml</script>
+          </scripts>
         </scripts>
       </scripts>
       <scripts name="movement">

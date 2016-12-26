@@ -127,6 +127,9 @@
           <scripts name="data">
             <script>scripts\scrBulletData.gml</script>
           </scripts>
+          <scripts name="behavior">
+            <script>scripts\scrDestroyOutOfBounds.gml</script>
+          </scripts>
         </scripts>
       </scripts>
       <scripts name="movement">

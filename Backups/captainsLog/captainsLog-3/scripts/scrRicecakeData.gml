@@ -1,5 +1,3 @@
-event_inherited();
-
 maxHP =  maxHPRicecake;
 maxPP = maxPPRicecake;
 
