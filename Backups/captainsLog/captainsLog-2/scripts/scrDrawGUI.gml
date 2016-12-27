@@ -286,6 +286,93 @@ draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (3 * string_height("
 draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (2 * string_height("Something")), "Active: " + string(player.percentPPActive) + "%");
 draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - string_height("Something"), "Passive: " + string(player.percentPPPassive) + "%");
 
+for(i = player.actionMapDisplaySize; i > 0; i--) {
+    if(player.actionMap[? "Thrusters Port"] > 0
+       || player.actionMap[? "Thrusters Starboard"] > 0
+       || player.actionMap[? "Thrusters Bow"] > 0
+       || player.actionMap[? "Thrusters Stern"] > 0
+       || player.actionMap[? "Thrusters Count"] > 0
+       || player.actionMap[? "Thrusters Clock"] > 0) {
+        draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "Thrusters:");
+        i--;
+        if(player.actionMap[? "Thrusters Port"] > 0) {
+            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Port: " + string(player.actionMap[? "Thrusters Port"]));
+            i--;
+        }
+        if(player.actionMap[? "Thrusters Starboard"] > 0) {
+            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Starboard: " + string(player.actionMap[? "Thrusters Starboard"]));
+            i--;
+        }
+        if(player.actionMap[? "Thrusters Bow"] > 0) {
+            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Bow: " + string(player.actionMap[? "Thrusters Bow"]));
+            i--;
+        }
+        if(player.actionMap[? "Thrusters Stern"] > 0) {
+            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Stern: " + string(player.actionMap[? "Thrusters Stern"]));
+            i--;
+        }
+        if(player.actionMap[? "Thrusters Count"] > 0) {
+            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Count: " + string(player.actionMap[? "Thrusters Count"]));
+            i--;
+        }
+        if(player.actionMap[? "Thrusters Clock"] > 0) {
+            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Clock: " + string(player.actionMap[? "Thrusters Clock"]));
+            i--;
+        }
+    }
+    if(player.actionMap[? "Shields Port"] == player.toActivate || player.actionMap[? "Shields Port"] == player.toDeactivate
+       || player.actionMap[? "Shields Starboard"] == player.toActivate || player.actionMap[? "Shields Starboard"] == player.toDeactivate
+       || player.actionMap[? "Shields Bow"] == player.toActivate || player.actionMap[? "Shields Bow"] == player.toDeactivate
+       || player.actionMap[? "Shields Stern"] == player.toActivate || player.actionMap[? "Shields Stern"] == player.toDeactivate) {
+        draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "Shields:");
+        i--;
+        if(player.actionMap[? "Shields Port"] == player.toActivate) {
+            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Port: Activate");
+            i--;
+        } else if(player.actionMap[? "Shields Port"] == player.toDeactivate) {
+            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Port: Cut");
+            i--;
+        }
+        if(player.actionMap[? "Shields Starboard"] == player.toActivate) {
+            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Starboard: Activate");
+            i--;
+        } else if(player.actionMap[? "Shields Starboard"] == player.toDeactivate) {
+            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Starboard: Cut");
+            i--;
+        }
+        if(player.actionMap[? "Shields Bow"] == player.toActivate) {
+            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Bow: Activate");
+            i--;
+        } else if(player.actionMap[? "Shields Bow"] == player.toDeactivate) {
+            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Bow: Cut");
+            i--;
+        }
+        if(player.actionMap[? "Shields Stern"] == player.toActivate) {
+            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Stern: Activate");
+            i--;
+        } else if(player.actionMap[? "Shields Stern"] == player.toDeactivate) {
+            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Stern: Cut");
+            i--;
+        }
+    }
+    if(player.actionMap[? "Guns"]) {
+        draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "Guns");
+        i--;
+    }
+    if(player.actionMap[? "Cannon"]) {
+        draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "Cannon");
+        i--;
+    }
+    if(player.actionMap[? "Active"]) {
+        draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "Active");
+        i--;
+    }
+    if(player.actionMap[? "Passive"]) {
+        draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "Passive");
+        i--;
+    }
+}
+
 //Draw the state-dependent word prompts
 if(player.currentState == player.initState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Thrusters");

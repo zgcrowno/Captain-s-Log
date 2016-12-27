@@ -320,37 +320,37 @@ for(i = player.actionMapDisplaySize; i > 0; i--) {
             i--;
         }
     }
-    if(player.actionMap[? "Shields Port"] == toActivate || player.actionMap[? "Shields Port"] == toDeactivate
-       || player.actionMap[? "Shields Starboard"] == toActivate || player.actionMap[? "Shields Starboard"] == toDeactivate
-       || player.actionMap[? "Shields Bow"] == toActivate || player.actionMap[? "Shields Bow"] == toDeactivate
-       || player.actionMap[? "Shields Stern"] == toActivate || player.actionMap[? "Shields Stern"] == toDeactivate) {
+    if(player.actionMap[? "Shields Port"] == player.toActivate || player.actionMap[? "Shields Port"] == player.toDeactivate
+       || player.actionMap[? "Shields Starboard"] == player.toActivate || player.actionMap[? "Shields Starboard"] == player.toDeactivate
+       || player.actionMap[? "Shields Bow"] == player.toActivate || player.actionMap[? "Shields Bow"] == player.toDeactivate
+       || player.actionMap[? "Shields Stern"] == player.toActivate || player.actionMap[? "Shields Stern"] == player.toDeactivate) {
         draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "Shields:");
         i--;
-        if(player.actionMap[? "Shields Port"] == toActivate) {
+        if(player.actionMap[? "Shields Port"] == player.toActivate) {
             draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Port: Activate");
             i--;
-        } else if(player.actionMap[? "Shields Port"] == toDeactivate) {
+        } else if(player.actionMap[? "Shields Port"] == player.toDeactivate) {
             draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Port: Cut");
             i--;
         }
-        if(player.actionMap[? "Shields Starboard"] == toActivate) {
+        if(player.actionMap[? "Shields Starboard"] == player.toActivate) {
             draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Starboard: Activate");
             i--;
-        } else if(player.actionMap[? "Shields Starboard"] == toDeactivate) {
+        } else if(player.actionMap[? "Shields Starboard"] == player.toDeactivate) {
             draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Starboard: Cut");
             i--;
         }
-        if(player.actionMap[? "Shields Bow"] == toActivate) {
+        if(player.actionMap[? "Shields Bow"] == player.toActivate) {
             draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Bow: Activate");
             i--;
-        } else if(player.actionMap[? "Shields Bow"] == toDeactivate) {
+        } else if(player.actionMap[? "Shields Bow"] == player.toDeactivate) {
             draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Bow: Cut");
             i--;
         }
-        if(player.actionMap[? "Shields Stern"] == toActivate) {
+        if(player.actionMap[? "Shields Stern"] == player.toActivate) {
             draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Stern: Activate");
             i--;
-        } else if(player.actionMap[? "Shields Stern"] == toDeactivate) {
+        } else if(player.actionMap[? "Shields Stern"] == player.toDeactivate) {
             draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Stern: Cut");
             i--;
         }

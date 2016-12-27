@@ -13,6 +13,7 @@
     <sprite>sprites\sprHud</sprite>
     <sprite>sprites\sprTimeline</sprite>
     <sprite>sprites\sprPlayerBullet</sprite>
+    <sprite>sprites\sprPawn</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -32,6 +33,7 @@
           <script>scripts\scrGetAdjacentGridBoxes.gml</script>
           <script>scripts\scrResetNonShield.gml</script>
           <script>scripts\scrResetActionMap.gml</script>
+          <script>scripts\scrSetActionMapDisplaySize.gml</script>
         </scripts>
         <scripts name="data">
           <script>scripts\scrShipData.gml</script>
@@ -78,6 +80,12 @@
         <scripts name="guns">
           <script>scripts\scrGunsFire.gml</script>
           <script>scripts\scrGunsDivertPower.gml</script>
+        </scripts>
+        <scripts name="enemyShip">
+          <script>scripts\scrEnemyShipData.gml</script>
+          <scripts name="util">
+            <script>scripts\scrSetDesignation.gml</script>
+          </scripts>
         </scripts>
       </scripts>
       <scripts name="timeline">
@@ -155,6 +163,8 @@
     <object>objects\objProjectile</object>
     <object>objects\objBullet</object>
     <object>objects\objShip</object>
+    <object>objects\objEnemyShip</object>
+    <object>objects\objPawn</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTest2</room>
