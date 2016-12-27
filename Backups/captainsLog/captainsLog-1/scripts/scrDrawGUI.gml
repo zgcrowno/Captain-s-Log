@@ -1,8 +1,8 @@
 //Draw the overall HP bar
-draw_healthbar(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 6), 
-               hud.aggregateUpperBound + ((hud.aggregateLowerBound - hud.aggregateUpperBound) / 6), 
-               hud.aggregateRightBound - ((hud.aggregateRightBound - hud.aggregateLeftBound) / 6), 
-               hud.aggregateUpperBound + ((hud.aggregateLowerBound - hud.aggregateUpperBound) / 6) + 20, 
+draw_healthbar(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 8), 
+               hud.aggregateUpperBound + ((hud.aggregateLowerBound - hud.aggregateUpperBound) / 8), 
+               hud.aggregateRightBound - ((hud.aggregateRightBound - hud.aggregateLeftBound) / 8), 
+               hud.aggregateUpperBound + ((hud.aggregateLowerBound - hud.aggregateUpperBound) / 8) + 15, 
                (player.currentHP / player.maxHP) * 100, 
                c_black, 
                c_maroon, 
@@ -12,10 +12,10 @@ draw_healthbar(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregat
                true);
 
 //Draw the overall PP bar
-draw_healthbar(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 6), 
-               hud.aggregateUpperBound + ((hud.aggregateLowerBound - hud.aggregateUpperBound) / 6) + 20, 
-               hud.aggregateRightBound - ((hud.aggregateRightBound - hud.aggregateLeftBound) / 6), 
-               hud.aggregateUpperBound + ((hud.aggregateLowerBound - hud.aggregateUpperBound) / 6) + 40,
+draw_healthbar(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 8), 
+               hud.aggregateUpperBound + ((hud.aggregateLowerBound - hud.aggregateUpperBound) / 8) + 15, 
+               hud.aggregateRightBound - ((hud.aggregateRightBound - hud.aggregateLeftBound) / 8), 
+               hud.aggregateUpperBound + ((hud.aggregateLowerBound - hud.aggregateUpperBound) / 8) + 30,
                (player.currentPP / player.maxPP) * 100, 
                c_black, 
                c_teal, 
@@ -279,12 +279,12 @@ draw_text(hud.passiveLeftBound, hud.passiveUpperBound, "Passive:");
 draw_text(hud.aggregateLeftBound, hud.aggregateUpperBound, "Aggregate:");
 
 //Draw Aggregate Info
-draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (5 * string_height("Something")), "Thrusters: " + string(player.percentPPThrusters) + "%");
-draw_text(hud.aggregateLeftBound + 150, hud.aggregateLowerBound - (5 * string_height("Something")), "Shields: " + string(player.percentPPShields) + "%");
-draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (3 * string_height("Something")), "Guns: " + string(player.percentPPGuns) + "%");
-draw_text(hud.aggregateLeftBound + 150, hud.aggregateLowerBound - (3 * string_height("Something")), "Cannon: " + string(player.percentPPCannon) + "%");
-draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - string_height("Something"), "Active: " + string(player.percentPPActive) + "%");
-draw_text(hud.aggregateLeftBound + 150, hud.aggregateLowerBound - string_height("Something"), "Passive: " + string(player.percentPPPassive) + "%");
+draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (6 * string_height("Something")), "Thrusters: " + string(player.percentPPThrusters) + "%");
+draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (5 * string_height("Something")), "Shields: " + string(player.percentPPShields) + "%");
+draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (4 * string_height("Something")), "Guns: " + string(player.percentPPGuns) + "%");
+draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (3 * string_height("Something")), "Cannon: " + string(player.percentPPCannon) + "%");
+draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (2 * string_height("Something")), "Active: " + string(player.percentPPActive) + "%");
+draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - string_height("Something"), "Passive: " + string(player.percentPPPassive) + "%");
 
 //Draw the state-dependent word prompts
 if(player.currentState == player.initState) {

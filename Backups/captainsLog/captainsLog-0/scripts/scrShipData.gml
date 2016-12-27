@@ -28,6 +28,9 @@ ds_map_add(actionMap, "Cannon", false);
 ds_map_add(actionMap, "Active", false);
 ds_map_add(actionMap, "Passive", false);
 
+//The Number of Lines Needed to Present Action Map to Player
+actionMapDisplaySize = 0;
+
 //The Grid Boxes That Will Represent the Ship's Shields
 portShields = null;
 starboardShields = null;
@@ -102,6 +105,8 @@ currentPPShieldsBow = 0;
 currentPPShieldsStern = 0;
 currentPPGuns = 0;
 currentPPCannon = 0;
+currentPPActive = 0;
+currentPPPassive = 0;
 
 //Percentage of overall power currently routed to the ship's individual component categories
 percentPPThrusters = 0;

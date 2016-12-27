@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TPE>
-  <w>7</w>
-  <h>7</h>
+  <w>6</w>
+  <h>6</h>
   <name>Default</name>
   <hasAlpha>True</hasAlpha>
-  <hash>183323152</hash>
+  <hash>1719634523</hash>
   <xoffset>0</xoffset>
   <yoffset>0</yoffset>
-  <cropWidth>7</cropWidth>
-  <cropHeight>7</cropHeight>
-  <ow>7</ow>
-  <oh>7</oh>
+  <cropWidth>6</cropWidth>
+  <cropHeight>6</cropHeight>
+  <ow>6</ow>
+  <oh>6</oh>
   <image>sprPlayerBullet_sprPlayerBullet_0.tpe.png</image>
 </TPE>

@@ -59,6 +59,13 @@ if(actionMap[? "Cannon"]) {
     currentPPCannon = 0;
 }
 
+percentPPThrusters = ((currentPPThrustersPort + currentPPThrustersStarboard + currentPPThrustersBow + currentPPThrustersStern) / maxPP) * 100;
+percentPPShields = ((currentPPShieldsPort + currentPPShieldsStarboard + currentPPShieldsBow + currentPPShieldsStern) / maxPP) * 100;
+percentPPGuns = (currentPPGuns / maxPP) * 100;
+percentPPCannon = (currentPPCannon / maxPP) * 100;
+percentPPActive = (currentPPActive / maxPP) * 100;
+percentPPPassive = (currentPPPassive / maxPP) * 100;
+
 currentPP = maxPP - currentPPThrustersPort - currentPPThrustersStarboard -
             currentPPThrustersBow - currentPPThrustersStern - 
             currentPPThrustersRotateClockwise - 
