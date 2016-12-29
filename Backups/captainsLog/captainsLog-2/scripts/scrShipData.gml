@@ -4,6 +4,15 @@ hud = instance_find(objHud, 0);
 //The Util Object
 util = instance_find(objUtil, 0);
 
+//A collection of all the enemies in the room 
+enemies = script_execute(scrGetEnemies);
+
+//The ship's current target
+target = null;
+
+//The maximum length of all enemies' designations
+maxEnemiesDesignationLength = 0;
+
 //The Shield Input States
 active = 0;
 inactive = 1;
@@ -55,6 +64,7 @@ cutThrustersState = 13;
 cutShieldsState = 14;
 cutThrustersRotateState = 15;
 cannonChargeState = 16;
+targetState = 17;
 currentState = initState;
 
 //Maximum overall health and power of the ship

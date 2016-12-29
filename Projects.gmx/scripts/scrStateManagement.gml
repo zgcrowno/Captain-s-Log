@@ -5,6 +5,9 @@ if(currentState == initState) {
     } else if(input == "shields") {
         currentState = shieldState;
         input = "";
+    } else if(input == "target") {
+        currentState = targetState;
+        input = "";
     } else if(input == "guns") {
         currentState = gunState;
         input = "";

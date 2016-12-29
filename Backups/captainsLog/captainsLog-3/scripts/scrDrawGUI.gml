@@ -392,6 +392,10 @@ if(player.currentState == player.initState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 2 * string_height("Commands: "), "Bow");
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 3 * string_height("Commands: "), "Stern");
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 4 * string_height("Commands: "), "All");
+} else if(player.currentState == player.targetState) {
+    for(i = 0; i < array_length_1d(player.enemies); i++) {
+        draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + (i * string_height("Commands: ")), player.enemies[i].designation);
+    }
 } else if(player.currentState == player.gunState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Fire");
 } else if(player.currentState == player.cannonState) {

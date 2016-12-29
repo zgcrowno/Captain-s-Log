@@ -3,11 +3,11 @@
   <texture scale="0">Default_0.png</texture>
   <tpe x="2" y="2" tpage="Default_0" entry="66">sprHud_sprHud_0.tpe</tpe>
   <tpe x="2" y="1086" tpage="Default_0" entry="67">fntMain_fntMain.tpe</tpe>
-  <tpe x="262" y="1086" tpage="Default_0" entry="33">sprTimeline_sprTimeline_0.tpe</tpe>
-  <tpe x="1926" y="2" tpage="Default_0" entry="1">sprGridBoxShield_sprGridBoxShield_0.tpe</tpe>
-  <tpe x="926" y="1086" tpage="Default_0" entry="2">sprGridBox_sprGridBox_0.tpe</tpe>
-  <tpe x="1962" y="2" tpage="Default_0" entry="0">sprRiceCake_sprRiceCake_0.tpe</tpe>
-  <tpe x="1926" y="38" tpage="Default_0" entry="32">sprPawn_sprPawn_0.tpe</tpe>
+  <tpe x="262" y="1086" tpage="Default_0" entry="35">sprTimeline_sprTimeline_0.tpe</tpe>
+  <tpe x="1926" y="2" tpage="Default_0" entry="2">sprGridBox_sprGridBox_0.tpe</tpe>
+  <tpe x="926" y="1086" tpage="Default_0" entry="0">sprGridBoxShield_sprGridBoxShield_0.tpe</tpe>
+  <tpe x="1962" y="2" tpage="Default_0" entry="1">sprRiceCake_sprRiceCake_0.tpe</tpe>
+  <tpe x="1926" y="38" tpage="Default_0" entry="34">sprPawn_sprPawn_0.tpe</tpe>
   <tpe x="962" y="1086" tpage="Default_0" entry="3">sprTypingPrompt_sprTypingPrompt_0.tpe</tpe>
   <tpe x="962" y="1086" tpage="Default_0" entry="4">sprTypingPrompt_sprTypingPrompt_1.tpe</tpe>
   <tpe x="962" y="1086" tpage="Default_0" entry="5">sprTypingPrompt_sprTypingPrompt_2.tpe</tpe>
@@ -37,9 +37,9 @@
   <tpe x="962" y="1086" tpage="Default_0" entry="29">sprTypingPrompt_sprTypingPrompt_26.tpe</tpe>
   <tpe x="962" y="1086" tpage="Default_0" entry="30">sprTypingPrompt_sprTypingPrompt_27.tpe</tpe>
   <tpe x="962" y="1086" tpage="Default_0" entry="31">sprTypingPrompt_sprTypingPrompt_28.tpe</tpe>
-  <tpe x="962" y="1086" tpage="Default_0" entry="34">sprTypingPrompt_sprTypingPrompt_29.tpe</tpe>
-  <tpe x="262" y="1122" tpage="Default_0" entry="35">sprTypingPrompt_sprTypingPrompt_30.tpe</tpe>
-  <tpe x="262" y="1122" tpage="Default_0" entry="37">sprTypingPrompt_sprTypingPrompt_31.tpe</tpe>
+  <tpe x="962" y="1086" tpage="Default_0" entry="32">sprTypingPrompt_sprTypingPrompt_29.tpe</tpe>
+  <tpe x="262" y="1122" tpage="Default_0" entry="33">sprTypingPrompt_sprTypingPrompt_30.tpe</tpe>
+  <tpe x="262" y="1122" tpage="Default_0" entry="36">sprTypingPrompt_sprTypingPrompt_31.tpe</tpe>
   <tpe x="262" y="1122" tpage="Default_0" entry="38">sprTypingPrompt_sprTypingPrompt_32.tpe</tpe>
   <tpe x="262" y="1122" tpage="Default_0" entry="39">sprTypingPrompt_sprTypingPrompt_33.tpe</tpe>
   <tpe x="262" y="1122" tpage="Default_0" entry="40">sprTypingPrompt_sprTypingPrompt_34.tpe</tpe>
@@ -68,5 +68,5 @@
   <tpe x="262" y="1122" tpage="Default_0" entry="63">sprTypingPrompt_sprTypingPrompt_57.tpe</tpe>
   <tpe x="262" y="1122" tpage="Default_0" entry="64">sprTypingPrompt_sprTypingPrompt_58.tpe</tpe>
   <tpe x="262" y="1122" tpage="Default_0" entry="65">sprTypingPrompt_sprTypingPrompt_59.tpe</tpe>
-  <tpe x="1994" y="2" tpage="Default_0" entry="36">sprPlayerBullet_sprPlayerBullet_0.tpe</tpe>
+  <tpe x="1994" y="2" tpage="Default_0" entry="37">sprPlayerBullet_sprPlayerBullet_0.tpe</tpe>
 </TextureGroup>

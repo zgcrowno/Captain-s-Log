@@ -20,6 +20,8 @@ if(keyboard_check_pressed(vk_tab)) {
     } else if(input == "t") {
         if(keyboard_check_pressed(ord("H"))) {
             input += "h";
+        } else if(keyboard_check_pressed(ord("A"))) {
+            input += "a";
         }
     } else if(input == "th") {
         if(keyboard_check_pressed(ord("R"))) {
@@ -48,6 +50,22 @@ if(keyboard_check_pressed(vk_tab)) {
     } else if(input == "thruster") {
         if(keyboard_check_pressed(ord("S"))) {
             input += "s";
+        }
+    } else if(input == "ta") {
+        if(keyboard_check_pressed(ord("R"))) {
+            input += "r";
+        }
+    } else if(input == "tar") {
+        if(keyboard_check_pressed(ord("G"))) {
+            input += "g";
+        }
+    } else if(input == "targ") {
+        if(keyboard_check_pressed(ord("E"))) {
+            input += "e";
+        }
+    } else if(input == "targe") {
+        if(keyboard_check_pressed(ord("T"))) {
+            input += "t";
         }
     } else if(input == "s") {
         if(keyboard_check_pressed(ord("H"))) {
@@ -489,6 +507,8 @@ if(keyboard_check_pressed(vk_tab)) {
             script_execute(scrShieldsAll);
         }
     }
+} else if(currentState == targetState) { //targetState checks
+    script_execute(scrSetTarget);
 } else if(currentState == gunState) {   //gunState checks
     if(input == "") {
         if(keyboard_check_pressed(ord("F"))) {

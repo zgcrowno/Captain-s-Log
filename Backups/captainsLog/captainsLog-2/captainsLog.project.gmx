@@ -34,6 +34,7 @@
           <script>scripts\scrResetNonShield.gml</script>
           <script>scripts\scrResetActionMap.gml</script>
           <script>scripts\scrSetActionMapDisplaySize.gml</script>
+          <script>scripts\scrSetTarget.gml</script>
         </scripts>
         <scripts name="data">
           <script>scripts\scrShipData.gml</script>
@@ -106,6 +107,7 @@
         <script>scripts\scrEventInherited.gml</script>
         <script>scripts\scrTouchedTimelineThisTurn.gml</script>
         <script>scripts\scrResetTouched.gml</script>
+        <script>scripts\scrRandomizeSeed.gml</script>
       </scripts>
       <scripts name="data">
         <script>scripts\scrObjectData.gml</script>
