@@ -8,7 +8,7 @@ util = instance_find(objUtil, 0);
 enemies = script_execute(scrGetEnemies);
 
 //The ship's current target
-target = null;
+target = noone;
 
 //The maximum length of all enemies' designations
 maxEnemiesDesignationLength = 0;

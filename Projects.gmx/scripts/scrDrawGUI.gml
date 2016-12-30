@@ -265,6 +265,16 @@ draw_healthbar(hud.cannonLeftBound + ((hud.cannonRightBound - hud.cannonLeftBoun
                0, 
                true, 
                true);
+               
+//Draw lines from enemies to respective designations in commands screen
+if(player.currentState == player.targetState) {
+    for(i = 0; i < array_length_1d(player.enemies); i++) {
+        draw_line(player.enemies[i].x, player.enemies[i].y, hud.playAreaLeftBound, hud.commandsUpperBound + (i * string_height("Commands: ")) + (string_height("Commands: ") / 2));
+        draw_set_color(c_black);
+        draw_line(hud.playAreaLeftBound, hud.commandsUpperBound + (i * string_height("Commands: ")) + (string_height("Commands: ") / 2), hud.commandsRightBound, hud.commandsUpperBound + (i * string_height("Commands: ")) + (string_height("Commands: ") / 2));
+        draw_set_color(c_white);
+    }
+}
 
 //Draw Screen Titles
 draw_text(hud.thrustersLeftBound, hud.thrustersUpperBound, "Thrusters:");
@@ -277,6 +287,25 @@ draw_text(hud.cannonLeftBound, hud.cannonUpperBound, "Cannon:");
 draw_text(hud.activeLeftBound, hud.activeUpperBound, "Active:");
 draw_text(hud.passiveLeftBound, hud.passiveUpperBound, "Passive:");
 draw_text(hud.aggregateLeftBound, hud.aggregateUpperBound, "Aggregate:");
+
+//Draw Target Info
+if(player.target != noone) {
+    //Draw the target image
+    draw_sprite(player.target.sprite_index, player.target.image_index, hud.targetRightBound - ((hud.targetLowerBound - hud.targetUpperBound) / 2), hud.targetLowerBound - ((hud.targetLowerBound - hud.targetUpperBound) / 2));
+    
+    //Draw the captain's personal information
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + string_height("Something"), "Captain: " + player.target.designation);
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (2 * string_height("Something")), "Age: " + string(player.target.age));
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (3 * string_height("Something")), "Temperament: " + player.target.temper);
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (4 * string_height("Something")), "Family: " + player.target.family);
+} else {
+    //Draw the screen static
+    for(j = hud.targetLowerBound; j > hud.targetUpperBound; j--) {
+        draw_set_color(choose(0, 16777215));
+        draw_line(hud.targetLeftBound, j, hud.targetRightBound, j);
+    }
+    draw_set_color(c_white);
+}
 
 //Draw Aggregate Info
 draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (6 * string_height("Something")), "Thrusters: " + string(player.percentPPThrusters) + "%");
@@ -377,9 +406,10 @@ for(i = player.actionMapDisplaySize; i > 0; i--) {
 if(player.currentState == player.initState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Thrusters");
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + string_height("Commands: "), "Shields");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 2 * string_height("Commands: "), "Guns");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 3 * string_height("Commands: "), "Cannon");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 4 * string_height("Commands: "), "Cut");
+    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 2 * string_height("Commands: "), "Target");
+    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 3 * string_height("Commands: "), "Guns");
+    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 4 * string_height("Commands: "), "Cannon");
+    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 5 * string_height("Commands: "), "Cut");
 } else if(player.currentState == player.thrusterState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Port");
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + string_height("Commands: "), "Starboard");

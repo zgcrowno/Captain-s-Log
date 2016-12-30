@@ -7,7 +7,6 @@ for(i = 0; i < array_length_1d(enemies); i++) {
         for(j = 0; j < array_length_1d(enemies); j++) {
             if(input == string_lower(enemies[j].designation)) {
                 target = enemies[j];
-                show_debug_message(target.designation);
             }
         }
         script_execute(scrWipeToInitState);
