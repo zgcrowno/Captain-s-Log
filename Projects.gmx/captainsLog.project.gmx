@@ -35,6 +35,7 @@
           <script>scripts\scrResetActionMap.gml</script>
           <script>scripts\scrSetActionMapDisplaySize.gml</script>
           <script>scripts\scrSetTarget.gml</script>
+          <script>scripts\scrDeath.gml</script>
         </scripts>
         <scripts name="data">
           <script>scripts\scrShipData.gml</script>
@@ -83,6 +84,7 @@
           <script>scripts\scrGunsDivertPower.gml</script>
         </scripts>
         <scripts name="enemyShip">
+          <script>scripts\scrPawnData.gml</script>
           <script>scripts\scrEnemyShipData.gml</script>
           <scripts name="util">
             <script>scripts\scrSetDesignation.gml</script>
@@ -139,6 +141,7 @@
           </scripts>
           <scripts name="behavior">
             <script>scripts\scrDestroyOutOfBounds.gml</script>
+            <script>scripts\scrShipInteraction.gml</script>
           </scripts>
         </scripts>
       </scripts>

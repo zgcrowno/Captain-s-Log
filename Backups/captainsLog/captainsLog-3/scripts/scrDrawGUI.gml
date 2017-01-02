@@ -292,7 +292,14 @@ draw_text(hud.aggregateLeftBound, hud.aggregateUpperBound, "Aggregate:");
 if(player.target != noone) {
     //Draw the target image
     draw_sprite(player.target.sprite_index, player.target.image_index, hud.targetRightBound - ((hud.targetLowerBound - hud.targetUpperBound) / 2), hud.targetLowerBound - ((hud.targetLowerBound - hud.targetUpperBound) / 2));
+    
+    //Draw the captain's personal information
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + string_height("Something"), "Captain: " + player.target.designation);
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (2 * string_height("Something")), "Age: " + string(player.target.age));
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (3 * string_height("Something")), "Temperament: " + player.target.temper);
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (4 * string_height("Something")), "Family: " + player.target.family);
 } else {
+    //Draw the screen static
     for(j = hud.targetLowerBound; j > hud.targetUpperBound; j--) {
         draw_set_color(choose(0, 16777215));
         draw_line(hud.targetLeftBound, j, hud.targetRightBound, j);

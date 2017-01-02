@@ -4,11 +4,11 @@ hud = instance_find(objHud, 0);
 //The Util Object
 util = instance_find(objUtil, 0);
 
-//A collection of all the enemies in the room 
-enemies = script_execute(scrGetEnemies);
-
 //The ship's current target
 target = noone;
+
+//A collection of all the enemies in the room
+enemies = script_execute(scrGetEnemies);
 
 //The maximum length of all enemies' designations
 maxEnemiesDesignationLength = 0;
@@ -140,6 +140,7 @@ cannonText = "cannon";
 cutText = "cut";
 
 //Ship-specific data
+//Ricecake
 maxHPRicecake = 100;
 maxPPRicecake = 100;
 
@@ -157,3 +158,6 @@ bulletSpeedRicecake = 0.75
 specialSpeedRicecake = 0.5
 cannonCooldownRateRicecake = 0.07
 shipAngleSpeedRicecake = 0.5
+
+//Pawn
+maxHPPawn = 50;
