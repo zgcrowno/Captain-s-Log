@@ -1,5 +1,5 @@
 if(currentHP <= 0) {
-    if(instance_id == player.target) {
+    if(id == player.target) {
         player.target = noone;
     }
     instance_destroy();

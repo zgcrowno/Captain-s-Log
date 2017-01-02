@@ -1,6 +1,5 @@
 if(currentHP <= 0) {
-    if(object_index == player.target) {
-        show_debug_message("anything");
+    if(instance_id == player.target) {
         player.target = noone;
     }
     instance_destroy();

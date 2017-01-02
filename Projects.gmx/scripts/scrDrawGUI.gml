@@ -295,13 +295,14 @@ if(player.target != noone) {
     
     //Draw the captain's personal information
     draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + string_height("Something"), "Captain: " + player.target.designation);
-    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (2 * string_height("Something")), "Age: " + string(player.target.age));
-    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (3 * string_height("Something")), "Temperament: " + player.target.temper);
-    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (4 * string_height("Something")), "Family: " + player.target.family);
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (2 * string_height("Something")), "HP: " + string(player.target.currentHP));
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (3 * string_height("Something")), "Age: " + string(player.target.age));
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (4 * string_height("Something")), "Temperament: " + player.target.temper);
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (5 * string_height("Something")), "Family: " + player.target.family);
 } else {
     //Draw the screen static
     for(j = hud.targetLowerBound; j > hud.targetUpperBound; j--) {
-        draw_set_color(choose(0, 16777215));
+        draw_set_color(choose(c_black, c_white));
         draw_line(hud.targetLeftBound, j, hud.targetRightBound, j);
     }
     draw_set_color(c_white);

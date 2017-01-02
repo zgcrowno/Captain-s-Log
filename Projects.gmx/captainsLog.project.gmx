@@ -14,6 +14,7 @@
     <sprite>sprites\sprTimeline</sprite>
     <sprite>sprites\sprPlayerBullet</sprite>
     <sprite>sprites\sprPawn</sprite>
+    <sprite>sprites\sprPlayerBulletContact</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -170,6 +171,7 @@
     <object>objects\objShip</object>
     <object>objects\objEnemyShip</object>
     <object>objects\objPawn</object>
+    <object>objects\objPlayerBulletContact</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTest2</room>
