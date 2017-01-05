@@ -6,15 +6,28 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprTypingPrompt</sprite>
-    <sprite>sprites\sprRiceCake</sprite>
-    <sprite>sprites\sprGridBox</sprite>
-    <sprite>sprites\sprGridBoxShield</sprite>
-    <sprite>sprites\sprHud</sprite>
-    <sprite>sprites\sprTimeline</sprite>
-    <sprite>sprites\sprPlayerBullet</sprite>
-    <sprite>sprites\sprPawn</sprite>
-    <sprite>sprites\sprPlayerBulletContact</sprite>
+    <sprites name="misc">
+      <sprite>sprites\sprTypingPrompt</sprite>
+      <sprite>sprites\sprTimeline</sprite>
+    </sprites>
+    <sprites name="hud">
+      <sprite>sprites\sprGridBox</sprite>
+      <sprite>sprites\sprGridBoxShield</sprite>
+      <sprite>sprites\sprHud</sprite>
+    </sprites>
+    <sprites name="ship">
+      <sprites name="playerShip">
+        <sprite>sprites\sprRiceCake</sprite>
+      </sprites>
+      <sprites name="enemyShip">
+        <sprite>sprites\sprPawn</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="projectile">
+      <sprite>sprites\sprPlayerBullet</sprite>
+      <sprite>sprites\sprPlayerBulletContact</sprite>
+      <sprite>sprites\sprRiceCakeActive</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -90,6 +103,9 @@
           <scripts name="util">
             <script>scripts\scrSetDesignation.gml</script>
           </scripts>
+        </scripts>
+        <scripts name="active">
+          <script>scripts\scrActive.gml</script>
         </scripts>
       </scripts>
       <scripts name="timeline">
@@ -172,6 +188,7 @@
     <object>objects\objEnemyShip</object>
     <object>objects\objPawn</object>
     <object>objects\objPlayerBulletContact</object>
+    <object>objects\objRiceCakeActive</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTest2</room>

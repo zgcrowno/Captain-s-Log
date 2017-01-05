@@ -27,5 +27,5 @@ requiredPPThrustersRotate = maxPP / 2;
 requiredPPShields = maxPP / 4;
 requiredPPGuns = maxPP / 2;
 requiredPPCannon = maxPP * 0.75;
-
-cannonCooldownRate = cannonCooldownRateRicecake;
+requiredPPActive = maxPP * 0.5;
+requiredPPPassive = maxPP * 0.5;

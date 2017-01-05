@@ -73,7 +73,7 @@ Frederickson:
 --Ship: Ricecake
 --Guns: 1
 --Cannon: This cannon fires a highly powerful singularity burst from its stern, doing continual damage each turn to enemies in its radius.
---Active Ability:
+--Active Ability: Detonates all player bullets currently in the room, each doing AOE damage.
 --Passive Ability: Diverts energy to its rotating thrusters, thus allowing it to turn 180 degrees in a single turn.
 --Build: Small
 --Loyalty: Human

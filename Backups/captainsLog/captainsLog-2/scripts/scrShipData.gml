@@ -101,6 +101,8 @@ requiredPPThrustersRotate = maxPP / 2;
 requiredPPShields = maxPP / 4;
 requiredPPGuns = maxPP / 2
 requiredPPCannon = maxPP * 0.75;
+requiredPPActive = maxPP * 0.75;
+requiredPPPassive = maxPP * 0.2;
 
 //Current power routed to the ship's individual components
 currentPPThrustersPort = 0;
@@ -125,9 +127,6 @@ percentPPGuns = 0;
 percentPPCannon = 0;
 percentPPActive = 0;
 percentPPPassive = 0;
-
-//Rate at which the cannon cools down
-cannonCooldownRate = 0;
 
 //String representing user input
 input = "";

@@ -10,6 +10,9 @@ if(script_execute(scrTouchedTimelineThisTurn) && !alreadyTouchedTimeline) {
         script_execute(scrGunsFire);
     }
     if(object_is_ancestor(object_index, objShip)) {
+        script_execute(scrActive);
+    }
+    if(object_is_ancestor(object_index, objShip)) {
         script_execute(scrResetActionMap);
     }
     if(object_is_ancestor(object_index, objShip)) {

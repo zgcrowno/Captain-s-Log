@@ -2,58 +2,59 @@
 <TextureGroup>
   <texture scale="0">Default_0.png</texture>
   <tpe x="2" y="2" tpage="Default_0" entry="66">sprHud_sprHud_0.tpe</tpe>
-  <tpe x="2" y="1086" tpage="Default_0" entry="82">fntMain_fntMain.tpe</tpe>
-  <tpe x="262" y="1086" tpage="Default_0" entry="22">sprTimeline_sprTimeline_0.tpe</tpe>
-  <tpe x="1926" y="2" tpage="Default_0" entry="1">sprGridBoxShield_sprGridBoxShield_0.tpe</tpe>
-  <tpe x="926" y="1086" tpage="Default_0" entry="2">sprGridBox_sprGridBox_0.tpe</tpe>
-  <tpe x="1962" y="2" tpage="Default_0" entry="80">sprPlayerBulletContact_sprPlayerBulletContact_13.tpe</tpe>
-  <tpe x="1926" y="38" tpage="Default_0" entry="81">sprPlayerBulletContact_sprPlayerBulletContact_14.tpe</tpe>
+  <tpe x="2" y="1086" tpage="Default_0" entry="83">fntMain_fntMain.tpe</tpe>
+  <tpe x="1926" y="2" tpage="Default_0" entry="82">sprRiceCakeActive_sprRiceCakeActive_0.tpe</tpe>
+  <tpe x="262" y="1086" tpage="Default_0" entry="1">sprTimeline_sprTimeline_0.tpe</tpe>
+  <tpe x="1926" y="98" tpage="Default_0" entry="2">sprGridBoxShield_sprGridBoxShield_0.tpe</tpe>
+  <tpe x="926" y="1086" tpage="Default_0" entry="3">sprGridBox_sprGridBox_0.tpe</tpe>
+  <tpe x="1962" y="98" tpage="Default_0" entry="80">sprPlayerBulletContact_sprPlayerBulletContact_13.tpe</tpe>
+  <tpe x="1926" y="134" tpage="Default_0" entry="81">sprPlayerBulletContact_sprPlayerBulletContact_14.tpe</tpe>
   <tpe x="962" y="1086" tpage="Default_0" entry="78">sprPlayerBulletContact_sprPlayerBulletContact_11.tpe</tpe>
   <tpe x="262" y="1098" tpage="Default_0" entry="79">sprPlayerBulletContact_sprPlayerBulletContact_12.tpe</tpe>
-  <tpe x="1998" y="2" tpage="Default_0" entry="3">sprRiceCake_sprRiceCake_0.tpe</tpe>
-  <tpe x="1962" y="38" tpage="Default_0" entry="24">sprPawn_sprPawn_0.tpe</tpe>
-  <tpe x="1926" y="74" tpage="Default_0" entry="76">sprPlayerBulletContact_sprPlayerBulletContact_9.tpe</tpe>
+  <tpe x="1998" y="98" tpage="Default_0" entry="24">sprRiceCake_sprRiceCake_0.tpe</tpe>
+  <tpe x="1962" y="134" tpage="Default_0" entry="25">sprPawn_sprPawn_0.tpe</tpe>
+  <tpe x="1926" y="170" tpage="Default_0" entry="76">sprPlayerBulletContact_sprPlayerBulletContact_9.tpe</tpe>
   <tpe x="994" y="1086" tpage="Default_0" entry="77">sprPlayerBulletContact_sprPlayerBulletContact_10.tpe</tpe>
   <tpe x="962" y="1118" tpage="Default_0" entry="74">sprPlayerBulletContact_sprPlayerBulletContact_7.tpe</tpe>
   <tpe x="294" y="1098" tpage="Default_0" entry="75">sprPlayerBulletContact_sprPlayerBulletContact_8.tpe</tpe>
-  <tpe x="2030" y="2" tpage="Default_0" entry="72">sprPlayerBulletContact_sprPlayerBulletContact_5.tpe</tpe>
-  <tpe x="1998" y="34" tpage="Default_0" entry="73">sprPlayerBulletContact_sprPlayerBulletContact_6.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="0">sprTypingPrompt_sprTypingPrompt_0.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="4">sprTypingPrompt_sprTypingPrompt_1.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="5">sprTypingPrompt_sprTypingPrompt_2.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="6">sprTypingPrompt_sprTypingPrompt_3.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="7">sprTypingPrompt_sprTypingPrompt_4.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="8">sprTypingPrompt_sprTypingPrompt_5.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="9">sprTypingPrompt_sprTypingPrompt_6.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="10">sprTypingPrompt_sprTypingPrompt_7.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="11">sprTypingPrompt_sprTypingPrompt_8.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="12">sprTypingPrompt_sprTypingPrompt_9.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="13">sprTypingPrompt_sprTypingPrompt_10.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="14">sprTypingPrompt_sprTypingPrompt_11.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="15">sprTypingPrompt_sprTypingPrompt_12.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="16">sprTypingPrompt_sprTypingPrompt_13.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="17">sprTypingPrompt_sprTypingPrompt_14.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="18">sprTypingPrompt_sprTypingPrompt_15.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="19">sprTypingPrompt_sprTypingPrompt_16.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="20">sprTypingPrompt_sprTypingPrompt_17.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="21">sprTypingPrompt_sprTypingPrompt_18.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="25">sprTypingPrompt_sprTypingPrompt_19.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="26">sprTypingPrompt_sprTypingPrompt_20.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="27">sprTypingPrompt_sprTypingPrompt_21.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="28">sprTypingPrompt_sprTypingPrompt_22.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="29">sprTypingPrompt_sprTypingPrompt_23.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="30">sprTypingPrompt_sprTypingPrompt_24.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="31">sprTypingPrompt_sprTypingPrompt_25.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="32">sprTypingPrompt_sprTypingPrompt_26.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="33">sprTypingPrompt_sprTypingPrompt_27.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="34">sprTypingPrompt_sprTypingPrompt_28.tpe</tpe>
-  <tpe x="1962" y="70" tpage="Default_0" entry="35">sprTypingPrompt_sprTypingPrompt_29.tpe</tpe>
+  <tpe x="1998" y="130" tpage="Default_0" entry="72">sprPlayerBulletContact_sprPlayerBulletContact_5.tpe</tpe>
+  <tpe x="2030" y="2" tpage="Default_0" entry="73">sprPlayerBulletContact_sprPlayerBulletContact_6.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="0">sprTypingPrompt_sprTypingPrompt_0.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="4">sprTypingPrompt_sprTypingPrompt_1.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="5">sprTypingPrompt_sprTypingPrompt_2.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="6">sprTypingPrompt_sprTypingPrompt_3.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="7">sprTypingPrompt_sprTypingPrompt_4.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="8">sprTypingPrompt_sprTypingPrompt_5.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="9">sprTypingPrompt_sprTypingPrompt_6.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="10">sprTypingPrompt_sprTypingPrompt_7.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="11">sprTypingPrompt_sprTypingPrompt_8.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="12">sprTypingPrompt_sprTypingPrompt_9.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="13">sprTypingPrompt_sprTypingPrompt_10.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="14">sprTypingPrompt_sprTypingPrompt_11.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="15">sprTypingPrompt_sprTypingPrompt_12.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="16">sprTypingPrompt_sprTypingPrompt_13.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="17">sprTypingPrompt_sprTypingPrompt_14.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="18">sprTypingPrompt_sprTypingPrompt_15.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="19">sprTypingPrompt_sprTypingPrompt_16.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="20">sprTypingPrompt_sprTypingPrompt_17.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="21">sprTypingPrompt_sprTypingPrompt_18.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="22">sprTypingPrompt_sprTypingPrompt_19.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="26">sprTypingPrompt_sprTypingPrompt_20.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="27">sprTypingPrompt_sprTypingPrompt_21.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="28">sprTypingPrompt_sprTypingPrompt_22.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="29">sprTypingPrompt_sprTypingPrompt_23.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="30">sprTypingPrompt_sprTypingPrompt_24.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="31">sprTypingPrompt_sprTypingPrompt_25.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="32">sprTypingPrompt_sprTypingPrompt_26.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="33">sprTypingPrompt_sprTypingPrompt_27.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="34">sprTypingPrompt_sprTypingPrompt_28.tpe</tpe>
+  <tpe x="1962" y="166" tpage="Default_0" entry="35">sprTypingPrompt_sprTypingPrompt_29.tpe</tpe>
   <tpe x="1022" y="1086" tpage="Default_0" entry="36">sprTypingPrompt_sprTypingPrompt_30.tpe</tpe>
   <tpe x="1022" y="1086" tpage="Default_0" entry="37">sprTypingPrompt_sprTypingPrompt_31.tpe</tpe>
   <tpe x="1022" y="1086" tpage="Default_0" entry="38">sprTypingPrompt_sprTypingPrompt_32.tpe</tpe>
   <tpe x="1022" y="1086" tpage="Default_0" entry="39">sprTypingPrompt_sprTypingPrompt_33.tpe</tpe>
   <tpe x="1022" y="1086" tpage="Default_0" entry="40">sprTypingPrompt_sprTypingPrompt_34.tpe</tpe>
-  <tpe x="1926" y="102" tpage="Default_0" entry="41">sprTypingPrompt_sprTypingPrompt_35.tpe</tpe>
+  <tpe x="1926" y="198" tpage="Default_0" entry="41">sprTypingPrompt_sprTypingPrompt_35.tpe</tpe>
   <tpe x="1022" y="1086" tpage="Default_0" entry="42">sprTypingPrompt_sprTypingPrompt_36.tpe</tpe>
   <tpe x="1022" y="1086" tpage="Default_0" entry="43">sprTypingPrompt_sprTypingPrompt_37.tpe</tpe>
   <tpe x="1022" y="1086" tpage="Default_0" entry="44">sprTypingPrompt_sprTypingPrompt_38.tpe</tpe>
@@ -82,6 +83,6 @@
   <tpe x="294" y="1122" tpage="Default_0" entry="71">sprPlayerBulletContact_sprPlayerBulletContact_4.tpe</tpe>
   <tpe x="262" y="1142" tpage="Default_0" entry="23">sprPlayerBullet_sprPlayerBullet_0.tpe</tpe>
   <tpe x="318" y="1098" tpage="Default_0" entry="68">sprPlayerBulletContact_sprPlayerBulletContact_1.tpe</tpe>
-  <tpe x="2030" y="22" tpage="Default_0" entry="69">sprPlayerBulletContact_sprPlayerBulletContact_2.tpe</tpe>
-  <tpe x="2018" y="34" tpage="Default_0" entry="67">sprPlayerBulletContact_sprPlayerBulletContact_0.tpe</tpe>
+  <tpe x="2018" y="130" tpage="Default_0" entry="69">sprPlayerBulletContact_sprPlayerBulletContact_2.tpe</tpe>
+  <tpe x="1994" y="150" tpage="Default_0" entry="67">sprPlayerBulletContact_sprPlayerBulletContact_0.tpe</tpe>
 </TextureGroup>
