@@ -155,8 +155,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "active") {
         if(keyboard_check_pressed(vk_enter)) {
-            actionMap[? "Active"] = true;
-            script_execute(scrWipeToInitState);
+            script_execute(scrActiveDivertPower);
         }
     } else if(input == "p") {
         if(keyboard_check_pressed(ord("A"))) {
@@ -184,8 +183,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "passive") {
         if(keyboard_check_pressed(vk_enter)) {
-            actionMap[? "Passive"] = true;
-            script_execute(scrWipeToInitState);
+            script_execute(scrPassiveDivertPower);
         }
     }
 } else if(currentState == thrusterState) {  //thrusterState checks
@@ -608,7 +606,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "fire") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCannon);
+            script_execute(scrCannonDivertPower);
         }
     }
 } else if(currentState == cutState) {   //cutState checks

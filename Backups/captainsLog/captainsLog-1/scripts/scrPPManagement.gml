@@ -61,7 +61,9 @@ if(actionMap[? "Cannon"]) {
 if(actionMap[? "Active"]) {
     currentPPActive = requiredPPActive;
 } else if(currentPPActive > 0) {
-    currentPPActive -= (requiredPPActive * util.difficultyModifier) / (hud.lowerBound - hud.upperBound);
+    currentPPActive -= ((requiredPPActive * util.difficultyModifier) / (hud.playAreaLowerBound - hud.playAreaUpperBound)) / 2;
+} else {
+    currentPPActive = 0;
 }
 
 percentPPThrusters = ((currentPPThrustersPort + currentPPThrustersStarboard + currentPPThrustersBow + currentPPThrustersStern) / maxPP) * 100;

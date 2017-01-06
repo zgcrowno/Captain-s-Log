@@ -61,51 +61,76 @@
         </scripts>
         <scripts name="input">
           <script>scripts\scrInput.gml</script>
-          <scripts name="inputManipulation">
-            <script>scripts\scrCutShieldsAll.gml</script>
-            <script>scripts\scrCutShieldsStern.gml</script>
-            <script>scripts\scrCutShieldsBow.gml</script>
-            <script>scripts\scrCutShieldsStarboard.gml</script>
-            <script>scripts\scrCutShieldsPort.gml</script>
-            <script>scripts\scrCutThrustersRotateAll.gml</script>
-            <script>scripts\scrCutThrustersRotateCounterclockwise.gml</script>
-            <script>scripts\scrCutThrustersRotateClockwise.gml</script>
-            <script>scripts\scrCutThrustersAll.gml</script>
-            <script>scripts\scrCutThrustersStern.gml</script>
-            <script>scripts\scrCutThrustersBow.gml</script>
-            <script>scripts\scrCutThrustersStarboard.gml</script>
-            <script>scripts\scrCutThrustersPort.gml</script>
-            <script>scripts\scrCutAll.gml</script>
-            <script>scripts\scrCutCannon.gml</script>
-            <script>scripts\scrCutGuns.gml</script>
-            <script>scripts\scrCannon.gml</script>
-            <script>scripts\scrGuns.gml</script>
-            <script>scripts\scrShieldsAll.gml</script>
-            <script>scripts\scrShieldsStern.gml</script>
-            <script>scripts\scrShieldsBow.gml</script>
-            <script>scripts\scrShieldsStarboard.gml</script>
-            <script>scripts\scrShieldsPort.gml</script>
-            <script>scripts\scrThrustersRotateCounterclockwise.gml</script>
-            <script>scripts\scrThrustersRotateClockwise.gml</script>
-            <script>scripts\scrThrustersStern.gml</script>
-            <script>scripts\scrThrustersBow.gml</script>
-            <script>scripts\scrThrustersStarboard.gml</script>
-            <script>scripts\scrThrustersPort.gml</script>
-          </scripts>
         </scripts>
         <scripts name="guns">
           <script>scripts\scrGunsFire.gml</script>
           <script>scripts\scrGunsDivertPower.gml</script>
         </scripts>
         <scripts name="enemyShip">
-          <script>scripts\scrPawnData.gml</script>
-          <script>scripts\scrEnemyShipData.gml</script>
           <scripts name="util">
             <script>scripts\scrSetDesignation.gml</script>
           </scripts>
+          <scripts name="data">
+            <script>scripts\scrEnemyShipData.gml</script>
+            <scripts name="pawn">
+              <script>scripts\scrPawnData.gml</script>
+            </scripts>
+          </scripts>
         </scripts>
         <scripts name="active">
-          <script>scripts\scrActive.gml</script>
+          <script>scripts\scrActiveDivertPower.gml</script>
+          <script>scripts\scrActiveFire.gml</script>
+        </scripts>
+        <scripts name="passive">
+          <script>scripts\scrPassiveDivertPower.gml</script>
+          <script>scripts\scrPassiveFire.gml</script>
+        </scripts>
+        <scripts name="cannon">
+          <script>scripts\scrCannonDivertPower.gml</script>
+          <script>scripts\scrCannonFire.gml</script>
+        </scripts>
+        <scripts name="cut">
+          <scripts name="shields">
+            <script>scripts\scrCutShieldsPort.gml</script>
+            <script>scripts\scrCutShieldsStarboard.gml</script>
+            <script>scripts\scrCutShieldsBow.gml</script>
+            <script>scripts\scrCutShieldsStern.gml</script>
+            <script>scripts\scrCutShieldsAll.gml</script>
+          </scripts>
+          <scripts name="thrusters">
+            <script>scripts\scrCutThrustersPort.gml</script>
+            <script>scripts\scrCutThrustersStarboard.gml</script>
+            <script>scripts\scrCutThrustersBow.gml</script>
+            <script>scripts\scrCutThrustersStern.gml</script>
+            <script>scripts\scrCutThrustersRotateClockwise.gml</script>
+            <script>scripts\scrCutThrustersRotateCounterclockwise.gml</script>
+            <script>scripts\scrCutThrustersAll.gml</script>
+            <script>scripts\scrCutThrustersRotateAll.gml</script>
+          </scripts>
+          <scripts name="guns">
+            <script>scripts\scrCutGuns.gml</script>
+          </scripts>
+          <scripts name="cannon">
+            <script>scripts\scrCutCannon.gml</script>
+          </scripts>
+          <scripts name="all">
+            <script>scripts\scrCutAll.gml</script>
+          </scripts>
+        </scripts>
+        <scripts name="shields">
+          <script>scripts\scrShieldsPort.gml</script>
+          <script>scripts\scrShieldsStarboard.gml</script>
+          <script>scripts\scrShieldsBow.gml</script>
+          <script>scripts\scrShieldsStern.gml</script>
+          <script>scripts\scrShieldsAll.gml</script>
+        </scripts>
+        <scripts name="thrusters">
+          <script>scripts\scrThrustersPort.gml</script>
+          <script>scripts\scrThrustersStarboard.gml</script>
+          <script>scripts\scrThrustersBow.gml</script>
+          <script>scripts\scrThrustersStern.gml</script>
+          <script>scripts\scrThrustersRotateClockwise.gml</script>
+          <script>scripts\scrThrustersRotateCounterclockwise.gml</script>
         </scripts>
       </scripts>
       <scripts name="timeline">

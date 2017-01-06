@@ -61,7 +61,7 @@ if(actionMap[? "Cannon"]) {
 if(actionMap[? "Active"]) {
     currentPPActive = requiredPPActive;
 } else if(currentPPActive > 0) {
-    currentPPActive -= (requiredPPActive * util.difficultyModifier) / (hud.playAreaLowerBound - hud.playAreaUpperBound);
+    currentPPActive -= ((requiredPPActive * util.difficultyModifier) / (hud.playAreaLowerBound - hud.playAreaUpperBound)) / 2;
 } else {
     currentPPActive = 0;
 }

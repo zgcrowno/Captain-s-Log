@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TPE>
-  <w>26</w>
-  <h>26</h>
+  <w>27</w>
+  <h>27</h>
   <name>Default</name>
   <hasAlpha>True</hasAlpha>
-  <hash>3396531761</hash>
+  <hash>2353219874</hash>
   <xoffset>0</xoffset>
   <yoffset>0</yoffset>
-  <cropWidth>26</cropWidth>
-  <cropHeight>26</cropHeight>
-  <ow>26</ow>
-  <oh>26</oh>
+  <cropWidth>27</cropWidth>
+  <cropHeight>27</cropHeight>
+  <ow>27</ow>
+  <oh>27</oh>
   <image>sprRiceCake_sprRiceCake_0.tpe.png</image>
 </TPE>

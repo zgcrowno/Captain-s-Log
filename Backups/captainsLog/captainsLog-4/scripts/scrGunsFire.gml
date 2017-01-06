@@ -1,4 +1,4 @@
-if(actionMap[? "Guns"] == true) {
+if(actionMap[? "Guns"]) {
     if(object_index == objRiceCake) {
         bullet = instance_create(0, 0, objPlayerBullet);
         bullet.alreadyTouchedTimeline = true;
