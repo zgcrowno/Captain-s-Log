@@ -67,10 +67,14 @@
           <script>scripts\scrGunsDivertPower.gml</script>
         </scripts>
         <scripts name="enemyShip">
-          <script>scripts\scrPawnData.gml</script>
-          <script>scripts\scrEnemyShipData.gml</script>
           <scripts name="util">
             <script>scripts\scrSetDesignation.gml</script>
+          </scripts>
+          <scripts name="data">
+            <script>scripts\scrEnemyShipData.gml</script>
+            <scripts name="pawn">
+              <script>scripts\scrPawnData.gml</script>
+            </scripts>
           </scripts>
         </scripts>
         <scripts name="active">

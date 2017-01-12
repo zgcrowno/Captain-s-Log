@@ -80,6 +80,9 @@
         <scripts name="active">
           <script>scripts\scrActiveDivertPower.gml</script>
           <script>scripts\scrActiveFire.gml</script>
+          <scripts name="riceCake">
+            <script>scripts\scrRiceCakeActiveBehavior.gml</script>
+          </scripts>
         </scripts>
         <scripts name="passive">
           <script>scripts\scrPassiveDivertPower.gml</script>

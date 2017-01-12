@@ -7,6 +7,9 @@ util = instance_find(objUtil, 0);
 //The ship's current target
 target = noone;
 
+//Boolean representing whether or not the ship's passive ability is activated
+passive = false;
+
 //A collection of all the enemies in the room
 enemies = script_execute(scrGetEnemies);
 

@@ -52,14 +52,14 @@
   </views>
   <instances>
     <instance objName="objHud" x="0" y="0" name="inst_487F7812" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRiceCake" x="961" y="573" name="inst_6F136495" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objRiceCake" x="958" y="573" name="inst_6F136495" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGUI" x="992" y="832" name="inst_2472D6F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTypingPrompt" x="64" y="1024" name="inst_BCCC84AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objUtil" x="1088" y="832" name="inst_810C2B25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTimeline" x="640" y="40" name="inst_81D8518E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTimeline" x="640" y="40" name="inst_BBBD6FA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPawn" x="963" y="513" name="inst_77025279" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
-    <instance objName="objPawn" x="993" y="513" name="inst_17CFA76C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
+    <instance objName="objPawn" x="960" y="513" name="inst_77025279" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
+    <instance objName="objPawn" x="990" y="513" name="inst_17CFA76C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

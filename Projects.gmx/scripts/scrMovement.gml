@@ -44,10 +44,18 @@ if(object_is_ancestor(object_index, objShip)) {
         }
     } 
     if(actionMap[? "Thrusters Clock"] > 0) {
-        image_angle -= 90;
+        if(object_index == objRiceCake && passive) {
+            image_angle -= 180;
+        } else {
+            image_angle -= 90;
+        }
     }
     if(actionMap[? "Thrusters Count"] > 0) {
-        image_angle += 90;
+        if(object_index == objRiceCake && passive) {
+            image_angle += 180;
+        } else {
+            image_angle += 90;
+        }
     }
 } else if(object_is_ancestor(object_index, objBullet)) {
     x += sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));

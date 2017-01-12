@@ -67,15 +67,22 @@
           <script>scripts\scrGunsDivertPower.gml</script>
         </scripts>
         <scripts name="enemyShip">
-          <script>scripts\scrPawnData.gml</script>
-          <script>scripts\scrEnemyShipData.gml</script>
           <scripts name="util">
             <script>scripts\scrSetDesignation.gml</script>
+          </scripts>
+          <scripts name="data">
+            <script>scripts\scrEnemyShipData.gml</script>
+            <scripts name="pawn">
+              <script>scripts\scrPawnData.gml</script>
+            </scripts>
           </scripts>
         </scripts>
         <scripts name="active">
           <script>scripts\scrActiveDivertPower.gml</script>
           <script>scripts\scrActiveFire.gml</script>
+          <scripts name="riceCakeBehavior">
+            <script>scripts\scrRiceCakeActiveBehavior.gml</script>
+          </scripts>
         </scripts>
         <scripts name="passive">
           <script>scripts\scrPassiveDivertPower.gml</script>
