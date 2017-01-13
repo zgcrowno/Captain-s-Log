@@ -35,7 +35,7 @@ ds_map_add(actionMap, "Target", null);
 ds_map_add(actionMap, "Guns", false);
 ds_map_add(actionMap, "Cannon", false);
 ds_map_add(actionMap, "Active", false);
-ds_map_add(actionMap, "Passive", false);
+ds_map_add(actionMap, "Passive", inactive);
 
 //The Number of Lines Needed to Present Action Map to Player
 actionMapDisplaySize = 0;

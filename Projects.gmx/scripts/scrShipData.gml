@@ -7,9 +7,6 @@ util = instance_find(objUtil, 0);
 //The ship's current target
 target = noone;
 
-//Boolean representing whether or not the ship's passive ability is activated
-passive = false;
-
 //A collection of all the enemies in the room
 enemies = script_execute(scrGetEnemies);
 
@@ -38,7 +35,7 @@ ds_map_add(actionMap, "Target", null);
 ds_map_add(actionMap, "Guns", false);
 ds_map_add(actionMap, "Cannon", false);
 ds_map_add(actionMap, "Active", false);
-ds_map_add(actionMap, "Passive", false);
+ds_map_add(actionMap, "Passive", inactive);
 
 //The Number of Lines Needed to Present Action Map to Player
 actionMapDisplaySize = 0;

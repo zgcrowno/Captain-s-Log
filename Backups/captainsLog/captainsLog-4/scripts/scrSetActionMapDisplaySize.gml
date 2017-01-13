@@ -43,6 +43,9 @@ if(actionMap[? "Shields Port"] == toActivate || actionMap[? "Shields Port"] == t
         actionMapDisplaySize += 1;
     }
 }
+if(actionMap[? "Passive"] == toActivate || actionMap[? "Passive"] == toDeactivate) {
+    actionMapDisplaySize += 2;
+}
 if(actionMap[? "Guns"]) {
     actionMapDisplaySize += 1;
 }
@@ -50,9 +53,6 @@ if(actionMap[? "Cannon"]) {
     actionMapDisplaySize += 1;
 }
 if(actionMap[? "Active"]) {
-    actionMapDisplaySize += 1;
-}
-if(actionMap[? "Passive"]) {
     actionMapDisplaySize += 1;
 }
 return actionMapDisplaySize;

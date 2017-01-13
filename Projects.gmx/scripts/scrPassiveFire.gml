@@ -1,5 +1,5 @@
-if(actionMap[? "Passive"]) {
-    if(object_index == objRiceCake) {
-        passive = true;
-    }
+if(actionMap[? "Passive"] == toActivate) {
+    actionMap[? "Passive"] = active;
+} else if(actionMap[? "Passive"] == toDeactivate) {
+    actionMap[? "Passive"] = inactive;
 }

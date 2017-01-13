@@ -621,7 +621,9 @@ if(keyboard_check_pressed(vk_tab)) {
             input += "c";
         } else if(keyboard_check_pressed(ord("A"))) {
             input += "a";
-        } 
+        } else if(keyboard_check_pressed(ord("P"))) {
+            input += "p";
+        }
     } else if(input == "t") {
         if(keyboard_check_pressed(ord("H"))) {
             input += "h";
@@ -721,6 +723,56 @@ if(keyboard_check_pressed(vk_tab)) {
     } else if(input == "a") {
         if(keyboard_check_pressed(ord("L"))) {
             input += "l";
+        } else if(keyboard_check_pressed(ord("C"))) {
+            input += "c";
+        }
+    } else if(input == "ac") {
+        if(keyboard_check_pressed(ord("T"))) {
+            input += "t";
+        }
+    } else if(input == "act") {
+        if(keyboard_check_pressed(ord("I"))) {
+            input += "i";
+        }
+    } else if(input == "acti") {
+        if(keyboard_check_pressed(ord("V"))) {
+            input += "v";
+        }
+    } else if(input == "activ") {
+        if(keyboard_check_pressed(ord("E"))) {
+            input += "e";
+        }
+    } else if(input == "active") {
+        if(keyboard_check_pressed(vk_enter)) {
+            script_execute(scrCutActive);
+        }
+    } else if(input == "p") {
+        if(keyboard_check_pressed(ord("A"))) {
+            input += "a";
+        }
+    } else if(input == "pa") {
+        if(keyboard_check_pressed(ord("S"))) {
+            input += "s";
+        }
+    } else if(input == "pas") {
+        if(keyboard_check_pressed(ord("S"))) {
+            input += "s";
+        }
+    } else if(input == "pass") {
+        if(keyboard_check_pressed(ord("I"))) {
+            input += "i";
+        }
+    } else if(input == "passi") {
+        if(keyboard_check_pressed(ord("V"))) {
+            input += "v";
+        }
+    } else if(input == "passiv") {
+        if(keyboard_check_pressed(ord("E"))) {
+            input += "e";
+        }
+    } else if(input == "passive") {
+        if(keyboard_check_pressed(vk_enter)) {
+            script_execute(scrCutPassive);
         }
     } else if(input == "al") {
         if(keyboard_check_pressed(ord("L"))) {

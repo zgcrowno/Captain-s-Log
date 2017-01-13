@@ -119,6 +119,12 @@
           <scripts name="all">
             <script>scripts\scrCutAll.gml</script>
           </scripts>
+          <scripts name="active">
+            <script>scripts\scrCutActive.gml</script>
+          </scripts>
+          <scripts name="passive">
+            <script>scripts\scrCutPassive.gml</script>
+          </scripts>
         </scripts>
         <scripts name="shields">
           <script>scripts\scrShieldsPort.gml</script>

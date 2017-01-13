@@ -1,5 +1,5 @@
-if(actionMap[? "Passive"]) {
-    if(object_index == objRiceCake) {
-        //To Do: Code RiceCake's passive ability
-    }
+if(actionMap[? "Passive"] == toActivate) {
+    actionMap[? "Passive"] = active;
+} else if(actionMap[? "Passive"] == toDeactivate) {
+    actionMap[? "Passive"] = inactive;
 }

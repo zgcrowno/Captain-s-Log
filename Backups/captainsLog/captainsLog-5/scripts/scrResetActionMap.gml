@@ -36,8 +36,12 @@ if(actionMap[? "Shields Stern"] == toActivate) {
 } else if(actionMap[? "Shields Stern"] == toDeactivate) {
     actionMap[? "Shields Stern"] = inactive;
 }
+if(actionMap[? "Passive"] == toActivate) {
+    actionMap[? "Passive"] = active;
+} else if(actionMap[? "Passive"] == toDeactivate) {
+    actionMap[? "Passive"] = inactive;
+}
 actionMap[? "Target"] = null;
 actionMap[? "Guns"] = false;
 actionMap[? "Cannon"] = false;
 actionMap[? "Active"] = false;
-actionMap[? "Passive"] = false;

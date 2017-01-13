@@ -29,3 +29,5 @@ requiredPPGuns = maxPP / 2;
 requiredPPCannon = maxPP * 0.75;
 requiredPPActive = maxPP * 0.5;
 requiredPPPassive = maxPP * 0.5;
+
+activeDamage = 1;

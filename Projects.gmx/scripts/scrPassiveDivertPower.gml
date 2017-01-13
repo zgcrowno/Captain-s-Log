@@ -1,6 +1,6 @@
 if(requiredPPPassive <= currentPP) {
     if(currentPPPassive == 0) {
-        actionMap[? "Passive"] = true;
+        actionMap[? "Passive"] = toActivate;
     } else {
         //To Do: Error to user about cooldown...
     }

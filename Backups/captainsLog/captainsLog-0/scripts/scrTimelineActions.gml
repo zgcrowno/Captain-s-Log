@@ -22,6 +22,7 @@ if(script_execute(scrTouchedTimelineThisTurn) && !alreadyTouchedTimeline) {
         script_execute(scrResetActionMap);
     }
     if(object_is_ancestor(object_index, objShip)) {
+        show_debug_message("something");
         script_execute(scrShieldManagement);
     }
     if(object_is_ancestor(object_index, objBullet)) {

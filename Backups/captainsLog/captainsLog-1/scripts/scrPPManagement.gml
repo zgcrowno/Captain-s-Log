@@ -28,22 +28,22 @@ if(actionMap[? "Thrusters Count"] > 0) {
 } else {
     currentPPThrustersRotateCounterclockwise = 0;
 }
-if(actionMap[? "Shields Port"] == active || actionMap[? "Shields Port"] == toActivate) {
+if(actionMap[? "Shields Port"] == active || actionMap[? "Shields Port"] == toActivate || actionMap[? "Shields Port"] == toDeactivate) {
     currentPPShieldsPort = requiredPPShields;
 } else {
     currentPPShieldsPort = 0;
 }
-if(actionMap[? "Shields Starboard"] == active || actionMap[? "Shields Starboard"] == toActivate) {
+if(actionMap[? "Shields Starboard"] == active || actionMap[? "Shields Starboard"] == toActivate || actionMap[? "Shields Starboard"] == toDeactivate) {
     currentPPShieldsStarboard = requiredPPShields;
 } else {
     currentPPShieldsStarboard = 0;
 }
-if(actionMap[? "Shields Bow"] == active || actionMap[? "Shields Bow"] == toActivate) {
+if(actionMap[? "Shields Bow"] == active || actionMap[? "Shields Bow"] == toActivate || actionMap[? "Shields Bow"] == toDeactivate) {
     currentPPShieldsBow = requiredPPShields;
 } else {
     currentPPShieldsBow = 0;
 }
-if(actionMap[? "Shields Stern"] == active || actionMap[? "Shields Stern"] == toActivate) {
+if(actionMap[? "Shields Stern"] == active || actionMap[? "Shields Stern"] == toActivate || actionMap[? "Shields Stern"] == toDeactivate) {
     currentPPShieldsStern = requiredPPShields;
 } else {
     currentPPShieldsStern = 0;
@@ -65,6 +65,11 @@ if(actionMap[? "Active"]) {
 } else {
     currentPPActive = 0;
 }
+if(actionMap[? "Passive"] == active || actionMap[? "Passive"] == toActivate || actionMap[? "Passive"] == toDeactivate) {
+    currentPPPassive = requiredPPPassive;
+} else {
+    currentPPPassive = 0;
+}
 
 percentPPThrusters = ((currentPPThrustersPort + currentPPThrustersStarboard + currentPPThrustersBow + currentPPThrustersStern) / maxPP) * 100;
 percentPPShields = ((currentPPShieldsPort + currentPPShieldsStarboard + currentPPShieldsBow + currentPPShieldsStern) / maxPP) * 100;
@@ -78,4 +83,5 @@ currentPP = maxPP - currentPPThrustersPort - currentPPThrustersStarboard -
             currentPPThrustersRotateClockwise - 
             currentPPThrustersRotateCounterclockwise -
             currentPPShieldsPort - currentPPShieldsStarboard - currentPPShieldsBow -
-            currentPPShieldsStern - currentPPGuns - currentPPCannon;
+            currentPPShieldsStern - currentPPGuns - currentPPCannon -
+            currentPPActive - currentPPPassive;

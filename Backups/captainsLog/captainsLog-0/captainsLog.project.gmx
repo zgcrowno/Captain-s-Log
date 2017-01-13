@@ -80,7 +80,7 @@
         <scripts name="active">
           <script>scripts\scrActiveDivertPower.gml</script>
           <script>scripts\scrActiveFire.gml</script>
-          <scripts name="riceCakeBehavior">
+          <scripts name="riceCake">
             <script>scripts\scrRiceCakeActiveBehavior.gml</script>
           </scripts>
         </scripts>
@@ -118,6 +118,12 @@
           </scripts>
           <scripts name="all">
             <script>scripts\scrCutAll.gml</script>
+          </scripts>
+          <scripts name="active">
+            <script>scripts\scrCutActive.gml</script>
+          </scripts>
+          <scripts name="passive">
+            <script>scripts\scrCutPassive.gml</script>
           </scripts>
         </scripts>
         <scripts name="shields">
