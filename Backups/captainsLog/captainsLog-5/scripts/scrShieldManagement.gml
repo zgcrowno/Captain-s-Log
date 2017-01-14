@@ -1,19 +1,19 @@
     for(i = 0; i < array_length_1d(portShields); i++) {
-        if(actionMap[? "Shields Port"] == active) {
+        if(actionMap[? "Shields Port"] == active || actionMap[? "Shields Port"] == toDeactivate) {
             portShields[i].sprite_index = sprGridBoxShield;
         } else {
             portShields[i].sprite_index = sprGridBox;
         }
     }
     for(i = 0; i < array_length_1d(starboardShields); i++) {
-        if(actionMap[? "Shields Starboard"] == active) {
+        if(actionMap[? "Shields Starboard"] == active || actionMap[? "Shields Starboard"] == toDeactivate) {
             starboardShields[i].sprite_index = sprGridBoxShield;
         } else {
             starboardShields[i].sprite_index = sprGridBox;
         }
     }
     for(i = 0; i < array_length_1d(bowShields); i++) {
-        if(actionMap[? "Shields Bow"] == active) {
+        if(actionMap[? "Shields Bow"] == active || actionMap[? "Shields Bow"] == toDeactivate) {
             bowShields[i].sprite_index = sprGridBoxShield;
         } else {
             //Prevent previous two loops from being partially overwritten
@@ -23,7 +23,7 @@
         }
     }
     for(i = 0; i < array_length_1d(sternShields); i++) {
-        if(actionMap[? "Shields Stern"] == active) {
+        if(actionMap[? "Shields Stern"] == active || actionMap[? "Shields Stern"] == toDeactivate) {
             sternShields[i].sprite_index = sprGridBoxShield;
         } else {
             //Prevent previous two loops from being partially overwritten

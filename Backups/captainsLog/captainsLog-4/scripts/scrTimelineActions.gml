@@ -4,7 +4,7 @@ if(script_execute(scrTouchedTimelineThisTurn) && !alreadyTouchedTimeline) {
     }
     script_execute(scrMovement);
     if(object_is_ancestor(object_index, objShip)) {
-        script_execute(scrSetShields);
+        //script_execute(scrSetShields);
     }
     if(object_is_ancestor(object_index, objShip)) {
         script_execute(scrGunsFire);

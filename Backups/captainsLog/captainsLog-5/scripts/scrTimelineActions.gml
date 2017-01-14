@@ -1,6 +1,6 @@
 if(script_execute(scrTouchedTimelineThisTurn) && !alreadyTouchedTimeline) {
     if(object_is_ancestor(object_index, objShip)) {
-        script_execute(scrResetNonShield);
+        //script_execute(scrResetNonShield);
     }
     script_execute(scrMovement);
     if(object_is_ancestor(object_index, objShip)) {

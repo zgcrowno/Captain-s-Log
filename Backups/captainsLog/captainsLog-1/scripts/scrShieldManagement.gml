@@ -18,7 +18,7 @@
         } else {
             //Prevent previous two loops from being partially overwritten
             if(bowShields[i] != bowShields[0] && bowShields[i] != bowShields[array_length_1d(bowShields) - 1]) {
-                bowShields[i].sprite_index = sprGridBox;
+                //bowShields[i].sprite_index = sprGridBox;
             }
         }
     }
