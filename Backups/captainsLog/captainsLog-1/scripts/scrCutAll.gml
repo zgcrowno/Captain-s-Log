@@ -41,5 +41,16 @@ if(actionMap[? "Guns"]) {
 }
 if(actionMap[? "Cannon"]) {
     actionMap[? "Cannon"] = false;
+    currentPPCannon = 0;
 }
+if(actionMap[? "Active"]) {
+    actionMap[? "Active"] = false;
+    currentPPActive = 0;
+}
+if(actionMap[? "Passive"] == active) {
+    actionMap[? "Passive"] = toDeactivate;
+} else if(actionMap[? "Passive"] == toActivate) {
+    actionMap[? "Passive"] = inactive;
+}
+actionMap[? "Target"] = noone;
 script_execute(scrWipeToInitState);

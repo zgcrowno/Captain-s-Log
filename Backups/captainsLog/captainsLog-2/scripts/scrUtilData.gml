@@ -1,6 +1,9 @@
 //The Difficulty Modifier for the Game
 difficultyModifier = 2;
 
+//The damage ships incur while touching static
+staticDamage = 0.1;
+
 //Minimum and maximum ages for captain's
 minimumAge = 16;
 maximumAge = 66;

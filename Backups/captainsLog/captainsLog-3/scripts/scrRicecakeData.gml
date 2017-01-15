@@ -30,4 +30,6 @@ requiredPPCannon = maxPP * 0.75;
 requiredPPActive = maxPP * 0.5;
 requiredPPPassive = maxPP * 0.5;
 
-activeDamage = 1;
+cannonOffset = cannonOffsetRiceCake;
+cannonDamage = cannonDamageRiceCake;
+activeDamage = activeDamageRiceCake;

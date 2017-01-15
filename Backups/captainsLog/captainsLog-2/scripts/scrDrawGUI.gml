@@ -239,6 +239,26 @@ draw_healthbar(hud.shieldsLeftBound + (5 * (hud.shieldsRightBound - hud.shieldsL
                0, 
                true, 
                true);
+               
+//Draw Target Info
+if(player.target != noone) {
+    //Draw the target image
+    draw_sprite(player.target.sprite_index, player.target.image_index, hud.targetRightBound - ((hud.targetLowerBound - hud.targetUpperBound) / 2), hud.targetLowerBound - ((hud.targetLowerBound - hud.targetUpperBound) / 2));
+    
+    //Draw the captain's personal information
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + string_height("Something"), "Captain: " + player.target.designation);
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (2 * string_height("Something")), "HP: " + string(player.target.currentHP));
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (3 * string_height("Something")), "Age: " + string(player.target.age));
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (4 * string_height("Something")), "Temperament: " + player.target.temper);
+    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (5 * string_height("Something")), "Family: " + player.target.family);
+} else {
+    //Draw the screen static
+    for(j = hud.targetLowerBound; j > hud.targetUpperBound; j--) {
+        draw_set_color(choose(c_black, c_white));
+        draw_line(hud.targetLeftBound, j, hud.targetRightBound, j);
+    }
+    draw_set_color(c_white);
+}
 
 //Draw the gunsPP bar
 draw_healthbar(hud.gunsLeftBound + ((hud.gunsRightBound - hud.gunsLeftBound) / 6), 
@@ -266,6 +286,32 @@ draw_healthbar(hud.cannonLeftBound + ((hud.cannonRightBound - hud.cannonLeftBoun
                true, 
                true);
                
+//Draw the activePP bar
+draw_healthbar(hud.activeLeftBound + ((hud.activeRightBound - hud.activeLeftBound) / 6), 
+               hud.activeUpperBound + ((hud.activeLowerBound - hud.activeUpperBound) / 6), 
+               hud.activeRightBound - ((hud.activeRightBound - hud.activeLeftBound) / 6), 
+               hud.activeLowerBound - ((hud.activeLowerBound - hud.activeUpperBound) / 6), 
+               (player.currentPPActive / player.requiredPPActive) * 100, 
+               c_black, 
+               c_teal, 
+               c_teal, 
+               0, 
+               true, 
+               true);
+
+//Draw the passivePP bar
+draw_healthbar(hud.passiveLeftBound + ((hud.passiveRightBound - hud.passiveLeftBound) / 6), 
+               hud.passiveUpperBound + ((hud.passiveLowerBound - hud.passiveUpperBound) / 6), 
+               hud.passiveRightBound - ((hud.passiveRightBound - hud.passiveLeftBound) / 6), 
+               hud.passiveLowerBound - ((hud.passiveLowerBound - hud.passiveUpperBound) / 6), 
+               (player.currentPPPassive / player.requiredPPPassive) * 100, 
+               c_black, 
+               c_teal, 
+               c_teal, 
+               0, 
+               true, 
+               true);
+               
 //Draw lines from enemies to respective designations in commands screen
 if(player.currentState == player.targetState) {
     for(i = 0; i < array_length_1d(player.enemies); i++) {
@@ -281,32 +327,14 @@ draw_text(hud.thrustersLeftBound, hud.thrustersUpperBound, "Thrusters:");
 draw_text(hud.shieldsLeftBound, hud.shieldsUpperBound, "Shields:");
 draw_text(hud.commandsLeftBound, hud.commandsUpperBound, "Commands:");
 draw_text(hud.consoleLeftBound, hud.consoleUpperBound, "Console:");
-draw_text(hud.targetLeftBound, hud.targetUpperBound, "Target:");
+if(player.target != noone) {
+    draw_text(hud.targetLeftBound, hud.targetUpperBound, "Target:");
+}
 draw_text(hud.gunsLeftBound, hud.gunsUpperBound, "Guns:");
 draw_text(hud.cannonLeftBound, hud.cannonUpperBound, "Cannon:");
 draw_text(hud.activeLeftBound, hud.activeUpperBound, "Active:");
 draw_text(hud.passiveLeftBound, hud.passiveUpperBound, "Passive:");
 draw_text(hud.aggregateLeftBound, hud.aggregateUpperBound, "Aggregate:");
-
-//Draw Target Info
-if(player.target != noone) {
-    //Draw the target image
-    draw_sprite(player.target.sprite_index, player.target.image_index, hud.targetRightBound - ((hud.targetLowerBound - hud.targetUpperBound) / 2), hud.targetLowerBound - ((hud.targetLowerBound - hud.targetUpperBound) / 2));
-    
-    //Draw the captain's personal information
-    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + string_height("Something"), "Captain: " + player.target.designation);
-    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (2 * string_height("Something")), "HP: " + string(player.target.currentHP));
-    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (3 * string_height("Something")), "Age: " + string(player.target.age));
-    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (4 * string_height("Something")), "Temperament: " + player.target.temper);
-    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (5 * string_height("Something")), "Family: " + player.target.family);
-} else {
-    //Draw the screen static
-    for(j = hud.targetLowerBound; j > hud.targetUpperBound; j--) {
-        draw_set_color(choose(c_black, c_white));
-        draw_line(hud.targetLeftBound, j, hud.targetRightBound, j);
-    }
-    draw_set_color(c_white);
-}
 
 //Draw Aggregate Info
 draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (6 * string_height("Something")), "Thrusters: " + string(player.percentPPThrusters) + "%");

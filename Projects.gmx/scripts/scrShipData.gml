@@ -13,6 +13,9 @@ enemies = script_execute(scrGetEnemies);
 //The maximum length of all enemies' designations
 maxEnemiesDesignationLength = 0;
 
+//Value used in determining where to spawn cannonBullet or cannonLaser
+cannonOffset = 0;
+
 //The Shield Input States
 active = 0;
 inactive = 1;
@@ -31,20 +34,24 @@ ds_map_add(actionMap, "Shields Port", inactive);
 ds_map_add(actionMap, "Shields Starboard", inactive);
 ds_map_add(actionMap, "Shields Bow", inactive);
 ds_map_add(actionMap, "Shields Stern", inactive);
-ds_map_add(actionMap, "Target", null);
+ds_map_add(actionMap, "Target", noone);
 ds_map_add(actionMap, "Guns", false);
 ds_map_add(actionMap, "Cannon", false);
 ds_map_add(actionMap, "Active", false);
 ds_map_add(actionMap, "Passive", inactive);
 
+//The amount of damage dealt by the ship's cannon and active ability, respectively
+cannonDamage = 0;
+activeDamage = 1;
+
 //The Number of Lines Needed to Present Action Map to Player
 actionMapDisplaySize = 0;
 
 //The Grid Boxes That Will Represent the Ship's Shields
-portShields = null;
-starboardShields = null;
-bowShields = null;
-sternShields = null;
+portShields = noone;
+starboardShields = noone;
+bowShields = noone;
+sternShields = noone;
 
 //Hud States
 initState = 0;
@@ -157,6 +164,10 @@ bulletSpeedRicecake = 0.75
 specialSpeedRicecake = 0.5
 cannonCooldownRateRicecake = 0.07
 shipAngleSpeedRicecake = 0.5
+
+cannonOffsetRiceCake = 13;
+cannonDamageRiceCake = 0;
+activeDamageRiceCake = 1;
 
 //Pawn
 maxHPPawn = 50;

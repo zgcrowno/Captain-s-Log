@@ -11,9 +11,12 @@
       <sprite>sprites\sprTimeline</sprite>
     </sprites>
     <sprites name="hud">
-      <sprite>sprites\sprGridBox</sprite>
-      <sprite>sprites\sprGridBoxShield</sprite>
       <sprite>sprites\sprHud</sprite>
+      <sprites name="gridBox">
+        <sprite>sprites\sprGridBox</sprite>
+        <sprite>sprites\sprGridBoxShield</sprite>
+        <sprite>sprites\sprGridBoxStatic</sprite>
+      </sprites>
     </sprites>
     <sprites name="ship">
       <sprites name="playerShip">
@@ -24,9 +27,18 @@
       </sprites>
     </sprites>
     <sprites name="projectile">
-      <sprite>sprites\sprPlayerBullet</sprite>
-      <sprite>sprites\sprPlayerBulletContact</sprite>
-      <sprite>sprites\sprRiceCakeActive</sprite>
+      <sprites name="bullet">
+        <sprite>sprites\sprPlayerBullet</sprite>
+        <sprite>sprites\sprPlayerBulletContact</sprite>
+      </sprites>
+      <sprites name="active">
+        <sprite>sprites\sprRiceCakeActive</sprite>
+      </sprites>
+      <sprites name="cannon">
+        <sprites name="cannonBullet">
+          <sprite>sprites\sprCannonBullet</sprite>
+        </sprites>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -91,6 +103,9 @@
         <scripts name="cannon">
           <script>scripts\scrCannonDivertPower.gml</script>
           <script>scripts\scrCannonFire.gml</script>
+          <scripts name="riceCake">
+            <script>scripts\scrRiceCakeCannon.gml</script>
+          </scripts>
         </scripts>
         <scripts name="cut">
           <scripts name="shields">
@@ -161,6 +176,7 @@
         <script>scripts\scrTouchedTimelineThisTurn.gml</script>
         <script>scripts\scrResetTouched.gml</script>
         <script>scripts\scrRandomizeSeed.gml</script>
+        <script>scripts\scrDealStaticDamage.gml</script>
       </scripts>
       <scripts name="data">
         <script>scripts\scrObjectData.gml</script>
@@ -190,10 +206,15 @@
           <scripts name="data">
             <script>scripts\scrBulletData.gml</script>
           </scripts>
-          <scripts name="behavior">
-            <script>scripts\scrDestroyOutOfBounds.gml</script>
-            <script>scripts\scrShipInteraction.gml</script>
+        </scripts>
+        <scripts name="cannonBullet">
+          <scripts name="data">
+            <script>scripts\scrCannonBulletData.gml</script>
           </scripts>
+        </scripts>
+        <scripts name="util">
+          <script>scripts\scrDestroyOutOfBounds.gml</script>
+          <script>scripts\scrShipInteraction.gml</script>
         </scripts>
       </scripts>
       <scripts name="movement">
@@ -205,13 +226,13 @@
     <font>fonts\fntMain</font>
   </fonts>
   <objects name="objects">
+    <object>objects\objUtil</object>
     <object>objects\objRiceCake</object>
     <object>objects\objGUI</object>
     <object>objects\objPhraseGameOver</object>
     <object>objects\objTypingPrompt</object>
     <object>objects\objHud</object>
     <object>objects\objPlayerShip</object>
-    <object>objects\objUtil</object>
     <object>objects\objGridBox</object>
     <object>objects\objTimeline</object>
     <object>objects\objObject</object>
@@ -223,6 +244,9 @@
     <object>objects\objPawn</object>
     <object>objects\objPlayerBulletContact</object>
     <object>objects\objRiceCakeActive</object>
+    <object>objects\objCannonBullet</object>
+    <object>objects\objPlayerCannonBullet</object>
+    <object>objects\objGridBoxStatic</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTest2</room>

@@ -43,7 +43,12 @@ All levels are introduced with their titles, and these titles are taken from the
 
 Instead of having enemies' designations be equal to their names plus some arbitrary number, maybe set them equal to a captainName attribute (to be added to enemyShipData)
 
-/////////////////////////////////////////Characters//////////////////////////////////////////////
+//////////////////////////////////////Narrative Theme/////////////////////////////////////////////
+
+The theme revolves primarily around the cultural subsumption and subtle, decades-long minoritization of the natives. In many ways, the narrative will hinge on the sorts of
+marginalizations faced by African Americans in the United states throughout the 20th and 21st centuries.
+
+/////////////////////////////////////////Characters///////////////////////////////////////////////
 
 Klem:
 --Species: Native

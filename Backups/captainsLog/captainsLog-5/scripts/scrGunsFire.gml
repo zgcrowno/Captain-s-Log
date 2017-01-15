@@ -1,10 +1,8 @@
 if(actionMap[? "Guns"]) {
     if(object_index == objRiceCake) {
-        bullet = instance_create(0, 0, objPlayerBullet);
+        bullet = instance_create(x, y, objPlayerBullet);
         bullet.alreadyTouchedTimeline = true;
         bullet.image_angle = image_angle;
-        bullet.x = x;
-        bullet.y = y;
     } else {
         //To Do: Cases for Other Ships...
     }

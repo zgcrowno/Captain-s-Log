@@ -1,10 +1,10 @@
 if(script_execute(scrTouchedTimelineThisTurn) && !alreadyTouchedTimeline) {
-    if(object_is_ancestor(object_index, objShip)) {
+    if(object_is_ancestor(object_index, objPlayerShip)) {
         script_execute(scrResetNonShield);
     }
     script_execute(scrMovement);
-    if(object_is_ancestor(object_index, objShip)) {
-        //script_execute(scrSetShields);
+    if(object_is_ancestor(object_index, objPlayerShip)) {
+        script_execute(scrSetShields);
     }
     if(object_is_ancestor(object_index, objShip)) {
         script_execute(scrGunsFire);
@@ -21,7 +21,7 @@ if(script_execute(scrTouchedTimelineThisTurn) && !alreadyTouchedTimeline) {
     if(object_is_ancestor(object_index, objShip)) {
         script_execute(scrResetActionMap);
     }
-    if(object_is_ancestor(object_index, objShip)) {
+    if(object_is_ancestor(object_index, objPlayerShip)) {
         script_execute(scrShieldManagement);
     }
     if(object_is_ancestor(object_index, objBullet)) {

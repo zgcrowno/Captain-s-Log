@@ -55,6 +55,8 @@ if(actionMap[? "Guns"]) {
 }
 if(actionMap[? "Cannon"]) {
     currentPPCannon = requiredPPCannon;
+} else if(currentPPCannon > 0) {
+    currentPPCannon -= ((requiredPPCannon * util.difficultyModifier) / (hud.playAreaLowerBound - hud.playAreaUpperBound)) / 3;
 } else {
     currentPPCannon = 0;
 }
@@ -71,7 +73,7 @@ if(actionMap[? "Passive"] == active || actionMap[? "Passive"] == toActivate || a
     currentPPPassive = 0;
 }
 
-percentPPThrusters = ((currentPPThrustersPort + currentPPThrustersStarboard + currentPPThrustersBow + currentPPThrustersStern) / maxPP) * 100;
+percentPPThrusters = ((currentPPThrustersPort + currentPPThrustersStarboard + currentPPThrustersBow + currentPPThrustersStern + currentPPThrustersRotateClockwise + currentPPThrustersRotateCounterclockwise) / maxPP) * 100;
 percentPPShields = ((currentPPShieldsPort + currentPPShieldsStarboard + currentPPShieldsBow + currentPPShieldsStern) / maxPP) * 100;
 percentPPGuns = (currentPPGuns / maxPP) * 100;
 percentPPCannon = (currentPPCannon / maxPP) * 100;

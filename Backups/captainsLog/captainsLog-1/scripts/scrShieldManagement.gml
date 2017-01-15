@@ -1,3 +1,6 @@
+    //This script will have to be altered if enemy ships are deemed capable of shields
+    //Checks will have to be put in place preventing one ship's shields from overwriting
+    //any other's
     for(i = 0; i < array_length_1d(portShields); i++) {
         if(actionMap[? "Shields Port"] == active || actionMap[? "Shields Port"] == toDeactivate) {
             portShields[i].sprite_index = sprGridBoxShield;
@@ -18,7 +21,7 @@
         } else {
             //Prevent previous two loops from being partially overwritten
             if(bowShields[i] != bowShields[0] && bowShields[i] != bowShields[array_length_1d(bowShields) - 1]) {
-                //bowShields[i].sprite_index = sprGridBox;
+                bowShields[i].sprite_index = sprGridBox;
             }
         }
     }
