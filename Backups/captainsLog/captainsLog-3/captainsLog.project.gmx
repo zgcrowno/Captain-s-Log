@@ -17,6 +17,7 @@
         <sprite>sprites\sprGridBoxShield</sprite>
         <sprite>sprites\sprGridBoxStatic</sprite>
       </sprites>
+      <sprite>sprites\sprPixelHud</sprite>
     </sprites>
     <sprites name="ship">
       <sprites name="playerShip">
@@ -139,6 +140,9 @@
           </scripts>
           <scripts name="passive">
             <script>scripts\scrCutPassive.gml</script>
+          </scripts>
+          <scripts name="target">
+            <script>scripts\scrCutTarget.gml</script>
           </scripts>
         </scripts>
         <scripts name="shields">

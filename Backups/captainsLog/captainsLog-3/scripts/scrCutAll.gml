@@ -52,4 +52,10 @@ if(actionMap[? "Passive"] == active) {
 } else if(actionMap[? "Passive"] == toActivate) {
     actionMap[? "Passive"] = inactive;
 }
+if(actionMap[? "Target"] != noone) {
+    actionMap[? "Target"] = noone;
+}
+if(target != noone) {
+    target = noone;
+}
 script_execute(scrWipeToInitState);

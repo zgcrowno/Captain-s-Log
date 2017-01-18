@@ -1,9 +1,9 @@
 depth = 0;
 
-playAreaLeftBound = 640;
-playAreaRightBound = 1300;
-playAreaUpperBound = 40;
-playAreaLowerBound = 1040;
+playAreaLeftBound = 650;
+playAreaRightBound = 1302;
+playAreaUpperBound = 30;
+playAreaLowerBound = 1050;
 
 thrustersLeftBound = 57;
 thrustersRightBound = 566;

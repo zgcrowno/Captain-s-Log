@@ -6,7 +6,7 @@
     }
     
     //Reset the shield array values
-    portShields = null;
-    starboardShields = null;
-    bowShields = null;
-    sternShields = null;
+    portShields = noone;
+    starboardShields = noone;
+    bowShields = noone;
+    sternShields = noone;

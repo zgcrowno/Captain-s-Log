@@ -471,11 +471,12 @@ if(player.currentState == player.initState) {
 } else if(player.currentState == player.cutState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Thrusters");
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + string_height("Commands: "), "Shields");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 2 * string_height("Commands: "), "Guns");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 3 * string_height("Commands: "), "Cannon");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 4 * string_height("Commands: "), "Active");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 5 * string_height("Commands: "), "Passive");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 6 * string_height("Commands: "), "All");
+    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 2 * string_height("Commands: "), "Target");
+    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 3 * string_height("Commands: "), "Guns");
+    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 4 * string_height("Commands: "), "Cannon");
+    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 5 * string_height("Commands: "), "Active");
+    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 6 * string_height("Commands: "), "Passive");
+    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 7 * string_height("Commands: "), "All");
 } else if(player.currentState == player.thrusterPortState) {
     draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "[\#]");
 } else if(player.currentState == player.thrusterStarboardState) {

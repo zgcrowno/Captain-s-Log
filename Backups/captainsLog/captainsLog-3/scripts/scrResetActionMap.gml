@@ -41,7 +41,7 @@ if(actionMap[? "Passive"] == toActivate) {
 } else if(actionMap[? "Passive"] == toDeactivate) {
     actionMap[? "Passive"] = inactive;
 }
-actionMap[? "Target"] = null;
+actionMap[? "Target"] = noone;
 actionMap[? "Guns"] = false;
 actionMap[? "Cannon"] = false;
 actionMap[? "Active"] = false;

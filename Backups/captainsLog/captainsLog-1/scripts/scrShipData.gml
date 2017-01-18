@@ -34,7 +34,7 @@ ds_map_add(actionMap, "Shields Port", inactive);
 ds_map_add(actionMap, "Shields Starboard", inactive);
 ds_map_add(actionMap, "Shields Bow", inactive);
 ds_map_add(actionMap, "Shields Stern", inactive);
-ds_map_add(actionMap, "Target", null);
+ds_map_add(actionMap, "Target", noone);
 ds_map_add(actionMap, "Guns", false);
 ds_map_add(actionMap, "Cannon", false);
 ds_map_add(actionMap, "Active", false);
@@ -48,10 +48,10 @@ activeDamage = 1;
 actionMapDisplaySize = 0;
 
 //The Grid Boxes That Will Represent the Ship's Shields
-portShields = null;
-starboardShields = null;
-bowShields = null;
-sternShields = null;
+portShields = noone;
+starboardShields = noone;
+bowShields = noone;
+sternShields = noone;
 
 //Hud States
 initState = 0;

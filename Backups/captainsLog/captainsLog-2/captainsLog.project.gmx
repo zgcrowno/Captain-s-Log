@@ -17,6 +17,7 @@
         <sprite>sprites\sprGridBoxShield</sprite>
         <sprite>sprites\sprGridBoxStatic</sprite>
       </sprites>
+      <sprite>sprites\sprPixelHud</sprite>
     </sprites>
     <sprites name="ship">
       <sprites name="playerShip">

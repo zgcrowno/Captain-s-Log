@@ -1,6 +1,6 @@
 util = instance_find(objUtil, 0);
 gridBoxes = script_execute(scrGetGridBoxes);
-adjacentGridBoxes = null;
+adjacentGridBoxes = noone;
 adjacentGridBoxesIndex = 0;
 shipSpriteOffset = 0;
 
