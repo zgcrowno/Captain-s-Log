@@ -1,38 +1,38 @@
 depth = 0;
 
-playAreaLeftBound = 650;
-playAreaRightBound = 1302;
+playAreaLeftBound = 634;
+playAreaRightBound = 1286;
 playAreaUpperBound = 30;
-playAreaLowerBound = 1050;
+playAreaLowerBound = 1054;
 
-thrustersLeftBound = 57;
-thrustersRightBound = 566;
-thrustersUpperBound = 271;
-thrustersLowerBound = 478;
+thrustersLeftBound = 55;
+thrustersRightBound = 565;
+thrustersUpperBound = 270;
+thrustersLowerBound = 480;
 
-shieldsLeftBound = 58;
-shieldsRightBound = 568;
+shieldsLeftBound = 55;
+shieldsRightBound = 565;
 shieldsUpperBound = 571;
-shieldsLowerBound = 767;
+shieldsLowerBound = 781;
 
-consoleLeftBound = 65;
-consoleRightBound = 277;
-consoleUpperBound = 863;
-consoleLowerBound = 1028;
+consoleLeftBound = 55;
+consoleRightBound = 265;
+consoleUpperBound = 865;
+consoleLowerBound = 1075;
 
 commandsLeftBound = 355;
-commandsRightBound = 567;
-commandsUpperBound = 864;
-commandsLowerBound = 1029;
+commandsRightBound = 565;
+commandsUpperBound = 865;
+commandsLowerBound = 1075;
 
 targetLeftBound = 1387;
-targetRightBound = 1886;
-targetUpperBound = 268;
-targetLowerBound = 474;
+targetRightBound = 1903;
+targetUpperBound = 270;
+targetLowerBound = 480;
 
-gunsAndCannonLeftBound = 1381;
-gunsAndCannonRightBound = 1886;
-gunsAndCannonUpperBound = 564;
+gunsAndCannonLeftBound = 1387;
+gunsAndCannonRightBound = 1903;
+gunsAndCannonUpperBound = 571;
 gunsAndCannonLowerBound = 633;
 
 gunsLeftBound = gunsAndCannonLeftBound;
@@ -45,10 +45,10 @@ cannonRightBound = gunsAndCannonRightBound;
 cannonUpperBound = gunsAndCannonUpperBound + (gunsAndCannonLowerBound - gunsAndCannonUpperBound) / 2;
 cannonLowerBound = gunsAndCannonLowerBound;
 
-activeAndPassiveLeftBound = 1381;
-activeAndPassiveRightBound = 1886;
-activeAndPassiveUpperBound = 710;
-activeAndPassiveLowerBound = 779;
+activeAndPassiveLeftBound = 1387;
+activeAndPassiveRightBound = 1903;
+activeAndPassiveUpperBound = 719;
+activeAndPassiveLowerBound = 781;
 
 activeLeftBound = activeAndPassiveLeftBound;
 activeRightBound = activeAndPassiveRightBound;
@@ -60,7 +60,7 @@ passiveRightBound = activeAndPassiveRightBound;
 passiveUpperBound = activeAndPassiveUpperBound + (activeAndPassiveLowerBound - activeAndPassiveUpperBound) / 2;
 passiveLowerBound = activeAndPassiveLowerBound;
 
-aggregateLeftBound = 1385;
-aggregateRightBound = 1884;
+aggregateLeftBound = 1387;
+aggregateRightBound = 1903;
 aggregateUpperBound = 860;
 aggregateLowerBound = 1038;

@@ -1,7 +1,7 @@
 depth = 0;
 
-playAreaLeftBound = 650;
-playAreaRightBound = 1302;
+playAreaLeftBound = 634;
+playAreaRightBound = 1286;
 playAreaUpperBound = 30;
 playAreaLowerBound = 1054;
 
