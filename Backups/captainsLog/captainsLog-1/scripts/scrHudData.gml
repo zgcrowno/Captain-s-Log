@@ -1,7 +1,7 @@
 depth = 0;
 
 playAreaLeftBound = 634;
-playAreaRightBound = 1286;
+playAreaRightBound = 1284;
 playAreaUpperBound = 30;
 playAreaLowerBound = 1054;
 
@@ -60,7 +60,7 @@ passiveRightBound = activeAndPassiveRightBound;
 passiveUpperBound = activeAndPassiveUpperBound + (activeAndPassiveLowerBound - activeAndPassiveUpperBound) / 2;
 passiveLowerBound = activeAndPassiveLowerBound;
 
-aggregateLeftBound = 1387;
+aggregateLeftBound = 1348;
 aggregateRightBound = 1858;
 aggregateUpperBound = 860;
 aggregateLowerBound = 1038;

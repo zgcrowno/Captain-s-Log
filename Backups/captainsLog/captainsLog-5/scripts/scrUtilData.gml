@@ -1,9 +1,6 @@
 //The Difficulty Modifier for the Game
 difficultyModifier = 2;
 
-//The number by which the grid boxes are to be moved
-gridOffset = 17
-
 //The damage ships incur while touching static
 staticDamage = 0.1;
 
