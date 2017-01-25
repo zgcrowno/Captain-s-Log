@@ -1,7 +1,7 @@
 depth = 0;
 
 playAreaLeftBound = 634;
-playAreaRightBound = 1286;
+playAreaRightBound = 1284;
 playAreaUpperBound = 30;
 playAreaLowerBound = 1054;
 
@@ -25,13 +25,13 @@ commandsRightBound = 572;
 commandsUpperBound = 865;
 commandsLowerBound = 1075;
 
-targetLeftBound = 1348;
-targetRightBound = 1858;
+targetLeftBound = 1346;
+targetRightBound = 1856;
 targetUpperBound = 270;
 targetLowerBound = 480;
 
-gunsAndCannonLeftBound = 1348;
-gunsAndCannonRightBound = 1858;
+gunsAndCannonLeftBound = 1346;
+gunsAndCannonRightBound = 1856;
 gunsAndCannonUpperBound = 571;
 gunsAndCannonLowerBound = 633;
 
@@ -45,8 +45,8 @@ cannonRightBound = gunsAndCannonRightBound;
 cannonUpperBound = gunsAndCannonUpperBound + (gunsAndCannonLowerBound - gunsAndCannonUpperBound) / 2;
 cannonLowerBound = gunsAndCannonLowerBound;
 
-activeAndPassiveLeftBound = 1348;
-activeAndPassiveRightBound = 1858;
+activeAndPassiveLeftBound = 1346;
+activeAndPassiveRightBound = 1856;
 activeAndPassiveUpperBound = 719;
 activeAndPassiveLowerBound = 781;
 
@@ -60,7 +60,7 @@ passiveRightBound = activeAndPassiveRightBound;
 passiveUpperBound = activeAndPassiveUpperBound + (activeAndPassiveLowerBound - activeAndPassiveUpperBound) / 2;
 passiveLowerBound = activeAndPassiveLowerBound;
 
-aggregateLeftBound = 1387;
-aggregateRightBound = 1858;
+aggregateLeftBound = 1346;
+aggregateRightBound = 1856;
 aggregateUpperBound = 860;
 aggregateLowerBound = 1038;
