@@ -1,8 +1,8 @@
 //Draw the overall HP bar
-draw_healthbar(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 8), 
-               hud.aggregateUpperBound + ((hud.aggregateLowerBound - hud.aggregateUpperBound) / 8), 
-               hud.aggregateRightBound - ((hud.aggregateRightBound - hud.aggregateLeftBound) / 8), 
-               hud.aggregateUpperBound + ((hud.aggregateLowerBound - hud.aggregateUpperBound) / 8) + 15, 
+draw_healthbar(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 8), 
+               hud.powerUpperBound + ((hud.powerLowerBound - hud.powerUpperBound) / 8), 
+               hud.powerRightBound - ((hud.powerRightBound - hud.powerLeftBound) / 8), 
+               hud.powerUpperBound + ((hud.powerLowerBound - hud.powerUpperBound) / 8) + 15, 
                (player.currentHP / player.maxHP) * 100, 
                c_black, 
                c_maroon, 
@@ -12,10 +12,10 @@ draw_healthbar(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregat
                true);
 
 //Draw the overall PP bar
-draw_healthbar(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 8), 
-               hud.aggregateUpperBound + ((hud.aggregateLowerBound - hud.aggregateUpperBound) / 8) + 15, 
-               hud.aggregateRightBound - ((hud.aggregateRightBound - hud.aggregateLeftBound) / 8), 
-               hud.aggregateUpperBound + ((hud.aggregateLowerBound - hud.aggregateUpperBound) / 8) + 30,
+draw_healthbar(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 8), 
+               hud.powerUpperBound + ((hud.powerLowerBound - hud.powerUpperBound) / 8) + 15, 
+               hud.powerRightBound - ((hud.powerRightBound - hud.powerLeftBound) / 8), 
+               hud.powerUpperBound + ((hud.powerLowerBound - hud.powerUpperBound) / 8) + 30,
                (player.currentPP / player.maxPP) * 100, 
                c_black, 
                c_teal, 
@@ -243,19 +243,19 @@ draw_healthbar(hud.shieldsLeftBound + (5 * (hud.shieldsRightBound - hud.shieldsL
 //Draw Target Info
 if(player.target != noone) {
     //Draw the target image
-    draw_sprite(player.target.sprite_index, player.target.image_index, hud.targetRightBound - ((hud.targetLowerBound - hud.targetUpperBound) / 2), hud.targetLowerBound - ((hud.targetLowerBound - hud.targetUpperBound) / 2));
+    draw_sprite(player.target.sprite_index, player.target.image_index, hud.targetImageRightBound - ((hud.targetImageLowerBound - hud.targetImageUpperBound) / 2), hud.targetImageLowerBound - ((hud.targetImageLowerBound - hud.targetImageUpperBound) / 2));
     
     //Draw the captain's personal information
-    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + string_height("Something"), "Captain: " + player.target.designation);
-    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (2 * string_height("Something")), "HP: " + string(player.target.currentHP));
-    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (3 * string_height("Something")), "Age: " + string(player.target.age));
-    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (4 * string_height("Something")), "Temperament: " + player.target.temper);
-    draw_text(hud.targetLeftBound + string_width("  "), hud.targetUpperBound + (5 * string_height("Something")), "Family: " + player.target.family);
+    draw_text(hud.targetIntelLeftBound + string_width("  "), hud.targetIntelUpperBound + string_height("Something"), "Captain: " + player.target.designation);
+    draw_text(hud.targetIntelLeftBound + string_width("  "), hud.targetIntelUpperBound + (2 * string_height("Something")), "HP: " + string(player.target.currentHP));
+    draw_text(hud.targetIntelLeftBound + string_width("  "), hud.targetIntelUpperBound + (3 * string_height("Something")), "Age: " + string(player.target.age));
+    draw_text(hud.targetIntelLeftBound + string_width("  "), hud.targetIntelUpperBound + (4 * string_height("Something")), "Temperament: " + player.target.temper);
+    draw_text(hud.targetIntelLeftBound + string_width("  "), hud.targetIntelUpperBound + (5 * string_height("Something")), "Family: " + player.target.family);
 } else {
     //Draw the screen static
-    for(j = hud.targetLowerBound; j > hud.targetUpperBound; j--) {
+    for(j = hud.targetImageLowerBound; j >= hud.targetImageUpperBound; j--) {
         draw_set_color(choose(c_black, c_white));
-        draw_line(hud.targetLeftBound, j, hud.targetRightBound, j);
+        draw_line(hud.targetImageLeftBound, j, hud.targetImageRightBound, j);
     }
     draw_set_color(c_white);
 }
@@ -315,34 +315,20 @@ draw_healthbar(hud.passiveLeftBound + ((hud.passiveRightBound - hud.passiveLeftB
 //Draw lines from enemies to respective designations in commands screen
 if(player.currentState == player.targetState) {
     for(i = 0; i < array_length_1d(player.enemies); i++) {
-        draw_line(player.enemies[i].x, player.enemies[i].y, hud.playAreaLeftBound, hud.commandsUpperBound + (i * string_height("Commands: ")) + (string_height("Commands: ") / 2));
+        draw_line(player.enemies[i].x, player.enemies[i].y, hud.radarLeftBound, hud.commandsUpperBound + (i * string_height("Commands: ")) + (string_height("Commands: ") / 2));
         draw_set_color(c_black);
-        draw_line(hud.playAreaLeftBound, hud.commandsUpperBound + (i * string_height("Commands: ")) + (string_height("Commands: ") / 2), hud.commandsRightBound, hud.commandsUpperBound + (i * string_height("Commands: ")) + (string_height("Commands: ") / 2));
+        draw_line(hud.radarLeftBound, hud.commandsUpperBound + (i * string_height("Commands: ")) + (string_height("Commands: ") / 2), hud.commandsRightBound, hud.commandsUpperBound + (i * string_height("Commands: ")) + (string_height("Commands: ") / 2));
         draw_set_color(c_white);
     }
 }
 
-//Draw Screen Titles
-draw_text(hud.thrustersLeftBound, hud.thrustersUpperBound, "Thrusters:");
-draw_text(hud.shieldsLeftBound, hud.shieldsUpperBound, "Shields:");
-draw_text(hud.commandsLeftBound, hud.commandsUpperBound, "Commands:");
-draw_text(hud.consoleLeftBound, hud.consoleUpperBound, "Console:");
-if(player.target != noone) {
-    draw_text(hud.targetLeftBound, hud.targetUpperBound, "Target:");
-}
-draw_text(hud.gunsLeftBound, hud.gunsUpperBound, "Guns:");
-draw_text(hud.cannonLeftBound, hud.cannonUpperBound, "Cannon:");
-draw_text(hud.activeLeftBound, hud.activeUpperBound, "Active:");
-draw_text(hud.passiveLeftBound, hud.passiveUpperBound, "Passive:");
-draw_text(hud.aggregateLeftBound, hud.aggregateUpperBound, "Aggregate:");
-
-//Draw Aggregate Info
-draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (6 * string_height("Something")), "Thrusters: " + string(player.percentPPThrusters) + "%");
-draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (5 * string_height("Something")), "Shields: " + string(player.percentPPShields) + "%");
-draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (4 * string_height("Something")), "Guns: " + string(player.percentPPGuns) + "%");
-draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (3 * string_height("Something")), "Cannon: " + string(player.percentPPCannon) + "%");
-draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - (2 * string_height("Something")), "Active: " + string(player.percentPPActive) + "%");
-draw_text(hud.aggregateLeftBound, hud.aggregateLowerBound - string_height("Something"), "Passive: " + string(player.percentPPPassive) + "%");
+//Draw power Info
+draw_text(hud.powerLeftBound, hud.powerLowerBound - (6 * string_height("Something")), "Thrusters: " + string(player.percentPPThrusters) + "%");
+draw_text(hud.powerLeftBound, hud.powerLowerBound - (5 * string_height("Something")), "Shields: " + string(player.percentPPShields) + "%");
+draw_text(hud.powerLeftBound, hud.powerLowerBound - (4 * string_height("Something")), "Guns: " + string(player.percentPPGuns) + "%");
+draw_text(hud.powerLeftBound, hud.powerLowerBound - (3 * string_height("Something")), "Cannon: " + string(player.percentPPCannon) + "%");
+draw_text(hud.powerLeftBound, hud.powerLowerBound - (2 * string_height("Something")), "Active: " + string(player.percentPPActive) + "%");
+draw_text(hud.powerLeftBound, hud.powerLowerBound - string_height("Something"), "Passive: " + string(player.percentPPPassive) + "%");
 
 for(i = player.actionMapDisplaySize; i > 0; i--) {
     if(player.actionMap[? "Thrusters Port"] > 0
@@ -351,30 +337,30 @@ for(i = player.actionMapDisplaySize; i > 0; i--) {
        || player.actionMap[? "Thrusters Stern"] > 0
        || player.actionMap[? "Thrusters Count"] > 0
        || player.actionMap[? "Thrusters Clock"] > 0) {
-        draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "Thrusters:");
+        draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "Thrusters:");
         i--;
         if(player.actionMap[? "Thrusters Port"] > 0) {
-            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Port: " + string(player.actionMap[? "Thrusters Port"]));
+            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Port: " + string(player.actionMap[? "Thrusters Port"]));
             i--;
         }
         if(player.actionMap[? "Thrusters Starboard"] > 0) {
-            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Starboard: " + string(player.actionMap[? "Thrusters Starboard"]));
+            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Starboard: " + string(player.actionMap[? "Thrusters Starboard"]));
             i--;
         }
         if(player.actionMap[? "Thrusters Bow"] > 0) {
-            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Bow: " + string(player.actionMap[? "Thrusters Bow"]));
+            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Bow: " + string(player.actionMap[? "Thrusters Bow"]));
             i--;
         }
         if(player.actionMap[? "Thrusters Stern"] > 0) {
-            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Stern: " + string(player.actionMap[? "Thrusters Stern"]));
+            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Stern: " + string(player.actionMap[? "Thrusters Stern"]));
             i--;
         }
         if(player.actionMap[? "Thrusters Count"] > 0) {
-            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Count: " + string(player.actionMap[? "Thrusters Count"]));
+            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Count: " + string(player.actionMap[? "Thrusters Count"]));
             i--;
         }
         if(player.actionMap[? "Thrusters Clock"] > 0) {
-            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Clock: " + string(player.actionMap[? "Thrusters Clock"]));
+            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Clock: " + string(player.actionMap[? "Thrusters Clock"]));
             i--;
         }
     }
@@ -382,57 +368,57 @@ for(i = player.actionMapDisplaySize; i > 0; i--) {
        || player.actionMap[? "Shields Starboard"] == player.toActivate || player.actionMap[? "Shields Starboard"] == player.toDeactivate
        || player.actionMap[? "Shields Bow"] == player.toActivate || player.actionMap[? "Shields Bow"] == player.toDeactivate
        || player.actionMap[? "Shields Stern"] == player.toActivate || player.actionMap[? "Shields Stern"] == player.toDeactivate) {
-        draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "Shields:");
+        draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "Shields:");
         i--;
         if(player.actionMap[? "Shields Port"] == player.toActivate) {
-            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Port: Activate");
+            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Port: Activate");
             i--;
         } else if(player.actionMap[? "Shields Port"] == player.toDeactivate) {
-            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Port: Cut");
+            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Port: Cut");
             i--;
         }
         if(player.actionMap[? "Shields Starboard"] == player.toActivate) {
-            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Starboard: Activate");
+            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Starboard: Activate");
             i--;
         } else if(player.actionMap[? "Shields Starboard"] == player.toDeactivate) {
-            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Starboard: Cut");
+            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Starboard: Cut");
             i--;
         }
         if(player.actionMap[? "Shields Bow"] == player.toActivate) {
-            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Bow: Activate");
+            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Bow: Activate");
             i--;
         } else if(player.actionMap[? "Shields Bow"] == player.toDeactivate) {
-            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Bow: Cut");
+            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Bow: Cut");
             i--;
         }
         if(player.actionMap[? "Shields Stern"] == player.toActivate) {
-            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Stern: Activate");
+            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Stern: Activate");
             i--;
         } else if(player.actionMap[? "Shields Stern"] == player.toDeactivate) {
-            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Stern: Cut");
+            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Stern: Cut");
             i--;
         }
     }
     if(player.actionMap[? "Guns"]) {
-        draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "Guns");
+        draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "Guns");
         i--;
     }
     if(player.actionMap[? "Cannon"]) {
-        draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "Cannon");
+        draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "Cannon");
         i--;
     }
     if(player.actionMap[? "Active"]) {
-        draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "Active");
+        draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "Active");
         i--;
     }
     if(player.actionMap[? "Passive"] == player.toActivate || player.actionMap[? "Passive"] == player.toDeactivate) {
-        draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "Passive");
+        draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "Passive");
         i--;
         if(player.actionMap[? "Passive"] == player.toActivate) {
-            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Activate");
+            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Activate");
             i--;
         } else {
-            draw_text(hud.aggregateLeftBound + ((hud.aggregateRightBound - hud.aggregateLeftBound) / 2), hud.aggregateLowerBound - (i * string_height("Something")), "  Cut");
+            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Cut");
             i--;
         }
     }

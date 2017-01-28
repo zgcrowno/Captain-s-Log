@@ -1,3 +1,3 @@
-if(timeline.y == hud.playAreaUpperBound) {
+if(timeline.y == hud.radarUpperBound) {
     alreadyTouchedTimeline = false;
 }

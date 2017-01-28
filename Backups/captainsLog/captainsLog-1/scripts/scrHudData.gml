@@ -1,66 +1,166 @@
 depth = 0;
 
-playAreaLeftBound = 634;
-playAreaRightBound = 1284;
-playAreaUpperBound = 30;
-playAreaLowerBound = 1054;
+aqOneLeftBound = 28;
+aqOneRightBound = 81;
+aqOneUpperBound = 1007;
+aqOneLowerBound = 1051;
 
-thrustersLeftBound = 62;
-thrustersRightBound = 572;
-thrustersUpperBound = 270;
-thrustersLowerBound = 480;
+aqTwoLeftBound = 28;
+aqTwoRightBound = 81;
+aqTwoUpperBound = 951;
+aqTwoLowerBound = 995;
 
-shieldsLeftBound = 62;
-shieldsRightBound = 572;
-shieldsUpperBound = 571;
-shieldsLowerBound = 781;
+aqThreeLeftBound = 28;
+aqThreeRightBound = 81;
+aqThreeUpperBound = 895;
+aqThreeLowerBound = 939;
 
-consoleLeftBound = 62;
-consoleRightBound = 265;
-consoleUpperBound = 865;
-consoleLowerBound = 1075;
+aqFourLeftBound = 28;
+aqFourRightBound = 81;
+aqFourUpperBound = 839;
+aqFourLowerBound = 883;
 
-commandsLeftBound = 355;
-commandsRightBound = 572;
-commandsUpperBound = 865;
-commandsLowerBound = 1075;
+aqFiveLeftBound = 28;
+aqFiveRightBound = 81;
+aqFiveUpperBound = 782;
+aqFiveLowerBound = 826;
 
-targetLeftBound = 1346;
-targetRightBound = 1856;
-targetUpperBound = 270;
-targetLowerBound = 480;
+aqSixLeftBound = 28;
+aqSixRightBound = 81;
+aqSixUpperBound = 726;
+aqSixLowerBound = 770;
 
-gunsAndCannonLeftBound = 1346;
-gunsAndCannonRightBound = 1856;
-gunsAndCannonUpperBound = 571;
-gunsAndCannonLowerBound = 633;
+aqSevenLeftBound = 28;
+aqSevenRightBound = 81;
+aqSevenUpperBound = 670;
+aqSevenLowerBound = 714;
 
-gunsLeftBound = gunsAndCannonLeftBound;
-gunsRightBound = gunsAndCannonRightBound;
-gunsUpperBound = gunsAndCannonUpperBound;
-gunsLowerBound = gunsAndCannonUpperBound + ((gunsAndCannonLowerBound - gunsAndCannonUpperBound) / 2);
+aqEightLeftBound = 28;
+aqEightRightBound = 81;
+aqEightUpperBound = 614;
+aqEightLowerBound = 658;
 
-cannonLeftBound = gunsAndCannonLeftBound;
-cannonRightBound = gunsAndCannonRightBound;
-cannonUpperBound = gunsAndCannonUpperBound + (gunsAndCannonLowerBound - gunsAndCannonUpperBound) / 2;
-cannonLowerBound = gunsAndCannonLowerBound;
+powerLeftBound = 170;
+powerRightBound = 236;
+powerUpperBound = 1007;
+powerLowerBound = 889;
 
-activeAndPassiveLeftBound = 1346;
-activeAndPassiveRightBound = 1856;
-activeAndPassiveUpperBound = 719;
-activeAndPassiveLowerBound = 781;
+consoleRightBound = 316;
+consoleLeftBound = 137;
+consoleUpperBound = 938;
+consoleLowerBound = 1051;
 
-activeLeftBound = activeAndPassiveLeftBound;
-activeRightBound = activeAndPassiveRightBound;
-activeUpperBound = activeAndPassiveUpperBound;
-activeLowerBound = activeAndPassiveUpperBound + (activeAndPassiveLowerBound - activeAndPassiveUpperBound) / 2;
+gunsLeftBound = 272;
+gunsRightBound = 291;
+gunsUpperBound = 1007;
+gunsLowerBound = 646;
 
-passiveLeftBound = activeAndPassiveLeftBound;
-passiveRightBound = activeAndPassiveRightBound;
-passiveUpperBound = activeAndPassiveUpperBound + (activeAndPassiveLowerBound - activeAndPassiveUpperBound) / 2;
-passiveLowerBound = activeAndPassiveLowerBound;
+gunsPercentLeftBound = 293;
+gunsPercentRightBound = 316;
+gunsPercentUpperBound = 631;
+gunsPercentLowerBound = 646;
 
-aggregateLeftBound = 1346;
-aggregateRightBound = 1856;
-aggregateUpperBound = 860;
-aggregateLowerBound = 1038;
+cannonLeftBound = 272;
+cannonRightBound = 291;
+cannonUpperBound = 695;
+cannonLowerBound = 727;
+
+cannonPercentLeftBound = 293;
+cannonPercentRightBound = 316;
+cannonPercentUpperBound = 712;
+cannonPercentLowerBound = 727;
+
+activeLeftBound = 272;
+activeRightBound = 291;
+activeUpperBound = 776;
+activeLowerBound = 808;
+
+activePercentLeftBound = 293;
+activePercentRightBound = 316;
+activePercentUpperBound = 793;
+activePercentLowerBound = 808;
+
+passiveLeftBound = 272;
+passiveRightBound = 291;
+passiveUpperBound = 857;
+passiveLowerBound = 889;
+
+passivePercentLeftBound = 293;
+passivePercentRightBound = 316;
+passivePercentUpperBound = 874;
+passivePercentLowerBound = 889;
+
+thrustersLeftBound = 372;
+thrustersRightBound = 636;
+thrustersUpperBound = 1007;
+thrustersLowerBound = 727;
+
+shieldsLeftBound = 372;
+shieldsRightBound = 636;
+shieldsUpperBound = 776;
+shieldsLowerBound = 889;
+
+commandsLeftBound = 372;
+commandsRightBound = 636;
+commandsUpperBound = 938;
+commandsLowerBound = 1051;
+
+radarLeftBound = 685;
+radarRightBound = 1233
+radarUpperBound = 510;
+radarLowerBound = 1058;
+
+targetImageLeftBound = 1282;
+targetImageRightBound = 1461;
+targetImageUpperBound = 1007;
+targetImageLowerBound = 728;
+
+targetIntelLeftBound = 1282;
+targetIntelRightBound = 1461;
+targetIntelUpperBound = 776;
+targetIntelLowerBound = 1051;
+
+targetPowerLeftBound = 1716;
+targetPowerRightBound = 1782;
+targetPowerUpperBound = 1007;
+targetPowerLowerBound = 889;
+
+targetAQOneLeftBound = 1838;
+targetAQOneRightBound = 1891;
+targetAQOneUpperBound = 1007;
+targetAQOneLowerBound = 1051;
+
+targetAQTwoLeftBound = 1838;
+targetAQTwoRightBound = 1891;
+targetAQTwoUpperBound = 951;
+targetAQTwoLowerBound = 995;
+
+targetAQThreeLeftBound = 1838;
+targetAQThreeRightBound = 1891;
+targetAQThreeUpperBound = 895;
+targetAQThreeLowerBound = 939;
+
+targetAQFourLeftBound = 1838;
+targetAQFourRightBound = 1891;
+targetAQFourUpperBound = 839;
+targetAQFourLowerBound = 883;
+
+targetAQFiveLeftBound = 1838;
+targetAQFiveRightBound = 1891;
+targetAQFiveUpperBound = 782;
+targetAQFiveLowerBound = 826;
+
+targetAQSixLeftBound = 1838;
+targetAQSixRightBound = 1891;
+targetAQSixUpperBound = 726;
+targetAQSixLowerBound = 770;
+
+targetAQSevenLeftBound = 1838;
+targetAQSevenRightBound = 1891;
+targetAQSevenUpperBound = 670;
+targetAQSevenLowerBound = 714;
+
+targetAQEightLeftBound = 1838;
+targetAQEightRightBound = 1891;
+targetAQEightUpperBound = 1007;
+targetAQEightLowerBound = 658;
