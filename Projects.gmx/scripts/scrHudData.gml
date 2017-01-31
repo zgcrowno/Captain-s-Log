@@ -91,14 +91,24 @@ passivePercentUpperBound = 874;
 passivePercentLowerBound = 889;
 
 thrustersLeftBound = 372;
-thrustersRightBound = 636;
+thrustersRightBound = 611;
 thrustersUpperBound = 614;
 thrustersLowerBound = 727;
 
+thrustersPercentLeftBound = 614;
+thrustersPercentRightBound = 636;
+thrustersPercentUpperBound = 712;
+thrustersPercentLowerBound = 727;
+
 shieldsLeftBound = 372;
-shieldsRightBound = 636;
+shieldsRightBound = 611;
 shieldsUpperBound = 776;
 shieldsLowerBound = 889;
+
+shieldsPercentLeftBound = 614;
+shieldsPercentRightBound = 636;
+shieldsPercentUpperBound = 874;
+shieldsPercentLowerBound = 889;
 
 commandsLeftBound = 372;
 commandsRightBound = 636;

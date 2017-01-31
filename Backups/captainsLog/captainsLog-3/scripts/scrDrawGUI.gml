@@ -325,10 +325,10 @@ if(player.currentState == player.targetState) {
 //Draw percentage info
 draw_text(hud.thrustersRightBound - string_width(string(player.percentPPThrusters) + "%"), hud.thrustersLowerBound - string_height("Something"), string(player.percentPPThrusters) + "%");
 draw_text(hud.shieldsRightBound - string_width(string(player.percentPPShields) + "%"), hud.shieldsLowerBound - string_height("Something"), string(player.percentPPShields) + "%");
-draw_text(hud.gunsPercentLeftBound - string_width(string(player.percentPPGuns) + "%"), hud.gunsPercentLowerBound - string_height("Something"), string(player.percentPPGuns) + "%");
-draw_text(hud.cannonPercentLeftBound - string_width(string(player.percentPPCannon) + "%"), hud.cannonPercentLowerBound - string_height("Something"), string(player.percentPPCannon) + "%");
-draw_text(hud.activePercentLeftBound - string_width(string(player.percentPPActive) + "%"), hud.activePercentLowerBound - string_height("Something"), string(player.percentPPActive) + "%");
-draw_text(hud.passivePercentLeftBound - string_width(string(player.percentPPPassive) + "%"), hud.passivePercentLowerBound - string_height("Something"), string(player.percentPPPassive) + "%");
+draw_text(hud.gunsPercentRightBound - string_width(string(player.percentPPGuns) + "%"), hud.gunsPercentLowerBound - string_height("Something"), string(player.percentPPGuns) + "%");
+draw_text(hud.cannonPercentRightBound - string_width(string(player.percentPPCannon) + "%"), hud.cannonPercentLowerBound - string_height("Something"), string(player.percentPPCannon) + "%");
+draw_text(hud.activePercentRightBound - string_width(string(player.percentPPActive) + "%"), hud.activePercentLowerBound - string_height("Something"), string(player.percentPPActive) + "%");
+draw_text(hud.passivePercentRightBound - string_width(string(player.percentPPPassive) + "%"), hud.passivePercentLowerBound - string_height("Something"), string(player.percentPPPassive) + "%");
 
 for(i = player.actionMapDisplaySize; i > 0; i--) {
     if(player.actionMap[? "Thrusters Port"] > 0
@@ -426,73 +426,73 @@ for(i = player.actionMapDisplaySize; i > 0; i--) {
 
 //Draw the state-dependent word prompts
 if(player.currentState == player.initState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Thrusters");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + string_height("Commands: "), "Shields");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 2 * string_height("Commands: "), "Target");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 3 * string_height("Commands: "), "Guns");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 4 * string_height("Commands: "), "Cannon");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 5 * string_height("Commands: "), "Active");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 6 * string_height("Commands: "), "Passive");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 7 * string_height("Commands: "), "Cut");
+    draw_text(hud.commandsRightBound - string_width("Thrusters"), hud.commandsUpperBound, "Thrusters");
+    draw_text(hud.commandsRightBound - string_width("Shields"), hud.commandsUpperBound + string_height("Commands: "), "Shields");
+    draw_text(hud.commandsRightBound - string_width("Target"), hud.commandsUpperBound + 2 * string_height("Commands: "), "Target");
+    draw_text(hud.commandsRightBound - string_width("Guns"), hud.commandsUpperBound + 3 * string_height("Commands: "), "Guns");
+    draw_text(hud.commandsRightBound - string_width("Cannon"), hud.commandsUpperBound + 4 * string_height("Commands: "), "Cannon");
+    draw_text(hud.commandsRightBound - string_width("Active"), hud.commandsUpperBound + 5 * string_height("Commands: "), "Active");
+    draw_text(hud.commandsRightBound - string_width("Passive"), hud.commandsUpperBound + 6 * string_height("Commands: "), "Passive");
+    draw_text(hud.commandsRightBound - string_width("Cut"), hud.commandsUpperBound + 7 * string_height("Commands: "), "Cut");
 } else if(player.currentState == player.thrusterState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Port");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + string_height("Commands: "), "Starboard");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 2 * string_height("Commands: "), "Bow");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 3 * string_height("Commands: "), "Stern");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 4 * string_height("Commands: "), "Rotate");
+    draw_text(hud.commandsRightBound - string_width("Port"), hud.commandsUpperBound, "Port");
+    draw_text(hud.commandsRightBound - string_width("Starboard"), hud.commandsUpperBound + string_height("Commands: "), "Starboard");
+    draw_text(hud.commandsRightBound - string_width("Bow"), hud.commandsUpperBound + 2 * string_height("Commands: "), "Bow");
+    draw_text(hud.commandsRightBound - string_width("Stern"), hud.commandsUpperBound + 3 * string_height("Commands: "), "Stern");
+    draw_text(hud.commandsLRightBound - string_width("Rotate"), hud.commandsUpperBound + 4 * string_height("Commands: "), "Rotate");
 } else if(player.currentState == player.shieldState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Port");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + string_height("Commands: "), "Starboard");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 2 * string_height("Commands: "), "Bow");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 3 * string_height("Commands: "), "Stern");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 4 * string_height("Commands: "), "All");
+    draw_text(hud.commandsRightBound - string_width("Port"), hud.commandsUpperBound, "Port");
+    draw_text(hud.commandsRightBound - string_width("Starboard"), hud.commandsUpperBound + string_height("Commands: "), "Starboard");
+    draw_text(hud.commandsRightBound - string_width("Bow"), hud.commandsUpperBound + 2 * string_height("Commands: "), "Bow");
+    draw_text(hud.commandsRightBound - string_width("Stern"), hud.commandsUpperBound + 3 * string_height("Commands: "), "Stern");
+    draw_text(hud.commandsRightBound - string_width("All"), hud.commandsUpperBound + 4 * string_height("Commands: "), "All");
 } else if(player.currentState == player.targetState) {
     for(i = 0; i < array_length_1d(player.enemies); i++) {
-        draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + (i * string_height("Commands: ")), player.enemies[i].designation);
+        draw_text(hud.commandsRightBound - string_width(player.enemies[i].designation), hud.commandsUpperBound + (i * string_height("Commands: ")), player.enemies[i].designation);
     }
 } else if(player.currentState == player.gunState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Fire");
+    draw_text(hud.commandsRightBound - string_width("Fire"), hud.commandsUpperBound, "Fire");
 } else if(player.currentState == player.cannonState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Fire");
+    draw_text(hud.commandsRightBound - string_width("Fire"), hud.commandsUpperBound, "Fire");
 } else if(player.currentState == player.cutState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Thrusters");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + string_height("Commands: "), "Shields");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 2 * string_height("Commands: "), "Target");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 3 * string_height("Commands: "), "Guns");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 4 * string_height("Commands: "), "Cannon");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 5 * string_height("Commands: "), "Active");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 6 * string_height("Commands: "), "Passive");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 7 * string_height("Commands: "), "All");
+    draw_text(hud.commandsRightBound - string_width("Thrusters"), hud.commandsUpperBound, "Thrusters");
+    draw_text(hud.commandsRightBound - string_width("Shields"), hud.commandsUpperBound + string_height("Commands: "), "Shields");
+    draw_text(hud.commandsRightBound - string_width("Target"), hud.commandsUpperBound + 2 * string_height("Commands: "), "Target");
+    draw_text(hud.commandsRightBound - string_width("Guns"), hud.commandsUpperBound + 3 * string_height("Commands: "), "Guns");
+    draw_text(hud.commandsRightBound - string_width("Cannon"), hud.commandsUpperBound + 4 * string_height("Commands: "), "Cannon");
+    draw_text(hud.commandsRightBound - string_width("Active"), hud.commandsUpperBound + 5 * string_height("Commands: "), "Active");
+    draw_text(hud.commandsRightBound - string_width("Passive"), hud.commandsUpperBound + 6 * string_height("Commands: "), "Passive");
+    draw_text(hud.commandsRightBound - string_width("All"), hud.commandsUpperBound + 7 * string_height("Commands: "), "All");
 } else if(player.currentState == player.thrusterPortState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "[\#]");
+    draw_text(hud.commandsRightBound - string_width("[\#]"), hud.commandsUpperBound, "[\#]");
 } else if(player.currentState == player.thrusterStarboardState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "[\#]");
+    draw_text(hud.commandsRightBound - string_width("[\#]"), hud.commandsUpperBound, "[\#]");
 } else if(player.currentState == player.thrusterBowState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "[\#]");
+    draw_text(hud.commandsRightBound - string_width("[\#]"), hud.commandsUpperBound, "[\#]");
 } else if(player.currentState == player.thrusterSternState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "[\#]");
+    draw_text(hud.commandsRightBound - string_width("[\#]"), hud.commandsUpperBound, "[\#]");
 } else if(player.currentState == player.thrusterRotateState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Clock");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + string_height("Commands: "), "Count");
+    draw_text(hud.commandsRightBound - string_width("Clock"), hud.commandsUpperBound, "Clock");
+    draw_text(hud.commandsRightBound - string_width("Count"), hud.commandsUpperBound + string_height("Commands: "), "Count");
 } else if(player.currentState == player.thrusterRotateDegreesClockwiseState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "[\#]");
+    draw_text(hud.commandsRightBound - string_width("[\#]"), hud.commandsUpperBound, "[\#]");
 } else if(player.currentState == player.thrusterRotateDegreesCounterclockwiseState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "[\#]");
+    draw_text(hud.commandsRightBound - string_width("[\#]"), hud.commandsUpperBound, "[\#]");
 } else if(player.currentState == player.cutThrustersState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Port");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + string_height("Commands: "), "Starboard");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 2 * string_height("Commands: "), "Bow");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 3 * string_height("Commands: "), "Stern");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 4 * string_height("Commands: "), "Rotate");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 5 * string_height("Commands: "), "All");
+    draw_text(hud.commandsRightBound - string_width("Port"), hud.commandsUpperBound, "Port");
+    draw_text(hud.commandsRightBound - string_width("Starboard"), hud.commandsUpperBound + string_height("Commands: "), "Starboard");
+    draw_text(hud.commandsRightBound - string_width("Bow"), hud.commandsUpperBound + 2 * string_height("Commands: "), "Bow");
+    draw_text(hud.commandsRightBound - string_width("Stern"), hud.commandsUpperBound + 3 * string_height("Commands: "), "Stern");
+    draw_text(hud.commandsRightBound - string_width("Rotate"), hud.commandsUpperBound + 4 * string_height("Commands: "), "Rotate");
+    draw_text(hud.commandsRightBound - string_width("All"), hud.commandsUpperBound + 5 * string_height("Commands: "), "All");
 } else if(player.currentState == player.cutThrustersRotateState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Clock");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + string_height("Commands: "), "Count");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 2 * string_height("Commands: "), "All");
+    draw_text(hud.commandsRightBound - string_width("Clock"), hud.commandsUpperBound, "Clock");
+    draw_text(hud.commandsRightBound - string_width("Count"), hud.commandsUpperBound + string_height("Commands: "), "Count");
+    draw_text(hud.commandsRightBound - string_width("All"), hud.commandsUpperBound + 2 * string_height("Commands: "), "All");
 } else if(player.currentState == player.cutShieldsState) {
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound, "Port");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + string_height("Commands: "), "Starboard");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 2 * string_height("Commands: "), "Bow");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 3 * string_height("Commands: "), "Stern");
-    draw_text(hud.commandsLeftBound + string_width("Commands: "), hud.commandsUpperBound + 4 * string_height("Commands: "), "All");
+    draw_text(hud.commandsRightBound - string_width("Port"), hud.commandsUpperBound, "Port");
+    draw_text(hud.commandsRightBound - string_width("Starboard"), hud.commandsUpperBound + string_height("Commands: "), "Starboard");
+    draw_text(hud.commandsRightBound - string_width("Bow"), hud.commandsUpperBound + 2 * string_height("Commands: "), "Bow");
+    draw_text(hud.commandsRightBound - string_width("Stern"), hud.commandsUpperBound + 3 * string_height("Commands: "), "Stern");
+    draw_text(hud.commandsRightBound - string_width("All"), hud.commandsUpperBound + 4 * string_height("Commands: "), "All");
 }

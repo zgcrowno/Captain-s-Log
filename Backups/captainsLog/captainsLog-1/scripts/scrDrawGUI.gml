@@ -323,12 +323,12 @@ if(player.currentState == player.targetState) {
 }
 
 //Draw percentage info
-draw_text(hud.thrustersRightBound - string_width(string(player.percentPPThrusters) + "%"), hud.thrustersLowerBound - string_height("Something"), string(player.percentPPThrusters) + "%");
-draw_text(hud.shieldsRightBound - string_width(string(player.percentPPShields) + "%"), hud.shieldsLowerBound - string_height("Something"), string(player.percentPPShields) + "%");
-draw_text(hud.gunsPercentRightBound - string_width(string(player.percentPPGuns) + "%"), hud.gunsPercentLowerBound - string_height("Something"), string(player.percentPPGuns) + "%");
-draw_text(hud.cannonPercentRightBound - string_width(string(player.percentPPCannon) + "%"), hud.cannonPercentLowerBound - string_height("Something"), string(player.percentPPCannon) + "%");
-draw_text(hud.activePercentRightBound - string_width(string(player.percentPPActive) + "%"), hud.activePercentLowerBound - string_height("Something"), string(player.percentPPActive) + "%");
-draw_text(hud.passivePercentRightBound - string_width(string(player.percentPPPassive) + "%"), hud.passivePercentLowerBound - string_height("Something"), string(player.percentPPPassive) + "%");
+draw_text(hud.thrustersRightBound - string_width(string(player.percentPPThrusters)), hud.thrustersLowerBound - string_height("Something"), string(player.percentPPThrusters));
+draw_text(hud.shieldsRightBound - string_width(string(player.percentPPShields)), hud.shieldsLowerBound - string_height("Something"), string(player.percentPPShields));
+draw_text(hud.gunsPercentRightBound - string_width(string(player.percentPPGuns)), hud.gunsPercentLowerBound - string_height("Something"), string(player.percentPPGuns));
+draw_text(hud.cannonPercentRightBound - string_width(string(player.percentPPCannon)), hud.cannonPercentLowerBound - string_height("Something"), string(player.percentPPCannon));
+draw_text(hud.activePercentRightBound - string_width(string(player.percentPPActive)), hud.activePercentLowerBound - string_height("Something"), string(player.percentPPActive));
+draw_text(hud.passivePercentRightBound - string_width(string(player.percentPPPassive)), hud.passivePercentLowerBound - string_height("Something"), string(player.percentPPPassive));
 
 for(i = player.actionMapDisplaySize; i > 0; i--) {
     if(player.actionMap[? "Thrusters Port"] > 0
