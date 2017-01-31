@@ -1,244 +1,244 @@
 //Draw the overall HP bar
-draw_healthbar(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 8), 
-               hud.powerUpperBound + ((hud.powerLowerBound - hud.powerUpperBound) / 8), 
-               hud.powerRightBound - ((hud.powerRightBound - hud.powerLeftBound) / 8), 
-               hud.powerUpperBound + ((hud.powerLowerBound - hud.powerUpperBound) / 8) + 15, 
+draw_healthbar(hud.powerLeftBound, 
+               hud.powerUpperBound, 
+               hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), 
+               hud.powerUpperBound + ((hud.powerLowerBound - hud.powerUpperBound)), 
                (player.currentHP / player.maxHP) * 100, 
                c_black, 
                c_maroon, 
                c_maroon, 
-               0, 
-               true, 
-               true);
+               3, 
+               false, 
+               false);
 
 //Draw the overall PP bar
-draw_healthbar(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 8), 
-               hud.powerUpperBound + ((hud.powerLowerBound - hud.powerUpperBound) / 8) + 15, 
-               hud.powerRightBound - ((hud.powerRightBound - hud.powerLeftBound) / 8), 
-               hud.powerUpperBound + ((hud.powerLowerBound - hud.powerUpperBound) / 8) + 30,
+draw_healthbar(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), 
+               hud.powerUpperBound, 
+               hud.powerRightBound, 
+               hud.powerUpperBound + ((hud.powerLowerBound - hud.powerUpperBound)),
                (player.currentPP / player.maxPP) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
-               0, 
-               true, 
-               true);
+               3, 
+               false, 
+               false);
 
 //Draw the thrustersPortHP and thrustersPortPP bars
-draw_healthbar(hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 16), 
-               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2) - ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 16), 
-               hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2) - ((hud.thrustersRightBound - hud.thrustersLeftBound) / 16), 
+draw_healthbar(hud.thrustersLeftBound, 
+               hud.thrustersUpperBound, 
+               hud.thrustersLeftBound + 15, 
                hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2), 
                (player.currentHPThrustersPort / player.maxHPThrustersPort) * 100, 
                c_black, 
                c_maroon, 
                c_maroon, 
-               0, 
-               true, 
-               true);
-draw_healthbar(hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 16), 
+               3, 
+               false, 
+               false);
+draw_healthbar(hud.thrustersLeftBound + 15, 
+               hud.thrustersUpperBound, 
+               hud.thrustersLeftBound + 30, 
                hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2), 
-               hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2) - ((hud.thrustersRightBound - hud.thrustersLeftBound) / 16), 
-               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2) + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 16), 
                (player.currentPPThrustersPort / player.requiredPPThrusters) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
-               0, 
-               true, 
-               true);
+               3, 
+               false, 
+               false);
 
 //Draw the thrustersStarboardHP and thrustersStarboardPP bars
-draw_healthbar(hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2) + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 16), 
-               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2) - ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 16), 
-               hud.thrustersRightBound - ((hud.thrustersRightBound - hud.thrustersLeftBound) / 16), 
+draw_healthbar(hud.thrustersRightBound - 30, 
                hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2), 
+               hud.thrustersRightBound - 15, 
+               hud.thrustersLowerBound, 
                (player.currentHPThrustersStarboard / player.maxHPThrustersStarboard) * 100, 
                c_black, 
                c_maroon, 
                c_maroon, 
-               0, 
-               true, 
-               true);
-draw_healthbar(hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2) + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 16), 
+               3, 
+               false, 
+               false);
+draw_healthbar(hud.thrustersRightBound - 15, 
                hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2), 
-               hud.thrustersRightBound - ((hud.thrustersRightBound - hud.thrustersLeftBound) / 16), 
-               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2) + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 16), 
+               hud.thrustersRightBound, 
+               hud.thrustersLowerBound, 
                (player.currentPPThrustersStarboard / player.requiredPPThrusters) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
-               0, 
-               true, 
-               true);
+               3, 
+               false, 
+               false);
 
 //Draw the thrustersBowHP and thrustersBowPP bars
-draw_healthbar(hud.thrustersLeftBound + (5 * (hud.thrustersRightBound - hud.thrustersLeftBound) / 16), 
-               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 16), 
-               hud.thrustersRightBound - (5 * (hud.thrustersRightBound - hud.thrustersLeftBound) / 16), 
-               hud.thrustersUpperBound + (2 *((hud.thrustersLowerBound - hud.thrustersUpperBound) / 16)), 
+draw_healthbar(hud.thrustersRightBound - 30, 
+               hud.thrustersUpperBound, 
+               hud.thrustersRightBound - 15, 
+               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2), 
                (player.currentHPThrustersBow / player.maxHPThrustersBow) * 100, 
                c_black, 
                c_maroon, 
                c_maroon, 
-               0, 
-               true, 
-               true);
-draw_healthbar(hud.thrustersLeftBound + (5 * (hud.thrustersRightBound - hud.thrustersLeftBound) / 16), 
-               hud.thrustersUpperBound + (2 *((hud.thrustersLowerBound - hud.thrustersUpperBound) / 16)), 
-               hud.thrustersRightBound - (5 * (hud.thrustersRightBound - hud.thrustersLeftBound) / 16), 
-               hud.thrustersUpperBound + (3 *((hud.thrustersLowerBound - hud.thrustersUpperBound) / 16)), 
+               3, 
+               false, 
+               false);
+draw_healthbar(hud.thrustersRightBound - 15, 
+               hud.thrustersUpperBound, 
+               hud.thrustersRightBound, 
+               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2), 
                (player.currentPPThrustersBow / player.requiredPPThrusters) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
-               0, 
-               true, 
-               true);
+               3, 
+               false, 
+               false);
 
 //Draw the thrustersSternHP and thrustersSternPP bars
-draw_healthbar(hud.thrustersLeftBound + (5 * (hud.thrustersRightBound - hud.thrustersLeftBound) / 16), 
-               hud.thrustersLowerBound - (3 * ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 16)), 
-               hud.thrustersRightBound - (5 * (hud.thrustersRightBound - hud.thrustersLeftBound) / 16), 
-               hud.thrustersLowerBound - (2 *((hud.thrustersLowerBound - hud.thrustersUpperBound) / 16)), 
+draw_healthbar(hud.thrustersLeftBound, 
+               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2), 
+               hud.thrustersLeftBound + 15, 
+               hud.thrustersLowerBound, 
                (player.currentHPThrustersStern / player.maxHPThrustersStern) * 100, 
                c_black, 
                c_maroon, 
                c_maroon, 
-               0, 
-               true, 
-               true);
-draw_healthbar(hud.thrustersLeftBound + (5 * (hud.thrustersRightBound - hud.thrustersLeftBound) / 16), 
-               hud.thrustersLowerBound - (2 *((hud.thrustersLowerBound - hud.thrustersUpperBound) / 16)), 
-               hud.thrustersRightBound - (5 * (hud.thrustersRightBound - hud.thrustersLeftBound) / 16), 
-               hud.thrustersLowerBound - ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 16), 
+               3, 
+               false, 
+               false);
+draw_healthbar(hud.thrustersLeftBound + 15, 
+               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2), 
+               hud.thrustersRightBound + 30, 
+               hud.thrustersLowerBound, 
                (player.currentPPThrustersStern / player.requiredPPThrusters) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
-               0, 
-               true, 
-               true);
+               3, 
+               false, 
+               false);
 
 //Draw the thrustersRotateClockwisePP and thrustersRotateCounterclockwisePP bars
-draw_healthbar(hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2) - 20, 
-               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2) - 5, 
-               hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2) - 10, 
-               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2) + 5, 
+draw_healthbar(hud.thrustersRightBound - 60, 
+               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2), 
+               hud.thrustersRightBound - 45, 
+               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2) + 15, 
                (player.currentPPThrustersRotateClockwise / player.requiredPPThrustersRotate) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
-               0, 
-               true, 
-               true);
-draw_healthbar(hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2) + 10, 
-               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2) - 5, 
-               hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2) + 20, 
-               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2) + 5, 
+               3, 
+               false, 
+               false);
+draw_healthbar(hud.thrustersLeftBound + 60, 
+               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2), 
+               hud.thrustersLeftBound + 45, 
+               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2) + 15, 
                (player.currentPPThrustersRotateCounterclockwise / player.requiredPPThrustersRotate) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
-               0, 
-               true, 
-               true);
+               3, 
+               false, 
+               false);
 
 //Draw the shieldsPortHP and shieldsPortPP bars
-draw_healthbar(hud.shieldsLeftBound + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 16), 
-               hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2) - ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 16), 
-               hud.shieldsLeftBound + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 2) - ((hud.shieldsRightBound - hud.shieldsLeftBound) / 16), 
+draw_healthbar(hud.shieldsLeftBound, 
+               hud.shieldsUpperBound, 
+               hud.shieldsLeftBound + 15, 
                hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2), 
                (player.currentHPShieldsPort / player.maxHPShieldsPort) * 100, 
                c_black, 
                c_maroon, 
                c_maroon, 
-               0, 
-               true, 
-               true);
-draw_healthbar(hud.shieldsLeftBound + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 16), 
+               3, 
+               false, 
+               false);
+draw_healthbar(hud.shieldsLeftBound + 15, 
+               hud.shieldsUpperBound, 
+               hud.shieldsLeftBound + 30, 
                hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2), 
-               hud.shieldsLeftBound + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 2) - ((hud.shieldsRightBound - hud.shieldsLeftBound) / 16), 
-               hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2) + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 16), 
                (player.currentPPShieldsPort / player.requiredPPShields) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
-               0, 
-               true, 
-               true);
+               3, 
+               false, 
+               false);
 
 //Draw the shieldsStarboardHP and shieldsStarboardPP bars
-draw_healthbar(hud.shieldsLeftBound + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 2) + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 16), 
-               hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2) - ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 16), 
-               hud.shieldsRightBound - ((hud.shieldsRightBound - hud.shieldsLeftBound) / 16), 
+draw_healthbar(hud.shieldsRightBound - 30, 
                hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2), 
+               hud.shieldsRightBound - 15, 
+               hud.shieldsLowerBound, 
                (player.currentHPShieldsStarboard / player.maxHPShieldsStarboard) * 100, 
                c_black, 
                c_maroon, 
                c_maroon, 
-               0, 
-               true, 
-               true);
-draw_healthbar(hud.shieldsLeftBound + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 2) + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 16), 
+               3, 
+               false, 
+               false);
+draw_healthbar(hud.shieldsRightBound - 15, 
                hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2), 
-               hud.shieldsRightBound - ((hud.shieldsRightBound - hud.shieldsLeftBound) / 16), 
-               hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2) + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 16), 
+               hud.shieldsRightBound, 
+               hud.shieldsLowerBound, 
                (player.currentPPShieldsStarboard / player.requiredPPShields) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
-               0, 
-               true, 
-               true);
+               3, 
+               false, 
+               false);
 
 //Draw the shieldsBowHP and shieldsBowPP bars
-draw_healthbar(hud.shieldsLeftBound + (5 * (hud.shieldsRightBound - hud.shieldsLeftBound) / 16), 
-               hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 16), 
-               hud.shieldsRightBound - (5 * (hud.shieldsRightBound - hud.shieldsLeftBound) / 16), 
-               hud.shieldsUpperBound + (2 *((hud.shieldsLowerBound - hud.shieldsUpperBound) / 16)), 
+draw_healthbar(hud.shieldsRightBound - 30, 
+               hud.shieldsUpperBound, 
+               hud.shieldsRightBound - 15, 
+               hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2), 
                (player.currentHPShieldsBow / player.maxHPShieldsBow) * 100, 
                c_black, 
                c_maroon, 
                c_maroon, 
-               0, 
-               true, 
-               true);
-draw_healthbar(hud.shieldsLeftBound + (5 * (hud.shieldsRightBound - hud.shieldsLeftBound) / 16), 
-               hud.shieldsUpperBound + (2 *((hud.shieldsLowerBound - hud.shieldsUpperBound) / 16)), 
-               hud.shieldsRightBound - (5 * (hud.shieldsRightBound - hud.shieldsLeftBound) / 16), 
-               hud.shieldsUpperBound + (3 *((hud.shieldsLowerBound - hud.shieldsUpperBound) / 16)), 
+               3, 
+               false, 
+               false);
+draw_healthbar(hud.shieldsRightBound - 15, 
+               hud.shieldsUpperBound, 
+               hud.shieldsRightBound, 
+               hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2), 
                (player.currentPPShieldsBow / player.requiredPPShields) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
-               0, 
-               true, 
-               true);
+               3, 
+               false, 
+               false);
 
 //Draw the shieldsSternHP and shieldsSternPP bars
-draw_healthbar(hud.shieldsLeftBound + (5 * (hud.shieldsRightBound - hud.shieldsLeftBound) / 16), 
-               hud.shieldsLowerBound - (3 * ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 16)), 
-               hud.shieldsRightBound - (5 * (hud.shieldsRightBound - hud.shieldsLeftBound) / 16), 
-               hud.shieldsLowerBound - (2 *((hud.shieldsLowerBound - hud.shieldsUpperBound) / 16)), 
+draw_healthbar(hud.shieldsLeftBound, 
+               hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2), 
+               hud.shieldsLeftBound + 15, 
+               hud.shieldsLowerBound, 
                (player.currentHPShieldsStern / player.maxHPShieldsStern) * 100, 
                c_black, 
                c_maroon, 
                c_maroon, 
-               0, 
-               true, 
-               true);
-draw_healthbar(hud.shieldsLeftBound + (5 * (hud.shieldsRightBound - hud.shieldsLeftBound) / 16), 
-               hud.shieldsLowerBound - (2 *((hud.shieldsLowerBound - hud.shieldsUpperBound) / 16)), 
-               hud.shieldsRightBound - (5 * (hud.shieldsRightBound - hud.shieldsLeftBound) / 16), 
-               hud.shieldsLowerBound - ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 16), 
+               3, 
+               false, 
+               false);
+draw_healthbar(hud.shieldsLeftBound + 15, 
+               hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2), 
+               hud.shieldsRightBound + 30, 
+               hud.shieldsLowerBound, 
                (player.currentPPShieldsStern / player.requiredPPShields) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
-               0, 
-               true, 
-               true);
+               3, 
+               false, 
+               false);
                
 //Draw Target Info
 if(player.target != noone) {
@@ -261,56 +261,56 @@ if(player.target != noone) {
 }
 
 //Draw the gunsPP bar
-draw_healthbar(hud.gunsLeftBound + ((hud.gunsRightBound - hud.gunsLeftBound) / 6), 
-               hud.gunsUpperBound + ((hud.gunsLowerBound - hud.gunsUpperBound) / 6), 
-               hud.gunsRightBound - ((hud.gunsRightBound - hud.gunsLeftBound) / 6), 
-               hud.gunsLowerBound - ((hud.gunsLowerBound - hud.gunsUpperBound) / 6), 
+draw_healthbar(hud.gunsLeftBound, 
+               hud.gunsUpperBound, 
+               hud.gunsRightBound, 
+               hud.gunsLowerBound, 
                (player.currentPPGuns / player.requiredPPGuns) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
-               0, 
-               true, 
-               true);
+               3, 
+               false, 
+               false);
 
 //Draw the cannonPP bar
-draw_healthbar(hud.cannonLeftBound + ((hud.cannonRightBound - hud.cannonLeftBound) / 6), 
-               hud.cannonUpperBound + ((hud.cannonLowerBound - hud.cannonUpperBound) / 6), 
-               hud.cannonRightBound - ((hud.cannonRightBound - hud.cannonLeftBound) / 6), 
-               hud.cannonLowerBound - ((hud.cannonLowerBound - hud.cannonUpperBound) / 6), 
+draw_healthbar(hud.cannonLeftBound, 
+               hud.cannonUpperBound, 
+               hud.cannonRightBound, 
+               hud.cannonLowerBound, 
                (player.currentPPCannon / player.requiredPPCannon) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
-               0, 
-               true, 
-               true);
+               3, 
+               false, 
+               false);
                
 //Draw the activePP bar
-draw_healthbar(hud.activeLeftBound + ((hud.activeRightBound - hud.activeLeftBound) / 6), 
-               hud.activeUpperBound + ((hud.activeLowerBound - hud.activeUpperBound) / 6), 
-               hud.activeRightBound - ((hud.activeRightBound - hud.activeLeftBound) / 6), 
-               hud.activeLowerBound - ((hud.activeLowerBound - hud.activeUpperBound) / 6), 
+draw_healthbar(hud.activeLeftBound, 
+               hud.activeUpperBound, 
+               hud.activeRightBound, 
+               hud.activeLowerBound, 
                (player.currentPPActive / player.requiredPPActive) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
-               0, 
-               true, 
-               true);
+               3, 
+               false, 
+               false);
 
 //Draw the passivePP bar
-draw_healthbar(hud.passiveLeftBound + ((hud.passiveRightBound - hud.passiveLeftBound) / 6), 
-               hud.passiveUpperBound + ((hud.passiveLowerBound - hud.passiveUpperBound) / 6), 
-               hud.passiveRightBound - ((hud.passiveRightBound - hud.passiveLeftBound) / 6), 
-               hud.passiveLowerBound - ((hud.passiveLowerBound - hud.passiveUpperBound) / 6), 
+draw_healthbar(hud.passiveLeftBound, 
+               hud.passiveUpperBound, 
+               hud.passiveRightBound, 
+               hud.passiveLowerBound, 
                (player.currentPPPassive / player.requiredPPPassive) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
-               0, 
-               true, 
-               true);
+               3, 
+               false, 
+               false);
                
 //Draw lines from enemies to respective designations in commands screen
 if(player.currentState == player.targetState) {
@@ -322,13 +322,13 @@ if(player.currentState == player.targetState) {
     }
 }
 
-//Draw power Info
-draw_text(hud.powerLeftBound, hud.powerLowerBound - (6 * string_height("Something")), "Thrusters: " + string(player.percentPPThrusters) + "%");
-draw_text(hud.powerLeftBound, hud.powerLowerBound - (5 * string_height("Something")), "Shields: " + string(player.percentPPShields) + "%");
-draw_text(hud.powerLeftBound, hud.powerLowerBound - (4 * string_height("Something")), "Guns: " + string(player.percentPPGuns) + "%");
-draw_text(hud.powerLeftBound, hud.powerLowerBound - (3 * string_height("Something")), "Cannon: " + string(player.percentPPCannon) + "%");
-draw_text(hud.powerLeftBound, hud.powerLowerBound - (2 * string_height("Something")), "Active: " + string(player.percentPPActive) + "%");
-draw_text(hud.powerLeftBound, hud.powerLowerBound - string_height("Something"), "Passive: " + string(player.percentPPPassive) + "%");
+//Draw percentage info
+draw_text(hud.thrustersRightBound - string_width(string(player.percentPPThrusters) + "%"), hud.thrustersLowerBound - string_height("Something"), string(player.percentPPThrusters) + "%");
+draw_text(hud.shieldsRightBound - string_width(string(player.percentPPShields) + "%"), hud.shieldsLowerBound - string_height("Something"), string(player.percentPPShields) + "%");
+draw_text(hud.gunsPercentLeftBound - string_width(string(player.percentPPGuns) + "%"), hud.gunsPercentLowerBound - string_height("Something"), string(player.percentPPGuns) + "%");
+draw_text(hud.cannonPercentLeftBound - string_width(string(player.percentPPCannon) + "%"), hud.cannonPercentLowerBound - string_height("Something"), string(player.percentPPCannon) + "%");
+draw_text(hud.activePercentLeftBound - string_width(string(player.percentPPActive) + "%"), hud.activePercentLowerBound - string_height("Something"), string(player.percentPPActive) + "%");
+draw_text(hud.passivePercentLeftBound - string_width(string(player.percentPPPassive) + "%"), hud.passivePercentLowerBound - string_height("Something"), string(player.percentPPPassive) + "%");
 
 for(i = player.actionMapDisplaySize; i > 0; i--) {
     if(player.actionMap[? "Thrusters Port"] > 0

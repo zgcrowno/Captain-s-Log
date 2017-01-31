@@ -42,7 +42,7 @@ aqEightLowerBound = 658;
 
 powerLeftBound = 170;
 powerRightBound = 236;
-powerUpperBound = 1007;
+powerUpperBound = 614;
 powerLowerBound = 889;
 
 consoleRightBound = 316;
@@ -52,7 +52,7 @@ consoleLowerBound = 1051;
 
 gunsLeftBound = 272;
 gunsRightBound = 291;
-gunsUpperBound = 1007;
+gunsUpperBound = 614;
 gunsLowerBound = 646;
 
 gunsPercentLeftBound = 293;
@@ -92,7 +92,7 @@ passivePercentLowerBound = 889;
 
 thrustersLeftBound = 372;
 thrustersRightBound = 636;
-thrustersUpperBound = 1007;
+thrustersUpperBound = 614;
 thrustersLowerBound = 727;
 
 shieldsLeftBound = 372;
@@ -112,7 +112,7 @@ radarLowerBound = 1058;
 
 targetImageLeftBound = 1282;
 targetImageRightBound = 1461;
-targetImageUpperBound = 1007;
+targetImageUpperBound = 614;
 targetImageLowerBound = 728;
 
 targetIntelLeftBound = 1282;
@@ -122,7 +122,7 @@ targetIntelLowerBound = 1051;
 
 targetPowerLeftBound = 1716;
 targetPowerRightBound = 1782;
-targetPowerUpperBound = 1007;
+targetPowerUpperBound = 614;
 targetPowerLowerBound = 889;
 
 targetAQOneLeftBound = 1838;
