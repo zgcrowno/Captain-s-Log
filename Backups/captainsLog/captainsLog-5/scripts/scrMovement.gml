@@ -79,10 +79,16 @@ if(object_is_ancestor(object_index, objShip)) {
         x += sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));
         y -= sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
     }
-} else if(object_index == objTimeline) {
+} else if(object_index == objTimelineHorizontal) {
     if(y < hud.radarLowerBound) {
         y += util.difficultyModifier;
     } else {
         y = hud.radarUpperBound;
+    }
+} else if(object_index == objTimelineVertical) {
+    if(x < hud.radarRightBound) {
+        x += 2 * util.difficultyModifier;
+    } else {
+        x = hud.radarLeftBound;
     }
 }

@@ -1,5 +1,8 @@
-//The timeline object
-timeline = instance_find(objTimeline, 0);
+//The horizontal timeline object
+timelineHorizontal = instance_find(objTimelineHorizontal, 0);
+
+//The vertical timeline object
+timelineVertical = instance_find(objTimelineVertical, 0);
 
 //The Hud object
 hud = instance_find(objHud, 0);

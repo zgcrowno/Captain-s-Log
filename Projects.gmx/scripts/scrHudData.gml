@@ -116,7 +116,7 @@ commandsUpperBound = 938;
 commandsLowerBound = 1051;
 
 radarLeftBound = 685;
-radarRightBound = 1233
+radarRightBound = 1233;
 radarUpperBound = 510;
 radarLowerBound = 1058;
 

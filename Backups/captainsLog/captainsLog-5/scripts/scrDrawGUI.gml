@@ -110,7 +110,7 @@ draw_healthbar(hud.thrustersLeftBound,
                false);
 draw_healthbar(hud.thrustersLeftBound + 15, 
                hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2), 
-               hud.thrustersRightBound + 30, 
+               hud.thrustersLeftBound + 30, 
                hud.thrustersLowerBound, 
                (player.currentPPThrustersStern / player.requiredPPThrusters) * 100, 
                c_black, 
@@ -230,7 +230,7 @@ draw_healthbar(hud.shieldsLeftBound,
                false);
 draw_healthbar(hud.shieldsLeftBound + 15, 
                hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2), 
-               hud.shieldsRightBound + 30, 
+               hud.shieldsLeftBound + 30, 
                hud.shieldsLowerBound, 
                (player.currentPPShieldsStern / player.requiredPPShields) * 100, 
                c_black, 
@@ -243,14 +243,14 @@ draw_healthbar(hud.shieldsLeftBound + 15,
 //Draw Target Info
 if(player.target != noone) {
     //Draw the target image
-    draw_sprite(player.target.sprite_index, player.target.image_index, hud.targetImageRightBound - ((hud.targetImageLowerBound - hud.targetImageUpperBound) / 2), hud.targetImageLowerBound - ((hud.targetImageLowerBound - hud.targetImageUpperBound) / 2));
+    draw_sprite(player.target.sprite_index, player.target.image_index, hud.targetImageRightBound - ((hud.targetImageRightBound - hud.targetImageLeftBound) / 2), hud.targetImageLowerBound - ((hud.targetImageLowerBound - hud.targetImageUpperBound) / 2));
     
     //Draw the captain's personal information
-    draw_text(hud.targetIntelLeftBound + string_width("  "), hud.targetIntelUpperBound + string_height("Something"), "Captain: " + player.target.designation);
-    draw_text(hud.targetIntelLeftBound + string_width("  "), hud.targetIntelUpperBound + (2 * string_height("Something")), "HP: " + string(player.target.currentHP));
-    draw_text(hud.targetIntelLeftBound + string_width("  "), hud.targetIntelUpperBound + (3 * string_height("Something")), "Age: " + string(player.target.age));
-    draw_text(hud.targetIntelLeftBound + string_width("  "), hud.targetIntelUpperBound + (4 * string_height("Something")), "Temperament: " + player.target.temper);
-    draw_text(hud.targetIntelLeftBound + string_width("  "), hud.targetIntelUpperBound + (5 * string_height("Something")), "Family: " + player.target.family);
+    draw_text(hud.targetIntelLeftBound, hud.targetIntelUpperBound + string_height("Something"), "Captain: " + player.target.designation);
+    draw_text(hud.targetIntelLeftBound, hud.targetIntelUpperBound + (2 * string_height("Something")), "HP: " + string(player.target.currentHP));
+    draw_text(hud.targetIntelLeftBound, hud.targetIntelUpperBound + (3 * string_height("Something")), "Age: " + string(player.target.age));
+    draw_text(hud.targetIntelLeftBound, hud.targetIntelUpperBound + (4 * string_height("Something")), "Temperament: " + player.target.temper);
+    draw_text(hud.targetIntelLeftBound, hud.targetIntelUpperBound + (5 * string_height("Something")), "Family: " + player.target.family);
 } else {
     //Draw the screen static
     for(j = hud.targetImageLowerBound; j >= hud.targetImageUpperBound; j--) {
@@ -323,104 +323,38 @@ if(player.currentState == player.targetState) {
 }
 
 //Draw percentage info
-draw_text(hud.thrustersRightBound - string_width(string(player.percentPPThrusters) + "%"), hud.thrustersLowerBound - string_height("Something"), string(player.percentPPThrusters) + "%");
-draw_text(hud.shieldsRightBound - string_width(string(player.percentPPShields) + "%"), hud.shieldsLowerBound - string_height("Something"), string(player.percentPPShields) + "%");
-draw_text(hud.gunsPercentRightBound - string_width(string(player.percentPPGuns) + "%"), hud.gunsPercentLowerBound - string_height("Something"), string(player.percentPPGuns) + "%");
-draw_text(hud.cannonPercentRightBound - string_width(string(player.percentPPCannon) + "%"), hud.cannonPercentLowerBound - string_height("Something"), string(player.percentPPCannon) + "%");
-draw_text(hud.activePercentRightBound - string_width(string(player.percentPPActive) + "%"), hud.activePercentLowerBound - string_height("Something"), string(player.percentPPActive) + "%");
-draw_text(hud.passivePercentRightBound - string_width(string(player.percentPPPassive) + "%"), hud.passivePercentLowerBound - string_height("Something"), string(player.percentPPPassive) + "%");
+draw_text(hud.thrustersPercentRightBound - string_width(string(player.percentPPThrusters)), hud.thrustersPercentLowerBound - string_height("Something"), string(player.percentPPThrusters));
+draw_text(hud.shieldsPercentRightBound - string_width(string(player.percentPPShields)), hud.shieldsPercentLowerBound - string_height("Something"), string(player.percentPPShields));
+draw_text(hud.gunsPercentRightBound - string_width(string(player.percentPPGuns)), hud.gunsPercentLowerBound - string_height("Something"), string(player.percentPPGuns));
+draw_text(hud.cannonPercentRightBound - string_width(string(player.percentPPCannon)), hud.cannonPercentLowerBound - string_height("Something"), string(player.percentPPCannon));
+draw_text(hud.activePercentRightBound - string_width(string(player.percentPPActive)), hud.activePercentLowerBound - string_height("Something"), string(player.percentPPActive));
+draw_text(hud.passivePercentRightBound - string_width(string(player.percentPPPassive)), hud.passivePercentLowerBound - string_height("Something"), string(player.percentPPPassive));
 
-for(i = player.actionMapDisplaySize; i > 0; i--) {
-    if(player.actionMap[? "Thrusters Port"] > 0
-       || player.actionMap[? "Thrusters Starboard"] > 0
-       || player.actionMap[? "Thrusters Bow"] > 0
-       || player.actionMap[? "Thrusters Stern"] > 0
-       || player.actionMap[? "Thrusters Count"] > 0
-       || player.actionMap[? "Thrusters Clock"] > 0) {
-        draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "Thrusters:");
-        i--;
-        if(player.actionMap[? "Thrusters Port"] > 0) {
-            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Port: " + string(player.actionMap[? "Thrusters Port"]));
-            i--;
-        }
-        if(player.actionMap[? "Thrusters Starboard"] > 0) {
-            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Starboard: " + string(player.actionMap[? "Thrusters Starboard"]));
-            i--;
-        }
-        if(player.actionMap[? "Thrusters Bow"] > 0) {
-            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Bow: " + string(player.actionMap[? "Thrusters Bow"]));
-            i--;
-        }
-        if(player.actionMap[? "Thrusters Stern"] > 0) {
-            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Stern: " + string(player.actionMap[? "Thrusters Stern"]));
-            i--;
-        }
-        if(player.actionMap[? "Thrusters Count"] > 0) {
-            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Count: " + string(player.actionMap[? "Thrusters Count"]));
-            i--;
-        }
-        if(player.actionMap[? "Thrusters Clock"] > 0) {
-            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Clock: " + string(player.actionMap[? "Thrusters Clock"]));
-            i--;
-        }
+//Display actionList
+if(!ds_list_empty(player.actionQueue)) {
+    if(ds_list_size(player.actionQueue) >= 1) {
+        draw_text(hud.aqOneLeftBound, hud.aqOneUpperBound, ds_list_find_value(player.actionQueue, 0));
     }
-    if(player.actionMap[? "Shields Port"] == player.toActivate || player.actionMap[? "Shields Port"] == player.toDeactivate
-       || player.actionMap[? "Shields Starboard"] == player.toActivate || player.actionMap[? "Shields Starboard"] == player.toDeactivate
-       || player.actionMap[? "Shields Bow"] == player.toActivate || player.actionMap[? "Shields Bow"] == player.toDeactivate
-       || player.actionMap[? "Shields Stern"] == player.toActivate || player.actionMap[? "Shields Stern"] == player.toDeactivate) {
-        draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "Shields:");
-        i--;
-        if(player.actionMap[? "Shields Port"] == player.toActivate) {
-            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Port: Activate");
-            i--;
-        } else if(player.actionMap[? "Shields Port"] == player.toDeactivate) {
-            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Port: Cut");
-            i--;
-        }
-        if(player.actionMap[? "Shields Starboard"] == player.toActivate) {
-            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Starboard: Activate");
-            i--;
-        } else if(player.actionMap[? "Shields Starboard"] == player.toDeactivate) {
-            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Starboard: Cut");
-            i--;
-        }
-        if(player.actionMap[? "Shields Bow"] == player.toActivate) {
-            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Bow: Activate");
-            i--;
-        } else if(player.actionMap[? "Shields Bow"] == player.toDeactivate) {
-            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Bow: Cut");
-            i--;
-        }
-        if(player.actionMap[? "Shields Stern"] == player.toActivate) {
-            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Stern: Activate");
-            i--;
-        } else if(player.actionMap[? "Shields Stern"] == player.toDeactivate) {
-            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Stern: Cut");
-            i--;
-        }
+    if(ds_list_size(player.actionQueue) >= 2) {
+        draw_text(hud.aqTwoLeftBound, hud.aqTwoUpperBound, ds_list_find_value(player.actionQueue, 1));
     }
-    if(player.actionMap[? "Guns"]) {
-        draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "Guns");
-        i--;
+    if(ds_list_size(player.actionQueue) >= 3) {
+        draw_text(hud.aqThreeLeftBound, hud.aqThreeUpperBound, ds_list_find_value(player.actionQueue, 2));
     }
-    if(player.actionMap[? "Cannon"]) {
-        draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "Cannon");
-        i--;
+    if(ds_list_size(player.actionQueue) >= 4) {
+        draw_text(hud.aqFourLeftBound, hud.aqFourUpperBound, ds_list_find_value(player.actionQueue, 3));
     }
-    if(player.actionMap[? "Active"]) {
-        draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "Active");
-        i--;
+    if(ds_list_size(player.actionQueue) >= 5) {
+        draw_text(hud.aqFiveLeftBound, hud.aqFiveUpperBound, ds_list_find_value(player.actionQueue, 4));
     }
-    if(player.actionMap[? "Passive"] == player.toActivate || player.actionMap[? "Passive"] == player.toDeactivate) {
-        draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "Passive");
-        i--;
-        if(player.actionMap[? "Passive"] == player.toActivate) {
-            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Activate");
-            i--;
-        } else {
-            draw_text(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), hud.powerLowerBound - (i * string_height("Something")), "  Cut");
-            i--;
-        }
+    if(ds_list_size(player.actionQueue) >= 6) {
+        draw_text(hud.aqSixLeftBound, hud.aqSixUpperBound, ds_list_find_value(player.actionQueue, 5));
+    }
+    if(ds_list_size(player.actionQueue) >= 7) {
+        draw_text(hud.aqSevenLeftBound, hud.aqSevenUpperBound, ds_list_find_value(player.actionQueue, 6));
+    }
+    if(ds_list_size(player.actionQueue) >= 8) {
+        draw_text(hud.aqEightLeftBound, hud.aqEightUpperBound, ds_list_find_value(player.actionQueue, 7));
     }
 }
 
@@ -439,7 +373,7 @@ if(player.currentState == player.initState) {
     draw_text(hud.commandsRightBound - string_width("Starboard"), hud.commandsUpperBound + string_height("Commands: "), "Starboard");
     draw_text(hud.commandsRightBound - string_width("Bow"), hud.commandsUpperBound + 2 * string_height("Commands: "), "Bow");
     draw_text(hud.commandsRightBound - string_width("Stern"), hud.commandsUpperBound + 3 * string_height("Commands: "), "Stern");
-    draw_text(hud.commandsLRightBound - string_width("Rotate"), hud.commandsUpperBound + 4 * string_height("Commands: "), "Rotate");
+    draw_text(hud.commandsRightBound - string_width("Rotate"), hud.commandsUpperBound + 4 * string_height("Commands: "), "Rotate");
 } else if(player.currentState == player.shieldState) {
     draw_text(hud.commandsRightBound - string_width("Port"), hud.commandsUpperBound, "Port");
     draw_text(hud.commandsRightBound - string_width("Starboard"), hud.commandsUpperBound + string_height("Commands: "), "Starboard");

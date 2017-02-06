@@ -1,4 +1,4 @@
-if(x > hud.playAreaRightBound || x < hud.playAreaLeftBound 
-   || y > hud.playAreaLowerBound || y < hud.playAreaUpperBound) {
+if(x > hud.radarRightBound || x < hud.radarLeftBound 
+   || y > hud.radarLowerBound || y < hud.radarUpperBound) {
     instance_destroy();
 }

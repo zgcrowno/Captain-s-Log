@@ -40,12 +40,12 @@ ds_map_add(actionMap, "Cannon", false);
 ds_map_add(actionMap, "Active", false);
 ds_map_add(actionMap, "Passive", inactive);
 
+//The ship's action queue (actually a list)
+actionQueue = ds_list_create();
+
 //The amount of damage dealt by the ship's cannon and active ability, respectively
 cannonDamage = 0;
 activeDamage = 1;
-
-//The Number of Lines Needed to Present Action Map to Player
-actionMapDisplaySize = 0;
 
 //The Grid Boxes That Will Represent the Ship's Shields
 portShields = noone;
@@ -165,7 +165,7 @@ specialSpeedRicecake = 0.5
 cannonCooldownRateRicecake = 0.07
 shipAngleSpeedRicecake = 0.5
 
-cannonOffsetRiceCake = 13;
+cannonOffsetRiceCake = 11;
 cannonDamageRiceCake = 0;
 activeDamageRiceCake = 1;
 

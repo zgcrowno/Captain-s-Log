@@ -67,7 +67,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scrResetTouched</script>
+            <script>scrResetTouchedTimeline</script>
           </argument>
           <argument>
             <kind>0</kind>

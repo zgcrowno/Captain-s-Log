@@ -56,14 +56,14 @@ if(actionMap[? "Guns"]) {
 if(actionMap[? "Cannon"]) {
     currentPPCannon = requiredPPCannon;
 } else if(currentPPCannon > 0) {
-    currentPPCannon -= ((requiredPPCannon * util.difficultyModifier) / (hud.playAreaLowerBound - hud.playAreaUpperBound)) / 3;
+    currentPPCannon -= ((requiredPPCannon * util.difficultyModifier) / (hud.radarLowerBound - hud.radarUpperBound)) / 3;
 } else {
     currentPPCannon = 0;
 }
 if(actionMap[? "Active"]) {
     currentPPActive = requiredPPActive;
 } else if(currentPPActive > 0) {
-    currentPPActive -= ((requiredPPActive * util.difficultyModifier) / (hud.playAreaLowerBound - hud.playAreaUpperBound)) / 2;
+    currentPPActive -= ((requiredPPActive * util.difficultyModifier) / (hud.radarLowerBound - hud.radarUpperBound)) / 2;
 } else {
     currentPPActive = 0;
 }
@@ -73,12 +73,12 @@ if(actionMap[? "Passive"] == active || actionMap[? "Passive"] == toActivate || a
     currentPPPassive = 0;
 }
 
-percentPPThrusters = ((currentPPThrustersPort + currentPPThrustersStarboard + currentPPThrustersBow + currentPPThrustersStern + currentPPThrustersRotateClockwise + currentPPThrustersRotateCounterclockwise) / maxPP) * 100;
-percentPPShields = ((currentPPShieldsPort + currentPPShieldsStarboard + currentPPShieldsBow + currentPPShieldsStern) / maxPP) * 100;
-percentPPGuns = (currentPPGuns / maxPP) * 100;
-percentPPCannon = (currentPPCannon / maxPP) * 100;
-percentPPActive = (currentPPActive / maxPP) * 100;
-percentPPPassive = (currentPPPassive / maxPP) * 100;
+percentPPThrusters = floor(((currentPPThrustersPort + currentPPThrustersStarboard + currentPPThrustersBow + currentPPThrustersStern + currentPPThrustersRotateClockwise + currentPPThrustersRotateCounterclockwise) / maxPP) * 100);
+percentPPShields = floor(((currentPPShieldsPort + currentPPShieldsStarboard + currentPPShieldsBow + currentPPShieldsStern) / maxPP) * 100);
+percentPPGuns = floor((currentPPGuns / maxPP) * 100);
+percentPPCannon = floor((currentPPCannon / maxPP) * 100);
+percentPPActive = floor((currentPPActive / maxPP) * 100);
+percentPPPassive = floor((currentPPPassive / maxPP) * 100);
 
 currentPP = maxPP - currentPPThrustersPort - currentPPThrustersStarboard -
             currentPPThrustersBow - currentPPThrustersStern - 

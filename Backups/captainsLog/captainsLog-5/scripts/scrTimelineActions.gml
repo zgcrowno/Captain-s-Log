@@ -27,5 +27,8 @@ if(script_execute(scrTouchedTimelineThisTurn) && !alreadyTouchedTimeline) {
     if(object_is_ancestor(object_index, objBullet)) {
         script_execute(scrDestroyOutOfBounds);
     }
+    if(object_index == objGridBoxStatic) {
+        instance_destroy();
+    }
     alreadyTouchedTimeline = true;
 }

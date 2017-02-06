@@ -8,7 +8,8 @@
   <sprites name="sprites">
     <sprites name="misc">
       <sprite>sprites\sprTypingPrompt</sprite>
-      <sprite>sprites\sprTimeline</sprite>
+      <sprite>sprites\sprTimelineHorizontal</sprite>
+      <sprite>sprites\sprTimelineVertical</sprite>
     </sprites>
     <sprites name="hud">
       <sprite>sprites\sprHud</sprite>
@@ -60,7 +61,6 @@
           <script>scripts\scrGetAdjacentGridBoxes.gml</script>
           <script>scripts\scrResetNonShield.gml</script>
           <script>scripts\scrResetActionMap.gml</script>
-          <script>scripts\scrSetActionMapDisplaySize.gml</script>
           <script>scripts\scrSetTarget.gml</script>
           <script>scripts\scrDeath.gml</script>
         </scripts>
@@ -178,7 +178,7 @@
         <script>scripts\scrTimelineActions.gml</script>
         <script>scripts\scrEventInherited.gml</script>
         <script>scripts\scrTouchedTimelineThisTurn.gml</script>
-        <script>scripts\scrResetTouched.gml</script>
+        <script>scripts\scrResetTouchedTimeline.gml</script>
         <script>scripts\scrRandomizeSeed.gml</script>
         <script>scripts\scrDealStaticDamage.gml</script>
       </scripts>
@@ -238,7 +238,7 @@
     <object>objects\objHud</object>
     <object>objects\objPlayerShip</object>
     <object>objects\objGridBox</object>
-    <object>objects\objTimeline</object>
+    <object>objects\objTimelineHorizontal</object>
     <object>objects\objObject</object>
     <object>objects\objPlayerBullet</object>
     <object>objects\objProjectile</object>
@@ -251,6 +251,7 @@
     <object>objects\objCannonBullet</object>
     <object>objects\objPlayerCannonBullet</object>
     <object>objects\objGridBoxStatic</object>
+    <object>objects\objTimelineVertical</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTest2</room>
