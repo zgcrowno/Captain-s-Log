@@ -330,31 +330,10 @@ draw_text(hud.cannonPercentRightBound - string_width(string(player.percentPPCann
 draw_text(hud.activePercentRightBound - string_width(string(player.percentPPActive)), hud.activePercentLowerBound - string_height("Something"), string(player.percentPPActive));
 draw_text(hud.passivePercentRightBound - string_width(string(player.percentPPPassive)), hud.passivePercentLowerBound - string_height("Something"), string(player.percentPPPassive));
 
-//Display actionList
+//Display actionQueue
 if(!ds_list_empty(player.actionQueue)) {
-    if(ds_list_size(player.actionQueue) >= 1) {
-        draw_text(hud.aqOneLeftBound, hud.aqOneUpperBound, ds_list_find_value(player.actionQueue, 0));
-    }
-    if(ds_list_size(player.actionQueue) >= 2) {
-        draw_text(hud.aqTwoLeftBound, hud.aqTwoUpperBound, ds_list_find_value(player.actionQueue, 1));
-    }
-    if(ds_list_size(player.actionQueue) >= 3) {
-        draw_text(hud.aqThreeLeftBound, hud.aqThreeUpperBound, ds_list_find_value(player.actionQueue, 2));
-    }
-    if(ds_list_size(player.actionQueue) >= 4) {
-        draw_text(hud.aqFourLeftBound, hud.aqFourUpperBound, ds_list_find_value(player.actionQueue, 3));
-    }
-    if(ds_list_size(player.actionQueue) >= 5) {
-        draw_text(hud.aqFiveLeftBound, hud.aqFiveUpperBound, ds_list_find_value(player.actionQueue, 4));
-    }
-    if(ds_list_size(player.actionQueue) >= 6) {
-        draw_text(hud.aqSixLeftBound, hud.aqSixUpperBound, ds_list_find_value(player.actionQueue, 5));
-    }
-    if(ds_list_size(player.actionQueue) >= 7) {
-        draw_text(hud.aqSevenLeftBound, hud.aqSevenUpperBound, ds_list_find_value(player.actionQueue, 6));
-    }
-    if(ds_list_size(player.actionQueue) >= 8) {
-        draw_text(hud.aqEightLeftBound, hud.aqEightUpperBound, ds_list_find_value(player.actionQueue, 7));
+    for(i = 0; i < ds_list_size(player.actionQueue); i++) {
+        draw_text(hud.aqOneLeftBound, hud.aqOneUpperBound - ((ds_list_size(player.actionQueue) - (i + 1)) * 57), ds_list_find_value(player.actionQueue, i));
     }
 }
 

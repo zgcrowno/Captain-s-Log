@@ -1,9 +1,9 @@
 script_execute(scrWipeToInitState);
 if(actionMap[? "Thrusters Clock"] > 0) {
-    ds_list_delete(actionQueue, "Thrst#Clock#" + actionMap[? "Thrusters Clock"]);
+    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Thrst#Clock#" + string(actionMap[? "Thrusters Clock"])));
     actionMap[? "Thrusters Clock"] = 0;
 }
 if(actionMap[? "Thrusters Count"] > 0) {
-    ds_list_delete(actionQueue, "Thrst#Count#" + actionMap[? "Thrusters Count"]);
+    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Thrst#Count#" + string(actionMap[? "Thrusters Count"])));
     actionMap[? "Thrusters Count"] = 0;
 }

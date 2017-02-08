@@ -3,7 +3,6 @@ if(actionMap[? "Thrusters Port"] > 0) {
         ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Thrst#Port#" + string(actionMap[? "Thrusters Port"])));
     } else {
         actionQueue[| ds_list_find_index(actionQueue, "Thrst#Port#" + string(actionMap[? "Thrusters Port"]))] = "Thrst#Port#" + string(actionMap[? "Thrusters Port"] - 1);
-        show_debug_message(string(ds_list_size(actionQueue)));
     }
     actionMap[? "Thrusters Port"]--;
 }
@@ -11,7 +10,7 @@ if(actionMap[? "Thrusters Starboard"] > 0) {
     if(actionMap[? "Thrusters Starboard"] == 1) {
         ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Thrst#Star#" + string(actionMap[? "Thrusters Starboard"])));
     } else {
-        actionQueue[| "Thrst#Star#" + string(actionMap[? "Thrusters Starboard"])] = "Thrst#Star#" + string(actionMap[? "Thrusters Starboard"] - 1);
+        actionQueue[| ds_list_find_index(actionQueue, "Thrst#Star#" + string(actionMap[? "Thrusters Starboard"]))] = "Thrst#Star#" + string(actionMap[? "Thrusters Starboard"] - 1);
     }
     actionMap[? "Thrusters Starboard"]--;
 }
@@ -19,7 +18,7 @@ if(actionMap[? "Thrusters Bow"] > 0) {
     if(actionMap[? "Thrusters Bow"] == 1) {
         ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Thrst#Bow#" + string(actionMap[? "Thrusters Bow"])));
     } else {
-        actionQueue[| "Thrst#Bow#" + string(actionMap[? "Thrusters Bow"])] = "Thrst#Bow#" + string(actionMap[? "Thrusters Bow"] - 1);
+        actionQueue[| ds_list_find_index(actionQueue, "Thrst#Bow#" + string(actionMap[? "Thrusters Bow"]))] = "Thrst#Bow#" + string(actionMap[? "Thrusters Bow"] - 1);
     }
     actionMap[? "Thrusters Bow"]--;
 }
@@ -27,7 +26,7 @@ if(actionMap[? "Thrusters Stern"] > 0) {
     if(actionMap[? "Thrusters Stern"] == 1) {
         ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Thrst#Stern#" + string(actionMap[? "Thrusters Stern"])));
     } else {
-        actionQueue[| "Thrst#Stern#" + string(actionMap[? "Thrusters Stern"])] = "Thrst#Stern#" + string(actionMap[? "Thrusters Stern"] - 1);
+        actionQueue[| ds_list_find_index(actionQueue, "Thrst#Stern#" + string(actionMap[? "Thrusters Stern"]))] = "Thrst#Stern#" + string(actionMap[? "Thrusters Stern"] - 1);
     }
     actionMap[? "Thrusters Stern"]--;
 }
@@ -35,7 +34,7 @@ if(actionMap[? "Thrusters Count"] > 0) {
     if(actionMap[? "Thrusters Count"] == 1) {
         ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Thrst#Count#" + string(actionMap[? "Thrusters Count"])));
     } else {
-        actionQueue[| "Thrst#Count#" + string(actionMap[? "Thrusters Count"])] = "Thrst#Count#" + string(actionMap[? "Thrusters Count"] - 1);
+        actionQueue[| ds_list_find_index(actionQueue, "Thrst#Count#" + string(actionMap[? "Thrusters Count"]))] = "Thrst#Count#" + string(actionMap[? "Thrusters Count"] - 1);
     }
     actionMap[? "Thrusters Count"]--;
 }
@@ -43,7 +42,7 @@ if(actionMap[? "Thrusters Clock"] > 0) {
     if(actionMap[? "Thrusters Clock"] == 1) {
         ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Thrst#Clock#" + string(actionMap[? "Thrusters Clock"])));
     } else {
-        actionQueue[| "Thrst#Clock#" + string(actionMap[? "Thrusters Clock"])] = "Thrst#Clock#" + string(actionMap[? "Thrusters Clock"] - 1);
+        actionQueue[| ds_list_find_index(actionQueue, "Thrst#Clock#" + string(actionMap[? "Thrusters Clock"]))] = "Thrst#Clock#" + string(actionMap[? "Thrusters Clock"] - 1);
     }
     actionMap[? "Thrusters Clock"]--;
 }

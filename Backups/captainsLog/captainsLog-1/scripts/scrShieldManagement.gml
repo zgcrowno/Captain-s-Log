@@ -2,21 +2,21 @@
     //Checks will have to be put in place preventing one ship's shields from overwriting
     //any other's
     for(i = 0; i < array_length_1d(portShields); i++) {
-        if(actionMap[? "Shields Port"] == active || actionMap[? "Shields Port"] == toDeactivate) {
+        if(actionMap[? "Shields Port"] == active || actionMap[? "Shields Port"] == toActivate) {
             portShields[i].sprite_index = sprGridBoxShield;
         } else {
             portShields[i].sprite_index = sprGridBox;
         }
     }
     for(i = 0; i < array_length_1d(starboardShields); i++) {
-        if(actionMap[? "Shields Starboard"] == active || actionMap[? "Shields Starboard"] == toDeactivate) {
+        if(actionMap[? "Shields Starboard"] == active || actionMap[? "Shields Starboard"] == toActivate) {
             starboardShields[i].sprite_index = sprGridBoxShield;
         } else {
             starboardShields[i].sprite_index = sprGridBox;
         }
     }
     for(i = 0; i < array_length_1d(bowShields); i++) {
-        if(actionMap[? "Shields Bow"] == active || actionMap[? "Shields Bow"] == toDeactivate) {
+        if(actionMap[? "Shields Bow"] == active || actionMap[? "Shields Bow"] == toActivate) {
             bowShields[i].sprite_index = sprGridBoxShield;
         } else {
             //Prevent previous two loops from being partially overwritten
@@ -26,7 +26,7 @@
         }
     }
     for(i = 0; i < array_length_1d(sternShields); i++) {
-        if(actionMap[? "Shields Stern"] == active || actionMap[? "Shields Stern"] == toDeactivate) {
+        if(actionMap[? "Shields Stern"] == active || actionMap[? "Shields Stern"] == toActivate) {
             sternShields[i].sprite_index = sprGridBoxShield;
         } else {
             //Prevent previous two loops from being partially overwritten

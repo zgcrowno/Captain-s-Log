@@ -2,7 +2,7 @@ if(!(requiredPPThrusters > currentPP) && !(actionMap[? "Thrusters Port"] > 0)) {
     actionMap[? "Thrusters Port"] = real(input);
     ds_list_add(actionQueue, "Thrst#Port#" + input);
 } else if(actionMap[? "Thrusters Port"] > 0) {
-    actionQueue[| "Thrst#Port#" + actionMap[? "Thrusters Port"]] = "Thrst#Port#" + (actionMap[? "Thrusters Port"] + input);
+    actionQueue[| real(actionQueue[| "Thrst#Port#" + string(actionMap[? "Thrusters Port"])])] = "Thrst#Port#" + string(actionMap[? "Thrusters Port"] + real(input));
     actionMap[? "Thrusters Port"] = actionMap[? "Thrusters Port"] + real(input);
 } else {
     //To Do: Error to user about lack of power

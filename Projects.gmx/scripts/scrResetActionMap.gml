@@ -1,9 +1,10 @@
+//Keep an eye on this script. A large portion of it may end up being removed,
+//as it's most likely executed earlier on in scrTimelineActions.
 if(actionMap[? "Thrusters Port"] > 0) {
     if(actionMap[? "Thrusters Port"] == 1) {
         ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Thrst#Port#" + string(actionMap[? "Thrusters Port"])));
     } else {
         actionQueue[| ds_list_find_index(actionQueue, "Thrst#Port#" + string(actionMap[? "Thrusters Port"]))] = "Thrst#Port#" + string(actionMap[? "Thrusters Port"] - 1);
-        show_debug_message(string(ds_list_size(actionQueue)));
     }
     actionMap[? "Thrusters Port"]--;
 }

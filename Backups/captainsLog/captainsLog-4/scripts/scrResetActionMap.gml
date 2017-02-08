@@ -3,7 +3,6 @@ if(actionMap[? "Thrusters Port"] > 0) {
         ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Thrst#Port#" + string(actionMap[? "Thrusters Port"])));
     } else {
         actionQueue[| ds_list_find_index(actionQueue, "Thrst#Port#" + string(actionMap[? "Thrusters Port"]))] = "Thrst#Port#" + string(actionMap[? "Thrusters Port"] - 1);
-        show_debug_message(string(ds_list_size(actionQueue)));
     }
     actionMap[? "Thrusters Port"]--;
 }
@@ -93,6 +92,7 @@ if(actionMap[? "Shields Stern"] == toActivate) {
 }
 if(actionMap[? "Passive"] == toActivate) {
     actionMap[? "Passive"] = active;
+    show_debug_message(ds_list_find_index(actionQueue, "Passive"));
     if(ds_list_find_index(actionQueue, "Passive") != -1) {
         ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Passive"));
     }
