@@ -1,7 +1,7 @@
 if(requiredPPGuns <= currentPP) {
-    actionMap[? "Guns"] = true;
-    ds_list_add(actionQueue, "Guns");
+    actionMap[? util.actionMapGunsString] = true;
+    ds_list_add(actionQueue, util.actionMapGunsString);
 } else {
     //To Do: Error to user about lack of power...
 }
-script_execute(scrWipeToInitState);
+script_execute(scrSetState, initState);

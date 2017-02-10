@@ -4,13 +4,13 @@ if(script_execute(scrTouchedTimelineThisTurn) && !alreadyTouchedTimeline) {
             script_execute(scrResetNonShield);
         }
         for(i = 0; i < ds_list_size(actionQueue); i++) {
-            if(string_pos("Guns", actionQueue[| i]) != 0) {
+            if(string_pos(util.actionMapGunsString, actionQueue[| i]) != 0) {
                 script_execute(scrGunsFire);
-            } else if(string_pos("Cannon", actionQueue[| i]) != 0) {
+            } else if(string_pos(util.actionMapCannonString, actionQueue[| i]) != 0) {
                 script_execute(scrCannonFire);
-            } else if(string_pos("Active", actionQueue[| i]) != 0) {
+            } else if(string_pos(util.actionMapActiveString, actionQueue[| i]) != 0) {
                 script_execute(scrActiveFire);
-            } else if(string_pos("Passive", actionQueue[| i]) != 0) {
+            } else if(string_pos(util.actionMapPassiveString, actionQueue[| i]) != 0) {
                 script_execute(scrPassiveFire);
             } else if(string_pos("Thrst", actionQueue[| i]) != 0) {
                 script_execute(scrMovement);

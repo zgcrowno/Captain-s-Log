@@ -54,7 +54,6 @@
           <script>scripts\scrPPManagement.gml</script>
         </scripts>
         <scripts name="util">
-          <script>scripts\scrWipeToInitState.gml</script>
           <script>scripts\scrGetEnemies.gml</script>
           <script>scripts\scrSetShields.gml</script>
           <script>scripts\scrGetGridBoxes.gml</script>
@@ -181,6 +180,7 @@
         <script>scripts\scrResetTouchedTimeline.gml</script>
         <script>scripts\scrRandomizeSeed.gml</script>
         <script>scripts\scrDealStaticDamage.gml</script>
+        <script>scripts\scrSetState.gml</script>
       </scripts>
       <scripts name="data">
         <script>scripts\scrObjectData.gml</script>
@@ -193,11 +193,6 @@
           <script>scripts\scrDrawGUI.gml</script>
           <script>scripts\scrDrawInput.gml</script>
           <script>scripts\scrCreateGridBoxes.gml</script>
-        </scripts>
-      </scripts>
-      <scripts name="gridBox">
-        <scripts name="data">
-          <script>scripts\scrGridBoxData.gml</script>
         </scripts>
       </scripts>
       <scripts name="typingPrompt">
@@ -230,32 +225,49 @@
     <font>fonts\fntMain</font>
   </fonts>
   <objects name="objects">
-    <object>objects\objUtil</object>
-    <object>objects\objRiceCake</object>
-    <object>objects\objGUI</object>
-    <object>objects\objPhraseGameOver</object>
-    <object>objects\objTypingPrompt</object>
-    <object>objects\objHud</object>
-    <object>objects\objPlayerShip</object>
-    <object>objects\objGridBox</object>
-    <object>objects\objTimelineHorizontal</object>
-    <object>objects\objObject</object>
-    <object>objects\objPlayerBullet</object>
-    <object>objects\objProjectile</object>
-    <object>objects\objBullet</object>
-    <object>objects\objShip</object>
-    <object>objects\objEnemyShip</object>
-    <object>objects\objPawn</object>
-    <object>objects\objPlayerBulletContact</object>
-    <object>objects\objRiceCakeActive</object>
-    <object>objects\objCannonBullet</object>
-    <object>objects\objPlayerCannonBullet</object>
-    <object>objects\objGridBoxStatic</object>
-    <object>objects\objTimelineVertical</object>
+    <objects name="object">
+      <object>objects\objObject</object>
+      <objects name="util">
+        <object>objects\objUtil</object>
+        <object>objects\objTimelineVertical</object>
+        <object>objects\objTimelineHorizontal</object>
+        <object>objects\objTypingPrompt</object>
+      </objects>
+      <objects name="gui">
+        <object>objects\objGUI</object>
+        <object>objects\objPhraseGameOver</object>
+      </objects>
+      <objects name="gridBox">
+        <object>objects\objGridBoxStatic</object>
+        <object>objects\objGridBox</object>
+      </objects>
+      <objects name="ship">
+        <object>objects\objRiceCake</object>
+        <object>objects\objPlayerShip</object>
+        <object>objects\objShip</object>
+        <object>objects\objEnemyShip</object>
+        <object>objects\objPawn</object>
+      </objects>
+      <objects name="hud">
+        <object>objects\objHud</object>
+      </objects>
+      <objects name="projectile">
+        <object>objects\objPlayerBullet</object>
+        <object>objects\objProjectile</object>
+        <object>objects\objBullet</object>
+        <object>objects\objPlayerBulletContact</object>
+        <object>objects\objRiceCakeActive</object>
+        <object>objects\objCannonBullet</object>
+        <object>objects\objPlayerCannonBullet</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rmTest2</room>
-    <room>rooms\rmGameOver</room>
+    <rooms name="test">
+      <room>rooms\rmTest3</room>
+      <room>rooms\rmTest2</room>
+      <room>rooms\rmGameOver</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -1,7 +1,7 @@
 if(keyboard_check_pressed(vk_tab)) {
     //In the future, it might be wise to configure the instance data states in such
     //a way that currentState will be decremented here.
-    script_execute(scrWipeToInitState);
+    script_execute(scrSetState, initState);
 } else if(keyboard_check_pressed(vk_backspace)) {
     if(input != "") {
         input = string_delete(input, string_length(input), 1);

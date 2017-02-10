@@ -1,10 +1,10 @@
-if(!(requiredPPThrustersRotate > currentPP) && !(actionMap[? "Thrusters Clock"] > 0)) {
-    actionMap[? "Thrusters Clock"] = real(input);
-    ds_list_add(actionQueue, "Thrst#Clock#" + input);
-} else if(actionMap[? "Thrusters Clock"] > 0) {
-    actionQueue[| real(actionQueue[| "Thrst#Clock#" + string(actionMap[? "Thrusters Clock"])])] = "Thrst#Clock#" + string(actionMap[? "Thrusters Clock"] + real(input));
-    actionMap[? "Thrusters Clock"] = actionMap[? "Thrusters Clock"] + real(input);
+if(!(requiredPPThrustersRotate > currentPP) && !(actionMap[? util.actionMapThrustersClockString] > 0)) {
+    actionMap[? util.actionMapThrustersClockString] = real(input);
+    ds_list_add(actionQueue, util.actionQueueThrustersClockString + input);
+} else if(actionMap[? util.actionMapThrustersClockString] > 0) {
+    actionQueue[| real(actionQueue[| util.actionQueueThrustersClockString + string(actionMap[? util.actionMapThrustersClockString])])] = util.actionQueueThrustersClockString + string(actionMap[? util.actionMapThrustersClockString] + real(input));
+    actionMap[? util.actionMapThrustersClockString] = actionMap[? util.actionMapThrustersClockString] + real(input);
 } else {
     //To Do: Error to user about lack of power...
 }
-script_execute(scrWipeToInitState);
+script_execute(scrSetState, initState);

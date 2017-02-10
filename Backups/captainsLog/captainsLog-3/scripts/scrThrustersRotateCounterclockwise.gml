@@ -1,10 +1,10 @@
-if(!(requiredPPThrustersRotate > currentPP) && !(actionMap[? "Thrusters Count"] > 0)) {
-    actionMap[? "Thrusters Count"] = real(input);
-    ds_list_add(actionQueue, "Thrst#Count#" + input);
-} else if(actionMap[? "Thrusters Count"] > 0) {
-    actionQueue[| real(actionQueue[| "Thrst#Count#" + string(actionMap[? "Thrusters Count"])])] = "Thrst#Count#" + string(actionMap[? "Thrusters Count"] + real(input));
-    actionMap[? "Thrusters Count"] = actionMap[? "Thrusters Count"] + real(input);
+if(!(requiredPPThrustersRotate > currentPP) && !(actionMap[? util.actionMapThrustersCountString] > 0)) {
+    actionMap[? util.actionMapThrustersCountString] = real(input);
+    ds_list_add(actionQueue, util.actionQueueThrustersCountString + input);
+} else if(actionMap[? util.actionMapThrustersCountString] > 0) {
+    actionQueue[| real(actionQueue[| util.actionQueueThrustersCountString + string(actionMap[? util.actionMapThrustersCountString])])] = util.actionQueueThrustersCountString + string(actionMap[? util.actionMapThrustersCountString] + real(input));
+    actionMap[? util.actionMapThrustersCountString] = actionMap[? util.actionMapThrustersCountString] + real(input);
 } else {
     //To Do: Error to user about lack of power...
 }
-script_execute(scrWipeToInitState);
+script_execute(scrSetState, initState);

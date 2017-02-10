@@ -1,5 +1,3 @@
-depth = 0;
-
 aqOneLeftBound = 28;
 aqOneRightBound = 81;
 aqOneUpperBound = 1007;

@@ -3,7 +3,7 @@
   <spriteName>sprPawn</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-3</depth>
   <persistent>0</persistent>
   <parentName>objEnemyShip</parentName>
   <maskName>&lt;undefined&gt;</maskName>

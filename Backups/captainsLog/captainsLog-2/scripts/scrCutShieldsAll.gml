@@ -1,29 +1,29 @@
-script_execute(scrWipeToInitState);
-if(actionMap[? "Shields Port"] == active) {
-    actionMap[? "Shields Port"] = toDeactivate;
-    ds_list_add(actionQueue, "Cut#Shields#Port");
-} else if(actionMap[? "Shields Port"] == toActivate) {
-    actionMap[? "Shields Port"] = inactive;
-    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Shields#Port"));
+script_execute(scrSetState, initState);
+if(actionMap[? util.actionMapShieldsPortString] == active) {
+    actionMap[? util.actionMapShieldsPortString] = toDeactivate;
+    ds_list_add(actionQueue, util.actionQueueCutShieldsPortString);
+} else if(actionMap[? util.actionMapShieldsPortString] == toActivate) {
+    actionMap[? util.actionMapShieldsPortString] = inactive;
+    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionQueueShieldsPortString));
 }
-if(actionMap[? "Shields Starboard"] == active) {
-    actionMap[? "Shields Starboard"] = toDeactivate;
+if(actionMap[? util.actionMapShieldsStarboardString] == active) {
+    actionMap[? util.actionMapShieldsStarboardString] = toDeactivate;
     ds_list_add(actionQueue, "Cut#Shields#Starboard");
-} else if(actionMap[? "Shields Starboard"] == toActivate) {
-    actionMap[? "Shields Starboard"] = inactive;
+} else if(actionMap[? util.actionMapShieldsStarboardString] == toActivate) {
+    actionMap[? util.actionMapShieldsStarboardString] = inactive;
     ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Shields#Starboard"));
 }
-if(actionMap[? "Shields Bow"] == active) {
-    actionMap[? "Shields Bow"] = toDeactivate;
-    ds_list_add(actionQueue, "Cut#Shields#Bow");
-} else if(actionMap[? "Shields Bow"] == toActivate) {
-    actionMap[? "Shields Bow"] = inactive;
-    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Shields#Bow"));
+if(actionMap[? util.actionMapShieldsBowString] == active) {
+    actionMap[? util.actionMapShieldsBowString] = toDeactivate;
+    ds_list_add(actionQueue, util.actionQueueCutShieldsBowString);
+} else if(actionMap[? util.actionMapShieldsBowString] == toActivate) {
+    actionMap[? util.actionMapShieldsBowString] = inactive;
+    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionQueueShieldsBowString));
 }
-if(actionMap[? "Shields Stern"] == active) {
-    actionMap[? "Shields Stern"] = toDeactivate;
-    ds_list_add(actionQueue, "Cut#Shields#Stern");
-} else if(actionMap[? "Shields Stern"] == toActivate) {
-    actionMap[? "Shields Stern"] = inactive;
-    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Shields#Stern"));
+if(actionMap[? util.actionMapShieldsSternString] == active) {
+    actionMap[? util.actionMapShieldsSternString] = toDeactivate;
+    ds_list_add(actionQueue, util.actionQueueCutShieldsSternString);
+} else if(actionMap[? util.actionMapShieldsSternString] == toActivate) {
+    actionMap[? util.actionMapShieldsSternString] = inactive;
+    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionQueueShieldsSternString));
 }

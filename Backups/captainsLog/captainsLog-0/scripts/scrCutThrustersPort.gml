@@ -1,5 +1,5 @@
-script_execute(scrWipeToInitState);
-if(actionMap[? "Thrusters Port"] > 0) {
-    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Thrst#Port#" + string(actionMap[? "Thrusters Port"])));
-    actionMap[? "Thrusters Port"] = 0;
+script_execute(scrSetState, initState);
+if(actionMap[? util.actionMapThrustersPortString] > 0) {
+    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionQueueThrustersPortString + string(actionMap[? util.actionMapThrustersPortString])));
+    actionMap[? util.actionMapThrustersPortString] = 0;
 }

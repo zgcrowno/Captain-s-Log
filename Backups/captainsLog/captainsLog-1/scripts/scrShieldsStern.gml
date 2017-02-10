@@ -1,7 +1,7 @@
-if(!(requiredPPShields > currentPP) && !(actionMap[? "Shields Stern"] == active)) {
-    actionMap[? "Shields Stern"] = toActivate;
-    ds_list_add(actionQueue, "Shields#Stern");
-} else if(!(actionMap[? "Shields Stern"] == active)) {
+if(!(requiredPPShields > currentPP) && !(actionMap[? util.actionMapShieldsSternString] == active)) {
+    actionMap[? util.actionMapShieldsSternString] = toActivate;
+    ds_list_add(actionQueue, util.actionQueueShieldsSternString);
+} else if(!(actionMap[? util.actionMapShieldsSternString] == active)) {
     //To Do: Error to user about lack of power...
 } 
-script_execute(scrWipeToInitState);
+script_execute(scrSetState, initState);

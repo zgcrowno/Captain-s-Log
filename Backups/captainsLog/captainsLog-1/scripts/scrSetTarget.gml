@@ -9,6 +9,6 @@ for(i = 0; i < array_length_1d(enemies); i++) {
                 target = enemies[j];
             }
         }
-        script_execute(scrWipeToInitState);
+        script_execute(scrSetState, initState);
     }
 }

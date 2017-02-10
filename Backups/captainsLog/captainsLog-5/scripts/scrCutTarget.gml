@@ -1,6 +1,6 @@
-script_execute(scrWipeToInitState);
-if(actionMap[? "Target"] != noone) {
-    actionMap[? "Target"] = noone;
+script_execute(scrSetState, initState);
+if(actionMap[? util.actionMapTargetString] != noone) {
+    actionMap[? util.actionMapTargetString] = noone;
 }
 if(target != noone) {
     target = noone;

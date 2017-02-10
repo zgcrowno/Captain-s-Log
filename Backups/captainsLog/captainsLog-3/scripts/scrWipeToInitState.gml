@@ -1,2 +1,1 @@
-input = "";
-currentState = initState;
+script_execute(scrSetState, initState);

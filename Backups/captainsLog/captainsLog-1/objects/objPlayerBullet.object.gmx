@@ -3,7 +3,7 @@
   <spriteName>sprPlayerBullet</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1000</depth>
+  <depth>-4</depth>
   <persistent>0</persistent>
   <parentName>objBullet</parentName>
   <maskName>&lt;undefined&gt;</maskName>

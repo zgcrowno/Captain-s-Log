@@ -1,5 +1,5 @@
-if(actionMap[? "Thrusters Starboard"] > 0) {
-    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, "Thrst#Star#" + string(actionMap[? "Thrusters Starboard"])));
-    actionMap[? "Thrusters Starboard"] = 0;
+if(actionMap[? util.actionMapThrustersStarboardString] > 0) {
+    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionQueueThrustersStarboardString + string(actionMap[? util.actionMapThrustersStarboardString])));
+    actionMap[? util.actionMapThrustersStarboardString] = 0;
 }
-script_execute(scrWipeToInitState);
+script_execute(scrSetState, initState);

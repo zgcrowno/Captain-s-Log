@@ -341,11 +341,11 @@ if(!ds_list_empty(player.actionQueue)) {
 if(player.currentState == player.initState) {
     draw_text(hud.commandsRightBound - string_width("Thrusters"), hud.commandsUpperBound, "Thrusters");
     draw_text(hud.commandsRightBound - string_width("Shields"), hud.commandsUpperBound + string_height("Commands: "), "Shields");
-    draw_text(hud.commandsRightBound - string_width("Target"), hud.commandsUpperBound + 2 * string_height("Commands: "), "Target");
-    draw_text(hud.commandsRightBound - string_width("Guns"), hud.commandsUpperBound + 3 * string_height("Commands: "), "Guns");
-    draw_text(hud.commandsRightBound - string_width("Cannon"), hud.commandsUpperBound + 4 * string_height("Commands: "), "Cannon");
-    draw_text(hud.commandsRightBound - string_width("Active"), hud.commandsUpperBound + 5 * string_height("Commands: "), "Active");
-    draw_text(hud.commandsRightBound - string_width("Passive"), hud.commandsUpperBound + 6 * string_height("Commands: "), "Passive");
+    draw_text(hud.commandsRightBound - string_width(util.actionMapTargetString), hud.commandsUpperBound + 2 * string_height("Commands: "), util.actionMapTargetString);
+    draw_text(hud.commandsRightBound - string_width(util.actionMapGunsString), hud.commandsUpperBound + 3 * string_height("Commands: "), util.actionMapGunsString);
+    draw_text(hud.commandsRightBound - string_width(util.actionMapCannonString), hud.commandsUpperBound + 4 * string_height("Commands: "), util.actionMapCannonString);
+    draw_text(hud.commandsRightBound - string_width(util.actionMapActiveString), hud.commandsUpperBound + 5 * string_height("Commands: "), util.actionMapActiveString);
+    draw_text(hud.commandsRightBound - string_width(util.actionMapPassiveString), hud.commandsUpperBound + 6 * string_height("Commands: "), util.actionMapPassiveString);
     draw_text(hud.commandsRightBound - string_width("Cut"), hud.commandsUpperBound + 7 * string_height("Commands: "), "Cut");
 } else if(player.currentState == player.thrusterState) {
     draw_text(hud.commandsRightBound - string_width("Port"), hud.commandsUpperBound, "Port");
@@ -370,11 +370,11 @@ if(player.currentState == player.initState) {
 } else if(player.currentState == player.cutState) {
     draw_text(hud.commandsRightBound - string_width("Thrusters"), hud.commandsUpperBound, "Thrusters");
     draw_text(hud.commandsRightBound - string_width("Shields"), hud.commandsUpperBound + string_height("Commands: "), "Shields");
-    draw_text(hud.commandsRightBound - string_width("Target"), hud.commandsUpperBound + 2 * string_height("Commands: "), "Target");
-    draw_text(hud.commandsRightBound - string_width("Guns"), hud.commandsUpperBound + 3 * string_height("Commands: "), "Guns");
-    draw_text(hud.commandsRightBound - string_width("Cannon"), hud.commandsUpperBound + 4 * string_height("Commands: "), "Cannon");
-    draw_text(hud.commandsRightBound - string_width("Active"), hud.commandsUpperBound + 5 * string_height("Commands: "), "Active");
-    draw_text(hud.commandsRightBound - string_width("Passive"), hud.commandsUpperBound + 6 * string_height("Commands: "), "Passive");
+    draw_text(hud.commandsRightBound - string_width(util.actionMapTargetString), hud.commandsUpperBound + 2 * string_height("Commands: "), util.actionMapTargetString);
+    draw_text(hud.commandsRightBound - string_width(util.actionMapGunsString), hud.commandsUpperBound + 3 * string_height("Commands: "), util.actionMapGunsString);
+    draw_text(hud.commandsRightBound - string_width(util.actionMapCannonString), hud.commandsUpperBound + 4 * string_height("Commands: "), util.actionMapCannonString);
+    draw_text(hud.commandsRightBound - string_width(util.actionMapActiveString), hud.commandsUpperBound + 5 * string_height("Commands: "), util.actionMapActiveString);
+    draw_text(hud.commandsRightBound - string_width(util.actionMapPassiveString), hud.commandsUpperBound + 6 * string_height("Commands: "), util.actionMapPassiveString);
     draw_text(hud.commandsRightBound - string_width("All"), hud.commandsUpperBound + 7 * string_height("Commands: "), "All");
 } else if(player.currentState == player.thrusterPortState) {
     draw_text(hud.commandsRightBound - string_width("[\#]"), hud.commandsUpperBound, "[\#]");

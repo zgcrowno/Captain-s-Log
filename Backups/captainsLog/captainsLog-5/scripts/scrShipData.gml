@@ -24,21 +24,21 @@ toDeactivate = 3;
 
 //The ship's action map
 actionMap = ds_map_create();
-ds_map_add(actionMap, "Thrusters Port", 0);
-ds_map_add(actionMap, "Thrusters Starboard", 0);
-ds_map_add(actionMap, "Thrusters Bow", 0);
-ds_map_add(actionMap, "Thrusters Stern", 0);
-ds_map_add(actionMap, "Thrusters Count", 0);
-ds_map_add(actionMap, "Thrusters Clock", 0);
-ds_map_add(actionMap, "Shields Port", inactive);
-ds_map_add(actionMap, "Shields Starboard", inactive);
-ds_map_add(actionMap, "Shields Bow", inactive);
-ds_map_add(actionMap, "Shields Stern", inactive);
-ds_map_add(actionMap, "Target", noone);
-ds_map_add(actionMap, "Guns", false);
-ds_map_add(actionMap, "Cannon", false);
-ds_map_add(actionMap, "Active", false);
-ds_map_add(actionMap, "Passive", inactive);
+ds_map_add(actionMap, util.actionMapThrustersPortString, 0);
+ds_map_add(actionMap, util.actionMapThrustersStarboardString, 0);
+ds_map_add(actionMap, util.actionMapThrustersBowString, 0);
+ds_map_add(actionMap, util.actionMapThrustersSternString, 0);
+ds_map_add(actionMap, util.actionMapThrustersCountString, 0);
+ds_map_add(actionMap, util.actionMapThrustersClockString, 0);
+ds_map_add(actionMap, util.actionMapShieldsPortString, inactive);
+ds_map_add(actionMap, util.actionMapShieldsStarboardString, inactive);
+ds_map_add(actionMap, util.actionMapShieldsBowString, inactive);
+ds_map_add(actionMap, util.actionMapShieldsSternString, inactive);
+ds_map_add(actionMap, util.actionMapTargetString, noone);
+ds_map_add(actionMap, util.actionMapGunsString, false);
+ds_map_add(actionMap, util.actionMapCannonString, false);
+ds_map_add(actionMap, util.actionMapActiveString, false);
+ds_map_add(actionMap, util.actionMapPassiveString, inactive);
 
 //The ship's action queue (actually a list)
 actionQueue = ds_list_create();
