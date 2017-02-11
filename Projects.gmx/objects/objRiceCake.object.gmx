@@ -3,7 +3,7 @@
   <spriteName>sprRiceCake</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-3</depth>
+  <depth>-30</depth>
   <persistent>0</persistent>
   <parentName>objPlayerShip</parentName>
   <maskName>&lt;undefined&gt;</maskName>

@@ -1,5 +1,5 @@
 //The Difficulty Modifier for the Game
-difficultyModifier = 1.5;
+difficultyModifier = 2;
 
 //The damage ships incur while touching static
 staticDamage = 0.1;
