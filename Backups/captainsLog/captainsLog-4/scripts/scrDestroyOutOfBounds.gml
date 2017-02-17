@@ -1,4 +1,4 @@
-if(x > hud.radarRightBound || x < hud.radarLeftBound 
-   || y > hud.radarLowerBound || y < hud.radarUpperBound) {
+if(x > (hud.radarRightBound - hud.radarLeftBound) || x < 0 
+   || y > (hud.radarLowerBound - hud.radarUpperBound) || y < 0) {
     instance_destroy();
 }

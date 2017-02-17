@@ -113,10 +113,10 @@ commandsRightBound = 636;
 commandsUpperBound = 938;
 commandsLowerBound = 1051;
 
-radarLeftBound = 685;
-radarRightBound = 1233;
-radarUpperBound = 510;
-radarLowerBound = 1058;
+radarLeftBound = 0;
+radarRightBound = 548;
+radarUpperBound = 0;
+radarLowerBound = 548;
 
 targetImageLeftBound = 1282;
 targetImageRightBound = 1461;

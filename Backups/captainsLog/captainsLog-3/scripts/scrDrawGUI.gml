@@ -1,3 +1,13 @@
+//Draw the HUD
+draw_sprite(sprBlueSky, -1, 0, 0);
+draw_sprite(sprPixelHud, -1, 0, 0);
+            
+//Draw the typing prompt
+draw_sprite(sprTypingPrompt, 
+            -1, 
+            hud.consoleLeftBound + string_width(instance_find(objPlayerShip, 0).input), 
+            hud.consoleLowerBound - string_height("Something"));
+
 //Draw the overall HP bar
 draw_healthbar(hud.powerLeftBound, 
                hud.powerUpperBound, 

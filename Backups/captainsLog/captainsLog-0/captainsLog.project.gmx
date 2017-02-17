@@ -46,7 +46,9 @@
       <sprite>sprites\sprBlueSky</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bgTestBackground</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="object">
@@ -198,11 +200,6 @@
           <script>scripts\scrCreateGridBoxes.gml</script>
         </scripts>
       </scripts>
-      <scripts name="typingPrompt">
-        <scripts name="data">
-          <script>scripts\scrTypingPromptData.gml</script>
-        </scripts>
-      </scripts>
       <scripts name="projectile">
         <scripts name="bullet">
           <scripts name="data">
@@ -234,7 +231,6 @@
         <object>objects\objUtil</object>
         <object>objects\objTimelineVertical</object>
         <object>objects\objTimelineHorizontal</object>
-        <object>objects\objTypingPrompt</object>
       </objects>
       <objects name="gui">
         <object>objects\objGUI</object>

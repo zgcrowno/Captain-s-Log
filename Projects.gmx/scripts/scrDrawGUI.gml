@@ -1,3 +1,13 @@
+//Draw the HUD
+draw_sprite(sprBlueSky, -1, 0, 0);
+draw_sprite(sprPixelHud, -1, 0, 0);
+            
+//Draw the typing prompt
+draw_sprite(sprTypingPrompt, 
+            -1, 
+            hud.consoleLeftBound + string_width(instance_find(objPlayerShip, 0).input), 
+            hud.consoleLowerBound - string_height("Something"));
+
 //Draw the overall HP bar
 draw_healthbar(hud.powerLeftBound, 
                hud.powerUpperBound, 
@@ -252,12 +262,7 @@ if(player.target != noone) {
     draw_text(hud.targetIntelLeftBound, hud.targetIntelUpperBound + (4 * string_height("Something")), "Temperament: " + player.target.temper);
     draw_text(hud.targetIntelLeftBound, hud.targetIntelUpperBound + (5 * string_height("Something")), "Family: " + player.target.family);
 } else {
-    //Draw the screen static
-    for(j = hud.targetImageLowerBound; j >= hud.targetImageUpperBound; j--) {
-        draw_set_color(choose(c_black, c_white));
-        draw_line(hud.targetImageLeftBound, j, hud.targetImageRightBound, j);
-    }
-    draw_set_color(c_white);
+    //To Do: Display "N/A" or something to that effect
 }
 
 //Draw the gunsPP bar

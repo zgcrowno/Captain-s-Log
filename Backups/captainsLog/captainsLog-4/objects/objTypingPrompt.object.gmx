@@ -2,8 +2,8 @@
 <object>
   <spriteName>sprTypingPrompt</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
-  <depth>-1</depth>
+  <visible>0</visible>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -31,7 +31,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>601</id>
