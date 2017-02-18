@@ -4,13 +4,9 @@ difficultyModifier = 2;
 //The distance by which the background moves when the player ship's thrusters are active
 backgroundMovementDistance = 50;
 
-//The different types of background movement
-backgroundMovementLeft = 0;
-backgroundMovementRight = 1;
-backgroundMovementUp = 2;
-backgroundMovementDown = 3;
-backgroundMovementClockwise = 4;
-backgroundMovementCounterclockwise = 5;
+//The number of pixels beyond the background's play area
+//(this will change if backgroundMovementDistance does)
+backgroundBuffer = 562;
 
 //The damage ships incur while touching static
 staticDamage = 0.1;

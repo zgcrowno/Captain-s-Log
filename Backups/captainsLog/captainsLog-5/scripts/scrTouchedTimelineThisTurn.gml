@@ -1,9 +1,9 @@
 if(!object_is_ancestor(object_index, objProjectile)) {
-    if(timelineHorizontal.y >= y) {
+    if(abs(y - timelineHorizontal.y) <= util.difficultyModifier) {
         return true;
     }
 } else {
-    if(timelineVertical.x >= x) {
+    if(abs(x - timelineVertical.x) <= (2 * util.difficultyModifier)) {
         return true;
     }
 }

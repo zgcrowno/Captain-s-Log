@@ -113,10 +113,11 @@ commandsRightBound = 636;
 commandsUpperBound = 938;
 commandsLowerBound = 1051;
 
+//Let it be known that these values are representative of the radar view--not the port
 radarLeftBound = 0;
-radarRightBound = 548;
+radarRightBound = 550;
 radarUpperBound = 0;
-radarLowerBound = 548;
+radarLowerBound = 550;
 
 targetImageLeftBound = 1282;
 targetImageRightBound = 1461;

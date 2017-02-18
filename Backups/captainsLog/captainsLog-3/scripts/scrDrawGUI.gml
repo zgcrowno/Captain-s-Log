@@ -262,12 +262,7 @@ if(player.target != noone) {
     draw_text(hud.targetIntelLeftBound, hud.targetIntelUpperBound + (4 * string_height("Something")), "Temperament: " + player.target.temper);
     draw_text(hud.targetIntelLeftBound, hud.targetIntelUpperBound + (5 * string_height("Something")), "Family: " + player.target.family);
 } else {
-    //Draw the screen static
-    for(j = hud.targetImageLowerBound; j >= hud.targetImageUpperBound; j--) {
-        draw_set_color(choose(c_black, c_white));
-        draw_line(hud.targetImageLeftBound, j, hud.targetImageRightBound, j);
-    }
-    draw_set_color(c_white);
+    //To Do: Display "N/A" or something to that effect
 }
 
 //Draw the gunsPP bar
@@ -325,9 +320,9 @@ draw_healthbar(hud.passiveLeftBound,
 //Draw lines from enemies to respective designations in commands screen
 if(player.currentState == player.targetState) {
     for(i = 0; i < array_length_1d(player.enemies); i++) {
-        draw_line(player.enemies[i].x, player.enemies[i].y, hud.radarLeftBound, hud.commandsUpperBound + (i * string_height("Commands: ")) + (string_height("Commands: ") / 2));
+        draw_line(player.enemies[i].x + view_xport[1], player.enemies[i].y + view_yport[1], view_xport[1], hud.commandsUpperBound + (i * string_height("Commands: ")) + (string_height("Commands: ") / 2));
         draw_set_color(c_black);
-        draw_line(hud.radarLeftBound, hud.commandsUpperBound + (i * string_height("Commands: ")) + (string_height("Commands: ") / 2), hud.commandsRightBound, hud.commandsUpperBound + (i * string_height("Commands: ")) + (string_height("Commands: ") / 2));
+        draw_line(view_xport[1], hud.commandsUpperBound + (i * string_height("Commands: ")) + (string_height("Commands: ") / 2), hud.commandsRightBound, hud.commandsUpperBound + (i * string_height("Commands: ")) + (string_height("Commands: ") / 2));
         draw_set_color(c_white);
     }
 }
