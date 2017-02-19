@@ -25,7 +25,12 @@
         <sprite>sprites\sprRiceCake</sprite>
       </sprites>
       <sprites name="enemyShip">
-        <sprite>sprites\sprPawn</sprite>
+        <sprites name="radar">
+          <sprite>sprites\sprPawn</sprite>
+        </sprites>
+        <sprites name="background">
+          <sprite>sprites\sprPawnBackground</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="projectile">
@@ -67,6 +72,7 @@
           <script>scripts\scrResetActionMap.gml</script>
           <script>scripts\scrSetTarget.gml</script>
           <script>scripts\scrDeath.gml</script>
+          <script>scripts\scrCanSeeEnemy.gml</script>
         </scripts>
         <scripts name="data">
           <script>scripts\scrShipData.gml</script>

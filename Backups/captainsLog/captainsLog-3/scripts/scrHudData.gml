@@ -173,3 +173,9 @@ targetAQEightLeftBound = 1838;
 targetAQEightRightBound = 1891;
 targetAQEightUpperBound = 1007;
 targetAQEightLowerBound = 658;
+
+//The Y value for every drawn enemy background sprite
+enemyBackgroundSpriteY = 268;
+
+//The line which bisects the gameplay window vertically
+primeMeridian = 960;
