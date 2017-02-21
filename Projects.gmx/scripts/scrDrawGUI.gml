@@ -4,20 +4,41 @@ draw_sprite(sprBlueSky, -1, 0, 0);
 for(i = 0; i < array_length_1d(player.enemies); i++) {
     if(scrCanSeeEnemy(player, player.enemies[i])) {
         distance = point_distance(player.x, player.y, player.enemies[i].x, player.enemies[i].y) / sprite_get_width(sprGridBox);
-        if( player.image_angle % 360 == 0 || player.image_angle % 180 == 0) {
+        //To Do: Adjust "player.enemies[i].image_angle / 90" for enemy movement
+        if(player.image_angle % 360 == 0) {
             draw_sprite_ext(player.enemies[i].backgroundSprite,
-                            -1, 
-                            hud.primeMeridian - ((((player.x - player.enemies[i].x) * view_wview[0]) / (hud.radarRightBound - hud.radarLeftBound)) * (view_wview[0] / hud.radarRightBound - hud.radarLeftBound)), 
+                           (player.enemies[i].image_angle / 90) + (player.image_angle / 90), 
+                            hud.primeMeridian - ((((player.x - player.enemies[i].x) * view_wview[0]) / (hud.radarRightBound - hud.radarLeftBound)) * (view_wview[0] / (hud.radarRightBound - hud.radarLeftBound))), 
                             hud.enemyBackgroundSpriteY, 
                             distance / sqr(distance), 
                             distance / sqr(distance), 
                             0, 
                             c_white, 
                             1);
-         } else {
+         } else if(player.image_angle % 270 == 0) {
             draw_sprite_ext(player.enemies[i].backgroundSprite,
-                            -1, 
-                            hud.primeMeridian + ((((player.y - player.enemies[i].y) * view_wview[0]) / (hud.radarRightBound - hud.radarLeftBound)) * (view_wview[0] / hud.radarRightBound - hud.radarLeftBound)), 
+                           (player.enemies[i].image_angle / 90) + (player.image_angle / 90), 
+                            hud.primeMeridian - ((((player.y - player.enemies[i].y) * view_wview[0]) / (hud.radarRightBound - hud.radarLeftBound)) * (view_wview[0] / (hud.radarRightBound - hud.radarLeftBound))), 
+                            hud.enemyBackgroundSpriteY, 
+                            distance / sqr(distance), 
+                            distance / sqr(distance), 
+                            0, 
+                            c_white, 
+                            1);
+         } else if(player.image_angle % 180 == 0) {
+            draw_sprite_ext(player.enemies[i].backgroundSprite,
+                           (player.enemies[i].image_angle / 90) + (player.image_angle / 90), 
+                            hud.primeMeridian + ((((player.x - player.enemies[i].x) * view_wview[0]) / (hud.radarRightBound - hud.radarLeftBound)) * (view_wview[0] / (hud.radarRightBound - hud.radarLeftBound))), 
+                            hud.enemyBackgroundSpriteY, 
+                            distance / sqr(distance), 
+                            distance / sqr(distance), 
+                            0, 
+                            c_white, 
+                            1);
+         } else if(player.image_angle % 90 == 0) {
+            draw_sprite_ext(player.enemies[i].backgroundSprite,
+                           (player.enemies[i].image_angle / 90) + (player.image_angle / 90), 
+                            hud.primeMeridian + ((((player.y - player.enemies[i].y) * view_wview[0]) / (hud.radarRightBound - hud.radarLeftBound)) * (view_wview[0] / (hud.radarRightBound - hud.radarLeftBound))), 
                             hud.enemyBackgroundSpriteY, 
                             distance / sqr(distance), 
                             distance / sqr(distance), 

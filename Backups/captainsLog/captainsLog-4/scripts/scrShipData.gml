@@ -7,6 +7,9 @@ util = instance_find(objUtil, 0);
 //The ship's current target
 target = noone;
 
+//The ship's background sprite
+backgroundSprite = noone;
+
 //A collection of all the enemies in the room
 enemies = script_execute(scrGetEnemies);
 
