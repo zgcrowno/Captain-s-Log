@@ -179,3 +179,6 @@ enemyBackgroundSpriteY = 268;
 
 //The line which bisects the gameplay window vertically
 primeMeridian = 960;
+
+//The line which bisects the gameplay window horizontally
+equator = 488;

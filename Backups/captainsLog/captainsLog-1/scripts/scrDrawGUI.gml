@@ -1,12 +1,38 @@
-//Draw the skybox, enemy background sprites and HUD
+//Draw the skybox, enemy background sprites, projectile background sprites and HUD
 draw_sprite(sprBlueSky, -1, 0, 0);
 
 for(i = 0; i < array_length_1d(player.enemies); i++) {
-    if(scrCanSeeEnemy(player, player.enemies[i])) {
+    if(scrCanSeeObject(player, player.enemies[i])) {
         distance = point_distance(player.x, player.y, player.enemies[i].x, player.enemies[i].y) / sprite_get_width(sprGridBox);
+        numSubImages = 4;
+        subImage = 0;
         if(player.image_angle % 360 == 0) {
+            if(player.enemies[i].image_angle % 360 == 0) {
+                subImage = player.image_angle / 90;
+            } else if(player.enemies[i].image_angle % 270 == 0) {
+                subImage = player.image_angle + 1
+                if(subImage == 4) {
+                    subImage = 0;
+                }
+            } else if(player.enemies[i].image_angle % 180 == 0) {
+                subImage = player.image_angle + 2;
+                if(subImage == 4) {
+                    subImage = 0;
+                } else if(subImage == 5) {
+                    subImage = 1;
+                }
+            } else {
+                subImage = player.image_angle + 3;
+                if(subImage == 4) {
+                    subImage = 0;
+                } else if(subImage == 5) {
+                    subImage = 1
+                } else if(subImage == 6) {
+                    subImage = 2;
+                }
+            }
             draw_sprite_ext(player.enemies[i].backgroundSprite,
-                            player.enemies[i].image_angle + (player.image_angle / 90), 
+                            subImage, 
                             hud.primeMeridian - ((((player.x - player.enemies[i].x) * view_wview[0]) / (hud.radarRightBound - hud.radarLeftBound)) * (view_wview[0] / (hud.radarRightBound - hud.radarLeftBound))), 
                             hud.enemyBackgroundSpriteY, 
                             distance / sqr(distance), 
@@ -15,8 +41,32 @@ for(i = 0; i < array_length_1d(player.enemies); i++) {
                             c_white, 
                             1);
          } else if(player.image_angle % 270 == 0) {
+            if(player.enemies[i].image_angle % 360 == 0) {
+                subImage = player.image_angle / 90;
+            } else if(player.enemies[i].image_angle % 270 == 0) {
+                subImage = player.image_angle + 1
+                if(subImage == 4) {
+                    subImage = 0;
+                }
+            } else if(player.enemies[i].image_angle % 180 == 0) {
+                subImage = player.image_angle + 2;
+                if(subImage == 4) {
+                    subImage = 0;
+                } else if(subImage == 5) {
+                    subImage = 1;
+                }
+            } else {
+                subImage = player.image_angle + 3;
+                if(subImage == 4) {
+                    subImage = 0;
+                } else if(subImage == 5) {
+                    subImage = 1
+                } else if(subImage == 6) {
+                    subImage = 2;
+                }
+            }
             draw_sprite_ext(player.enemies[i].backgroundSprite,
-                            player.enemies[i].image_angle + (player.image_angle / 90), 
+                            subImage, 
                             hud.primeMeridian - ((((player.y - player.enemies[i].y) * view_wview[0]) / (hud.radarRightBound - hud.radarLeftBound)) * (view_wview[0] / (hud.radarRightBound - hud.radarLeftBound))), 
                             hud.enemyBackgroundSpriteY, 
                             distance / sqr(distance), 
@@ -25,8 +75,32 @@ for(i = 0; i < array_length_1d(player.enemies); i++) {
                             c_white, 
                             1);
          } else if(player.image_angle % 180 == 0) {
+            if(player.enemies[i].image_angle % 360 == 0) {
+                subImage = player.image_angle / 90;
+            } else if(player.enemies[i].image_angle % 270 == 0) {
+                subImage = player.image_angle + 1
+                if(subImage == 4) {
+                    subImage = 0;
+                }
+            } else if(player.enemies[i].image_angle % 180 == 0) {
+                subImage = player.image_angle + 2;
+                if(subImage == 4) {
+                    subImage = 0;
+                } else if(subImage == 5) {
+                    subImage = 1;
+                }
+            } else {
+                subImage = player.image_angle + 3;
+                if(subImage == 4) {
+                    subImage = 0;
+                } else if(subImage == 5) {
+                    subImage = 1
+                } else if(subImage == 6) {
+                    subImage = 2;
+                }
+            }
             draw_sprite_ext(player.enemies[i].backgroundSprite,
-                            player.enemies[i].image_angle + (player.image_angle / 90), 
+                            subImage, 
                             hud.primeMeridian + ((((player.x - player.enemies[i].x) * view_wview[0]) / (hud.radarRightBound - hud.radarLeftBound)) * (view_wview[0] / (hud.radarRightBound - hud.radarLeftBound))), 
                             hud.enemyBackgroundSpriteY, 
                             distance / sqr(distance), 
@@ -35,9 +109,180 @@ for(i = 0; i < array_length_1d(player.enemies); i++) {
                             c_white, 
                             1);
          } else if(player.image_angle % 90 == 0) {
+            if(player.enemies[i].image_angle % 360 == 0) {
+                subImage = player.image_angle / 90;
+            } else if(player.enemies[i].image_angle % 270 == 0) {
+                subImage = player.image_angle + 1
+                if(subImage == 4) {
+                    subImage = 0;
+                }
+            } else if(player.enemies[i].image_angle % 180 == 0) {
+                subImage = player.image_angle + 2;
+                if(subImage == 4) {
+                    subImage = 0;
+                } else if(subImage == 5) {
+                    subImage = 1;
+                }
+            } else {
+                subImage = player.image_angle + 3;
+                if(subImage == 4) {
+                    subImage = 0;
+                } else if(subImage == 5) {
+                    subImage = 1
+                } else if(subImage == 6) {
+                    subImage = 2;
+                }
+            }
             draw_sprite_ext(player.enemies[i].backgroundSprite,
-                            player.enemies[i].image_angle + (player.image_angle / 90), 
-                            hud.primeMeridian - ((((player.y - player.enemies[i].y) * view_wview[0]) / (hud.radarRightBound - hud.radarLeftBound)) * (view_wview[0] / (hud.radarRightBound - hud.radarLeftBound))), 
+                            subImage, 
+                            hud.primeMeridian + ((((player.y - player.enemies[i].y) * view_wview[0]) / (hud.radarRightBound - hud.radarLeftBound)) * (view_wview[0] / (hud.radarRightBound - hud.radarLeftBound))), 
+                            hud.enemyBackgroundSpriteY, 
+                            distance / sqr(distance), 
+                            distance / sqr(distance), 
+                            0, 
+                            c_white, 
+                            1);
+         }
+    }
+}
+
+projectiles = scrGetProjectiles();
+
+for(i = 0; i < array_length_1d(projectiles); i++) {
+    if(scrCanSeeObject(player, projectiles[i])) {
+        distance = point_distance(player.x, player.y, projectiles[i].x, projectiles[i].y) / sprite_get_width(sprGridBox);
+        numSubImages = 4;
+        subImage = 0;
+        if(player.image_angle % 360 == 0) {
+            if(projectiles[i].image_angle % 360 == 0) {
+                subImage = player.image_angle / 90;
+            } else if(projectiles[i].image_angle % 270 == 0) {
+                subImage = player.image_angle + 1
+                if(subImage == 4) {
+                    subImage = 0;
+                }
+            } else if(projectiles[i].image_angle % 180 == 0) {
+                subImage = player.image_angle + 2;
+                if(subImage == 4) {
+                    subImage = 0;
+                } else if(subImage == 5) {
+                    subImage = 1;
+                }
+            } else {
+                subImage = player.image_angle + 3;
+                if(subImage == 4) {
+                    subImage = 0;
+                } else if(subImage == 5) {
+                    subImage = 1
+                } else if(subImage == 6) {
+                    subImage = 2;
+                }
+            }
+            draw_sprite_ext(projectiles[i].backgroundSprite,
+                            subImage, 
+                            hud.primeMeridian - ((((player.x - projectiles[i].x) * view_wview[0]) / (hud.radarRightBound - hud.radarLeftBound)) * (view_wview[0] / (hud.radarRightBound - hud.radarLeftBound))), 
+                            hud.enemyBackgroundSpriteY, 
+                            distance / sqr(distance), 
+                            distance / sqr(distance), 
+                            0, 
+                            c_white, 
+                            1);
+         } else if(player.image_angle % 270 == 0) {
+            if(projectiles[i].image_angle % 360 == 0) {
+                subImage = player.image_angle / 90;
+            } else if(projectiles[i].image_angle % 270 == 0) {
+                subImage = player.image_angle + 1
+                if(subImage == 4) {
+                    subImage = 0;
+                }
+            } else if(projectiles[i].image_angle % 180 == 0) {
+                subImage = player.image_angle + 2;
+                if(subImage == 4) {
+                    subImage = 0;
+                } else if(subImage == 5) {
+                    subImage = 1;
+                }
+            } else {
+                subImage = player.image_angle + 3;
+                if(subImage == 4) {
+                    subImage = 0;
+                } else if(subImage == 5) {
+                    subImage = 1
+                } else if(subImage == 6) {
+                    subImage = 2;
+                }
+            }
+            draw_sprite_ext(projectiles[i].backgroundSprite,
+                            subImage, 
+                            hud.primeMeridian - ((((player.y - projectiles[i].y) * view_wview[0]) / (hud.radarRightBound - hud.radarLeftBound)) * (view_wview[0] / (hud.radarRightBound - hud.radarLeftBound))), 
+                            hud.enemyBackgroundSpriteY, 
+                            distance / sqr(distance), 
+                            distance / sqr(distance), 
+                            0, 
+                            c_white, 
+                            1);
+         } else if(player.image_angle % 180 == 0) {
+            if(projectiles[i].image_angle % 360 == 0) {
+                subImage = player.image_angle / 90;
+            } else if(projectiles[i].image_angle % 270 == 0) {
+                subImage = player.image_angle + 1
+                if(subImage == 4) {
+                    subImage = 0;
+                }
+            } else if(projectiles[i].image_angle % 180 == 0) {
+                subImage = player.image_angle + 2;
+                if(subImage == 4) {
+                    subImage = 0;
+                } else if(subImage == 5) {
+                    subImage = 1;
+                }
+            } else {
+                subImage = player.image_angle + 3;
+                if(subImage == 4) {
+                    subImage = 0;
+                } else if(subImage == 5) {
+                    subImage = 1
+                } else if(subImage == 6) {
+                    subImage = 2;
+                }
+            }
+            draw_sprite_ext(projectiles[i].backgroundSprite,
+                            subImage, 
+                            hud.primeMeridian + ((((player.x - projectiles[i].x) * view_wview[0]) / (hud.radarRightBound - hud.radarLeftBound)) * (view_wview[0] / (hud.radarRightBound - hud.radarLeftBound))), 
+                            hud.enemyBackgroundSpriteY, 
+                            distance / sqr(distance), 
+                            distance / sqr(distance), 
+                            0, 
+                            c_white, 
+                            1);
+         } else if(player.image_angle % 90 == 0) {
+            if(projectiles[i].image_angle % 360 == 0) {
+                subImage = player.image_angle / 90;
+            } else if(projectiles[i].image_angle % 270 == 0) {
+                subImage = player.image_angle + 1
+                if(subImage == 4) {
+                    subImage = 0;
+                }
+            } else if(projectiles[i].image_angle % 180 == 0) {
+                subImage = player.image_angle + 2;
+                if(subImage == 4) {
+                    subImage = 0;
+                } else if(subImage == 5) {
+                    subImage = 1;
+                }
+            } else {
+                subImage = player.image_angle + 3;
+                if(subImage == 4) {
+                    subImage = 0;
+                } else if(subImage == 5) {
+                    subImage = 1
+                } else if(subImage == 6) {
+                    subImage = 2;
+                }
+            }
+            draw_sprite_ext(projectiles[i].backgroundSprite,
+                            subImage, 
+                            hud.primeMeridian + ((((player.y - projectiles[i].y) * view_wview[0]) / (hud.radarRightBound - hud.radarLeftBound)) * (view_wview[0] / (hud.radarRightBound - hud.radarLeftBound))), 
                             hud.enemyBackgroundSpriteY, 
                             distance / sqr(distance), 
                             distance / sqr(distance), 

@@ -35,8 +35,13 @@
     </sprites>
     <sprites name="projectile">
       <sprites name="bullet">
-        <sprite>sprites\sprPlayerBullet</sprite>
-        <sprite>sprites\sprPlayerBulletContact</sprite>
+        <sprites name="radar">
+          <sprite>sprites\sprPlayerBulletContact</sprite>
+          <sprite>sprites\sprPlayerBullet</sprite>
+        </sprites>
+        <sprites name="background">
+          <sprite>sprites\sprBulletBackground</sprite>
+        </sprites>
       </sprites>
       <sprites name="active">
         <sprite>sprites\sprRiceCakeActive</sprite>
@@ -72,7 +77,8 @@
           <script>scripts\scrResetActionMap.gml</script>
           <script>scripts\scrSetTarget.gml</script>
           <script>scripts\scrDeath.gml</script>
-          <script>scripts\scrCanSeeEnemy.gml</script>
+          <script>scripts\scrCanSeeObject.gml</script>
+          <script>scripts\scrGetProjectiles.gml</script>
         </scripts>
         <scripts name="data">
           <script>scripts\scrShipData.gml</script>
