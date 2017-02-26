@@ -11,6 +11,9 @@ backgroundBuffer = 562;
 //The damage ships incur while touching static
 staticDamage = 0.1;
 
+//A collection of all the enemies in the room
+enemies = noone;
+
 //Minimum and maximum ages for captain's
 minimumAge = 16;
 maximumAge = 66;

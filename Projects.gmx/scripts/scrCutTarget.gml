@@ -1,4 +1,4 @@
-script_execute(scrSetState, initState);
+scrSetState(initState);
 if(actionMap[? util.actionMapTargetString] != noone) {
     actionMap[? util.actionMapTargetString] = noone;
 }

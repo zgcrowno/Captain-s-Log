@@ -1,4 +1,4 @@
-gridBoxes = script_execute(scrGetGridBoxes);
+gridBoxes = scrGetGridBoxes();
 
 for(i = 0; i < array_length_1d(gridBoxes); i++) {
     if(point_distance(argument0, argument1, gridBoxes[i].x, gridBoxes[i].y) < 100) {

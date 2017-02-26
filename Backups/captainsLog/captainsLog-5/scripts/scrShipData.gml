@@ -10,12 +10,6 @@ target = noone;
 //The ship's background sprite
 backgroundSprite = noone;
 
-//A collection of all the enemies in the room
-enemies = script_execute(scrGetEnemies);
-
-//The maximum length of all enemies' designations
-maxEnemiesDesignationLength = 0;
-
 //Value used in determining where to spawn cannonBullet or cannonLaser
 cannonOffset = 0;
 
@@ -140,13 +134,6 @@ percentPPPassive = 0;
 
 //String representing user input
 input = "";
-
-//Text
-thrustersText = "thrusters";
-shieldsText = "shields";
-gunsText = "guns";
-cannonText = "cannon";
-cutText = "cut";
 
 //Ship-specific data
 //Ricecake

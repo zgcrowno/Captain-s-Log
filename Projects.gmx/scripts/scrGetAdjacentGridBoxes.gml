@@ -1,5 +1,5 @@
 util = instance_find(objUtil, 0);
-gridBoxes = script_execute(scrGetGridBoxes);
+gridBoxes = scrGetGridBoxes();
 adjacentGridBoxes = noone;
 adjacentGridBoxesIndex = 0;
 shipSpriteOffset = 0;
@@ -11,11 +11,7 @@ if(image_angle % 360 == 0 || image_angle % 360 == 180) {
 }
 
 for(i = 0; i < array_length_1d(gridBoxes); i++) {
-    if(gridBoxes[i].y > y - (sprite_get_width(sprGridBox) * 2) - shipSpriteOffset
-       && gridBoxes[i].y < y + sprite_get_width(sprGridBox) + shipSpriteOffset
-       && gridBoxes[i].x > x - (sprite_get_width(sprGridBox) * 2) - shipSpriteOffset
-       && gridBoxes[i].x < x + sprite_get_width(sprGridBox) + shipSpriteOffset
-       && !place_meeting(x, y, gridBoxes[i])) {
+    if(scrGridBoxIsAdjacent(gridBoxes[i])) {
         adjacentGridBoxes[adjacentGridBoxesIndex] = gridBoxes[i];
         adjacentGridBoxesIndex++;
     }

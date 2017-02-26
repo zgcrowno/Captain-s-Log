@@ -7,4 +7,4 @@ if(!(requiredPPThrustersRotate > currentPP) && !(actionMap[? util.actionMapThrus
 } else {
     //To Do: Error to user about lack of power...
 }
-script_execute(scrSetState, initState);
+scrSetState(initState);

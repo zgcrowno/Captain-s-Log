@@ -1,43 +1,43 @@
 if(currentState == initState) {
     if(input == "thrusters") {
-        script_execute(scrSetState, thrusterState);
+        scrSetState(thrusterState);
     } else if(input == "shields") {
-        script_execute(scrSetState, shieldState);
+        scrSetState(shieldState);
     } else if(input == "target") {
-        script_execute(scrSetState, targetState);
+        scrSetState(targetState);
     } else if(input == "guns") {
-        script_execute(scrSetState, gunState);
+        scrSetState(gunState);
     } else if(input == "cannon") {
-        script_execute(scrSetState, cannonState);
+        scrSetState(cannonState);
     } else if(input == "cut") {
-        script_execute(scrSetState, cutState);
+        scrSetState(cutState);
     }
 } else if(currentState == thrusterState) {
     if(input == "port") {
-        script_execute(scrSetState, thrusterPortState);
+        scrSetState(thrusterPortState);
     } else if(input == "starboard") {
-        script_execute(scrSetState, thrusterStarboardState);
+        scrSetState(thrusterStarboardState);
     } else if(input == "bow") {
-        script_execute(scrSetState, thrusterBowState);
+        scrSetState(thrusterBowState);
     } else if(input == "stern") {
-        script_execute(scrSetState, thrusterSternState);
+        scrSetState(thrusterSternState);
     } else if(input == "rotate") {
-        script_execute(scrSetState, thrusterRotateState);
+        scrSetState(thrusterRotateState);
     }
 } else if(currentState == thrusterRotateState) {
     if(input == "clock") {
-        script_execute(scrSetState, thrusterRotateDegreesClockwiseState);
+        scrSetState(thrusterRotateDegreesClockwiseState);
     } else if(input == "count") {
-        script_execute(scrSetState, thrusterRotateDegreesCounterclockwiseState);
+        scrSetState(thrusterRotateDegreesCounterclockwiseState);
     }
 } else if(currentState == cutState) {
     if(input == "thrusters") {
-        script_execute(scrSetState, cutThrustersState);
+        scrSetState(cutThrustersState);
     } else if(input == "shields") {
-        script_execute(scrSetState, cutShieldsState);
+        scrSetState(cutShieldsState);
     }
 } else if(currentState == cutThrustersState) {
     if(input == "rotate") {
-        script_execute(scrSetState, cutThrustersRotateState);
+        scrSetState(cutThrustersRotateState);
     }
 }
