@@ -1,7 +1,7 @@
-gridBox = argument0;
+gb = argument0;
 
-return gridBox.y > y - (sprite_get_width(sprGridBox) * 2) - shipSpriteOffset
-       && gridBox.y < y + sprite_get_width(sprGridBox) + shipSpriteOffset
-       && gridBox.x > x - (sprite_get_width(sprGridBox) * 2) - shipSpriteOffset
-       && gridBox.x < x + sprite_get_width(sprGridBox) + shipSpriteOffset
-       && !place_meeting(x, y, gridBox);
+return gb.y > y - (sprite_get_width(sprGridBox) * 2) - shipSpriteOffset
+       && gb.y < y + sprite_get_width(sprGridBox) + shipSpriteOffset
+       && gb.x > x - (sprite_get_width(sprGridBox) * 2) - shipSpriteOffset
+       && gb.x < x + sprite_get_width(sprGridBox) + shipSpriteOffset
+       && !place_meeting(x, y, gb);

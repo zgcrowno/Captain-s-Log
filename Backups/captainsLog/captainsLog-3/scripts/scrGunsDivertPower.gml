@@ -4,4 +4,4 @@ if(requiredPPGuns <= currentPP) {
 } else {
     //To Do: Error to user about lack of power...
 }
-script_execute(scrSetState, initState);
+scrSetState(initState);

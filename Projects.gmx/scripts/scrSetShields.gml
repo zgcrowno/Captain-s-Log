@@ -7,72 +7,72 @@ sternShieldsIndex = 0;
 //Set the shield blocks
 for(i = 0; i < array_length_1d(adjacentGridBoxes); i++) {
     if(image_angle % 360 == 0) {
-        if(adjacentGridBoxes[i].y < (y - (sprite_height / 2) - sprite_get_width(sprGridBox))) {
+        if(scrIsAbove(adjacentGridBoxes[i])) {
             bowShields[bowShieldsIndex] = adjacentGridBoxes[i];
             bowShieldsIndex++;
         } 
-        if(adjacentGridBoxes[i].y > y) {
+        if(scrIsBelow(adjacentGridBoxes[i])) {
             sternShields[sternShieldsIndex] = adjacentGridBoxes[i];
             sternShieldsIndex++;
         } 
-        if(adjacentGridBoxes[i].x < (x - (sprite_width / 2) - sprite_get_width(sprGridBox))) {
+        if(scrIsLeft(adjacentGridBoxes[i])) {
             portShields[portShieldsIndex] = adjacentGridBoxes[i];
             portShieldsIndex++;
         }
-        if(adjacentGridBoxes[i].x > x) {
+        if(scrIsRight(adjacentGridBoxes[i])) {
             starboardShields[starboardShieldsIndex] = adjacentGridBoxes[i];
             starboardShieldsIndex++;
         }
-    } else if(abs(image_angle % 360) == 90) {
-        if(adjacentGridBoxes[i].y < (y - (sprite_height / 2) - sprite_get_width(sprGridBox))) {
+    } else if(image_angle % 270 == 0) {
+        if(scrIsAbove(adjacentGridBoxes[i])) {
             portShields[portShieldsIndex] = adjacentGridBoxes[i];
             portShieldsIndex++;
         } 
-        if(adjacentGridBoxes[i].y > y) {
+        if(scrIsBelow(adjacentGridBoxes[i])) {
             starboardShields[starboardShieldsIndex] = adjacentGridBoxes[i];
             starboardShieldsIndex++;
         } 
-        if(adjacentGridBoxes[i].x < (x - (sprite_width / 2) - sprite_get_width(sprGridBox))) {
+        if(scrIsLeft(adjacentGridBoxes[i])) {
             sternShields[sternShieldsIndex] = adjacentGridBoxes[i];
             sternShieldsIndex++;
         }
-        if(adjacentGridBoxes[i].x > x) {
+        if(scrIsRight(adjacentGridBoxes[i])) {
             bowShields[bowShieldsIndex] = adjacentGridBoxes[i];
             bowShieldsIndex++;
         }
-    } else if(abs(image_angle % 360) == 180) {
-        if(adjacentGridBoxes[i].y < (y - (sprite_height / 2) - sprite_get_width(sprGridBox))) {
+    } else if(image_angle % 180 == 0) {
+        if(scrIsAbove(adjacentGridBoxes[i])) {
             sternShields[sternShieldsIndex] = adjacentGridBoxes[i];
             sternShieldsIndex++;
         }
-        if(adjacentGridBoxes[i].y > y) {
+        if(scrIsBelow(adjacentGridBoxes[i])) {
             bowShields[bowShieldsIndex] = adjacentGridBoxes[i];
             bowShieldsIndex++;
         } 
-        if(adjacentGridBoxes[i].x < (x - (sprite_width / 2) - sprite_get_width(sprGridBox))) {
+        if(scrIsLeft(adjacentGridBoxes[i])) {
             starboardShields[starboardShieldsIndex] = adjacentGridBoxes[i];
             starboardShieldsIndex++;
         }
-        if(adjacentGridBoxes[i].x > x) {
+        if(scrIsRight(adjacentGridBoxes[i])) {
             portShields[portShieldsIndex] = adjacentGridBoxes[i];
             portShieldsIndex++;
         }
-    } else if(abs(image_angle % 360) == 270) {
-        if(adjacentGridBoxes[i].y < (y - (sprite_height / 2) - sprite_get_width(sprGridBox))) {
+    } else if(image_angle % 90 == 0) {
+        if(scrIsAbove(adjacentGridBoxes[i])) {
             starboardShields[starboardShieldsIndex] = adjacentGridBoxes[i];
             starboardShieldsIndex++;
             portShields[portShieldsIndex] = adjacentGridBoxes[i];
             portShieldsIndex++;
         }
-        if(adjacentGridBoxes[i].y > y) {
+        if(scrIsBelow(adjacentGridBoxes[i])) {
             portShields[portShieldsIndex] = adjacentGridBoxes[i];
             portShieldsIndex++;
         } 
-        if(adjacentGridBoxes[i].x < (x - (sprite_width / 2) - sprite_get_width(sprGridBox))) {
+        if(scrIsLeft(adjacentGridBoxes[i])) {
             bowShields[bowShieldsIndex] = adjacentGridBoxes[i];
             bowShieldsIndex++;
         }
-        if(adjacentGridBoxes[i].x > x) {
+        if(scrIsRight(adjacentGridBoxes[i])) {
             sternShields[sternShieldsIndex] = adjacentGridBoxes[i];
             sternShieldsIndex++;
         }

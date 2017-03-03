@@ -1,1 +1,1 @@
-util.enemies = script_execute(scrGetEnemies);
+util.enemies = scrGetEnemies();

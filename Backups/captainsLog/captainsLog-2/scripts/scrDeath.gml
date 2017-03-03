@@ -4,6 +4,6 @@ if(currentHP <= 0) {
     }
     instance_destroy();
     if(object_is_ancestor(object_index, objEnemyShip)) {
-        util.enemies = script_execute(scrGetEnemies);
+        util.enemies = scrGetEnemies();
     }
 }

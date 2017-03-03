@@ -61,163 +61,58 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="object">
+    <scripts name="gui">
+      <scripts name="data">
+        <script>scripts\scrGUIData.gml</script>
+      </scripts>
+      <scripts name="draw">
+        <script>scripts\scrCreateGridBoxes.gml</script>
+        <script>scripts\scrDrawActionQueue.gml</script>
+        <script>scripts\scrDrawBackgroundObjects.gml</script>
+        <script>scripts\scrDrawCommandPrompts.gml</script>
+        <script>scripts\scrDrawGUI.gml</script>
+        <script>scripts\scrDrawInput.gml</script>
+        <script>scripts\scrDrawPercentageInfo.gml</script>
+        <script>scripts\scrDrawTargetInfo.gml</script>
+        <script>scripts\scrDrawTargetLines.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="hud">
+      <scripts name="data">
+        <script>scripts\scrHudData.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="movement">
+      <scripts name="projectile">
+        <script>scripts\scrBulletMovement.gml</script>
+        <script>scripts\scrCannonBulletMovement.gml</script>
+      </scripts>
+      <script>scripts\scrMovement.gml</script>
       <scripts name="ship">
-        <scripts name="management">
-          <script>scripts\scrStateManagement.gml</script>
-          <script>scripts\scrShieldManagement.gml</script>
-          <script>scripts\scrPPManagement.gml</script>
-        </scripts>
-        <scripts name="util">
-          <script>scripts\scrGetEnemies.gml</script>
-          <script>scripts\scrSetShields.gml</script>
-          <script>scripts\scrGetGridBoxes.gml</script>
-          <script>scripts\scrGetAdjacentGridBoxes.gml</script>
-          <script>scripts\scrResetNonShield.gml</script>
-          <script>scripts\scrResetActionMap.gml</script>
-          <script>scripts\scrSetTarget.gml</script>
-          <script>scripts\scrDeath.gml</script>
-          <script>scripts\scrCanSeeObject.gml</script>
-          <script>scripts\scrGetProjectiles.gml</script>
-          <script>scripts\scrGridBoxIsAdjacent.gml</script>
-        </scripts>
-        <scripts name="data">
-          <script>scripts\scrShipData.gml</script>
-        </scripts>
-        <scripts name="ricecake">
-          <scripts name="data">
-            <script>scripts\scrRicecakeData.gml</script>
-          </scripts>
-        </scripts>
-        <scripts name="input">
-          <script>scripts\scrInput.gml</script>
-        </scripts>
-        <scripts name="guns">
-          <script>scripts\scrGunsFire.gml</script>
-          <script>scripts\scrGunsDivertPower.gml</script>
-        </scripts>
-        <scripts name="enemyShip">
-          <scripts name="util">
-            <script>scripts\scrSetDesignation.gml</script>
-          </scripts>
-          <scripts name="data">
-            <script>scripts\scrEnemyShipData.gml</script>
-            <scripts name="pawn">
-              <script>scripts\scrPawnData.gml</script>
-            </scripts>
-          </scripts>
-        </scripts>
-        <scripts name="active">
-          <script>scripts\scrActiveDivertPower.gml</script>
-          <script>scripts\scrActiveFire.gml</script>
-          <scripts name="riceCake">
-            <script>scripts\scrRiceCakeActiveBehavior.gml</script>
-          </scripts>
-        </scripts>
-        <scripts name="passive">
-          <script>scripts\scrPassiveDivertPower.gml</script>
-          <script>scripts\scrPassiveFire.gml</script>
-        </scripts>
-        <scripts name="cannon">
-          <script>scripts\scrCannonDivertPower.gml</script>
-          <script>scripts\scrCannonFire.gml</script>
-          <scripts name="riceCake">
-            <script>scripts\scrRiceCakeCannon.gml</script>
-          </scripts>
-        </scripts>
-        <scripts name="cut">
-          <scripts name="shields">
-            <script>scripts\scrCutShieldsPort.gml</script>
-            <script>scripts\scrCutShieldsStarboard.gml</script>
-            <script>scripts\scrCutShieldsBow.gml</script>
-            <script>scripts\scrCutShieldsStern.gml</script>
-            <script>scripts\scrCutShieldsAll.gml</script>
-          </scripts>
-          <scripts name="thrusters">
-            <script>scripts\scrCutThrustersPort.gml</script>
-            <script>scripts\scrCutThrustersStarboard.gml</script>
-            <script>scripts\scrCutThrustersBow.gml</script>
-            <script>scripts\scrCutThrustersStern.gml</script>
-            <script>scripts\scrCutThrustersRotateClockwise.gml</script>
-            <script>scripts\scrCutThrustersRotateCounterclockwise.gml</script>
-            <script>scripts\scrCutThrustersAll.gml</script>
-            <script>scripts\scrCutThrustersRotateAll.gml</script>
-          </scripts>
-          <scripts name="guns">
-            <script>scripts\scrCutGuns.gml</script>
-          </scripts>
-          <scripts name="cannon">
-            <script>scripts\scrCutCannon.gml</script>
-          </scripts>
-          <scripts name="all">
-            <script>scripts\scrCutAll.gml</script>
-          </scripts>
-          <scripts name="active">
-            <script>scripts\scrCutActive.gml</script>
-          </scripts>
-          <scripts name="passive">
-            <script>scripts\scrCutPassive.gml</script>
-          </scripts>
-          <scripts name="target">
-            <script>scripts\scrCutTarget.gml</script>
-          </scripts>
-        </scripts>
-        <scripts name="shields">
-          <script>scripts\scrShieldsPort.gml</script>
-          <script>scripts\scrShieldsStarboard.gml</script>
-          <script>scripts\scrShieldsBow.gml</script>
-          <script>scripts\scrShieldsStern.gml</script>
-          <script>scripts\scrShieldsAll.gml</script>
-        </scripts>
-        <scripts name="thrusters">
-          <script>scripts\scrThrustersPort.gml</script>
-          <script>scripts\scrThrustersStarboard.gml</script>
-          <script>scripts\scrThrustersBow.gml</script>
-          <script>scripts\scrThrustersStern.gml</script>
-          <script>scripts\scrThrustersRotateClockwise.gml</script>
-          <script>scripts\scrThrustersRotateCounterclockwise.gml</script>
-        </scripts>
+        <script>scripts\scrShipBowMovement.gml</script>
+        <script>scripts\scrShipClockMovement.gml</script>
+        <script>scripts\scrShipCountMovement.gml</script>
+        <script>scripts\scrShipMovement.gml</script>
+        <script>scripts\scrShipPortMovement.gml</script>
+        <script>scripts\scrShipStarboardMovement.gml</script>
+        <script>scripts\scrShipSternMovement.gml</script>
       </scripts>
       <scripts name="timeline">
-        <scripts name="data">
-          <script>scripts\scrTimelineData.gml</script>
-        </scripts>
+        <script>scripts\scrTimelineHorizontalMovement.gml</script>
+        <script>scripts\scrTimelineVerticalMovement.gml</script>
       </scripts>
-      <scripts name="hud">
-        <scripts name="data">
-          <script>scripts\scrHudData.gml</script>
-        </scripts>
-      </scripts>
-      <scripts name="util">
-        <scripts name="data">
-          <script>scripts\scrUtilData.gml</script>
-        </scripts>
-        <script>scripts\scrTimelineActions.gml</script>
-        <script>scripts\scrEventInherited.gml</script>
-        <script>scripts\scrTouchedTimelineThisTurn.gml</script>
-        <script>scripts\scrResetTouchedTimeline.gml</script>
-        <script>scripts\scrRandomizeSeed.gml</script>
-        <script>scripts\scrDealStaticDamage.gml</script>
-        <script>scripts\scrSetState.gml</script>
-        <script>scripts\scrSetEnemies.gml</script>
-      </scripts>
+    </scripts>
+    <scripts name="object">
       <scripts name="data">
         <script>scripts\scrObjectData.gml</script>
-      </scripts>
-      <scripts name="gui">
-        <scripts name="data">
-          <script>scripts\scrGUIData.gml</script>
-        </scripts>
-        <scripts name="draw">
-          <script>scripts\scrDrawGUI.gml</script>
-          <script>scripts\scrDrawInput.gml</script>
-          <script>scripts\scrCreateGridBoxes.gml</script>
-        </scripts>
       </scripts>
       <scripts name="projectile">
         <scripts name="bullet">
           <scripts name="data">
             <script>scripts\scrBulletData.gml</script>
+          </scripts>
+          <scripts name="util">
+            <script>scripts\scrBulletTimelineActions.gml</script>
           </scripts>
         </scripts>
         <scripts name="cannonBullet">
@@ -227,12 +122,152 @@
         </scripts>
         <scripts name="util">
           <script>scripts\scrDestroyOutOfBounds.gml</script>
+          <script>scripts\scrPlayerBulletShipInteraction.gml</script>
+          <script>scripts\scrPlayerCannonBulletShipInteraction.gml</script>
           <script>scripts\scrShipInteraction.gml</script>
         </scripts>
       </scripts>
-      <scripts name="movement">
-        <script>scripts\scrMovement.gml</script>
+      <scripts name="ship">
+        <scripts name="active">
+          <scripts name="riceCake">
+            <script>scripts\scrRiceCakeActiveBehavior.gml</script>
+          </scripts>
+          <script>scripts\scrActiveDivertPower.gml</script>
+          <script>scripts\scrActiveFire.gml</script>
+        </scripts>
+        <scripts name="cannon">
+          <scripts name="riceCake">
+            <script>scripts\scrRiceCakeCannon.gml</script>
+          </scripts>
+          <script>scripts\scrCannonDivertPower.gml</script>
+          <script>scripts\scrCannonFire.gml</script>
+        </scripts>
+        <scripts name="cut">
+          <scripts name="active">
+            <script>scripts\scrCutActive.gml</script>
+          </scripts>
+          <scripts name="all">
+            <script>scripts\scrCutAll.gml</script>
+          </scripts>
+          <scripts name="cannon">
+            <script>scripts\scrCutCannon.gml</script>
+          </scripts>
+          <scripts name="guns">
+            <script>scripts\scrCutGuns.gml</script>
+          </scripts>
+          <scripts name="passive">
+            <script>scripts\scrCutPassive.gml</script>
+          </scripts>
+          <scripts name="shields">
+            <script>scripts\scrCutShieldsAll.gml</script>
+            <script>scripts\scrCutShieldsBow.gml</script>
+            <script>scripts\scrCutShieldsPort.gml</script>
+            <script>scripts\scrCutShieldsStarboard.gml</script>
+            <script>scripts\scrCutShieldsStern.gml</script>
+          </scripts>
+          <scripts name="target">
+            <script>scripts\scrCutTarget.gml</script>
+          </scripts>
+          <scripts name="thrusters">
+            <script>scripts\scrCutThrustersAll.gml</script>
+            <script>scripts\scrCutThrustersBow.gml</script>
+            <script>scripts\scrCutThrustersPort.gml</script>
+            <script>scripts\scrCutThrustersRotateAll.gml</script>
+            <script>scripts\scrCutThrustersRotateClockwise.gml</script>
+            <script>scripts\scrCutThrustersRotateCounterclockwise.gml</script>
+            <script>scripts\scrCutThrustersStarboard.gml</script>
+            <script>scripts\scrCutThrustersStern.gml</script>
+          </scripts>
+        </scripts>
+        <scripts name="data">
+          <script>scripts\scrShipData.gml</script>
+        </scripts>
+        <scripts name="enemyShip">
+          <scripts name="data">
+            <script>scripts\scrEnemyShipData.gml</script>
+            <scripts name="pawn">
+              <script>scripts\scrPawnData.gml</script>
+            </scripts>
+          </scripts>
+          <scripts name="util">
+            <script>scripts\scrSetDesignation.gml</script>
+          </scripts>
+        </scripts>
+        <scripts name="guns">
+          <script>scripts\scrGunsDivertPower.gml</script>
+          <script>scripts\scrGunsFire.gml</script>
+        </scripts>
+        <scripts name="input">
+          <script>scripts\scrInput.gml</script>
+        </scripts>
+        <scripts name="management">
+          <script>scripts\scrPPManagement.gml</script>
+          <script>scripts\scrShieldManagement.gml</script>
+          <script>scripts\scrStateManagement.gml</script>
+        </scripts>
+        <scripts name="passive">
+          <script>scripts\scrPassiveDivertPower.gml</script>
+          <script>scripts\scrPassiveFire.gml</script>
+        </scripts>
+        <scripts name="ricecake">
+          <scripts name="data">
+            <script>scripts\scrRicecakeData.gml</script>
+          </scripts>
+        </scripts>
+        <scripts name="shields">
+          <script>scripts\scrShieldsAll.gml</script>
+          <script>scripts\scrShieldsBow.gml</script>
+          <script>scripts\scrShieldsPort.gml</script>
+          <script>scripts\scrShieldsStarboard.gml</script>
+          <script>scripts\scrShieldsStern.gml</script>
+        </scripts>
+        <scripts name="thrusters">
+          <script>scripts\scrThrustersBow.gml</script>
+          <script>scripts\scrThrustersPort.gml</script>
+          <script>scripts\scrThrustersRotateClockwise.gml</script>
+          <script>scripts\scrThrustersRotateCounterclockwise.gml</script>
+          <script>scripts\scrThrustersStarboard.gml</script>
+          <script>scripts\scrThrustersStern.gml</script>
+        </scripts>
+        <scripts name="util">
+          <script>scripts\scrChangeStateAction.gml</script>
+          <script>scripts\scrDeath.gml</script>
+          <script>scripts\scrDecrementAction.gml</script>
+          <script>scripts\scrGetAdjacentGridBoxes.gml</script>
+          <script>scripts\scrGetProjectiles.gml</script>
+          <script>scripts\scrGridBoxIsAdjacent.gml</script>
+          <script>scripts\scrResetActionMap.gml</script>
+          <script>scripts\scrResetNonShield.gml</script>
+          <script>scripts\scrSetShields.gml</script>
+          <script>scripts\scrSetTarget.gml</script>
+          <script>scripts\scrShipTimelineActions.gml</script>
+        </scripts>
       </scripts>
+    </scripts>
+    <scripts name="timeline">
+      <scripts name="data">
+        <script>scripts\scrTimelineData.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="util">
+      <scripts name="data">
+        <script>scripts\scrUtilData.gml</script>
+      </scripts>
+      <script>scripts\scrCanSeeObject.gml</script>
+      <script>scripts\scrDealStaticDamage.gml</script>
+      <script>scripts\scrEventInherited.gml</script>
+      <script>scripts\scrGetEnemies.gml</script>
+      <script>scripts\scrGetGridBoxes.gml</script>
+      <script>scripts\scrIsAbove.gml</script>
+      <script>scripts\scrIsBelow.gml</script>
+      <script>scripts\scrIsLeft.gml</script>
+      <script>scripts\scrIsRight.gml</script>
+      <script>scripts\scrRandomizeSeed.gml</script>
+      <script>scripts\scrResetTouchedTimeline.gml</script>
+      <script>scripts\scrSetEnemies.gml</script>
+      <script>scripts\scrSetState.gml</script>
+      <script>scripts\scrTimelineActions.gml</script>
+      <script>scripts\scrTouchedTimelineThisTurn.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">

@@ -1,4 +1,4 @@
-script_execute(scrSetState, initState);
+scrSetState(initState);
 if(actionMap[? util.actionMapShieldsBowString] == active) {
     actionMap[? util.actionMapShieldsBowString] = toDeactivate;
     ds_list_add(actionQueue, util.actionQueueCutShieldsBowString);

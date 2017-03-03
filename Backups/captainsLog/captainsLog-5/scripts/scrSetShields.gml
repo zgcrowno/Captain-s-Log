@@ -1,4 +1,4 @@
-adjacentGridBoxes = script_execute(scrGetAdjacentGridBoxes);
+adjacentGridBoxes = scrGetAdjacentGridBoxes();
 portShieldsIndex = 0;
 starboardShieldsIndex = 0;
 bowShieldsIndex = 0;

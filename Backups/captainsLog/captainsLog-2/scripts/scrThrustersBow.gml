@@ -7,4 +7,4 @@ if(!(requiredPPThrusters > currentPP) && !(actionMap[? util.actionMapThrustersBo
 } else {
     //To Do: Error to user about lack of power
 }
-script_execute(scrSetState, initState);
+scrSetState(initState);

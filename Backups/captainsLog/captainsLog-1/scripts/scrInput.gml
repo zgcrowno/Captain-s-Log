@@ -1,7 +1,7 @@
 if(keyboard_check_pressed(vk_tab)) {
     //In the future, it might be wise to configure the instance data states in such
     //a way that currentState will be decremented here.
-    script_execute(scrSetState, initState);
+    scrSetState(initState);
 } else if(keyboard_check_pressed(vk_backspace)) {
     if(input != "") {
         input = string_delete(input, string_length(input), 1);
@@ -155,7 +155,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "active") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrActiveDivertPower);
+            scrActiveDivertPower();
         }
     } else if(input == "p") {
         if(keyboard_check_pressed(ord("A"))) {
@@ -183,7 +183,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "passive") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrPassiveDivertPower);
+            scrPassiveDivertPower();
         }
     }
 } else if(currentState == thrusterState) {  //thrusterState checks
@@ -302,7 +302,7 @@ if(keyboard_check_pressed(vk_tab)) {
     } else if(keyboard_check_pressed(vk_numpad9)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
-        script_execute(scrThrustersPort);
+        scrThrustersPort();
     } 
 } else if(currentState == thrusterStarboardState) { //thrusterStarboardState checks
     if(keyboard_check_pressed(vk_numpad0)) {
@@ -326,7 +326,7 @@ if(keyboard_check_pressed(vk_tab)) {
     } else if(keyboard_check_pressed(vk_numpad9)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
-        script_execute(scrThrustersStarboard)
+        scrThrustersStarboard();
     } 
 } else if(currentState == thrusterBowState) {   //thrusterBowState checks
     if(keyboard_check_pressed(vk_numpad0)) {
@@ -350,7 +350,7 @@ if(keyboard_check_pressed(vk_tab)) {
     } else if(keyboard_check_pressed(vk_numpad9)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
-        script_execute(scrThrustersBow);
+        scrThrustersBow();
     }  
 } else if(currentState == thrusterSternState) { //thrusterSternState checks
     if(keyboard_check_pressed(vk_numpad0)) {
@@ -374,7 +374,7 @@ if(keyboard_check_pressed(vk_tab)) {
     } else if(keyboard_check_pressed(vk_numpad9)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
-        script_execute(scrThrustersStern);
+        scrThrustersStern();
     } 
 } else if(currentState == thrusterRotateState) {    //thrusterRotateState checks
     if(input == "") {
@@ -434,7 +434,7 @@ if(keyboard_check_pressed(vk_tab)) {
     } else if(keyboard_check_pressed(vk_numpad9)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
-        script_execute(scrThrustersRotateClockwise);
+        scrThrustersRotateClockwise();
     }
 } else if(currentState == thrusterRotateDegreesCounterclockwiseState) { //thrusterRotateDegreesCounterclockwiseState checks
     if(keyboard_check_pressed(vk_numpad0)) {
@@ -458,7 +458,7 @@ if(keyboard_check_pressed(vk_tab)) {
     } else if(keyboard_check_pressed(vk_numpad9)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
-        script_execute(scrThrustersRotateCounterclockwise);
+        scrThrustersRotateCounterclockwise();
     }
 } else if(currentState == shieldState) {    //shieldState checks
     //To do
@@ -486,7 +486,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "port") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrShieldsPort);
+            scrShieldsPort();
         }
     } else if(input == "s") {
         if(keyboard_check_pressed(ord("T"))) {
@@ -524,7 +524,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "starboard") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrShieldsStarboard);
+            scrShieldsStarboard();
         }
     } else if(input == "b") {
         if(keyboard_check_pressed(ord("O"))) {
@@ -536,7 +536,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "bow") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrShieldsBow);
+            scrShieldsBow();
         }
     } else if(input == "ste") {
         if(keyboard_check_pressed(ord("R"))) {
@@ -548,7 +548,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "stern") {
         if(keyboard_check_pressed(vk_enter)) {
-           script_execute(scrShieldsStern);
+           scrShieldsStern();
         }
     } else if(input == "a") {
         if(keyboard_check_pressed(ord("L"))) {
@@ -560,11 +560,11 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "all") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrShieldsAll);
+            scrShieldsAll();
         }
     }
 } else if(currentState == targetState) { //targetState checks
-    script_execute(scrSetTarget);
+    scrSetTarget();
 } else if(currentState == gunState) {   //gunState checks
     if(input == "") {
         if(keyboard_check_pressed(ord("F"))) {
@@ -584,7 +584,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "fire") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrGunsDivertPower);
+            scrGunsDivertPower();
         }
     }
 } else if(currentState == cannonState) {    //cannonState checks
@@ -606,7 +606,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "fire") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCannonDivertPower);
+            scrCannonDivertPower();
         }
     }
 } else if(currentState == cutState) {   //cutState checks
@@ -676,7 +676,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "target") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutTarget);
+            scrCutTarget();
         }
     } else if(input == "s") {
         if(keyboard_check_pressed(ord("H"))) {
@@ -716,7 +716,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "guns") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutGuns);
+            scrCutGuns();
         }
     } else if(input == "c") {
         if(keyboard_check_pressed(ord("A"))) {
@@ -740,7 +740,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "cannon") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutCannon);
+            scrCutCannon();
         }
     } else if(input == "a") {
         if(keyboard_check_pressed(ord("L"))) {
@@ -766,7 +766,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "active") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutActive);
+            scrCutActive();
         }
     } else if(input == "p") {
         if(keyboard_check_pressed(ord("A"))) {
@@ -794,7 +794,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "passive") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutPassive);
+            scrCutPassive();
         }
     } else if(input == "al") {
         if(keyboard_check_pressed(ord("L"))) {
@@ -802,7 +802,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "all") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutAll);
+            scrCutAll();
         }
     }
 } else if(currentState == cutThrustersState) {  //cutThrustersState checks
@@ -832,7 +832,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "port") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutThrustersPort);
+            scrCutThrustersPort();
         }
     } else if(input == "s") {
         if(keyboard_check_pressed(ord("T"))) {
@@ -870,7 +870,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "starboard") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutThrustersStarboard);
+            scrCutThrustersStarboard();
         }
     } else if(input == "b") {
         if(keyboard_check_pressed(ord("O"))) {
@@ -882,7 +882,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "bow") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutThrustersBow);
+            scrCutThrustersBow();
         }
     } else if(input == "ste") {
         if(keyboard_check_pressed(ord("R"))) {
@@ -894,7 +894,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "stern") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutThrustersStern);
+            scrCutThrustersStern();
         }
     } else if(input == "a") {
         if(keyboard_check_pressed(ord("L"))) {
@@ -906,7 +906,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "all") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutThrustersAll);
+            scrCutThrustersAll();
         }
     } else if(input == "r") {
         if(keyboard_check_pressed(ord("O"))) {
@@ -956,7 +956,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "clock") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutThrustersRotateClockwise);
+            scrCutThrustersRotateClockwise();
         }
     } else if(input == "co") {
         if(keyboard_check_pressed(ord("U"))) {
@@ -972,7 +972,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "count") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutThrustersRotateCounterclockwise);
+            scrCutThrustersRotateCounterclockwise();
         }
     }  else if(input == "a") {
         if(keyboard_check_pressed(ord("L"))) {
@@ -984,7 +984,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "all") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutThrustersRotateAll);
+            scrCutThrustersRotateAll();
         }
     }
 } else if(currentState == cutShieldsState) {    //cutShieldsState checks
@@ -1012,7 +1012,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "port") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutShieldsPort);
+            scrCutShieldsPort();
         }
     } else if(input == "s") {
         if(keyboard_check_pressed(ord("T"))) {
@@ -1050,7 +1050,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "starboard") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutShieldsStarboard);
+            scrCutShieldsStarboard();
         }
     } else if(input == "b") {
         if(keyboard_check_pressed(ord("O"))) {
@@ -1062,7 +1062,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "bow") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutShieldsBow);
+            scrCutShieldsBow();
         }       
     } else if(input == "ste") {
         if(keyboard_check_pressed(ord("R"))) {
@@ -1074,7 +1074,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "stern") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutShieldsStern);
+            scrCutShieldsStern();
         }
     } else if(input == "a") {
         if(keyboard_check_pressed(ord("L"))) {
@@ -1086,7 +1086,7 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "all") {
         if(keyboard_check_pressed(vk_enter)) {
-            script_execute(scrCutShieldsAll);
+            scrCutShieldsAll();
         }
     }
 }

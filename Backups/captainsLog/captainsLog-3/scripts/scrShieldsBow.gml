@@ -4,4 +4,4 @@ if(!(requiredPPShields > currentPP) && !(actionMap[? util.actionMapShieldsBowStr
 } else if(!(actionMap[? util.actionMapShieldsBowString] == active)) {
     //To Do: Error to user about lack of power...
 }
-script_execute(scrSetState, initState);
+scrSetState(initState);

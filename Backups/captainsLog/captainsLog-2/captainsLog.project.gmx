@@ -71,7 +71,6 @@
         <scripts name="util">
           <script>scripts\scrGetEnemies.gml</script>
           <script>scripts\scrSetShields.gml</script>
-          <script>scripts\scrGetGridBoxes.gml</script>
           <script>scripts\scrGetAdjacentGridBoxes.gml</script>
           <script>scripts\scrResetNonShield.gml</script>
           <script>scripts\scrResetActionMap.gml</script>
@@ -80,6 +79,8 @@
           <script>scripts\scrCanSeeObject.gml</script>
           <script>scripts\scrGetProjectiles.gml</script>
           <script>scripts\scrGridBoxIsAdjacent.gml</script>
+          <script>scripts\scrDecrementAction.gml</script>
+          <script>scripts\scrChangeStateAction.gml</script>
         </scripts>
         <scripts name="data">
           <script>scripts\scrShipData.gml</script>
@@ -200,6 +201,11 @@
         <script>scripts\scrDealStaticDamage.gml</script>
         <script>scripts\scrSetState.gml</script>
         <script>scripts\scrSetEnemies.gml</script>
+        <script>scripts\scrIsAbove.gml</script>
+        <script>scripts\scrIsBelow.gml</script>
+        <script>scripts\scrIsLeft.gml</script>
+        <script>scripts\scrIsRight.gml</script>
+        <script>scripts\scrGetGridBoxes.gml</script>
       </scripts>
       <scripts name="data">
         <script>scripts\scrObjectData.gml</script>

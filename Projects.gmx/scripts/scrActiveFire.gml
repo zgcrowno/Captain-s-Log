@@ -1,3 +1,4 @@
+//In the future, modify this script to work with all player ships.
 if(actionMap[? util.actionMapActiveString]) {
     if(object_index == objRiceCake) {
         with(objPlayerBullet) {

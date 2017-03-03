@@ -71,15 +71,16 @@
         <scripts name="util">
           <script>scripts\scrGetEnemies.gml</script>
           <script>scripts\scrSetShields.gml</script>
-          <script>scripts\scrGetGridBoxes.gml</script>
           <script>scripts\scrGetAdjacentGridBoxes.gml</script>
           <script>scripts\scrResetNonShield.gml</script>
           <script>scripts\scrResetActionMap.gml</script>
           <script>scripts\scrSetTarget.gml</script>
           <script>scripts\scrDeath.gml</script>
-          <script>scripts\scrCanSeeObject.gml</script>
           <script>scripts\scrGetProjectiles.gml</script>
           <script>scripts\scrGridBoxIsAdjacent.gml</script>
+          <script>scripts\scrDecrementAction.gml</script>
+          <script>scripts\scrChangeStateAction.gml</script>
+          <script>scripts\scrShipTimelineActions.gml</script>
         </scripts>
         <scripts name="data">
           <script>scripts\scrShipData.gml</script>
@@ -200,6 +201,12 @@
         <script>scripts\scrDealStaticDamage.gml</script>
         <script>scripts\scrSetState.gml</script>
         <script>scripts\scrSetEnemies.gml</script>
+        <script>scripts\scrIsAbove.gml</script>
+        <script>scripts\scrIsBelow.gml</script>
+        <script>scripts\scrIsLeft.gml</script>
+        <script>scripts\scrIsRight.gml</script>
+        <script>scripts\scrGetGridBoxes.gml</script>
+        <script>scripts\scrCanSeeObject.gml</script>
       </scripts>
       <scripts name="data">
         <script>scripts\scrObjectData.gml</script>
@@ -212,12 +219,21 @@
           <script>scripts\scrDrawGUI.gml</script>
           <script>scripts\scrDrawInput.gml</script>
           <script>scripts\scrCreateGridBoxes.gml</script>
+          <script>scripts\scrDrawBackgroundObjects.gml</script>
+          <script>scripts\scrDrawTargetInfo.gml</script>
+          <script>scripts\scrDrawTargetLines.gml</script>
+          <script>scripts\scrDrawPercentageInfo.gml</script>
+          <script>scripts\scrDrawActionQueue.gml</script>
+          <script>scripts\scrDrawCommandPrompts.gml</script>
         </scripts>
       </scripts>
       <scripts name="projectile">
         <scripts name="bullet">
           <scripts name="data">
             <script>scripts\scrBulletData.gml</script>
+          </scripts>
+          <scripts name="util">
+            <script>scripts\scrBulletTimelineActions.gml</script>
           </scripts>
         </scripts>
         <scripts name="cannonBullet">
@@ -228,6 +244,8 @@
         <scripts name="util">
           <script>scripts\scrDestroyOutOfBounds.gml</script>
           <script>scripts\scrShipInteraction.gml</script>
+          <script>scripts\scrPlayerBulletShipInteraction.gml</script>
+          <script>scripts\scrPlayerCannonBulletShipInteraction.gml</script>
         </scripts>
       </scripts>
       <scripts name="movement">

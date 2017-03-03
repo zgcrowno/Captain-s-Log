@@ -11,7 +11,7 @@ if(image_angle % 360 == 0 || image_angle % 360 == 180) {
 }
 
 for(i = 0; i < array_length_1d(gridBoxes); i++) {
-    if(script_execute(scrGridBoxIsAdjacent(gridBoxes[i]))) {
+    if(scrGridBoxIsAdjacent(gridBoxes[i])) {
         adjacentGridBoxes[adjacentGridBoxesIndex] = gridBoxes[i];
         adjacentGridBoxesIndex++;
     }

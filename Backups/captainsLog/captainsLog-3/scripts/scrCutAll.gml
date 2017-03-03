@@ -77,4 +77,4 @@ if(actionMap[? util.actionMapTargetString] != noone) {
 if(target != noone) {
     target = noone;
 }
-script_execute(scrSetState, initState);
+scrSetState(initState);
