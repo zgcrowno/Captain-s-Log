@@ -250,6 +250,11 @@
       </scripts>
       <scripts name="movement">
         <script>scripts\scrMovement.gml</script>
+        <script>scripts\scrShipMovement.gml</script>
+        <script>scripts\scrBulletMovement.gml</script>
+        <script>scripts\scrCannonBulletMovement.gml</script>
+        <script>scripts\scrTimelineHorizontalMovement.gml</script>
+        <script>scripts\scrTimelineVerticalMovement.gml</script>
       </scripts>
     </scripts>
   </scripts>

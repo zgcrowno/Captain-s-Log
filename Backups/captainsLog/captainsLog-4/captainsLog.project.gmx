@@ -200,6 +200,10 @@
         <script>scripts\scrDealStaticDamage.gml</script>
         <script>scripts\scrSetState.gml</script>
         <script>scripts\scrSetEnemies.gml</script>
+        <script>scripts\scrIsAbove.gml</script>
+        <script>scripts\scrIsBelow.gml</script>
+        <script>scripts\scrIsLeft.gml</script>
+        <script>scripts\scrIsRight.gml</script>
       </scripts>
       <scripts name="data">
         <script>scripts\scrObjectData.gml</script>

@@ -14,7 +14,7 @@ if(object_index == objPlayerBullet) {
         for(i = 0; i < instance_number(objEnemyShip); i++) {
             if(position_meeting(x, y, instance_find(objEnemyShip, i))) {
                 enemy = instance_find(objEnemyShip, i);
-                script_execute(scrRiceCakeCannon, enemy.x, enemy.y);
+                scrRiceCakeCannon(enemy.x, enemy.y);
                 instance_destroy();
             }
         }
