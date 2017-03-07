@@ -10,5 +10,9 @@ hud = instance_find(objHud, 0);
 //The Util object
 util = instance_find(objUtil, 0);
 
+//The Player Instance
+player = instance_find(objPlayerShip, 0);
+show_debug_message(string(player));
+
 //Whether or not the object has made contact with the timeline on the current pass
 alreadyTouchedTimeline = false;

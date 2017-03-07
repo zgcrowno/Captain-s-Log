@@ -2,11 +2,14 @@ if(scrTouchedTimelineThisTurn() && !alreadyTouchedTimeline) {
     if(object_is_ancestor(object_index, objShip)) {
         scrShipTimelineActions();
     }
-    if(object_is_ancestor(object_index, objBullet)) {
+    if(object_is_ancestor(object_index, objBullet) 
+       || object_is_ancestor(object_index, objCannonBullet)) {
         scrBulletTimelineActions();
     }
-    if(object_index == objGridBoxStatic) {
-        instance_destroy();
+    if(object_index == objGridBox ) {
+        if(sprite_index == sprGridBoxStatic) {
+            sprite_index = sprGridBox;
+        }
     }
     alreadyTouchedTimeline = true;
 }

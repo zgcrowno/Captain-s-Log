@@ -1,3 +1,4 @@
+player = instance_find(objPlayerShip, 0);
 if(currentHP <= 0) {
     if(id == player.target) {
         player.target = noone;

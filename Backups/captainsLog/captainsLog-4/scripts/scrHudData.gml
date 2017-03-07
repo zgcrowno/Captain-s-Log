@@ -174,6 +174,9 @@ targetAQEightRightBound = 1891;
 targetAQEightUpperBound = 1007;
 targetAQEightLowerBound = 658;
 
+//The vertical distance between the actionQueue screens
+aqDistance = 57;
+
 //The Y value for every drawn enemy background sprite
 enemyBackgroundSpriteY = 268;
 

@@ -1,6 +1,3 @@
-//The Player Instance
-player = instance_find(objPlayerShip, 0);
-
 //The Captain's Name
 designation = "";
 
