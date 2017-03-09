@@ -4,10 +4,6 @@ hud = instance_find(objHud, 0);
 //The Util Object
 util = instance_find(objUtil, 0);
 
-//The Player Instance
-player = instance_find(objPlayerShip, 0);
-show_debug_message(string(player));
-
 //The ship's current target
 target = noone;
 

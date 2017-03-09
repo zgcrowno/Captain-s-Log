@@ -302,7 +302,11 @@ if(keyboard_check_pressed(vk_tab)) {
     } else if(keyboard_check_pressed(vk_numpad9)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
-        scrThrustersPort();
+        if(input != "") {
+            scrThrustersPort();
+        } else {
+            //To Do: Error to user about improper input
+        }
     } 
 } else if(currentState == thrusterStarboardState) { //thrusterStarboardState checks
     if(keyboard_check_pressed(vk_numpad0)) {
@@ -326,7 +330,11 @@ if(keyboard_check_pressed(vk_tab)) {
     } else if(keyboard_check_pressed(vk_numpad9)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
-        scrThrustersStarboard();
+        if(input != "") {
+            scrThrustersStarboard();
+        } else {
+            //To Do: Error to user about improper input
+        }
     } 
 } else if(currentState == thrusterBowState) {   //thrusterBowState checks
     if(keyboard_check_pressed(vk_numpad0)) {
@@ -350,7 +358,11 @@ if(keyboard_check_pressed(vk_tab)) {
     } else if(keyboard_check_pressed(vk_numpad9)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
-        scrThrustersBow();
+        if(input != "") {
+            scrThrustersBow();
+        } else {
+            //To Do: Error to user about improper input
+        }
     }  
 } else if(currentState == thrusterSternState) { //thrusterSternState checks
     if(keyboard_check_pressed(vk_numpad0)) {
@@ -374,7 +386,11 @@ if(keyboard_check_pressed(vk_tab)) {
     } else if(keyboard_check_pressed(vk_numpad9)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
-        scrThrustersStern();
+        if(input != "") {
+            scrThrustersStern();
+        } else {
+            //To Do: Error to user about improper input
+        }
     } 
 } else if(currentState == thrusterRotateState) {    //thrusterRotateState checks
     if(input == "") {
@@ -434,7 +450,11 @@ if(keyboard_check_pressed(vk_tab)) {
     } else if(keyboard_check_pressed(vk_numpad9)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
-        scrThrustersRotateClockwise();
+        if(input != "") {
+            scrThrustersRotateClockwise();
+        } else {
+            //To Do: Error to user about improper input
+        }
     }
 } else if(currentState == thrusterRotateDegreesCounterclockwiseState) { //thrusterRotateDegreesCounterclockwiseState checks
     if(keyboard_check_pressed(vk_numpad0)) {
@@ -458,7 +478,11 @@ if(keyboard_check_pressed(vk_tab)) {
     } else if(keyboard_check_pressed(vk_numpad9)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
-        scrThrustersRotateCounterclockwise();
+        if(input != "") {
+            scrThrustersRotateCounterclockwise();
+        } else {
+            //To Do: Error to user about improper input
+        }
     }
 } else if(currentState == shieldState) {    //shieldState checks
     //To do

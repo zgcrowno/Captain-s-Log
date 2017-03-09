@@ -318,8 +318,11 @@ scrDrawTargetLines();
 //Draw percentage info
 scrDrawPercentageInfo();
 
-//Draw actionQueue
-scrDrawActionQueue();
+//Draw player actionQueue
+scrDrawActionQueue(player);
+
+//Draw target actionQueue
+scrDrawActionQueue(player.target);
 
 //Draw the state-dependent command prompts
 scrDrawCommandPrompts();
