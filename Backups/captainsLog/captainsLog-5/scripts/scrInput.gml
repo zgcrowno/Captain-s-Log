@@ -303,7 +303,7 @@ if(keyboard_check_pressed(vk_tab)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
         if(input != "") {
-            scrThrustersPort();
+            scrThrustersPort(input);
         } else {
             //To Do: Error to user about improper input
         }
@@ -331,7 +331,7 @@ if(keyboard_check_pressed(vk_tab)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
         if(input != "") {
-            scrThrustersStarboard();
+            scrThrustersStarboard(input);
         } else {
             //To Do: Error to user about improper input
         }
@@ -359,7 +359,7 @@ if(keyboard_check_pressed(vk_tab)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
         if(input != "") {
-            scrThrustersBow();
+            scrThrustersBow(input);
         } else {
             //To Do: Error to user about improper input
         }
@@ -387,7 +387,7 @@ if(keyboard_check_pressed(vk_tab)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
         if(input != "") {
-            scrThrustersStern();
+            scrThrustersStern(input);
         } else {
             //To Do: Error to user about improper input
         }
@@ -451,7 +451,7 @@ if(keyboard_check_pressed(vk_tab)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
         if(input != "") {
-            scrThrustersRotateClockwise();
+            scrThrustersRotateClockwise(input);
         } else {
             //To Do: Error to user about improper input
         }
@@ -479,7 +479,7 @@ if(keyboard_check_pressed(vk_tab)) {
         input += "9";
     } else if(keyboard_check_pressed(vk_enter)) {
         if(input != "") {
-            scrThrustersRotateCounterclockwise();
+            scrThrustersRotateCounterclockwise(input);
         } else {
             //To Do: Error to user about improper input
         }

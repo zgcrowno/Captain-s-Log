@@ -4,105 +4,104 @@ if(movementChance) {
         if(image_angle % 360 == 0) {
             if(scrIsLeft(player)) {
                 if(random(10) >= 3) {
-                    scrThrustersStarboard();
+                    scrThrustersStarboard(irandom_range(1, 10));
                 }
             } else if(scrIsRight(player)) {
                 if(random(10) >= 3) {
-                    scrThrustersPort();
+                    scrThrustersPort(irandom_range(1, 10));
                 }
             }
         } else if(image_angle % 270 == 0) {
             if(random(10) >= 3) {
-                scrThrustersRotateCounterclockwise();
+                scrThrustersRotateCounterclockwise(irandom_range(1, 3));
             }
         } else if(image_angle % 180 == 0) {
             if(random(10) >= 5) {
-                scrThrustersRotateClockwise();
+                scrThrustersRotateClockwise(irandom_range(1, 3));
             } else {
-                scrThrustersRotateCounterclockwise();
+                scrThrustersRotateCounterclockwise(irandom_range(1, 3));
             }
         } else if(image_angle % 90 == 0) {
             if(random(10) >= 3) {
-                scrThrustersRotateClockwise();
+                scrThrustersRotateClockwise(irandom_range(1, 3));
             }
         }    
     } else if(scrIsBelow(player)) {
         if(image_angle % 360 == 0) {
-            show_debug_message("something");
             if(random(10) >= 5) {
-                scrThrustersRotateClockwise();
+                scrThrustersRotateClockwise(irandom_range(1, 3));
             } else {
-                scrThrustersRotateCounterclockwise();
+                scrThrustersRotateCounterclockwise(irandom_range(1, 3));
             }
         } else if(image_angle % 270 == 0) {
             if(random(10) >= 3) {
-                scrThrustersRotateClockwise();
+                scrThrustersRotateClockwise(irandom_range(1, 3));
             }
         } else if(image_angle % 180 == 0) {
             if(scrIsLeft(player)) {
                 if(random(10) >= 3) {
-                    scrThrustersStarboard();
+                    scrThrustersStarboard(irandom_range(1, 10));
                 }
             } else if(scrIsRight(player)) {
                 if(random(10) >= 3) {
-                    scrThrustersPort();
+                    scrThrustersPort(irandom_range(1, 10));
                 }
             }
         } else if(image_angle % 90 == 0) {
             if(random(10) >= 3) {
-                scrThrustersRotateCounterclockwise();
+                scrThrustersRotateCounterclockwise(irandom_range(1, 3));
             }
         }
     } else if(scrIsLeft(player)) {
         if(image_angle % 360 == 0) {
             if(random(10) >= 3) {
-                scrThrustersRotateCounterclockwise();
+                scrThrustersRotateCounterclockwise(irandom_range(1, 3));
             }
         } else if(image_angle % 270 == 0) {
             if(random(10) >= 5) {
-                scrThrustersRotateClockwise();
+                scrThrustersRotateClockwise(irandom_range(1, 3));
             } else {
-                scrThrustersRotateCounterclockwise();
+                scrThrustersRotateCounterclockwise(irandom_range(1, 3));
             }
         } else if(image_angle % 180 == 0) {
             if(random(10) >= 3) {
-                scrThrustersRotateClockwise();
+                scrThrustersRotateClockwise(irandom_range(1, 3));
             }
         } else if(image_angle % 90 == 0) {
             if(scrIsAbove(player)) {
                 if(random(10) >= 3) {
-                    scrThrustersPort();
+                    scrThrustersPort(irandom_range(1, 10));
                 }
             } else if(scrIsBelow(player)) {
                 if(random(10) >= 3) {
-                    scrThrustersStarboard();
+                    scrThrustersStarboard(irandom_range(1, 10));
                 }
             }
         }
     } else {
         if(image_angle % 360 == 0) {
             if(random(10) >= 3) {
-                scrThrustersRotateClockwise();
+                scrThrustersRotateClockwise(irandom_range(1, 3));
             }
         } else if(image_angle % 270 == 0) {
             if(scrIsAbove(player)) {
                 if(random(10) >= 3) {
-                    scrThrustersStarboard();
+                    scrThrustersStarboard(irandom_range(1, 10));
                 }
             } else if(scrIsBelow(player)) {
                 if(random(10) >= 3) {
-                    scrThrustersPort();
+                    scrThrustersPort(irandom_range(1, 10));
                 }
             }
         } else if(image_angle % 180 == 0) {
             if(random(10) >= 3) {
-                scrThrustersRotateCounterclockwise();
+                scrThrustersRotateCounterclockwise(irandom_range(1, 3));
             }
         } else if(image_angle % 90 == 0) {
             if(random(10) >= 5) {
-                scrThrustersRotateClockwise();
+                scrThrustersRotateClockwise(irandom_range(1, 3));
             } else {
-                scrThrustersRotateCounterclockwise();
+                scrThrustersRotateCounterclockwise(irandom_range(1, 3));
             }
         }
     }

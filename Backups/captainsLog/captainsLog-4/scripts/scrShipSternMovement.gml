@@ -5,7 +5,9 @@ if(actionMap[? util.actionMapThrustersSternString] > 0) {
        && !(cos(degtorad(image_angle + 90)) < 0 && x <= hud.radarLeftBound + (sprite_width / 2))) {
         x += sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));
         y -= sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
-        view_yview -= util.backgroundMovementDistance;
+        if(object_is_ancestor(object_index, objPlayerShip)) {
+            view_yview -= util.backgroundMovementDistance;
+        }
     } else {
         actionMap[? util.actionMapThrustersSternString] = 0;
     }
