@@ -6,6 +6,7 @@ if(actionMap[? util.actionMapThrustersBowString] > 0) {
             view_yview[0] += util.backgroundMovementDistance;
         }
     } else {
+        ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionQueueThrustersBowString + string(actionMap[? util.actionMapThrustersBowString])));
         actionMap[? util.actionMapThrustersBowString] = 0;
     }
 }

@@ -11,6 +11,3 @@ if(string_pos(util.actionQueueThrustersPortString, actionQueue[| i]) != 0) {
 } else if(string_pos(util.actionQueueThrustersCountString, actionQueue[| i]) != 0) {
     scrShipCountMovement();
 }
-if(image_angle >= 360) {
-    image_angle -= floor(image_angle / 360) * 360;
-}

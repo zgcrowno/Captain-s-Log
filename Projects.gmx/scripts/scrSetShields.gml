@@ -6,7 +6,7 @@ sternShieldsIndex = 0;
     
 //Set the shield blocks
 for(i = 0; i < array_length_1d(adjacentGridBoxes); i++) {
-    if(image_angle % 360 == 0) {
+    if(scrIsFacingUp(self)) {
         if(scrIsAbove(adjacentGridBoxes[i])) {
             bowShields[bowShieldsIndex] = adjacentGridBoxes[i];
             bowShieldsIndex++;
@@ -23,7 +23,7 @@ for(i = 0; i < array_length_1d(adjacentGridBoxes); i++) {
             starboardShields[starboardShieldsIndex] = adjacentGridBoxes[i];
             starboardShieldsIndex++;
         }
-    } else if(image_angle % 270 == 0) {
+    } else if(scrIsFacingRight(self)) {
         if(scrIsAbove(adjacentGridBoxes[i])) {
             portShields[portShieldsIndex] = adjacentGridBoxes[i];
             portShieldsIndex++;
@@ -40,7 +40,7 @@ for(i = 0; i < array_length_1d(adjacentGridBoxes); i++) {
             bowShields[bowShieldsIndex] = adjacentGridBoxes[i];
             bowShieldsIndex++;
         }
-    } else if(image_angle % 180 == 0) {
+    } else if(scrIsFacingDown(self)) {
         if(scrIsAbove(adjacentGridBoxes[i])) {
             sternShields[sternShieldsIndex] = adjacentGridBoxes[i];
             sternShieldsIndex++;
@@ -57,7 +57,7 @@ for(i = 0; i < array_length_1d(adjacentGridBoxes); i++) {
             portShields[portShieldsIndex] = adjacentGridBoxes[i];
             portShieldsIndex++;
         }
-    } else if(image_angle % 90 == 0) {
+    } else if(scrIsFacingLeft(self)) {
         if(scrIsAbove(adjacentGridBoxes[i])) {
             starboardShields[starboardShieldsIndex] = adjacentGridBoxes[i];
             starboardShieldsIndex++;

@@ -9,3 +9,6 @@ if(object_is_ancestor(object_index, objShip)) {
 } else if(object_index == objTimelineVertical) {
     scrTimelineVerticalMovement();
 }
+if(image_angle >= 360) {
+    image_angle -= floor(image_angle / 360) * 360;
+}

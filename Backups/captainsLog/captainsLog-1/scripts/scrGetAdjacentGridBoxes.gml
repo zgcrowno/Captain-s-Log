@@ -4,7 +4,7 @@ adjacentGridBoxes = noone;
 adjacentGridBoxesIndex = 0;
 shipSpriteOffset = 0;
 
-if(image_angle % 360 == 0 || image_angle % 180 == 0) {
+if(scrIsFacingUp(self) || scrIsFacingDown(self)) {
     shipSpriteOffset = sprite_height / 2;
 } else {
     shipSpriteOffset = sprite_width / 2;
