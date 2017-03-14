@@ -245,14 +245,16 @@
           <script>scripts\scrSetShields.gml</script>
           <script>scripts\scrSetTarget.gml</script>
           <script>scripts\scrShipTimelineActions.gml</script>
-          <script>scripts\scrIsFacingUp.gml</script>
-          <script>scripts\scrIsFacingLeft.gml</script>
-          <script>scripts\scrIsFacingDown.gml</script>
-          <script>scripts\scrIsFacingRight.gml</script>
-          <script>scripts\scrRadarBoundIsBowAdjacent.gml</script>
-          <script>scripts\scrRadarBoundIsPortAdjacent.gml</script>
-          <script>scripts\scrRadarBoundIsSternAdjacent.gml</script>
-          <script>scripts\scrRadarBoundIsStarboardAdjacent.gml</script>
+          <scripts name="orientation">
+            <script>scripts\scrIsFacingUp.gml</script>
+            <script>scripts\scrIsFacingLeft.gml</script>
+            <script>scripts\scrIsFacingDown.gml</script>
+            <script>scripts\scrIsFacingRight.gml</script>
+            <script>scripts\scrRadarBoundIsBowAdjacent.gml</script>
+            <script>scripts\scrRadarBoundIsPortAdjacent.gml</script>
+            <script>scripts\scrRadarBoundIsSternAdjacent.gml</script>
+            <script>scripts\scrRadarBoundIsStarboardAdjacent.gml</script>
+          </scripts>
         </scripts>
       </scripts>
     </scripts>
@@ -280,6 +282,11 @@
       <script>scripts\scrSetState.gml</script>
       <script>scripts\scrTimelineActions.gml</script>
       <script>scripts\scrTouchedTimelineThisTurn.gml</script>
+      <scripts name="sorts">
+        <script>scripts\scrSort.gml</script>
+        <script>scripts\scrQuickSort.gml</script>
+        <script>scripts\scrExchange.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <fonts name="fonts">

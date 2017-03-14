@@ -282,6 +282,11 @@
       <script>scripts\scrSetState.gml</script>
       <script>scripts\scrTimelineActions.gml</script>
       <script>scripts\scrTouchedTimelineThisTurn.gml</script>
+      <scripts name="sorts">
+        <script>scripts\scrSort.gml</script>
+        <script>scripts\scrQuickSort.gml</script>
+        <script>scripts\scrExchange.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <fonts name="fonts">
