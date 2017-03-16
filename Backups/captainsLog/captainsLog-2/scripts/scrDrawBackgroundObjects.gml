@@ -1,4 +1,4 @@
-objectArray = scrSort(argument0);
+objectArray = scrProximitySort(argument0);
 
 for(i = 0; i < array_length_1d(objectArray); i++) {
     //show_debug_message(objectArray);

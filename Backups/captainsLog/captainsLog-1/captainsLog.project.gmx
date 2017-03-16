@@ -213,11 +213,6 @@
           <script>scripts\scrPassiveDivertPower.gml</script>
           <script>scripts\scrPassiveFire.gml</script>
         </scripts>
-        <scripts name="ricecake">
-          <scripts name="data">
-            <script>scripts\scrRicecakeData.gml</script>
-          </scripts>
-        </scripts>
         <scripts name="shields">
           <script>scripts\scrShieldsAll.gml</script>
           <script>scripts\scrShieldsBow.gml</script>
@@ -254,6 +249,13 @@
             <script>scripts\scrRadarBoundIsPortAdjacent.gml</script>
             <script>scripts\scrRadarBoundIsSternAdjacent.gml</script>
             <script>scripts\scrRadarBoundIsStarboardAdjacent.gml</script>
+          </scripts>
+        </scripts>
+        <scripts name="playerShip">
+          <scripts name="ricecake">
+            <scripts name="data">
+              <script>scripts\scrRicecakeData.gml</script>
+            </scripts>
           </scripts>
         </scripts>
       </scripts>

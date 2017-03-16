@@ -164,3 +164,4 @@ activeDamageRiceCake = 1;
 
 //Pawn
 maxHPPawn = 50;
+maxPPPawn = 100;

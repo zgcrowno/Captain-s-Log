@@ -18,10 +18,10 @@ while(i <= j) {
         j--;
     }
     if(low < j) {
-        scrQuickSort(array, low, j);
+        scrProximityQuickSort(array, low, j);
     }
     if(i < high) {
-        scrQuickSort(array, i, high);
+        scrProximityQuickSort(array, i, high);
     }
 }
 return array;

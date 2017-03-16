@@ -1,6 +1,5 @@
-objectArray = argument0;
+objectArray = scrProximitySort(argument0);
 
-scrProximitySort(objectArray);
 for(i = 0; i < array_length_1d(objectArray); i++) {
     //show_debug_message(objectArray);
     //show_debug_message(string(objectArray[i].id) + ": " + string(point_distance(player.x, player.y, objectArray[i].x, objectArray[i].y)));
