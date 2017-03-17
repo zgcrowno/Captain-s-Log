@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TPE>
+  <w>20</w>
+  <h>20</h>
+  <name>Default</name>
+  <hasAlpha>True</hasAlpha>
+  <hash>4112926796</hash>
+  <xoffset>5</xoffset>
+  <yoffset>5</yoffset>
+  <cropWidth>20</cropWidth>
+  <cropHeight>20</cropHeight>
+  <ow>30</ow>
+  <oh>30</oh>
+  <image>sprEnemyBulletContact_sprEnemyBulletContact_7.tpe.png</image>
+</TPE>

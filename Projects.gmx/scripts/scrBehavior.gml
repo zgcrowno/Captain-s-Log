@@ -1,3 +1,4 @@
+//Movement Behavior
 if(random(10) >= 6) {
     if(scrIsAbove(player)) {
         if(scrIsFacingUp(self)) {
@@ -212,6 +213,43 @@ if(random(10) >= 6) {
             } else {
                 if(actionMap[? util.actionMapThrustersCountString] == 0) {
                     scrThrustersRotateCounterclockwise(2);
+                }
+            }
+        }
+    }
+}
+
+//Guns Behavior
+if(random(10) >= 6) {
+    if(scrIsAbove(player)) {
+        if(scrIsFacingUp(self)) {
+            if(!actionMap[? util.actionMapGunsString]) {
+                if(random(10) >= 3) {
+                    scrGunsDivertPower();
+                }
+            }
+        }
+    } else if(scrIsBelow(player)) {
+        if(scrIsFacingDown(self)) {
+            if(!actionMap[? util.actionMapGunsString]) {
+                if(random(10) >= 3) {
+                    scrGunsDivertPower();
+                }
+            }
+        }
+    } else if(scrIsLeft(player)) {
+        if(scrIsFacingLeft(self)) {
+            if(!actionMap[? util.actionMapGunsString]) {
+                if(random(10) >= 3) {
+                    scrGunsDivertPower();
+                }
+            }
+        }
+    } else {
+        if(scrIsFacingRight(self)) {
+            if(!actionMap[? util.actionMapGunsString]) {
+                if(random(10) >= 3) {
+                    scrGunsDivertPower();
                 }
             }
         }

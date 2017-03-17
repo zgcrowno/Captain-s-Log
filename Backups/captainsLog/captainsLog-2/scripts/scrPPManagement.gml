@@ -87,7 +87,3 @@ currentPP = maxPP - currentPPThrustersPort - currentPPThrustersStarboard -
             currentPPShieldsPort - currentPPShieldsStarboard - currentPPShieldsBow -
             currentPPShieldsStern - currentPPGuns - currentPPCannon -
             currentPPActive - currentPPPassive;
-if(object_index == objPawn) {
-    show_debug_message(currentPPThrustersRotateClockwise);
-    show_debug_message(currentPPThrustersRotateCounterclockwise);
-}

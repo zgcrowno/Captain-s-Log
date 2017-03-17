@@ -87,6 +87,3 @@ currentPP = maxPP - currentPPThrustersPort - currentPPThrustersStarboard -
             currentPPShieldsPort - currentPPShieldsStarboard - currentPPShieldsBow -
             currentPPShieldsStern - currentPPGuns - currentPPCannon -
             currentPPActive - currentPPPassive;
-if(object_is_ancestor(object_index, objPawn)) {
-    show_debug_message(currentPP);
-}

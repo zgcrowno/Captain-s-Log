@@ -88,7 +88,6 @@
         <script>scripts\scrBulletMovement.gml</script>
         <script>scripts\scrCannonBulletMovement.gml</script>
       </scripts>
-      <script>scripts\scrMovement.gml</script>
       <scripts name="ship">
         <script>scripts\scrShipBowMovement.gml</script>
         <script>scripts\scrShipClockMovement.gml</script>
@@ -102,6 +101,7 @@
         <script>scripts\scrTimelineHorizontalMovement.gml</script>
         <script>scripts\scrTimelineVerticalMovement.gml</script>
       </scripts>
+      <script>scripts\scrMovement.gml</script>
     </scripts>
     <scripts name="object">
       <scripts name="data">
@@ -258,6 +258,9 @@
             </scripts>
           </scripts>
         </scripts>
+      </scripts>
+      <scripts name="gridBox">
+        <script>scripts\scrGridBoxTimelineActions.gml</script>
       </scripts>
     </scripts>
     <scripts name="timeline">
