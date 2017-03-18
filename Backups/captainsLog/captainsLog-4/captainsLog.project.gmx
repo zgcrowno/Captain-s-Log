@@ -36,12 +36,24 @@
     <sprites name="projectile">
       <sprites name="bullet">
         <sprites name="radar">
-          <sprite>sprites\sprPlayerBulletContact</sprite>
-          <sprite>sprites\sprPlayerBullet</sprite>
+          <sprites name="player">
+            <sprite>sprites\sprPlayerBulletContact</sprite>
+            <sprite>sprites\sprPlayerBullet</sprite>
+          </sprites>
+          <sprites name="enemy">
+            <sprite>sprites\sprEnemyBullet</sprite>
+            <sprite>sprites\sprEnemyBulletContact</sprite>
+          </sprites>
         </sprites>
         <sprites name="background">
-          <sprite>sprites\sprBulletBackground</sprite>
-          <sprite>sprites\sprCannonBulletBackground</sprite>
+          <sprites name="player">
+            <sprite>sprites\sprPlayerBulletBackground</sprite>
+            <sprite>sprites\sprPlayerCannonBulletBackground</sprite>
+          </sprites>
+          <sprites name="enemy">
+            <sprite>sprites\sprEnemyBulletBackground</sprite>
+            <sprite>sprites\sprEnemyCannonBulletBackground</sprite>
+          </sprites>
         </sprites>
       </sprites>
       <sprites name="active">
@@ -49,7 +61,12 @@
       </sprites>
       <sprites name="cannon">
         <sprites name="cannonBullet">
-          <sprite>sprites\sprCannonBullet</sprite>
+          <sprites name="player">
+            <sprite>sprites\sprCannonBullet</sprite>
+          </sprites>
+          <sprites name="enemy">
+            <sprite>sprites\sprite22</sprite>
+          </sprites>
         </sprites>
       </sprites>
     </sprites>
@@ -126,6 +143,7 @@
           <script>scripts\scrPlayerBulletShipInteraction.gml</script>
           <script>scripts\scrPlayerCannonBulletShipInteraction.gml</script>
           <script>scripts\scrShipInteraction.gml</script>
+          <script>scripts\scrEnemyBulletShipInteraction.gml</script>
         </scripts>
       </scripts>
       <scripts name="ship">
@@ -323,13 +341,19 @@
         <object>objects\objHud</object>
       </objects>
       <objects name="projectile">
-        <object>objects\objPlayerBullet</object>
         <object>objects\objProjectile</object>
         <object>objects\objBullet</object>
-        <object>objects\objPlayerBulletContact</object>
-        <object>objects\objRiceCakeActive</object>
         <object>objects\objCannonBullet</object>
-        <object>objects\objPlayerCannonBullet</object>
+        <objects name="player">
+          <object>objects\objPlayerBullet</object>
+          <object>objects\objPlayerCannonBullet</object>
+          <object>objects\objPlayerBulletContact</object>
+          <object>objects\objRiceCakeActive</object>
+        </objects>
+        <objects name="enemy">
+          <object>objects\objEnemyBullet</object>
+          <object>objects\objEnemyBulletContact</object>
+        </objects>
       </objects>
       <objects name="environment">
         <object>objects\objBlueSky</object>

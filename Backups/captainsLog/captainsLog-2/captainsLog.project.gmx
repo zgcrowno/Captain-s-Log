@@ -61,7 +61,12 @@
       </sprites>
       <sprites name="cannon">
         <sprites name="cannonBullet">
-          <sprite>sprites\sprCannonBullet</sprite>
+          <sprites name="player">
+            <sprite>sprites\sprCannonBullet</sprite>
+          </sprites>
+          <sprites name="enemy">
+            <sprite>sprites\sprite22</sprite>
+          </sprites>
         </sprites>
       </sprites>
     </sprites>
@@ -336,14 +341,19 @@
         <object>objects\objHud</object>
       </objects>
       <objects name="projectile">
-        <object>objects\objPlayerBullet</object>
         <object>objects\objProjectile</object>
         <object>objects\objBullet</object>
-        <object>objects\objPlayerBulletContact</object>
-        <object>objects\objRiceCakeActive</object>
         <object>objects\objCannonBullet</object>
-        <object>objects\objPlayerCannonBullet</object>
-        <object>objects\objEnemyBullet</object>
+        <objects name="player">
+          <object>objects\objPlayerBullet</object>
+          <object>objects\objPlayerCannonBullet</object>
+          <object>objects\objPlayerBulletContact</object>
+          <object>objects\objRiceCakeActive</object>
+        </objects>
+        <objects name="enemy">
+          <object>objects\objEnemyBullet</object>
+          <object>objects\objEnemyBulletContact</object>
+        </objects>
       </objects>
       <objects name="environment">
         <object>objects\objBlueSky</object>

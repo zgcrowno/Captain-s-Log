@@ -128,6 +128,12 @@
         <scripts name="bullet">
           <scripts name="data">
             <script>scripts\scrBulletData.gml</script>
+            <scripts name="player">
+              <script>scripts\scrPlayerBulletData.gml</script>
+            </scripts>
+            <scripts name="enemy">
+              <script>scripts\scrEnemyBulletData.gml</script>
+            </scripts>
           </scripts>
           <scripts name="util">
             <script>scripts\scrBulletTimelineActions.gml</script>

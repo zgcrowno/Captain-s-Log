@@ -1,5 +1,5 @@
 if(position_meeting(x, y, objPlayerShip)) {
-    instance_create(x, y, objPlayerBulletContact);
+    instance_create(x, y, objEnemyBulletContact);
     player.currentHP -= damage;
     instance_destroy();
 }

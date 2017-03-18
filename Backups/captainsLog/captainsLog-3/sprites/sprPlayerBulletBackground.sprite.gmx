@@ -20,9 +20,9 @@
   <width>50</width>
   <height>50</height>
   <frames>
-    <frame index="0">images\sprBulletBackground_0.png</frame>
-    <frame index="1">images\sprBulletBackground_1.png</frame>
-    <frame index="2">images\sprBulletBackground_2.png</frame>
-    <frame index="3">images\sprBulletBackground_3.png</frame>
+    <frame index="0">images\sprPlayerBulletBackground_0.png</frame>
+    <frame index="1">images\sprPlayerBulletBackground_1.png</frame>
+    <frame index="2">images\sprPlayerBulletBackground_2.png</frame>
+    <frame index="3">images\sprPlayerBulletBackground_3.png</frame>
   </frames>
 </sprite>

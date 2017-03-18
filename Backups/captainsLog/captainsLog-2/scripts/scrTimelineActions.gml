@@ -11,8 +11,5 @@ if(scrTouchedTimelineThisTurn() && !alreadyTouchedTimeline) {
        || object_is_ancestor(object_index, objCannonBullet)) {
         scrBulletTimelineActions();
     }
-    if(object_is_ancestor(object_index, objEnemyShip)) {
-        scrBehavior();
-    }
     alreadyTouchedTimeline = true;
 }

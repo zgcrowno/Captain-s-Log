@@ -1,1 +1,1 @@
-backgroundSprite = sprCannonBulletBackground;
+backgroundSprite = sprPlayerCannonBulletBackground;
