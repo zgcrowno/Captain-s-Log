@@ -2,7 +2,7 @@
 if(random(10) >= 9.9) {
     if(scrIsAbove(player)) {
         if(scrIsFacingUp(self)) {
-            if(distance_to_point(player.x, y) < distance_to_point(x, player.y)) {
+            if(distance_to_point(player.x, y) <= distance_to_point(x, player.y)) {
                 if(scrIsLeft(player)) {
                     if(actionMap[? util.actionMapThrustersStarboardString] == 0) {
                         if(random(10) >= 6) {
@@ -72,7 +72,7 @@ if(random(10) >= 9.9) {
                 }
             }
         } else if(scrIsFacingDown(self)) {
-            if(distance_to_point(player.x, y) < distance_to_point(x, player.y)) {
+            if(distance_to_point(player.x, y) <= distance_to_point(x, player.y)) {
                 if(scrIsLeft(player)) {
                     if(actionMap[? util.actionMapThrustersPortString] == 0) {
                         if(random(10) >= 6) {
@@ -132,7 +132,7 @@ if(random(10) >= 9.9) {
                 }
             }
         } else if(scrIsFacingLeft(self)) {
-            if(distance_to_point(player.x, y) > distance_to_point(x, player.y)) {
+            if(distance_to_point(player.x, y) >= distance_to_point(x, player.y)) {
                 if(scrIsAbove(player)) {
                     if(actionMap[? util.actionMapThrustersPortString] == 0) {
                         if(random(10) >= 6) {
@@ -170,7 +170,7 @@ if(random(10) >= 9.9) {
                 }
             }
         } else if(scrIsFacingRight(self)) {
-            if(distance_to_point(player.x, y) > distance_to_point(x, player.y)) {
+            if(distance_to_point(player.x, y) >= distance_to_point(x, player.y)) {
                 if(scrIsAbove(player)) {
                     if(actionMap[? util.actionMapThrustersStarboardString] == 0) {
                         if(random(10) >= 6) {

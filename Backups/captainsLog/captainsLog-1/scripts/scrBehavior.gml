@@ -220,7 +220,7 @@ if(random(10) >= 9.9) {
 }
 
 //Guns Behavior
-if(random(10) >= 9.9) {
+if(random(10) >= 9.97) {
     if(scrIsAbove(player)) {
         if(scrIsFacingUp(self)) {
             if(!actionMap[? util.actionMapGunsString]) {

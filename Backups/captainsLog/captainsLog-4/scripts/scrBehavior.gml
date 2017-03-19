@@ -1,5 +1,5 @@
 //Movement Behavior
-if(random(10000) >= 6000) {
+if(random(10) >= 9.9) {
     if(scrIsAbove(player)) {
         if(scrIsFacingUp(self)) {
             if(distance_to_point(player.x, y) < distance_to_point(x, player.y)) {

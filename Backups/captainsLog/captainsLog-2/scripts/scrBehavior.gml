@@ -6,13 +6,13 @@ if(random(10) >= 9.9) {
                 if(scrIsLeft(player)) {
                     if(actionMap[? util.actionMapThrustersStarboardString] == 0) {
                         if(random(10) >= 6) {
-                            scrThrustersStarboard(irandom_range(1, floor(distance_to_point(player.x, y) / sprite_get_width(sprGridBox))));
+                            scrThrustersStarboard(irandom_range(1, ceil(distance_to_point(player.x, y) / sprite_get_width(sprGridBox))));
                         }
                     }
                 } else if(scrIsRight(player)) {
                     if(actionMap[? util.actionMapThrustersPortString] == 0) {
                         if(random(10) >= 6) {
-                            scrThrustersPort(irandom_range(1, floor(distance_to_point(player.x, y) / sprite_get_width(sprGridBox))));
+                            scrThrustersPort(irandom_range(1, ceil(distance_to_point(player.x, y) / sprite_get_width(sprGridBox))));
                         }
                     }
                 }
@@ -76,13 +76,13 @@ if(random(10) >= 9.9) {
                 if(scrIsLeft(player)) {
                     if(actionMap[? util.actionMapThrustersPortString] == 0) {
                         if(random(10) >= 6) {
-                            scrThrustersPort(irandom_range(1, floor(distance_to_point(player.x, y) / sprite_get_width(sprGridBox))));
+                            scrThrustersPort(irandom_range(1, ceil(distance_to_point(player.x, y) / sprite_get_width(sprGridBox))));
                         }
                     }
                 } else if(scrIsRight(player)) {
                     if(actionMap[? util.actionMapThrustersStarboardString] == 0) {
                         if(random(10) >= 6) {
-                            scrThrustersStarboard(irandom_range(1, floor(distance_to_point(player.x, y) / sprite_get_width(sprGridBox))));
+                            scrThrustersStarboard(irandom_range(1, ceil(distance_to_point(player.x, y) / sprite_get_width(sprGridBox))));
                         }
                     }
                 }
@@ -136,13 +136,13 @@ if(random(10) >= 9.9) {
                 if(scrIsAbove(player)) {
                     if(actionMap[? util.actionMapThrustersPortString] == 0) {
                         if(random(10) >= 6) {
-                            scrThrustersPort(irandom_range(1, floor(distance_to_point(x, player.y) / sprite_get_width(sprGridBox))));
+                            scrThrustersPort(irandom_range(1, ceil(distance_to_point(x, player.y) / sprite_get_width(sprGridBox))));
                         }
                     }
                 } else if(scrIsBelow(player)) {
                     if(actionMap[? util.actionMapThrustersStarboardString] == 0) {
                         if(random(10) >= 6) {
-                            scrThrustersStarboard(irandom_range(1, floor(distance_to_point(x, player.y) / sprite_get_width(sprGridBox))));
+                            scrThrustersStarboard(irandom_range(1, ceil(distance_to_point(x, player.y) / sprite_get_width(sprGridBox))));
                         }
                     }
                 }
@@ -174,13 +174,13 @@ if(random(10) >= 9.9) {
                 if(scrIsAbove(player)) {
                     if(actionMap[? util.actionMapThrustersStarboardString] == 0) {
                         if(random(10) >= 6) {
-                            scrThrustersStarboard(irandom_range(1, floor(distance_to_point(x, player.y) / sprite_get_width(sprGridBox))));
+                            scrThrustersStarboard(irandom_range(1, ceil(distance_to_point(x, player.y) / sprite_get_width(sprGridBox))));
                         }
                     }
                 } else if(scrIsBelow(player)) {
                     if(actionMap[? util.actionMapThrustersPortString] == 0) {
                         if(random(10) >= 6) {
-                            scrThrustersPort(irandom_range(1, floor(distance_to_point(x, player.y) / sprite_get_width(sprGridBox))));
+                            scrThrustersPort(irandom_range(1, ceil(distance_to_point(x, player.y) / sprite_get_width(sprGridBox))));
                         }
                     }
                 }
