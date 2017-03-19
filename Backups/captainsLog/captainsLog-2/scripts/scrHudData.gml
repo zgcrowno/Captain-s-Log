@@ -98,6 +98,46 @@ thrustersPercentRightBound = 636;
 thrustersPercentUpperBound = 712;
 thrustersPercentLowerBound = 727;
 
+thrustersPortHPLeftBound = thrustersLeftBound + 5;
+thrustersPortHPRightBound = thrustersLeftBound + 15;
+thrustersPortHPUpperBound = thrustersUpperBound + 5;
+thrustersPortHPLowerBound = thrustersUpperBound + ((thrustersLowerBound - thrustersUpperBound) / 2) - 5;
+
+thrustersStarboardHPLeftBound = thrustersRightBound - 25;
+thrustersStarboardHPRightBound = thrustersRightBound - 15;
+thrustersStarboardHPUpperBound = thrustersUpperBound + ((thrustersLowerBound - thrustersUpperBound) / 2) + 5;
+thrustersStarboardHPLowerBound = thrustersLowerBound - 5;
+
+thrustersBowHPLeftBound = thrustersRightBound - 25;
+thrustersBowHPRightBound = thrustersRightBound - 15;
+thrustersBowHPUpperBound = thrustersUpperBound + 5;
+thrustersBowHPLowerBound = thrustersUpperBound + ((thrustersLowerBound - thrustersUpperBound) / 2) - 5;
+
+thrustersSternHPLeftBound = thrustersLeftBound + 5;
+thrustersSternHPRightBound = thrustersLeftBound + 15;
+thrustersSternHPUpperBound = thrustersUpperBound + ((thrustersLowerBound - thrustersUpperBound) / 2) + 5;
+thrustersSternHPLowerBound = thrustersLowerBound - 5;
+
+thrustersPortPPLeftBound = thrustersLeftBound + 15;
+thrustersPortPPRightBound = thrustersLeftBound + 25;
+thrustersPortPPUpperBound = thrustersUpperBound + 5;
+thrustersPortPPLowerBound = thrustersUpperBound + ((thrustersLowerBound - thrustersUpperBound) / 2) - 5;
+
+thrustersStarboardPPLeftBound = thrustersRightBound - 15;
+thrustersStarboardPPRightBound = thrustersRightBound - 5;
+thrustersStarboardPPUpperBound = thrustersUpperBound + ((thrustersLowerBound - thrustersUpperBound) / 2) + 5;
+thrustersStarboardPPLowerBound = thrustersLowerBound - 5;
+
+thrustersBowPPLeftBound = thrustersRightBound - 15;
+thrustersBowPPRightBound = thrustersRightBound - 5;
+thrustersBowPPUpperBound = thrustersUpperBound + 5;
+thrustersBowPPLowerBound = thrustersUpperBound + ((thrustersLowerBound - thrustersUpperBound) / 2) - 5;
+
+thrustersSternPPLeftBound = thrustersLeftBound + 15;
+thrustersSternPPRightBound = thrustersLeftBound + 25;
+thrustersSternPPUpperBound = thrustersUpperBound + ((thrustersLowerBound - thrustersUpperBound) / 2) + 5;
+thrustersSternPPLowerBound = thrustersLowerBound - 5;
+
 shieldsLeftBound = 372;
 shieldsRightBound = 611;
 shieldsUpperBound = 776;
@@ -107,6 +147,46 @@ shieldsPercentLeftBound = 614;
 shieldsPercentRightBound = 636;
 shieldsPercentUpperBound = 874;
 shieldsPercentLowerBound = 889;
+
+shieldsPortHPLeftBound = shieldsLeftBound + 5;
+shieldsPortHPRightBound = shieldsLeftBound + 15;
+shieldsPortHPUpperBound = shieldsUpperBound + 5;
+shieldsPortHPLowerBound = shieldsUpperBound + ((shieldsLowerBound - shieldsUpperBound) / 2) - 5;
+
+shieldsStarboardHPLeftBound = shieldsRightBound - 25;
+shieldsStarboardHPRightBound = shieldsRightBound - 15;
+shieldsStarboardHPUpperBound = shieldsUpperBound + ((shieldsLowerBound - shieldsUpperBound) / 2) + 5;
+shieldsStarboardHPLowerBound = shieldsLowerBound - 5;
+
+shieldsBowHPLeftBound = shieldsRightBound - 25;
+shieldsBowHPRightBound = shieldsRightBound - 15;
+shieldsBowHPUpperBound = shieldsUpperBound + 5;
+shieldsBowHPLowerBound = shieldsUpperBound + ((shieldsLowerBound - shieldsUpperBound) / 2) - 5;
+
+shieldsSternHPLeftBound = shieldsLeftBound + 5;
+shieldsSternHPRightBound = shieldsLeftBound + 15;
+shieldsSternHPUpperBound = shieldsUpperBound + ((shieldsLowerBound - shieldsUpperBound) / 2) + 5;
+shieldsSternHPLowerBound = shieldsLowerBound - 5;
+
+shieldsPortPPLeftBound = shieldsLeftBound + 15;
+shieldsPortPPRightBound = shieldsLeftBound + 25;
+shieldsPortPPUpperBound = shieldsUpperBound + 5;
+shieldsPortPPLowerBound = shieldsUpperBound + ((shieldsLowerBound - shieldsUpperBound) / 2) - 5;
+
+shieldsStarboardPPLeftBound = shieldsRightBound - 15;
+shieldsStarboardPPRightBound = shieldsRightBound - 5;
+shieldsStarboardPPUpperBound = shieldsUpperBound + ((shieldsLowerBound - shieldsUpperBound) / 2) + 5;
+shieldsStarboardPPLowerBound = shieldsLowerBound - 5;
+
+shieldsBowPPLeftBound = shieldsRightBound - 15;
+shieldsBowPPRightBound = shieldsRightBound - 5;
+shieldsBowPPUpperBound = shieldsUpperBound + 5; 
+shieldsBowPPLowerBound = shieldsUpperBound + ((shieldsLowerBound - shieldsUpperBound) / 2) - 5;
+
+shieldsSternPPLeftBound = shieldsLeftBound + 15;
+shieldsSternPPRightBound = shieldsLeftBound + 25;
+shieldsSternPPUpperBound = shieldsUpperBound + ((shieldsLowerBound - shieldsUpperBound) / 2) + 5;
+shieldsSternPPLowerBound = shieldsLowerBound - 5;
 
 commandsLeftBound = 372;
 commandsRightBound = 636;

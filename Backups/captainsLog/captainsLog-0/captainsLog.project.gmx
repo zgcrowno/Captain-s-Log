@@ -219,6 +219,8 @@
           </scripts>
           <scripts name="behavior">
             <script>scripts\scrBehavior.gml</script>
+            <script>scripts\scrMovementBehavior.gml</script>
+            <script>scripts\scrGunsBehavior.gml</script>
           </scripts>
         </scripts>
         <scripts name="guns">
@@ -273,6 +275,11 @@
             <script>scripts\scrRadarBoundIsPortAdjacent.gml</script>
             <script>scripts\scrRadarBoundIsSternAdjacent.gml</script>
             <script>scripts\scrRadarBoundIsStarboardAdjacent.gml</script>
+          </scripts>
+          <scripts name="random">
+            <script>scripts\scrMovementChance.gml</script>
+            <script>scripts\scrThrustersChance.gml</script>
+            <script>scripts\scrEqualChance.gml</script>
           </scripts>
         </scripts>
         <scripts name="playerShip">
