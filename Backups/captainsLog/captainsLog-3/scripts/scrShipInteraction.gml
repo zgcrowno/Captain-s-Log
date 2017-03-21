@@ -4,6 +4,7 @@ if(object_index == objPlayerBullet) {
     scrPlayerCannonBulletShipInteraction();
 } else if(object_index == objEnemyBullet) {
     scrEnemyBulletShipInteraction();
+    scrEnemyBulletShieldsInteraction();
 } else {
     //To Do: Write similar code for when an enemy projectile hits the player ship
 }

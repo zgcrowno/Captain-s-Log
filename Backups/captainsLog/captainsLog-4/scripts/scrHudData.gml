@@ -251,7 +251,7 @@ targetAQSevenLowerBound = 714;
 
 targetAQEightLeftBound = 1838;
 targetAQEightRightBound = 1891;
-targetAQEightUpperBound = 1007;
+targetAQEightUpperBound = 614;
 targetAQEightLowerBound = 658;
 
 //The vertical distance between the actionQueue screens

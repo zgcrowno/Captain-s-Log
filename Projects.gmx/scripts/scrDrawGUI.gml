@@ -15,7 +15,7 @@ show_debug_message(hud.thrustersPortHPLowerBound);
 draw_sprite(sprTypingPrompt, 
             -1, 
             hud.consoleLeftBound + string_width(instance_find(objPlayerShip, 0).input), 
-            hud.consoleLowerBound - string_height("Something"));
+            hud.consoleLowerBound - string_height("Something") - 3);
 
 //Draw the overall HP bar
 draw_healthbar(hud.powerLeftBound, 

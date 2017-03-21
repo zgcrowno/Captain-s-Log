@@ -150,6 +150,11 @@
           <script>scripts\scrPlayerCannonBulletShipInteraction.gml</script>
           <script>scripts\scrShipInteraction.gml</script>
           <script>scripts\scrEnemyBulletShipInteraction.gml</script>
+          <script>scripts\scrIsFacingStarboard.gml</script>
+          <script>scripts\scrIsFacingPort.gml</script>
+          <script>scripts\scrIsFacingBow.gml</script>
+          <script>scripts\scrIsFacingStern.gml</script>
+          <script>scripts\scrEnemyBulletShieldsInteraction.gml</script>
         </scripts>
       </scripts>
       <scripts name="ship">

@@ -15,7 +15,7 @@ show_debug_message(hud.thrustersPortHPLowerBound);
 draw_sprite(sprTypingPrompt, 
             -1, 
             hud.consoleLeftBound + string_width(instance_find(objPlayerShip, 0).input), 
-            hud.consoleLowerBound - string_height("Something"));
+            hud.consoleLowerBound - string_height("Something") - 3);
 
 //Draw the overall HP bar
 draw_healthbar(hud.powerLeftBound, 
@@ -55,7 +55,7 @@ draw_sprite(player.sprite_index,
             hud.shieldsLeftBound + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 2), 
             hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2));
 
-//Draw the thrustersPortHP and thrustersPortPP bars, and the borders thereof
+//Draw the thrustersPortHP and thrustersPortPP bars, and the borders thereof (and lines thereto)
 draw_healthbar(hud.thrustersPortHPLeftBound, 
                hud.thrustersPortHPUpperBound, 
                hud.thrustersPortHPRightBound, 
@@ -113,8 +113,12 @@ draw_line(hud.thrustersPortPPLeftBound,
           hud.thrustersPortPPRightBound,
           hud.thrustersPortPPLowerBound);
 draw_set_color(c_white);
+draw_line(hud.thrustersPortPPRightBound,
+          hud.thrustersPortPPUpperBound,
+          hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2) - (player.sprite_width / 2),
+          hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2));
 
-//Draw the thrustersStarboardHP and thrustersStarboardPP bars, and the borders thereof
+//Draw the thrustersStarboardHP and thrustersStarboardPP bars, and the borders thereof (and lines thereto)
 draw_healthbar(hud.thrustersStarboardHPLeftBound, 
                hud.thrustersStarboardHPUpperBound, 
                hud.thrustersStarboardHPRightBound, 
@@ -172,8 +176,12 @@ draw_line(hud.thrustersStarboardPPLeftBound,
           hud.thrustersStarboardPPRightBound,
           hud.thrustersStarboardPPLowerBound);
 draw_set_color(c_white);
+draw_line(hud.thrustersStarboardHPLeftBound,
+          hud.thrustersStarboardHPLowerBound,
+          hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2) + (player.sprite_width / 2),
+          hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2));
 
-//Draw the thrustersBowHP and thrustersBowPP bars, and the borders thereof
+//Draw the thrustersBowHP and thrustersBowPP bars, and the borders thereof (and lines thereto)
 draw_healthbar(hud.thrustersBowHPLeftBound, 
                hud.thrustersBowHPUpperBound, 
                hud.thrustersBowHPRightBound, 
@@ -231,8 +239,12 @@ draw_line(hud.thrustersBowPPLeftBound,
           hud.thrustersBowPPRightBound,
           hud.thrustersBowPPLowerBound);
 draw_set_color(c_white);
+draw_line(hud.thrustersBowHPLeftBound,
+          hud.thrustersBowHPUpperBound,
+          hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2),
+          hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2) - (player.sprite_height / 2));
 
-//Draw the thrustersSternHP and thrustersSternPP bars
+//Draw the thrustersSternHP and thrustersSternPP bars, and the borders thereof (and lines thereto)
 draw_healthbar(hud.thrustersSternHPLeftBound, 
                hud.thrustersSternHPUpperBound, 
                hud.thrustersSternHPRightBound, 
@@ -290,6 +302,10 @@ draw_line(hud.thrustersSternPPLeftBound,
           hud.thrustersSternPPRightBound,
           hud.thrustersSternPPLowerBound);
 draw_set_color(c_white);
+draw_line(hud.thrustersSternPPRightBound,
+          hud.thrustersSternPPLowerBound,
+          hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2),
+          hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2) + (player.sprite_height / 2));
 
 //Draw the thrustersRotateClockwisePP and thrustersRotateCounterclockwisePP bars
 draw_healthbar(hud.thrustersRightBound - 60, 
@@ -315,7 +331,7 @@ draw_healthbar(hud.thrustersLeftBound + 60,
                false, 
                false);
 
-//Draw the shieldsPortHP and shieldsPortPP bars
+//Draw the shieldsPortHP and shieldsPortPP bars, and the borders thereof (and lines thereto)
 draw_healthbar(hud.shieldsPortHPLeftBound, 
                hud.shieldsPortHPUpperBound, 
                hud.shieldsPortHPRightBound, 
@@ -373,8 +389,12 @@ draw_line(hud.shieldsPortPPLeftBound,
           hud.shieldsPortPPRightBound,
           hud.shieldsPortPPLowerBound);
 draw_set_color(c_white);
+draw_line(hud.shieldsPortPPRightBound,
+          hud.shieldsPortPPUpperBound,
+          hud.shieldsLeftBound + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 2) - (player.sprite_width / 2),
+          hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2));
 
-//Draw the shieldsStarboardHP and shieldsStarboardPP bars
+//Draw the shieldsStarboardHP and shieldsStarboardPP bars, and the borders thereof (and lines thereto)
 draw_healthbar(hud.shieldsStarboardHPLeftBound, 
                hud.shieldsStarboardHPUpperBound, 
                hud.shieldsStarboardHPRightBound, 
@@ -432,8 +452,12 @@ draw_line(hud.shieldsStarboardPPLeftBound,
           hud.shieldsStarboardPPRightBound,
           hud.shieldsStarboardPPLowerBound);
 draw_set_color(c_white);
+draw_line(hud.shieldsStarboardHPLeftBound,
+          hud.shieldsStarboardHPLowerBound,
+          hud.shieldsLeftBound + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 2) + (player.sprite_width / 2),
+          hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2));
 
-//Draw the shieldsBowHP and shieldsBowPP bars
+//Draw the shieldsBowHP and shieldsBowPP bars, and the borders thereof (and lines thereto)
 draw_healthbar(hud.shieldsBowHPLeftBound, 
                hud.shieldsBowHPUpperBound, 
                hud.shieldsBowHPRightBound, 
@@ -491,8 +515,12 @@ draw_line(hud.shieldsBowPPLeftBound,
           hud.shieldsBowPPRightBound,
           hud.shieldsBowPPLowerBound);
 draw_set_color(c_white);
+draw_line(hud.shieldsBowHPLeftBound,
+          hud.shieldsBowHPUpperBound,
+          hud.shieldsLeftBound + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 2),
+          hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2) - (player.sprite_height / 2));
 
-//Draw the shieldsSternHP and shieldsSternPP bars
+//Draw the shieldsSternHP and shieldsSternPP bars, and the borders thereof (and lines thereto)
 draw_healthbar(hud.shieldsSternHPLeftBound, 
                hud.shieldsSternHPUpperBound, 
                hud.shieldsSternHPRightBound, 
@@ -550,6 +578,10 @@ draw_line(hud.shieldsSternPPLeftBound,
           hud.shieldsSternPPRightBound,
           hud.shieldsSternPPLowerBound);
 draw_set_color(c_white);
+draw_line(hud.shieldsSternPPRightBound,
+          hud.shieldsSternPPLowerBound,
+          hud.shieldsLeftBound + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 2),
+          hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2) + (player.sprite_height / 2));
                
 //Draw Target Info
 scrDrawTargetInfo();
