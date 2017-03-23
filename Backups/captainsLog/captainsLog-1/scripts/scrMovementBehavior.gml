@@ -80,6 +80,7 @@ if(scrMovementChance()) {
                     }
                 } else if(scrIsRight(player)) {
                     if(actionMap[? util.actionMapThrustersStarboardString] == 0) {
+                        show_debug_message(scrThrustersChance());
                         if(scrThrustersChance()) {
                             scrThrustersStarboard(irandom_range(1, ceil(distance_to_point(player.x, y) / sprite_get_width(sprGridBox))));
                         }

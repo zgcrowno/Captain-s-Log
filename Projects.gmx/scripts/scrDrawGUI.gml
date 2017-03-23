@@ -8,8 +8,6 @@ scrDrawBackgroundObjects(util.enemies);
 scrDrawBackgroundObjects(projectiles);
 
 draw_sprite(sprPixelHud, -1, 0, 0);
-
-show_debug_message(hud.thrustersPortHPLowerBound);
             
 //Draw the typing prompt
 draw_sprite(sprTypingPrompt, 

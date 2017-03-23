@@ -11,7 +11,7 @@ if(scrIsFacingUp(self) || scrIsFacingDown(self)) {
 }
 
 for(i = 0; i < array_length_1d(gridBoxes); i++) {
-    if(scrGridBoxIsAdjacent(gridBoxes[i])) {
+    if(scrGridBoxIsAdjacent(gridBoxes[i], shipSpriteOffset)) {
         adjacentGridBoxes[adjacentGridBoxesIndex] = gridBoxes[i];
         adjacentGridBoxesIndex++;
     }

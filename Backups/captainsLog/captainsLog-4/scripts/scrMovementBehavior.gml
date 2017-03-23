@@ -72,6 +72,7 @@ if(scrMovementChance()) {
             }
         } else if(scrIsFacingDown(self)) {
             if(distance_to_point(player.x, y) <= distance_to_point(x, player.y)) {
+                show_debug_message("something");
                 if(scrIsLeft(player)) {
                     if(actionMap[? util.actionMapThrustersPortString] == 0) {
                         if(scrThrustersChance()) {

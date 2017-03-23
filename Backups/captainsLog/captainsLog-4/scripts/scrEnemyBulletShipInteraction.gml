@@ -3,18 +3,27 @@ if(position_meeting(x, y, objPlayerShip)) {
     player.currentHP -= damage;
     
     //Calculate thrusters damage
-    if(scrIsHittingPort()) {
+    if(scrIsFacingPort()) {
         player.currentHPThrustersPort -= damage;
-    } else if(scrIsHittingStarboard()) {
+        if(player.currentHPThrustersPort <= 0) {
+            player.actionMap[? util.actionMapThrustersPortString] = 0;
+        }
+    } else if(scrIsFacingStarboard()) {
         player.currentHPThrustersStarboard -= damage;
-    } else if(scrIsHittingBow()) {
+        if(player.currentHPThrustersStarboard <= 0) {
+            player.actionMap[? util.actionMapThrustersStarboardString] = 0;
+        }
+    } else if(scrIsFacingBow()) {
         player.currentHPThrustersBow -= damage;
-    } else if(scrIsHittingStern()) {
+        if(player.currentHPThrustersBow <= 0) {
+            player.actionMap[? util.actionMapThrustersBowString] = 0;
+        }
+    } else if(scrIsFacingStern()) {
         player.currentHPThrustersStern -= damage;
+        if(player.currentHPThrustersStern <= 0) {
+            player.actionMap[? util.actionMapThrustersSternString] = 0;
+        }
     }
-    
-    //Calculate shields damage
-    
     
     instance_destroy();
 }

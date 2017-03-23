@@ -143,14 +143,14 @@ input = "";
 maxHPRicecake = 100;
 maxPPRicecake = 100;
 
-maxHPThrustersPortRicecake = 100;
-maxHPThrustersStarboardRicecake = 100;
-maxHPThrustersBowRicecake = 100;
-maxHPThrustersSternRicecake = 100;
-maxHPShieldsPortRicecake = 100;
-maxHPShieldsStarboardRicecake = 100;
-maxHPShieldsBowRicecake = 100;
-maxHPShieldsSternRicecake = 100;
+maxHPThrustersPortRicecake = 50;
+maxHPThrustersStarboardRicecake = 50;
+maxHPThrustersBowRicecake = 50;
+maxHPThrustersSternRicecake = 50;
+maxHPShieldsPortRicecake = 50;
+maxHPShieldsStarboardRicecake = 50;
+maxHPShieldsBowRicecake = 50;
+maxHPShieldsSternRicecake = 50;
 
 shipSpeedRicecake = 0.5
 bulletSpeedRicecake = 0.75

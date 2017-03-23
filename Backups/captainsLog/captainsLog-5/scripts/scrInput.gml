@@ -485,7 +485,6 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     }
 } else if(currentState == shieldState) {    //shieldState checks
-    //To do
     if(input == "") {
         if(keyboard_check_pressed(ord("P"))) {
             input += "p";
@@ -510,7 +509,12 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "port") {
         if(keyboard_check_pressed(vk_enter)) {
-            scrShieldsPort();
+            if(currentHPShieldsPort > 0) {
+                scrShieldsPort();
+            } else {
+                scrSetState(initState);
+                //TO DO: Error about user input
+            }
         }
     } else if(input == "s") {
         if(keyboard_check_pressed(ord("T"))) {
@@ -548,7 +552,12 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "starboard") {
         if(keyboard_check_pressed(vk_enter)) {
-            scrShieldsStarboard();
+            if(currentHPShieldsStarboard > 0) {
+                scrShieldsStarboard();
+            } else {
+                scrSetState(initState);
+                //TO DO: Error about user input
+            }
         }
     } else if(input == "b") {
         if(keyboard_check_pressed(ord("O"))) {
@@ -560,7 +569,12 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "bow") {
         if(keyboard_check_pressed(vk_enter)) {
-            scrShieldsBow();
+            if(currentHPShieldsBow > 0) {
+                scrShieldsBow();
+            } else {
+                scrSetState(initState);
+                //TO DO: Error about user input
+            }
         }
     } else if(input == "ste") {
         if(keyboard_check_pressed(ord("R"))) {
@@ -572,7 +586,12 @@ if(keyboard_check_pressed(vk_tab)) {
         }
     } else if(input == "stern") {
         if(keyboard_check_pressed(vk_enter)) {
-           scrShieldsStern();
+            if(currentHPShieldsStern > 0) {
+                scrShieldsStern();
+            } else {
+                scrSetState(initState);
+                //TO DO: Error about user input
+            }
         }
     } else if(input == "a") {
         if(keyboard_check_pressed(ord("L"))) {

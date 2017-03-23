@@ -155,6 +155,10 @@
           <script>scripts\scrIsFacingBow.gml</script>
           <script>scripts\scrIsFacingStern.gml</script>
           <script>scripts\scrEnemyBulletShieldsInteraction.gml</script>
+          <script>scripts\scrIsTouchingPortShield.gml</script>
+          <script>scripts\scrIsTouchingStarboardShield.gml</script>
+          <script>scripts\scrIsTouchingBowShield.gml</script>
+          <script>scripts\scrIsTouchingSternShield.gml</script>
         </scripts>
       </scripts>
       <scripts name="ship">

@@ -1,6 +1,12 @@
 //The Captain's Name
 designation = "";
 
+//The enemy ships' thrustersHP will always be 100
+currentHPThrustersPort = 100;
+currentHPThrustersStarboard = 100;
+currentHPThrustersBow = 100;
+currentHPThrustersStern = 100;
+
 //The Captain's Family Status
 family = util.familyArray[random(array_length_1d(util.familyArray))];
 
