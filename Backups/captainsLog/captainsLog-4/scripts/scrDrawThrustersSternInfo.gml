@@ -1,0 +1,61 @@
+draw_healthbar(hud.thrustersSternHPLeftBound, 
+               hud.thrustersSternHPUpperBound, 
+               hud.thrustersSternHPRightBound, 
+               hud.thrustersSternHPLowerBound, 
+               (player.currentHPThrustersStern / player.maxHPThrustersStern) * 100, 
+               c_black, 
+               c_maroon, 
+               c_maroon, 
+               3, 
+               false, 
+               false);
+draw_set_color(c_maroon);
+draw_line(hud.thrustersSternHPLeftBound,
+          hud.thrustersSternHPUpperBound,
+          hud.thrustersSternHPLeftBound,
+          hud.thrustersSternHPLowerBound);
+draw_line(hud.thrustersSternHPRightBound,
+          hud.thrustersSternHPUpperBound,
+          hud.thrustersSternHPRightBound,
+          hud.thrustersSternHPLowerBound);
+draw_line(hud.thrustersSternHPLeftBound,
+          hud.thrustersSternHPUpperBound,
+          hud.thrustersSternHPRightBound,
+          hud.thrustersSternHPUpperBound);
+draw_line(hud.thrustersSternHPLeftBound,
+          hud.thrustersSternHPLowerBound,
+          hud.thrustersSternHPRightBound,
+          hud.thrustersSternHPLowerBound);
+draw_healthbar(hud.thrustersSternPPLeftBound, 
+               hud.thrustersSternPPUpperBound, 
+               hud.thrustersSternPPRightBound, 
+               hud.thrustersSternPPLowerBound, 
+               (player.currentPPThrustersStern / player.requiredPPThrusters) * 100, 
+               c_black, 
+               c_teal, 
+               c_teal, 
+               3, 
+               false, 
+               false);
+draw_set_color(c_teal);
+draw_line(hud.thrustersSternPPLeftBound,
+          hud.thrustersSternPPUpperBound,
+          hud.thrustersSternPPLeftBound,
+          hud.thrustersSternPPLowerBound);
+draw_line(hud.thrustersSternPPRightBound,
+          hud.thrustersSternPPUpperBound,
+          hud.thrustersSternPPRightBound,
+          hud.thrustersSternPPLowerBound);
+draw_line(hud.thrustersSternPPLeftBound,
+          hud.thrustersSternPPUpperBound,
+          hud.thrustersSternPPRightBound,
+          hud.thrustersSternPPUpperBound);
+draw_line(hud.thrustersSternPPLeftBound,
+          hud.thrustersSternPPLowerBound,
+          hud.thrustersSternPPRightBound,
+          hud.thrustersSternPPLowerBound);
+draw_set_color(c_white);
+draw_line(hud.thrustersSternPPRightBound,
+          hud.thrustersSternPPLowerBound,
+          hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2),
+          hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2) + (player.sprite_height / 2));

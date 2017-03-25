@@ -38,11 +38,11 @@ if(scrMovementChance()) {
             }
         } else if(scrIsFacingDown(self)) {
             if(scrEqualChance()) {
-                if(actionMap[? util.actionMapThrustersClockString] == 0) {
+                if(actionMap[? util.actionMapThrustersClockString] == 0 && actionMap[? util.actionMapThrustersCountString] == 0) {
                     scrThrustersRotateClockwise(2);
                 }
             } else {
-                if(actionMap[? util.actionMapThrustersCountString] == 0) {
+                if(actionMap[? util.actionMapThrustersCountString] == 0 && actionMap[? util.actionMapThrustersClockString] == 0) {
                     scrThrustersRotateCounterclockwise(2);
                 }
             }
@@ -56,11 +56,11 @@ if(scrMovementChance()) {
     } else if(scrIsBelow(player)) {
         if(scrIsFacingUp(self)) {
             if(scrEqualChance()) {
-                if(actionMap[? util.actionMapThrustersClockString] == 0) {
+                if(actionMap[? util.actionMapThrustersClockString] == 0 && actionMap[? util.actionMapThrustersCountString] == 0) {
                     scrThrustersRotateClockwise(2);
                 }
             } else {
-                if(actionMap[? util.actionMapThrustersCountString] == 0) {
+                if(actionMap[? util.actionMapThrustersCountString] == 0 && actionMap[? util.actionMapThrustersClockString] == 0) {
                     scrThrustersRotateCounterclockwise(2);
                 }
             }
@@ -116,11 +116,11 @@ if(scrMovementChance()) {
             }
         } else if(scrIsFacingRight(self)) {
             if(scrEqualChance()) {
-                if(actionMap[? util.actionMapThrustersClockString] == 0) {
+                if(actionMap[? util.actionMapThrustersClockString] == 0 && actionMap[? util.actionMapThrustersCountString] == 0) {
                     scrThrustersRotateClockwise(2);
                 }
             } else {
-                if(actionMap[? util.actionMapThrustersCountString] == 0) {
+                if(actionMap[? util.actionMapThrustersCountString] == 0 && actionMap[? util.actionMapThrustersClockString] == 0) {
                     scrThrustersRotateCounterclockwise(2);
                 }
             }
@@ -206,11 +206,11 @@ if(scrMovementChance()) {
             }
         } else if(scrIsFacingLeft(self)) {
             if(scrEqualChance()) {
-                if(actionMap[? util.actionMapThrustersClockString] == 0) {
+                if(actionMap[? util.actionMapThrustersClockString] == 0 && actionMap[? util.actionMapThrustersCountString] == 0) {
                     scrThrustersRotateClockwise(2);
                 }
             } else {
-                if(actionMap[? util.actionMapThrustersCountString] == 0) {
+                if(actionMap[? util.actionMapThrustersCountString] == 0 && actionMap[? util.actionMapThrustersClockString] == 0) {
                     scrThrustersRotateCounterclockwise(2);
                 }
             }

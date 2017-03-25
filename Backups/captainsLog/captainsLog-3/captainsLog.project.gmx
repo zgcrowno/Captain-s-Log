@@ -93,6 +93,19 @@
         <script>scripts\scrDrawPercentageInfo.gml</script>
         <script>scripts\scrDrawTargetInfo.gml</script>
         <script>scripts\scrDrawTargetLines.gml</script>
+        <script>scripts\scrDrawThrustersPortInfo.gml</script>
+        <script>scripts\scrDrawThrustersStarboardInfo.gml</script>
+        <script>scripts\scrDrawThrustersBowInfo.gml</script>
+        <script>scripts\scrDrawThrustersSternInfo.gml</script>
+        <script>scripts\scrDrawThrustersRotateCounterclockwiseInfo.gml</script>
+        <script>scripts\scrDrawThrustersRotateClockwiseInfo.gml</script>
+        <script>scripts\scrDrawShieldsPortInfo.gml</script>
+        <script>scripts\scrDrawShieldsStarboardInfo.gml</script>
+        <script>scripts\scrDrawShieldsBowInfo.gml</script>
+        <script>scripts\scrDrawShieldsSternInfo.gml</script>
+      </scripts>
+      <scripts name="util">
+        <script>scripts\scrSetSubImage.gml</script>
       </scripts>
     </scripts>
     <scripts name="hud">

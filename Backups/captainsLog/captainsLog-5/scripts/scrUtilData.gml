@@ -11,6 +11,9 @@ backgroundBuffer = 562;
 //The damage ships incur while touching static
 staticDamage = 0.1;
 
+//All of the gridBoxes in the room
+gridBoxes = scrGetGridBoxes();
+
 //A collection of all the enemies in the room
 enemies = noone;
 

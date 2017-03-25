@@ -1,0 +1,61 @@
+draw_healthbar(hud.shieldsSternHPLeftBound, 
+               hud.shieldsSternHPUpperBound, 
+               hud.shieldsSternHPRightBound, 
+               hud.shieldsSternHPLowerBound, 
+               (player.currentHPShieldsStern / player.maxHPShieldsStern) * 100, 
+               c_black, 
+               c_maroon, 
+               c_maroon, 
+               3, 
+               false, 
+               false);
+draw_set_color(c_maroon);
+draw_line(hud.shieldsSternHPLeftBound,
+          hud.shieldsSternHPUpperBound,
+          hud.shieldsSternHPLeftBound,
+          hud.shieldsSternHPLowerBound);
+draw_line(hud.shieldsSternHPRightBound,
+          hud.shieldsSternHPUpperBound,
+          hud.shieldsSternHPRightBound,
+          hud.shieldsSternHPLowerBound);
+draw_line(hud.shieldsSternHPLeftBound,
+          hud.shieldsSternHPUpperBound,
+          hud.shieldsSternHPRightBound,
+          hud.shieldsSternHPUpperBound);
+draw_line(hud.shieldsSternHPLeftBound,
+          hud.shieldsSternHPLowerBound,
+          hud.shieldsSternHPRightBound,
+          hud.shieldsSternHPLowerBound);
+draw_healthbar(hud.shieldsSternPPLeftBound, 
+               hud.shieldsSternPPUpperBound, 
+               hud.shieldsSternPPRightBound, 
+               hud.shieldsSternPPLowerBound, 
+               (player.currentPPShieldsStern / player.requiredPPShields) * 100, 
+               c_black, 
+               c_teal, 
+               c_teal, 
+               3, 
+               false, 
+               false);
+draw_set_color(c_teal);
+draw_line(hud.shieldsSternPPLeftBound,
+          hud.shieldsSternPPUpperBound,
+          hud.shieldsSternPPLeftBound,
+          hud.shieldsSternPPLowerBound);
+draw_line(hud.shieldsSternPPRightBound,
+          hud.shieldsSternPPUpperBound,
+          hud.shieldsSternPPRightBound,
+          hud.shieldsSternPPLowerBound);
+draw_line(hud.shieldsSternPPLeftBound,
+          hud.shieldsSternPPUpperBound,
+          hud.shieldsSternPPRightBound,
+          hud.shieldsSternPPUpperBound);
+draw_line(hud.shieldsSternPPLeftBound,
+          hud.shieldsSternPPLowerBound,
+          hud.shieldsSternPPRightBound,
+          hud.shieldsSternPPLowerBound);
+draw_set_color(c_white);
+draw_line(hud.shieldsSternPPRightBound,
+          hud.shieldsSternPPLowerBound,
+          hud.shieldsLeftBound + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 2),
+          hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2) + (player.sprite_height / 2));
