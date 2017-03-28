@@ -1,4 +1,7 @@
 distance = argument0;
+
+scrSetState(initState);
+
 if(!(requiredPPThrustersRotate > currentPP) && !(actionMap[? util.actionMapThrustersCountString] > 0)) {
     actionMap[? util.actionMapThrustersCountString] = real(distance);
     ds_list_add(actionQueue, util.actionQueueThrustersCountString + string(distance));
@@ -8,4 +11,3 @@ if(!(requiredPPThrustersRotate > currentPP) && !(actionMap[? util.actionMapThrus
 } else {
     //To Do: Error to user about lack of power...
 }
-scrSetState(initState);

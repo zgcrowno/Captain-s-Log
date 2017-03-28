@@ -17,7 +17,6 @@ for(i = 0; i < array_length_1d(gridBoxes); i++) {
                 }
             }
             if(scrIsTouchingStarboardShield() && (player.actionMap[? util.actionMapShieldsStarboardString] == player.active || player.actionMap[? util.actionMapShieldsStarboardString] == player.toDeactivate)) {
-                show_debug_message("TOUCHING");
                 player.currentHPShieldsStarboard -= damage;
                 if(player.currentHPShieldsStarboard <= 0) {
                     with(objPlayerShip) {

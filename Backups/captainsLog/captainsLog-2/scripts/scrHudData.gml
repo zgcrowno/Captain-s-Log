@@ -138,6 +138,16 @@ thrustersSternPPRightBound = thrustersLeftBound + 25;
 thrustersSternPPUpperBound = thrustersUpperBound + ((thrustersLowerBound - thrustersUpperBound) / 2) + 5;
 thrustersSternPPLowerBound = thrustersLowerBound - 5;
 
+thrustersRotateCountPPLeftBound = thrustersLeftBound + 60;
+thrustersRotateCountPPRightBound = thrustersLeftBound + 45;
+thrustersRotateCountPPUpperBound = thrustersUpperBound + ((thrustersLowerBound - thrustersUpperBound) / 2);
+thrustersRotateCountPPLowerBound = thrustersUpperBound + ((thrustersLowerBound - thrustersUpperBound) / 2) + 15;
+
+thrustersRotateClockPPLeftBound = thrustersRightBound - 60;
+thrustersRotateClockPPRightBound = thrustersRightBound - 45;
+thrustersRotateClockPPUpperBound = thrustersUpperBound + ((thrustersLowerBound - thrustersUpperBound) / 2);
+thrustersRotateClockPPLowerBound = thrustersUpperBound + ((thrustersLowerBound - thrustersUpperBound) / 2) + 15;
+
 shieldsLeftBound = 372;
 shieldsRightBound = 611;
 shieldsUpperBound = 776;

@@ -1,4 +1,5 @@
 scrSetState(initState);
+
 if(actionMap[? util.actionMapTargetString] != noone) {
     actionMap[? util.actionMapTargetString] = noone;
 }

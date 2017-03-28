@@ -1,4 +1,4 @@
-gridBoxes = gui.gridBoxes;
+gridBoxes = allGridBoxes;
 
 for(i = 0; i < array_length_1d(gridBoxes); i++) {
     gridBox = gridBoxes[i];

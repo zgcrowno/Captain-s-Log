@@ -9,3 +9,21 @@ draw_healthbar(hud.thrustersRightBound - 60,
                3, 
                false, 
                false);
+draw_set_color(c_teal);
+draw_line(hud.thrustersRotateClockPPLeftBound,
+          hud.thrustersRotateClockPPUpperBound,
+          hud.thrustersRotateClockPPLeftBound,
+          hud.thrustersRotateClockPPLowerBound);
+draw_line(hud.thrustersRotateClockPPRightBound,
+          hud.thrustersRotateClockPPUpperBound,
+          hud.thrustersRotateClockPPRightBound,
+          hud.thrustersRotateClockPPLowerBound);
+draw_line(hud.thrustersRotateClockPPLeftBound,
+          hud.thrustersRotateClockPPUpperBound,
+          hud.thrustersRotateClockPPRightBound,
+          hud.thrustersRotateClockPPUpperBound);
+draw_line(hud.thrustersRotateClockPPLeftBound,
+          hud.thrustersRotateClockPPLowerBound,
+          hud.thrustersRotateClockPPRightBound,
+          hud.thrustersRotateClockPPLowerBound);
+draw_set_color(c_white);

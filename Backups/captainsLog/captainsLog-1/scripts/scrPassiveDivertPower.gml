@@ -1,3 +1,5 @@
+scrSetState(initState);
+
 if(requiredPPPassive <= currentPP) {
     if(currentPPPassive == 0) {
         actionMap[? util.actionMapPassiveString] = toActivate;
@@ -8,4 +10,3 @@ if(requiredPPPassive <= currentPP) {
 } else {
     //To Do: Error to user about lack of power...
 }
-scrSetState(initState);

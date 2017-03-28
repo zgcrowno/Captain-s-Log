@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scrCreateGridBoxes</script>
+            <script>scrGUIData</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -65,7 +65,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scrGUIData</script>
+            <script>scrCreateGridBoxes</script>
           </argument>
           <argument>
             <kind>0</kind>

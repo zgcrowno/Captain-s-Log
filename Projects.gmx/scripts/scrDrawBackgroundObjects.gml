@@ -2,7 +2,10 @@ objectArray = scrProximitySort(argument0);
 
 for(i = 0; i < array_length_1d(objectArray); i++) {
     if(scrCanSeeObject(player, objectArray[i])) {
-        distance = point_distance(player.x, player.y, objectArray[i].x, objectArray[i].y) / sprite_get_width(sprGridBox);
+        distance = point_distance(player.x, 
+                                  player.y, 
+                                  objectArray[i].x, 
+                                  objectArray[i].y) / sprite_get_width(sprGridBox);
         numSubImages = 4;
         subImage = 0;
         if(scrIsFacingUp(player)) {

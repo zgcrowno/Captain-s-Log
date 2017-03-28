@@ -2,7 +2,6 @@ gridBoxes = allGridBoxes;
 
 for(i = 0; i < array_length_1d(gridBoxes); i++) {
     gridBox = gridBoxes[i];
-    show_debug_message(scrIsTouchingStarboardShield());
     
     if(position_meeting(x, y, gridBox)) {
         if(gridBox.sprite_index == sprGridBoxShield) {
