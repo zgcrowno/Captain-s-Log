@@ -5,5 +5,7 @@ if(actionMap[? util.actionMapActiveString]) {
             instance_create(x, y, objRiceCakeActive);
             instance_destroy();
         }
+    } else {
+        //TODO: Cases for other ships
     }
 }

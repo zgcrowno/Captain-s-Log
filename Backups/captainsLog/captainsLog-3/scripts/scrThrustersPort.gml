@@ -1,4 +1,7 @@
 distance = argument0;
+
+scrSetState(initState);
+
 if(!(requiredPPThrusters > currentPP) && !(actionMap[? util.actionMapThrustersPortString] > 0) && currentHPThrustersPort > 0) {
     actionMap[? util.actionMapThrustersPortString] = real(distance);
     ds_list_add(actionQueue, util.actionQueueThrustersPortString + string(distance));
@@ -8,4 +11,3 @@ if(!(requiredPPThrusters > currentPP) && !(actionMap[? util.actionMapThrustersPo
 } else {
         //To Do: Error to user about lack of power and/or thrusters health
 }
-scrSetState(initState);

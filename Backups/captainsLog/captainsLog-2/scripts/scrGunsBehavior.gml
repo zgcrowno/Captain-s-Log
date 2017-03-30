@@ -1,35 +1,11 @@
 if(random(10) >= 9.97) {
     if(scrIsAbove(player)) {
-        if(scrIsFacingUp(self)) {
-            if(!actionMap[? util.actionMapGunsString]) {
-                if(random(10) >= 6) {
-                    scrGunsDivertPower();
-                }
-            }
-        }
+        scrPlayerIsAboveGunsBehavior();
     } else if(scrIsBelow(player)) {
-        if(scrIsFacingDown(self)) {
-            if(!actionMap[? util.actionMapGunsString]) {
-                if(random(10) >= 6) {
-                    scrGunsDivertPower();
-                }
-            }
-        }
+        scrPlayerIsBelowGunsBehavior();
     } else if(scrIsLeft(player)) {
-        if(scrIsFacingLeft(self)) {
-            if(!actionMap[? util.actionMapGunsString]) {
-                if(random(10) >= 6) {
-                    scrGunsDivertPower();
-                }
-            }
-        }
+        scrPlayerIsLeftGunsBehavior();
     } else {
-        if(scrIsFacingRight(self)) {
-            if(!actionMap[? util.actionMapGunsString]) {
-                if(random(10) >= 6) {
-                    scrGunsDivertPower();
-                }
-            }
-        }
+        scrPlayerIsRightGunsBehavior();
     }
 }

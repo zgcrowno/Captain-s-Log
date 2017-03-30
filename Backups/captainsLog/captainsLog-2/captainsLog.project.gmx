@@ -216,11 +216,15 @@
           </scripts>
         </scripts>
         <scripts name="cannon">
-          <scripts name="riceCake">
-            <script>scripts\scrRiceCakeCannon.gml</script>
+          <scripts name="behavior">
+            <script>scripts\scrRiceCakeCannonBehavior.gml</script>
           </scripts>
-          <script>scripts\scrCannonDivertPower.gml</script>
-          <script>scripts\scrCannonFire.gml</script>
+          <scripts name="fire">
+            <script>scripts\scrCannonFire.gml</script>
+          </scripts>
+          <scripts name="powerDiversion">
+            <script>scripts\scrCannonDivertPower.gml</script>
+          </scripts>
         </scripts>
         <scripts name="cut">
           <scripts name="active">
@@ -274,16 +278,76 @@
           </scripts>
           <scripts name="behavior">
             <script>scripts\scrBehavior.gml</script>
-            <script>scripts\scrMovementBehavior.gml</script>
-            <script>scripts\scrGunsBehavior.gml</script>
+            <scripts name="movement">
+              <script>scripts\scrMovementBehavior.gml</script>
+              <scripts name="orientation">
+                <scripts name="player">
+                  <script>scripts\scrPlayerIsAboveMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsBelowMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsLeftMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsRightMovementBehavior.gml</script>
+                </scripts>
+                <scripts name="enemy">
+                  <script>scripts\scrPlayerIsAboveAndSelfIsFacingUpMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsAboveAndSelfIsFacingRightMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsAboveAndSelfIsFacingDownMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsAboveAndSelfIsFacingLeftMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsBelowAndSelfIsFacingUpMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsBelowAndSelfIsFacingRightMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsBelowAndSelfIsFacingDownMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsBelowAndSelfIsFacingLeftMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsLeftAndSelfIsFacingUpMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsLeftAndSelfIsFacingRightMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsLeftAndSelfIsFacingDownMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsLeftAndSelfIsFacingLeftMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsRightAndSelfIsFacingUpMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsRightAndSelfIsFacingRightMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsRightAndSelfIsFacingDownMovementBehavior.gml</script>
+                  <script>scripts\scrPlayerIsRightAndSelfIsFacingLeftMovementBehavior.gml</script>
+                </scripts>
+              </scripts>
+            </scripts>
+            <scripts name="guns">
+              <script>scripts\scrGunsBehavior.gml</script>
+              <scripts name="orientation">
+                <scripts name="player">
+                  <script>scripts\scrPlayerIsAboveGunsBehavior.gml</script>
+                  <script>scripts\scrPlayerIsBelowGunsBehavior.gml</script>
+                  <script>scripts\scrPlayerIsLeftGunsBehavior.gml</script>
+                  <script>scripts\scrPlayerIsRightGunsBehavior.gml</script>
+                </scripts>
+              </scripts>
+            </scripts>
           </scripts>
         </scripts>
         <scripts name="guns">
-          <script>scripts\scrGunsDivertPower.gml</script>
-          <script>scripts\scrGunsFire.gml</script>
+          <scripts name="powerDiversion">
+            <script>scripts\scrGunsDivertPower.gml</script>
+          </scripts>
+          <scripts name="fire">
+            <script>scripts\scrGunsFire.gml</script>
+          </scripts>
         </scripts>
         <scripts name="input">
           <script>scripts\scrInput.gml</script>
+          <scripts name="stateChecks">
+            <script>scripts\scrInitStateChecks.gml</script>
+            <script>scripts\scrThrusterStateChecks.gml</script>
+            <script>scripts\scrThrusterPortStateChecks.gml</script>
+            <script>scripts\scrThrusterStarboardStateChecks.gml</script>
+            <script>scripts\scrThrusterBowStateChecks.gml</script>
+            <script>scripts\scrThrusterSternStateChecks.gml</script>
+            <script>scripts\scrThrusterRotateStateChecks.gml</script>
+            <script>scripts\scrThrusterRotateDegreesClockwiseStateChecks.gml</script>
+            <script>scripts\scrThrusterRotateDegreesCounterclockwiseStateChecks.gml</script>
+            <script>scripts\scrShieldStateChecks.gml</script>
+            <script>scripts\scrGunStateChecks.gml</script>
+            <script>scripts\scrCannonStateChecks.gml</script>
+            <script>scripts\scrCutStateChecks.gml</script>
+            <script>scripts\scrCutThrusterStateChecks.gml</script>
+            <script>scripts\scrCutThrusterRotateStateChecks.gml</script>
+            <script>scripts\scrCutShieldStateChecks.gml</script>
+          </scripts>
         </scripts>
         <scripts name="management">
           <script>scripts\scrPPManagement.gml</script>
@@ -291,8 +355,12 @@
           <script>scripts\scrStateManagement.gml</script>
         </scripts>
         <scripts name="passive">
-          <script>scripts\scrPassiveDivertPower.gml</script>
-          <script>scripts\scrPassiveFire.gml</script>
+          <scripts name="powerDiversion">
+            <script>scripts\scrPassiveDivertPower.gml</script>
+          </scripts>
+          <scripts name="fire">
+            <script>scripts\scrPassiveFire.gml</script>
+          </scripts>
         </scripts>
         <scripts name="shields">
           <script>scripts\scrShieldsAll.gml</script>

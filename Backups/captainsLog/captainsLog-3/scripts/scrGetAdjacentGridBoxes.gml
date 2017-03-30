@@ -1,5 +1,5 @@
 util = instance_find(objUtil, 0);
-gridBoxes = scrGetGridBoxes();
+gridBoxes = allGridBoxes;
 adjacentGridBoxes = noone;
 adjacentGridBoxesIndex = 0;
 shipSpriteOffset = 0;

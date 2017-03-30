@@ -1,4 +1,5 @@
 scrSetState(initState);
+
 if(actionMap[? util.actionMapPassiveString] == active) {
     actionMap[? util.actionMapPassiveString] = toDeactivate;
     ds_list_add(actionQueue, util.actionQueueCutPassiveString);

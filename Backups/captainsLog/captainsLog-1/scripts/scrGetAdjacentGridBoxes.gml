@@ -1,4 +1,4 @@
-gridBoxes = allGridBoxes;
+gridBoxes = scrGetGridBoxes();
 adjacentGridBoxes = noone;
 adjacentGridBoxesIndex = 0;
 shipSpriteOffset = 0;
