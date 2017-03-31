@@ -8,7 +8,9 @@ if(keyboard_check_pressed(vk_tab)) {
     //a way that currentState will be decremented here.
     scrSetState(initState);
 } else if(keyboard_check_pressed(vk_backspace)) {
-    scrBackspacePressed();
+    if(input != "") {
+        input = string_delete(input, string_length(input), 1);
+    }
 } else if(currentState == initState) {
     scrInitStateChecks();
 } else if(currentState == thrusterState) {
@@ -30,7 +32,7 @@ if(keyboard_check_pressed(vk_tab)) {
 } else if(currentState == shieldState) {
     scrShieldStateChecks();
 } else if(currentState == targetState) {
-    scrSetTarget();
+    scrTargetStateChecks();
 } else if(currentState == gunState) {
     scrGunStateChecks();
 } else if(currentState == cannonState) {

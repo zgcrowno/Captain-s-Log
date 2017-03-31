@@ -9,18 +9,6 @@ if(player.target != noone) {
     draw_text(hud.targetIntelLeftBound, 
               hud.targetIntelUpperBound + string_height("Something"), 
               "Captain: " + player.target.designation);
-    draw_text(hud.targetIntelLeftBound, 
-              hud.targetIntelUpperBound + (2 * string_height("Something")), 
-              "HP: " + string(player.target.currentHP));
-    draw_text(hud.targetIntelLeftBound, 
-              hud.targetIntelUpperBound + (3 * string_height("Something")), 
-              "Age: " + string(player.target.age));
-    draw_text(hud.targetIntelLeftBound, 
-              hud.targetIntelUpperBound + (4 * string_height("Something")), 
-              "Temperament: " + player.target.temper);
-    draw_text(hud.targetIntelLeftBound, 
-              hud.targetIntelUpperBound + (5 * string_height("Something")), 
-              "Family: " + player.target.family);
     
     //Draw the target's overall HP bar
     draw_healthbar(hud.targetPowerLeftBound, 

@@ -347,6 +347,7 @@
             <script>scripts\scrCutThrusterStateChecks.gml</script>
             <script>scripts\scrCutThrusterRotateStateChecks.gml</script>
             <script>scripts\scrCutShieldStateChecks.gml</script>
+            <script>scripts\scrTargetStateChecks.gml</script>
           </scripts>
         </scripts>
         <scripts name="management">
@@ -387,7 +388,6 @@
           <script>scripts\scrResetActionMap.gml</script>
           <script>scripts\scrResetNonShield.gml</script>
           <script>scripts\scrSetShields.gml</script>
-          <script>scripts\scrSetTarget.gml</script>
           <script>scripts\scrShipTimelineActions.gml</script>
           <scripts name="orientation">
             <script>scripts\scrIsFacingUp.gml</script>
@@ -404,6 +404,10 @@
             <script>scripts\scrThrustersChance.gml</script>
             <script>scripts\scrEqualChance.gml</script>
           </scripts>
+          <script>scripts\scrSetShieldsSelfIsFacingUp.gml</script>
+          <script>scripts\scrSetShieldsSelfIsFacingRight.gml</script>
+          <script>scripts\scrSetShieldsSelfIsFacingDown.gml</script>
+          <script>scripts\scrSetShieldsSelfIsFacingLeft.gml</script>
         </scripts>
         <scripts name="playerShip">
           <scripts name="ricecake">

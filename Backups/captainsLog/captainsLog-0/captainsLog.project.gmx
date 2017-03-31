@@ -26,7 +26,10 @@
       </sprites>
       <sprites name="enemyShip">
         <sprites name="radar">
-          <sprite>sprites\sprPawn</sprite>
+          <sprites name="pawn">
+            <sprite>sprites\sprPawn</sprite>
+            <sprite>sprites\sprPawnTarget</sprite>
+          </sprites>
         </sprites>
         <sprites name="background">
           <sprite>sprites\sprPawnBackground</sprite>
@@ -275,6 +278,7 @@
           </scripts>
           <scripts name="util">
             <script>scripts\scrSetDesignation.gml</script>
+            <script>scripts\scrHighlightIfTarget.gml</script>
           </scripts>
           <scripts name="behavior">
             <script>scripts\scrBehavior.gml</script>

@@ -19,9 +19,13 @@ if(position_meeting(x, y, objPlayerShip)) {
             player.actionMap[? util.actionMapThrustersBowString] = 0;
         }
     } else if(scrIsFacingStern()) {
-        player.currentHPThrustersStern -= damage;
-        if(player.currentHPThrustersStern <= 0) {
-            player.actionMap[? util.actionMapThrustersSternString] = 0;
+        if(player.object_index = objRiceCake) {
+            player.currentHP = 0;
+        } else { 
+            player.currentHPThrustersStern -= damage;
+            if(player.currentHPThrustersStern <= 0) {
+                player.actionMap[? util.actionMapThrustersSternString] = 0;
+            }
         }
     }
     

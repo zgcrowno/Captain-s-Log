@@ -32,7 +32,7 @@ if(keyboard_check_pressed(vk_tab)) {
 } else if(currentState == shieldState) {
     scrShieldStateChecks();
 } else if(currentState == targetState) {
-    scrSetTarget();
+    scrTargetStateChecks();
 } else if(currentState == gunState) {
     scrGunStateChecks();
 } else if(currentState == cannonState) {

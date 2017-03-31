@@ -5,4 +5,6 @@ currentPP = maxPP;
 requiredPPThrusters = maxPP / 4;
 requiredPPThrustersRotate = maxPP / 2;
 requiredPPGuns = maxPP / 2
+radarSprite = sprPawn;
+radarSpriteTarget = sprPawnTarget;
 backgroundSprite = sprPawnBackground;

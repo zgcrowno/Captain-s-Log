@@ -26,7 +26,10 @@
       </sprites>
       <sprites name="enemyShip">
         <sprites name="radar">
-          <sprite>sprites\sprPawn</sprite>
+          <sprites name="pawn">
+            <sprite>sprites\sprPawn</sprite>
+            <sprite>sprites\sprPawnTarget</sprite>
+          </sprites>
         </sprites>
         <sprites name="background">
           <sprite>sprites\sprPawnBackground</sprite>
@@ -275,6 +278,7 @@
           </scripts>
           <scripts name="util">
             <script>scripts\scrSetDesignation.gml</script>
+            <script>scripts\scrHighlightIfTarget.gml</script>
           </scripts>
           <scripts name="behavior">
             <script>scripts\scrBehavior.gml</script>
@@ -347,6 +351,7 @@
             <script>scripts\scrCutThrusterStateChecks.gml</script>
             <script>scripts\scrCutThrusterRotateStateChecks.gml</script>
             <script>scripts\scrCutShieldStateChecks.gml</script>
+            <script>scripts\scrTargetStateChecks.gml</script>
           </scripts>
         </scripts>
         <scripts name="management">
@@ -387,7 +392,6 @@
           <script>scripts\scrResetActionMap.gml</script>
           <script>scripts\scrResetNonShield.gml</script>
           <script>scripts\scrSetShields.gml</script>
-          <script>scripts\scrSetTarget.gml</script>
           <script>scripts\scrShipTimelineActions.gml</script>
           <scripts name="orientation">
             <script>scripts\scrIsFacingUp.gml</script>
@@ -404,6 +408,10 @@
             <script>scripts\scrThrustersChance.gml</script>
             <script>scripts\scrEqualChance.gml</script>
           </scripts>
+          <script>scripts\scrSetShieldsSelfIsFacingUp.gml</script>
+          <script>scripts\scrSetShieldsSelfIsFacingRight.gml</script>
+          <script>scripts\scrSetShieldsSelfIsFacingDown.gml</script>
+          <script>scripts\scrSetShieldsSelfIsFacingLeft.gml</script>
         </scripts>
         <scripts name="playerShip">
           <scripts name="ricecake">
