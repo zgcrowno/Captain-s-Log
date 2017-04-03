@@ -1,6 +1,6 @@
 if(player.target != noone) {
     //Draw the target image
-    draw_sprite(player.target.sprite_index, 
+    draw_sprite(player.target.radarSprite, 
                 player.target.image_index, 
                 hud.targetImageRightBound - ((hud.targetImageRightBound - hud.targetImageLeftBound) / 2), 
                 hud.targetImageLowerBound - ((hud.targetImageLowerBound - hud.targetImageUpperBound) / 2));

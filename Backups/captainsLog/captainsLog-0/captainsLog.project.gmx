@@ -30,6 +30,18 @@
             <sprite>sprites\sprPawn</sprite>
             <sprite>sprites\sprPawnTarget</sprite>
           </sprites>
+          <sprites name="shrimper">
+            <sprite>sprites\sprShrimper</sprite>
+          </sprites>
+          <sprites name="infiniteRegress">
+            <sprite>sprites\sprInfiniteRegress</sprite>
+          </sprites>
+          <sprites name="epitaph">
+            <sprite>sprites\sprEpitaph</sprite>
+          </sprites>
+          <sprites name="nomad">
+            <sprite>sprites\sprNomad</sprite>
+          </sprites>
         </sprites>
         <sprites name="background">
           <sprite>sprites\sprPawnBackground</sprite>

@@ -7,7 +7,7 @@ if(player.target != noone) {
     
     //Draw the captain's personal information
     draw_text(hud.targetIntelLeftBound, 
-              hud.targetIntelUpperBound + string_height("Something"), 
+              hud.targetIntelUpperBound, 
               "Captain: " + player.target.designation);
     
     //Draw the target's overall HP bar
