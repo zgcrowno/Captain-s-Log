@@ -22,7 +22,9 @@
     </sprites>
     <sprites name="ship">
       <sprites name="playerShip">
-        <sprite>sprites\sprRiceCake</sprite>
+        <sprites name="riceCake">
+          <sprite>sprites\sprRiceCake</sprite>
+        </sprites>
       </sprites>
       <sprites name="enemyShip">
         <sprites name="radar">

@@ -25,6 +25,21 @@
         <sprites name="riceCake">
           <sprite>sprites\sprRiceCake</sprite>
         </sprites>
+        <sprites name="sidecar">
+          <sprite>sprites\sprSidecar</sprite>
+        </sprites>
+        <sprites name="sprFlasher">
+          <sprite>sprites\sprFlasher</sprite>
+        </sprites>
+        <sprites name="halitosis">
+          <sprite>sprites\sprHalitosis</sprite>
+        </sprites>
+        <sprites name="pincer">
+          <sprite>sprites\sprPincer</sprite>
+        </sprites>
+        <sprites name="mezzanine">
+          <sprite>sprites\sprMezzanine</sprite>
+        </sprites>
       </sprites>
       <sprites name="enemyShip">
         <sprites name="radar">

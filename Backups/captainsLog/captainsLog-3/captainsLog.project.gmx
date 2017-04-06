@@ -30,6 +30,9 @@
             <sprite>sprites\sprPawn</sprite>
             <sprite>sprites\sprPawnTarget</sprite>
           </sprites>
+          <sprites name="shrimper">
+            <sprite>sprites\sprShrimper</sprite>
+          </sprites>
         </sprites>
         <sprites name="background">
           <sprite>sprites\sprPawnBackground</sprite>
