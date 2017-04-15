@@ -1,8 +1,17 @@
 gb = argument0;
-spriteOffset = argument1;
 
-return gb.y > y - (sprite_get_width(sprGridBox) * 2) - spriteOffset
-       && gb.y < y + sprite_get_width(sprGridBox) + spriteOffset
-       && gb.x > x - (sprite_get_width(sprGridBox) * 2) - spriteOffset
-       && gb.x < x + sprite_get_width(sprGridBox) + spriteOffset
-       && !place_meeting(x, y, gb);
+with(gb) {
+    if(!place_meeting(x, y, objPlayerShip) 
+       && (place_meeting(x + sprite_width, y, objPlayerShip) 
+           || place_meeting(x + sprite_width, y + sprite_width, objPlayerShip)
+           || place_meeting(x + sprite_width, y - sprite_width, objPlayerShip)
+           || place_meeting(x, y + sprite_width, objPlayerShip)
+           || place_meeting(x, y - sprite_width, objPlayerShip)
+           || place_meeting(x - sprite_width, y, objPlayerShip)
+           || place_meeting(x - sprite_width, y + sprite_width, objPlayerShip)
+           || place_meeting(x - sprite_width, y - sprite_width, objPlayerShip))) {
+        return true;
+    } else {
+        return false;
+    }
+}

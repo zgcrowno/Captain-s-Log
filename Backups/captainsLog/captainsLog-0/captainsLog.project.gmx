@@ -569,12 +569,12 @@
   </objects>
   <rooms name="rooms">
     <rooms name="test">
-      <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestMezzanine</room>
-      <room>rooms\rmTestSidecar</room>
-      <room>rooms\rmTestRiceCake</room>
-      <room>rooms\rmTestHalitosis</room>
+      <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestFlasher</room>
+      <room>rooms\rmTestSidecar</room>
+      <room>rooms\rmTestHalitosis</room>
+      <room>rooms\rmTestRiceCake</room>
       <room>rooms\rmTest2</room>
       <room>rooms\rmGameOver</room>
     </rooms>

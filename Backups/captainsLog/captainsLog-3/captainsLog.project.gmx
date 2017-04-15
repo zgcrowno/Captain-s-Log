@@ -28,7 +28,7 @@
         <sprites name="sidecar">
           <sprite>sprites\sprSidecar</sprite>
         </sprites>
-        <sprites name="sprFlasher">
+        <sprites name="flasher">
           <sprite>sprites\sprFlasher</sprite>
         </sprites>
         <sprites name="halitosis">
@@ -453,6 +453,26 @@
               <script>scripts\scrSidecarData.gml</script>
             </scripts>
           </scripts>
+          <scripts name="flasher">
+            <scripts name="data">
+              <script>scripts\scrFlasherData.gml</script>
+            </scripts>
+          </scripts>
+          <scripts name="halitosis">
+            <scripts name="data">
+              <script>scripts\scrHalitosisData.gml</script>
+            </scripts>
+          </scripts>
+          <scripts name="pincer">
+            <scripts name="data">
+              <script>scripts\scrPincerData.gml</script>
+            </scripts>
+          </scripts>
+          <scripts name="mezzanine">
+            <scripts name="data">
+              <script>scripts\scrMezzanineData.gml</script>
+            </scripts>
+          </scripts>
         </scripts>
       </scripts>
       <scripts name="gridBox">
@@ -514,6 +534,10 @@
           <object>objects\objRiceCake</object>
           <object>objects\objPlayerShip</object>
           <object>objects\objSidecar</object>
+          <object>objects\objFlasher</object>
+          <object>objects\objHalitosis</object>
+          <object>objects\objPincer</object>
+          <object>objects\objMezzanine</object>
         </objects>
         <objects name="enemyShip">
           <object>objects\objPawn</object>
@@ -545,8 +569,12 @@
   </objects>
   <rooms name="rooms">
     <rooms name="test">
+      <room>rooms\rmTestPincer</room>
+      <room>rooms\rmTestFlasher</room>
       <room>rooms\rmTestSidecar</room>
+      <room>rooms\rmTestHalitosis</room>
       <room>rooms\rmTestRiceCake</room>
+      <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTest2</room>
       <room>rooms\rmGameOver</room>
     </rooms>
