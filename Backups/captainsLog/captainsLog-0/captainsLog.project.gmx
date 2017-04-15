@@ -402,6 +402,12 @@
           <script>scripts\scrShieldsPort.gml</script>
           <script>scripts\scrShieldsStarboard.gml</script>
           <script>scripts\scrShieldsStern.gml</script>
+          <scripts name="util">
+            <script>scripts\scrIsBowShield.gml</script>
+            <script>scripts\scrIsSternShield.gml</script>
+            <script>scripts\scrIsPortShield.gml</script>
+            <script>scripts\scrIsStarboardShield.gml</script>
+          </scripts>
         </scripts>
         <scripts name="thrusters">
           <script>scripts\scrThrustersBow.gml</script>
@@ -437,10 +443,6 @@
             <script>scripts\scrThrustersChance.gml</script>
             <script>scripts\scrEqualChance.gml</script>
           </scripts>
-          <script>scripts\scrSetShieldsSelfIsFacingUp.gml</script>
-          <script>scripts\scrSetShieldsSelfIsFacingRight.gml</script>
-          <script>scripts\scrSetShieldsSelfIsFacingDown.gml</script>
-          <script>scripts\scrSetShieldsSelfIsFacingLeft.gml</script>
         </scripts>
         <scripts name="playerShip">
           <scripts name="ricecake">
@@ -508,6 +510,7 @@
         <script>scripts\scrProximityQuickSort.gml</script>
         <script>scripts\scrExchange.gml</script>
       </scripts>
+      <script>scripts\scrContains.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">

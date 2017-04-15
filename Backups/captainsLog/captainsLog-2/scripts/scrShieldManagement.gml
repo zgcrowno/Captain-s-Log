@@ -35,7 +35,7 @@ for(i = 0; i < array_length_1d(bowShields); i++) {
             }
             
             //Prevent previous two loops from being partially overwritten
-            if(bowShields[i] != bowShields[0] && bowShields[i] != bowShields[array_length_1d(bowShields) - 1]) {
+            if(!scrContains(portShields, bowShields[i]) && !scrContains(starboardShields, bowShields[i])) {
                 bowShields[i].sprite_index = sprGridBox;
             }
         }
@@ -51,7 +51,7 @@ for(i = 0; i < array_length_1d(sternShields); i++) {
             }
             
             //Prevent previous two loops from being partially overwritten
-            if(sternShields[i] != sternShields[0] && sternShields[i] != sternShields[array_length_1d(sternShields) - 1]) {
+            if(!scrContains(portShields, sternShields[i]) && !scrContains(starboardShields, sternShields[i])) {
                 sternShields[i].sprite_index = sprGridBox;
             }
         }

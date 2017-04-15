@@ -1,4 +1,4 @@
-if (scrIsAbove(adjacentGridBoxes[i])) {
+if (scrIsBowShield(adjacentGridBoxes[i])) {
     bowShields[bowShieldsIndex] = adjacentGridBoxes[i];
     bowShieldsIndex++;
 }
