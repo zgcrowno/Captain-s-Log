@@ -30,6 +30,14 @@ requiredPPCannon = maxPP * 0.75;
 requiredPPActive = maxPP * 0.5;
 requiredPPPassive = maxPP * 0.5;
 
+gunsArray[0] = x;
+gunsArray[1] = y - 25;
+gunsArray[2] = x - 25;
+gunsArray[3] = y - 25;
+gunsArray[4] = x + 25;
+gunsArray[5] = y - 25;
+
 cannonOffset = cannonOffsetHalitosis;
 cannonDamage = cannonDamageHalitosis;
+
 activeDamage = activeDamageHalitosis;

@@ -456,3 +456,16 @@ actionQueueCutShieldsStarboardString = "Cut#Shields#Star";
 actionQueueCutShieldsBowString = "Cut#Shields#Bow";
 actionQueueCutShieldsSternString = "Cut#Shields#Stern";
 actionQueueCutPassiveString = "Cut#Passive";
+
+gunsMapOneX = "gunsMapOneX";
+gunsMapOneY = "gunsMapOneY";
+gunsMapTwoX = "gunsMapTwoX";
+gunsMapTwoY = "gunsMapTwoY";
+gunsMapThreeX = "gunsMapThreeX";
+gunsMapThreeY = "gunsMapThreeY";
+gunsMapFourX = "gunsMapFourX";
+gunsMapFourY = "gunsMapFourY";
+gunsMapFiveX = "gunsMapFiveX";
+gunsMapFiveY = "gunsMapFiveY";
+gunsMapSixX = "gunsMapSixX";
+gunsMapSixY = "gunsMapSixY";

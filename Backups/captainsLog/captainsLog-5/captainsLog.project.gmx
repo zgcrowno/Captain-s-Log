@@ -443,6 +443,7 @@
             <script>scripts\scrThrustersChance.gml</script>
             <script>scripts\scrEqualChance.gml</script>
           </scripts>
+          <script>scripts\scrSetGuns.gml</script>
         </scripts>
         <scripts name="playerShip">
           <scripts name="ricecake">
@@ -574,9 +575,9 @@
     <rooms name="test">
       <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTestPincer</room>
+      <room>rooms\rmTestHalitosis</room>
       <room>rooms\rmTestFlasher</room>
       <room>rooms\rmTestSidecar</room>
-      <room>rooms\rmTestHalitosis</room>
       <room>rooms\rmTestRiceCake</room>
       <room>rooms\rmTest2</room>
       <room>rooms\rmGameOver</room>

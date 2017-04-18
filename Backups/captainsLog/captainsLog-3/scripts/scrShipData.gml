@@ -13,6 +13,9 @@ target = noone;
 //The ship's background sprite
 backgroundSprite = noone;
 
+//The ship's gun map
+gunsArray = noone;
+
 //Value used in determining where to spawn cannonBullet or cannonLaser
 cannonOffset = 0;
 
