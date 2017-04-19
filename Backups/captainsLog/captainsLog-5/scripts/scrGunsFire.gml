@@ -3,6 +3,7 @@ if(actionMap[? util.actionMapGunsString]) {
         if(object_is_ancestor(object_index, objPlayerShip)) {
             bullet = instance_create(gunsArray[i], gunsArray[i + 1], objPlayerBullet);
             show_debug_message(bullet.x);
+            show_debug_message(bullet.y);
         } else {
             bullet = instance_create(gunsArray[i], gunsArray[i + 1], objEnemyBullet);
         }

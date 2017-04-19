@@ -176,7 +176,7 @@ maxHPShieldsSternSidecar = 50;
 
 cannonCooldownRateSidecar = 0.07
 
-cannonOffsetSidecar = 11;
+cannonOffsetSidecar = sprite_get_width(sprGridBox);
 cannonDamageSidecar = 0;
 activeDamageSidecar = 1;
 

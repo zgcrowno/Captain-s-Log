@@ -249,7 +249,12 @@
         </scripts>
         <scripts name="cannon">
           <scripts name="behavior">
-            <script>scripts\scrRiceCakeCannonBehavior.gml</script>
+            <scripts name="riceCake">
+              <script>scripts\scrRiceCakeCannonBehavior.gml</script>
+            </scripts>
+            <scripts name="sidecar">
+              <script>scripts\scrSidecarCannonBehavior.gml</script>
+            </scripts>
           </scripts>
           <scripts name="fire">
             <script>scripts\scrCannonFire.gml</script>
@@ -573,11 +578,11 @@
   </objects>
   <rooms name="rooms">
     <rooms name="test">
+      <room>rooms\rmTestFlasher</room>
+      <room>rooms\rmTestSidecar</room>
       <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestHalitosis</room>
-      <room>rooms\rmTestFlasher</room>
-      <room>rooms\rmTestSidecar</room>
       <room>rooms\rmTestRiceCake</room>
       <room>rooms\rmTest2</room>
       <room>rooms\rmGameOver</room>
