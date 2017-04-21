@@ -1,7 +1,7 @@
 //This script will have to be altered if enemy ships are deemed capable of shields
 //Checks will have to be put in place preventing one ship's shields from overwriting
 //any other's
-for(i = 0; i < array_length_1d(portShields); i++) {
+for(var i = 0; i < array_length_1d(portShields); i++) {
     if(portShields[i].sprite_index != sprGridBoxStatic) {
         if((actionMap[? util.actionMapShieldsPortString] == active || actionMap[? util.actionMapShieldsPortString] == toActivate) && currentHPShieldsPort > 0) {
             portShields[i].sprite_index = sprGridBoxShield;
@@ -13,7 +13,7 @@ for(i = 0; i < array_length_1d(portShields); i++) {
         }
     }
 }
-for(i = 0; i < array_length_1d(starboardShields); i++) {
+for(var i = 0; i < array_length_1d(starboardShields); i++) {
     if(starboardShields[i].sprite_index != sprGridBoxStatic) {
         if((actionMap[? util.actionMapShieldsStarboardString] == active || actionMap[? util.actionMapShieldsStarboardString] == toActivate) && currentHPShieldsStarboard > 0) {
             starboardShields[i].sprite_index = sprGridBoxShield;
@@ -25,7 +25,7 @@ for(i = 0; i < array_length_1d(starboardShields); i++) {
         }
     }
 }
-for(i = 0; i < array_length_1d(bowShields); i++) {
+for(var i = 0; i < array_length_1d(bowShields); i++) {
     if(bowShields[i].sprite_index != sprGridBoxStatic) {
         if((actionMap[? util.actionMapShieldsBowString] == active || actionMap[? util.actionMapShieldsBowString] == toActivate) && currentHPShieldsBow > 0) {
             bowShields[i].sprite_index = sprGridBoxShield;
@@ -41,7 +41,7 @@ for(i = 0; i < array_length_1d(bowShields); i++) {
         }
     }
 }
-for(i = 0; i < array_length_1d(sternShields); i++) {
+for(var i = 0; i < array_length_1d(sternShields); i++) {
     if(sternShields[i].sprite_index != sprGridBoxStatic) {
         if((actionMap[? util.actionMapShieldsSternString] == active || actionMap[? util.actionMapShieldsSternString] == toActivate) && currentHPShieldsStern > 0) {
             sternShields[i].sprite_index = sprGridBoxShield;

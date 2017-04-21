@@ -5,7 +5,7 @@ bowShieldsIndex = 0;
 sternShieldsIndex = 0;
     
 //Set the shield blocks
-for(i = 0; i < array_length_1d(adjacentGridBoxes); i++) {
+for(var i = 0; i < array_length_1d(adjacentGridBoxes); i++) {
     if (scrIsBowShield(adjacentGridBoxes[i])) {
         bowShields[bowShieldsIndex] = adjacentGridBoxes[i];
         bowShieldsIndex++;

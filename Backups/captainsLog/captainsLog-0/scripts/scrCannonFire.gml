@@ -11,16 +11,59 @@ if(actionMap[? util.actionMapCannonString]) {
         cannonBullet.image_angle = image_angle;
     } else if(object_index == objFlasher) {
         gridBoxes = scrGetGridBoxes();
-        for(i = 0; i < array_length_1d(gridBoxes); i++) {
+        for(var i = 0; i < array_length_1d(gridBoxes); i++) {
             gridBox = gridBoxes[i];
-            if(scrIsFacingUp(self)) {
-                
-            } else if(scrIsFacingLeft(self)) {
-            
-            } else if(scrIsFacingDown(self)) {
-            
-            } else {
-            
+            with(gridBox) {
+                offset = noone;
+                if(scrIsFacingUp(other)) {
+                    if(scrIsRight(other)) {
+                        offset = ceil((other.x - x) / sprite_width);
+                    } else {
+                        offset = ceil((x - other.x) / sprite_width) + 1;
+                    }
+                    if(y < other.bbox_top - sprite_width 
+                       && (collision_line(other.x, other.y, other.x, hud.radarUpperBound, self, false, false)
+                           || place_meeting(x + (offset * sprite_width), y + (offset * sprite_width), other)
+                           || place_meeting(x - (offset * sprite_width), y + (offset * sprite_width), other))) {
+                        sprite_index = sprGridBoxStatic;
+                    }
+                } else if(scrIsFacingLeft(other)) {
+                    if(scrIsBelow(other)) {
+                        offset = ceil((other.y - y) / sprite_width);
+                    } else {
+                        offset = ceil((y - other.y) / sprite_width) + 1;
+                    }
+                    if(x < other.bbox_left - sprite_width 
+                       && (collision_line(other.x, other.y, hud.radarLeftBound, other.y, self, false, false)
+                           || place_meeting(x + (offset * sprite_width), y + (offset * sprite_width), other)
+                           || place_meeting(x + (offset * sprite_width), y - (offset * sprite_width), other))) {
+                        sprite_index = sprGridBoxStatic;
+                    }
+                } else if(scrIsFacingDown(other)) {
+                    if(scrIsRight(other)) {
+                        offset = ceil((other.x - x) / sprite_width);
+                    } else {
+                        offset = ceil((x - other.x) / sprite_width) + 1;
+                    }
+                    if(y > other.bbox_bottom
+                       && (collision_line(other.x, other.y, other.x, hud.radarLowerBound, self, false, false)
+                           || place_meeting(x + (offset * sprite_width), y - (offset * sprite_width), other)
+                           || place_meeting(x - (offset * sprite_width), y - (offset * sprite_width), other))) {
+                        sprite_index = sprGridBoxStatic;
+                    }
+                } else {
+                    if(scrIsBelow(other)) {
+                        offset = ceil((other.y - y) / sprite_width);
+                    } else {
+                        offset = ceil((y - other.y) / sprite_width) + 1;
+                    }
+                    if(x > other.bbox_right
+                       && (collision_line(other.x, other.y, hud.radarRightBound, other.y, self, false, false)
+                           || place_meeting(x - (offset * sprite_width), y + (offset * sprite_width), other)
+                           || place_meeting(x - (offset * sprite_width), y - (offset * sprite_width), other))) {
+                        sprite_index = sprGridBoxStatic;
+                    }
+                }
             }
         }
     } else if(object_index == objHalitosis) {

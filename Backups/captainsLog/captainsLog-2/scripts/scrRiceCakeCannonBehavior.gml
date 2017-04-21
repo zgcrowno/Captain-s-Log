@@ -1,6 +1,6 @@
 enemyX = argument0;
 enemyY = argument1;
-for(i = 0; i < array_length_1d(allGridBoxes); i++) {
+for(var i = 0; i < array_length_1d(allGridBoxes); i++) {
     if(point_distance(enemyX, 
                       enemyY, 
                       allGridBoxes[i].x, 
