@@ -8,7 +8,7 @@ with(gridBox) {
         } else if(bbox_left > player.bbox_right && place_meeting(x - sprite_width, y + sprite_width, player) && !place_meeting(x - sprite_width, y, player)) {
             return true;
         } else {
-            for(var i = 1; i <= ceil(player.sprite_height / sprite_width); i++) {
+            for(i = 1; i <= ceil(player.sprite_height / sprite_width); i++) {
                 if(place_meeting(x, y + (i * sprite_width), player)) {
                     return true;
                 }
@@ -20,7 +20,7 @@ with(gridBox) {
         } else if(bbox_top > player.bbox_bottom && place_meeting(x + sprite_width, y - sprite_width, player) && !place_meeting(x, y - sprite_width, player)) {
             return true;
         } else {
-            for(var i = 1; i <= ceil(player.sprite_width / sprite_width); i++) {
+            for(i = 1; i <= ceil(player.sprite_width / sprite_width); i++) {
                 if(place_meeting(x + (i * sprite_width), y, player)) {
                     return true;
                 }
@@ -32,7 +32,7 @@ with(gridBox) {
         } else if(bbox_left > player.bbox_right && place_meeting(x - sprite_width, y - sprite_width, player) && !place_meeting(x - sprite_width, y, player)) {
             return true;
         } else {
-            for(var i = 1; i <= ceil(player.sprite_height / sprite_width); i++) {
+            for(i = 1; i <= ceil(player.sprite_height / sprite_width); i++) {
                 if(place_meeting(x, y - (i * sprite_width), player)) {
                     return true;
                 }
@@ -44,7 +44,7 @@ with(gridBox) {
         } else if(bbox_top > player.bbox_bottom && place_meeting(x - sprite_width, y - sprite_width, player) && !place_meeting(x, y - sprite_width, player)) {
             return true;
         } else {
-            for(var i = 1; i <= ceil(player.sprite_width / sprite_width); i++) {
+            for(i = 1; i <= ceil(player.sprite_width / sprite_width); i++) {
                 if(place_meeting(x - (i * sprite_width), y, player)) {
                     return true;
                 }

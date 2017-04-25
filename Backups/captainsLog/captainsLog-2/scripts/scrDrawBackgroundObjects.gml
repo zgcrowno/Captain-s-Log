@@ -1,6 +1,6 @@
 objectArray = scrProximitySort(argument0);
 
-for(var i = 0; i < array_length_1d(objectArray); i++) {
+for(i = 0; i < array_length_1d(objectArray); i++) {
     if(scrCanSeeObject(player, objectArray[i])) {
         distance = point_distance(player.x, 
                                   player.y, 
