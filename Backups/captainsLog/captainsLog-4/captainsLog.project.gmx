@@ -578,8 +578,8 @@
   </objects>
   <rooms name="rooms">
     <rooms name="test">
-      <room>rooms\rmTestFlasher</room>
       <room>rooms\rmTestSidecar</room>
+      <room>rooms\rmTestFlasher</room>
       <room>rooms\rmTestRiceCake</room>
       <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTestPincer</room>

@@ -3,8 +3,8 @@ value = argument1;
 
 //Note that 'j' is used here so as not to interfere with
 //exterior loop's 'i' variable
-for(var i = 0; i < array_length_1d(array); i++) {
-    if(array[i] = value) {
+for(j = 0; j < array_length_1d(array); j++) {
+    if(array[j] = value) {
         return true;
     }
 }

@@ -7,7 +7,7 @@ if(collision_rectangle(x - (sprite_width / 2),
                        objEnemyShip, 
                        false, 
                        true)) {
-    for(var i = 0; i < instance_number(objEnemyShip); i++) {
+    for(i = 0; i < instance_number(objEnemyShip); i++) {
         if(collision_rectangle(x - (sprite_width / 2), 
                                y - (sprite_width / 2), 
                                x + (sprite_width / 2), 

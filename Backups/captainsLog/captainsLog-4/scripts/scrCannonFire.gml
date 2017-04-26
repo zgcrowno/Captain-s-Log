@@ -10,12 +10,9 @@ if(actionMap[? util.actionMapCannonString]) {
                        objPlayerCannonBullet);
         cannonBullet.image_angle = image_angle;
     } else if(object_index == objFlasher) {
-        for(j = 0; j < 10; j++) {
-        
-        }
-    /*
-        for(i = 0; i < array_length_1d(allGridBoxes); i++) {
-            gridBox = allGridBoxes[i];
+        gridBoxes = scrGetGridBoxes();
+        for(var i = 0; i < array_length_1d(gridBoxes); i++) {
+            gridBox = gridBoxes[i];
             with(gridBox) {
                 offset = noone;
                 if(scrIsFacingUp(other)) {
@@ -68,7 +65,7 @@ if(actionMap[? util.actionMapCannonString]) {
                     }
                 }
             }
-        }*/
+        }
     } else if(object_index == objHalitosis) {
         
     } else if(object_index == objPincer) {

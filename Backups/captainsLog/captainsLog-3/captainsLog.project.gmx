@@ -578,9 +578,9 @@
   </objects>
   <rooms name="rooms">
     <rooms name="test">
-      <room>rooms\rmTestFlasher</room>
-      <room>rooms\rmTestSidecar</room>
       <room>rooms\rmTestRiceCake</room>
+      <room>rooms\rmTestSidecar</room>
+      <room>rooms\rmTestFlasher</room>
       <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestHalitosis</room>
