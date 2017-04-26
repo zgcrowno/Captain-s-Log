@@ -1,7 +1,0 @@
-player = instance_find(objRiceCake, 0);
-pawn0 = instance_find(objPawn, 0);
-pawn1 = instance_find(objPawn, 1);
-pawn2 = instance_find(objPawn, 2);
-
-show_debug_message("input: " + input);
-

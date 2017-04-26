@@ -1,3 +1,6 @@
+//The lengthdir functions are a bit confusing, but in general,
+//if working with values lateral from the ship's center, len should be used, and when
+//working with diagonal values, hypotenuse is favored.
 len = sprite_get_width(sprGridBox);
 hypotenuse = sqrt(sqr(len) + sqr(len));
 if(object_index = objRiceCake) {
@@ -10,9 +13,9 @@ if(object_index = objRiceCake) {
     gunsArray[3] = y + lengthdir_y(len, image_angle + 90);
 } else if(object_index = objFlasher) {
     gunsArray[0] = x + lengthdir_x(len, image_angle + 180);
-    gunsArray[1] = y + lengthdir_y(len, image_angle);
+    gunsArray[1] = y + lengthdir_y(len, image_angle + 180);
     gunsArray[2] = x + lengthdir_x(len, image_angle);
-    gunsArray[3] = y + lengthdir_y(len, image_angle + 180);
+    gunsArray[3] = y + lengthdir_y(len, image_angle);
 } else if(object_index = objHalitosis) {
     gunsArray[0] = x + lengthdir_x(len, image_angle + 90);
     gunsArray[1] = y + lengthdir_y(len, image_angle + 90);
@@ -22,9 +25,9 @@ if(object_index = objRiceCake) {
     gunsArray[5] = y + lengthdir_y(hypotenuse, image_angle + 135);
 } else if(object_index = objPincer) {
     gunsArray[0] = x + lengthdir_x(len, image_angle + 180);
-    gunsArray[1] = y + lengthdir_y(len, image_angle);
+    gunsArray[1] = y + lengthdir_y(len, image_angle + 180);
     gunsArray[2] = x + lengthdir_x(len, image_angle);
-    gunsArray[3] = y + lengthdir_y(len, image_angle + 180);
+    gunsArray[3] = y + lengthdir_y(len, image_angle);
     gunsArray[4] = x + lengthdir_x(hypotenuse, image_angle + 135);
     gunsArray[5] = y + lengthdir_y(hypotenuse, image_angle + 135);
 } else if(object_index = objMezzanine) {
@@ -37,7 +40,7 @@ if(object_index = objRiceCake) {
     gunsArray[6] = x;
     gunsArray[7] = y;
     gunsArray[8] = x + lengthdir_x(len, image_angle);
-    gunsArray[9] = y + lengthdir_y(len, image_angle + 180);
+    gunsArray[9] = y + lengthdir_y(len, image_angle);
     gunsArray[10] = x + lengthdir_x(hypotenuse, image_angle + 315);
     gunsArray[11] = y + lengthdir_y(hypotenuse, image_angle + 315);
 } else if(object_index = objPawn) {

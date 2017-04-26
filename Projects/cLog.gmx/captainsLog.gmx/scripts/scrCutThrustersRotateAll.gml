@@ -1,0 +1,3 @@
+scrSetState(initState);
+scrCutThrustersRotateClockwise();
+scrCutThrustersRotateCounterclockwise();

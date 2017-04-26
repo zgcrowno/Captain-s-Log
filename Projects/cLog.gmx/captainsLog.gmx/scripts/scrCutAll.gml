@@ -1,0 +1,16 @@
+scrCutThrustersPort();
+scrCutThrustersStarboard();
+scrCutThrustersBow();
+scrCutThrustersStern();
+scrCutThrustersRotateClockwise();
+scrCutThrustersRotateCounterclockwise();
+scrCutShieldsPort();
+scrCutShieldsStarboard();
+scrCutShieldsBow();
+scrCutShieldsStern();
+scrCutGuns();
+scrCutCannon();
+scrCutActive();
+scrCutPassive();
+scrCutTarget();
+scrSetState(initState);

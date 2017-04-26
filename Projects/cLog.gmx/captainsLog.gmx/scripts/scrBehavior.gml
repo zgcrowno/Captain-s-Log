@@ -1,0 +1,2 @@
+scrMovementBehavior();
+scrGunsBehavior();
