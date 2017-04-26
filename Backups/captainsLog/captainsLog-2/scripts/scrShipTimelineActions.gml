@@ -1,7 +1,7 @@
 if(object_is_ancestor(object_index, objPlayerShip)) {
     scrResetNonShield();
 }
-for(i = 0; i < ds_list_size(actionQueue); i++) {
+for(var i = 0; i < ds_list_size(actionQueue); i++) {
     if(string_pos(util.actionMapGunsString, actionQueue[| i]) != 0) {
         scrGunsFire();
     } else if(string_pos(util.actionMapCannonString, actionQueue[| i]) != 0) {

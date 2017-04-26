@@ -69,33 +69,7 @@ if(actionMap[? util.actionMapCannonString]) {
     } else if(object_index == objHalitosis) {
         
     } else if(object_index == objPincer) {
-        gridBoxes = scrGetGridBoxes();
-        for(var i = 0; i < array_length_1d(gridBoxes); i++) {
-            gridBox = gridBoxes[i];
-            with(gridBox) {
-                if(scrIsFacingUp(other)) {
-                    if(y < other.y - sprite_width 
-                       && (collision_line(other.x, other.y, other.x, hud.radarUpperBound, self, false, false))) {
-                        sprite_index = sprGridBoxStatic;
-                    }
-                } else if(scrIsFacingLeft(other)) {
-                    if(x < other.x - sprite_width 
-                       && (collision_line(other.x, other.y, hud.radarLeftBound, other.y, self, false, false))) {
-                        sprite_index = sprGridBoxStatic;
-                    }
-                } else if(scrIsFacingDown(other)) {
-                    if(y > other.y
-                       && (collision_line(other.x, other.y, other.x, hud.radarLowerBound, self, false, false))) {
-                        sprite_index = sprGridBoxStatic;
-                    }
-                } else {
-                    if(x > other.x
-                       && (collision_line(other.x, other.y, hud.radarRightBound, other.y, self, false, false))) {
-                        sprite_index = sprGridBoxStatic;
-                    }
-                }
-            }
-        }
+    
     } else if(object_index == objMezzanine) {
     
     }

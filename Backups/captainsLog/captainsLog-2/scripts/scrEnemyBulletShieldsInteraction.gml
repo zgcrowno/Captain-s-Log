@@ -1,6 +1,6 @@
 gridBoxes = allGridBoxes;
 
-for(i = 0; i < array_length_1d(gridBoxes); i++) {
+for(var i = 0; i < array_length_1d(gridBoxes); i++) {
     gridBox = gridBoxes[i];
     
     if(position_meeting(x, y, gridBox)) {
