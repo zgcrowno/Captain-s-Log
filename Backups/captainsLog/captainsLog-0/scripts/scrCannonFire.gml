@@ -67,20 +67,7 @@ if(actionMap[? util.actionMapCannonString]) {
             }
         }
     } else if(object_index == objHalitosis) {
-        len = sprite_get_width(sprGridBox);
-        hypotenuse = sqrt(sqr(len) + sqr(len));
-        eBallOne = instance_create(x + lengthdir_x(hypotenuse, image_angle + 135), y + lengthdir_y(hypotenuse, image_angle + 135), objPlayerEnergyBall);
-        eBallTwo = instance_create(x + lengthdir_x(hypotenuse, image_angle + 135), y + lengthdir_y(hypotenuse, image_angle + 135), objPlayerEnergyBall);
-        eBallThree = instance_create(x + lengthdir_x(hypotenuse, image_angle + 135), y + lengthdir_y(hypotenuse, image_angle + 135), objPlayerEnergyBall);
-        eBallFour = instance_create(x + lengthdir_x(hypotenuse, image_angle + 45), y + lengthdir_y(hypotenuse, image_angle + 45), objPlayerEnergyBall);
-        eBallFive = instance_create(x + lengthdir_x(hypotenuse, image_angle + 45), y + lengthdir_y(hypotenuse, image_angle + 45), objPlayerEnergyBall);
-        eBallSix = instance_create(x + lengthdir_x(hypotenuse, image_angle + 45), y + lengthdir_y(hypotenuse, image_angle + 45), objPlayerEnergyBall);
-        eBallOne.image_angle = player.image_angle + 45;
-        eBallTwo.image_angle = player.image_angle;
-        eBallThree.image_angle = player.image_angle - 45;
-        eBallFour.image_angle = player.image_angle + 45;
-        eBallFive.image_angle = player.image_angle;
-        eBallSix.image_angle = player.image_angle - 45;
+        
     } else if(object_index == objPincer) {
         gridBoxes = scrGetGridBoxes();
         for(var i = 0; i < array_length_1d(gridBoxes); i++) {

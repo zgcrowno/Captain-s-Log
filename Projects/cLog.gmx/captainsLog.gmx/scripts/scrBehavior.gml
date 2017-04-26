@@ -1,2 +1,0 @@
-scrMovementBehavior();
-scrGunsBehavior();

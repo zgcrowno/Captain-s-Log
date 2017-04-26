@@ -1,3 +1,0 @@
-scrSetState(initState);
-scrCutThrustersRotateClockwise();
-scrCutThrustersRotateCounterclockwise();
