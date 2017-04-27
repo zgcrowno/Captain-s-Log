@@ -5,7 +5,7 @@ if(position_meeting(x, y, objEnemyShip)) {
             if(player.object_index == objRiceCake) {
                 scrRiceCakeCannonBehavior(enemy.x, enemy.y);
             } else if(player.object_index == objSidecar) {
-                scrSidecarCannonBehavior(enemy.x, enemy.y);
+                instance_create(x, y, objSidecarCannon);
             }
             instance_destroy();
         }

@@ -100,6 +100,24 @@
             <sprite>sprites\sprite22</sprite>
           </sprites>
         </sprites>
+        <sprites name="mezzanine">
+          <sprite>sprites\sprMezzanineCannon</sprite>
+        </sprites>
+        <sprites name="sidecar">
+          <sprite>sprites\sprSidecarCannon</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="energyBall">
+        <sprites name="radar">
+          <sprites name="player">
+            <sprite>sprites\sprPlayerEnergyBall</sprite>
+          </sprites>
+        </sprites>
+        <sprites name="background">
+          <sprites name="player">
+            <sprite>sprites\sprPlayerEnergyBallBackground</sprite>
+          </sprites>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="environment">
@@ -174,6 +192,7 @@
       <scripts name="projectile">
         <script>scripts\scrBulletMovement.gml</script>
         <script>scripts\scrCannonBulletMovement.gml</script>
+        <script>scripts\scrEnergyBallMovement.gml</script>
       </scripts>
       <scripts name="ship">
         <script>scripts\scrShipBowMovement.gml</script>
@@ -226,12 +245,24 @@
             <script>scripts\scrShipInteraction.gml</script>
             <script>scripts\scrPlayerCannonBulletShipInteraction.gml</script>
             <script>scripts\scrPlayerBulletShipInteraction.gml</script>
+            <script>scripts\scrPlayerEnergyBallShipInteraction.gml</script>
           </scripts>
           <scripts name="orientation">
             <script>scripts\scrIsFacingStern.gml</script>
             <script>scripts\scrIsFacingBow.gml</script>
             <script>scripts\scrIsFacingPort.gml</script>
             <script>scripts\scrIsFacingStarboard.gml</script>
+          </scripts>
+        </scripts>
+        <scripts name="energyBall">
+          <scripts name="data">
+            <script>scripts\scrEnergyBallData.gml</script>
+            <scripts name="player">
+              <script>scripts\scrPlayerEnergyBallData.gml</script>
+            </scripts>
+          </scripts>
+          <scripts name="util">
+            <script>scripts\scrEnergyBallTimelineActions.gml</script>
           </scripts>
         </scripts>
       </scripts>
@@ -254,6 +285,9 @@
             </scripts>
             <scripts name="sidecar">
               <script>scripts\scrSidecarCannonBehavior.gml</script>
+            </scripts>
+            <scripts name="mezzanine">
+              <script>scripts\scrMezzanineCannonBehavior.gml</script>
             </scripts>
           </scripts>
           <scripts name="fire">
@@ -565,11 +599,15 @@
           <object>objects\objPlayerCannonBullet</object>
           <object>objects\objPlayerBulletContact</object>
           <object>objects\objRiceCakeActive</object>
+          <object>objects\objPlayerEnergyBall</object>
+          <object>objects\objMezzanineCannon</object>
+          <object>objects\objSidecarCannon</object>
         </objects>
         <objects name="enemy">
           <object>objects\objEnemyBullet</object>
           <object>objects\objEnemyBulletContact</object>
         </objects>
+        <object>objects\objEnergyBall</object>
       </objects>
       <objects name="environment">
         <object>objects\objBlueSky</object>
@@ -578,12 +616,12 @@
   </objects>
   <rooms name="rooms">
     <rooms name="test">
-      <room>rooms\rmTestPincer</room>
-      <room>rooms\rmTestMezzanine</room>
-      <room>rooms\rmTestRiceCake</room>
-      <room>rooms\rmTestSidecar</room>
-      <room>rooms\rmTestFlasher</room>
       <room>rooms\rmTestHalitosis</room>
+      <room>rooms\rmTestSidecar</room>
+      <room>rooms\rmTestMezzanine</room>
+      <room>rooms\rmTestPincer</room>
+      <room>rooms\rmTestRiceCake</room>
+      <room>rooms\rmTestFlasher</room>
       <room>rooms\rmTest2</room>
       <room>rooms\rmGameOver</room>
     </rooms>

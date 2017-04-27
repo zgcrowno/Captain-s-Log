@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TPE>
+  <w>192</w>
+  <h>192</h>
+  <name>Default</name>
+  <hasAlpha>True</hasAlpha>
+  <hash>3381708155</hash>
+  <xoffset>5</xoffset>
+  <yoffset>5</yoffset>
+  <cropWidth>192</cropWidth>
+  <cropHeight>192</cropHeight>
+  <ow>200</ow>
+  <oh>200</oh>
+  <image>sprSidecarCannon_sprSidecarCannon_19.tpe.png</image>
+</TPE>

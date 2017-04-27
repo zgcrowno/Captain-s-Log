@@ -67,10 +67,65 @@ if(actionMap[? util.actionMapCannonString]) {
             }
         }
     } else if(object_index == objHalitosis) {
-        
+        len = sprite_get_width(sprGridBox);
+        hypotenuse = sqrt(sqr(len) + sqr(len * 2));
+        lengthDirImageAngle = noone;
+        imageAngle = noone;
+        for(var i = 0; i < numEnergyBalls; i++) {
+            if(i == 0 || i == 2 || i == 4) {
+                lengthDirImageAngle = image_angle + 117;
+                if(i == 0) {
+                    imageAngle = image_angle;
+                } else if(i == 2) {
+                    imageAngle = image_angle + 45;
+                } else {
+                    imageAngle = image_angle + 315;
+                }
+            } else {
+                lengthDirImageAngle = image_angle + 63;
+                if(i == 1) {
+                    imageAngle = image_angle;
+                } else if(i == 3) {
+                    imageAngle = image_angle + 315;
+                } else {
+                    imageAngle = image_angle + 45;
+                }
+            }
+            energyBall = instance_create(x + lengthdir_x(hypotenuse, lengthDirImageAngle), y + lengthdir_y(hypotenuse, lengthDirImageAngle), objPlayerEnergyBall);
+            energyBall.image_angle = imageAngle;
+        }
     } else if(object_index == objPincer) {
-    
+        gridBoxes = scrGetGridBoxes();
+        for(var i = 0; i < array_length_1d(gridBoxes); i++) {
+            gridBox = gridBoxes[i];
+            with(gridBox) {
+                if(scrIsFacingUp(other)) {
+                    if(y < other.y - sprite_width 
+                       && (collision_line(other.x, other.y, other.x, hud.radarUpperBound, self, false, false))) {
+                        sprite_index = sprGridBoxStatic;
+                    }
+                } else if(scrIsFacingLeft(other)) {
+                    if(x < other.x - sprite_width 
+                       && (collision_line(other.x, other.y, hud.radarLeftBound, other.y, self, false, false))) {
+                        sprite_index = sprGridBoxStatic;
+                    }
+                } else if(scrIsFacingDown(other)) {
+                    if(y > other.y
+                       && (collision_line(other.x, other.y, other.x, hud.radarLowerBound, self, false, false))) {
+                        sprite_index = sprGridBoxStatic;
+                    }
+                } else {
+                    if(x > other.x
+                       && (collision_line(other.x, other.y, hud.radarRightBound, other.y, self, false, false))) {
+                        sprite_index = sprGridBoxStatic;
+                    }
+                }
+            }
+        }
     } else if(object_index == objMezzanine) {
-    
+        len = sprite_get_width(sprGridBox);
+        hypotenuse = sqrt(sqr(len * 2.5) + sqr(len * 1.5));
+        cannonObject = instance_create(x + lengthdir_x(hypotenuse, image_angle + 25), y + lengthdir_y(hypotenuse, image_angle + 25), objMezzanineCannon);
+        cannonObject.image_angle = image_angle;
     }
 }

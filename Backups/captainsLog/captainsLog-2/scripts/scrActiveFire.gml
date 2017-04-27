@@ -5,6 +5,11 @@ if(actionMap[? util.actionMapActiveString]) {
             instance_create(x, y, objRiceCakeActive);
             instance_destroy();
         }
+    } else if(object_index == objSidecar) {
+        with(objPlayerBullet) {
+            x += sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));
+            y -= sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
+        }
     } else {
         //TODO: Cases for other ships
     }

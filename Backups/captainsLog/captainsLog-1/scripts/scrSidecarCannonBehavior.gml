@@ -1,12 +1,22 @@
-//TODO: Make this something other than the RiceCake's behavior
-enemyX = argument0;
-enemyY = argument1;
-for(i = 0; i < array_length_1d(allGridBoxes); i++) {
-    if(point_distance(enemyX, 
-                      enemyY, 
-                      allGridBoxes[i].x, 
-                      allGridBoxes[i].y) < 100) {
-        allGridBoxes[i].sprite_index = sprGridBoxStatic;
-        allGridBoxes[i].alreadyTouchedTimeline = true;
+sidecar = instance_find(objSidecar, 0);
+
+if(collision_rectangle(x - (sprite_width / 2), 
+                       y - (sprite_width / 2), 
+                       x + (sprite_width / 2), 
+                       y + (sprite_width / 2), 
+                       objEnemyShip, 
+                       false, 
+                       true)) {
+    for(i = 0; i < instance_number(objEnemyShip); i++) {
+        if(collision_rectangle(x - (sprite_width / 2), 
+                               y - (sprite_width / 2), 
+                               x + (sprite_width / 2), 
+                               y + (sprite_width / 2), 
+                               instance_find(objEnemyShip, i), 
+                               false, 
+                               true)) {
+            enemy = instance_find(objEnemyShip, i);
+            enemy.currentHP -= sidecar.cannonDamage;
+        }
     }
 }

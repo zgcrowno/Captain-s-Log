@@ -177,7 +177,7 @@ maxHPShieldsSternSidecar = 50;
 cannonCooldownRateSidecar = 0.07
 
 cannonOffsetSidecar = sprite_get_width(sprGridBox);
-cannonDamageSidecar = 0;
+cannonDamageSidecar = 1;
 activeDamageSidecar = 1;
 
 //Flasher
@@ -253,7 +253,7 @@ maxHPShieldsSternMezzanine = 100;
 cannonCooldownRateMezzanine = 0.07
 
 cannonOffsetMezzanine = 11;
-cannonDamageMezzanine = 0;
+cannonDamageMezzanine = 3;
 activeDamageMezzanine = 1;
 
 //Pawn

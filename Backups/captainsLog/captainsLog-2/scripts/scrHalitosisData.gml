@@ -41,3 +41,5 @@ cannonOffset = cannonOffsetHalitosis;
 cannonDamage = cannonDamageHalitosis;
 
 activeDamage = activeDamageHalitosis;
+
+numEnergyBalls = 2;
