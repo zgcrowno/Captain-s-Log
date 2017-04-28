@@ -1,4 +1,5 @@
 projectiles = scrGetProjectiles();
+gridBoxes = scrGetGridBoxes();
 
 //Draw the skybox, enemy background sprites, projectile background sprites and HUD
 draw_sprite(sprBlueSky, -1, 0, 0);
@@ -83,6 +84,9 @@ scrDrawShieldsSternInfo();
                
 //Draw Target Info
 scrDrawTargetInfo();
+
+//Draw gridBox numbers
+scrDrawGridBoxNumbers();
 
 //Draw the gunsPP bar
 draw_healthbar(hud.gunsLeftBound, 

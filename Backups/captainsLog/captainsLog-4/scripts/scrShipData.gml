@@ -75,6 +75,7 @@ cutShieldsState = 14;
 cutThrustersRotateState = 15;
 cannonChargeState = 16;
 targetState = 17;
+activeState = 18;
 currentState = initState;
 
 //Maximum overall health and power of the ship

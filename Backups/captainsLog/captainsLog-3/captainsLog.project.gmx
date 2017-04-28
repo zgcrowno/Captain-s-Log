@@ -177,6 +177,9 @@
         <scripts name="input">
           <script>scripts\scrDrawInput.gml</script>
         </scripts>
+        <scripts name="gridBox">
+          <script>scripts\scrDrawGridBoxNumbers.gml</script>
+        </scripts>
       </scripts>
       <scripts name="util">
         <script>scripts\scrSetSubImage.gml</script>
@@ -420,6 +423,7 @@
             <script>scripts\scrCutThrusterRotateStateChecks.gml</script>
             <script>scripts\scrCutShieldStateChecks.gml</script>
             <script>scripts\scrTargetStateChecks.gml</script>
+            <script>scripts\scrActiveStateChecks.gml</script>
           </scripts>
         </scripts>
         <scripts name="management">
@@ -518,7 +522,12 @@
         </scripts>
       </scripts>
       <scripts name="gridBox">
-        <script>scripts\scrGridBoxTimelineActions.gml</script>
+        <scripts name="data">
+          <script>scripts\scrGridBoxData.gml</script>
+        </scripts>
+        <scripts name="util">
+          <script>scripts\scrGridBoxTimelineActions.gml</script>
+        </scripts>
       </scripts>
     </scripts>
     <scripts name="timeline">
@@ -616,12 +625,12 @@
   </objects>
   <rooms name="rooms">
     <rooms name="test">
+      <room>rooms\rmTestFlasher</room>
       <room>rooms\rmTestSidecar</room>
       <room>rooms\rmTestHalitosis</room>
       <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestRiceCake</room>
-      <room>rooms\rmTestFlasher</room>
       <room>rooms\rmTest2</room>
       <room>rooms\rmGameOver</room>
     </rooms>

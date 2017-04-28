@@ -11,7 +11,7 @@ if(actionMap[? util.actionMapActiveString]) {
             y -= sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
         }
     } else if(object_index == objFlasher) {
-    
+        scrSetState(activeState);
     } else if(object_index == objHalitosis) {
     
     } else if(object_index == objPincer) {

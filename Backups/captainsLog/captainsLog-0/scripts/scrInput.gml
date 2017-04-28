@@ -37,6 +37,8 @@ if(keyboard_check_pressed(vk_tab)) {
     scrGunStateChecks();
 } else if(currentState == cannonState) {
     scrCannonStateChecks();
+} else if(currentState == activeState) {
+    scrActiveStateChecks();
 } else if(currentState == cutState) {
     scrCutStateChecks();
 } else if(currentState == cutThrustersState) {

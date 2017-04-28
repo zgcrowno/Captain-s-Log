@@ -42,4 +42,4 @@ cannonDamage = cannonDamageHalitosis;
 
 activeDamage = activeDamageHalitosis;
 
-numEnergyBalls = 6;
+numEnergyBalls = 2;
