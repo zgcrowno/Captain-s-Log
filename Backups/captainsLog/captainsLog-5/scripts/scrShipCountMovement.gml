@@ -23,5 +23,7 @@ if(actionMap[? util.actionMapThrustersCountString] > 0) {
                 view_angle[0] += 90
             }
         }
+    } else {
+        //TODO: error about leaving airspace
     }
 }

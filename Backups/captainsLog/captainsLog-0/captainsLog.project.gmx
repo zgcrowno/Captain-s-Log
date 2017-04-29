@@ -33,12 +33,16 @@
         </sprites>
         <sprites name="halitosis">
           <sprite>sprites\sprHalitosis</sprite>
+          <sprite>sprites\sprHalitosisSmall</sprite>
         </sprites>
         <sprites name="pincer">
           <sprite>sprites\sprPincer</sprite>
         </sprites>
         <sprites name="mezzanine">
-          <sprite>sprites\sprMezzanine</sprite>
+          <sprite>sprites\sprMezzanineStarboard</sprite>
+          <sprite>sprites\sprMezzaninePort</sprite>
+          <sprite>sprites\sprMezzanineBow</sprite>
+          <sprite>sprites\sprMezzanineStern</sprite>
         </sprites>
       </sprites>
       <sprites name="enemyShip">
@@ -89,7 +93,12 @@
         </sprites>
       </sprites>
       <sprites name="active">
-        <sprite>sprites\sprRiceCakeActive</sprite>
+        <sprites name="riceCake">
+          <sprite>sprites\sprRiceCakeActive</sprite>
+        </sprites>
+        <sprites name="pincer">
+          <sprite>sprites\sprPincerActive</sprite>
+        </sprites>
       </sprites>
       <sprites name="cannon">
         <sprites name="cannonBullet">
@@ -164,6 +173,7 @@
           <script>scripts\scrDrawCutThrustersRotateStateCommandPrompts.gml</script>
           <script>scripts\scrDrawCutShieldsStateCommandPrompts.gml</script>
           <script>scripts\scrDrawCommandPrompts.gml</script>
+          <script>scripts\scrDrawActiveStateCommandPrompts.gml</script>
         </scripts>
         <scripts name="actionQueue">
           <script>scripts\scrDrawActionQueue.gml</script>
@@ -611,6 +621,7 @@
           <object>objects\objPlayerEnergyBall</object>
           <object>objects\objMezzanineCannon</object>
           <object>objects\objSidecarCannon</object>
+          <object>objects\objPincerActive</object>
         </objects>
         <objects name="enemy">
           <object>objects\objEnemyBullet</object>
@@ -625,11 +636,11 @@
   </objects>
   <rooms name="rooms">
     <rooms name="test">
-      <room>rooms\rmTestPincer</room>
-      <room>rooms\rmTestFlasher</room>
-      <room>rooms\rmTestSidecar</room>
-      <room>rooms\rmTestHalitosis</room>
       <room>rooms\rmTestMezzanine</room>
+      <room>rooms\rmTestFlasher</room>
+      <room>rooms\rmTestPincer</room>
+      <room>rooms\rmTestHalitosis</room>
+      <room>rooms\rmTestSidecar</room>
       <room>rooms\rmTestRiceCake</room>
       <room>rooms\rmTest2</room>
       <room>rooms\rmGameOver</room>

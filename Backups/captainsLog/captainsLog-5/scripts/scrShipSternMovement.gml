@@ -16,5 +16,6 @@ if(actionMap[? util.actionMapThrustersSternString] > 0) {
     } else {
         ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionQueueThrustersSternString + string(actionMap[? util.actionMapThrustersSternString])));
         actionMap[? util.actionMapThrustersSternString] = 0;
+        //TODO: Error about leaving airspace
     }
 }

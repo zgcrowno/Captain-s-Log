@@ -3,6 +3,7 @@ if(object_is_ancestor(object_index, objPlayerShip)) {
 }
 for(i = 0; i < ds_list_size(actionQueue); i++) {
     if(string_pos(util.actionMapGunsString, actionQueue[| i]) != 0) {
+        scrSetGuns();
         scrGunsFire();
     } else if(string_pos(util.actionMapCannonString, actionQueue[| i]) != 0) {
         scrCannonFire();

@@ -14,12 +14,21 @@ if(object_index = objRiceCake) {
     gunsArray[2] = x + lengthdir_x(len, image_angle + 180);
     gunsArray[3] = y + lengthdir_y(len, image_angle + 180);
 } else if(object_index = objHalitosis) {
-    gunsArray[0] = x + lengthdir_x(len, image_angle + 90);
-    gunsArray[1] = y + lengthdir_y(len, image_angle + 90);
-    gunsArray[2] = x + lengthdir_x(hypotenuse, image_angle + 135);
-    gunsArray[3] = y + lengthdir_y(hypotenuse, image_angle + 135);
-    gunsArray[4] = x + lengthdir_x(hypotenuse, image_angle + 45);
-    gunsArray[5] = y + lengthdir_y(hypotenuse, image_angle + 45);
+    if(sprite_index != sprHalitosisSmall) {
+        gunsArray[0] = x + lengthdir_x(len, image_angle + 90);
+        gunsArray[1] = y + lengthdir_y(len, image_angle + 90);
+        gunsArray[2] = x + lengthdir_x(hypotenuse, image_angle + 135);
+        gunsArray[3] = y + lengthdir_y(hypotenuse, image_angle + 135);
+        gunsArray[4] = x + lengthdir_x(hypotenuse, image_angle + 45);
+        gunsArray[5] = y + lengthdir_y(hypotenuse, image_angle + 45);
+    } else {
+        gunsArray[0] = x + lengthdir_x(len, image_angle + 90);
+        gunsArray[1] = y + lengthdir_y(len, image_angle + 90);
+        gunsArray[2] = noone;
+        gunsArray[3] = noone;
+        gunsArray[4] = noone;
+        gunsArray[5] = noone;
+    }
 } else if(object_index = objPincer) {
     gunsArray[0] = x + lengthdir_x(hypotenuse, image_angle + 135);
     gunsArray[1] = y + lengthdir_y(hypotenuse, image_angle + 135);

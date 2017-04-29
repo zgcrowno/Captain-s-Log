@@ -13,10 +13,14 @@ if(actionMap[? util.actionMapActiveString]) {
     } else if(object_index == objFlasher) {
         scrSetState(activeState);
     } else if(object_index == objHalitosis) {
-    
+        if(sprite_index != sprHalitosisSmall) {
+            sprite_index = sprHalitosisSmall;
+        } else {
+            sprite_index = sprHalitosis;
+        }
     } else if(object_index == objPincer) {
-    
-    } else {
-        //TODO: Cases for other ships
+        instance_create(x, y, objPincerActive);
+    } else if(object_index == objMezzanine) {
+        scrSetState(activeState);
     }
 }

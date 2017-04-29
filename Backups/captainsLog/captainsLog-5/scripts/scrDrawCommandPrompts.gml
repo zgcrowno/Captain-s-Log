@@ -42,6 +42,8 @@ if(player.currentState == player.initState) {
     draw_text(hud.commandsRightBound - string_width("[\#]"), 
               hud.commandsUpperBound, 
               "[\#]");
+} else if(player.currentState == player.activeState) {
+    scrDrawActiveStateCommandPrompts();
 } else if(player.currentState == player.cutThrustersState) {
     scrDrawCutThrustersStateCommandPrompts();
 } else if(player.currentState == player.cutThrustersRotateState) {

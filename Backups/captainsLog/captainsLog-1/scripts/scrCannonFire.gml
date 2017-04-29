@@ -67,32 +67,36 @@ if(actionMap[? util.actionMapCannonString]) {
             }
         }
     } else if(object_index == objHalitosis) {
-        len = sprite_get_width(sprGridBox);
-        hypotenuse = sqrt(sqr(len) + sqr(len * 2));
-        lengthDirImageAngle = noone;
-        imageAngle = noone;
-        for(var i = 0; i < numEnergyBalls; i++) {
-            if(i == 0 || i == 2 || i == 4) {
-                lengthDirImageAngle = image_angle + 117;
-                if(i == 0) {
-                    imageAngle = image_angle;
-                } else if(i == 2) {
-                    imageAngle = image_angle + 45;
+        if(sprite_index != sprHalitosisSmall) {
+            len = sprite_get_width(sprGridBox);
+            hypotenuse = sqrt(sqr(len) + sqr(len * 2));
+            lengthDirImageAngle = noone;
+            imageAngle = noone;
+            for(var i = 0; i < numEnergyBalls; i++) {
+                if(i == 0 || i == 2 || i == 4) {
+                    lengthDirImageAngle = image_angle + 117;
+                    if(i == 0) {
+                        imageAngle = image_angle;
+                    } else if(i == 2) {
+                        imageAngle = image_angle + 45;
+                    } else {
+                        imageAngle = image_angle + 315;
+                    }
                 } else {
-                    imageAngle = image_angle + 315;
+                    lengthDirImageAngle = image_angle + 63;
+                    if(i == 1) {
+                        imageAngle = image_angle;
+                    } else if(i == 3) {
+                        imageAngle = image_angle + 315;
+                    } else {
+                        imageAngle = image_angle + 45;
+                    }
                 }
-            } else {
-                lengthDirImageAngle = image_angle + 63;
-                if(i == 1) {
-                    imageAngle = image_angle;
-                } else if(i == 3) {
-                    imageAngle = image_angle + 315;
-                } else {
-                    imageAngle = image_angle + 45;
-                }
+                energyBall = instance_create(x + lengthdir_x(hypotenuse, lengthDirImageAngle), y + lengthdir_y(hypotenuse, lengthDirImageAngle), objPlayerEnergyBall);
+                energyBall.image_angle = imageAngle;
             }
-            energyBall = instance_create(x + lengthdir_x(hypotenuse, lengthDirImageAngle), y + lengthdir_y(hypotenuse, lengthDirImageAngle), objPlayerEnergyBall);
-            energyBall.image_angle = imageAngle;
+        } else {
+            //TODO: Error about ship form
         }
     } else if(object_index == objPincer) {
         gridBoxes = scrGetGridBoxes();
@@ -123,9 +127,26 @@ if(actionMap[? util.actionMapCannonString]) {
             }
         }
     } else if(object_index == objMezzanine) {
-        len = sprite_get_width(sprGridBox);
-        hypotenuse = sqrt(sqr(len * 2.5) + sqr(len * 1.5));
-        cannonObject = instance_create(x + lengthdir_x(hypotenuse, image_angle + 25), y + lengthdir_y(hypotenuse, image_angle + 25), objMezzanineCannon);
-        cannonObject.image_angle = image_angle;
+        if(sprite_index == sprMezzaninePort) {
+            len = sprite_get_width(sprGridBox);
+            hypotenuse = sqrt(sqr(len * 1.5) + sqr(len * 1));
+            cannonObject = instance_create(x - lengthdir_x(hypotenuse, image_angle + 205), y + lengthdir_y(hypotenuse, image_angle + 205), objMezzanineCannon);
+            cannonObject.image_angle = image_angle + 180;
+        } else if(sprite_index == sprMezzanineStarboard) {
+            len = sprite_get_width(sprGridBox);
+            hypotenuse = sqrt(sqr(len * 2.5) + sqr(len * 1.5));
+            cannonObject = instance_create(x + lengthdir_x(hypotenuse, image_angle + 25), y + lengthdir_y(hypotenuse, image_angle + 25), objMezzanineCannon);
+            cannonObject.image_angle = image_angle;
+        } else if(sprite_index == sprMezzanineBow) {
+            len = sprite_get_width(sprGridBox);
+            hypotenuse = sqrt(sqr(len * 2.5) + sqr(len * 1.5));
+            cannonObject = instance_create(x + lengthdir_x(hypotenuse, image_angle + 115), y + lengthdir_y(hypotenuse, image_angle + 115), objMezzanineCannon);
+            cannonObject.image_angle = image_angle + 90;
+        } else if(sprite_index == sprMezzanineStern) {
+            len = sprite_get_width(sprGridBox);
+            hypotenuse = sqrt(sqr(len * 1.5) + sqr(len * 1));
+            cannonObject = instance_create(x - lengthdir_x(hypotenuse, image_angle + 295), y + lengthdir_y(hypotenuse, image_angle + 295), objMezzanineCannon);
+            cannonObject.image_angle = image_angle + 270;
+        }
     }
 }
