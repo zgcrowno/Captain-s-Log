@@ -14,54 +14,83 @@ if(actionMap[? util.actionMapCannonString]) {
         for(var i = 0; i < array_length_1d(gridBoxes); i++) {
             gridBox = gridBoxes[i];
             with(gridBox) {
-                offset = noone;
-                if(scrIsFacingUp(other)) {
-                    if(scrIsRight(other)) {
-                        offset = ceil((other.x - x) / sprite_width);
+                player = instance_find(objPlayerShip, 0);
+                if(player.actionMap[? util.actionMapPassiveString] != player.active) {
+                    offset = noone;
+                    if(scrIsFacingUp(other)) {
+                        if(scrIsRight(other)) {
+                            offset = ceil((other.x - x) / sprite_width);
+                        } else {
+                            offset = ceil((x - other.x) / sprite_width) + 1;
+                        }
+                        if(y < other.bbox_top - sprite_width 
+                           && (collision_line(other.x, other.y, other.x, hud.radarUpperBound, self, false, false)
+                               || place_meeting(x + (offset * sprite_width), y + (offset * sprite_width), other)
+                               || place_meeting(x - (offset * sprite_width), y + (offset * sprite_width), other))) {
+                            sprite_index = sprGridBoxStatic;
+                        }
+                    } else if(scrIsFacingLeft(other)) {
+                        if(scrIsBelow(other)) {
+                            offset = ceil((other.y - y) / sprite_width);
+                        } else {
+                            offset = ceil((y - other.y) / sprite_width) + 1;
+                        }
+                        if(x < other.bbox_left - sprite_width 
+                           && (collision_line(other.x, other.y, hud.radarLeftBound, other.y, self, false, false)
+                               || place_meeting(x + (offset * sprite_width), y + (offset * sprite_width), other)
+                               || place_meeting(x + (offset * sprite_width), y - (offset * sprite_width), other))) {
+                            sprite_index = sprGridBoxStatic;
+                        }
+                    } else if(scrIsFacingDown(other)) {
+                        if(scrIsRight(other)) {
+                            offset = ceil((other.x - x) / sprite_width);
+                        } else {
+                            offset = ceil((x - other.x) / sprite_width) + 1;
+                        }
+                        if(y > other.bbox_bottom
+                           && (collision_line(other.x, other.y, other.x, hud.radarLowerBound, self, false, false)
+                               || place_meeting(x + (offset * sprite_width), y - (offset * sprite_width), other)
+                               || place_meeting(x - (offset * sprite_width), y - (offset * sprite_width), other))) {
+                            sprite_index = sprGridBoxStatic;
+                        }
                     } else {
-                        offset = ceil((x - other.x) / sprite_width) + 1;
-                    }
-                    if(y < other.bbox_top - sprite_width 
-                       && (collision_line(other.x, other.y, other.x, hud.radarUpperBound, self, false, false)
-                           || place_meeting(x + (offset * sprite_width), y + (offset * sprite_width), other)
-                           || place_meeting(x - (offset * sprite_width), y + (offset * sprite_width), other))) {
-                        sprite_index = sprGridBoxStatic;
-                    }
-                } else if(scrIsFacingLeft(other)) {
-                    if(scrIsBelow(other)) {
-                        offset = ceil((other.y - y) / sprite_width);
-                    } else {
-                        offset = ceil((y - other.y) / sprite_width) + 1;
-                    }
-                    if(x < other.bbox_left - sprite_width 
-                       && (collision_line(other.x, other.y, hud.radarLeftBound, other.y, self, false, false)
-                           || place_meeting(x + (offset * sprite_width), y + (offset * sprite_width), other)
-                           || place_meeting(x + (offset * sprite_width), y - (offset * sprite_width), other))) {
-                        sprite_index = sprGridBoxStatic;
-                    }
-                } else if(scrIsFacingDown(other)) {
-                    if(scrIsRight(other)) {
-                        offset = ceil((other.x - x) / sprite_width);
-                    } else {
-                        offset = ceil((x - other.x) / sprite_width) + 1;
-                    }
-                    if(y > other.bbox_bottom
-                       && (collision_line(other.x, other.y, other.x, hud.radarLowerBound, self, false, false)
-                           || place_meeting(x + (offset * sprite_width), y - (offset * sprite_width), other)
-                           || place_meeting(x - (offset * sprite_width), y - (offset * sprite_width), other))) {
-                        sprite_index = sprGridBoxStatic;
+                        if(scrIsBelow(other)) {
+                            offset = ceil((other.y - y) / sprite_width);
+                        } else {
+                            offset = ceil((y - other.y) / sprite_width) + 1;
+                        }
+                        if(x > other.bbox_right
+                           && (collision_line(other.x, other.y, hud.radarRightBound, other.y, self, false, false)
+                               || place_meeting(x - (offset * sprite_width), y + (offset * sprite_width), other)
+                               || place_meeting(x - (offset * sprite_width), y - (offset * sprite_width), other))) {
+                            sprite_index = sprGridBoxStatic;
+                        }
                     }
                 } else {
-                    if(scrIsBelow(other)) {
-                        offset = ceil((other.y - y) / sprite_width);
+                    if(scrIsFacingUp(other)) {
+                        if(y < other.bbox_top - sprite_width 
+                           && x > other.bbox_left - sprite_width
+                           && x < other.bbox_right) {
+                            sprite_index = sprGridBoxStatic;
+                        }
+                    } else if(scrIsFacingLeft(other)) {
+                        if(x < other.bbox_left - sprite_width 
+                           && y < other.bbox_bottom
+                           && y > other.bbox_top - sprite_width) {
+                            sprite_index = sprGridBoxStatic;
+                        }
+                    } else if(scrIsFacingDown(other)) {
+                        if(y > other.bbox_bottom
+                           && x > other.bbox_left - sprite_width
+                           && x < other.bbox_right) {
+                            sprite_index = sprGridBoxStatic;
+                        }
                     } else {
-                        offset = ceil((y - other.y) / sprite_width) + 1;
-                    }
-                    if(x > other.bbox_right
-                       && (collision_line(other.x, other.y, hud.radarRightBound, other.y, self, false, false)
-                           || place_meeting(x - (offset * sprite_width), y + (offset * sprite_width), other)
-                           || place_meeting(x - (offset * sprite_width), y - (offset * sprite_width), other))) {
-                        sprite_index = sprGridBoxStatic;
+                        if(x > other.bbox_right
+                           && y < other.bbox_bottom
+                           && y > other.bbox_top - sprite_width) {
+                            sprite_index = sprGridBoxStatic;
+                        }
                     }
                 }
             }
@@ -129,23 +158,23 @@ if(actionMap[? util.actionMapCannonString]) {
     } else if(object_index == objMezzanine) {
         if(sprite_index == sprMezzaninePort) {
             len = sprite_get_width(sprGridBox);
-            hypotenuse = sqrt(sqr(len * 1.5) + sqr(len * 1));
-            cannonObject = instance_create(x + lengthdir_x(hypotenuse, image_angle + 205), y + lengthdir_y(hypotenuse, image_angle + 205), objMezzanineCannon);
+            hypotenuse = sqrt(sqr(len * 1.5) + sqr(len * 1.5));
+            cannonObject = instance_create(x + lengthdir_x(hypotenuse, image_angle + 227), y + lengthdir_y(hypotenuse, image_angle + 227), objMezzanineCannon);
             cannonObject.image_angle = image_angle + 180;
         } else if(sprite_index == sprMezzanineStarboard) {
             len = sprite_get_width(sprGridBox);
             hypotenuse = sqrt(sqr(len * 2.5) + sqr(len * 1.5));
-            cannonObject = instance_create(x + lengthdir_x(hypotenuse, image_angle + 25), y + lengthdir_y(hypotenuse, image_angle + 25), objMezzanineCannon);
+            cannonObject = instance_create(x + lengthdir_x(hypotenuse, image_angle + 30), y + lengthdir_y(hypotenuse, image_angle + 30), objMezzanineCannon);
             cannonObject.image_angle = image_angle;
         } else if(sprite_index == sprMezzanineBow) {
             len = sprite_get_width(sprGridBox);
             hypotenuse = sqrt(sqr(len * 2.5) + sqr(len * 1.5));
-            cannonObject = instance_create(x + lengthdir_x(hypotenuse, image_angle + 115), y + lengthdir_y(hypotenuse, image_angle + 115), objMezzanineCannon);
+            cannonObject = instance_create(x + lengthdir_x(hypotenuse, image_angle + 120), y + lengthdir_y(hypotenuse, image_angle + 120), objMezzanineCannon);
             cannonObject.image_angle = image_angle + 90;
         } else if(sprite_index == sprMezzanineStern) {
             len = sprite_get_width(sprGridBox);
-            hypotenuse = sqrt(sqr(len * 1.5) + sqr(len * 1));
-            cannonObject = instance_create(x + lengthdir_x(hypotenuse, image_angle + 295), y + lengthdir_y(hypotenuse, image_angle + 295), objMezzanineCannon);
+            hypotenuse = sqrt(sqr(len * 1.5) + sqr(len * 1.5));
+            cannonObject = instance_create(x + lengthdir_x(hypotenuse, image_angle + 316), y + lengthdir_y(hypotenuse, image_angle + 316), objMezzanineCannon);
             cannonObject.image_angle = image_angle + 270;
         }
     }

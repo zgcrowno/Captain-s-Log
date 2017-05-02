@@ -28,7 +28,7 @@ requiredPPShields = maxPP / 4;
 requiredPPGuns = maxPP / 2;
 requiredPPCannon = maxPP * 0.75;
 requiredPPActive = maxPP * 0.5;
-requiredPPPassive = maxPP * 0.5;
+requiredPPPassive = maxPP * 0.2;
 
 gunsArray[0] = x;
 gunsArray[1] = y - 25;
