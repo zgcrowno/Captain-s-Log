@@ -637,8 +637,8 @@
   </objects>
   <rooms name="rooms">
     <rooms name="test">
-      <room>rooms\rmTestSidecar</room>
       <room>rooms\rmTestMezzanine</room>
+      <room>rooms\rmTestSidecar</room>
       <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestHalitosis</room>
       <room>rooms\rmTestRiceCake</room>

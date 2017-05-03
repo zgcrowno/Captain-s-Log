@@ -497,6 +497,7 @@
             <script>scripts\scrEqualChance.gml</script>
           </scripts>
           <script>scripts\scrSetGuns.gml</script>
+          <script>scripts\scrRegenerateShields.gml</script>
         </scripts>
         <scripts name="playerShip">
           <scripts name="ricecake">
@@ -636,14 +637,14 @@
   </objects>
   <rooms name="rooms">
     <rooms name="test">
-      <room>rooms\rmTestFlasher</room>
-      <room>rooms\rmTestSidecar</room>
       <room>rooms\rmTestMezzanine</room>
+      <room>rooms\rmTestSidecar</room>
       <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestHalitosis</room>
       <room>rooms\rmTestRiceCake</room>
       <room>rooms\rmTest2</room>
       <room>rooms\rmGameOver</room>
+      <room>rooms\rmTestFlasher</room>
     </rooms>
   </rooms>
   <help>
