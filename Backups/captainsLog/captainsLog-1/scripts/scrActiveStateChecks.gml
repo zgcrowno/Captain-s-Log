@@ -12,9 +12,20 @@ if(object_index == objFlasher) {
            || ((keyboard_check_pressed(vk_numpad7) || keyboard_check_pressed(55)) && string_char_at(gridBox.numberString, string_length(input) + 1) == "7")
            || ((keyboard_check_pressed(vk_numpad8) || keyboard_check_pressed(56)) && string_char_at(gridBox.numberString, string_length(input) + 1) == "8")
            || ((keyboard_check_pressed(vk_numpad9) || keyboard_check_pressed(57)) && string_char_at(gridBox.numberString, string_length(input) + 1) == "9")) {
-            if(input == "" || (string_pos(input, string_lower(string_delete(gridBox.numberString, string_length(input) + 1, string_length(gridBox.numberString) - string_length(input)))) != 0)) {
-                input += string_lower(string_char_at(gridBox.numberString, string_length(input) + 1));
-                break; //Prevent multiple inputs per keyboard press
+            if(actionMap[? util.actionMapPassiveString] == active) {
+                if(distance_to_object(gridBox) < 5 * gridBox.sprite_width) {
+                    if(input == "" || (string_pos(input, string_lower(string_delete(gridBox.numberString, string_length(input) + 1, string_length(gridBox.numberString) - string_length(input)))) != 0)) {
+                        input += string_lower(string_char_at(gridBox.numberString, string_length(input) + 1));
+                        break; //Prevent multiple inputs per keyboard press
+                    }
+                }
+            } else {
+                if(distance_to_object(gridBox) < 3 * gridBox.sprite_width) {
+                    if(input == "" || (string_pos(input, string_lower(string_delete(gridBox.numberString, string_length(input) + 1, string_length(gridBox.numberString) - string_length(input)))) != 0)) {
+                        input += string_lower(string_char_at(gridBox.numberString, string_length(input) + 1));
+                        break; //Prevent multiple inputs per keyboard press
+                    }
+                }
             }
         } else if(keyboard_check_pressed(vk_enter)) {
             for(var j = 0; j < array_length_1d(gridBoxes); j++) {
@@ -24,8 +35,12 @@ if(object_index == objFlasher) {
                        && (((gridBox2.x + gridBox2.sprite_width) - (gridBox2.sprite_width / 2)) + (bbox_right - x)) < hud.radarRightBound
                        && ((gridBox2.y + (gridBox2.sprite_width / 2)) - (y - bbox_top)) > hud.radarUpperBound
                        && (((gridBox2.y + gridBox2.sprite_width) - (gridBox2.sprite_width / 2)) + (bbox_bottom - y)) < hud.radarLowerBound) {
-                        x = gridBox2.x + (gridBox2.sprite_width / 2);
-                        y = gridBox2.y + (gridBox2.sprite_width / 2);
+                        if((actionMap[? util.actionMapPassiveString] == active && distance_to_object(gridBox2) < 5 * sprite_width)
+                           || (actionMap[? util.actionMapPassiveString] != active && distance_to_object(gridBox2) < 3 * sprite_width)) {
+                           show_debug_message(distance_to_object(gridBox2));
+                            x = gridBox2.x + (gridBox2.sprite_width / 2);
+                            y = gridBox2.y + (gridBox2.sprite_width / 2);
+                        }
                     }
                 }
             }

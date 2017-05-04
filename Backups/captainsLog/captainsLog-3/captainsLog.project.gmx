@@ -34,6 +34,7 @@
         <sprites name="halitosis">
           <sprite>sprites\sprHalitosis</sprite>
           <sprite>sprites\sprHalitosisSmall</sprite>
+          <sprite>sprites\sprHalitosisPassive</sprite>
         </sprites>
         <sprites name="pincer">
           <sprite>sprites\sprPincer</sprite>
@@ -637,14 +638,14 @@
   </objects>
   <rooms name="rooms">
     <rooms name="test">
+      <room>rooms\rmTestFlasher</room>
+      <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTestSidecar</room>
-      <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestHalitosis</room>
       <room>rooms\rmTestRiceCake</room>
       <room>rooms\rmTest2</room>
       <room>rooms\rmGameOver</room>
-      <room>rooms\rmTestFlasher</room>
     </rooms>
   </rooms>
   <help>
