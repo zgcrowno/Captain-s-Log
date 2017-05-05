@@ -130,32 +130,6 @@ if (input == "") {
     if (keyboard_check_pressed(vk_enter)) {
         scrCutCannon();
     }
-} else if (input == "a") {
-    if (keyboard_check_pressed(ord("L"))) {
-        input += "l";
-    } else if (keyboard_check_pressed(ord("C"))) {
-        input += "c";
-    }
-} else if (input == "ac") {
-    if (keyboard_check_pressed(ord("T"))) {
-        input += "t";
-    }
-} else if (input == "act") {
-    if (keyboard_check_pressed(ord("I"))) {
-        input += "i";
-    }
-} else if (input == "acti") {
-    if (keyboard_check_pressed(ord("V"))) {
-        input += "v";
-    }
-} else if (input == "activ") {
-    if (keyboard_check_pressed(ord("E"))) {
-        input += "e";
-    }
-} else if (input == "active") {
-    if (keyboard_check_pressed(vk_enter)) {
-        scrCutActive();
-    }
 } else if (input == "p") {
     if (keyboard_check_pressed(ord("A"))) {
         input += "a";
@@ -183,6 +157,10 @@ if (input == "") {
 } else if (input == "passive") {
     if (keyboard_check_pressed(vk_enter)) {
         scrCutPassive();
+    }
+} else if(input == "a") {
+    if (keyboard_check_pressed(ord("L"))) {
+        input += "l";
     }
 } else if (input == "al") {
     if (keyboard_check_pressed(ord("L"))) {

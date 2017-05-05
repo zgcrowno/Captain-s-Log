@@ -13,12 +13,9 @@ draw_text(hud.commandsRightBound - string_width(util.actionMapGunsString),
 draw_text(hud.commandsRightBound - string_width(util.actionMapCannonString), 
           hud.commandsUpperBound + 4 * string_height("Commands: "), 
           util.actionMapCannonString);
-draw_text(hud.commandsRightBound - string_width(util.actionMapActiveString), 
-          hud.commandsUpperBound + 5 * string_height("Commands: "), 
-          util.actionMapActiveString);
 draw_text(hud.commandsRightBound - string_width(util.actionMapPassiveString), 
-          hud.commandsUpperBound + 6 * string_height("Commands: "), 
+          hud.commandsUpperBound + 5 * string_height("Commands: "), 
           util.actionMapPassiveString);
 draw_text(hud.commandsRightBound - string_width("All"), 
-          hud.commandsUpperBound + 7 * string_height("Commands: "), 
+          hud.commandsUpperBound + 6 * string_height("Commands: "), 
           "All");

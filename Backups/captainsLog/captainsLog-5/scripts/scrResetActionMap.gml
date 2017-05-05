@@ -23,9 +23,4 @@ if(ds_list_find_index(actionQueue, util.actionMapCannonString) != -1) {
     ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionMapCannonString));
 }
 
-actionMap[? util.actionMapActiveString] = false;
-if(ds_list_find_index(actionQueue, util.actionMapActiveString) != -1) {
-    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionMapActiveString));
-}
-
 actionMap[? util.actionMapTargetString] = noone;

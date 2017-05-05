@@ -145,8 +145,10 @@ if (input == "") {
         input += "e";
     }
 } else if (input == "active") {
-    if (keyboard_check_pressed(vk_enter)) {
-        scrActiveDivertPower();
+    if(object_index != objFlasher && object_index != objMezzanine) {
+        if (keyboard_check_pressed(vk_enter)) {
+            scrActiveFire();
+        }
     }
 } else if (input == "p") {
     if (keyboard_check_pressed(ord("A"))) {

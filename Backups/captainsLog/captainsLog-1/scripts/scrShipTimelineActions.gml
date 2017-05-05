@@ -7,8 +7,6 @@ for(i = 0; i < ds_list_size(actionQueue); i++) {
         scrGunsFire();
     } else if(string_pos(util.actionMapCannonString, actionQueue[| i]) != 0) {
         scrCannonFire();
-    } else if(string_pos(util.actionMapActiveString, actionQueue[| i]) != 0) {
-        scrActiveFire();
     } else if(string_pos(util.actionMapPassiveString, actionQueue[| i]) != 0) {
         scrPassiveFire();
     } else if(string_pos("Thrst", actionQueue[| i]) != 0) {

@@ -72,9 +72,7 @@ if(actionMap[? util.actionMapCannonString]) {
     currentPPCannon = 0;
 }
 
-if(actionMap[? util.actionMapActiveString]) {
-    currentPPActive = requiredPPActive;
-} else if(currentPPActive > 0) {
+if(currentPPActive > 0) {
     currentPPActive -= ((requiredPPActive * util.difficultyModifier) / (hud.radarLowerBound - hud.radarUpperBound)) / 2;
 } else {
     currentPPActive = 0;

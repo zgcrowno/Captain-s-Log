@@ -1,7 +1,6 @@
 distance = argument0;
 
 scrSetState(initState);
-
 if(!(requiredPPThrusters > currentPP) && !(actionMap[? util.actionMapThrustersBowString] > 0) && currentHPThrustersBow > 0) {
     actionMap[? util.actionMapThrustersBowString] = real(distance);
     ds_list_add(actionQueue, util.actionQueueThrustersBowString + string(distance));

@@ -28,22 +28,7 @@ if(object_index == objFlasher) {
                 }
             }
         } else if(keyboard_check_pressed(vk_enter)) {
-            for(var j = 0; j < array_length_1d(gridBoxes); j++) {
-                gridBox2 = gridBoxes[j];
-                if(input == gridBox2.numberString) {
-                    if(((gridBox2.x + (gridBox2.sprite_width / 2)) - (x - bbox_left)) > hud.radarLeftBound
-                       && (((gridBox2.x + gridBox2.sprite_width) - (gridBox2.sprite_width / 2)) + (bbox_right - x)) < hud.radarRightBound
-                       && ((gridBox2.y + (gridBox2.sprite_width / 2)) - (y - bbox_top)) > hud.radarUpperBound
-                       && (((gridBox2.y + gridBox2.sprite_width) - (gridBox2.sprite_width / 2)) + (bbox_bottom - y)) < hud.radarLowerBound) {
-                        if((actionMap[? util.actionMapPassiveString] == active && distance_to_object(gridBox2) < 5 * gridBox2.sprite_width)
-                           || (actionMap[? util.actionMapPassiveString] != active && distance_to_object(gridBox2) < 3 * gridBox2.sprite_width)) {
-                            x = gridBox2.x + (gridBox2.sprite_width / 2);
-                            y = gridBox2.y + (gridBox2.sprite_width / 2);
-                        }
-                    }
-                }
-            }
-            scrSetState(initState);
+            scrActiveFire();
         }
     }
 } else if(object_index == objMezzanine) {
@@ -120,18 +105,7 @@ if(object_index == objFlasher) {
             input += "w";
         }
     } else if(keyboard_check_pressed(vk_enter)) {
-        if(input == "port") {
-            sprite_index = sprMezzaninePort;
-        } else if(input == "starboard") {
-            sprite_index = sprMezzanineStarboard;
-        } else if(input == "bow") {
-            sprite_index = sprMezzanineBow;
-        } else if(input == "stern") {
-            sprite_index = sprMezzanineStern;
-        } else {
-            //TODO: Error about input
-        }
-        scrSetState(initState);
+        scrActiveFire();
     }
 }
 

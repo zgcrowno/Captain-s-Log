@@ -10,7 +10,6 @@ scrCutShieldsBow();
 scrCutShieldsStern();
 scrCutGuns();
 scrCutCannon();
-scrCutActive();
 scrCutPassive();
 scrCutTarget();
 scrSetState(initState);

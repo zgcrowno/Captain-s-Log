@@ -9,6 +9,8 @@ if(currentState == initState) {
         scrSetState(gunState);
     } else if(input == "cannon") {
         scrSetState(cannonState);
+    } else if(input == "active" && (object_index == objFlasher || object_index == objMezzanine)) {
+        scrSetState(activeState);
     } else if(input == "cut") {
         scrSetState(cutState);
     }
