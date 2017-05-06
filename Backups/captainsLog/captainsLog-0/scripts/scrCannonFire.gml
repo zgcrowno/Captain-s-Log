@@ -68,7 +68,7 @@ if(actionMap[? util.actionMapCannonString]) {
             }
         }
     } else if(object_index == objHalitosis) {
-        if(sprite_index != sprHalitosisSmall) {
+        if(sprite_index == sprHalitosis) {
             len = sprite_get_width(sprGridBox);
             hypotenuse = sqrt(sqr(len) + sqr(len * 2));
             lengthDirImageAngle = noone;

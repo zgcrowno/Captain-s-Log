@@ -6,19 +6,19 @@ if(position_meeting(x, y, objPlayerShip)) {
     if(scrIsFacingPort()) {
         player.currentHPThrustersPort -= damage;
         if(player.currentHPThrustersPort <= 0) {
-            ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionQueueThrustersPortString + string(actionMap[? util.actionMapThrustersPortString])));
+            ds_list_delete(player.actionQueue, ds_list_find_index(player.actionQueue, util.actionQueueThrustersPortString + string(player.actionMap[? util.actionMapThrustersPortString])));
             player.actionMap[? util.actionMapThrustersPortString] = 0;
         }
     } else if(scrIsFacingStarboard()) {
         player.currentHPThrustersStarboard -= damage;
         if(player.currentHPThrustersStarboard <= 0) {
-            ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionQueueThrustersStarboardString + string(actionMap[? util.actionMapThrustersStarboardString])));
+            ds_list_delete(player.actionQueue, ds_list_find_index(player.actionQueue, util.actionQueueThrustersStarboardString + string(player.actionMap[? util.actionMapThrustersStarboardString])));
             player.actionMap[? util.actionMapThrustersStarboardString] = 0;
         }
     } else if(scrIsFacingBow()) {
         player.currentHPThrustersBow -= damage;
         if(player.currentHPThrustersBow <= 0) {
-            ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionQueueThrustersBowString + string(actionMap[? util.actionMapThrustersBowString])));
+            ds_list_delete(player.actionQueue, ds_list_find_index(player.actionQueue, util.actionQueueThrustersBowString + string(player.actionMap[? util.actionMapThrustersBowString])));
             player.actionMap[? util.actionMapThrustersBowString] = 0;
         }
     } else if(scrIsFacingStern()) {
@@ -27,7 +27,7 @@ if(position_meeting(x, y, objPlayerShip)) {
         } else { 
             player.currentHPThrustersStern -= damage;
             if(player.currentHPThrustersStern <= 0) {
-                ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionQueueThrustersSternString + string(actionMap[? util.actionMapThrustersSternString])));
+                ds_list_delete(player.actionQueue, ds_list_find_index(player.actionQueue, util.actionQueueThrustersSternString + string(player.actionMap[? util.actionMapThrustersSternString])));
                 player.actionMap[? util.actionMapThrustersSternString] = 0;
             }
         }

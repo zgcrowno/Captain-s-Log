@@ -7,6 +7,7 @@ if(currentHPThrustersStarboard <= 0) {
     actionMap[? util.actionMapThrustersStarboardString] = 0;
 }
 if(currentHPThrustersBow <= 0) {
+    show_debug_message(actionMap[? util.actionMapThrustersBowString]);
     ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionQueueThrustersBowString + string(actionMap[? util.actionMapThrustersBowString])));
     actionMap[? util.actionMapThrustersBowString] = 0;
 }

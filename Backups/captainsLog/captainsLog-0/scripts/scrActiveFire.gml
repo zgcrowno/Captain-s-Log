@@ -4,13 +4,13 @@
             instance_create(x, y, objRiceCakeActive);
             instance_destroy();
         }
-        currentPPCannon = requiredPPCannon;
+        currentPPActive = requiredPPActive;
     } else if(object_index == objSidecar) {
         with(objPlayerBullet) {
             x += sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));
             y -= sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
         }
-        currentPPCannon = requiredPPCannon;
+        currentPPActive = requiredPPActive;
     } else if(object_index == objFlasher) {
         for(var j = 0; j < array_length_1d(gridBoxes); j++) {
             gridBox2 = gridBoxes[j];
@@ -29,15 +29,19 @@
             }
         }
     } else if(object_index == objHalitosis) {
-        if(sprite_index != sprHalitosisSmall) {
-            sprite_index = sprHalitosisSmall;
+        if(sprite_index != sprHalitosisPassive) {
+            if(sprite_index != sprHalitosisSmall) {
+                sprite_index = sprHalitosisSmall;
+            } else {
+                sprite_index = sprHalitosis;
+            }
+            currentPPActive = requiredPPActive;
         } else {
-            sprite_index = sprHalitosis;
+            //TODO: Error to user about ship form
         }
-        currentPPCannon = requiredPPCannon;
     } else if(object_index == objPincer) {
         instance_create(x, y, objPincerActive);
-        currentPPCannon = requiredPPCannon;
+        currentPPActive = requiredPPActive;
     } else if(object_index == objMezzanine) {
         if(input == "port") {
             sprite_index = sprMezzaninePort;
