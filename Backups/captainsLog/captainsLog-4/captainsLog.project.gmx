@@ -443,6 +443,9 @@
           <scripts name="fire">
             <script>scripts\scrPassiveFire.gml</script>
           </scripts>
+          <scripts name="halitosis">
+            <script>scripts\scrConsumeProjectiles.gml</script>
+          </scripts>
         </scripts>
         <scripts name="shields">
           <script>scripts\scrShieldsAll.gml</script>

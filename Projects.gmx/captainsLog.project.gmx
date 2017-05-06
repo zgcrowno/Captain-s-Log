@@ -493,6 +493,9 @@
           </scripts>
           <script>scripts\scrSetGuns.gml</script>
           <script>scripts\scrRegenerateShields.gml</script>
+          <script>scripts\scrGetProjectileConsumptiveGridBoxes.gml</script>
+          <script>scripts\scrGridBoxIsProjectileConsumptive.gml</script>
+          <script>scripts\scrConsumeProjectile.gml</script>
         </scripts>
         <scripts name="playerShip">
           <scripts name="ricecake">
