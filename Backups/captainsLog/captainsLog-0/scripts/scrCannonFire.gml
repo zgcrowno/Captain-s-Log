@@ -96,6 +96,7 @@ if(actionMap[? util.actionMapCannonString]) {
                 energyBall = instance_create(x + lengthdir_x(hypotenuse, lengthDirImageAngle), y + lengthdir_y(hypotenuse, lengthDirImageAngle), objPlayerEnergyBall);
                 energyBall.image_angle = imageAngle;
             }
+            numEnergyBalls = 2;
         } else {
             //TODO: Error about ship form
         }

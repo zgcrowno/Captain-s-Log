@@ -45,8 +45,9 @@ draw_healthbar(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) 
 //Draw the thrusters player sprite
 draw_sprite(player.sprite_index, 
             -1, 
-            hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2), 
-            hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2));
+            hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2) - (((sprite_get_bbox_right(player.sprite_index) - sprite_get_bbox_left(player.sprite_index)) / 2) - sprite_get_xoffset(player.sprite_index)), 
+            hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2) - (((sprite_get_bbox_bottom(player.sprite_index) - sprite_get_bbox_top(player.sprite_index)) / 2) - sprite_get_yoffset(player.sprite_index)));
+            show_debug_message(sprite_get_bbox_bottom(player.sprite_index) - sprite_get_bbox_top(player.sprite_index));
             
 //Draw the shields player sprite
 draw_sprite(player.sprite_index, 

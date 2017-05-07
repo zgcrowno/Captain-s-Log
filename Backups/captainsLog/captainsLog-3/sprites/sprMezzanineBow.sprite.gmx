@@ -3,9 +3,9 @@
   <type>0</type>
   <xorig>35</xorig>
   <yorigin>60</yorigin>
-  <colkind>1</colkind>
+  <colkind>0</colkind>
   <coltolerance>0</coltolerance>
-  <sepmasks>0</sepmasks>
+  <sepmasks>-1</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>70</bbox_right>
@@ -17,7 +17,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>96</width>
+  <width>71</width>
   <height>96</height>
   <frames>
     <frame index="0">images\sprMezzanineBow_0.png</frame>

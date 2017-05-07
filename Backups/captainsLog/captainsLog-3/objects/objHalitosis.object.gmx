@@ -147,7 +147,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scrConsumeProjectiles</script>
+            <script>scrConsumeProjectile</script>
           </argument>
           <argument>
             <kind>0</kind>

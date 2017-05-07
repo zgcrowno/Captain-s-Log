@@ -40,6 +40,10 @@
           <sprite>sprites\sprPincer</sprite>
         </sprites>
         <sprites name="mezzanine">
+          <sprite>sprites\sprMezzanineStarboard1</sprite>
+          <sprite>sprites\sprMezzaninePort1</sprite>
+          <sprite>sprites\sprMezzanineBow1</sprite>
+          <sprite>sprites\sprMezzanineStern1</sprite>
           <sprite>sprites\sprMezzanineStarboard</sprite>
           <sprite>sprites\sprMezzaninePort</sprite>
           <sprite>sprites\sprMezzanineBow</sprite>
@@ -636,13 +640,13 @@
   <rooms name="rooms">
     <rooms name="test">
       <room>rooms\rmTestHalitosis</room>
+      <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTestRiceCake</room>
+      <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestFlasher</room>
       <room>rooms\rmTestSidecar</room>
-      <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTest2</room>
       <room>rooms\rmGameOver</room>
-      <room>rooms\rmTestPincer</room>
     </rooms>
   </rooms>
   <help>
