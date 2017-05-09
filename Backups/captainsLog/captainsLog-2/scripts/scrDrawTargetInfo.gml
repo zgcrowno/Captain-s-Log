@@ -1,21 +1,21 @@
-if(player.target != noone) {
+if(global.player.target != noone) {
     //Draw the target image
-    draw_sprite(player.target.radarSprite, 
-                player.target.image_index, 
-                hud.targetImageRightBound - ((hud.targetImageRightBound - hud.targetImageLeftBound) / 2), 
-                hud.targetImageLowerBound - ((hud.targetImageLowerBound - hud.targetImageUpperBound) / 2));
+    draw_sprite(global.player.target.radarSprite, 
+                global.player.target.image_index, 
+                global.hud.targetImageRightBound - ((global.hud.targetImageRightBound - global.hud.targetImageLeftBound) / 2), 
+                global.hud.targetImageLowerBound - ((global.hud.targetImageLowerBound - global.hud.targetImageUpperBound) / 2));
     
     //Draw the captain's personal information
-    draw_text(hud.targetIntelLeftBound, 
-              hud.targetIntelUpperBound, 
-              "Captain: " + player.target.designation);
+    draw_text(global.hud.targetIntelLeftBound, 
+              global.hud.targetIntelUpperBound, 
+              "Captain: " + global.player.target.designation);
     
     //Draw the target's overall HP bar
-    draw_healthbar(hud.targetPowerLeftBound, 
-                   hud.targetPowerUpperBound, 
-                   hud.targetPowerLeftBound + ((hud.targetPowerRightBound - hud.targetPowerLeftBound) / 2), 
-                   hud.targetPowerUpperBound + ((hud.targetPowerLowerBound - hud.targetPowerUpperBound)), 
-                   (player.target.currentHP / player.target.maxHP) * 100, 
+    draw_healthbar(global.hud.targetPowerLeftBound, 
+                   global.hud.targetPowerUpperBound, 
+                   global.hud.targetPowerLeftBound + ((global.hud.targetPowerRightBound - global.hud.targetPowerLeftBound) / 2), 
+                   global.hud.targetPowerUpperBound + ((global.hud.targetPowerLowerBound - global.hud.targetPowerUpperBound)), 
+                   (global.player.target.currentHP / global.player.target.maxHP) * 100, 
                    c_black, 
                    c_maroon, 
                    c_maroon, 
@@ -24,11 +24,11 @@ if(player.target != noone) {
                    false);
                    
     //Draw the overall PP bar
-    draw_healthbar(hud.targetPowerLeftBound + ((hud.targetPowerRightBound - hud.targetPowerLeftBound) / 2), 
-                   hud.targetPowerUpperBound, 
-                   hud.targetPowerRightBound, 
-                   hud.targetPowerUpperBound + ((hud.targetPowerLowerBound - hud.targetPowerUpperBound)),
-                   (player.target.currentPP / player.target.maxPP) * 100, 
+    draw_healthbar(global.hud.targetPowerLeftBound + ((global.hud.targetPowerRightBound - global.hud.targetPowerLeftBound) / 2), 
+                   global.hud.targetPowerUpperBound, 
+                   global.hud.targetPowerRightBound, 
+                   global.hud.targetPowerUpperBound + ((global.hud.targetPowerLowerBound - global.hud.targetPowerUpperBound)),
+                   (global.player.target.currentPP / global.player.target.maxPP) * 100, 
                    c_black, 
                    c_teal, 
                    c_teal, 
@@ -39,114 +39,114 @@ if(player.target != noone) {
     draw_set_color(c_red);
     
     //Draw the target image lines
-    draw_line(hud.targetImageLeftBound, 
-              hud.targetImageUpperBound, 
-              hud.targetImageRightBound, 
-              hud.targetImageLowerBound);
-    draw_line(hud.targetImageLeftBound, 
-              hud.targetImageLowerBound, 
-              hud.targetImageRightBound, 
-              hud.targetImageUpperBound);
+    draw_line(global.hud.targetImageLeftBound, 
+              global.hud.targetImageUpperBound, 
+              global.hud.targetImageRightBound, 
+              global.hud.targetImageLowerBound);
+    draw_line(global.hud.targetImageLeftBound, 
+              global.hud.targetImageLowerBound, 
+              global.hud.targetImageRightBound, 
+              global.hud.targetImageUpperBound);
     
     //Draw the target info lines
-    draw_line(hud.targetIntelLeftBound, 
-              hud.targetIntelUpperBound, 
-              hud.targetIntelRightBound, 
-              hud.targetIntelLowerBound);
-    draw_line(hud.targetIntelLeftBound, 
-              hud.targetIntelLowerBound, 
-              hud.targetIntelRightBound, 
-              hud.targetIntelUpperBound);
+    draw_line(global.hud.targetIntelLeftBound, 
+              global.hud.targetIntelUpperBound, 
+              global.hud.targetIntelRightBound, 
+              global.hud.targetIntelLowerBound);
+    draw_line(global.hud.targetIntelLeftBound, 
+              global.hud.targetIntelLowerBound, 
+              global.hud.targetIntelRightBound, 
+              global.hud.targetIntelUpperBound);
     
     //Draw the target power lines
-    draw_line(hud.targetPowerLeftBound, 
-              hud.targetPowerUpperBound, 
-              hud.targetPowerRightBound, 
-              hud.targetPowerLowerBound);
-    draw_line(hud.targetPowerLeftBound, 
-              hud.targetPowerLowerBound, 
-              hud.targetPowerRightBound, 
-              hud.targetPowerUpperBound);
+    draw_line(global.hud.targetPowerLeftBound, 
+              global.hud.targetPowerUpperBound, 
+              global.hud.targetPowerRightBound, 
+              global.hud.targetPowerLowerBound);
+    draw_line(global.hud.targetPowerLeftBound, 
+              global.hud.targetPowerLowerBound, 
+              global.hud.targetPowerRightBound, 
+              global.hud.targetPowerUpperBound);
     
     //Draw the target aq one lines
-    draw_line(hud.targetAQOneLeftBound, 
-              hud.targetAQOneUpperBound, 
-              hud.targetAQOneRightBound, 
-              hud.targetAQOneLowerBound);
-    draw_line(hud.targetAQOneLeftBound, 
-              hud.targetAQOneLowerBound, 
-              hud.targetAQOneRightBound, 
-              hud.targetAQOneUpperBound);
+    draw_line(global.hud.targetAQOneLeftBound, 
+              global.hud.targetAQOneUpperBound, 
+              global.hud.targetAQOneRightBound, 
+              global.hud.targetAQOneLowerBound);
+    draw_line(global.hud.targetAQOneLeftBound, 
+              global.hud.targetAQOneLowerBound, 
+              global.hud.targetAQOneRightBound, 
+              global.hud.targetAQOneUpperBound);
     
     //Draw the target aq two lines
-    draw_line(hud.targetAQTwoLeftBound, 
-              hud.targetAQTwoUpperBound, 
-              hud.targetAQTwoRightBound, 
-              hud.targetAQTwoLowerBound);
-    draw_line(hud.targetAQTwoLeftBound, 
-              hud.targetAQTwoLowerBound, 
-              hud.targetAQTwoRightBound, 
-              hud.targetAQTwoUpperBound);
+    draw_line(global.hud.targetAQTwoLeftBound, 
+              global.hud.targetAQTwoUpperBound, 
+              global.hud.targetAQTwoRightBound, 
+              global.hud.targetAQTwoLowerBound);
+    draw_line(global.hud.targetAQTwoLeftBound, 
+              global.hud.targetAQTwoLowerBound, 
+              global.hud.targetAQTwoRightBound, 
+              global.hud.targetAQTwoUpperBound);
     
     //Draw the target aq three lines
-    draw_line(hud.targetAQThreeLeftBound, 
-              hud.targetAQThreeUpperBound, 
-              hud.targetAQThreeRightBound, 
-              hud.targetAQThreeLowerBound);
-    draw_line(hud.targetAQThreeLeftBound, 
-              hud.targetAQThreeLowerBound, 
-              hud.targetAQThreeRightBound, 
-              hud.targetAQThreeUpperBound);
+    draw_line(global.hud.targetAQThreeLeftBound, 
+              global.hud.targetAQThreeUpperBound, 
+              global.hud.targetAQThreeRightBound, 
+              global.hud.targetAQThreeLowerBound);
+    draw_line(global.hud.targetAQThreeLeftBound, 
+              global.hud.targetAQThreeLowerBound, 
+              global.hud.targetAQThreeRightBound, 
+              global.hud.targetAQThreeUpperBound);
     
     //Draw the target aq four lines
-    draw_line(hud.targetAQFourLeftBound, 
-              hud.targetAQFourUpperBound, 
-              hud.targetAQFourRightBound, 
-              hud.targetAQFourLowerBound);
-    draw_line(hud.targetAQFourLeftBound, 
-              hud.targetAQFourLowerBound, 
-              hud.targetAQFourRightBound, 
-              hud.targetAQFourUpperBound);
+    draw_line(global.hud.targetAQFourLeftBound, 
+              global.hud.targetAQFourUpperBound, 
+              global.hud.targetAQFourRightBound, 
+              global.hud.targetAQFourLowerBound);
+    draw_line(global.hud.targetAQFourLeftBound, 
+              global.hud.targetAQFourLowerBound, 
+              global.hud.targetAQFourRightBound, 
+              global.hud.targetAQFourUpperBound);
     
     //Draw the target aq five lines
-    draw_line(hud.targetAQFiveLeftBound, 
-              hud.targetAQFiveUpperBound, 
-              hud.targetAQFiveRightBound, 
-              hud.targetAQFiveLowerBound);
-    draw_line(hud.targetAQFiveLeftBound, 
-              hud.targetAQFiveLowerBound, 
-              hud.targetAQFiveRightBound, 
-              hud.targetAQFiveUpperBound);
+    draw_line(global.hud.targetAQFiveLeftBound, 
+              global.hud.targetAQFiveUpperBound, 
+              global.hud.targetAQFiveRightBound, 
+              global.hud.targetAQFiveLowerBound);
+    draw_line(global.hud.targetAQFiveLeftBound, 
+              global.hud.targetAQFiveLowerBound, 
+              global.hud.targetAQFiveRightBound, 
+              global.hud.targetAQFiveUpperBound);
     
     //Draw the target aq six lines
-    draw_line(hud.targetAQSixLeftBound, 
-              hud.targetAQSixUpperBound, 
-              hud.targetAQSixRightBound, 
-              hud.targetAQSixLowerBound);
-    draw_line(hud.targetAQSixLeftBound, 
-              hud.targetAQSixLowerBound, 
-              hud.targetAQSixRightBound, 
-              hud.targetAQSixUpperBound); 
+    draw_line(global.hud.targetAQSixLeftBound, 
+              global.hud.targetAQSixUpperBound, 
+              global.hud.targetAQSixRightBound, 
+              global.hud.targetAQSixLowerBound);
+    draw_line(global.hud.targetAQSixLeftBound, 
+              global.hud.targetAQSixLowerBound, 
+              global.hud.targetAQSixRightBound, 
+              global.hud.targetAQSixUpperBound); 
     
     //Draw the target aq seven lines
-    draw_line(hud.targetAQSevenLeftBound, 
-              hud.targetAQSevenUpperBound, 
-              hud.targetAQSevenRightBound, 
-              hud.targetAQSevenLowerBound);
-    draw_line(hud.targetAQSevenLeftBound, 
-              hud.targetAQSevenLowerBound, 
-              hud.targetAQSevenRightBound, 
-              hud.targetAQSevenUpperBound); 
+    draw_line(global.hud.targetAQSevenLeftBound, 
+              global.hud.targetAQSevenUpperBound, 
+              global.hud.targetAQSevenRightBound, 
+              global.hud.targetAQSevenLowerBound);
+    draw_line(global.hud.targetAQSevenLeftBound, 
+              global.hud.targetAQSevenLowerBound, 
+              global.hud.targetAQSevenRightBound, 
+              global.hud.targetAQSevenUpperBound); 
     
     //Draw the target aq eight lines
-    draw_line(hud.targetAQEightLeftBound, 
-              hud.targetAQEightUpperBound, 
-              hud.targetAQEightRightBound, 
-              hud.targetAQEightLowerBound);
-    draw_line(hud.targetAQEightLeftBound, 
-              hud.targetAQEightLowerBound, 
-              hud.targetAQEightRightBound, 
-              hud.targetAQEightUpperBound);
+    draw_line(global.hud.targetAQEightLeftBound, 
+              global.hud.targetAQEightUpperBound, 
+              global.hud.targetAQEightRightBound, 
+              global.hud.targetAQEightLowerBound);
+    draw_line(global.hud.targetAQEightLeftBound, 
+              global.hud.targetAQEightLowerBound, 
+              global.hud.targetAQEightRightBound, 
+              global.hud.targetAQEightUpperBound);
     
     draw_set_color(c_white);
 }

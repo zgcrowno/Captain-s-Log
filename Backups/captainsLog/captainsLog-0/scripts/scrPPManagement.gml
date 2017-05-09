@@ -1,84 +1,84 @@
-if(actionMap[? util.actionMapThrustersPortString] > 0) {
+if(actionMap[? global.util.actionMapThrustersPortString] > 0) {
     currentPPThrustersPort = requiredPPThrusters;
 } else {
     currentPPThrustersPort = 0;
 }
 
-if(actionMap[? util.actionMapThrustersStarboardString] > 0) {
+if(actionMap[? global.util.actionMapThrustersStarboardString] > 0) {
     currentPPThrustersStarboard = requiredPPThrusters;
 } else {
     currentPPThrustersStarboard = 0;
 }
 
-if(actionMap[? util.actionMapThrustersBowString] > 0) {
+if(actionMap[? global.util.actionMapThrustersBowString] > 0) {
     currentPPThrustersBow = requiredPPThrusters;
 } else {
     currentPPThrustersBow = 0;
 }
 
-if(actionMap[? util.actionMapThrustersSternString] > 0) {
+if(actionMap[? global.util.actionMapThrustersSternString] > 0) {
     currentPPThrustersStern = requiredPPThrusters;
 } else {
     currentPPThrustersStern = 0;
 }
 
-if(actionMap[? util.actionMapThrustersClockString] > 0) {
+if(actionMap[? global.util.actionMapThrustersClockString] > 0) {
     currentPPThrustersRotateClockwise = requiredPPThrustersRotate;
 } else {
     currentPPThrustersRotateClockwise = 0;
 }
 
-if(actionMap[? util.actionMapThrustersCountString] > 0) {
+if(actionMap[? global.util.actionMapThrustersCountString] > 0) {
     currentPPThrustersRotateCounterclockwise = requiredPPThrustersRotate;
 } else {
     currentPPThrustersRotateCounterclockwise = 0;
 }
 
-if(actionMap[? util.actionMapShieldsPortString] == active || actionMap[? util.actionMapShieldsPortString] == toActivate || actionMap[? util.actionMapShieldsPortString] == toDeactivate) {
+if(actionMap[? global.util.actionMapShieldsPortString] == active || actionMap[? global.util.actionMapShieldsPortString] == toActivate || actionMap[? global.util.actionMapShieldsPortString] == toDeactivate) {
     currentPPShieldsPort = requiredPPShields;
 } else {
     currentPPShieldsPort = 0;
 }
 
-if(actionMap[? util.actionMapShieldsStarboardString] == active || actionMap[? util.actionMapShieldsStarboardString] == toActivate || actionMap[? util.actionMapShieldsStarboardString] == toDeactivate) {
+if(actionMap[? global.util.actionMapShieldsStarboardString] == active || actionMap[? global.util.actionMapShieldsStarboardString] == toActivate || actionMap[? global.util.actionMapShieldsStarboardString] == toDeactivate) {
     currentPPShieldsStarboard = requiredPPShields;
 } else {
     currentPPShieldsStarboard = 0;
 }
 
-if(actionMap[? util.actionMapShieldsBowString] == active || actionMap[? util.actionMapShieldsBowString] == toActivate || actionMap[? util.actionMapShieldsBowString] == toDeactivate) {
+if(actionMap[? global.util.actionMapShieldsBowString] == active || actionMap[? global.util.actionMapShieldsBowString] == toActivate || actionMap[? global.util.actionMapShieldsBowString] == toDeactivate) {
     currentPPShieldsBow = requiredPPShields;
 } else {
     currentPPShieldsBow = 0;
 }
 
-if(actionMap[? util.actionMapShieldsSternString] == active || actionMap[? util.actionMapShieldsSternString] == toActivate || actionMap[? util.actionMapShieldsSternString] == toDeactivate) {
+if(actionMap[? global.util.actionMapShieldsSternString] == active || actionMap[? global.util.actionMapShieldsSternString] == toActivate || actionMap[? global.util.actionMapShieldsSternString] == toDeactivate) {
     currentPPShieldsStern = requiredPPShields;
 } else {
     currentPPShieldsStern = 0;
 }
 
-if(actionMap[? util.actionMapGunsString]) {
+if(actionMap[? global.util.actionMapGunsString]) {
     currentPPGuns = requiredPPGuns;
 } else {
     currentPPGuns = 0;
 }
 
-if(actionMap[? util.actionMapCannonString]) {
+if(actionMap[? global.util.actionMapCannonString]) {
     currentPPCannon = requiredPPCannon;
 } else if(currentPPCannon > 0) {
-    currentPPCannon -= ((requiredPPCannon * util.difficultyModifier) / (hud.radarLowerBound - hud.radarUpperBound)) / 3;
+    currentPPCannon -= ((requiredPPCannon * global.util.difficultyModifier) / (global.hud.radarLowerBound - global.hud.radarUpperBound)) / 3;
 } else {
     currentPPCannon = 0;
 }
 
 if(currentPPActive > 0) {
-    currentPPActive -= ((requiredPPActive * util.difficultyModifier) / (hud.radarLowerBound - hud.radarUpperBound)) / 2;
+    currentPPActive -= ((requiredPPActive * global.util.difficultyModifier) / (global.hud.radarLowerBound - global.hud.radarUpperBound)) / 2;
 } else {
     currentPPActive = 0;
 }
 
-if(actionMap[? util.actionMapPassiveString] == active || actionMap[? util.actionMapPassiveString] == toActivate || actionMap[? util.actionMapPassiveString] == toDeactivate) {
+if(actionMap[? global.util.actionMapPassiveString] == active || actionMap[? global.util.actionMapPassiveString] == toActivate || actionMap[? global.util.actionMapPassiveString] == toDeactivate) {
     currentPPPassive = requiredPPPassive;
 } else {
     currentPPPassive = 0;

@@ -1,6 +1,6 @@
 scrSetState(initState);
 
-if(actionMap[? util.actionMapThrustersSternString] > 0) {
-    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionQueueThrustersSternString + string(actionMap[? util.actionMapThrustersSternString])));
-    actionMap[? util.actionMapThrustersSternString] = 0;
+if(actionMap[? global.util.actionMapThrustersSternString] > 0) {
+    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, global.util.actionQueueThrustersSternString + string(actionMap[? global.util.actionMapThrustersSternString])));
+    actionMap[? global.util.actionMapThrustersSternString] = 0;
 }

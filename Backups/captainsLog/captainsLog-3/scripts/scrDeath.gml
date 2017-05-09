@@ -1,11 +1,11 @@
 if(!object_is_ancestor(object_index, objPlayerShip)) {
     if(currentHP <= 0) {
-        if(id == player.target) {
-            player.target = noone;
+        if(id == global.player.target) {
+            global.player.target = noone;
         }
         instance_destroy();
         if(object_is_ancestor(object_index, objEnemyShip)) {
-            util.enemies = scrGetEnemies();
+            global.util.enemies = scrGetEnemies();
         }
     }
 } else {

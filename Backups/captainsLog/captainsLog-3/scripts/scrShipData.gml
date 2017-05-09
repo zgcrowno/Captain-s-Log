@@ -1,12 +1,3 @@
-//The HUD object
-hud = instance_find(objHud, 0);
-
-//The Util Object
-util = instance_find(objUtil, 0);
-
-//The player ship
-player = instance_find(objPlayerShip, 0);
-
 //The ship's current target
 target = noone;
 
@@ -27,21 +18,21 @@ toDeactivate = 3;
 
 //The ship's action map
 actionMap = ds_map_create();
-ds_map_add(actionMap, util.actionMapThrustersPortString, 0);
-ds_map_add(actionMap, util.actionMapThrustersStarboardString, 0);
-ds_map_add(actionMap, util.actionMapThrustersBowString, 0);
-ds_map_add(actionMap, util.actionMapThrustersSternString, 0);
-ds_map_add(actionMap, util.actionMapThrustersCountString, 0);
-ds_map_add(actionMap, util.actionMapThrustersClockString, 0);
-ds_map_add(actionMap, util.actionMapShieldsPortString, inactive);
-ds_map_add(actionMap, util.actionMapShieldsStarboardString, inactive);
-ds_map_add(actionMap, util.actionMapShieldsBowString, inactive);
-ds_map_add(actionMap, util.actionMapShieldsSternString, inactive);
-ds_map_add(actionMap, util.actionMapTargetString, noone);
-ds_map_add(actionMap, util.actionMapGunsString, false);
-ds_map_add(actionMap, util.actionMapCannonString, false);
-ds_map_add(actionMap, util.actionMapActiveString, false);
-ds_map_add(actionMap, util.actionMapPassiveString, inactive);
+ds_map_add(actionMap, global.util.actionMapThrustersPortString, 0);
+ds_map_add(actionMap, global.util.actionMapThrustersStarboardString, 0);
+ds_map_add(actionMap, global.util.actionMapThrustersBowString, 0);
+ds_map_add(actionMap, global.util.actionMapThrustersSternString, 0);
+ds_map_add(actionMap, global.util.actionMapThrustersCountString, 0);
+ds_map_add(actionMap, global.util.actionMapThrustersClockString, 0);
+ds_map_add(actionMap, global.util.actionMapShieldsPortString, inactive);
+ds_map_add(actionMap, global.util.actionMapShieldsStarboardString, inactive);
+ds_map_add(actionMap, global.util.actionMapShieldsBowString, inactive);
+ds_map_add(actionMap, global.util.actionMapShieldsSternString, inactive);
+ds_map_add(actionMap, global.util.actionMapTargetString, noone);
+ds_map_add(actionMap, global.util.actionMapGunsString, false);
+ds_map_add(actionMap, global.util.actionMapCannonString, false);
+ds_map_add(actionMap, global.util.actionMapActiveString, false);
+ds_map_add(actionMap, global.util.actionMapPassiveString, inactive);
 
 //The ship's action queue (actually a list)
 actionQueue = ds_list_create();

@@ -1,4 +1,4 @@
-gridBoxes = scrGetGridBoxes();
+gridBoxes = global.allGridBoxes;
 adjacentGridBoxes = noone;
 adjacentGridBoxesIndex = 0;
 

@@ -1,8 +1,8 @@
-draw_healthbar(hud.shieldsSternHPLeftBound, 
-               hud.shieldsSternHPUpperBound, 
-               hud.shieldsSternHPRightBound, 
-               hud.shieldsSternHPLowerBound, 
-               (player.currentHPShieldsStern / player.maxHPShieldsStern) * 100, 
+draw_healthbar(global.hud.shieldsSternHPLeftBound, 
+               global.hud.shieldsSternHPUpperBound, 
+               global.hud.shieldsSternHPRightBound, 
+               global.hud.shieldsSternHPLowerBound, 
+               (global.player.currentHPShieldsStern / global.player.maxHPShieldsStern) * 100, 
                c_black, 
                c_maroon, 
                c_maroon, 
@@ -10,27 +10,27 @@ draw_healthbar(hud.shieldsSternHPLeftBound,
                false, 
                false);
 draw_set_color(c_maroon);
-draw_line(hud.shieldsSternHPLeftBound,
-          hud.shieldsSternHPUpperBound,
-          hud.shieldsSternHPLeftBound,
-          hud.shieldsSternHPLowerBound);
-draw_line(hud.shieldsSternHPRightBound,
-          hud.shieldsSternHPUpperBound,
-          hud.shieldsSternHPRightBound,
-          hud.shieldsSternHPLowerBound);
-draw_line(hud.shieldsSternHPLeftBound,
-          hud.shieldsSternHPUpperBound,
-          hud.shieldsSternHPRightBound,
-          hud.shieldsSternHPUpperBound);
-draw_line(hud.shieldsSternHPLeftBound,
-          hud.shieldsSternHPLowerBound,
-          hud.shieldsSternHPRightBound,
-          hud.shieldsSternHPLowerBound);
-draw_healthbar(hud.shieldsSternPPLeftBound, 
-               hud.shieldsSternPPUpperBound, 
-               hud.shieldsSternPPRightBound, 
-               hud.shieldsSternPPLowerBound, 
-               (player.currentPPShieldsStern / player.requiredPPShields) * 100, 
+draw_line(global.hud.shieldsSternHPLeftBound,
+          global.hud.shieldsSternHPUpperBound,
+          global.hud.shieldsSternHPLeftBound,
+          global.hud.shieldsSternHPLowerBound);
+draw_line(global.hud.shieldsSternHPRightBound,
+          global.hud.shieldsSternHPUpperBound,
+          global.hud.shieldsSternHPRightBound,
+          global.hud.shieldsSternHPLowerBound);
+draw_line(global.hud.shieldsSternHPLeftBound,
+          global.hud.shieldsSternHPUpperBound,
+          global.hud.shieldsSternHPRightBound,
+          global.hud.shieldsSternHPUpperBound);
+draw_line(global.hud.shieldsSternHPLeftBound,
+          global.hud.shieldsSternHPLowerBound,
+          global.hud.shieldsSternHPRightBound,
+          global.hud.shieldsSternHPLowerBound);
+draw_healthbar(global.hud.shieldsSternPPLeftBound, 
+               global.hud.shieldsSternPPUpperBound, 
+               global.hud.shieldsSternPPRightBound, 
+               global.hud.shieldsSternPPLowerBound, 
+               (global.player.currentPPShieldsStern / global.player.requiredPPShields) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
@@ -38,24 +38,24 @@ draw_healthbar(hud.shieldsSternPPLeftBound,
                false, 
                false);
 draw_set_color(c_teal);
-draw_line(hud.shieldsSternPPLeftBound,
-          hud.shieldsSternPPUpperBound,
-          hud.shieldsSternPPLeftBound,
-          hud.shieldsSternPPLowerBound);
-draw_line(hud.shieldsSternPPRightBound,
-          hud.shieldsSternPPUpperBound,
-          hud.shieldsSternPPRightBound,
-          hud.shieldsSternPPLowerBound);
-draw_line(hud.shieldsSternPPLeftBound,
-          hud.shieldsSternPPUpperBound,
-          hud.shieldsSternPPRightBound,
-          hud.shieldsSternPPUpperBound);
-draw_line(hud.shieldsSternPPLeftBound,
-          hud.shieldsSternPPLowerBound,
-          hud.shieldsSternPPRightBound,
-          hud.shieldsSternPPLowerBound);
+draw_line(global.hud.shieldsSternPPLeftBound,
+          global.hud.shieldsSternPPUpperBound,
+          global.hud.shieldsSternPPLeftBound,
+          global.hud.shieldsSternPPLowerBound);
+draw_line(global.hud.shieldsSternPPRightBound,
+          global.hud.shieldsSternPPUpperBound,
+          global.hud.shieldsSternPPRightBound,
+          global.hud.shieldsSternPPLowerBound);
+draw_line(global.hud.shieldsSternPPLeftBound,
+          global.hud.shieldsSternPPUpperBound,
+          global.hud.shieldsSternPPRightBound,
+          global.hud.shieldsSternPPUpperBound);
+draw_line(global.hud.shieldsSternPPLeftBound,
+          global.hud.shieldsSternPPLowerBound,
+          global.hud.shieldsSternPPRightBound,
+          global.hud.shieldsSternPPLowerBound);
 draw_set_color(c_white);
-draw_line(hud.shieldsSternPPRightBound,
-          hud.shieldsSternPPLowerBound,
-          hud.shieldsLeftBound + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 2),
-          hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2) + (player.sprite_height / 2));
+draw_line(global.hud.shieldsSternPPRightBound,
+          global.hud.shieldsSternPPLowerBound,
+          global.hud.shieldsLeftBound + ((global.hud.shieldsRightBound - global.hud.shieldsLeftBound) / 2),
+          global.hud.shieldsUpperBound + ((global.hud.shieldsLowerBound - global.hud.shieldsUpperBound) / 2) + (global.player.sprite_height / 2));

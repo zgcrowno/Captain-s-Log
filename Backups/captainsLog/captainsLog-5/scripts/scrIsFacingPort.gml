@@ -1,4 +1,4 @@
-return (scrIsFacingUp(player) && scrIsFacingRight(self)) 
-        || (scrIsFacingLeft(player) && scrIsFacingUp(self)) 
-        || (scrIsFacingDown(player) && scrIsFacingLeft(self)) 
-        || (scrIsFacingRight(player) && scrIsFacingDown(self));
+return (scrIsFacingUp(global.player) && scrIsFacingRight(self)) 
+        || (scrIsFacingLeft(global.player) && scrIsFacingUp(self)) 
+        || (scrIsFacingDown(global.player) && scrIsFacingLeft(self)) 
+        || (scrIsFacingRight(global.player) && scrIsFacingDown(self));

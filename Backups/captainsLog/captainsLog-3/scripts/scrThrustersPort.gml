@@ -2,12 +2,12 @@ distance = argument0;
 
 scrSetState(initState);
 
-if(!(requiredPPThrusters > currentPP) && !(actionMap[? util.actionMapThrustersPortString] > 0) && currentHPThrustersPort > 0) {
-    actionMap[? util.actionMapThrustersPortString] = real(distance);
-    ds_list_add(actionQueue, util.actionQueueThrustersPortString + string(distance));
-} else if(actionMap[? util.actionMapThrustersPortString] > 0 && currentHPThrustersPort > 0) {
-    actionQueue[| real(actionQueue[| util.actionQueueThrustersPortString + string(actionMap[? util.actionMapThrustersPortString])])] = util.actionQueueThrustersPortString + string(actionMap[? util.actionMapThrustersPortString] + real(distance));
-    actionMap[? util.actionMapThrustersPortString] = actionMap[? util.actionMapThrustersPortString] + real(distance);
+if(!(requiredPPThrusters > currentPP) && !(actionMap[? global.util.actionMapThrustersPortString] > 0) && currentHPThrustersPort > 0) {
+    actionMap[? global.util.actionMapThrustersPortString] = real(distance);
+    ds_list_add(actionQueue, global.util.actionQueueThrustersPortString + string(distance));
+} else if(actionMap[? global.util.actionMapThrustersPortString] > 0 && currentHPThrustersPort > 0) {
+    actionQueue[| real(actionQueue[| global.util.actionQueueThrustersPortString + string(actionMap[? global.util.actionMapThrustersPortString])])] = global.util.actionQueueThrustersPortString + string(actionMap[? global.util.actionMapThrustersPortString] + real(distance));
+    actionMap[? global.util.actionMapThrustersPortString] = actionMap[? global.util.actionMapThrustersPortString] + real(distance);
 } else {
         //To Do: Error to user about lack of power and/or thrusters health
 }

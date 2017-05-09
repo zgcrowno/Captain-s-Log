@@ -1,1 +1,1 @@
-util.enemies = scrGetEnemies();
+global.util.enemies = scrGetEnemies();

@@ -1,8 +1,8 @@
-draw_healthbar(hud.thrustersPortHPLeftBound, 
-               hud.thrustersPortHPUpperBound, 
-               hud.thrustersPortHPRightBound, 
-               hud.thrustersPortHPLowerBound, 
-               (player.currentHPThrustersPort / player.maxHPThrustersPort) * 100, 
+draw_healthbar(global.hud.thrustersPortHPLeftBound, 
+               global.hud.thrustersPortHPUpperBound, 
+               global.hud.thrustersPortHPRightBound, 
+               global.hud.thrustersPortHPLowerBound, 
+               (global.player.currentHPThrustersPort / global.player.maxHPThrustersPort) * 100, 
                c_black, 
                c_maroon, 
                c_maroon, 
@@ -10,27 +10,27 @@ draw_healthbar(hud.thrustersPortHPLeftBound,
                false, 
                false);
 draw_set_color(c_maroon);
-draw_line(hud.thrustersPortHPLeftBound,
-          hud.thrustersPortHPUpperBound,
-          hud.thrustersPortHPLeftBound,
-          hud.thrustersPortHPLowerBound);
-draw_line(hud.thrustersPortHPRightBound,
-          hud.thrustersPortHPUpperBound,
-          hud.thrustersPortHPRightBound,
-          hud.thrustersPortHPLowerBound);
-draw_line(hud.thrustersPortHPLeftBound,
-          hud.thrustersPortHPUpperBound,
-          hud.thrustersPortHPRightBound,
-          hud.thrustersPortHPUpperBound);
-draw_line(hud.thrustersPortHPLeftBound,
-          hud.thrustersPortHPLowerBound,
-          hud.thrustersPortHPRightBound,
-          hud.thrustersPortHPLowerBound);
-draw_healthbar(hud.thrustersPortPPLeftBound, 
-               hud.thrustersPortPPUpperBound, 
-               hud.thrustersPortPPRightBound, 
-               hud.thrustersPortPPLowerBound, 
-               (player.currentPPThrustersPort / player.requiredPPThrusters) * 100, 
+draw_line(global.hud.thrustersPortHPLeftBound,
+          global.hud.thrustersPortHPUpperBound,
+          global.hud.thrustersPortHPLeftBound,
+          global.hud.thrustersPortHPLowerBound);
+draw_line(global.hud.thrustersPortHPRightBound,
+          global.hud.thrustersPortHPUpperBound,
+          global.hud.thrustersPortHPRightBound,
+          global.hud.thrustersPortHPLowerBound);
+draw_line(global.hud.thrustersPortHPLeftBound,
+          global.hud.thrustersPortHPUpperBound,
+          global.hud.thrustersPortHPRightBound,
+          global.hud.thrustersPortHPUpperBound);
+draw_line(global.hud.thrustersPortHPLeftBound,
+          global.hud.thrustersPortHPLowerBound,
+          global.hud.thrustersPortHPRightBound,
+          global.hud.thrustersPortHPLowerBound);
+draw_healthbar(global.hud.thrustersPortPPLeftBound, 
+               global.hud.thrustersPortPPUpperBound, 
+               global.hud.thrustersPortPPRightBound, 
+               global.hud.thrustersPortPPLowerBound, 
+               (global.player.currentPPThrustersPort / global.player.requiredPPThrusters) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
@@ -38,24 +38,24 @@ draw_healthbar(hud.thrustersPortPPLeftBound,
                false, 
                false);
 draw_set_color(c_teal);
-draw_line(hud.thrustersPortPPLeftBound,
-          hud.thrustersPortPPUpperBound,
-          hud.thrustersPortPPLeftBound,
-          hud.thrustersPortPPLowerBound);
-draw_line(hud.thrustersPortPPRightBound,
-          hud.thrustersPortPPUpperBound,
-          hud.thrustersPortPPRightBound,
-          hud.thrustersPortPPLowerBound);
-draw_line(hud.thrustersPortPPLeftBound,
-          hud.thrustersPortPPUpperBound,
-          hud.thrustersPortPPRightBound,
-          hud.thrustersPortPPUpperBound);
-draw_line(hud.thrustersPortPPLeftBound,
-          hud.thrustersPortPPLowerBound,
-          hud.thrustersPortPPRightBound,
-          hud.thrustersPortPPLowerBound);
+draw_line(global.hud.thrustersPortPPLeftBound,
+          global.hud.thrustersPortPPUpperBound,
+          global.hud.thrustersPortPPLeftBound,
+          global.hud.thrustersPortPPLowerBound);
+draw_line(global.hud.thrustersPortPPRightBound,
+          global.hud.thrustersPortPPUpperBound,
+          global.hud.thrustersPortPPRightBound,
+          global.hud.thrustersPortPPLowerBound);
+draw_line(global.hud.thrustersPortPPLeftBound,
+          global.hud.thrustersPortPPUpperBound,
+          global.hud.thrustersPortPPRightBound,
+          global.hud.thrustersPortPPUpperBound);
+draw_line(global.hud.thrustersPortPPLeftBound,
+          global.hud.thrustersPortPPLowerBound,
+          global.hud.thrustersPortPPRightBound,
+          global.hud.thrustersPortPPLowerBound);
 draw_set_color(c_white);
-draw_line(hud.thrustersPortPPRightBound,
-          hud.thrustersPortPPUpperBound,
-          hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2) - (player.sprite_width / 2),
-          hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2));
+draw_line(global.hud.thrustersPortPPRightBound,
+          global.hud.thrustersPortPPUpperBound,
+          global.hud.thrustersLeftBound + ((global.hud.thrustersRightBound - global.hud.thrustersLeftBound) / 2) - (global.player.sprite_width / 2),
+          global.hud.thrustersUpperBound + ((global.hud.thrustersLowerBound - global.hud.thrustersUpperBound) / 2));

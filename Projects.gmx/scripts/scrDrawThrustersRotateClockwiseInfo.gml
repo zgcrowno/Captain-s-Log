@@ -1,8 +1,8 @@
-draw_healthbar(hud.thrustersRightBound - 60, 
-               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2), 
-               hud.thrustersRightBound - 45, 
-               hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2) + 15, 
-               (player.currentPPThrustersRotateClockwise / player.requiredPPThrustersRotate) * 100, 
+draw_healthbar(global.hud.thrustersRightBound - 60, 
+               global.hud.thrustersUpperBound + ((global.hud.thrustersLowerBound - global.hud.thrustersUpperBound) / 2), 
+               global.hud.thrustersRightBound - 45, 
+               global.hud.thrustersUpperBound + ((global.hud.thrustersLowerBound - global.hud.thrustersUpperBound) / 2) + 15, 
+               (global.player.currentPPThrustersRotateClockwise / global.player.requiredPPThrustersRotate) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
@@ -10,20 +10,20 @@ draw_healthbar(hud.thrustersRightBound - 60,
                false, 
                false);
 draw_set_color(c_teal);
-draw_line(hud.thrustersRotateClockPPLeftBound,
-          hud.thrustersRotateClockPPUpperBound,
-          hud.thrustersRotateClockPPLeftBound,
-          hud.thrustersRotateClockPPLowerBound);
-draw_line(hud.thrustersRotateClockPPRightBound,
-          hud.thrustersRotateClockPPUpperBound,
-          hud.thrustersRotateClockPPRightBound,
-          hud.thrustersRotateClockPPLowerBound);
-draw_line(hud.thrustersRotateClockPPLeftBound,
-          hud.thrustersRotateClockPPUpperBound,
-          hud.thrustersRotateClockPPRightBound,
-          hud.thrustersRotateClockPPUpperBound);
-draw_line(hud.thrustersRotateClockPPLeftBound,
-          hud.thrustersRotateClockPPLowerBound,
-          hud.thrustersRotateClockPPRightBound,
-          hud.thrustersRotateClockPPLowerBound);
+draw_line(global.hud.thrustersRotateClockPPLeftBound,
+          global.hud.thrustersRotateClockPPUpperBound,
+          global.hud.thrustersRotateClockPPLeftBound,
+          global.hud.thrustersRotateClockPPLowerBound);
+draw_line(global.hud.thrustersRotateClockPPRightBound,
+          global.hud.thrustersRotateClockPPUpperBound,
+          global.hud.thrustersRotateClockPPRightBound,
+          global.hud.thrustersRotateClockPPLowerBound);
+draw_line(global.hud.thrustersRotateClockPPLeftBound,
+          global.hud.thrustersRotateClockPPUpperBound,
+          global.hud.thrustersRotateClockPPRightBound,
+          global.hud.thrustersRotateClockPPUpperBound);
+draw_line(global.hud.thrustersRotateClockPPLeftBound,
+          global.hud.thrustersRotateClockPPLowerBound,
+          global.hud.thrustersRotateClockPPRightBound,
+          global.hud.thrustersRotateClockPPLowerBound);
 draw_set_color(c_white);

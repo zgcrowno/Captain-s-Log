@@ -1,4 +1,4 @@
-if(actionMap[? util.actionMapCannonString]) {
+if(actionMap[? global.util.actionMapCannonString]) {
     if(object_index == objRiceCake) {
         cannonBullet = instance_create(x + lengthdir_x(cannonOffset, image_angle - 90), 
                        y + lengthdir_y(cannonOffset, image_angle - 90), 
@@ -10,11 +10,10 @@ if(actionMap[? util.actionMapCannonString]) {
                        objPlayerCannonBullet);
         cannonBullet.image_angle = image_angle;
     } else if(object_index == objFlasher) {
-        gridBoxes = scrGetGridBoxes();
+        gridBoxes = global.allGridBoxes;
         for(var i = 0; i < array_length_1d(gridBoxes); i++) {
             gridBox = gridBoxes[i];
             with(gridBox) {
-                player = instance_find(objPlayerShip, 0);
                 offset = noone;
                 if(scrIsFacingUp(other)) {
                     if(scrIsRight(other)) {
@@ -23,7 +22,7 @@ if(actionMap[? util.actionMapCannonString]) {
                         offset = ceil((x - other.x) / sprite_width) + 1;
                     }
                     if(y < other.bbox_top - sprite_width 
-                       && (collision_line(other.x, other.y, other.x, hud.radarUpperBound, self, false, false)
+                       && (collision_line(other.x, other.y, other.x, global.hud.radarUpperBound, self, false, false)
                            || place_meeting(x + (offset * sprite_width), y + (offset * sprite_width), other)
                            || place_meeting(x - (offset * sprite_width), y + (offset * sprite_width), other))) {
                         sprite_index = sprGridBoxStatic;
@@ -35,7 +34,7 @@ if(actionMap[? util.actionMapCannonString]) {
                         offset = ceil((y - other.y) / sprite_width) + 1;
                     }
                     if(x < other.bbox_left - sprite_width 
-                       && (collision_line(other.x, other.y, hud.radarLeftBound, other.y, self, false, false)
+                       && (collision_line(other.x, other.y, global.hud.radarLeftBound, other.y, self, false, false)
                            || place_meeting(x + (offset * sprite_width), y + (offset * sprite_width), other)
                            || place_meeting(x + (offset * sprite_width), y - (offset * sprite_width), other))) {
                         sprite_index = sprGridBoxStatic;
@@ -47,7 +46,7 @@ if(actionMap[? util.actionMapCannonString]) {
                         offset = ceil((x - other.x) / sprite_width) + 1;
                     }
                     if(y > other.bbox_bottom
-                       && (collision_line(other.x, other.y, other.x, hud.radarLowerBound, self, false, false)
+                       && (collision_line(other.x, other.y, other.x, global.hud.radarLowerBound, self, false, false)
                            || place_meeting(x + (offset * sprite_width), y - (offset * sprite_width), other)
                            || place_meeting(x - (offset * sprite_width), y - (offset * sprite_width), other))) {
                         sprite_index = sprGridBoxStatic;
@@ -59,7 +58,7 @@ if(actionMap[? util.actionMapCannonString]) {
                         offset = ceil((y - other.y) / sprite_width) + 1;
                     }
                     if(x > other.bbox_right
-                       && (collision_line(other.x, other.y, hud.radarRightBound, other.y, self, false, false)
+                       && (collision_line(other.x, other.y, global.hud.radarRightBound, other.y, self, false, false)
                            || place_meeting(x - (offset * sprite_width), y + (offset * sprite_width), other)
                            || place_meeting(x - (offset * sprite_width), y - (offset * sprite_width), other))) {
                         sprite_index = sprGridBoxStatic;
@@ -101,28 +100,28 @@ if(actionMap[? util.actionMapCannonString]) {
             //TODO: Error about ship form
         }
     } else if(object_index == objPincer) {
-        gridBoxes = scrGetGridBoxes();
+        gridBoxes = global.allGridBoxes;
         for(var i = 0; i < array_length_1d(gridBoxes); i++) {
             gridBox = gridBoxes[i];
             with(gridBox) {
                 if(scrIsFacingUp(other)) {
                     if(y < other.y - sprite_width 
-                       && (collision_line(other.x, other.y, other.x, hud.radarUpperBound, self, false, false))) {
+                       && (collision_line(other.x, other.y, other.x, global.hud.radarUpperBound, self, false, false))) {
                         sprite_index = sprGridBoxStatic;
                     }
                 } else if(scrIsFacingLeft(other)) {
                     if(x < other.x - sprite_width 
-                       && (collision_line(other.x, other.y, hud.radarLeftBound, other.y, self, false, false))) {
+                       && (collision_line(other.x, other.y, global.hud.radarLeftBound, other.y, self, false, false))) {
                         sprite_index = sprGridBoxStatic;
                     }
                 } else if(scrIsFacingDown(other)) {
                     if(y > other.y
-                       && (collision_line(other.x, other.y, other.x, hud.radarLowerBound, self, false, false))) {
+                       && (collision_line(other.x, other.y, other.x, global.hud.radarLowerBound, self, false, false))) {
                         sprite_index = sprGridBoxStatic;
                     }
                 } else {
                     if(x > other.x
-                       && (collision_line(other.x, other.y, hud.radarRightBound, other.y, self, false, false))) {
+                       && (collision_line(other.x, other.y, global.hud.radarRightBound, other.y, self, false, false))) {
                         sprite_index = sprGridBoxStatic;
                     }
                 }

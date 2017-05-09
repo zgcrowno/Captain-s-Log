@@ -14,13 +14,19 @@
 display_set_gui_size(1920, 1080);
 
 instance_create(0, 0, objUtil);
+global.util = instance_find(objUtil, 0);
 instance_create(0, 0, objHud);
+global.hud = instance_find(objHud, 0);
 instance_create(0, 0, objTimelineHorizontal);
+global.timelineHorizontal = instance_find(objTimelineHorizontal, 0);
 instance_create(0, 0, objTimelineVertical);
+global.timelineVertical = instance_find(objTimelineVertical, 0);
 instance_create(262, 262, objSidecar);
+global.player = instance_find(objPlayerShip, 0);
 instance_create(262, 212, objPawn);
 instance_create(262, 162, objPawn);
-instance_create(0, 0, objGUI);</code>
+instance_create(0, 0, objGUI);
+global.allGridBoxes = scrGetGridBoxes();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

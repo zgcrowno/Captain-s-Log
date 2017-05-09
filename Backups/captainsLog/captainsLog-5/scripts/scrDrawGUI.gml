@@ -1,10 +1,13 @@
 projectiles = scrGetProjectiles();
-gridBoxes = scrGetGridBoxes();
+gridBoxes = global.allGridBoxes;
+
+draw_set_color(c_white);
+draw_set_font(fntMain);
 
 //Draw the skybox, enemy background sprites, projectile background sprites and HUD
 draw_sprite(sprBlueSky, -1, 0, 0);
 
-scrDrawBackgroundObjects(util.enemies);
+scrDrawBackgroundObjects(global.util.enemies);
 
 scrDrawBackgroundObjects(projectiles);
 
@@ -13,15 +16,15 @@ draw_sprite(sprPixelHud, -1, 0, 0);
 //Draw the typing prompt
 draw_sprite(sprTypingPrompt, 
             -1, 
-            hud.consoleLeftBound + string_width(instance_find(objPlayerShip, 0).input), 
-            hud.consoleLowerBound - string_height("Something") - 3);
+            global.hud.consoleLeftBound + string_width(global.player.input), 
+            global.hud.consoleLowerBound - string_height("Something") - 3);
 
 //Draw the overall HP bar
-draw_healthbar(hud.powerLeftBound, 
-               hud.powerUpperBound, 
-               hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), 
-               hud.powerUpperBound + ((hud.powerLowerBound - hud.powerUpperBound)), 
-               (player.currentHP / player.maxHP) * 100, 
+draw_healthbar(global.hud.powerLeftBound, 
+               global.hud.powerUpperBound, 
+               global.hud.powerLeftBound + ((global.hud.powerRightBound - global.hud.powerLeftBound) / 2), 
+               global.hud.powerUpperBound + ((global.hud.powerLowerBound - global.hud.powerUpperBound)), 
+               (global.player.currentHP / global.player.maxHP) * 100, 
                c_black, 
                c_maroon, 
                c_maroon, 
@@ -30,11 +33,11 @@ draw_healthbar(hud.powerLeftBound,
                false);
 
 //Draw the overall PP bar
-draw_healthbar(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) / 2), 
-               hud.powerUpperBound, 
-               hud.powerRightBound, 
-               hud.powerUpperBound + ((hud.powerLowerBound - hud.powerUpperBound)),
-               (player.currentPP / player.maxPP) * 100, 
+draw_healthbar(global.hud.powerLeftBound + ((global.hud.powerRightBound - global.hud.powerLeftBound) / 2), 
+               global.hud.powerUpperBound, 
+               global.hud.powerRightBound, 
+               global.hud.powerUpperBound + ((global.hud.powerLowerBound - global.hud.powerUpperBound)),
+               (global.player.currentPP / global.player.maxPP) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
@@ -43,17 +46,16 @@ draw_healthbar(hud.powerLeftBound + ((hud.powerRightBound - hud.powerLeftBound) 
                false);
                
 //Draw the thrusters player sprite
-draw_sprite(player.sprite_index, 
+draw_sprite(global.player.sprite_index, 
             -1, 
-            hud.thrustersLeftBound + ((hud.thrustersRightBound - hud.thrustersLeftBound) / 2) - (((sprite_get_bbox_right(player.sprite_index) - sprite_get_bbox_left(player.sprite_index)) / 2) - sprite_get_xoffset(player.sprite_index)), 
-            hud.thrustersUpperBound + ((hud.thrustersLowerBound - hud.thrustersUpperBound) / 2) - (((sprite_get_bbox_bottom(player.sprite_index) - sprite_get_bbox_top(player.sprite_index)) / 2) - sprite_get_yoffset(player.sprite_index)));
-            show_debug_message(player.sprite_index);
+            global.hud.thrustersLeftBound + ((global.hud.thrustersRightBound - global.hud.thrustersLeftBound) / 2) - ((sprite_get_bbox_right(global.player.sprite_index) / 2) - sprite_get_xoffset(global.player.sprite_index)), 
+            global.hud.thrustersUpperBound + ((global.hud.thrustersLowerBound - global.hud.thrustersUpperBound) / 2) - ((sprite_get_bbox_bottom(global.player.sprite_index) / 2) - sprite_get_yoffset(global.player.sprite_index)));
             
 //Draw the shields player sprite
-draw_sprite(player.sprite_index, 
+draw_sprite(global.player.sprite_index, 
             -1, 
-            hud.shieldsLeftBound + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 2), 
-            hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2));
+            global.hud.shieldsLeftBound + ((global.hud.shieldsRightBound - global.hud.shieldsLeftBound) / 2) - ((sprite_get_bbox_right(global.player.sprite_index) / 2) - sprite_get_xoffset(global.player.sprite_index)), 
+            global.hud.shieldsUpperBound + ((global.hud.shieldsLowerBound - global.hud.shieldsUpperBound) / 2) - ((sprite_get_bbox_bottom(global.player.sprite_index) / 2) - sprite_get_yoffset(global.player.sprite_index)));
 
 //Draw the thrustersPortHP and thrustersPortPP bars, and the borders thereof (and lines thereto)
 scrDrawThrustersPortInfo();
@@ -90,11 +92,11 @@ scrDrawTargetInfo();
 scrDrawGridBoxNumbers();
 
 //Draw the gunsPP bar
-draw_healthbar(hud.gunsLeftBound, 
-               hud.gunsUpperBound, 
-               hud.gunsRightBound, 
-               hud.gunsLowerBound, 
-               (player.currentPPGuns / player.requiredPPGuns) * 100, 
+draw_healthbar(global.hud.gunsLeftBound, 
+               global.hud.gunsUpperBound, 
+               global.hud.gunsRightBound, 
+               global.hud.gunsLowerBound, 
+               (global.player.currentPPGuns / global.player.requiredPPGuns) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
@@ -103,11 +105,11 @@ draw_healthbar(hud.gunsLeftBound,
                false);
 
 //Draw the cannonPP bar
-draw_healthbar(hud.cannonLeftBound, 
-               hud.cannonUpperBound, 
-               hud.cannonRightBound, 
-               hud.cannonLowerBound, 
-               (player.currentPPCannon / player.requiredPPCannon) * 100, 
+draw_healthbar(global.hud.cannonLeftBound, 
+               global.hud.cannonUpperBound, 
+               global.hud.cannonRightBound, 
+               global.hud.cannonLowerBound, 
+               (global.player.currentPPCannon / global.player.requiredPPCannon) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
@@ -116,11 +118,11 @@ draw_healthbar(hud.cannonLeftBound,
                false);
                
 //Draw the activePP bar
-draw_healthbar(hud.activeLeftBound, 
-               hud.activeUpperBound, 
-               hud.activeRightBound, 
-               hud.activeLowerBound, 
-               (player.currentPPActive / player.requiredPPActive) * 100, 
+draw_healthbar(global.hud.activeLeftBound, 
+               global.hud.activeUpperBound, 
+               global.hud.activeRightBound, 
+               global.hud.activeLowerBound, 
+               (global.player.currentPPActive / global.player.requiredPPActive) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
@@ -129,11 +131,11 @@ draw_healthbar(hud.activeLeftBound,
                false);
 
 //Draw the passivePP bar
-draw_healthbar(hud.passiveLeftBound, 
-               hud.passiveUpperBound, 
-               hud.passiveRightBound, 
-               hud.passiveLowerBound, 
-               (player.currentPPPassive / player.requiredPPPassive) * 100, 
+draw_healthbar(global.hud.passiveLeftBound, 
+               global.hud.passiveUpperBound, 
+               global.hud.passiveRightBound, 
+               global.hud.passiveLowerBound, 
+               (global.player.currentPPPassive / global.player.requiredPPPassive) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
@@ -148,11 +150,11 @@ scrDrawTargetLines();
 scrDrawPercentageInfo();
 
 //Draw player actionQueue
-scrDrawActionQueue(player);
+scrDrawActionQueue(global.player);
 
 //Draw target actionQueue
-if(player.target != noone) {
-    scrDrawActionQueue(player.target);
+if(global.player.target != noone) {
+    scrDrawActionQueue(global.player.target);
 }
 
 //Draw the state-dependent command prompts

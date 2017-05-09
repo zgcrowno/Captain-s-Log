@@ -15,12 +15,12 @@
         for(var j = 0; j < array_length_1d(gridBoxes); j++) {
             gridBox2 = gridBoxes[j];
             if(input == gridBox2.numberString) {
-                if(((gridBox2.x + (gridBox2.sprite_width / 2)) - (x - bbox_left)) > hud.radarLeftBound
-                   && (((gridBox2.x + gridBox2.sprite_width) - (gridBox2.sprite_width / 2)) + (bbox_right - x)) < hud.radarRightBound
-                   && ((gridBox2.y + (gridBox2.sprite_width / 2)) - (y - bbox_top)) > hud.radarUpperBound
-                   && (((gridBox2.y + gridBox2.sprite_width) - (gridBox2.sprite_width / 2)) + (bbox_bottom - y)) < hud.radarLowerBound) {
-                    if((actionMap[? util.actionMapPassiveString] == active && distance_to_object(gridBox2) < 5 * gridBox2.sprite_width)
-                       || (actionMap[? util.actionMapPassiveString] != active && distance_to_object(gridBox2) < 3 * gridBox2.sprite_width)) {
+                if(((gridBox2.x + (gridBox2.sprite_width / 2)) - (x - bbox_left)) > global.hud.radarLeftBound
+                   && (((gridBox2.x + gridBox2.sprite_width) - (gridBox2.sprite_width / 2)) + (bbox_right - x)) < global.hud.radarRightBound
+                   && ((gridBox2.y + (gridBox2.sprite_width / 2)) - (y - bbox_top)) > global.hud.radarUpperBound
+                   && (((gridBox2.y + gridBox2.sprite_width) - (gridBox2.sprite_width / 2)) + (bbox_bottom - y)) < global.hud.radarLowerBound) {
+                    if((actionMap[? global.util.actionMapPassiveString] == active && distance_to_object(gridBox2) < 5 * gridBox2.sprite_width)
+                       || (actionMap[? global.util.actionMapPassiveString] != active && distance_to_object(gridBox2) < 3 * gridBox2.sprite_width)) {
                         x = gridBox2.x + (gridBox2.sprite_width / 2);
                         y = gridBox2.y + (gridBox2.sprite_width / 2);
                         currentPPActive = requiredPPActive;

@@ -1,9 +1,9 @@
 if(scrMovementChance()) {
-    if(scrIsAbove(player)) {
+    if(scrIsAbove(global.player)) {
         scrPlayerIsAboveMovementBehavior();    
-    } else if(scrIsBelow(player)) {
+    } else if(scrIsBelow(global.player)) {
         scrPlayerIsBelowMovementBehavior();
-    } else if(scrIsLeft(player)) {
+    } else if(scrIsLeft(global.player)) {
         scrPlayerIsLeftMovementBehavior();
     } else {
         scrPlayerIsRightMovementBehavior();

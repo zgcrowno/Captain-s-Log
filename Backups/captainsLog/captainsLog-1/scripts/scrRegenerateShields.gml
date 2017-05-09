@@ -1,4 +1,4 @@
-if(actionMap[? util.actionMapPassiveString] == active) {
+if(actionMap[? global.util.actionMapPassiveString] == active) {
     if(currentHPShieldsPort < maxHPShieldsPort) {
         currentHPShieldsPort += 0.05;
     } else {

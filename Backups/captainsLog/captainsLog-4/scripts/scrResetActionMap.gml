@@ -1,26 +1,26 @@
 //Keep an eye on this script. A large portion of it may end up being removed,
 //as it's most likely executed earlier on in scrTimelineActions.
-scrDecrementAction(util.actionMapThrustersPortString, util.actionQueueThrustersPortString);
-scrDecrementAction(util.actionMapThrustersStarboardString, util.actionQueueThrustersStarboardString);
-scrDecrementAction(util.actionMapThrustersBowString, util.actionQueueThrustersBowString);
-scrDecrementAction(util.actionMapThrustersSternString, util.actionQueueThrustersSternString);
-scrDecrementAction(util.actionMapThrustersCountString, util.actionQueueThrustersCountString);
-scrDecrementAction(util.actionMapThrustersClockString, util.actionQueueThrustersClockString);
+scrDecrementAction(global.util.actionMapThrustersPortString, global.util.actionQueueThrustersPortString);
+scrDecrementAction(global.util.actionMapThrustersStarboardString, global.util.actionQueueThrustersStarboardString);
+scrDecrementAction(global.util.actionMapThrustersBowString, global.util.actionQueueThrustersBowString);
+scrDecrementAction(global.util.actionMapThrustersSternString, global.util.actionQueueThrustersSternString);
+scrDecrementAction(global.util.actionMapThrustersCountString, global.util.actionQueueThrustersCountString);
+scrDecrementAction(global.util.actionMapThrustersClockString, global.util.actionQueueThrustersClockString);
 
-scrChangeStateAction(util.actionMapShieldsPortString, util.actionQueueShieldsPortString, util.actionQueueCutShieldsPortString);
-scrChangeStateAction(util.actionMapShieldsStarboardString, util.actionQueueShieldsStarboardString, util.actionQueueCutShieldsStarboardString);
-scrChangeStateAction(util.actionMapShieldsBowString, util.actionQueueShieldsBowString, util.actionQueueCutShieldsBowString);
-scrChangeStateAction(util.actionMapShieldsSternString, util.actionQueueShieldsSternString, util.actionQueueCutShieldsSternString);
-scrChangeStateAction(util.actionMapPassiveString, util.actionQueuePassiveString, util.actionQueueCutPassiveString);
+scrChangeStateAction(global.util.actionMapShieldsPortString, global.util.actionQueueShieldsPortString, global.util.actionQueueCutShieldsPortString);
+scrChangeStateAction(global.util.actionMapShieldsStarboardString, global.util.actionQueueShieldsStarboardString, global.util.actionQueueCutShieldsStarboardString);
+scrChangeStateAction(global.util.actionMapShieldsBowString, global.util.actionQueueShieldsBowString, global.util.actionQueueCutShieldsBowString);
+scrChangeStateAction(global.util.actionMapShieldsSternString, global.util.actionQueueShieldsSternString, global.util.actionQueueCutShieldsSternString);
+scrChangeStateAction(global.util.actionMapPassiveString, global.util.actionQueuePassiveString, global.util.actionQueueCutPassiveString);
 
-actionMap[? util.actionMapGunsString] = false;
-if(ds_list_find_index(actionQueue, util.actionMapGunsString) != -1) {
-    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionMapGunsString));
+actionMap[? global.util.actionMapGunsString] = false;
+if(ds_list_find_index(actionQueue, global.util.actionMapGunsString) != -1) {
+    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, global.util.actionMapGunsString));
 }
 
-actionMap[? util.actionMapCannonString] = false;
-if(ds_list_find_index(actionQueue, util.actionMapCannonString) != -1) {
-    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, util.actionMapCannonString));
+actionMap[? global.util.actionMapCannonString] = false;
+if(ds_list_find_index(actionQueue, global.util.actionMapCannonString) != -1) {
+    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, global.util.actionMapCannonString));
 }
 
-actionMap[? util.actionMapTargetString] = noone;
+actionMap[? global.util.actionMapTargetString] = noone;

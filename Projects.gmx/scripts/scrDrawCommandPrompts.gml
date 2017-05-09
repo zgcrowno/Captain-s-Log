@@ -1,53 +1,53 @@
-if(player.currentState == player.initState) {
+if(global.player.currentState == global.player.initState) {
     scrDrawInitStateCommandPrompts();
-} else if(player.currentState == player.thrusterState) {
+} else if(global.player.currentState == global.player.thrusterState) {
     scrDrawThrusterStateCommandPrompts();
-} else if(player.currentState == player.shieldState) {
+} else if(global.player.currentState == global.player.shieldState) {
     scrDrawShieldStateCommandPrompts();
-} else if(player.currentState == player.targetState) {
+} else if(global.player.currentState == global.player.targetState) {
     scrDrawTargetStateCommandPrompts();
-} else if(player.currentState == player.gunState) {
-    draw_text(hud.commandsRightBound - string_width("Fire"), 
-              hud.commandsUpperBound, 
+} else if(global.player.currentState == global.player.gunState) {
+    draw_text(global.hud.commandsRightBound - string_width("Fire"), 
+              global.hud.commandsUpperBound, 
               "Fire");
-} else if(player.currentState == player.cannonState) {
-    draw_text(hud.commandsRightBound - string_width("Fire"), 
-              hud.commandsUpperBound, 
+} else if(global.player.currentState == global.player.cannonState) {
+    draw_text(global.hud.commandsRightBound - string_width("Fire"), 
+              global.hud.commandsUpperBound, 
               "Fire");
-} else if(player.currentState == player.cutState) {
+} else if(global.player.currentState == global.player.cutState) {
     scrDrawCutStateCommandPrompts();
-} else if(player.currentState == player.thrusterPortState) {
-    draw_text(hud.commandsRightBound - string_width("[\#]"), 
-              hud.commandsUpperBound, 
+} else if(global.player.currentState == global.player.thrusterPortState) {
+    draw_text(global.hud.commandsRightBound - string_width("[\#]"), 
+              global.hud.commandsUpperBound, 
               "[\#]");
-} else if(player.currentState == player.thrusterStarboardState) {
-    draw_text(hud.commandsRightBound - string_width("[\#]"), 
-              hud.commandsUpperBound, 
+} else if(global.player.currentState == global.player.thrusterStarboardState) {
+    draw_text(global.hud.commandsRightBound - string_width("[\#]"), 
+              global.hud.commandsUpperBound, 
               "[\#]");
-} else if(player.currentState == player.thrusterBowState) {
-    draw_text(hud.commandsRightBound - string_width("[\#]"), 
-              hud.commandsUpperBound, 
+} else if(global.player.currentState == global.player.thrusterBowState) {
+    draw_text(global.hud.commandsRightBound - string_width("[\#]"), 
+              global.hud.commandsUpperBound, 
               "[\#]");
-} else if(player.currentState == player.thrusterSternState) {
-    draw_text(hud.commandsRightBound - string_width("[\#]"), 
-              hud.commandsUpperBound, 
+} else if(global.player.currentState == global.player.thrusterSternState) {
+    draw_text(global.hud.commandsRightBound - string_width("[\#]"), 
+              global.hud.commandsUpperBound, 
               "[\#]");
-} else if(player.currentState == player.thrusterRotateState) {
+} else if(global.player.currentState == global.player.thrusterRotateState) {
     scrDrawThrusterRotateStateCommandPrompts();
-} else if(player.currentState == player.thrusterRotateDegreesClockwiseState) {
-    draw_text(hud.commandsRightBound - string_width("[\#]"), 
-              hud.commandsUpperBound, 
+} else if(global.player.currentState == global.player.thrusterRotateDegreesClockwiseState) {
+    draw_text(global.hud.commandsRightBound - string_width("[\#]"), 
+              global.hud.commandsUpperBound, 
               "[\#]");
-} else if(player.currentState == player.thrusterRotateDegreesCounterclockwiseState) {
-    draw_text(hud.commandsRightBound - string_width("[\#]"), 
-              hud.commandsUpperBound, 
+} else if(global.player.currentState == global.player.thrusterRotateDegreesCounterclockwiseState) {
+    draw_text(global.hud.commandsRightBound - string_width("[\#]"), 
+              global.hud.commandsUpperBound, 
               "[\#]");
-} else if(player.currentState == player.activeState) {
+} else if(global.player.currentState == global.player.activeState) {
     scrDrawActiveStateCommandPrompts();
-} else if(player.currentState == player.cutThrustersState) {
+} else if(global.player.currentState == global.player.cutThrustersState) {
     scrDrawCutThrustersStateCommandPrompts();
-} else if(player.currentState == player.cutThrustersRotateState) {
+} else if(global.player.currentState == global.player.cutThrustersRotateState) {
     scrDrawCutThrustersRotateStateCommandPrompts();
-} else if(player.currentState == player.cutShieldsState) {
+} else if(global.player.currentState == global.player.cutShieldsState) {
     scrDrawCutShieldsStateCommandPrompts();
 }

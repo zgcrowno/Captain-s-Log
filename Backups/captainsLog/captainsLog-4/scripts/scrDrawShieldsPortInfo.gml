@@ -1,8 +1,8 @@
-draw_healthbar(hud.shieldsPortHPLeftBound, 
-               hud.shieldsPortHPUpperBound, 
-               hud.shieldsPortHPRightBound, 
-               hud.shieldsPortHPLowerBound, 
-               (player.currentHPShieldsPort / player.maxHPShieldsPort) * 100, 
+draw_healthbar(global.hud.shieldsPortHPLeftBound, 
+               global.hud.shieldsPortHPUpperBound, 
+               global.hud.shieldsPortHPRightBound, 
+               global.hud.shieldsPortHPLowerBound, 
+               (global.player.currentHPShieldsPort / global.player.maxHPShieldsPort) * 100, 
                c_black, 
                c_maroon, 
                c_maroon, 
@@ -10,27 +10,27 @@ draw_healthbar(hud.shieldsPortHPLeftBound,
                false, 
                false);
 draw_set_color(c_maroon);
-draw_line(hud.shieldsPortHPLeftBound,
-          hud.shieldsPortHPUpperBound,
-          hud.shieldsPortHPLeftBound,
-          hud.shieldsPortHPLowerBound);
-draw_line(hud.shieldsPortHPRightBound,
-          hud.shieldsPortHPUpperBound,
-          hud.shieldsPortHPRightBound,
-          hud.shieldsPortHPLowerBound);
-draw_line(hud.shieldsPortHPLeftBound,
-          hud.shieldsPortHPUpperBound,
-          hud.shieldsPortHPRightBound,
-          hud.shieldsPortHPUpperBound);
-draw_line(hud.shieldsPortHPLeftBound,
-          hud.shieldsPortHPLowerBound,
-          hud.shieldsPortHPRightBound,
-          hud.shieldsPortHPLowerBound);
-draw_healthbar(hud.shieldsPortPPLeftBound, 
-               hud.shieldsPortPPUpperBound, 
-               hud.shieldsPortPPRightBound, 
-               hud.shieldsPortPPLowerBound, 
-               (player.currentPPShieldsPort / player.requiredPPShields) * 100, 
+draw_line(global.hud.shieldsPortHPLeftBound,
+          global.hud.shieldsPortHPUpperBound,
+          global.hud.shieldsPortHPLeftBound,
+          global.hud.shieldsPortHPLowerBound);
+draw_line(global.hud.shieldsPortHPRightBound,
+          global.hud.shieldsPortHPUpperBound,
+          global.hud.shieldsPortHPRightBound,
+          global.hud.shieldsPortHPLowerBound);
+draw_line(global.hud.shieldsPortHPLeftBound,
+          global.hud.shieldsPortHPUpperBound,
+          global.hud.shieldsPortHPRightBound,
+          global.hud.shieldsPortHPUpperBound);
+draw_line(global.hud.shieldsPortHPLeftBound,
+          global.hud.shieldsPortHPLowerBound,
+          global.hud.shieldsPortHPRightBound,
+          global.hud.shieldsPortHPLowerBound);
+draw_healthbar(global.hud.shieldsPortPPLeftBound, 
+               global.hud.shieldsPortPPUpperBound, 
+               global.hud.shieldsPortPPRightBound, 
+               global.hud.shieldsPortPPLowerBound, 
+               (global.player.currentPPShieldsPort / global.player.requiredPPShields) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
@@ -38,24 +38,24 @@ draw_healthbar(hud.shieldsPortPPLeftBound,
                false, 
                false);
 draw_set_color(c_teal);
-draw_line(hud.shieldsPortPPLeftBound,
-          hud.shieldsPortPPUpperBound,
-          hud.shieldsPortPPLeftBound,
-          hud.shieldsPortPPLowerBound);
-draw_line(hud.shieldsPortPPRightBound,
-          hud.shieldsPortPPUpperBound,
-          hud.shieldsPortPPRightBound,
-          hud.shieldsPortPPLowerBound);
-draw_line(hud.shieldsPortPPLeftBound,
-          hud.shieldsPortPPUpperBound,
-          hud.shieldsPortPPRightBound,
-          hud.shieldsPortPPUpperBound);
-draw_line(hud.shieldsPortPPLeftBound,
-          hud.shieldsPortPPLowerBound,
-          hud.shieldsPortPPRightBound,
-          hud.shieldsPortPPLowerBound);
+draw_line(global.hud.shieldsPortPPLeftBound,
+          global.hud.shieldsPortPPUpperBound,
+          global.hud.shieldsPortPPLeftBound,
+          global.hud.shieldsPortPPLowerBound);
+draw_line(global.hud.shieldsPortPPRightBound,
+          global.hud.shieldsPortPPUpperBound,
+          global.hud.shieldsPortPPRightBound,
+          global.hud.shieldsPortPPLowerBound);
+draw_line(global.hud.shieldsPortPPLeftBound,
+          global.hud.shieldsPortPPUpperBound,
+          global.hud.shieldsPortPPRightBound,
+          global.hud.shieldsPortPPUpperBound);
+draw_line(global.hud.shieldsPortPPLeftBound,
+          global.hud.shieldsPortPPLowerBound,
+          global.hud.shieldsPortPPRightBound,
+          global.hud.shieldsPortPPLowerBound);
 draw_set_color(c_white);
-draw_line(hud.shieldsPortPPRightBound,
-          hud.shieldsPortPPUpperBound,
-          hud.shieldsLeftBound + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 2) - (player.sprite_width / 2),
-          hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2));
+draw_line(global.hud.shieldsPortPPRightBound,
+          global.hud.shieldsPortPPUpperBound,
+          global.hud.shieldsLeftBound + ((global.hud.shieldsRightBound - global.hud.shieldsLeftBound) / 2) - (global.player.sprite_width / 2),
+          global.hud.shieldsUpperBound + ((global.hud.shieldsLowerBound - global.hud.shieldsUpperBound) / 2));

@@ -1,8 +1,8 @@
-draw_healthbar(hud.shieldsStarboardHPLeftBound, 
-               hud.shieldsStarboardHPUpperBound, 
-               hud.shieldsStarboardHPRightBound, 
-               hud.shieldsStarboardHPLowerBound, 
-               (player.currentHPShieldsStarboard / player.maxHPShieldsStarboard) * 100, 
+draw_healthbar(global.hud.shieldsStarboardHPLeftBound, 
+               global.hud.shieldsStarboardHPUpperBound, 
+               global.hud.shieldsStarboardHPRightBound, 
+               global.hud.shieldsStarboardHPLowerBound, 
+               (global.player.currentHPShieldsStarboard / global.player.maxHPShieldsStarboard) * 100, 
                c_black, 
                c_maroon, 
                c_maroon, 
@@ -10,27 +10,27 @@ draw_healthbar(hud.shieldsStarboardHPLeftBound,
                false, 
                false);
 draw_set_color(c_maroon);
-draw_line(hud.shieldsStarboardHPLeftBound,
-          hud.shieldsStarboardHPUpperBound,
-          hud.shieldsStarboardHPLeftBound,
-          hud.shieldsStarboardHPLowerBound);
-draw_line(hud.shieldsStarboardHPRightBound,
-          hud.shieldsStarboardHPUpperBound,
-          hud.shieldsStarboardHPRightBound,
-          hud.shieldsStarboardHPLowerBound);
-draw_line(hud.shieldsStarboardHPLeftBound,
-          hud.shieldsStarboardHPUpperBound,
-          hud.shieldsStarboardHPRightBound,
-          hud.shieldsStarboardHPUpperBound);
-draw_line(hud.shieldsStarboardHPLeftBound,
-          hud.shieldsStarboardHPLowerBound,
-          hud.shieldsStarboardHPRightBound,
-          hud.shieldsStarboardHPLowerBound);
-draw_healthbar(hud.shieldsStarboardPPLeftBound, 
-               hud.shieldsStarboardPPUpperBound, 
-               hud.shieldsStarboardPPRightBound, 
-               hud.shieldsStarboardPPLowerBound, 
-               (player.currentPPShieldsStarboard / player.requiredPPShields) * 100, 
+draw_line(global.hud.shieldsStarboardHPLeftBound,
+          global.hud.shieldsStarboardHPUpperBound,
+          global.hud.shieldsStarboardHPLeftBound,
+          global.hud.shieldsStarboardHPLowerBound);
+draw_line(global.hud.shieldsStarboardHPRightBound,
+          global.hud.shieldsStarboardHPUpperBound,
+          global.hud.shieldsStarboardHPRightBound,
+          global.hud.shieldsStarboardHPLowerBound);
+draw_line(global.hud.shieldsStarboardHPLeftBound,
+          global.hud.shieldsStarboardHPUpperBound,
+          global.hud.shieldsStarboardHPRightBound,
+          global.hud.shieldsStarboardHPUpperBound);
+draw_line(global.hud.shieldsStarboardHPLeftBound,
+          global.hud.shieldsStarboardHPLowerBound,
+          global.hud.shieldsStarboardHPRightBound,
+          global.hud.shieldsStarboardHPLowerBound);
+draw_healthbar(global.hud.shieldsStarboardPPLeftBound, 
+               global.hud.shieldsStarboardPPUpperBound, 
+               global.hud.shieldsStarboardPPRightBound, 
+               global.hud.shieldsStarboardPPLowerBound, 
+               (global.player.currentPPShieldsStarboard / global.player.requiredPPShields) * 100, 
                c_black, 
                c_teal, 
                c_teal, 
@@ -38,24 +38,24 @@ draw_healthbar(hud.shieldsStarboardPPLeftBound,
                false, 
                false);
 draw_set_color(c_teal);
-draw_line(hud.shieldsStarboardPPLeftBound,
-          hud.shieldsStarboardPPUpperBound,
-          hud.shieldsStarboardPPLeftBound,
-          hud.shieldsStarboardPPLowerBound);
-draw_line(hud.shieldsStarboardPPRightBound,
-          hud.shieldsStarboardPPUpperBound,
-          hud.shieldsStarboardPPRightBound,
-          hud.shieldsStarboardPPLowerBound);
-draw_line(hud.shieldsStarboardPPLeftBound,
-          hud.shieldsStarboardPPUpperBound,
-          hud.shieldsStarboardPPRightBound,
-          hud.shieldsStarboardPPUpperBound);
-draw_line(hud.shieldsStarboardPPLeftBound,
-          hud.shieldsStarboardPPLowerBound,
-          hud.shieldsStarboardPPRightBound,
-          hud.shieldsStarboardPPLowerBound);
+draw_line(global.hud.shieldsStarboardPPLeftBound,
+          global.hud.shieldsStarboardPPUpperBound,
+          global.hud.shieldsStarboardPPLeftBound,
+          global.hud.shieldsStarboardPPLowerBound);
+draw_line(global.hud.shieldsStarboardPPRightBound,
+          global.hud.shieldsStarboardPPUpperBound,
+          global.hud.shieldsStarboardPPRightBound,
+          global.hud.shieldsStarboardPPLowerBound);
+draw_line(global.hud.shieldsStarboardPPLeftBound,
+          global.hud.shieldsStarboardPPUpperBound,
+          global.hud.shieldsStarboardPPRightBound,
+          global.hud.shieldsStarboardPPUpperBound);
+draw_line(global.hud.shieldsStarboardPPLeftBound,
+          global.hud.shieldsStarboardPPLowerBound,
+          global.hud.shieldsStarboardPPRightBound,
+          global.hud.shieldsStarboardPPLowerBound);
 draw_set_color(c_white);
-draw_line(hud.shieldsStarboardHPLeftBound,
-          hud.shieldsStarboardHPLowerBound,
-          hud.shieldsLeftBound + ((hud.shieldsRightBound - hud.shieldsLeftBound) / 2) + (player.sprite_width / 2),
-          hud.shieldsUpperBound + ((hud.shieldsLowerBound - hud.shieldsUpperBound) / 2));
+draw_line(global.hud.shieldsStarboardHPLeftBound,
+          global.hud.shieldsStarboardHPLowerBound,
+          global.hud.shieldsLeftBound + ((global.hud.shieldsRightBound - global.hud.shieldsLeftBound) / 2) + (global.player.sprite_width / 2),
+          global.hud.shieldsUpperBound + ((global.hud.shieldsLowerBound - global.hud.shieldsUpperBound) / 2));

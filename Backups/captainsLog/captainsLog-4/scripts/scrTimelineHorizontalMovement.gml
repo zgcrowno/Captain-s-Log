@@ -1,5 +1,5 @@
-if(y < hud.radarLowerBound) {
-    y += util.difficultyModifier;
+if(y < global.hud.radarLowerBound) {
+    y += global.util.difficultyModifier;
 } else {
-    y = hud.radarUpperBound;
+    y = global.hud.radarUpperBound;
 }

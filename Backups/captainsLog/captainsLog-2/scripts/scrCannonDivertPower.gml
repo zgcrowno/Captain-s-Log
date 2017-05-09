@@ -1,7 +1,7 @@
 if(requiredPPCannon <= currentPP) {
     if(currentPPCannon == 0) {
-        actionMap[? util.actionMapCannonString] = true;
-        ds_list_add(actionQueue, util.actionMapCannonString);
+        actionMap[? global.util.actionMapCannonString] = true;
+        ds_list_add(actionQueue, global.util.actionMapCannonString);
     } else {
         //To Do: Error to user about cooldown...
     }

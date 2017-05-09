@@ -1,5 +1,5 @@
-if(timelineHorizontal.y < hud.radarLowerBound && x < hud.radarRightBound) {
-    x += 2 * util.difficultyModifier;
+if(global.timelineHorizontal.y < global.hud.radarLowerBound && x < global.hud.radarRightBound) {
+    x += 2 * global.util.difficultyModifier;
 } else {
-    x = hud.radarLeftBound;
+    x = global.hud.radarLeftBound;
 }
