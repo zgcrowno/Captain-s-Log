@@ -1,7 +1,6 @@
 if(requiredPPCannon <= currentPP) {
     if(currentPPCannon == 0) {
-        actionMap[? global.util.actionMapCannonString] = true;
-        ds_list_add(actionQueue, global.util.actionMapCannonString);
+        scrChangeStateAction(global.util.actionMapCannonString, noone, noone);
     } else {
         //To Do: Error to user about cooldown...
     }

@@ -3,8 +3,7 @@ scrSetState(initState);
 if(requiredPPPassive <= currentPP) {
     if(currentPPPassive == 0) {
         if(object_index != objHalitosis || sprite_index == sprHalitosis) {
-            actionMap[? global.util.actionMapPassiveString] = toActivate;
-            ds_list_add(actionQueue, global.util.actionMapPassiveString);
+            scrChangeStateAction(global.util.actionMapPassiveString, global.util.actionQueuePassiveString, global.util.actionQueueCutPassiveString);
         } else {
             //TODO: Error to user about ship form
         }

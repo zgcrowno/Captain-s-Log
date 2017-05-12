@@ -1,8 +1,7 @@
 scrSetState(initState);
 
 if(!(requiredPPShields > currentPP) && !(actionMap[? global.util.actionMapShieldsStarboardString] == active)) {
-    actionMap[? global.util.actionMapShieldsStarboardString] = toActivate;
-    ds_list_add(actionQueue, global.util.actionQueueShieldsStarboardString);
+    scrChangeStateAction(global.util.actionMapShieldsStarboardString, global.util.actionQueueShieldsStarboardString, global.util.actionQueueCutShieldsStarboardString);
 } else if(!(actionMap[? global.util.actionMapShieldsStarboardString] == active)) {
     //To Do: Error to user about lack of power...
 }

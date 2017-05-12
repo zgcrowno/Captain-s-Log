@@ -80,6 +80,7 @@ if(currentPPActive > 0) {
 
 if(actionMap[? global.util.actionMapPassiveString] == active || actionMap[? global.util.actionMapPassiveString] == toActivate || actionMap[? global.util.actionMapPassiveString] == toDeactivate) {
     currentPPPassive = requiredPPPassive;
+    show_debug_message(currentPPPassive);
 } else {
     currentPPPassive = 0;
 }

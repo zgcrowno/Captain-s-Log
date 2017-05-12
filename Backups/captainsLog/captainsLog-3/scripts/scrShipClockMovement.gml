@@ -9,8 +9,7 @@ if(actionMap[? global.util.actionMapThrustersClockString] > 0) {
                 if(object_is_ancestor(object_index, objPlayerShip)) {
                     view_angle[0] += 180;
                 }
-                actionQueue[| ds_list_find_index(actionQueue, global.util.actionQueueThrustersClockString + string(actionMap[? global.util.actionMapThrustersClockString]))] = global.util.actionQueueThrustersClockString + string(actionMap[? global.util.actionMapThrustersClockString] - 1);
-                actionMap[? global.util.actionMapThrustersClockString] -= 1;
+                scrDecrementAction(global.util.actionMapThrustersClockString, global.util.actionQueueThrustersClockString, false);
             } else {
                 image_angle += 270;
                 if(object_is_ancestor(object_index, objPlayerShip)) {

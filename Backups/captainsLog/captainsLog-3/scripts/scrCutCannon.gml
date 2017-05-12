@@ -1,7 +1,6 @@
 scrSetState(initState);
 
 if(actionMap[? global.util.actionMapCannonString]) {
-    actionMap[? global.util.actionMapCannonString] = false;
-    ds_list_delete(actionQueue, ds_list_find_index(actionQueue, global.util.actionMapCannonString));
-    currentPPCannon = 0;
+    scrChangeStateAction(global.util.actionMapCannonString, noone, noone);
+    currentPPCannon = 0; //Reassign currentPPCannon here because of cooldown
 }

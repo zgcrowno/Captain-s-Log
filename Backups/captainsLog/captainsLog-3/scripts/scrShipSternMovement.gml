@@ -16,8 +16,7 @@ if(actionMap[? global.util.actionMapThrustersSternString] > 0) {
                         view_xview[0] -= 2 * global.util.backgroundMovementDistance;
                     }
                 }
-                actionQueue[| ds_list_find_index(actionQueue, global.util.actionQueueThrustersSternString + string(actionMap[? global.util.actionMapThrustersSternString]))] = global.util.actionQueueThrustersSternString + string(actionMap[? global.util.actionMapThrustersSternString] - 1);
-                actionMap[? global.util.actionMapThrustersSternString] -= 1;
+                scrDecrementAction(global.util.actionMapThrustersSternString, global.util.actionQueueThrustersSternString, false);
             } else {
                 x += sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));
                 y -= sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
@@ -49,8 +48,7 @@ if(actionMap[? global.util.actionMapThrustersSternString] > 0) {
             }
         }
     } else {
-        ds_list_delete(actionQueue, ds_list_find_index(actionQueue, global.util.actionQueueThrustersSternString + string(actionMap[? global.util.actionMapThrustersSternString])));
-        actionMap[? global.util.actionMapThrustersSternString] = 0;
+        scrDecrementAction(global.util.actionMapThrustersSternString, global.util.actionQueueThrustersSternString, true);
         //TODO: Error about leaving airspace
     }
 }

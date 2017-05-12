@@ -14,7 +14,6 @@ if(actionMap[? global.util.actionMapCannonString]) {
         for(var i = 0; i < array_length_1d(gridBoxes); i++) {
             gridBox = gridBoxes[i];
             with(gridBox) {
-                global.player = instance_find(objPlayerShip, 0);
                 offset = noone;
                 if(scrIsFacingUp(other)) {
                     if(scrIsRight(other)) {
