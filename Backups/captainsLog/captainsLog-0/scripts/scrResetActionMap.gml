@@ -1,6 +1,6 @@
 //Keep an eye on this script. A large portion of it may end up being removed,
 //as it's most likely executed earlier on in scrTimelineActions.
-callingFunction = script_get_name(scrResetActionMap);
+callingFunction = script_get_name(scrResetActionMap);   //This variable must be created and used in order for the scrChangeStateAction function to work both here and elsewhere
 
 scrDecrementAction(global.util.actionMapThrustersPortString, global.util.actionQueueThrustersPortString, false);
 scrDecrementAction(global.util.actionMapThrustersStarboardString, global.util.actionQueueThrustersStarboardString, false);

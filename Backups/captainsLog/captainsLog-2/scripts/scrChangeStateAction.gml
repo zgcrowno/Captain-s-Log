@@ -12,8 +12,7 @@ if(strMap == global.util.actionMapGunsString || strMap == global.util.actionMapC
     }
 } else {
     if(actionMap[? strMap] == toActivate) {
-        if(!(scrTouchedTimelineThisTurn() && !alreadyTouchedTimeline)) {
-            show_debug_message(5);
+        if(!(callingFunction == script_get_name(scrResetActionMap))) {
             actionMap[? strMap] = inactive;
             if(ds_list_find_index(actionQueue, strQueue) != -1) {
                 ds_list_delete(actionQueue, ds_list_find_index(actionQueue, strQueue));
@@ -25,7 +24,6 @@ if(strMap == global.util.actionMapGunsString || strMap == global.util.actionMapC
             }
         }
     } else if(actionMap[? strMap] == toDeactivate) {
-        show_debug_message(6);
         actionMap[? strMap] = inactive;
         if(ds_list_find_index(actionQueue, strQueueCut) != -1) {
             ds_list_delete(actionQueue, ds_list_find_index(actionQueue, strQueueCut));

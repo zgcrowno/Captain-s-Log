@@ -4,7 +4,7 @@
   <texture scale="0">Default_1.png</texture>
   <texture scale="0">Default_2.png</texture>
   <tpe x="0" y="0" tpage="Default_0" entry="320">bgTestBackground_bgTestBackground.tpe</tpe>
-  <tpe x="2" y="2" tpage="Default_1" entry="222">sprHud_sprHud_0.tpe</tpe>
+  <tpe x="2" y="2" tpage="Default_1" entry="218">sprHud_sprHud_0.tpe</tpe>
   <tpe x="2" y="2" tpage="Default_2" entry="258">sprPixelHud_sprPixelHud_0.tpe</tpe>
   <tpe x="2" y="1086" tpage="Default_1" entry="257">sprBlueSky_sprBlueSky_0.tpe</tpe>
   <tpe x="2" y="1370" tpage="Default_1" entry="288">sprPincerActive_sprPincerActive_20.tpe</tpe>
@@ -40,46 +40,46 @@
   <tpe x="1446" y="1918" tpage="Default_1" entry="305">sprSidecarCannon_sprSidecarCannon_11.tpe</tpe>
   <tpe x="1466" y="1502" tpage="Default_1" entry="278">sprPincerActive_sprPincerActive_10.tpe</tpe>
   <tpe x="1926" y="118" tpage="Default_1" entry="304">sprSidecarCannon_sprSidecarCannon_10.tpe</tpe>
-  <tpe x="1470" y="1370" tpage="Default_1" entry="53">sprPawnBackground_sprPawnBackground_0.tpe</tpe>
-  <tpe x="1470" y="1610" tpage="Default_1" entry="58">sprPawnBackground_sprPawnBackground_1.tpe</tpe>
-  <tpe x="1926" y="226" tpage="Default_1" entry="63">sprPawnBackground_sprPawnBackground_2.tpe</tpe>
-  <tpe x="1926" y="330" tpage="Default_1" entry="68">sprPawnBackground_sprPawnBackground_3.tpe</tpe>
-  <tpe x="1342" y="1790" tpage="Default_1" entry="204">sprRiceCakeActive_sprRiceCakeActive_9.tpe</tpe>
-  <tpe x="1926" y="434" tpage="Default_1" entry="207">sprRiceCakeActive_sprRiceCakeActive_10.tpe</tpe>
+  <tpe x="1470" y="1370" tpage="Default_1" entry="64">sprPawnBackground_sprPawnBackground_0.tpe</tpe>
+  <tpe x="1470" y="1610" tpage="Default_1" entry="69">sprPawnBackground_sprPawnBackground_1.tpe</tpe>
+  <tpe x="1926" y="226" tpage="Default_1" entry="73">sprPawnBackground_sprPawnBackground_2.tpe</tpe>
+  <tpe x="1926" y="330" tpage="Default_1" entry="77">sprPawnBackground_sprPawnBackground_3.tpe</tpe>
+  <tpe x="1342" y="1790" tpage="Default_1" entry="207">sprRiceCakeActive_sprRiceCakeActive_9.tpe</tpe>
+  <tpe x="1926" y="434" tpage="Default_1" entry="210">sprRiceCakeActive_sprRiceCakeActive_10.tpe</tpe>
   <tpe x="1926" y="534" tpage="Default_1" entry="277">sprPincerActive_sprPincerActive_9.tpe</tpe>
   <tpe x="1926" y="630" tpage="Default_1" entry="303">sprSidecarCannon_sprSidecarCannon_9.tpe</tpe>
-  <tpe x="1926" y="726" tpage="Default_1" entry="40">sprMezzanineBow_sprMezzanineBow_0.tpe</tpe>
+  <tpe x="1926" y="726" tpage="Default_1" entry="51">sprMezzanineBow_sprMezzanineBow_0.tpe</tpe>
   <tpe x="614" y="1974" tpage="Default_1" entry="260">sprMezzanineStarboard_sprMezzanineStarboard_0.tpe</tpe>
   <tpe x="1926" y="826" tpage="Default_1" entry="276">sprPincerActive_sprPincerActive_8.tpe</tpe>
   <tpe x="1926" y="914" tpage="Default_1" entry="302">sprSidecarCannon_sprSidecarCannon_8.tpe</tpe>
   <tpe x="1470" y="1714" tpage="Default_1" entry="275">sprPincerActive_sprPincerActive_7.tpe</tpe>
   <tpe x="714" y="1974" tpage="Default_1" entry="301">sprSidecarCannon_sprSidecarCannon_7.tpe</tpe>
-  <tpe x="1926" y="1002" tpage="Default_1" entry="124">sprPincer_sprPincer_0.tpe</tpe>
-  <tpe x="790" y="1974" tpage="Default_1" entry="127">sprMezzanineStern_sprMezzanineStern_0.tpe</tpe>
-  <tpe x="1926" y="1078" tpage="Default_1" entry="132">sprMezzaninePort_sprMezzaninePort_0.tpe</tpe>
-  <tpe x="866" y="1974" tpage="Default_1" entry="133">sprInfiniteRegress_sprInfiniteRegress_0.tpe</tpe>
-  <tpe x="1926" y="1154" tpage="Default_1" entry="33">sprHalitosisPassive_sprHalitosisPassive_0.tpe</tpe>
+  <tpe x="1926" y="1002" tpage="Default_1" entry="123">sprPincer_sprPincer_0.tpe</tpe>
+  <tpe x="790" y="1974" tpage="Default_1" entry="125">sprMezzaninePort_sprMezzaninePort_0.tpe</tpe>
+  <tpe x="1926" y="1078" tpage="Default_1" entry="127">sprMezzanineStern_sprMezzanineStern_0.tpe</tpe>
+  <tpe x="866" y="1974" tpage="Default_1" entry="131">sprInfiniteRegress_sprInfiniteRegress_0.tpe</tpe>
+  <tpe x="1926" y="1154" tpage="Default_1" entry="42">sprHalitosisPassive_sprHalitosisPassive_0.tpe</tpe>
   <tpe x="1926" y="1230" tpage="Default_1" entry="259">sprHalitosis_sprHalitosis_0.tpe</tpe>
   <tpe x="2" y="1982" tpage="Default_1" entry="274">sprPincerActive_sprPincerActive_6.tpe</tpe>
   <tpe x="70" y="1982" tpage="Default_1" entry="300">sprSidecarCannon_sprSidecarCannon_6.tpe</tpe>
-  <tpe x="138" y="1982" tpage="Default_1" entry="199">sprRiceCakeActive_sprRiceCakeActive_7.tpe</tpe>
-  <tpe x="206" y="1982" tpage="Default_1" entry="201">sprRiceCakeActive_sprRiceCakeActive_8.tpe</tpe>
-  <tpe x="942" y="1974" tpage="Default_1" entry="139">sprPlayerEnergyBallBackground_sprPlayerEnergyBallBackground_0.tpe</tpe>
-  <tpe x="942" y="1974" tpage="Default_1" entry="142">sprPlayerEnergyBallBackground_sprPlayerEnergyBallBackground_1.tpe</tpe>
-  <tpe x="942" y="1974" tpage="Default_1" entry="146">sprPlayerEnergyBallBackground_sprPlayerEnergyBallBackground_2.tpe</tpe>
-  <tpe x="942" y="1974" tpage="Default_1" entry="150">sprPlayerEnergyBallBackground_sprPlayerEnergyBallBackground_3.tpe</tpe>
-  <tpe x="1926" y="1306" tpage="Default_1" entry="47">sprShrimper_sprShrimper_0.tpe</tpe>
-  <tpe x="274" y="1982" tpage="Default_1" entry="122">sprFlasher_sprFlasher_0.tpe</tpe>
+  <tpe x="138" y="1982" tpage="Default_1" entry="202">sprRiceCakeActive_sprRiceCakeActive_7.tpe</tpe>
+  <tpe x="206" y="1982" tpage="Default_1" entry="204">sprRiceCakeActive_sprRiceCakeActive_8.tpe</tpe>
+  <tpe x="942" y="1974" tpage="Default_1" entry="157">sprPlayerEnergyBallBackground_sprPlayerEnergyBallBackground_0.tpe</tpe>
+  <tpe x="942" y="1974" tpage="Default_1" entry="160">sprPlayerEnergyBallBackground_sprPlayerEnergyBallBackground_1.tpe</tpe>
+  <tpe x="942" y="1974" tpage="Default_1" entry="164">sprPlayerEnergyBallBackground_sprPlayerEnergyBallBackground_2.tpe</tpe>
+  <tpe x="942" y="1974" tpage="Default_1" entry="168">sprPlayerEnergyBallBackground_sprPlayerEnergyBallBackground_3.tpe</tpe>
+  <tpe x="1926" y="1306" tpage="Default_1" entry="57">sprShrimper_sprShrimper_0.tpe</tpe>
+  <tpe x="274" y="1982" tpage="Default_1" entry="119">sprFlasher_sprFlasher_0.tpe</tpe>
   <tpe x="350" y="1982" tpage="Default_1" entry="273">sprPincerActive_sprPincerActive_5.tpe</tpe>
   <tpe x="406" y="1982" tpage="Default_1" entry="299">sprSidecarCannon_sprSidecarCannon_5.tpe</tpe>
-  <tpe x="462" y="1982" tpage="Default_1" entry="125">sprEnemyCannonBulletBackground_sprEnemyCannonBulletBackground_0.tpe</tpe>
-  <tpe x="518" y="1982" tpage="Default_1" entry="128">sprEnemyCannonBulletBackground_sprEnemyCannonBulletBackground_1.tpe</tpe>
-  <tpe x="1546" y="1714" tpage="Default_1" entry="129">sprEnemyCannonBulletBackground_sprEnemyCannonBulletBackground_2.tpe</tpe>
-  <tpe x="1562" y="1918" tpage="Default_1" entry="131">sprEnemyCannonBulletBackground_sprEnemyCannonBulletBackground_3.tpe</tpe>
-  <tpe x="1562" y="1974" tpage="Default_1" entry="173">sprPlayerBulletBackground_sprPlayerBulletBackground_0.tpe</tpe>
-  <tpe x="1574" y="1370" tpage="Default_1" entry="175">sprPlayerBulletBackground_sprPlayerBulletBackground_1.tpe</tpe>
-  <tpe x="1574" y="1770" tpage="Default_1" entry="178">sprPlayerBulletBackground_sprPlayerBulletBackground_2.tpe</tpe>
-  <tpe x="1574" y="1426" tpage="Default_1" entry="180">sprPlayerBulletBackground_sprPlayerBulletBackground_3.tpe</tpe>
+  <tpe x="462" y="1982" tpage="Default_1" entry="135">sprEnemyCannonBulletBackground_sprEnemyCannonBulletBackground_0.tpe</tpe>
+  <tpe x="518" y="1982" tpage="Default_1" entry="138">sprEnemyCannonBulletBackground_sprEnemyCannonBulletBackground_1.tpe</tpe>
+  <tpe x="1546" y="1714" tpage="Default_1" entry="141">sprEnemyCannonBulletBackground_sprEnemyCannonBulletBackground_2.tpe</tpe>
+  <tpe x="1562" y="1918" tpage="Default_1" entry="146">sprEnemyCannonBulletBackground_sprEnemyCannonBulletBackground_3.tpe</tpe>
+  <tpe x="1562" y="1974" tpage="Default_1" entry="177">sprPlayerBulletBackground_sprPlayerBulletBackground_0.tpe</tpe>
+  <tpe x="1574" y="1370" tpage="Default_1" entry="179">sprPlayerBulletBackground_sprPlayerBulletBackground_1.tpe</tpe>
+  <tpe x="1574" y="1770" tpage="Default_1" entry="181">sprPlayerBulletBackground_sprPlayerBulletBackground_2.tpe</tpe>
+  <tpe x="1574" y="1426" tpage="Default_1" entry="183">sprPlayerBulletBackground_sprPlayerBulletBackground_3.tpe</tpe>
   <tpe x="1574" y="1826" tpage="Default_1" entry="251">sprEnemyBulletBackground_sprEnemyBulletBackground_0.tpe</tpe>
   <tpe x="1574" y="1482" tpage="Default_1" entry="252">sprEnemyBulletBackground_sprEnemyBulletBackground_1.tpe</tpe>
   <tpe x="1574" y="1538" tpage="Default_1" entry="253">sprEnemyBulletBackground_sprEnemyBulletBackground_2.tpe</tpe>
@@ -88,129 +88,129 @@
   <tpe x="1926" y="1358" tpage="Default_1" entry="265">sprPlayerCannonBulletBackground_sprPlayerCannonBulletBackground_1.tpe</tpe>
   <tpe x="1982" y="1358" tpage="Default_1" entry="266">sprPlayerCannonBulletBackground_sprPlayerCannonBulletBackground_2.tpe</tpe>
   <tpe x="1630" y="1370" tpage="Default_1" entry="267">sprPlayerCannonBulletBackground_sprPlayerCannonBulletBackground_3.tpe</tpe>
-  <tpe x="2002" y="726" tpage="Default_1" entry="230">sprMezzanineCannon_sprMezzanineCannon_4.tpe</tpe>
-  <tpe x="1998" y="1154" tpage="Default_1" entry="232">sprMezzanineCannon_sprMezzanineCannon_5.tpe</tpe>
-  <tpe x="2002" y="1002" tpage="Default_1" entry="234">sprMezzanineCannon_sprMezzanineCannon_6.tpe</tpe>
-  <tpe x="2002" y="1234" tpage="Default_1" entry="236">sprMezzanineCannon_sprMezzanineCannon_7.tpe</tpe>
+  <tpe x="2002" y="726" tpage="Default_1" entry="233">sprMezzanineCannon_sprMezzanineCannon_4.tpe</tpe>
+  <tpe x="1998" y="1154" tpage="Default_1" entry="235">sprMezzanineCannon_sprMezzanineCannon_5.tpe</tpe>
+  <tpe x="2002" y="1002" tpage="Default_1" entry="236">sprMezzanineCannon_sprMezzanineCannon_6.tpe</tpe>
+  <tpe x="2002" y="1234" tpage="Default_1" entry="237">sprMezzanineCannon_sprMezzanineCannon_7.tpe</tpe>
   <tpe x="2014" y="806" tpage="Default_1" entry="238">sprMezzanineCannon_sprMezzanineCannon_8.tpe</tpe>
   <tpe x="2014" y="886" tpage="Default_1" entry="239">sprMezzanineCannon_sprMezzanineCannon_9.tpe</tpe>
   <tpe x="1686" y="1370" tpage="Default_1" entry="240">sprMezzanineCannon_sprMezzanineCannon_10.tpe</tpe>
   <tpe x="1718" y="1370" tpage="Default_1" entry="241">sprMezzanineCannon_sprMezzanineCannon_11.tpe</tpe>
   <tpe x="1750" y="1370" tpage="Default_1" entry="242">sprMezzanineCannon_sprMezzanineCannon_12.tpe</tpe>
   <tpe x="1782" y="1370" tpage="Default_1" entry="243">sprMezzanineCannon_sprMezzanineCannon_13.tpe</tpe>
-  <tpe x="2002" y="1082" tpage="Default_1" entry="29">sprSidecar_sprSidecar_0.tpe</tpe>
+  <tpe x="2002" y="1082" tpage="Default_1" entry="36">sprSidecar_sprSidecar_0.tpe</tpe>
   <tpe x="1182" y="1674" tpage="Default_1" entry="272">sprPincerActive_sprPincerActive_4.tpe</tpe>
   <tpe x="1814" y="1370" tpage="Default_1" entry="298">sprSidecarCannon_sprSidecarCannon_4.tpe</tpe>
   <tpe x="2022" y="534" tpage="Default_1" entry="244">sprMezzanineCannon_sprMezzanineCannon_14.tpe</tpe>
-  <tpe x="1862" y="1370" tpage="Default_1" entry="228">sprMezzanineCannon_sprMezzanineCannon_3.tpe</tpe>
+  <tpe x="1862" y="1370" tpage="Default_1" entry="231">sprMezzanineCannon_sprMezzanineCannon_3.tpe</tpe>
   <tpe x="2022" y="614" tpage="Default_1" entry="245">sprMezzanineCannon_sprMezzanineCannon_15.tpe</tpe>
-  <tpe x="2030" y="1134" tpage="Default_1" entry="130">sprHalitosisSmall_sprHalitosisSmall_0.tpe</tpe>
+  <tpe x="2030" y="1134" tpage="Default_1" entry="121">sprHalitosisSmall_sprHalitosisSmall_0.tpe</tpe>
   <tpe x="574" y="1982" tpage="Default_1" entry="271">sprPincerActive_sprPincerActive_3.tpe</tpe>
   <tpe x="1574" y="1882" tpage="Default_1" entry="297">sprSidecarCannon_sprSidecarCannon_3.tpe</tpe>
-  <tpe x="2030" y="226" tpage="Default_1" entry="226">sprMezzanineCannon_sprMezzanineCannon_2.tpe</tpe>
-  <tpe x="2026" y="434" tpage="Default_1" entry="246">sprMezzanineCannon_sprMezzanineCannon_16.tpe</tpe>
-  <tpe x="2026" y="434" tpage="Default_1" entry="247">sprMezzanineCannon_sprMezzanineCannon_17.tpe</tpe>
+  <tpe x="2030" y="226" tpage="Default_1" entry="229">sprMezzanineCannon_sprMezzanineCannon_2.tpe</tpe>
+  <tpe x="2026" y="434" tpage="Default_1" entry="247">sprMezzanineCannon_sprMezzanineCannon_16.tpe</tpe>
+  <tpe x="2026" y="434" tpage="Default_1" entry="248">sprMezzanineCannon_sprMezzanineCannon_17.tpe</tpe>
   <tpe x="1602" y="1706" tpage="Default_1" entry="262">sprEpitaph_sprEpitaph_0.tpe</tpe>
-  <tpe x="2002" y="1314" tpage="Default_1" entry="120">sprEnemyBulletContact_sprEnemyBulletContact_13.tpe</tpe>
-  <tpe x="2014" y="966" tpage="Default_1" entry="121">sprEnemyBulletContact_sprEnemyBulletContact_14.tpe</tpe>
-  <tpe x="1230" y="1674" tpage="Default_1" entry="165">sprPlayerBulletContact_sprPlayerBulletContact_13.tpe</tpe>
-  <tpe x="1886" y="1370" tpage="Default_1" entry="167">sprPlayerBulletContact_sprPlayerBulletContact_14.tpe</tpe>
-  <tpe x="1886" y="1414" tpage="Default_1" entry="194">sprRiceCakeActive_sprRiceCakeActive_5.tpe</tpe>
-  <tpe x="1266" y="1674" tpage="Default_1" entry="196">sprRiceCakeActive_sprRiceCakeActive_6.tpe</tpe>
-  <tpe x="818" y="1746" tpage="Default_1" entry="118">sprEnemyBulletContact_sprEnemyBulletContact_11.tpe</tpe>
-  <tpe x="1814" y="1418" tpage="Default_1" entry="119">sprEnemyBulletContact_sprEnemyBulletContact_12.tpe</tpe>
-  <tpe x="574" y="2018" tpage="Default_1" entry="161">sprPlayerBulletContact_sprPlayerBulletContact_11.tpe</tpe>
-  <tpe x="1922" y="1414" tpage="Default_1" entry="163">sprPlayerBulletContact_sprPlayerBulletContact_12.tpe</tpe>
-  <tpe x="1302" y="1674" tpage="Default_1" entry="24">sprGridBoxShield_sprGridBoxShield_0.tpe</tpe>
-  <tpe x="850" y="1746" tpage="Default_1" entry="26">sprGridBoxStatic_sprGridBoxStatic_0.tpe</tpe>
-  <tpe x="1954" y="1414" tpage="Default_1" entry="28">sprGridBoxStatic_sprGridBoxStatic_1.tpe</tpe>
-  <tpe x="882" y="1746" tpage="Default_1" entry="31">sprGridBoxStatic_sprGridBoxStatic_2.tpe</tpe>
-  <tpe x="1986" y="1414" tpage="Default_1" entry="34">sprGridBoxStatic_sprGridBoxStatic_3.tpe</tpe>
-  <tpe x="914" y="1746" tpage="Default_1" entry="37">sprGridBoxStatic_sprGridBoxStatic_4.tpe</tpe>
-  <tpe x="2018" y="1414" tpage="Default_1" entry="39">sprGridBoxStatic_sprGridBoxStatic_5.tpe</tpe>
-  <tpe x="850" y="1746" tpage="Default_1" entry="42">sprGridBoxStatic_sprGridBoxStatic_6.tpe</tpe>
-  <tpe x="1954" y="1414" tpage="Default_1" entry="44">sprGridBoxStatic_sprGridBoxStatic_7.tpe</tpe>
-  <tpe x="882" y="1746" tpage="Default_1" entry="46">sprGridBoxStatic_sprGridBoxStatic_8.tpe</tpe>
+  <tpe x="2002" y="1314" tpage="Default_1" entry="126">sprEnemyBulletContact_sprEnemyBulletContact_13.tpe</tpe>
+  <tpe x="2014" y="966" tpage="Default_1" entry="128">sprEnemyBulletContact_sprEnemyBulletContact_14.tpe</tpe>
+  <tpe x="1230" y="1674" tpage="Default_1" entry="167">sprPlayerBulletContact_sprPlayerBulletContact_13.tpe</tpe>
+  <tpe x="1886" y="1370" tpage="Default_1" entry="170">sprPlayerBulletContact_sprPlayerBulletContact_14.tpe</tpe>
+  <tpe x="1886" y="1414" tpage="Default_1" entry="198">sprRiceCakeActive_sprRiceCakeActive_5.tpe</tpe>
+  <tpe x="1266" y="1674" tpage="Default_1" entry="200">sprRiceCakeActive_sprRiceCakeActive_6.tpe</tpe>
+  <tpe x="818" y="1746" tpage="Default_1" entry="122">sprEnemyBulletContact_sprEnemyBulletContact_11.tpe</tpe>
+  <tpe x="1814" y="1418" tpage="Default_1" entry="124">sprEnemyBulletContact_sprEnemyBulletContact_12.tpe</tpe>
+  <tpe x="574" y="2018" tpage="Default_1" entry="162">sprPlayerBulletContact_sprPlayerBulletContact_11.tpe</tpe>
+  <tpe x="1922" y="1414" tpage="Default_1" entry="165">sprPlayerBulletContact_sprPlayerBulletContact_12.tpe</tpe>
+  <tpe x="1302" y="1674" tpage="Default_1" entry="27">sprGridBoxShield_sprGridBoxShield_0.tpe</tpe>
+  <tpe x="850" y="1746" tpage="Default_1" entry="28">sprGridBoxStatic_sprGridBoxStatic_0.tpe</tpe>
+  <tpe x="1954" y="1414" tpage="Default_1" entry="30">sprGridBoxStatic_sprGridBoxStatic_1.tpe</tpe>
+  <tpe x="882" y="1746" tpage="Default_1" entry="33">sprGridBoxStatic_sprGridBoxStatic_2.tpe</tpe>
+  <tpe x="1986" y="1414" tpage="Default_1" entry="35">sprGridBoxStatic_sprGridBoxStatic_3.tpe</tpe>
+  <tpe x="914" y="1746" tpage="Default_1" entry="38">sprGridBoxStatic_sprGridBoxStatic_4.tpe</tpe>
+  <tpe x="2018" y="1414" tpage="Default_1" entry="40">sprGridBoxStatic_sprGridBoxStatic_5.tpe</tpe>
+  <tpe x="850" y="1746" tpage="Default_1" entry="43">sprGridBoxStatic_sprGridBoxStatic_6.tpe</tpe>
+  <tpe x="1954" y="1414" tpage="Default_1" entry="45">sprGridBoxStatic_sprGridBoxStatic_7.tpe</tpe>
+  <tpe x="882" y="1746" tpage="Default_1" entry="47">sprGridBoxStatic_sprGridBoxStatic_8.tpe</tpe>
   <tpe x="1986" y="1414" tpage="Default_1" entry="49">sprGridBoxStatic_sprGridBoxStatic_9.tpe</tpe>
-  <tpe x="914" y="1746" tpage="Default_1" entry="51">sprGridBoxStatic_sprGridBoxStatic_10.tpe</tpe>
-  <tpe x="2018" y="1414" tpage="Default_1" entry="54">sprGridBoxStatic_sprGridBoxStatic_11.tpe</tpe>
-  <tpe x="850" y="1746" tpage="Default_1" entry="57">sprGridBoxStatic_sprGridBoxStatic_12.tpe</tpe>
-  <tpe x="1954" y="1414" tpage="Default_1" entry="59">sprGridBoxStatic_sprGridBoxStatic_13.tpe</tpe>
+  <tpe x="914" y="1746" tpage="Default_1" entry="52">sprGridBoxStatic_sprGridBoxStatic_10.tpe</tpe>
+  <tpe x="2018" y="1414" tpage="Default_1" entry="55">sprGridBoxStatic_sprGridBoxStatic_11.tpe</tpe>
+  <tpe x="850" y="1746" tpage="Default_1" entry="58">sprGridBoxStatic_sprGridBoxStatic_12.tpe</tpe>
+  <tpe x="1954" y="1414" tpage="Default_1" entry="60">sprGridBoxStatic_sprGridBoxStatic_13.tpe</tpe>
   <tpe x="882" y="1746" tpage="Default_1" entry="62">sprGridBoxStatic_sprGridBoxStatic_14.tpe</tpe>
   <tpe x="1986" y="1414" tpage="Default_1" entry="65">sprGridBoxStatic_sprGridBoxStatic_15.tpe</tpe>
   <tpe x="914" y="1746" tpage="Default_1" entry="67">sprGridBoxStatic_sprGridBoxStatic_16.tpe</tpe>
-  <tpe x="2018" y="1414" tpage="Default_1" entry="69">sprGridBoxStatic_sprGridBoxStatic_17.tpe</tpe>
-  <tpe x="850" y="1746" tpage="Default_1" entry="71">sprGridBoxStatic_sprGridBoxStatic_18.tpe</tpe>
-  <tpe x="1954" y="1414" tpage="Default_1" entry="73">sprGridBoxStatic_sprGridBoxStatic_19.tpe</tpe>
-  <tpe x="882" y="1746" tpage="Default_1" entry="75">sprGridBoxStatic_sprGridBoxStatic_20.tpe</tpe>
-  <tpe x="1986" y="1414" tpage="Default_1" entry="77">sprGridBoxStatic_sprGridBoxStatic_21.tpe</tpe>
-  <tpe x="914" y="1746" tpage="Default_1" entry="79">sprGridBoxStatic_sprGridBoxStatic_22.tpe</tpe>
-  <tpe x="2018" y="1414" tpage="Default_1" entry="82">sprGridBoxStatic_sprGridBoxStatic_23.tpe</tpe>
-  <tpe x="850" y="1746" tpage="Default_1" entry="83">sprGridBoxStatic_sprGridBoxStatic_24.tpe</tpe>
-  <tpe x="1954" y="1414" tpage="Default_1" entry="86">sprGridBoxStatic_sprGridBoxStatic_25.tpe</tpe>
-  <tpe x="882" y="1746" tpage="Default_1" entry="88">sprGridBoxStatic_sprGridBoxStatic_26.tpe</tpe>
-  <tpe x="1986" y="1414" tpage="Default_1" entry="90">sprGridBoxStatic_sprGridBoxStatic_27.tpe</tpe>
-  <tpe x="914" y="1746" tpage="Default_1" entry="92">sprGridBoxStatic_sprGridBoxStatic_28.tpe</tpe>
-  <tpe x="2018" y="1414" tpage="Default_1" entry="94">sprGridBoxStatic_sprGridBoxStatic_29.tpe</tpe>
-  <tpe x="850" y="1746" tpage="Default_1" entry="96">sprGridBoxStatic_sprGridBoxStatic_30.tpe</tpe>
-  <tpe x="1954" y="1414" tpage="Default_1" entry="99">sprGridBoxStatic_sprGridBoxStatic_31.tpe</tpe>
-  <tpe x="882" y="1746" tpage="Default_1" entry="102">sprGridBoxStatic_sprGridBoxStatic_32.tpe</tpe>
-  <tpe x="1986" y="1414" tpage="Default_1" entry="107">sprGridBoxStatic_sprGridBoxStatic_33.tpe</tpe>
-  <tpe x="914" y="1746" tpage="Default_1" entry="110">sprGridBoxStatic_sprGridBoxStatic_34.tpe</tpe>
-  <tpe x="2018" y="1414" tpage="Default_1" entry="112">sprGridBoxStatic_sprGridBoxStatic_35.tpe</tpe>
-  <tpe x="946" y="1746" tpage="Default_1" entry="123">sprGridBox_sprGridBox_0.tpe</tpe>
-  <tpe x="1470" y="1474" tpage="Default_1" entry="116">sprEnemyBulletContact_sprEnemyBulletContact_9.tpe</tpe>
-  <tpe x="2022" y="694" tpage="Default_1" entry="117">sprEnemyBulletContact_sprEnemyBulletContact_10.tpe</tpe>
-  <tpe x="978" y="1746" tpage="Default_1" entry="157">sprPlayerBulletContact_sprPlayerBulletContact_9.tpe</tpe>
+  <tpe x="2018" y="1414" tpage="Default_1" entry="70">sprGridBoxStatic_sprGridBoxStatic_17.tpe</tpe>
+  <tpe x="850" y="1746" tpage="Default_1" entry="72">sprGridBoxStatic_sprGridBoxStatic_18.tpe</tpe>
+  <tpe x="1954" y="1414" tpage="Default_1" entry="75">sprGridBoxStatic_sprGridBoxStatic_19.tpe</tpe>
+  <tpe x="882" y="1746" tpage="Default_1" entry="79">sprGridBoxStatic_sprGridBoxStatic_20.tpe</tpe>
+  <tpe x="1986" y="1414" tpage="Default_1" entry="81">sprGridBoxStatic_sprGridBoxStatic_21.tpe</tpe>
+  <tpe x="914" y="1746" tpage="Default_1" entry="83">sprGridBoxStatic_sprGridBoxStatic_22.tpe</tpe>
+  <tpe x="2018" y="1414" tpage="Default_1" entry="85">sprGridBoxStatic_sprGridBoxStatic_23.tpe</tpe>
+  <tpe x="850" y="1746" tpage="Default_1" entry="87">sprGridBoxStatic_sprGridBoxStatic_24.tpe</tpe>
+  <tpe x="1954" y="1414" tpage="Default_1" entry="89">sprGridBoxStatic_sprGridBoxStatic_25.tpe</tpe>
+  <tpe x="882" y="1746" tpage="Default_1" entry="91">sprGridBoxStatic_sprGridBoxStatic_26.tpe</tpe>
+  <tpe x="1986" y="1414" tpage="Default_1" entry="93">sprGridBoxStatic_sprGridBoxStatic_27.tpe</tpe>
+  <tpe x="914" y="1746" tpage="Default_1" entry="95">sprGridBoxStatic_sprGridBoxStatic_28.tpe</tpe>
+  <tpe x="2018" y="1414" tpage="Default_1" entry="97">sprGridBoxStatic_sprGridBoxStatic_29.tpe</tpe>
+  <tpe x="850" y="1746" tpage="Default_1" entry="99">sprGridBoxStatic_sprGridBoxStatic_30.tpe</tpe>
+  <tpe x="1954" y="1414" tpage="Default_1" entry="101">sprGridBoxStatic_sprGridBoxStatic_31.tpe</tpe>
+  <tpe x="882" y="1746" tpage="Default_1" entry="103">sprGridBoxStatic_sprGridBoxStatic_32.tpe</tpe>
+  <tpe x="1986" y="1414" tpage="Default_1" entry="104">sprGridBoxStatic_sprGridBoxStatic_33.tpe</tpe>
+  <tpe x="914" y="1746" tpage="Default_1" entry="105">sprGridBoxStatic_sprGridBoxStatic_34.tpe</tpe>
+  <tpe x="2018" y="1414" tpage="Default_1" entry="106">sprGridBoxStatic_sprGridBoxStatic_35.tpe</tpe>
+  <tpe x="946" y="1746" tpage="Default_1" entry="114">sprGridBox_sprGridBox_0.tpe</tpe>
+  <tpe x="1470" y="1474" tpage="Default_1" entry="118">sprEnemyBulletContact_sprEnemyBulletContact_9.tpe</tpe>
+  <tpe x="2022" y="694" tpage="Default_1" entry="120">sprEnemyBulletContact_sprEnemyBulletContact_10.tpe</tpe>
+  <tpe x="978" y="1746" tpage="Default_1" entry="156">sprPlayerBulletContact_sprPlayerBulletContact_9.tpe</tpe>
   <tpe x="1498" y="1474" tpage="Default_1" entry="159">sprPlayerBulletContact_sprPlayerBulletContact_10.tpe</tpe>
-  <tpe x="1630" y="1426" tpage="Default_1" entry="0">sprTimelineVertical_sprTimelineVertical_0.tpe</tpe>
-  <tpe x="1162" y="2038" tpage="Default_1" entry="2">sprTimelineHorizontal_sprTimelineHorizontal_0.tpe</tpe>
-  <tpe x="2034" y="118" tpage="Default_1" entry="224">sprMezzanineCannon_sprMezzanineCannon_1.tpe</tpe>
+  <tpe x="1162" y="2038" tpage="Default_1" entry="0">sprTimelineHorizontal_sprTimelineHorizontal_0.tpe</tpe>
+  <tpe x="1630" y="1426" tpage="Default_1" entry="2">sprTimelineVertical_sprTimelineVertical_0.tpe</tpe>
+  <tpe x="2034" y="118" tpage="Default_1" entry="227">sprMezzanineCannon_sprMezzanineCannon_1.tpe</tpe>
   <tpe x="1526" y="1474" tpage="Default_1" entry="270">sprPincerActive_sprPincerActive_2.tpe</tpe>
   <tpe x="1638" y="1426" tpage="Default_1" entry="296">sprSidecarCannon_sprSidecarCannon_2.tpe</tpe>
-  <tpe x="1618" y="1982" tpage="Default_1" entry="126">sprRiceCake_sprRiceCake_0.tpe</tpe>
-  <tpe x="1618" y="2010" tpage="Default_1" entry="135">sprPawnTarget_sprPawnTarget_0.tpe</tpe>
-  <tpe x="1618" y="2010" tpage="Default_1" entry="137">sprPawnTarget_sprPawnTarget_1.tpe</tpe>
-  <tpe x="1618" y="2010" tpage="Default_1" entry="140">sprPawnTarget_sprPawnTarget_2.tpe</tpe>
-  <tpe x="1618" y="2010" tpage="Default_1" entry="144">sprPawnTarget_sprPawnTarget_3.tpe</tpe>
-  <tpe x="1618" y="2010" tpage="Default_1" entry="147">sprPawnTarget_sprPawnTarget_4.tpe</tpe>
-  <tpe x="1618" y="2010" tpage="Default_1" entry="149">sprPawnTarget_sprPawnTarget_5.tpe</tpe>
-  <tpe x="1618" y="2010" tpage="Default_1" entry="152">sprPawnTarget_sprPawnTarget_6.tpe</tpe>
-  <tpe x="1618" y="2010" tpage="Default_1" entry="154">sprPawnTarget_sprPawnTarget_7.tpe</tpe>
-  <tpe x="1618" y="2010" tpage="Default_1" entry="156">sprPawnTarget_sprPawnTarget_8.tpe</tpe>
-  <tpe x="1618" y="2010" tpage="Default_1" entry="158">sprPawnTarget_sprPawnTarget_9.tpe</tpe>
-  <tpe x="1922" y="1446" tpage="Default_1" entry="160">sprPawnTarget_sprPawnTarget_10.tpe</tpe>
-  <tpe x="1922" y="1446" tpage="Default_1" entry="162">sprPawnTarget_sprPawnTarget_11.tpe</tpe>
-  <tpe x="1922" y="1446" tpage="Default_1" entry="164">sprPawnTarget_sprPawnTarget_12.tpe</tpe>
-  <tpe x="1922" y="1446" tpage="Default_1" entry="166">sprPawnTarget_sprPawnTarget_13.tpe</tpe>
-  <tpe x="1922" y="1446" tpage="Default_1" entry="168">sprPawnTarget_sprPawnTarget_14.tpe</tpe>
-  <tpe x="1922" y="1446" tpage="Default_1" entry="169">sprPawnTarget_sprPawnTarget_15.tpe</tpe>
-  <tpe x="1922" y="1446" tpage="Default_1" entry="170">sprPawnTarget_sprPawnTarget_16.tpe</tpe>
+  <tpe x="1618" y="1982" tpage="Default_1" entry="117">sprRiceCake_sprRiceCake_0.tpe</tpe>
+  <tpe x="1618" y="2010" tpage="Default_1" entry="129">sprPawnTarget_sprPawnTarget_0.tpe</tpe>
+  <tpe x="1618" y="2010" tpage="Default_1" entry="130">sprPawnTarget_sprPawnTarget_1.tpe</tpe>
+  <tpe x="1618" y="2010" tpage="Default_1" entry="132">sprPawnTarget_sprPawnTarget_2.tpe</tpe>
+  <tpe x="1618" y="2010" tpage="Default_1" entry="133">sprPawnTarget_sprPawnTarget_3.tpe</tpe>
+  <tpe x="1618" y="2010" tpage="Default_1" entry="136">sprPawnTarget_sprPawnTarget_4.tpe</tpe>
+  <tpe x="1618" y="2010" tpage="Default_1" entry="140">sprPawnTarget_sprPawnTarget_5.tpe</tpe>
+  <tpe x="1618" y="2010" tpage="Default_1" entry="143">sprPawnTarget_sprPawnTarget_6.tpe</tpe>
+  <tpe x="1618" y="2010" tpage="Default_1" entry="145">sprPawnTarget_sprPawnTarget_7.tpe</tpe>
+  <tpe x="1618" y="2010" tpage="Default_1" entry="147">sprPawnTarget_sprPawnTarget_8.tpe</tpe>
+  <tpe x="1618" y="2010" tpage="Default_1" entry="150">sprPawnTarget_sprPawnTarget_9.tpe</tpe>
+  <tpe x="1922" y="1446" tpage="Default_1" entry="151">sprPawnTarget_sprPawnTarget_10.tpe</tpe>
+  <tpe x="1922" y="1446" tpage="Default_1" entry="155">sprPawnTarget_sprPawnTarget_11.tpe</tpe>
+  <tpe x="1922" y="1446" tpage="Default_1" entry="158">sprPawnTarget_sprPawnTarget_12.tpe</tpe>
+  <tpe x="1922" y="1446" tpage="Default_1" entry="161">sprPawnTarget_sprPawnTarget_13.tpe</tpe>
+  <tpe x="1922" y="1446" tpage="Default_1" entry="163">sprPawnTarget_sprPawnTarget_14.tpe</tpe>
+  <tpe x="1922" y="1446" tpage="Default_1" entry="166">sprPawnTarget_sprPawnTarget_15.tpe</tpe>
+  <tpe x="1922" y="1446" tpage="Default_1" entry="169">sprPawnTarget_sprPawnTarget_16.tpe</tpe>
   <tpe x="1922" y="1446" tpage="Default_1" entry="171">sprPawnTarget_sprPawnTarget_17.tpe</tpe>
   <tpe x="1922" y="1446" tpage="Default_1" entry="172">sprPawnTarget_sprPawnTarget_18.tpe</tpe>
-  <tpe x="1922" y="1446" tpage="Default_1" entry="174">sprPawnTarget_sprPawnTarget_19.tpe</tpe>
-  <tpe x="1950" y="1446" tpage="Default_1" entry="176">sprPawnTarget_sprPawnTarget_20.tpe</tpe>
-  <tpe x="1950" y="1446" tpage="Default_1" entry="177">sprPawnTarget_sprPawnTarget_21.tpe</tpe>
-  <tpe x="1950" y="1446" tpage="Default_1" entry="179">sprPawnTarget_sprPawnTarget_22.tpe</tpe>
-  <tpe x="1950" y="1446" tpage="Default_1" entry="181">sprPawnTarget_sprPawnTarget_23.tpe</tpe>
-  <tpe x="1950" y="1446" tpage="Default_1" entry="182">sprPawnTarget_sprPawnTarget_24.tpe</tpe>
-  <tpe x="1950" y="1446" tpage="Default_1" entry="183">sprPawnTarget_sprPawnTarget_25.tpe</tpe>
-  <tpe x="1950" y="1446" tpage="Default_1" entry="185">sprPawnTarget_sprPawnTarget_26.tpe</tpe>
-  <tpe x="1950" y="1446" tpage="Default_1" entry="187">sprPawnTarget_sprPawnTarget_27.tpe</tpe>
-  <tpe x="1950" y="1446" tpage="Default_1" entry="189">sprPawnTarget_sprPawnTarget_28.tpe</tpe>
-  <tpe x="1950" y="1446" tpage="Default_1" entry="191">sprPawnTarget_sprPawnTarget_29.tpe</tpe>
-  <tpe x="1978" y="1446" tpage="Default_1" entry="193">sprPawnTarget_sprPawnTarget_30.tpe</tpe>
-  <tpe x="1978" y="1446" tpage="Default_1" entry="195">sprPawnTarget_sprPawnTarget_31.tpe</tpe>
-  <tpe x="1978" y="1446" tpage="Default_1" entry="197">sprPawnTarget_sprPawnTarget_32.tpe</tpe>
-  <tpe x="1978" y="1446" tpage="Default_1" entry="198">sprPawnTarget_sprPawnTarget_33.tpe</tpe>
-  <tpe x="1978" y="1446" tpage="Default_1" entry="200">sprPawnTarget_sprPawnTarget_34.tpe</tpe>
-  <tpe x="1978" y="1446" tpage="Default_1" entry="202">sprPawnTarget_sprPawnTarget_35.tpe</tpe>
-  <tpe x="1978" y="1446" tpage="Default_1" entry="203">sprPawnTarget_sprPawnTarget_36.tpe</tpe>
-  <tpe x="1978" y="1446" tpage="Default_1" entry="205">sprPawnTarget_sprPawnTarget_37.tpe</tpe>
-  <tpe x="1978" y="1446" tpage="Default_1" entry="206">sprPawnTarget_sprPawnTarget_38.tpe</tpe>
-  <tpe x="1978" y="1446" tpage="Default_1" entry="208">sprPawnTarget_sprPawnTarget_39.tpe</tpe>
-  <tpe x="2006" y="1446" tpage="Default_1" entry="209">sprPawnTarget_sprPawnTarget_40.tpe</tpe>
-  <tpe x="2006" y="1446" tpage="Default_1" entry="210">sprPawnTarget_sprPawnTarget_41.tpe</tpe>
+  <tpe x="1922" y="1446" tpage="Default_1" entry="173">sprPawnTarget_sprPawnTarget_19.tpe</tpe>
+  <tpe x="1950" y="1446" tpage="Default_1" entry="174">sprPawnTarget_sprPawnTarget_20.tpe</tpe>
+  <tpe x="1950" y="1446" tpage="Default_1" entry="175">sprPawnTarget_sprPawnTarget_21.tpe</tpe>
+  <tpe x="1950" y="1446" tpage="Default_1" entry="176">sprPawnTarget_sprPawnTarget_22.tpe</tpe>
+  <tpe x="1950" y="1446" tpage="Default_1" entry="178">sprPawnTarget_sprPawnTarget_23.tpe</tpe>
+  <tpe x="1950" y="1446" tpage="Default_1" entry="180">sprPawnTarget_sprPawnTarget_24.tpe</tpe>
+  <tpe x="1950" y="1446" tpage="Default_1" entry="182">sprPawnTarget_sprPawnTarget_25.tpe</tpe>
+  <tpe x="1950" y="1446" tpage="Default_1" entry="184">sprPawnTarget_sprPawnTarget_26.tpe</tpe>
+  <tpe x="1950" y="1446" tpage="Default_1" entry="185">sprPawnTarget_sprPawnTarget_27.tpe</tpe>
+  <tpe x="1950" y="1446" tpage="Default_1" entry="186">sprPawnTarget_sprPawnTarget_28.tpe</tpe>
+  <tpe x="1950" y="1446" tpage="Default_1" entry="187">sprPawnTarget_sprPawnTarget_29.tpe</tpe>
+  <tpe x="1978" y="1446" tpage="Default_1" entry="190">sprPawnTarget_sprPawnTarget_30.tpe</tpe>
+  <tpe x="1978" y="1446" tpage="Default_1" entry="192">sprPawnTarget_sprPawnTarget_31.tpe</tpe>
+  <tpe x="1978" y="1446" tpage="Default_1" entry="193">sprPawnTarget_sprPawnTarget_32.tpe</tpe>
+  <tpe x="1978" y="1446" tpage="Default_1" entry="195">sprPawnTarget_sprPawnTarget_33.tpe</tpe>
+  <tpe x="1978" y="1446" tpage="Default_1" entry="197">sprPawnTarget_sprPawnTarget_34.tpe</tpe>
+  <tpe x="1978" y="1446" tpage="Default_1" entry="199">sprPawnTarget_sprPawnTarget_35.tpe</tpe>
+  <tpe x="1978" y="1446" tpage="Default_1" entry="201">sprPawnTarget_sprPawnTarget_36.tpe</tpe>
+  <tpe x="1978" y="1446" tpage="Default_1" entry="203">sprPawnTarget_sprPawnTarget_37.tpe</tpe>
+  <tpe x="1978" y="1446" tpage="Default_1" entry="205">sprPawnTarget_sprPawnTarget_38.tpe</tpe>
+  <tpe x="1978" y="1446" tpage="Default_1" entry="206">sprPawnTarget_sprPawnTarget_39.tpe</tpe>
+  <tpe x="2006" y="1446" tpage="Default_1" entry="208">sprPawnTarget_sprPawnTarget_40.tpe</tpe>
+  <tpe x="2006" y="1446" tpage="Default_1" entry="209">sprPawnTarget_sprPawnTarget_41.tpe</tpe>
   <tpe x="2006" y="1446" tpage="Default_1" entry="211">sprPawnTarget_sprPawnTarget_42.tpe</tpe>
   <tpe x="2006" y="1446" tpage="Default_1" entry="212">sprPawnTarget_sprPawnTarget_43.tpe</tpe>
   <tpe x="2006" y="1446" tpage="Default_1" entry="213">sprPawnTarget_sprPawnTarget_44.tpe</tpe>
@@ -218,28 +218,28 @@
   <tpe x="2006" y="1446" tpage="Default_1" entry="215">sprPawnTarget_sprPawnTarget_46.tpe</tpe>
   <tpe x="2006" y="1446" tpage="Default_1" entry="216">sprPawnTarget_sprPawnTarget_47.tpe</tpe>
   <tpe x="2006" y="1446" tpage="Default_1" entry="217">sprPawnTarget_sprPawnTarget_48.tpe</tpe>
-  <tpe x="2006" y="1446" tpage="Default_1" entry="218">sprPawnTarget_sprPawnTarget_49.tpe</tpe>
-  <tpe x="1718" y="1450" tpage="Default_1" entry="219">sprPawnTarget_sprPawnTarget_50.tpe</tpe>
+  <tpe x="2006" y="1446" tpage="Default_1" entry="219">sprPawnTarget_sprPawnTarget_49.tpe</tpe>
+  <tpe x="1718" y="1450" tpage="Default_1" entry="220">sprPawnTarget_sprPawnTarget_50.tpe</tpe>
   <tpe x="1718" y="1450" tpage="Default_1" entry="221">sprPawnTarget_sprPawnTarget_51.tpe</tpe>
-  <tpe x="1718" y="1450" tpage="Default_1" entry="223">sprPawnTarget_sprPawnTarget_52.tpe</tpe>
-  <tpe x="1718" y="1450" tpage="Default_1" entry="225">sprPawnTarget_sprPawnTarget_53.tpe</tpe>
-  <tpe x="1718" y="1450" tpage="Default_1" entry="227">sprPawnTarget_sprPawnTarget_54.tpe</tpe>
-  <tpe x="1718" y="1450" tpage="Default_1" entry="229">sprPawnTarget_sprPawnTarget_55.tpe</tpe>
-  <tpe x="1718" y="1450" tpage="Default_1" entry="231">sprPawnTarget_sprPawnTarget_56.tpe</tpe>
-  <tpe x="1718" y="1450" tpage="Default_1" entry="233">sprPawnTarget_sprPawnTarget_57.tpe</tpe>
-  <tpe x="1718" y="1450" tpage="Default_1" entry="235">sprPawnTarget_sprPawnTarget_58.tpe</tpe>
-  <tpe x="1718" y="1450" tpage="Default_1" entry="237">sprPawnTarget_sprPawnTarget_59.tpe</tpe>
-  <tpe x="1746" y="1450" tpage="Default_1" entry="249">sprNomad_sprNomad_0.tpe</tpe>
+  <tpe x="1718" y="1450" tpage="Default_1" entry="222">sprPawnTarget_sprPawnTarget_52.tpe</tpe>
+  <tpe x="1718" y="1450" tpage="Default_1" entry="223">sprPawnTarget_sprPawnTarget_53.tpe</tpe>
+  <tpe x="1718" y="1450" tpage="Default_1" entry="224">sprPawnTarget_sprPawnTarget_54.tpe</tpe>
+  <tpe x="1718" y="1450" tpage="Default_1" entry="226">sprPawnTarget_sprPawnTarget_55.tpe</tpe>
+  <tpe x="1718" y="1450" tpage="Default_1" entry="228">sprPawnTarget_sprPawnTarget_56.tpe</tpe>
+  <tpe x="1718" y="1450" tpage="Default_1" entry="230">sprPawnTarget_sprPawnTarget_57.tpe</tpe>
+  <tpe x="1718" y="1450" tpage="Default_1" entry="232">sprPawnTarget_sprPawnTarget_58.tpe</tpe>
+  <tpe x="1718" y="1450" tpage="Default_1" entry="234">sprPawnTarget_sprPawnTarget_59.tpe</tpe>
+  <tpe x="1746" y="1450" tpage="Default_1" entry="246">sprNomad_sprNomad_0.tpe</tpe>
   <tpe x="1666" y="1450" tpage="Default_1" entry="261">sprPawn_sprPawn_0.tpe</tpe>
-  <tpe x="1338" y="1502" tpage="Default_1" entry="114">sprEnemyBulletContact_sprEnemyBulletContact_7.tpe</tpe>
-  <tpe x="1774" y="1450" tpage="Default_1" entry="115">sprEnemyBulletContact_sprEnemyBulletContact_8.tpe</tpe>
+  <tpe x="1338" y="1502" tpage="Default_1" entry="115">sprEnemyBulletContact_sprEnemyBulletContact_7.tpe</tpe>
+  <tpe x="1774" y="1450" tpage="Default_1" entry="116">sprEnemyBulletContact_sprEnemyBulletContact_8.tpe</tpe>
   <tpe x="1694" y="1450" tpage="Default_1" entry="153">sprPlayerBulletContact_sprPlayerBulletContact_7.tpe</tpe>
-  <tpe x="1638" y="1454" tpage="Default_1" entry="155">sprPlayerBulletContact_sprPlayerBulletContact_8.tpe</tpe>
-  <tpe x="1546" y="1770" tpage="Default_1" entry="111">sprEnemyBulletContact_sprEnemyBulletContact_5.tpe</tpe>
+  <tpe x="1638" y="1454" tpage="Default_1" entry="154">sprPlayerBulletContact_sprPlayerBulletContact_8.tpe</tpe>
+  <tpe x="1546" y="1770" tpage="Default_1" entry="112">sprEnemyBulletContact_sprEnemyBulletContact_5.tpe</tpe>
   <tpe x="2030" y="1210" tpage="Default_1" entry="113">sprEnemyBulletContact_sprEnemyBulletContact_6.tpe</tpe>
   <tpe x="2002" y="1134" tpage="Default_1" entry="148">sprPlayerBulletContact_sprPlayerBulletContact_5.tpe</tpe>
-  <tpe x="2026" y="514" tpage="Default_1" entry="151">sprPlayerBulletContact_sprPlayerBulletContact_6.tpe</tpe>
-  <tpe x="2030" y="306" tpage="Default_1" entry="248">sprMezzanineCannon_sprMezzanineCannon_18.tpe</tpe>
+  <tpe x="2026" y="514" tpage="Default_1" entry="149">sprPlayerBulletContact_sprPlayerBulletContact_6.tpe</tpe>
+  <tpe x="2030" y="306" tpage="Default_1" entry="250">sprMezzanineCannon_sprMezzanineCannon_18.tpe</tpe>
   <tpe x="2034" y="1002" tpage="Default_1" entry="1">sprTypingPrompt_sprTypingPrompt_0.tpe</tpe>
   <tpe x="2034" y="1002" tpage="Default_1" entry="3">sprTypingPrompt_sprTypingPrompt_1.tpe</tpe>
   <tpe x="2034" y="1002" tpage="Default_1" entry="4">sprTypingPrompt_sprTypingPrompt_2.tpe</tpe>
@@ -262,67 +262,67 @@
   <tpe x="2034" y="1002" tpage="Default_1" entry="21">sprTypingPrompt_sprTypingPrompt_19.tpe</tpe>
   <tpe x="2034" y="1002" tpage="Default_1" entry="22">sprTypingPrompt_sprTypingPrompt_20.tpe</tpe>
   <tpe x="2034" y="1002" tpage="Default_1" entry="23">sprTypingPrompt_sprTypingPrompt_21.tpe</tpe>
-  <tpe x="2034" y="1002" tpage="Default_1" entry="25">sprTypingPrompt_sprTypingPrompt_22.tpe</tpe>
-  <tpe x="2034" y="1002" tpage="Default_1" entry="27">sprTypingPrompt_sprTypingPrompt_23.tpe</tpe>
-  <tpe x="2034" y="1002" tpage="Default_1" entry="30">sprTypingPrompt_sprTypingPrompt_24.tpe</tpe>
-  <tpe x="2034" y="1002" tpage="Default_1" entry="32">sprTypingPrompt_sprTypingPrompt_25.tpe</tpe>
-  <tpe x="2034" y="1002" tpage="Default_1" entry="35">sprTypingPrompt_sprTypingPrompt_26.tpe</tpe>
-  <tpe x="2034" y="1002" tpage="Default_1" entry="36">sprTypingPrompt_sprTypingPrompt_27.tpe</tpe>
-  <tpe x="2034" y="1002" tpage="Default_1" entry="38">sprTypingPrompt_sprTypingPrompt_28.tpe</tpe>
-  <tpe x="2034" y="1002" tpage="Default_1" entry="41">sprTypingPrompt_sprTypingPrompt_29.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="43">sprTypingPrompt_sprTypingPrompt_30.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="45">sprTypingPrompt_sprTypingPrompt_31.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="48">sprTypingPrompt_sprTypingPrompt_32.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="50">sprTypingPrompt_sprTypingPrompt_33.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="52">sprTypingPrompt_sprTypingPrompt_34.tpe</tpe>
-  <tpe x="1846" y="1418" tpage="Default_1" entry="55">sprTypingPrompt_sprTypingPrompt_35.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="56">sprTypingPrompt_sprTypingPrompt_36.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="60">sprTypingPrompt_sprTypingPrompt_37.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="61">sprTypingPrompt_sprTypingPrompt_38.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="64">sprTypingPrompt_sprTypingPrompt_39.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="66">sprTypingPrompt_sprTypingPrompt_40.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="70">sprTypingPrompt_sprTypingPrompt_41.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="72">sprTypingPrompt_sprTypingPrompt_42.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="74">sprTypingPrompt_sprTypingPrompt_43.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="76">sprTypingPrompt_sprTypingPrompt_44.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="78">sprTypingPrompt_sprTypingPrompt_45.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="80">sprTypingPrompt_sprTypingPrompt_46.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="81">sprTypingPrompt_sprTypingPrompt_47.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="84">sprTypingPrompt_sprTypingPrompt_48.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="85">sprTypingPrompt_sprTypingPrompt_49.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="87">sprTypingPrompt_sprTypingPrompt_50.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="89">sprTypingPrompt_sprTypingPrompt_51.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="91">sprTypingPrompt_sprTypingPrompt_52.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="93">sprTypingPrompt_sprTypingPrompt_53.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="95">sprTypingPrompt_sprTypingPrompt_54.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="98">sprTypingPrompt_sprTypingPrompt_55.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="100">sprTypingPrompt_sprTypingPrompt_56.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="103">sprTypingPrompt_sprTypingPrompt_57.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="105">sprTypingPrompt_sprTypingPrompt_58.tpe</tpe>
-  <tpe x="2034" y="722" tpage="Default_1" entry="109">sprTypingPrompt_sprTypingPrompt_59.tpe</tpe>
-  <tpe x="1610" y="1882" tpage="Default_1" entry="190">sprRiceCakeActive_sprRiceCakeActive_3.tpe</tpe>
-  <tpe x="1554" y="1474" tpage="Default_1" entry="192">sprRiceCakeActive_sprRiceCakeActive_4.tpe</tpe>
+  <tpe x="2034" y="1002" tpage="Default_1" entry="24">sprTypingPrompt_sprTypingPrompt_22.tpe</tpe>
+  <tpe x="2034" y="1002" tpage="Default_1" entry="25">sprTypingPrompt_sprTypingPrompt_23.tpe</tpe>
+  <tpe x="2034" y="1002" tpage="Default_1" entry="26">sprTypingPrompt_sprTypingPrompt_24.tpe</tpe>
+  <tpe x="2034" y="1002" tpage="Default_1" entry="29">sprTypingPrompt_sprTypingPrompt_25.tpe</tpe>
+  <tpe x="2034" y="1002" tpage="Default_1" entry="31">sprTypingPrompt_sprTypingPrompt_26.tpe</tpe>
+  <tpe x="2034" y="1002" tpage="Default_1" entry="32">sprTypingPrompt_sprTypingPrompt_27.tpe</tpe>
+  <tpe x="2034" y="1002" tpage="Default_1" entry="34">sprTypingPrompt_sprTypingPrompt_28.tpe</tpe>
+  <tpe x="2034" y="1002" tpage="Default_1" entry="37">sprTypingPrompt_sprTypingPrompt_29.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="39">sprTypingPrompt_sprTypingPrompt_30.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="41">sprTypingPrompt_sprTypingPrompt_31.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="44">sprTypingPrompt_sprTypingPrompt_32.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="46">sprTypingPrompt_sprTypingPrompt_33.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="48">sprTypingPrompt_sprTypingPrompt_34.tpe</tpe>
+  <tpe x="1846" y="1418" tpage="Default_1" entry="50">sprTypingPrompt_sprTypingPrompt_35.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="53">sprTypingPrompt_sprTypingPrompt_36.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="54">sprTypingPrompt_sprTypingPrompt_37.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="56">sprTypingPrompt_sprTypingPrompt_38.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="59">sprTypingPrompt_sprTypingPrompt_39.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="61">sprTypingPrompt_sprTypingPrompt_40.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="63">sprTypingPrompt_sprTypingPrompt_41.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="66">sprTypingPrompt_sprTypingPrompt_42.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="68">sprTypingPrompt_sprTypingPrompt_43.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="71">sprTypingPrompt_sprTypingPrompt_44.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="74">sprTypingPrompt_sprTypingPrompt_45.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="76">sprTypingPrompt_sprTypingPrompt_46.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="78">sprTypingPrompt_sprTypingPrompt_47.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="80">sprTypingPrompt_sprTypingPrompt_48.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="82">sprTypingPrompt_sprTypingPrompt_49.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="84">sprTypingPrompt_sprTypingPrompt_50.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="86">sprTypingPrompt_sprTypingPrompt_51.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="88">sprTypingPrompt_sprTypingPrompt_52.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="90">sprTypingPrompt_sprTypingPrompt_53.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="92">sprTypingPrompt_sprTypingPrompt_54.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="94">sprTypingPrompt_sprTypingPrompt_55.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="96">sprTypingPrompt_sprTypingPrompt_56.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="98">sprTypingPrompt_sprTypingPrompt_57.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="100">sprTypingPrompt_sprTypingPrompt_58.tpe</tpe>
+  <tpe x="2034" y="722" tpage="Default_1" entry="102">sprTypingPrompt_sprTypingPrompt_59.tpe</tpe>
+  <tpe x="1610" y="1882" tpage="Default_1" entry="194">sprRiceCakeActive_sprRiceCakeActive_3.tpe</tpe>
+  <tpe x="1554" y="1474" tpage="Default_1" entry="196">sprRiceCakeActive_sprRiceCakeActive_4.tpe</tpe>
   <tpe x="1666" y="1426" tpage="Default_1" entry="256">sprPlayerEnergyBall_sprPlayerEnergyBall_0.tpe</tpe>
-  <tpe x="274" y="2034" tpage="Default_1" entry="106">sprEnemyBulletContact_sprEnemyBulletContact_3.tpe</tpe>
-  <tpe x="1302" y="1706" tpage="Default_1" entry="108">sprEnemyBulletContact_sprEnemyBulletContact_4.tpe</tpe>
-  <tpe x="2034" y="198" tpage="Default_1" entry="143">sprPlayerBulletContact_sprPlayerBulletContact_3.tpe</tpe>
-  <tpe x="2034" y="1446" tpage="Default_1" entry="145">sprPlayerBulletContact_sprPlayerBulletContact_4.tpe</tpe>
+  <tpe x="274" y="2034" tpage="Default_1" entry="110">sprEnemyBulletContact_sprEnemyBulletContact_3.tpe</tpe>
+  <tpe x="1302" y="1706" tpage="Default_1" entry="111">sprEnemyBulletContact_sprEnemyBulletContact_4.tpe</tpe>
+  <tpe x="2034" y="198" tpage="Default_1" entry="142">sprPlayerBulletContact_sprPlayerBulletContact_3.tpe</tpe>
+  <tpe x="2034" y="1446" tpage="Default_1" entry="144">sprPlayerBulletContact_sprPlayerBulletContact_4.tpe</tpe>
   <tpe x="1362" y="1502" tpage="Default_1" entry="269">sprPincerActive_sprPincerActive_1.tpe</tpe>
   <tpe x="1798" y="1450" tpage="Default_1" entry="295">sprSidecarCannon_sprSidecarCannon_1.tpe</tpe>
-  <tpe x="2042" y="2" tpage="Default_1" entry="220">sprMezzanineCannon_sprMezzanineCannon_0.tpe</tpe>
-  <tpe x="942" y="2038" tpage="Default_1" entry="250">sprEnemyBullet_sprEnemyBullet_0.tpe</tpe>
+  <tpe x="2042" y="2" tpage="Default_1" entry="225">sprMezzanineCannon_sprMezzanineCannon_0.tpe</tpe>
+  <tpe x="942" y="2038" tpage="Default_1" entry="249">sprEnemyBullet_sprEnemyBullet_0.tpe</tpe>
   <tpe x="2002" y="806" tpage="Default_1" entry="263">sprPlayerBullet_sprPlayerBullet_0.tpe</tpe>
-  <tpe x="1330" y="1662" tpage="Default_1" entry="101">sprEnemyBulletContact_sprEnemyBulletContact_1.tpe</tpe>
-  <tpe x="1602" y="1758" tpage="Default_1" entry="104">sprEnemyBulletContact_sprEnemyBulletContact_2.tpe</tpe>
-  <tpe x="1310" y="2026" tpage="Default_1" entry="138">sprPlayerBulletContact_sprPlayerBulletContact_1.tpe</tpe>
-  <tpe x="2034" y="1230" tpage="Default_1" entry="141">sprPlayerBulletContact_sprPlayerBulletContact_2.tpe</tpe>
-  <tpe x="1574" y="1706" tpage="Default_1" entry="134">sprite22_sprite22_0.tpe</tpe>
+  <tpe x="1330" y="1662" tpage="Default_1" entry="108">sprEnemyBulletContact_sprEnemyBulletContact_1.tpe</tpe>
+  <tpe x="1310" y="2026" tpage="Default_1" entry="109">sprEnemyBulletContact_sprEnemyBulletContact_2.tpe</tpe>
+  <tpe x="1602" y="1758" tpage="Default_1" entry="137">sprPlayerBulletContact_sprPlayerBulletContact_1.tpe</tpe>
+  <tpe x="2034" y="1230" tpage="Default_1" entry="139">sprPlayerBulletContact_sprPlayerBulletContact_2.tpe</tpe>
+  <tpe x="1574" y="1706" tpage="Default_1" entry="152">sprite22_sprite22_0.tpe</tpe>
   <tpe x="2002" y="1350" tpage="Default_1" entry="255">sprCannonBullet_sprCannonBullet_0.tpe</tpe>
-  <tpe x="2038" y="306" tpage="Default_1" entry="186">sprRiceCakeActive_sprRiceCakeActive_1.tpe</tpe>
-  <tpe x="2030" y="386" tpage="Default_1" entry="188">sprRiceCakeActive_sprRiceCakeActive_2.tpe</tpe>
-  <tpe x="1886" y="1406" tpage="Default_1" entry="97">sprEnemyBulletContact_sprEnemyBulletContact_0.tpe</tpe>
-  <tpe x="606" y="2018" tpage="Default_1" entry="136">sprPlayerBulletContact_sprPlayerBulletContact_0.tpe</tpe>
+  <tpe x="2038" y="306" tpage="Default_1" entry="189">sprRiceCakeActive_sprRiceCakeActive_1.tpe</tpe>
+  <tpe x="2030" y="386" tpage="Default_1" entry="191">sprRiceCakeActive_sprRiceCakeActive_2.tpe</tpe>
+  <tpe x="1886" y="1406" tpage="Default_1" entry="107">sprEnemyBulletContact_sprEnemyBulletContact_0.tpe</tpe>
+  <tpe x="606" y="2018" tpage="Default_1" entry="134">sprPlayerBulletContact_sprPlayerBulletContact_0.tpe</tpe>
   <tpe x="1562" y="2030" tpage="Default_1" entry="268">sprPincerActive_sprPincerActive_0.tpe</tpe>
   <tpe x="1638" y="1478" tpage="Default_1" entry="294">sprSidecarCannon_sprSidecarCannon_0.tpe</tpe>
-  <tpe x="1566" y="1770" tpage="Default_1" entry="184">sprRiceCakeActive_sprRiceCakeActive_0.tpe</tpe>
+  <tpe x="1566" y="1770" tpage="Default_1" entry="188">sprRiceCakeActive_sprRiceCakeActive_0.tpe</tpe>
 </TextureGroup>

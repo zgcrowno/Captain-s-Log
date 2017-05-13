@@ -6,17 +6,23 @@ if(position_meeting(x, y, global.player)) {
     if(scrIsFacingPort()) {
         global.player.currentHPThrustersPort -= damage;
         if(global.player.currentHPThrustersPort <= 0) {
-            scrDecrementAction(global.util.actionMapThrustersPortString, global.util.actionQueueThrustersPortString, true);
+            with(global.player) {
+                scrDecrementAction(global.util.actionMapThrustersPortString, global.util.actionQueueThrustersPortString, true);
+            }
         }
     } else if(scrIsFacingStarboard()) {
         global.player.currentHPThrustersStarboard -= damage;
         if(global.player.currentHPThrustersStarboard <= 0) {
-            scrDecrementAction(global.util.actionMapThrustersStarboardString, global.util.actionQueueThrustersStarboardString, true);
+            with(global.player) {
+                scrDecrementAction(global.util.actionMapThrustersStarboardString, global.util.actionQueueThrustersStarboardString, true);
+            }
         }
     } else if(scrIsFacingBow()) {
         global.player.currentHPThrustersBow -= damage;
         if(global.player.currentHPThrustersBow <= 0) {
-            scrDecrementAction(global.util.actionMapThrustersBowString, global.util.actionQueueThrustersBowString, true);
+            with(global.player) {
+                scrDecrementAction(global.util.actionMapThrustersBowString, global.util.actionQueueThrustersBowString, true);
+            }
         }
     } else if(scrIsFacingStern()) {
         if(global.player.object_index = objRiceCake) {
@@ -24,7 +30,9 @@ if(position_meeting(x, y, global.player)) {
         } else { 
             global.player.currentHPThrustersStern -= damage;
             if(global.player.currentHPThrustersStern <= 0) {
-                scrDecrementAction(global.util.actionMapThrustersSternString, global.util.actionQueueThrustersSternString, true);
+                with(global.player) {
+                    scrDecrementAction(global.util.actionMapThrustersSternString, global.util.actionQueueThrustersSternString, true);
+                }
             }
         }
     }

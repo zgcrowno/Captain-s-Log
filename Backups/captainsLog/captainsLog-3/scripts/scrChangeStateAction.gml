@@ -12,7 +12,7 @@ if(strMap == global.util.actionMapGunsString || strMap == global.util.actionMapC
     }
 } else {
     if(actionMap[? strMap] == toActivate) {
-        if(!(scrTouchedTimelineThisTurn() && !alreadyTouchedTimeline)) {
+        if(!(callingFunction == script_get_name(scrResetActionMap))) {
             actionMap[? strMap] = inactive;
             if(ds_list_find_index(actionQueue, strQueue) != -1) {
                 ds_list_delete(actionQueue, ds_list_find_index(actionQueue, strQueue));
@@ -36,4 +36,3 @@ if(strMap == global.util.actionMapGunsString || strMap == global.util.actionMapC
         ds_list_add(actionQueue, strQueue);
     }
 }
-show_debug_message("something");

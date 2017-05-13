@@ -496,6 +496,7 @@
           <script>scripts\scrGetProjectileConsumptiveGridBoxes.gml</script>
           <script>scripts\scrGridBoxIsProjectileConsumptive.gml</script>
           <script>scripts\scrConsumeProjectile.gml</script>
+          <script>scripts\scrAddAction.gml</script>
         </scripts>
         <scripts name="playerShip">
           <scripts name="ricecake">
@@ -635,10 +636,10 @@
   </objects>
   <rooms name="rooms">
     <rooms name="test">
+      <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestRiceCake</room>
       <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTestHalitosis</room>
-      <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestFlasher</room>
       <room>rooms\rmTestSidecar</room>
       <room>rooms\rmTest2</room>

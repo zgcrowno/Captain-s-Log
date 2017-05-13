@@ -7,7 +7,6 @@ for(var i = 0; i < array_length_1d(portShields); i++) {
             portShields[i].sprite_index = sprGridBoxShield;
         } else {
             if(currentHPShieldsPort <= 0) {
-                show_debug_message(1);
                 actionMap[? global.util.actionMapShieldsPortString] = inactive;
             }
             portShields[i].sprite_index = sprGridBox;
@@ -20,7 +19,6 @@ for(var i = 0; i < array_length_1d(starboardShields); i++) {
             starboardShields[i].sprite_index = sprGridBoxShield;
         } else {
             if(currentHPShieldsStarboard <= 0) {
-                show_debug_message(2);
                 actionMap[? global.util.actionMapShieldsStarboardString] = inactive;
             }
             starboardShields[i].sprite_index = sprGridBox;
@@ -33,7 +31,6 @@ for(var i = 0; i < array_length_1d(bowShields); i++) {
             bowShields[i].sprite_index = sprGridBoxShield;
         } else {
             if(currentHPShieldsBow <= 0) {
-                show_debug_message(3);
                 actionMap[? global.util.actionMapShieldsBowString] = inactive;
             }
             
@@ -50,7 +47,6 @@ for(var i = 0; i < array_length_1d(sternShields); i++) {
             sternShields[i].sprite_index = sprGridBoxShield;
         } else {
             if(currentHPShieldsStern <= 0) {
-                show_debug_message(4);
                 actionMap[? global.util.actionMapShieldsSternString] = inactive;
             }
             
