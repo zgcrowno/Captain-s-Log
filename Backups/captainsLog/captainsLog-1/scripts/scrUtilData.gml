@@ -1,6 +1,14 @@
 //The Difficulty Modifier for the Game
 difficultyModifier = 2;
 
+//The different ports which make up the game's overall view
+hudPort = 0;
+radarPort = 1;
+
+//The different views
+hudView = 0;
+radarView = 1;
+
 //The distance by which the background moves when the player ship's thrusters are active
 backgroundMovementDistance = 50;
 
@@ -421,6 +429,22 @@ designationArray[398] = "Yablonsky";
 designationArray[399] = "Yarmolnik";
 
 //Util strings to be accessed by other scripts
+commandsString = "Commands: ";
+thrustersString = "Thrusters";
+shieldsString = "Shields";
+portString = "Port";
+starboardString = "Starboard";
+bowString = "Bow";
+sternString = "Stern";
+clockString = "Clock";
+countString = "Count";
+allString = "All";
+rotateString = "Rotate";
+fireString = "Fire";
+poundString = "[\#]";
+heightString = "Height";
+cutString = "Cut";
+
 actionMapThrustersPortString = "Thrusters Port";
 actionMapThrustersStarboardString = "Thrusters Starboard";
 actionMapThrustersBowString = "Thrusters Bow";

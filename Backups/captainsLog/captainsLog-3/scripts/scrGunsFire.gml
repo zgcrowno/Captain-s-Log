@@ -11,4 +11,5 @@ if(actionMap[? global.util.actionMapGunsString]) {
         }
         bullet.image_angle = image_angle;
     }
+    global.allProjectiles = scrGetProjectiles();
 }

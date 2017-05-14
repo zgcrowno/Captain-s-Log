@@ -140,9 +140,6 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="gui">
-      <scripts name="data">
-        <script>scripts\scrGUIData.gml</script>
-      </scripts>
       <scripts name="draw">
         <script>scripts\scrDrawGUI.gml</script>
         <scripts name="thrusters">
@@ -538,11 +535,6 @@
         <scripts name="util">
           <script>scripts\scrGridBoxTimelineActions.gml</script>
         </scripts>
-      </scripts>
-    </scripts>
-    <scripts name="timeline">
-      <scripts name="data">
-        <script>scripts\scrTimelineData.gml</script>
       </scripts>
     </scripts>
     <scripts name="util">

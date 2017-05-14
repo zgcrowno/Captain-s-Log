@@ -1,4 +1,4 @@
-projectiles = scrGetProjectiles();
+projectiles = global.allProjectiles;
 gridBoxes = global.allGridBoxes;
 
 draw_set_color(c_white);

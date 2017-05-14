@@ -1,15 +1,15 @@
-draw_text(global.hud.commandsRightBound - string_width("Port"), 
+draw_text(global.hud.commandsRightBound - string_width(global.util.portString), 
           global.hud.commandsUpperBound, 
-          "Port");
-draw_text(global.hud.commandsRightBound - string_width("Starboard"), 
-          global.hud.commandsUpperBound + string_height("Commands: "), 
-          "Starboard");
-draw_text(global.hud.commandsRightBound - string_width("Bow"), 
-          global.hud.commandsUpperBound + 2 * string_height("Commands: "), 
-          "Bow");
-draw_text(global.hud.commandsRightBound - string_width("Stern"), 
-          global.hud.commandsUpperBound + 3 * string_height("Commands: "), 
-          "Stern");
-draw_text(global.hud.commandsRightBound - string_width("Rotate"), 
-          global.hud.commandsUpperBound + 4 * string_height("Commands: "), 
-          "Rotate");
+          global.util.portString);
+draw_text(global.hud.commandsRightBound - string_width(global.util.starboardString), 
+          global.hud.commandsUpperBound + string_height(global.util.commandsString), 
+          global.util.starboardString);
+draw_text(global.hud.commandsRightBound - string_width(global.util.bowString), 
+          global.hud.commandsUpperBound + 2 * string_height(global.util.commandsString), 
+          global.util.bowString);
+draw_text(global.hud.commandsRightBound - string_width(global.util.sternString), 
+          global.hud.commandsUpperBound + 3 * string_height(global.util.commandsString), 
+          global.util.sternString);
+draw_text(global.hud.commandsRightBound - string_width(global.util.rotateString), 
+          global.hud.commandsUpperBound + 4 * string_height(global.util.commandsString), 
+          global.util.rotateString);

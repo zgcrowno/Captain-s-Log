@@ -7,19 +7,19 @@ if(actionMap[? global.util.actionMapThrustersClockString] > 0) {
             if(actionMap[? global.util.actionMapThrustersClockString] >= 2) {
                 image_angle += 180;
                 if(object_is_ancestor(object_index, objPlayerShip)) {
-                    view_angle[0] += 180;
+                    view_angle[global.util.hudView] += 180;
                 }
                 scrDecrementAction(global.util.actionMapThrustersClockString, global.util.actionQueueThrustersClockString, false);
             } else {
                 image_angle += 270;
                 if(object_is_ancestor(object_index, objPlayerShip)) {
-                    view_angle[0] += 270;
+                    view_angle[global.util.hudView] += 270;
                 }
             }
         } else {
             image_angle += 270;
             if(object_is_ancestor(object_index, objPlayerShip)) {
-                view_angle[0] += 270;
+                view_angle[global.util.hudView] += 270;
             }
         }
     } else {

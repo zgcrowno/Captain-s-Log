@@ -140,9 +140,6 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="gui">
-      <scripts name="data">
-        <script>scripts\scrGUIData.gml</script>
-      </scripts>
       <scripts name="draw">
         <script>scripts\scrDrawGUI.gml</script>
         <scripts name="thrusters">

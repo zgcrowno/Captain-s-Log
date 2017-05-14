@@ -12,7 +12,7 @@ for(i = 0; i < array_length_1d(objectArray); i++) {
             scrSetSubImage();
             draw_sprite_ext(objectArray[i].backgroundSprite,
                             subImage, 
-                            global.hud.primeMeridian - ((((global.player.x - objectArray[i].x) * view_wview[0]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[0] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
+                            global.hud.primeMeridian - ((((global.player.x - objectArray[i].x) * view_wview[global.util.hudView]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[global.util.hudView] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
                             global.hud.enemyBackgroundSpriteY, 
                             distance / sqr(distance), 
                             distance / sqr(distance), 
@@ -23,7 +23,7 @@ for(i = 0; i < array_length_1d(objectArray); i++) {
             scrSetSubImage();
             draw_sprite_ext(objectArray[i].backgroundSprite,
                             subImage, 
-                            global.hud.primeMeridian - ((((global.player.y - objectArray[i].y) * view_wview[0]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[0] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
+                            global.hud.primeMeridian - ((((global.player.y - objectArray[i].y) * view_wview[global.util.hudView]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[global.util.hudView] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
                             global.hud.enemyBackgroundSpriteY, 
                             distance / sqr(distance), 
                             distance / sqr(distance), 
@@ -34,7 +34,7 @@ for(i = 0; i < array_length_1d(objectArray); i++) {
             scrSetSubImage();
             draw_sprite_ext(objectArray[i].backgroundSprite,
                             subImage, 
-                            global.hud.primeMeridian + ((((global.player.x - objectArray[i].x) * view_wview[0]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[0] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
+                            global.hud.primeMeridian + ((((global.player.x - objectArray[i].x) * view_wview[global.util.hudView]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[global.util.hudView] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
                             global.hud.enemyBackgroundSpriteY, 
                             distance / sqr(distance), 
                             distance / sqr(distance), 
@@ -45,7 +45,7 @@ for(i = 0; i < array_length_1d(objectArray); i++) {
             scrSetSubImage();
             draw_sprite_ext(objectArray[i].backgroundSprite,
                             subImage, 
-                            global.hud.primeMeridian + ((((global.player.y - objectArray[i].y) * view_wview[0]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[0] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
+                            global.hud.primeMeridian + ((((global.player.y - objectArray[i].y) * view_wview[global.util.hudView]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[global.util.hudView] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
                             global.hud.enemyBackgroundSpriteY, 
                             distance / sqr(distance), 
                             distance / sqr(distance), 
