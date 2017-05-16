@@ -427,6 +427,7 @@
             <script>scripts\scrTargetStateChecks.gml</script>
             <script>scripts\scrActiveStateChecks.gml</script>
           </scripts>
+          <script>scripts\scrAcceptInput.gml</script>
         </scripts>
         <scripts name="management">
           <script>scripts\scrPPManagement.gml</script>
@@ -537,11 +538,6 @@
         </scripts>
       </scripts>
     </scripts>
-    <scripts name="timeline">
-      <scripts name="data">
-        <script>scripts\scrTimelineData.gml</script>
-      </scripts>
-    </scripts>
     <scripts name="util">
       <scripts name="data">
         <script>scripts\scrUtilData.gml</script>
@@ -633,11 +629,11 @@
   </objects>
   <rooms name="rooms">
     <rooms name="test">
+      <room>rooms\rmTestFlasher</room>
       <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestRiceCake</room>
       <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTestHalitosis</room>
-      <room>rooms\rmTestFlasher</room>
       <room>rooms\rmTestSidecar</room>
       <room>rooms\rmTest2</room>
       <room>rooms\rmGameOver</room>

@@ -1,6 +1,14 @@
 //The Difficulty Modifier for the Game
 difficultyModifier = 2;
 
+//The different ports which make up the game's overall view
+hudPort = 0;
+radarPort = 1;
+
+//The different views
+hudView = 0;
+radarView = 1;
+
 //The distance by which the background moves when the player ship's thrusters are active
 backgroundMovementDistance = 50;
 
@@ -421,6 +429,40 @@ designationArray[398] = "Yablonsky";
 designationArray[399] = "Yarmolnik";
 
 //Util strings to be accessed by other scripts
+commandsString = "Commands: ";
+thrustersString = "Thrusters";
+shieldsString = "Shields";
+portString = "Port";
+starboardString = "Starboard";
+bowString = "Bow";
+sternString = "Stern";
+clockString = "Clock";
+countString = "Count";
+allString = "All";
+rotateString = "Rotate";
+fireString = "Fire";
+poundString = "[\#]";
+heightString = "Height";
+cutString = "Cut";
+
+thrustersStringLower = "thrusters";
+shieldsStringLower = "shields";
+gunsStringLower = "guns";
+cannonStringLower = "cannon";
+activeStringLower = "active";
+passiveStringLower = "passive";
+portStringLower = "port";
+starboardStringLower = "starboard";
+bowStringLower = "bow";
+targetStringLower = "target";
+sternStringLower = "stern";
+clockStringLower = "clock";
+countStringLower = "count";
+allStringLower = "all";
+rotateStringLower = "rotate";
+fireStringLower = "fire";
+cutStringLower = "cut";
+
 actionMapThrustersPortString = "Thrusters Port";
 actionMapThrustersStarboardString = "Thrusters Starboard";
 actionMapThrustersBowString = "Thrusters Bow";
@@ -456,16 +498,3 @@ actionQueueCutShieldsStarboardString = "Cut#Shields#Star";
 actionQueueCutShieldsBowString = "Cut#Shields#Bow";
 actionQueueCutShieldsSternString = "Cut#Shields#Stern";
 actionQueueCutPassiveString = "Cut#Passive";
-
-gunsMapOneX = "gunsMapOneX";
-gunsMapOneY = "gunsMapOneY";
-gunsMapTwoX = "gunsMapTwoX";
-gunsMapTwoY = "gunsMapTwoY";
-gunsMapThreeX = "gunsMapThreeX";
-gunsMapThreeY = "gunsMapThreeY";
-gunsMapFourX = "gunsMapFourX";
-gunsMapFourY = "gunsMapFourY";
-gunsMapFiveX = "gunsMapFiveX";
-gunsMapFiveY = "gunsMapFiveY";
-gunsMapSixX = "gunsMapSixX";
-gunsMapSixY = "gunsMapSixY";

@@ -445,6 +445,24 @@ poundString = "[\#]";
 heightString = "Height";
 cutString = "Cut";
 
+thrustersStringLower = "thrusters";
+shieldsStringLower = "shields";
+gunsStringLower = "guns";
+cannonStringLower = "cannon";
+activeStringLower = "active";
+passiveStringLower = "passive";
+portStringLower = "port";
+starboardStringLower = "starboard";
+bowStringLower = "bow";
+targetStringLower = "target";
+sternStringLower = "stern";
+clockStringLower = "clock";
+countStringLower = "count";
+allStringLower = "all";
+rotateStringLower = "rotate";
+fireStringLower = "fire";
+cutStringLower = "cut";
+
 actionMapThrustersPortString = "Thrusters Port";
 actionMapThrustersStarboardString = "Thrusters Starboard";
 actionMapThrustersBowString = "Thrusters Bow";

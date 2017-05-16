@@ -1,9 +1,9 @@
-draw_text(global.hud.commandsRightBound - string_width("Clock"), 
+draw_text(global.hud.commandsRightBound - string_width(global.util.clockString), 
           global.hud.commandsUpperBound, 
-          "Clock");
-draw_text(global.hud.commandsRightBound - string_width("Count"), 
-          global.hud.commandsUpperBound + string_height("Commands: "), 
-          "Count");
-draw_text(global.hud.commandsRightBound - string_width("All"), 
-          global.hud.commandsUpperBound + 2 * string_height("Commands: "), 
-          "All");
+          global.util.clockString);
+draw_text(global.hud.commandsRightBound - string_width(global.util.countString), 
+          global.hud.commandsUpperBound + string_height(global.util.commandsString), 
+          global.util.countString);
+draw_text(global.hud.commandsRightBound - string_width(global.util.allString), 
+          global.hud.commandsUpperBound + 2 * string_height(global.util.commandsString), 
+          global.util.allString);

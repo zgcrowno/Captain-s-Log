@@ -7,13 +7,13 @@ if(actionMap[? global.util.actionMapThrustersSternString] > 0) {
                 y -= (2 * sprite_get_width(sprGridBox)) * sin(degtorad(image_angle + 90));
                 if(object_is_ancestor(object_index, objPlayerShip)) {
                     if(scrIsFacingUp(self)) {
-                        view_yview[0] -= 2 * global.util.backgroundMovementDistance;
+                        view_yview[global.util.hudView] -= 2 * global.util.backgroundMovementDistance;
                     } else if(scrIsFacingLeft(self)) {
-                        view_xview[0] += 2 * global.util.backgroundMovementDistance;
+                        view_xview[global.util.hudView] += 2 * global.util.backgroundMovementDistance;
                     } else if(scrIsFacingDown(self)) {
-                        view_yview[0] += 2 * global.util.backgroundMovementDistance;
+                        view_yview[global.util.hudView] += 2 * global.util.backgroundMovementDistance;
                     } else {
-                        view_xview[0] -= 2 * global.util.backgroundMovementDistance;
+                        view_xview[global.util.hudView] -= 2 * global.util.backgroundMovementDistance;
                     }
                 }
                 scrDecrementAction(global.util.actionMapThrustersSternString, global.util.actionQueueThrustersSternString, false);
@@ -22,13 +22,13 @@ if(actionMap[? global.util.actionMapThrustersSternString] > 0) {
                 y -= sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
                 if(object_is_ancestor(object_index, objPlayerShip)) {
                     if(scrIsFacingUp(self)) {
-                        view_yview[0] -= global.util.backgroundMovementDistance;
+                        view_yview[global.util.hudView] -= global.util.backgroundMovementDistance;
                     } else if(scrIsFacingLeft(self)) {
-                        view_xview[0] += global.util.backgroundMovementDistance;
+                        view_xview[global.util.hudView] += global.util.backgroundMovementDistance;
                     } else if(scrIsFacingDown(self)) {
-                        view_yview[0] += global.util.backgroundMovementDistance;
+                        view_yview[global.util.hudView] += global.util.backgroundMovementDistance;
                     } else {
-                        view_xview[0] -= global.util.backgroundMovementDistance;
+                        view_xview[global.util.hudView] -= global.util.backgroundMovementDistance;
                     }
                 }
             }
@@ -37,13 +37,13 @@ if(actionMap[? global.util.actionMapThrustersSternString] > 0) {
             y -= sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
             if(object_is_ancestor(object_index, objPlayerShip)) {
                 if(scrIsFacingUp(self)) {
-                    view_yview[0] -= global.util.backgroundMovementDistance;
+                    view_yview[global.util.hudView] -= global.util.backgroundMovementDistance;
                 } else if(scrIsFacingLeft(self)) {
-                    view_xview[0] += global.util.backgroundMovementDistance;
+                    view_xview[global.util.hudView] += global.util.backgroundMovementDistance;
                 } else if(scrIsFacingDown(self)) {
-                    view_yview[0] += global.util.backgroundMovementDistance;
+                    view_yview[global.util.hudView] += global.util.backgroundMovementDistance;
                 } else {
-                    view_xview[0] -= global.util.backgroundMovementDistance;
+                    view_xview[global.util.hudView] -= global.util.backgroundMovementDistance;
                 }
             }
         }

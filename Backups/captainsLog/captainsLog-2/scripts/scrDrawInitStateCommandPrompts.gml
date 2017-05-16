@@ -1,24 +1,24 @@
-draw_text(global.hud.commandsRightBound - string_width("Thrusters"), 
+draw_text(global.hud.commandsRightBound - string_width(global.util.thrustersString), 
           global.hud.commandsUpperBound, 
-          "Thrusters");
-draw_text(global.hud.commandsRightBound - string_width("Shields"), 
-          global.hud.commandsUpperBound + string_height("Commands: "), 
-          "Shields");
+          global.util.thrustersString);
+draw_text(global.hud.commandsRightBound - string_width(global.util.shieldsString), 
+          global.hud.commandsUpperBound + string_height(global.util.commandsString), 
+          global.util.shieldsString);
 draw_text(global.hud.commandsRightBound - string_width(global.util.actionMapTargetString), 
-          global.hud.commandsUpperBound + 2 * string_height("Commands: "), 
+          global.hud.commandsUpperBound + 2 * string_height(global.util.commandsString), 
           global.util.actionMapTargetString);
 draw_text(global.hud.commandsRightBound - string_width(global.util.actionMapGunsString), 
-          global.hud.commandsUpperBound + 3 * string_height("Commands: "), 
+          global.hud.commandsUpperBound + 3 * string_height(global.util.commandsString), 
           global.util.actionMapGunsString);
 draw_text(global.hud.commandsRightBound - string_width(global.util.actionMapCannonString), 
-          global.hud.commandsUpperBound + 4 * string_height("Commands: "), 
+          global.hud.commandsUpperBound + 4 * string_height(global.util.commandsString), 
           global.util.actionMapCannonString);
 draw_text(global.hud.commandsRightBound - string_width(global.util.actionMapActiveString), 
-          global.hud.commandsUpperBound + 5 * string_height("Commands: "), 
+          global.hud.commandsUpperBound + 5 * string_height(global.util.commandsString), 
           global.util.actionMapActiveString);
 draw_text(global.hud.commandsRightBound - string_width(global.util.actionMapPassiveString), 
-          global.hud.commandsUpperBound + 6 * string_height("Commands: "), 
+          global.hud.commandsUpperBound + 6 * string_height(global.util.commandsString), 
           global.util.actionMapPassiveString);
-draw_text(global.hud.commandsRightBound - string_width("Cut"), 
-          global.hud.commandsUpperBound + 7 * string_height("Commands: "), 
-          "Cut");
+draw_text(global.hud.commandsRightBound - string_width(global.util.cutString), 
+          global.hud.commandsUpperBound + 7 * string_height(global.util.commandsString), 
+          global.util.cutString);
