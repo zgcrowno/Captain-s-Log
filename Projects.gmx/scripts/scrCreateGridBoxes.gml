@@ -1,4 +1,4 @@
-gridBoxNumber = 0;
+var gridBoxNumber = 0;
 for(i = global.hud.radarUpperBound; i < global.hud.radarLowerBound; i++) {
     for(j = global.hud.radarLeftBound; j < global.hud.radarRightBound; j++) {
         if(i % sprite_get_width(sprGridBox) == 0 && j % sprite_get_width(sprGridBox) == 0) {

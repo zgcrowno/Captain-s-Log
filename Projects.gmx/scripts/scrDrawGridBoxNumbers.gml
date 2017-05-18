@@ -1,7 +1,7 @@
 if(global.player.object_index == objFlasher) {
     if(global.player.currentState == global.player.activeState) {
-        for(var i = 0; i < array_length_1d(gridBoxes); i++) {
-            gridBox = gridBoxes[i];
+        for(var i = 0; i < array_length_1d(global.allGridBoxes); i++) {
+            var gridBox = global.allGridBoxes[i];
             if(((gridBox.x + (gridBox.sprite_width / 2)) - (global.player.x - global.player.bbox_left)) > global.hud.radarLeftBound
                        && (((gridBox.x + gridBox.sprite_width) - (gridBox.sprite_width / 2)) + (global.player.bbox_right - global.player.x)) < global.hud.radarRightBound
                        && ((gridBox.y + (gridBox.sprite_width / 2)) - (global.player.y - global.player.bbox_top)) > global.hud.radarUpperBound

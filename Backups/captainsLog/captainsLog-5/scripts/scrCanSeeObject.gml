@@ -4,7 +4,8 @@ pointDirection = point_direction(playerArg.x, playerArg.y, objectArg.x, objectAr
 
 if(scrIsFacingUp(playerArg)) {
     if(objectArg.y < playerArg.y) {
-        if(pointDirection >= 45 && pointDirection <= 135) {
+        if(pointDirection >= 43 && pointDirection <= 135) {
+            show_debug_message(objectArg.id);
             return true;
         } else {
             return false;

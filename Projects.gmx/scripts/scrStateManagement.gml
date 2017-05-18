@@ -1,45 +1,45 @@
 if(currentState == initState) {
-    if(input == "thrusters") {
+    if(input == global.util.thrustersStringLower) {
         scrSetState(thrusterState);
-    } else if(input == "shields") {
+    } else if(input == global.util.shieldsStringLower) {
         scrSetState(shieldState);
-    } else if(input == "target") {
+    } else if(input == global.util.targetStringLower) {
         scrSetState(targetState);
-    } else if(input == "guns") {
+    } else if(input == global.util.gunsStringLower) {
         scrSetState(gunState);
-    } else if(input == "cannon") {
+    } else if(input == global.util.cannonStringLower) {
         scrSetState(cannonState);
-    } else if(input == "active" && (object_index == objFlasher || object_index == objMezzanine)) {
+    } else if(input == global.util.activeStringLower && (object_index == objFlasher || object_index == objMezzanine)) {
         scrSetState(activeState);
-    } else if(input == "cut") {
+    } else if(input == global.util.cutStringLower) {
         scrSetState(cutState);
     }
 } else if(currentState == thrusterState) {
-    if(input == "port") {
+    if(input == global.util.portStringLower) {
         scrSetState(thrusterPortState);
-    } else if(input == "starboard") {
+    } else if(input == global.util.starboardStringLower) {
         scrSetState(thrusterStarboardState);
-    } else if(input == "bow") {
+    } else if(input == global.util.bowStringLower) {
         scrSetState(thrusterBowState);
-    } else if(input == "stern") {
+    } else if(input == global.util.sternStringLower) {
         scrSetState(thrusterSternState);
-    } else if(input == "rotate") {
+    } else if(input == global.util.rotateStringLower) {
         scrSetState(thrusterRotateState);
     }
 } else if(currentState == thrusterRotateState) {
-    if(input == "clock") {
+    if(input == global.util.clockStringLower) {
         scrSetState(thrusterRotateDegreesClockwiseState);
-    } else if(input == "count") {
+    } else if(input == global.util.countStringLower) {
         scrSetState(thrusterRotateDegreesCounterclockwiseState);
     }
 } else if(currentState == cutState) {
-    if(input == "thrusters") {
+    if(input == global.util.thrustersStringLower) {
         scrSetState(cutThrustersState);
-    } else if(input == "shields") {
+    } else if(input == global.util.shieldsStringLower) {
         scrSetState(cutShieldsState);
     }
 } else if(currentState == cutThrustersState) {
-    if(input == "rotate") {
+    if(input == global.util.rotateStringLower) {
         scrSetState(cutThrustersRotateState);
     }
 }

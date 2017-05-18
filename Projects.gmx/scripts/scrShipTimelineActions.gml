@@ -9,7 +9,7 @@ for(i = 0; i < ds_list_size(actionQueue); i++) {
         scrCannonFire();
     } else if(string_pos(global.util.actionMapPassiveString, actionQueue[| i]) != 0) {
         scrPassiveFire();
-    } else if(string_pos("Thrst", actionQueue[| i]) != 0) {
+    } else if(string_pos(global.util.actionQueueThrustersString, actionQueue[| i]) != 0) {
         scrMovement();
     }
 }

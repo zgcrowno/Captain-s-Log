@@ -1,5 +1,5 @@
-projectiles = scrGetProjectiles();
-gridBoxes = global.allGridBoxes;
+var projectiles = scrGetProjectiles();
+var gridBoxes = global.allGridBoxes;
 
 draw_set_color(c_white);
 draw_set_font(fntMain);
@@ -17,7 +17,7 @@ draw_sprite(sprPixelHud, -1, 0, 0);
 draw_sprite(sprTypingPrompt, 
             -1, 
             global.hud.consoleLeftBound + string_width(global.player.input), 
-            global.hud.consoleLowerBound - string_height("Something") - 3);
+            global.hud.consoleLowerBound - string_height(global.util.heightString) - 3);
 
 //Draw the overall HP bar
 draw_healthbar(global.hud.powerLeftBound, 

@@ -12,7 +12,6 @@
       <sprite>sprites\sprTimelineVertical</sprite>
     </sprites>
     <sprites name="hud">
-      <sprite>sprites\sprHud</sprite>
       <sprites name="gridBox">
         <sprite>sprites\sprGridBox</sprite>
         <sprite>sprites\sprGridBoxShield</sprite>
@@ -201,9 +200,7 @@
     </scripts>
     <scripts name="movement">
       <scripts name="projectile">
-        <script>scripts\scrBulletMovement.gml</script>
-        <script>scripts\scrCannonBulletMovement.gml</script>
-        <script>scripts\scrEnergyBallMovement.gml</script>
+        <script>scripts\scrProjectileMovement.gml</script>
       </scripts>
       <scripts name="ship">
         <script>scripts\scrShipBowMovement.gml</script>
@@ -630,10 +627,10 @@
   <rooms name="rooms">
     <rooms name="test">
       <room>rooms\rmTestFlasher</room>
-      <room>rooms\rmTestPincer</room>
-      <room>rooms\rmTestRiceCake</room>
       <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTestHalitosis</room>
+      <room>rooms\rmTestPincer</room>
+      <room>rooms\rmTestRiceCake</room>
       <room>rooms\rmTestSidecar</room>
       <room>rooms\rmTest2</room>
       <room>rooms\rmGameOver</room>

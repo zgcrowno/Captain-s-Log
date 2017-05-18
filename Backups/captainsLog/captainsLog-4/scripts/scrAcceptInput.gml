@@ -4,7 +4,6 @@ if(stringToMatch != noone) {
     if(keyboard_check_pressed(ord(string_upper(string_char_at(stringToMatch, string_length(input) + 1))))) {
         if(input == "" || input == string_copy(stringToMatch, 1, string_length(input))) {
             input += string_char_at(stringToMatch, string_length(input) + 1);
-            exit;
         }
     }
 } else {
