@@ -8,10 +8,6 @@ if(object_index = objRiceCake) {
     gunsArray[1] = y;
     gunsArray[2] = x + lengthdir_x(len, image_angle + 90);
     gunsArray[3] = y + lengthdir_y(len, image_angle + 90);
-    show_debug_message(string(gunsArray[0]));
-    show_debug_message(string(gunsArray[1]));
-    show_debug_message(string(gunsArray[2]));
-    show_debug_message(string(gunsArray[3]));
 } else if(object_index = objFlasher) {
     gunsArray[0] = x + lengthdir_x(len, image_angle);
     gunsArray[1] = y + lengthdir_y(len, image_angle);

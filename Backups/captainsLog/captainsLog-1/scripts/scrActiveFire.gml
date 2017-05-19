@@ -43,13 +43,13 @@
         instance_create(x, y, objPincerActive);
         currentPPActive = requiredPPActive;
     } else if(object_index == objMezzanine) {
-        if(input == "port") {
+        if(input == global.util.portStringLower) {
             sprite_index = sprMezzaninePort;
-        } else if(input == "starboard") {
+        } else if(input == global.util.starboardStringLower) {
             sprite_index = sprMezzanineStarboard;
-        } else if(input == "bow") {
+        } else if(input == global.util.bowStringLower) {
             sprite_index = sprMezzanineBow;
-        } else if(input == "stern") {
+        } else if(input == global.util.sternStringLower) {
             sprite_index = sprMezzanineStern;
         } else {
             //TODO: Error about input

@@ -8,7 +8,7 @@ if(global.player.target != noone) {
     //Draw the captain's personal information
     draw_text(global.hud.targetIntelLeftBound, 
               global.hud.targetIntelUpperBound, 
-              "Captain: " + global.player.target.designation);
+              global.util.captainString + global.player.target.designation);
     
     //Draw the target's overall HP bar
     draw_healthbar(global.hud.targetPowerLeftBound, 

@@ -1,11 +1,11 @@
-scrAcceptInput("thrusters");
-scrAcceptInput("shields");
-scrAcceptInput("target");
-scrAcceptInput("guns");
-scrAcceptInput("cannon");
-scrAcceptInput("active");
-scrAcceptInput("passive");
-scrAcceptInput("cut");
+scrAcceptInput(global.util.thrustersStringLower);
+scrAcceptInput(global.util.shieldsStringLower);
+scrAcceptInput(global.util.targetStringLower);
+scrAcceptInput(global.util.gunsStringLower);
+scrAcceptInput(global.util.cannonStringLower);
+scrAcceptInput(global.util.activeStringLower);
+scrAcceptInput(global.util.passiveStringLower);
+scrAcceptInput(global.util.cutStringLower);
 
 if(keyboard_check_pressed(vk_enter)) {
     if(input == global.util.activeStringLower) {

@@ -532,6 +532,7 @@
         </scripts>
         <scripts name="util">
           <script>scripts\scrGridBoxTimelineActions.gml</script>
+          <script>scripts\scrGridBoxIsTeleportable.gml</script>
         </scripts>
       </scripts>
     </scripts>
@@ -632,8 +633,6 @@
       <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestRiceCake</room>
       <room>rooms\rmTestSidecar</room>
-      <room>rooms\rmTest2</room>
-      <room>rooms\rmGameOver</room>
     </rooms>
   </rooms>
   <help>

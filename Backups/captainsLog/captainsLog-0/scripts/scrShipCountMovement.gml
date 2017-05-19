@@ -1,8 +1,5 @@
 if(actionMap[? global.util.actionMapThrustersCountString] > 0) {
-    if(x - (y - bbox_top) > global.hud.radarLeftBound
-       && x + (bbox_bottom - y) < global.hud.radarRightBound
-       && y - (bbox_right - x) > global.hud.radarUpperBound
-       && y + (x - bbox_left) < global.hud.radarLowerBound) {
+    if(scrShipIsRotatable(self)) {
         if(object_index == objRiceCake && actionMap[? global.util.actionMapPassiveString] == active) {
             if(actionMap[? global.util.actionMapThrustersCountString] >= 2) {
                 image_angle += 180;

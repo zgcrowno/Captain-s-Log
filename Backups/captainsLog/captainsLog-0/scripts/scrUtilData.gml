@@ -442,6 +442,7 @@ allString = "All";
 rotateString = "Rotate";
 fireString = "Fire";
 poundString = "[\#]";
+captainString = "Captain: ";
 heightString = "Height";
 cutString = "Cut";
 
@@ -478,6 +479,8 @@ actionMapGunsString = "Guns";
 actionMapCannonString = "Cannon";
 actionMapActiveString = "Active";
 actionMapPassiveString = "Passive";
+
+actionQueueThrustersString = "Thrst";
 
 actionQueueThrustersPortString = "Thrst#Port#";
 actionQueueThrustersStarboardString = "Thrst#Star#";

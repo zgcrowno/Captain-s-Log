@@ -4,8 +4,7 @@ pointDirection = point_direction(playerArg.x, playerArg.y, objectArg.x, objectAr
 
 if(scrIsFacingUp(playerArg)) {
     if(objectArg.y < playerArg.y) {
-        if(pointDirection >= 43 && pointDirection <= 135) {
-            show_debug_message(objectArg.id);
+        if(pointDirection >= 40 && pointDirection <= 140) {
             return true;
         } else {
             return false;
@@ -13,8 +12,8 @@ if(scrIsFacingUp(playerArg)) {
     }
 } else if(scrIsFacingRight(playerArg)) {
     if(objectArg.x > playerArg.x) {
-        if((pointDirection >= 0 && pointDirection <= 45)
-           || (pointDirection >= 315 && pointDirection <= 360)) {
+        if((pointDirection >= 0 && pointDirection <= 50)
+           || (pointDirection >= 310 && pointDirection <= 360)) {
             return true;
         } else {
             return false;
@@ -22,7 +21,7 @@ if(scrIsFacingUp(playerArg)) {
     }
 } else if(scrIsFacingDown(playerArg)) {
     if(objectArg.y > playerArg.y) {
-        if(pointDirection >= 225 && pointDirection <= 315) {
+        if(pointDirection >= 220 && pointDirection <= 320) {
             return true;
         } else {
             return false;
@@ -30,7 +29,7 @@ if(scrIsFacingUp(playerArg)) {
     }
 } else if(scrIsFacingLeft(playerArg)) {
     if(objectArg.x < playerArg.x) {
-        if(pointDirection >= 135 && pointDirection <= 225) {
+        if(pointDirection >= 130 && pointDirection <= 230) {
             return true;
         } else {
             return false;

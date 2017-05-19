@@ -210,6 +210,7 @@
         <script>scripts\scrShipPortMovement.gml</script>
         <script>scripts\scrShipStarboardMovement.gml</script>
         <script>scripts\scrShipSternMovement.gml</script>
+        <script>scripts\scrShipLateralMovement.gml</script>
       </scripts>
       <scripts name="timeline">
         <script>scripts\scrTimelineHorizontalMovement.gml</script>
@@ -492,6 +493,7 @@
           <script>scripts\scrGridBoxIsProjectileConsumptive.gml</script>
           <script>scripts\scrConsumeProjectile.gml</script>
           <script>scripts\scrAddAction.gml</script>
+          <script>scripts\scrShipIsRotatable.gml</script>
         </scripts>
         <scripts name="playerShip">
           <scripts name="ricecake">
@@ -532,6 +534,7 @@
         </scripts>
         <scripts name="util">
           <script>scripts\scrGridBoxTimelineActions.gml</script>
+          <script>scripts\scrGridBoxIsTeleportable.gml</script>
         </scripts>
       </scripts>
     </scripts>
@@ -632,8 +635,6 @@
       <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestRiceCake</room>
       <room>rooms\rmTestSidecar</room>
-      <room>rooms\rmTest2</room>
-      <room>rooms\rmGameOver</room>
     </rooms>
   </rooms>
   <help>
