@@ -1,5 +1,8 @@
-for(var i = 0; i < array_length_1d(global.util.enemies); i++) {
-    draw_text(global.hud.commandsRightBound - string_width(global.util.enemies[i].designation), 
+var enemies = scrGetEnemies();
+
+for(var i = 0; i < array_length_1d(enemies); i++) {
+    var enemy = enemies[i];
+    draw_text(global.hud.commandsRightBound - string_width(enemy.designation), 
               global.hud.commandsUpperBound + (i * string_height(global.util.commandsString)), 
-              global.util.enemies[i].designation);
+              enemy.designation);
 }

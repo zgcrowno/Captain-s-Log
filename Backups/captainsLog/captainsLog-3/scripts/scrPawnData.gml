@@ -1,5 +1,5 @@
-maxHP = maxHPPawn;
-maxPP = maxPPPawn;
+maxHP = 50;
+maxPP = 100;
 
 currentHP = maxHP;
 currentPP = maxPP;

@@ -1,17 +1,17 @@
-maxHP =  maxHPPincer;
-maxPP = maxPPPincer;
+maxHP =  300;
+maxPP = 100;
 
 currentHP = maxHP;
 currentPP = maxPP;
 
-maxHPThrustersPort = maxHPThrustersPortPincer;
-maxHPThrustersStarboard = maxHPThrustersStarboardPincer;
-maxHPThrustersBow = maxHPThrustersBowPincer;
-maxHPThrustersStern = maxHPThrustersSternPincer;
-maxHPShieldsPort = maxHPShieldsPortPincer;
-maxHPShieldsStarboard = maxHPShieldsStarboardPincer;
-maxHPShieldsBow = maxHPShieldsBowPincer;
-maxHPShieldsStern = maxHPShieldsSternPincer;
+maxHPThrustersPort = 100;
+maxHPThrustersStarboard = 100;
+maxHPThrustersBow = 100;
+maxHPThrustersStern = 100;
+maxHPShieldsPort = 100;
+maxHPShieldsStarboard = 100;
+maxHPShieldsBow = 100;
+maxHPShieldsStern = 100;
 
 currentHPThrustersPort = maxHPThrustersPort;
 currentHPThrustersStarboard = maxHPThrustersStarboard
@@ -37,7 +37,7 @@ gunsArray[3] = y - 25;
 gunsArray[4] = x + 25;
 gunsArray[5] = y;
 
-cannonOffset = cannonOffsetPincer;
-cannonDamage = cannonDamagePincer;
+cannonOffset = 11;
+cannonDamage = 0;
 
-activeDamage = activeDamagePincer;
+activeDamage = 1;

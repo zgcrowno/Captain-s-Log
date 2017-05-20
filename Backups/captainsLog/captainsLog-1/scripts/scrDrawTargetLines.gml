@@ -1,6 +1,8 @@
 if(global.player.currentState == global.player.targetState) {
-    for(i = 0; i < array_length_1d(global.util.enemies); i++) {
-        draw_set_color(global.util.enemies[i].targetLineColor);
+    var enemies = scrGetEnemies();
+    for(i = 0; i < array_length_1d(enemies); i++) {
+        var enemy = enemies[i];
+        draw_set_color(enemy.targetLineColor);
         draw_line(global.util.enemies[i].x + view_xport[global.util.radarPort], 
                   global.util.enemies[i].y + view_yport[global.util.radarPort], 
                   view_xport[global.util.radarPort], 

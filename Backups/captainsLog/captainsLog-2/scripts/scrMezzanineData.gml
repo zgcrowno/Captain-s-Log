@@ -1,17 +1,17 @@
-maxHP =  maxHPMezzanine;
-maxPP = maxPPMezzanine;
+maxHP =  350;
+maxPP = 100;
 
 currentHP = maxHP;
 currentPP = maxPP;
 
-maxHPThrustersPort = maxHPThrustersPortMezzanine;
-maxHPThrustersStarboard = maxHPThrustersStarboardMezzanine;
-maxHPThrustersBow = maxHPThrustersBowMezzanine;
-maxHPThrustersStern = maxHPThrustersSternMezzanine;
-maxHPShieldsPort = maxHPShieldsPortMezzanine;
-maxHPShieldsStarboard = maxHPShieldsStarboardMezzanine;
-maxHPShieldsBow = maxHPShieldsBowMezzanine;
-maxHPShieldsStern = maxHPShieldsSternMezzanine;
+maxHPThrustersPort = 100;
+maxHPThrustersStarboard = 100;
+maxHPThrustersBow = 100;
+maxHPThrustersStern = 100;
+maxHPShieldsPort = 100;
+maxHPShieldsStarboard = 100;
+maxHPShieldsBow = 100;
+maxHPShieldsStern = 100;
 
 currentHPThrustersPort = maxHPThrustersPort;
 currentHPThrustersStarboard = maxHPThrustersStarboard
@@ -43,7 +43,7 @@ gunsArray[9] = y;
 gunsArray[10] = x + 25;
 gunsArray[11] = y + 25;
 
-cannonOffset = cannonOffsetMezzanine;
-cannonDamage = cannonDamageMezzanine;
+cannonOffset = 11;
+cannonDamage = 3;
 
-activeDamage = activeDamageMezzanine;
+activeDamage = 1;

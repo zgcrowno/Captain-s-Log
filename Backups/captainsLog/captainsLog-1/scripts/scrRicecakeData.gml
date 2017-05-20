@@ -1,17 +1,17 @@
-maxHP =  maxHPRicecake;
-maxPP = maxPPRicecake;
+maxHP =  100;
+maxPP = 100;
 
 currentHP = maxHP;
 currentPP = maxPP;
 
-maxHPThrustersPort = maxHPThrustersPortRicecake;
-maxHPThrustersStarboard = maxHPThrustersStarboardRicecake;
-maxHPThrustersBow = maxHPThrustersBowRicecake;
-maxHPThrustersStern = maxHPThrustersSternRicecake;
-maxHPShieldsPort = maxHPShieldsPortRicecake;
-maxHPShieldsStarboard = maxHPShieldsStarboardRicecake;
-maxHPShieldsBow = maxHPShieldsBowRicecake;
-maxHPShieldsStern = maxHPShieldsSternRicecake;
+maxHPThrustersPort = 50;
+maxHPThrustersStarboard = 50;
+maxHPThrustersBow = 50;
+maxHPThrustersStern = 50;
+maxHPShieldsPort = 50;
+maxHPShieldsStarboard = 50;
+maxHPShieldsBow = 50;
+maxHPShieldsStern = 50;
 
 currentHPThrustersPort = maxHPThrustersPort;
 currentHPThrustersStarboard = maxHPThrustersStarboard
@@ -33,7 +33,7 @@ requiredPPPassive = maxPP * 0.2;
 gunsArray[0] = x;
 gunsArray[1] = y;
 
-cannonOffset = cannonOffsetRiceCake;
-cannonDamage = cannonDamageRiceCake;
+cannonOffset = 11;
+cannonDamage = 0;
 
-activeDamage = activeDamageRiceCake;
+activeDamage = 1;

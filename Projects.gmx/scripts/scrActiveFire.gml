@@ -10,6 +10,8 @@
         }
         currentPPActive = requiredPPActive;
     } else if(object_index == objFlasher) {
+        //Note that 'j' is used here so as not to interfere with
+        //exterior loop's 'i' variable
         for(var j = 0; j < array_length_1d(gridBoxes); j++) {
             gridBox2 = gridBoxes[j];
             if(input == gridBox2.numberString) {

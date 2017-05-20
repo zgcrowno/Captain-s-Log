@@ -272,15 +272,30 @@
             <scripts name="riceCake">
               <script>scripts\scrRiceCakeCannonBehavior.gml</script>
             </scripts>
-            <scripts name="sidecar">
-              <script>scripts\scrSidecarCannonBehavior.gml</script>
-            </scripts>
-            <scripts name="mezzanine">
-              <script>scripts\scrMezzanineCannonBehavior.gml</script>
+            <scripts name="sidecarMezzanine">
+              <script>scripts\scrSidecarMezzanineCannonBehavior.gml</script>
             </scripts>
           </scripts>
           <scripts name="fire">
             <script>scripts\scrCannonFire.gml</script>
+            <scripts name="halitosis">
+              <script>scripts\scrHalitosisCannonFire.gml</script>
+            </scripts>
+            <scripts name="ricecake">
+              <script>scripts\scrRicecakeCannonFire.gml</script>
+            </scripts>
+            <scripts name="sidecar">
+              <script>scripts\scrSidecarCannonFire.gml</script>
+            </scripts>
+            <scripts name="pincer">
+              <script>scripts\scrPincerCannonFire.gml</script>
+            </scripts>
+            <scripts name="mezzanine">
+              <script>scripts\scrMezzanineCannonFire.gml</script>
+            </scripts>
+            <scripts name="flasher">
+              <script>scripts\scrFlasherCannonFire.gml</script>
+            </scripts>
           </scripts>
           <scripts name="powerDiversion">
             <script>scripts\scrCannonDivertPower.gml</script>
@@ -469,6 +484,7 @@
             <script>scripts\scrMovementChance.gml</script>
             <script>scripts\scrThrustersChance.gml</script>
             <script>scripts\scrEqualChance.gml</script>
+            <script>scripts\scrGunsChance.gml</script>
           </scripts>
           <script>scripts\scrSetGuns.gml</script>
           <script>scripts\scrRegenerateShields.gml</script>
@@ -536,7 +552,6 @@
       <script>scripts\scrIsRight.gml</script>
       <script>scripts\scrRandomizeSeed.gml</script>
       <script>scripts\scrResetTouchedTimeline.gml</script>
-      <script>scripts\scrSetEnemies.gml</script>
       <script>scripts\scrSetState.gml</script>
       <script>scripts\scrTimelineActions.gml</script>
       <script>scripts\scrTouchedTimelineThisTurn.gml</script>
@@ -613,10 +628,10 @@
   </objects>
   <rooms name="rooms">
     <rooms name="test">
+      <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTestFlasher</room>
       <room>rooms\rmTestRiceCake</room>
       <room>rooms\rmTestHalitosis</room>
-      <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestSidecar</room>
     </rooms>

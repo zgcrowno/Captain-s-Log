@@ -1,4 +1,5 @@
 var projectiles = scrGetProjectiles();
+var enemies = scrGetEnemies();
 var gridBoxes = global.allGridBoxes;
 
 draw_set_color(c_white);

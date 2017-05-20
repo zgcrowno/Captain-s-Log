@@ -1,3 +1,3 @@
-item = argument0;
+var item = argument0;
 
 return item.x < x;

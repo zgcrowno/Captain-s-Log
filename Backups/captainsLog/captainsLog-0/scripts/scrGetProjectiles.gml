@@ -1,5 +1,5 @@
 //Reset the array
-projectileArray = 0;
+var projectileArray = 0;
 
 //Assign the array values
 for(i = 0; i < instance_number(objProjectile); i++) {

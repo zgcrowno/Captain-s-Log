@@ -3,9 +3,9 @@ if(global.player.object_index == objFlasher) {
         for(var i = 0; i < array_length_1d(global.allGridBoxes); i++) {
             var gridBox = global.allGridBoxes[i];
             with(gridBox) {
-                if(scrGridBoxIsTeleportable(self)) {
+                if(scrGridBoxIsTeleportable(gridBox)) {
                     draw_set_color(c_yellow);
-                    draw_text(view_xport[global.util.radarPort] + x, view_yport[global.util.radarPort] + y, numberString); 
+                    draw_text(view_xport[global.util.radarPort] + x, view_yport[global.util.radarPort] + y, numberString);  
                 }
             }
         }

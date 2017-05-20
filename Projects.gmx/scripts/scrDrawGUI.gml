@@ -1,4 +1,5 @@
 var projectiles = scrGetProjectiles();
+var enemies = scrGetEnemies();
 var gridBoxes = global.allGridBoxes;
 
 draw_set_color(c_white);
@@ -7,7 +8,7 @@ draw_set_font(fntMain);
 //Draw the skybox, enemy background sprites, projectile background sprites and HUD
 draw_sprite(sprBlueSky, -1, 0, 0);
 
-scrDrawBackgroundObjects(global.util.enemies);
+scrDrawBackgroundObjects(enemies);
 
 scrDrawBackgroundObjects(projectiles);
 

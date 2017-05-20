@@ -10,12 +10,12 @@
         }
         currentPPActive = requiredPPActive;
     } else if(object_index == objFlasher) {
+        //Note that 'j' is used here so as not to interfere with
+        //exterior loop's 'i' variable
         for(var j = 0; j < array_length_1d(gridBoxes); j++) {
             gridBox2 = gridBoxes[j];
             if(input == gridBox2.numberString) {
-                show_debug_message("something");
                 if(scrGridBoxIsTeleportable(gridBox2)) {
-                    show_debug_message("something more");
                     x = gridBox2.x + (gridBox2.sprite_width / 2);
                     y = gridBox2.y + (gridBox2.sprite_width / 2);
                     currentPPActive = requiredPPActive;

@@ -1,6 +1,6 @@
-strMap = argument0;
-strQueue = argument1;       //In the event that this script is called for the guns or cannon,
-strQueueCut = argument2;    //strQueue and strQueueCut will be equal to noone.
+var strMap = argument0;
+var strQueue = argument1;       //In the event that this script is called for the guns or cannon,
+var strQueueCut = argument2;    //strQueue and strQueueCut will be equal to noone.
 
 if(strMap == global.util.actionMapGunsString || strMap == global.util.actionMapCannonString) {
     if(actionMap[? strMap] == true) {

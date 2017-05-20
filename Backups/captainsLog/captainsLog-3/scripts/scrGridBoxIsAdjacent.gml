@@ -1,6 +1,6 @@
-gb = argument0;
+var gridBox = argument0;
 
-with(gb) {
+with(gridBox) {
     if(!place_meeting(x, y, global.player) 
        && (place_meeting(x + sprite_width, y, global.player) 
            || place_meeting(x + sprite_width, y + sprite_width, global.player)

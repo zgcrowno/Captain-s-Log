@@ -1,5 +1,7 @@
-len = sprite_get_width(sprGridBox);
-hypotenuse = sqrt(sqr(len) + sqr(len));
+//TODO: Clean this up
+var len = sprite_get_width(sprGridBox);
+var hypotenuse = sqrt(sqr(len) + sqr(len));
+
 if(object_index = objRiceCake) {
     gunsArray[0] = x;
     gunsArray[1] = y;

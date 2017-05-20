@@ -1,17 +1,17 @@
-maxHP =  maxHPHalitosis;
-maxPP = maxPPHalitosis;
+maxHP =  200;
+maxPP = 100;
 
 currentHP = maxHP;
 currentPP = maxPP;
 
-maxHPThrustersPort = maxHPThrustersPortHalitosis;
-maxHPThrustersStarboard = maxHPThrustersStarboardHalitosis;
-maxHPThrustersBow = maxHPThrustersBowHalitosis;
-maxHPThrustersStern = maxHPThrustersSternHalitosis;
-maxHPShieldsPort = maxHPShieldsPortHalitosis;
-maxHPShieldsStarboard = maxHPShieldsStarboardHalitosis;
-maxHPShieldsBow = maxHPShieldsBowHalitosis;
-maxHPShieldsStern = maxHPShieldsSternHalitosis;
+maxHPThrustersPort = 75;
+maxHPThrustersStarboard = 75;
+maxHPThrustersBow = 75;
+maxHPThrustersStern = 75;
+maxHPShieldsPort = 75;
+maxHPShieldsStarboard = 75;
+maxHPShieldsBow = 75;
+maxHPShieldsStern = 75;
 
 currentHPThrustersPort = maxHPThrustersPort;
 currentHPThrustersStarboard = maxHPThrustersStarboard
@@ -37,9 +37,9 @@ gunsArray[3] = y - 25;
 gunsArray[4] = x + 25;
 gunsArray[5] = y - 25;
 
-cannonOffset = cannonOffsetHalitosis;
-cannonDamage = cannonDamageHalitosis;
+cannonOffset = 11;
+cannonDamage = 0;
 
-activeDamage = activeDamageHalitosis;
+activeDamage = 1;
 
 numEnergyBalls = 2;

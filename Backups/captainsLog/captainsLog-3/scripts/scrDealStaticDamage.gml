@@ -1,8 +1,13 @@
 if(sprite_index == sprGridBoxStatic) {
-    for(i = 0; i < instance_number(objShip); i++) {
-        ship = instance_find(objShip, i)
-        if(place_meeting(x, y, ship)) {
-            ship.currentHP -= global.util.staticDamage;
-        }
+    var shipTouching = collision_rectangle(x, 
+                                           y, 
+                                           x + sprite_width, 
+                                           y + sprite_width, 
+                                           objShip, 
+                                           false, 
+                                           true);
+    
+    if(shipTouching != noone) {
+        shipTouching.currentHP -= global.util.staticDamage;
     }
 }

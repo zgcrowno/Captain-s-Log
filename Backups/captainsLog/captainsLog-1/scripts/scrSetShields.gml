@@ -1,8 +1,8 @@
-adjacentGridBoxes = scrGetAdjacentGridBoxes();
-portShieldsIndex = 0;
-starboardShieldsIndex = 0;
-bowShieldsIndex = 0;
-sternShieldsIndex = 0;
+var adjacentGridBoxes = scrGetAdjacentGridBoxes();
+var portShieldsIndex = 0;
+var starboardShieldsIndex = 0;
+var bowShieldsIndex = 0;
+var sternShieldsIndex = 0;
     
 //Set the shield blocks
 for(i = 0; i < array_length_1d(adjacentGridBoxes); i++) {

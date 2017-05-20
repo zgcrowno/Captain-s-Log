@@ -1,17 +1,17 @@
-maxHP =  maxHPSidecar;
-maxPP = maxPPSidecar;
+maxHP =  150;
+maxPP = 100;
 
 currentHP = maxHP;
 currentPP = maxPP;
 
-maxHPThrustersPort = maxHPThrustersPortSidecar;
-maxHPThrustersStarboard = maxHPThrustersStarboardSidecar;
-maxHPThrustersBow = maxHPThrustersBowSidecar;
-maxHPThrustersStern = maxHPThrustersSternSidecar;
-maxHPShieldsPort = maxHPShieldsPortSidecar;
-maxHPShieldsStarboard = maxHPShieldsStarboardSidecar;
-maxHPShieldsBow = maxHPShieldsBowSidecar;
-maxHPShieldsStern = maxHPShieldsSternSidecar;
+maxHPThrustersPort = 50;
+maxHPThrustersStarboard = 50;
+maxHPThrustersBow = 50;
+maxHPThrustersStern = 50;
+maxHPShieldsPort = 50;
+maxHPShieldsStarboard = 50;
+maxHPShieldsBow = 50;
+maxHPShieldsStern = 50;
 
 currentHPThrustersPort = maxHPThrustersPort;
 currentHPThrustersStarboard = maxHPThrustersStarboard
@@ -35,7 +35,7 @@ gunsArray[1] = y;
 gunsArray[2] = x;
 gunsArray[3] = y - 25;
 
-cannonOffset = cannonOffsetSidecar;
-cannonDamage = cannonDamageSidecar;
+cannonOffset = sprite_get_width(sprGridBox);
+cannonDamage = 1;
 
-activeDamage = activeDamageSidecar;
+activeDamage = 1;
