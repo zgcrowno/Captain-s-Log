@@ -1,3 +1,5 @@
+//TODO: This sort doesn't quite seem to be working as expected. Maybe it's a matter of when it's called? Maybe it needs to be called again? After movement?
+
 array = argument0;
 low = argument1;
 high = argument2;

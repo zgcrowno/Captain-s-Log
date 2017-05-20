@@ -203,8 +203,6 @@
         <script>scripts\scrProjectileMovement.gml</script>
       </scripts>
       <scripts name="ship">
-        <script>scripts\scrShipClockMovement.gml</script>
-        <script>scripts\scrShipCountMovement.gml</script>
         <script>scripts\scrShipMovement.gml</script>
         <script>scripts\scrShipLateralMovement.gml</script>
         <script>scripts\scrShipRotateMovement.gml</script>
@@ -230,9 +228,6 @@
               <script>scripts\scrEnemyBulletData.gml</script>
             </scripts>
           </scripts>
-          <scripts name="util">
-            <script>scripts\scrBulletTimelineActions.gml</script>
-          </scripts>
         </scripts>
         <scripts name="cannonBullet">
           <scripts name="data">
@@ -242,23 +237,17 @@
         <scripts name="util">
           <script>scripts\scrDestroyOutOfBounds.gml</script>
           <scripts name="collision">
-            <script>scripts\scrIsTouchingPortShield.gml</script>
-            <script>scripts\scrIsTouchingStarboardShield.gml</script>
-            <script>scripts\scrIsTouchingBowShield.gml</script>
-            <script>scripts\scrIsTouchingSternShield.gml</script>
             <script>scripts\scrEnemyBulletShieldsInteraction.gml</script>
             <script>scripts\scrEnemyBulletShipInteraction.gml</script>
             <script>scripts\scrShipInteraction.gml</script>
-            <script>scripts\scrPlayerCannonBulletShipInteraction.gml</script>
-            <script>scripts\scrPlayerBulletShipInteraction.gml</script>
-            <script>scripts\scrPlayerEnergyBallShipInteraction.gml</script>
+            <script>scripts\scrIsTouchingShield.gml</script>
+            <script>scripts\scrPlayerProjectileShipInteraction.gml</script>
           </scripts>
           <scripts name="orientation">
-            <script>scripts\scrIsFacingStern.gml</script>
-            <script>scripts\scrIsFacingBow.gml</script>
-            <script>scripts\scrIsFacingPort.gml</script>
-            <script>scripts\scrIsFacingStarboard.gml</script>
+            <script>scripts\scrIsFacingSideOfShip.gml</script>
           </scripts>
+          <script>scripts\scrIsPlayerProjectile.gml</script>
+          <script>scripts\scrProjectileTimelineActions.gml</script>
         </scripts>
         <scripts name="energyBall">
           <scripts name="data">
@@ -266,9 +255,6 @@
             <scripts name="player">
               <script>scripts\scrPlayerEnergyBallData.gml</script>
             </scripts>
-          </scripts>
-          <scripts name="util">
-            <script>scripts\scrEnergyBallTimelineActions.gml</script>
           </scripts>
         </scripts>
       </scripts>
@@ -560,6 +546,7 @@
         <script>scripts\scrExchange.gml</script>
       </scripts>
       <script>scripts\scrContains.gml</script>
+      <script>scripts\scrIsOutOfBounds.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -627,10 +614,10 @@
   <rooms name="rooms">
     <rooms name="test">
       <room>rooms\rmTestFlasher</room>
-      <room>rooms\rmTestMezzanine</room>
-      <room>rooms\rmTestHalitosis</room>
-      <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestRiceCake</room>
+      <room>rooms\rmTestHalitosis</room>
+      <room>rooms\rmTestMezzanine</room>
+      <room>rooms\rmTestPincer</room>
       <room>rooms\rmTestSidecar</room>
     </rooms>
   </rooms>

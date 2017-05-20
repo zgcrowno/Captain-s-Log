@@ -1,4 +1,4 @@
-riceCake = instance_find(objRiceCake, 0);
+var riceCake = global.player;
 
 if(collision_rectangle(x - (sprite_width / 2), 
                        y - (sprite_width / 2), 
@@ -15,7 +15,7 @@ if(collision_rectangle(x - (sprite_width / 2),
                                instance_find(objEnemyShip, i), 
                                false, 
                                true)) {
-            enemy = instance_find(objEnemyShip, i);
+            var enemy = instance_find(objEnemyShip, i);
             enemy.currentHP -= riceCake.activeDamage;
         }
     }

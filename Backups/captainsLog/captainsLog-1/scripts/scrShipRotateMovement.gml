@@ -8,7 +8,7 @@ if(strMap == global.util.actionMapThrustersClockString) {
 }
 
 if(actionMap[? strMap] > 0) {
-    if(scrShipIsRotatable(self)) {
+    if(scrShipIsRotatable(self, strMap)) {
         if(object_index == objRiceCake && actionMap[? global.util.actionMapPassiveString] == active) {
             if(actionMap[? strMap] >= 2) {
                 image_angle += 180;
@@ -30,12 +30,12 @@ if(actionMap[? strMap] > 0) {
                 }
             }
         } else {
-            if(strMap == global.util.actionMapThrustersClock) {
+            if(strMap == global.util.actionMapThrustersClockString) {
                 image_angle += 270;
                 if(object_is_ancestor(object_index, objPlayerShip)) {
                     view_angle[global.util.hudView] += 270;
                 }
-            } else if(strMap == global.util.actionMapThrustersCount) {
+            } else if(strMap == global.util.actionMapThrustersCountString) {
                 image_angle += 90;
                 if(object_is_ancestor(object_index, objPlayerShip)) {
                     view_angle[global.util.hudView] += 90

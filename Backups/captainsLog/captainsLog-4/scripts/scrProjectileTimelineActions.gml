@@ -1,0 +1,2 @@
+scrMovement();
+scrDestroyOutOfBounds();
