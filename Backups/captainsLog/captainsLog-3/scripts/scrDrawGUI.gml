@@ -1,5 +1,4 @@
 var enemiesAndProjectiles = scrGetEnemiesAndProjectiles();
-show_debug_message(string(array_length_1d(enemiesAndProjectiles)));
 var gridBoxes = global.allGridBoxes;
 
 draw_set_color(c_white);

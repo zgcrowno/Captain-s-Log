@@ -18,6 +18,8 @@ cutThrustersRotateState = 15;
 targetState = 16;
 activeState = 17;
 menuInitState = 18;
+pauseInitState = 19;
+previousState = 20; //This variable is used to return to the correct state from the pause menu
 currentState = initState;
 
 //The Difficulty Modifier for the Game

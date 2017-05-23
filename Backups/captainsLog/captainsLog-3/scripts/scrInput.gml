@@ -14,6 +14,18 @@ if(keyboard_check_pressed(vk_tab)) {
     if(global.input != "") {
         global.input = string_delete(global.input, string_length(global.input), 1);
     }
+} else if(keyboard_check_pressed(vk_escape)) {
+    if(global.util.currentState == global.util.pauseInitState) {
+        global.util.currentState = global.util.previousState;
+        instance_activate_all();
+    } else {
+        global.util.previousState = global.util.currentState;
+        background_color = c_black;
+        background_showcolor = false;
+        instance_deactivate_all(all);
+        instance_activate_object(global.util);
+        global.util.currentState = global.util.pauseInitState;
+    }
 } else if(global.player != noone) {
     with(global.player) {
         if(global.util.currentState == global.util.initState) {
