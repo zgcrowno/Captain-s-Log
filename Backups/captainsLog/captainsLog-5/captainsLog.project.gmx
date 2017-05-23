@@ -18,6 +18,9 @@
         <sprite>sprites\sprGridBoxStatic</sprite>
       </sprites>
       <sprite>sprites\sprPixelHud</sprite>
+      <sprites name="util">
+        <sprite>sprites\sprRadarBlack</sprite>
+      </sprites>
     </sprites>
     <sprites name="ship">
       <sprites name="playerShip">
@@ -138,6 +141,31 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="input">
+      <script>scripts\scrInput.gml</script>
+      <scripts name="stateChecks">
+        <script>scripts\scrInitStateChecks.gml</script>
+        <script>scripts\scrThrusterStateChecks.gml</script>
+        <script>scripts\scrThrusterPortStateChecks.gml</script>
+        <script>scripts\scrThrusterStarboardStateChecks.gml</script>
+        <script>scripts\scrThrusterBowStateChecks.gml</script>
+        <script>scripts\scrThrusterSternStateChecks.gml</script>
+        <script>scripts\scrThrusterRotateStateChecks.gml</script>
+        <script>scripts\scrThrusterRotateDegreesClockwiseStateChecks.gml</script>
+        <script>scripts\scrThrusterRotateDegreesCounterclockwiseStateChecks.gml</script>
+        <script>scripts\scrShieldStateChecks.gml</script>
+        <script>scripts\scrGunStateChecks.gml</script>
+        <script>scripts\scrCannonStateChecks.gml</script>
+        <script>scripts\scrCutStateChecks.gml</script>
+        <script>scripts\scrCutThrusterStateChecks.gml</script>
+        <script>scripts\scrCutThrusterRotateStateChecks.gml</script>
+        <script>scripts\scrCutShieldStateChecks.gml</script>
+        <script>scripts\scrTargetStateChecks.gml</script>
+        <script>scripts\scrActiveStateChecks.gml</script>
+        <script>scripts\scrMenuInitStateChecks.gml</script>
+      </scripts>
+      <script>scripts\scrAcceptInput.gml</script>
+    </scripts>
     <scripts name="gui">
       <scripts name="draw">
         <script>scripts\scrDrawGUI.gml</script>
@@ -171,6 +199,7 @@
           <script>scripts\scrDrawCutShieldsStateCommandPrompts.gml</script>
           <script>scripts\scrDrawCommandPrompts.gml</script>
           <script>scripts\scrDrawActiveStateCommandPrompts.gml</script>
+          <script>scripts\scrDrawMenuInitStateCommandPrompts.gml</script>
         </scripts>
         <scripts name="actionQueue">
           <script>scripts\scrDrawActionQueue.gml</script>
@@ -272,15 +301,30 @@
             <scripts name="riceCake">
               <script>scripts\scrRiceCakeCannonBehavior.gml</script>
             </scripts>
-            <scripts name="sidecar">
-              <script>scripts\scrSidecarCannonBehavior.gml</script>
-            </scripts>
-            <scripts name="mezzanine">
-              <script>scripts\scrMezzanineCannonBehavior.gml</script>
+            <scripts name="sidecarMezzanine">
+              <script>scripts\scrSidecarMezzanineCannonBehavior.gml</script>
             </scripts>
           </scripts>
           <scripts name="fire">
             <script>scripts\scrCannonFire.gml</script>
+            <scripts name="halitosis">
+              <script>scripts\scrHalitosisCannonFire.gml</script>
+            </scripts>
+            <scripts name="ricecake">
+              <script>scripts\scrRicecakeCannonFire.gml</script>
+            </scripts>
+            <scripts name="sidecar">
+              <script>scripts\scrSidecarCannonFire.gml</script>
+            </scripts>
+            <scripts name="pincer">
+              <script>scripts\scrPincerCannonFire.gml</script>
+            </scripts>
+            <scripts name="mezzanine">
+              <script>scripts\scrMezzanineCannonFire.gml</script>
+            </scripts>
+            <scripts name="flasher">
+              <script>scripts\scrFlasherCannonFire.gml</script>
+            </scripts>
           </scripts>
           <scripts name="powerDiversion">
             <script>scripts\scrCannonDivertPower.gml</script>
@@ -386,30 +430,6 @@
             <script>scripts\scrGunsFire.gml</script>
           </scripts>
         </scripts>
-        <scripts name="input">
-          <script>scripts\scrInput.gml</script>
-          <scripts name="stateChecks">
-            <script>scripts\scrInitStateChecks.gml</script>
-            <script>scripts\scrThrusterStateChecks.gml</script>
-            <script>scripts\scrThrusterPortStateChecks.gml</script>
-            <script>scripts\scrThrusterStarboardStateChecks.gml</script>
-            <script>scripts\scrThrusterBowStateChecks.gml</script>
-            <script>scripts\scrThrusterSternStateChecks.gml</script>
-            <script>scripts\scrThrusterRotateStateChecks.gml</script>
-            <script>scripts\scrThrusterRotateDegreesClockwiseStateChecks.gml</script>
-            <script>scripts\scrThrusterRotateDegreesCounterclockwiseStateChecks.gml</script>
-            <script>scripts\scrShieldStateChecks.gml</script>
-            <script>scripts\scrGunStateChecks.gml</script>
-            <script>scripts\scrCannonStateChecks.gml</script>
-            <script>scripts\scrCutStateChecks.gml</script>
-            <script>scripts\scrCutThrusterStateChecks.gml</script>
-            <script>scripts\scrCutThrusterRotateStateChecks.gml</script>
-            <script>scripts\scrCutShieldStateChecks.gml</script>
-            <script>scripts\scrTargetStateChecks.gml</script>
-            <script>scripts\scrActiveStateChecks.gml</script>
-          </scripts>
-          <script>scripts\scrAcceptInput.gml</script>
-        </scripts>
         <scripts name="management">
           <script>scripts\scrPPManagement.gml</script>
           <script>scripts\scrShieldManagement.gml</script>
@@ -469,6 +489,7 @@
             <script>scripts\scrMovementChance.gml</script>
             <script>scripts\scrThrustersChance.gml</script>
             <script>scripts\scrEqualChance.gml</script>
+            <script>scripts\scrGunsChance.gml</script>
           </scripts>
           <script>scripts\scrSetGuns.gml</script>
           <script>scripts\scrRegenerateShields.gml</script>
@@ -536,7 +557,6 @@
       <script>scripts\scrIsRight.gml</script>
       <script>scripts\scrRandomizeSeed.gml</script>
       <script>scripts\scrResetTouchedTimeline.gml</script>
-      <script>scripts\scrSetEnemies.gml</script>
       <script>scripts\scrSetState.gml</script>
       <script>scripts\scrTimelineActions.gml</script>
       <script>scripts\scrTouchedTimelineThisTurn.gml</script>
@@ -547,6 +567,8 @@
       </scripts>
       <script>scripts\scrContains.gml</script>
       <script>scripts\scrIsOutOfBounds.gml</script>
+      <script>scripts\scrGetRoomNames.gml</script>
+      <script>scripts\scrGetEnemiesAndProjectiles.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -613,12 +635,13 @@
   </objects>
   <rooms name="rooms">
     <rooms name="test">
+      <room>rooms\rmTestMainMenu</room>
+      <room>rooms\rmTestSidecar</room>
+      <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTestFlasher</room>
       <room>rooms\rmTestRiceCake</room>
       <room>rooms\rmTestHalitosis</room>
-      <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTestPincer</room>
-      <room>rooms\rmTestSidecar</room>
     </rooms>
   </rooms>
   <help>

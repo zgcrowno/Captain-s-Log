@@ -48,4 +48,7 @@ if(!((requiredPPShields * 4) > currentPP) && !(actionMap[? global.util.actionMap
 } else if(!((actionMap[? global.util.actionMapShieldsPortString] == active) && (actionMap[? global.util.actionMapShieldsStarboardString] == active) && (actionMap[? global.util.actionMapShieldsBowString] == active) && (actionMap[? global.util.actionMapShieldsSternString] == active))) {
     //To Do: Error to user about lack of power...
 }
-scrSetState(initState);
+
+if(object_is_ancestor(object_index, objPlayerShip)) {
+    scrSetState(global.util.initState);
+}

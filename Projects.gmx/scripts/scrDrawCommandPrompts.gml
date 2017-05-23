@@ -1,53 +1,55 @@
-if(global.player.currentState == global.player.initState) {
+if(global.util.currentState == global.util.initState) {
     scrDrawInitStateCommandPrompts();
-} else if(global.player.currentState == global.player.thrusterState) {
+} else if(global.util.currentState == global.util.thrusterState) {
     scrDrawThrusterStateCommandPrompts();
-} else if(global.player.currentState == global.player.shieldState) {
+} else if(global.util.currentState == global.util.shieldState) {
     scrDrawShieldStateCommandPrompts();
-} else if(global.player.currentState == global.player.targetState) {
+} else if(global.util.currentState == global.util.targetState) {
     scrDrawTargetStateCommandPrompts();
-} else if(global.player.currentState == global.player.gunState) {
+} else if(global.util.currentState == global.util.gunState) {
     draw_text(global.hud.commandsRightBound - string_width(global.util.fireString), 
               global.hud.commandsUpperBound, 
               global.util.fireString);
-} else if(global.player.currentState == global.player.cannonState) {
+} else if(global.util.currentState == global.util.cannonState) {
     draw_text(global.hud.commandsRightBound - string_width(global.util.fireString), 
               global.hud.commandsUpperBound, 
               global.util.fireString);
-} else if(global.player.currentState == global.player.cutState) {
+} else if(global.util.currentState == global.util.cutState) {
     scrDrawCutStateCommandPrompts();
-} else if(global.player.currentState == global.player.thrusterPortState) {
+} else if(global.util.currentState == global.util.thrusterPortState) {
     draw_text(global.hud.commandsRightBound - string_width(global.util.poundString), 
               global.hud.commandsUpperBound, 
               global.util.poundString);
-} else if(global.player.currentState == global.player.thrusterStarboardState) {
+} else if(global.util.currentState == global.util.thrusterStarboardState) {
     draw_text(global.hud.commandsRightBound - string_width(global.util.poundString), 
               global.hud.commandsUpperBound, 
               global.util.poundString);
-} else if(global.player.currentState == global.player.thrusterBowState) {
+} else if(global.util.currentState == global.util.thrusterBowState) {
     draw_text(global.hud.commandsRightBound - string_width(global.util.poundString), 
               global.hud.commandsUpperBound, 
               global.util.poundString);
-} else if(global.player.currentState == global.player.thrusterSternState) {
+} else if(global.util.currentState == global.util.thrusterSternState) {
     draw_text(global.hud.commandsRightBound - string_width(global.util.poundString), 
               global.hud.commandsUpperBound, 
               global.util.poundString);
-} else if(global.player.currentState == global.player.thrusterRotateState) {
+} else if(global.util.currentState == global.util.thrusterRotateState) {
     scrDrawThrusterRotateStateCommandPrompts();
-} else if(global.player.currentState == global.player.thrusterRotateDegreesClockwiseState) {
+} else if(global.util.currentState == global.util.thrusterRotateDegreesClockwiseState) {
     draw_text(global.hud.commandsRightBound - string_width(global.util.poundString), 
               global.hud.commandsUpperBound, 
               global.util.poundString);
-} else if(global.player.currentState == global.player.thrusterRotateDegreesCounterclockwiseState) {
+} else if(global.util.currentState == global.util.thrusterRotateDegreesCounterclockwiseState) {
     draw_text(global.hud.commandsRightBound - string_width(global.util.poundString), 
               global.hud.commandsUpperBound, 
               global.util.poundString);
-} else if(global.player.currentState == global.player.activeState) {
+} else if(global.util.currentState == global.util.activeState) {
     scrDrawActiveStateCommandPrompts();
-} else if(global.player.currentState == global.player.cutThrustersState) {
+} else if(global.util.currentState == global.util.cutThrustersState) {
     scrDrawCutThrustersStateCommandPrompts();
-} else if(global.player.currentState == global.player.cutThrustersRotateState) {
+} else if(global.util.currentState == global.util.cutThrustersRotateState) {
     scrDrawCutThrustersRotateStateCommandPrompts();
-} else if(global.player.currentState == global.player.cutShieldsState) {
+} else if(global.util.currentState == global.util.cutShieldsState) {
     scrDrawCutShieldsStateCommandPrompts();
+} else if(global.util.currentState == global.util.menuInitState) {
+    scrDrawMenuInitStateCommandPrompts();
 }

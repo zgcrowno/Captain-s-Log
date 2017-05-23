@@ -1,4 +1,4 @@
-if(global.player.currentState == global.player.targetState) {
+if(global.util.currentState == global.util.targetState) {
     var enemies = scrGetEnemies();
     for(i = 0; i < array_length_1d(enemies); i++) {
         var enemy = enemies[i];

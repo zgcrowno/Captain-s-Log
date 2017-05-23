@@ -26,7 +26,8 @@ global.player = instance_find(objPlayerShip, 0);
 instance_create(262, 212, objPawn);
 instance_create(262, 162, objPawn);
 instance_create(0, 0, objGUI);
-global.allGridBoxes = scrGetGridBoxes();</code>
+global.allGridBoxes = scrGetGridBoxes();
+global.input = "";</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

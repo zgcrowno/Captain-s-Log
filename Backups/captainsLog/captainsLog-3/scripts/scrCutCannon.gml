@@ -1,4 +1,6 @@
-scrSetState(initState);
+if(object_is_ancestor(object_index, objPlayerShip)) {
+    scrSetState(global.util.initState);
+}
 
 if(actionMap[? global.util.actionMapCannonString]) {
     scrChangeStateAction(global.util.actionMapCannonString, noone, noone);

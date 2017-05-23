@@ -1,4 +1,6 @@
-scrSetState(initState);
+if(object_is_ancestor(object_index, objPlayerShip)) {
+    scrSetState(global.util.initState);
+}
 
 if(!(requiredPPShields > currentPP) && !(actionMap[? global.util.actionMapShieldsPortString] == active)) {
     scrChangeStateAction(global.util.actionMapShieldsPortString, global.util.actionQueueShieldsPortString, global.util.actionQueueCutShieldsPortString);

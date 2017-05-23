@@ -47,28 +47,6 @@ starboardShields = noone;
 bowShields = noone;
 sternShields = noone;
 
-//Hud States
-initState = 0;
-thrusterState = 1;
-shieldState = 2;
-gunState = 3;
-cannonState = 4;
-cutState = 5;
-thrusterPortState = 6;
-thrusterStarboardState = 7;
-thrusterBowState = 8;
-thrusterSternState = 9;
-thrusterRotateState = 10;
-thrusterRotateDegreesClockwiseState = 11;
-thrusterRotateDegreesCounterclockwiseState = 12;
-cutThrustersState = 13;
-cutShieldsState = 14;
-cutThrustersRotateState = 15;
-cannonChargeState = 16;
-targetState = 17;
-activeState = 18;
-currentState = initState;
-
 //Maximum overall health and power of the ship
 maxHP = 0;
 maxPP = 0;
@@ -129,6 +107,3 @@ percentPPGuns = 0;
 percentPPCannon = 0;
 percentPPActive = 0;
 percentPPPassive = 0;
-
-//String representing user input
-input = "";

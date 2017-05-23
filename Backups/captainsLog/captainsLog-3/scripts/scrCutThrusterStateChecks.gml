@@ -6,15 +6,15 @@ scrAcceptInput(global.util.rotateStringLower);
 scrAcceptInput(global.util.allStringLower);
 
 if(keyboard_check_pressed(vk_enter)) {
-    if(input == global.util.portStringLower) {
+    if(global.input == global.util.portStringLower) {
         scrCutThrustersPort();
-    } else if(input == global.util.starboardStringLower) {
+    } else if(global.input == global.util.starboardStringLower) {
         scrCutThrustersStarboard();
-    } else if(input == global.util.bowStringLower) {
+    } else if(global.input == global.util.bowStringLower) {
         scrCutThrustersBow();
-    } else if(input == global.util.sternStringLower) {
+    } else if(global.input == global.util.sternStringLower) {
         scrCutThrustersStern();
-    } else if(input == global.util.allStringLower) {
+    } else if(global.input == global.util.allStringLower) {
         scrCutThrustersAll();
     }
 }

@@ -1,3 +1,4 @@
+//TODO: Ensure that this doesn't lead to enemy ships being assigned designations equal to the empty string.
 while(designation == "") {
     designation = global.util.designationArray[random(array_length_1d(global.util.designationArray))];
 }

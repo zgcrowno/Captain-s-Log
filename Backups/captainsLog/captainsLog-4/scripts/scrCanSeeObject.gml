@@ -5,6 +5,9 @@ pointDirection = point_direction(playerArg.x, playerArg.y, objectArg.x, objectAr
 if(scrIsFacingUp(playerArg)) {
     if(objectArg.y < playerArg.y) {
         if(pointDirection >= 40 && pointDirection <= 140) {
+            if(objectArg.object_index == objPlayerEnergyBall) {
+                show_debug_message(string(id));
+            }
             return true;
         } else {
             return false;

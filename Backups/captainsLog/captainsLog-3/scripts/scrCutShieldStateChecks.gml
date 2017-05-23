@@ -5,15 +5,15 @@ scrAcceptInput(global.util.sternStringLower);
 scrAcceptInput(global.util.allStringLower);
 
 if(keyboard_check_pressed(vk_enter)) {
-    if(input == global.util.portStringLower) {
+    if(global.input == global.util.portStringLower) {
         scrCutShieldsPort();
-    } else if(input == global.util.starboardStringLower) {
+    } else if(global.input == global.util.starboardStringLower) {
         scrCutShieldsStarboard();
-    } else if(input == global.util.bowStringLower) {
+    } else if(global.input == global.util.bowStringLower) {
         scrCutShieldsBow();
-    } else if(input == global.util.sternStringLower) {
+    } else if(global.input == global.util.sternStringLower) {
         scrCutShieldsStern();
-    } else if(input == global.util.allStringLower) {
+    } else if(global.input == global.util.allStringLower) {
         scrCutShieldsAll();
     }
 }

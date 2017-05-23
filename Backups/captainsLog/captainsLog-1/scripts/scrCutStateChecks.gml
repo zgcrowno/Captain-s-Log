@@ -7,15 +7,15 @@ scrAcceptInput(global.util.targetStringLower);
 scrAcceptInput(global.util.allStringLower);
 
 if(keyboard_check_pressed(vk_enter)) {
-    if(input == global.util.targetStringLower) {
+    if(global.input == global.util.targetStringLower) {
         scrCutTarget();
-    } else if(input == global.util.gunsStringLower) {
+    } else if(global.input == global.util.gunsStringLower) {
         scrCutGuns();
-    } else if(input == global.util.cannonStringLower) {
+    } else if(global.input == global.util.cannonStringLower) {
         scrCutCannon();
-    } else if(input == global.util.passiveStringLower) {
+    } else if(global.input == global.util.passiveStringLower) {
         scrCutPassive();
-    } else if(input == global.util.allStringLower) {
+    } else if(global.input == global.util.allStringLower) {
         scrCutAll();
     }
 }

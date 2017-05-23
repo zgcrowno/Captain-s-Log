@@ -8,13 +8,13 @@ scrAcceptInput(global.util.passiveStringLower);
 scrAcceptInput(global.util.cutStringLower);
 
 if(keyboard_check_pressed(vk_enter)) {
-    if(input == global.util.activeStringLower) {
+    if(global.input == global.util.activeStringLower) {
         if(object_index != objFlasher && object_index != objMezzanine) {
             if (keyboard_check_pressed(vk_enter)) {
                 scrActiveFire();
             }
         }
-    } else if(input == global.util.passiveStringLower) {
+    } else if(global.input == global.util.passiveStringLower) {
         scrPassiveDivertPower();
     }
 }

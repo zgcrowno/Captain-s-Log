@@ -1,45 +1,45 @@
-if(currentState == initState) {
-    if(input == global.util.thrustersStringLower) {
-        scrSetState(thrusterState);
-    } else if(input == global.util.shieldsStringLower) {
-        scrSetState(shieldState);
-    } else if(input == global.util.targetStringLower) {
-        scrSetState(targetState);
-    } else if(input == global.util.gunsStringLower) {
-        scrSetState(gunState);
-    } else if(input == global.util.cannonStringLower) {
-        scrSetState(cannonState);
-    } else if(input == global.util.activeStringLower && (object_index == objFlasher || object_index == objMezzanine)) {
-        scrSetState(activeState);
-    } else if(input == global.util.cutStringLower) {
-        scrSetState(cutState);
+if(global.util.currentState == global.util.initState) {
+    if(global.input == global.util.thrustersStringLower) {
+        scrSetState(global.util.thrusterState);
+    } else if(global.input == global.util.shieldsStringLower) {
+        scrSetState(global.util.shieldState);
+    } else if(global.input == global.util.targetStringLower) {
+        scrSetState(global.util.targetState);
+    } else if(global.input == global.util.gunsStringLower) {
+        scrSetState(global.util.gunState);
+    } else if(global.input == global.util.cannonStringLower) {
+        scrSetState(global.util.cannonState);
+    } else if(global.input == global.util.activeStringLower && (object_index == objFlasher || object_index == objMezzanine)) {
+        scrSetState(global.util.activeState);
+    } else if(global.input == global.util.cutStringLower) {
+        scrSetState(global.util.cutState);
     }
-} else if(currentState == thrusterState) {
-    if(input == global.util.portStringLower) {
-        scrSetState(thrusterPortState);
-    } else if(input == global.util.starboardStringLower) {
-        scrSetState(thrusterStarboardState);
-    } else if(input == global.util.bowStringLower) {
-        scrSetState(thrusterBowState);
-    } else if(input == global.util.sternStringLower) {
-        scrSetState(thrusterSternState);
-    } else if(input == global.util.rotateStringLower) {
-        scrSetState(thrusterRotateState);
+} else if(global.util.currentState == global.util.thrusterState) {
+    if(global.input == global.util.portStringLower) {
+        scrSetState(global.util.thrusterPortState);
+    } else if(global.input == global.util.starboardStringLower) {
+        scrSetState(global.util.thrusterStarboardState);
+    } else if(global.input == global.util.bowStringLower) {
+        scrSetState(global.util.thrusterBowState);
+    } else if(global.input == global.util.sternStringLower) {
+        scrSetState(global.util.thrusterSternState);
+    } else if(global.input == global.util.rotateStringLower) {
+        scrSetState(global.util.thrusterRotateState);
     }
-} else if(currentState == thrusterRotateState) {
-    if(input == global.util.clockStringLower) {
-        scrSetState(thrusterRotateDegreesClockwiseState);
-    } else if(input == global.util.countStringLower) {
-        scrSetState(thrusterRotateDegreesCounterclockwiseState);
+} else if(global.util.currentState == global.util.thrusterRotateState) {
+    if(global.input == global.util.clockStringLower) {
+        scrSetState(global.util.thrusterRotateDegreesClockwiseState);
+    } else if(global.input == global.util.countStringLower) {
+        scrSetState(global.util.thrusterRotateDegreesCounterclockwiseState);
     }
-} else if(currentState == cutState) {
-    if(input == global.util.thrustersStringLower) {
-        scrSetState(cutThrustersState);
-    } else if(input == global.util.shieldsStringLower) {
-        scrSetState(cutShieldsState);
+} else if(global.util.currentState == global.util.cutState) {
+    if(global.input == global.util.thrustersStringLower) {
+        scrSetState(global.util.cutThrustersState);
+    } else if(global.input == global.util.shieldsStringLower) {
+        scrSetState(global.util.cutShieldsState);
     }
-} else if(currentState == cutThrustersState) {
-    if(input == global.util.rotateStringLower) {
-        scrSetState(cutThrustersRotateState);
+} else if(global.util.currentState == global.util.cutThrustersState) {
+    if(global.input == global.util.rotateStringLower) {
+        scrSetState(global.util.cutThrustersRotateState);
     }
 }

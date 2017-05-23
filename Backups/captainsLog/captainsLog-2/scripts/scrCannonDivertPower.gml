@@ -7,4 +7,6 @@ if(requiredPPCannon <= currentPP) {
 } else {
     //To Do: Error to user about lack of power...
 }
-scrSetState(initState);
+if(object_is_ancestor(object_index, objPlayerShip)) {
+    scrSetState(global.util.initState);
+}

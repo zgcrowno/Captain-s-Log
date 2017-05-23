@@ -1,3 +1,25 @@
+//Game States
+initState = 0;
+thrusterState = 1;
+shieldState = 2;
+gunState = 3;
+cannonState = 4;
+cutState = 5;
+thrusterPortState = 6;
+thrusterStarboardState = 7;
+thrusterBowState = 8;
+thrusterSternState = 9;
+thrusterRotateState = 10;
+thrusterRotateDegreesClockwiseState = 11;
+thrusterRotateDegreesCounterclockwiseState = 12;
+cutThrustersState = 13;
+cutShieldsState = 14;
+cutThrustersRotateState = 15;
+targetState = 16;
+activeState = 17;
+menuInitState = 18;
+currentState = initState;
+
 //The Difficulty Modifier for the Game
 difficultyModifier = 2;
 

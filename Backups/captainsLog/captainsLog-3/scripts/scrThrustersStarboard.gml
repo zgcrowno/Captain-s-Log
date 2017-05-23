@@ -1,4 +1,7 @@
 var distance = argument0;
 
-scrSetState(initState);
+if(object_is_ancestor(object_index, objPlayerShip)) {
+    scrSetState(global.util.initState);
+}
+
 scrAddAction(global.util.actionMapThrustersStarboardString, global.util.actionQueueThrustersStarboardString, currentHPThrustersStarboard, distance);

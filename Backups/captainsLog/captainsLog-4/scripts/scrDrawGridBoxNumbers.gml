@@ -1,5 +1,5 @@
 if(global.player.object_index == objFlasher) {
-    if(global.player.currentState == global.player.activeState) {
+    if(global.util.currentState == global.util.activeState) {
         for(var i = 0; i < array_length_1d(global.allGridBoxes); i++) {
             var gridBox = global.allGridBoxes[i];
             with(gridBox) {

@@ -1,4 +1,6 @@
-scrSetState(initState);
+if(object_is_ancestor(object_index, objPlayerShip)) {
+    scrSetState(global.util.initState);
+}
 
 if(!(requiredPPShields > currentPP) && !(actionMap[? global.util.actionMapShieldsBowString] == active)) {
     scrChangeStateAction(global.util.actionMapShieldsBowString, global.util.actionQueueShieldsBowString, global.util.actionQueueCutShieldsBowString);

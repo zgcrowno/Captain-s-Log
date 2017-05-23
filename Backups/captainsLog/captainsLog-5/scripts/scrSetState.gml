@@ -1,2 +1,2 @@
-currentState = argument0;
-input = "";
+global.util.currentState = argument0;
+global.input = "";

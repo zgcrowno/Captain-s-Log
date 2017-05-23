@@ -10,9 +10,11 @@
         }
         currentPPActive = requiredPPActive;
     } else if(object_index == objFlasher) {
+        //Note that 'j' is used here so as not to interfere with
+        //exterior loop's 'i' variable
         for(var j = 0; j < array_length_1d(gridBoxes); j++) {
             gridBox2 = gridBoxes[j];
-            if(input == gridBox2.numberString) {
+            if(global.input == gridBox2.numberString) {
                 if(scrGridBoxIsTeleportable(gridBox2)) {
                     x = gridBox2.x + (gridBox2.sprite_width / 2);
                     y = gridBox2.y + (gridBox2.sprite_width / 2);
@@ -35,17 +37,19 @@
         instance_create(x, y, objPincerActive);
         currentPPActive = requiredPPActive;
     } else if(object_index == objMezzanine) {
-        if(input == global.util.portStringLower) {
+        if(global.input == global.util.portStringLower) {
             sprite_index = sprMezzaninePort;
-        } else if(input == global.util.starboardStringLower) {
+        } else if(global.input == global.util.starboardStringLower) {
             sprite_index = sprMezzanineStarboard;
-        } else if(input == global.util.bowStringLower) {
+        } else if(global.input == global.util.bowStringLower) {
             sprite_index = sprMezzanineBow;
-        } else if(input == global.util.sternStringLower) {
+        } else if(global.input == global.util.sternStringLower) {
             sprite_index = sprMezzanineStern;
         } else {
             //TODO: Error about input
         }
         currentPPActive = requiredPPActive;
     }
-    scrSetState(initState);
+    if(object_is_ancestor(object_index, objPlayerShip)) {
+        scrSetState(global.util.initState);
+    }
