@@ -1,3 +1,3 @@
 var item = argument0;
 
-return item.x < x;
+return item.bbox_right < x;

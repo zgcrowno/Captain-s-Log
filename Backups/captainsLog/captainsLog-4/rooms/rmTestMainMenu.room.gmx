@@ -19,6 +19,7 @@ instance_create(0, 0, objHud);
 global.hud = instance_find(objHud, 0);
 global.player = noone;
 instance_create(0, 0, objGUI);
+global.gui = instance_find(objGUI, 0);
 global.allGridBoxes = scrGetGridBoxes();
 global.util.currentState = global.util.menuInitState;
 global.input = "";</code>

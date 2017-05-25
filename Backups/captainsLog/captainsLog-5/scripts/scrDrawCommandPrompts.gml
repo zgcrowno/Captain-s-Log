@@ -52,4 +52,6 @@ if(global.util.currentState == global.util.initState) {
     scrDrawCutShieldsStateCommandPrompts();
 } else if(global.util.currentState == global.util.menuInitState) {
     scrDrawMenuInitStateCommandPrompts();
+} else if(global.util.currentState == global.util.pauseInitState) {
+    scrDrawPauseInitStateCommandPrompts();
 }

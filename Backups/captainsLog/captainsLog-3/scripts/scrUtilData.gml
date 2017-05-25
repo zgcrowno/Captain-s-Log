@@ -19,8 +19,11 @@ targetState = 16;
 activeState = 17;
 menuInitState = 18;
 pauseInitState = 19;
-previousState = 20; //This variable is used to return to the correct state from the pause menu
+previousPlayState = 20; //This variable is used to return to the correct state from the pause menu
 currentState = initState;
+
+//Variable signifying whether or not the game is paused
+paused = false;
 
 //The Difficulty Modifier for the Game
 difficultyModifier = 2;
@@ -469,6 +472,7 @@ poundString = "[\#]";
 captainString = "Captain: ";
 heightString = "Height";
 cutString = "Cut";
+quitString = "Quit";
 
 thrustersStringLower = "thrusters";
 shieldsStringLower = "shields";

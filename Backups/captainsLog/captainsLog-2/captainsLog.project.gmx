@@ -17,9 +17,12 @@
         <sprite>sprites\sprGridBoxShield</sprite>
         <sprite>sprites\sprGridBoxStatic</sprite>
       </sprites>
-      <sprite>sprites\sprPixelHud</sprite>
       <sprites name="util">
         <sprite>sprites\sprRadarBlack</sprite>
+      </sprites>
+      <sprites name="cockpit">
+        <sprite>sprites\sprPixelHud</sprite>
+        <sprite>sprites\sprShutter</sprite>
       </sprites>
     </sprites>
     <sprites name="ship">
@@ -124,10 +127,16 @@
           <sprites name="player">
             <sprite>sprites\sprPlayerEnergyBall</sprite>
           </sprites>
+          <sprites name="enemy">
+            <sprite>sprites\sprEnemyEnergyBall</sprite>
+          </sprites>
         </sprites>
         <sprites name="background">
           <sprites name="player">
             <sprite>sprites\sprPlayerEnergyBallBackground</sprite>
+          </sprites>
+          <sprites name="enemy">
+            <sprite>sprites\sprEnemyEnergyBallBackground</sprite>
           </sprites>
         </sprites>
       </sprites>
@@ -163,6 +172,7 @@
         <script>scripts\scrTargetStateChecks.gml</script>
         <script>scripts\scrActiveStateChecks.gml</script>
         <script>scripts\scrMenuInitStateChecks.gml</script>
+        <script>scripts\scrPauseInitStateChecks.gml</script>
       </scripts>
       <script>scripts\scrAcceptInput.gml</script>
     </scripts>
@@ -200,6 +210,7 @@
           <script>scripts\scrDrawCommandPrompts.gml</script>
           <script>scripts\scrDrawActiveStateCommandPrompts.gml</script>
           <script>scripts\scrDrawMenuInitStateCommandPrompts.gml</script>
+          <script>scripts\scrDrawPauseInitStateCommandPrompts.gml</script>
         </scripts>
         <scripts name="actionQueue">
           <script>scripts\scrDrawActionQueue.gml</script>
@@ -241,6 +252,9 @@
         <script>scripts\scrTimelineVerticalMovement.gml</script>
       </scripts>
       <script>scripts\scrMovement.gml</script>
+      <scripts name="shutter">
+        <script>scripts\scrShutterMovement.gml</script>
+      </scripts>
     </scripts>
     <scripts name="object">
       <scripts name="data">
@@ -271,6 +285,8 @@
             <script>scripts\scrShipInteraction.gml</script>
             <script>scripts\scrIsTouchingShield.gml</script>
             <script>scripts\scrPlayerProjectileShipInteraction.gml</script>
+            <script>scripts\scrEnemyEnergyBallShipInteraction.gml</script>
+            <script>scripts\scrEnemyEnergyBallShieldsInteraction.gml</script>
           </scripts>
           <scripts name="orientation">
             <script>scripts\scrIsFacingSideOfShip.gml</script>
@@ -283,6 +299,9 @@
             <script>scripts\scrEnergyBallData.gml</script>
             <scripts name="player">
               <script>scripts\scrPlayerEnergyBallData.gml</script>
+            </scripts>
+            <scripts name="enemy">
+              <script>scripts\scrEnemyEnergyBallData.gml</script>
             </scripts>
           </scripts>
         </scripts>
@@ -625,6 +644,7 @@
         <objects name="enemy">
           <object>objects\objEnemyBullet</object>
           <object>objects\objEnemyBulletContact</object>
+          <object>objects\objEnemyEnergyBall</object>
         </objects>
         <object>objects\objEnergyBall</object>
       </objects>

@@ -1,0 +1,1 @@
+backgroundSprite = sprEnemyEnergyBallBackground;
