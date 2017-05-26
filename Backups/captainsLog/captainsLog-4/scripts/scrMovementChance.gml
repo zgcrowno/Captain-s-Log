@@ -1,1 +1,1 @@
-return random(10) >= 9.95;
+return random(10) >= 9.99;

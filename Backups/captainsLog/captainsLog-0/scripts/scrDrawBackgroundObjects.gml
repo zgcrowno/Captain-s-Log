@@ -1,3 +1,4 @@
+//TODO: Make this script more accurate; bring more perspective.
 objectArray = scrProximitySort(argument0);
 
 for(i = 0; i < array_length_1d(objectArray); i++) {

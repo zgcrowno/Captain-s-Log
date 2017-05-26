@@ -59,19 +59,34 @@
           </sprites>
           <sprites name="shrimper">
             <sprite>sprites\sprShrimper</sprite>
+            <sprite>sprites\sprShrimperTarget</sprite>
           </sprites>
           <sprites name="infiniteRegress">
             <sprite>sprites\sprInfiniteRegress</sprite>
+            <sprite>sprites\sprInfiniteRegressTarget</sprite>
           </sprites>
           <sprites name="epitaph">
             <sprite>sprites\sprEpitaph</sprite>
+            <sprite>sprites\sprEpitaphTarget</sprite>
           </sprites>
           <sprites name="nomad">
             <sprite>sprites\sprNomad</sprite>
+            <sprite>sprites\sprNomadTarget</sprite>
           </sprites>
         </sprites>
         <sprites name="background">
-          <sprite>sprites\sprPawnBackground</sprite>
+          <sprites name="pawn">
+            <sprite>sprites\sprPawnBackground</sprite>
+          </sprites>
+          <sprites name="shrimper">
+            <sprite>sprites\sprShrimperBackground</sprite>
+          </sprites>
+          <sprites name="nomad">
+            <sprite>sprites\sprNomadBackground</sprite>
+          </sprites>
+          <sprites name="epitaph">
+            <sprite>sprites\sprEpitaphBackground</sprite>
+          </sprites>
         </sprites>
       </sprites>
     </sprites>
@@ -391,6 +406,18 @@
             <script>scripts\scrEnemyShipData.gml</script>
             <scripts name="pawn">
               <script>scripts\scrPawnData.gml</script>
+            </scripts>
+            <scripts name="shrimper">
+              <script>scripts\scrShrimperData.gml</script>
+            </scripts>
+            <scripts name="infiniteRegress">
+              <script>scripts\scrInfiniteRegressData.gml</script>
+            </scripts>
+            <scripts name="nomad">
+              <script>scripts\scrNomadData.gml</script>
+            </scripts>
+            <scripts name="epitaph">
+              <script>scripts\scrEpitaphData.gml</script>
             </scripts>
           </scripts>
           <scripts name="util">
