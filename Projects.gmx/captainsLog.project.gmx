@@ -87,6 +87,9 @@
           <sprites name="epitaph">
             <sprite>sprites\sprEpitaphBackground</sprite>
           </sprites>
+          <sprites name="infiniteRegress">
+            <sprite>sprites\sprInfiniteRegressBackground</sprite>
+          </sprites>
         </sprites>
       </sprites>
     </sprites>
