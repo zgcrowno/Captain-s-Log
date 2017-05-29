@@ -1,11 +1,9 @@
 if(scrGunsChance()) {
-    if(scrIsAbove(global.player)) {
-        scrPlayerIsAboveGunsBehavior();
-    } else if(scrIsBelow(global.player)) {
-        scrPlayerIsBelowGunsBehavior();
-    } else if(scrIsLeft(global.player)) {
-        scrPlayerIsLeftGunsBehavior();
-    } else {
-        scrPlayerIsRightGunsBehavior();
+    if(scrIsFacing(global.player)) {
+        if(!actionMap[? global.util.actionMapGunsString] && gunsArray != noone) {
+            if(random(10) >= 6) {
+                scrGunsDivertPower();
+            }
+        }
     }
 }

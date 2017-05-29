@@ -59,19 +59,37 @@
           </sprites>
           <sprites name="shrimper">
             <sprite>sprites\sprShrimper</sprite>
+            <sprite>sprites\sprShrimperTarget</sprite>
           </sprites>
           <sprites name="infiniteRegress">
             <sprite>sprites\sprInfiniteRegress</sprite>
+            <sprite>sprites\sprInfiniteRegressTarget</sprite>
           </sprites>
           <sprites name="epitaph">
             <sprite>sprites\sprEpitaph</sprite>
+            <sprite>sprites\sprEpitaphTarget</sprite>
           </sprites>
           <sprites name="nomad">
             <sprite>sprites\sprNomad</sprite>
+            <sprite>sprites\sprNomadTarget</sprite>
           </sprites>
         </sprites>
         <sprites name="background">
-          <sprite>sprites\sprPawnBackground</sprite>
+          <sprites name="pawn">
+            <sprite>sprites\sprPawnBackground</sprite>
+          </sprites>
+          <sprites name="shrimper">
+            <sprite>sprites\sprShrimperBackground</sprite>
+          </sprites>
+          <sprites name="nomad">
+            <sprite>sprites\sprNomadBackground</sprite>
+          </sprites>
+          <sprites name="epitaph">
+            <sprite>sprites\sprEpitaphBackground</sprite>
+          </sprites>
+          <sprites name="infiniteRegress">
+            <sprite>sprites\sprInfiniteRegressBackground</sprite>
+          </sprites>
         </sprites>
       </sprites>
     </sprites>
@@ -392,6 +410,18 @@
             <scripts name="pawn">
               <script>scripts\scrPawnData.gml</script>
             </scripts>
+            <scripts name="shrimper">
+              <script>scripts\scrShrimperData.gml</script>
+            </scripts>
+            <scripts name="infiniteRegress">
+              <script>scripts\scrInfiniteRegressData.gml</script>
+            </scripts>
+            <scripts name="nomad">
+              <script>scripts\scrNomadData.gml</script>
+            </scripts>
+            <scripts name="epitaph">
+              <script>scripts\scrEpitaphData.gml</script>
+            </scripts>
           </scripts>
           <scripts name="util">
             <script>scripts\scrSetDesignation.gml</script>
@@ -503,6 +533,7 @@
             <script>scripts\scrRadarBoundIsPortAdjacent.gml</script>
             <script>scripts\scrRadarBoundIsSternAdjacent.gml</script>
             <script>scripts\scrRadarBoundIsStarboardAdjacent.gml</script>
+            <script>scripts\scrIsFacing.gml</script>
           </scripts>
           <scripts name="random">
             <script>scripts\scrMovementChance.gml</script>
@@ -622,6 +653,10 @@
         <objects name="enemyShip">
           <object>objects\objPawn</object>
           <object>objects\objEnemyShip</object>
+          <object>objects\objShrimper</object>
+          <object>objects\objInfiniteRegress</object>
+          <object>objects\objEpitaph</object>
+          <object>objects\objNomad</object>
         </objects>
       </objects>
       <objects name="hud">
