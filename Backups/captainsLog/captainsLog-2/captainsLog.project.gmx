@@ -362,6 +362,9 @@
             <scripts name="flasher">
               <script>scripts\scrFlasherCannonFire.gml</script>
             </scripts>
+            <scripts name="nomad">
+              <script>scripts\scrNomadCannonFire.gml</script>
+            </scripts>
           </scripts>
           <scripts name="powerDiversion">
             <script>scripts\scrCannonDivertPower.gml</script>
@@ -460,14 +463,12 @@
             </scripts>
             <scripts name="guns">
               <script>scripts\scrGunsBehavior.gml</script>
-              <scripts name="orientation">
-                <scripts name="player">
-                  <script>scripts\scrPlayerIsAboveGunsBehavior.gml</script>
-                  <script>scripts\scrPlayerIsBelowGunsBehavior.gml</script>
-                  <script>scripts\scrPlayerIsLeftGunsBehavior.gml</script>
-                  <script>scripts\scrPlayerIsRightGunsBehavior.gml</script>
-                </scripts>
-              </scripts>
+            </scripts>
+            <scripts name="active">
+              <script>scripts\scrActiveBehavior.gml</script>
+            </scripts>
+            <scripts name="cannonBehavior">
+              <script>scripts\scrCannonBehavior.gml</script>
             </scripts>
           </scripts>
         </scripts>
@@ -540,6 +541,8 @@
             <script>scripts\scrThrustersChance.gml</script>
             <script>scripts\scrEqualChance.gml</script>
             <script>scripts\scrGunsChance.gml</script>
+            <script>scripts\scrActiveChance.gml</script>
+            <script>scripts\scrCannonChance.gml</script>
           </scripts>
           <script>scripts\scrSetGuns.gml</script>
           <script>scripts\scrRegenerateShields.gml</script>

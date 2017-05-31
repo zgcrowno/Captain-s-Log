@@ -1,5 +1,10 @@
+//TODO: Maybe clean this up. It's possible that the Pawn can function almost exactly like the
+//shrimper (with significantly less code). If so, numerous scripts can be deleted.
 if(scrMovementChance()) {
     if(object_index == objPawn) {
+        if(scrIsFacing(global.player)) {
+        
+        }
         if(scrIsAbove(global.player)) {
             scrPlayerIsAboveMovementBehavior();    
         } else if(scrIsBelow(global.player)) {
@@ -12,7 +17,6 @@ if(scrMovementChance()) {
     } else if(object_index == objShrimper) {
         if(scrIsFacing(global.player)) {
             if(actionMap[? global.util.actionMapThrustersPortString] == 0 && actionMap[? global.util.actionMapThrustersStarboardString] == 0) {
-                if(scrThrustersChance()) {
                     if(scrIsFacingUp(self)) {
                         if(scrIsLeft(global.player)) {
                             scrThrustersStarboard(irandom_range(ceil(distance_to_point(global.player.x, y) / sprite_get_width(sprGridBox)), ceil(distance_to_point(global.hud.radarLeftBound, y) / sprite_get_width(sprGridBox))));
@@ -38,7 +42,6 @@ if(scrMovementChance()) {
                             scrThrustersPort(irandom_range(ceil(distance_to_point(x, global.player.y) / sprite_get_width(sprGridBox)), ceil(distance_to_point(x, global.hud.radarLowerBound) / sprite_get_width(sprGridBox))));
                         }
                     }
-                }
             }
         } else {
             if(scrEqualChance()) {

@@ -1,1 +1,1 @@
-return random(10) >= 6;
+return random(4) >= 1;

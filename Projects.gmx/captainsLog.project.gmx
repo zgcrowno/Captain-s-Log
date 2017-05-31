@@ -331,6 +331,27 @@
           </scripts>
           <scripts name="fire">
             <script>scripts\scrActiveFire.gml</script>
+            <scripts name="halitosis">
+              <script>scripts\scrHalitosisActiveFire.gml</script>
+            </scripts>
+            <scripts name="ricecake">
+              <script>scripts\scrRicecakeActiveFire.gml</script>
+            </scripts>
+            <scripts name="sidecar">
+              <script>scripts\scrSidecarActiveFire.gml</script>
+            </scripts>
+            <scripts name="pincer">
+              <script>scripts\scrPincerActiveFire.gml</script>
+            </scripts>
+            <scripts name="mezzanine">
+              <script>scripts\scrMezzanineActiveFire.gml</script>
+            </scripts>
+            <scripts name="flasher">
+              <script>scripts\scrFlasherActiveFire.gml</script>
+            </scripts>
+            <scripts name="nomad">
+              <script>scripts\scrNomadActiveFire.gml</script>
+            </scripts>
           </scripts>
         </scripts>
         <scripts name="cannon">
@@ -361,6 +382,9 @@
             </scripts>
             <scripts name="flasher">
               <script>scripts\scrFlasherCannonFire.gml</script>
+            </scripts>
+            <scripts name="nomad">
+              <script>scripts\scrNomadCannonFire.gml</script>
             </scripts>
           </scripts>
           <scripts name="powerDiversion">
@@ -460,14 +484,12 @@
             </scripts>
             <scripts name="guns">
               <script>scripts\scrGunsBehavior.gml</script>
-              <scripts name="orientation">
-                <scripts name="player">
-                  <script>scripts\scrPlayerIsAboveGunsBehavior.gml</script>
-                  <script>scripts\scrPlayerIsBelowGunsBehavior.gml</script>
-                  <script>scripts\scrPlayerIsLeftGunsBehavior.gml</script>
-                  <script>scripts\scrPlayerIsRightGunsBehavior.gml</script>
-                </scripts>
-              </scripts>
+            </scripts>
+            <scripts name="active">
+              <script>scripts\scrActiveBehavior.gml</script>
+            </scripts>
+            <scripts name="cannonBehavior">
+              <script>scripts\scrCannonBehavior.gml</script>
             </scripts>
           </scripts>
         </scripts>
@@ -540,6 +562,8 @@
             <script>scripts\scrThrustersChance.gml</script>
             <script>scripts\scrEqualChance.gml</script>
             <script>scripts\scrGunsChance.gml</script>
+            <script>scripts\scrActiveChance.gml</script>
+            <script>scripts\scrCannonChance.gml</script>
           </scripts>
           <script>scripts\scrSetGuns.gml</script>
           <script>scripts\scrRegenerateShields.gml</script>

@@ -11,5 +11,7 @@ if(actionMap[? global.util.actionMapCannonString]) {
         scrPincerCannonFire();
     } else if(object_index == objMezzanine) {
         scrMezzanineCannonFire();
+    } else if(object_index == objNomad) {
+        scrNomadCannonFire();
     }
 }

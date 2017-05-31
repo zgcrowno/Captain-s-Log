@@ -25,6 +25,8 @@ instance_create(262, 262, objFlasher);
 global.player = instance_find(objPlayerShip, 0);
 instance_create(262, 212, objPawn);
 instance_create(262, 162, objPawn);
+instance_create(212, 112, objShrimper);
+instance_create(312, 87, objNomad);
 instance_create(0, 0, objGUI);
 global.gui = instance_find(objGUI, 0);
 global.allGridBoxes = scrGetGridBoxes();

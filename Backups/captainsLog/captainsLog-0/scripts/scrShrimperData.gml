@@ -8,12 +8,12 @@ requiredPPThrusters = maxPP / 4;
 requiredPPThrustersRotate = maxPP / 2;
 requiredPPGuns = maxPP / 2
 
-gunsArray[0] = x + lengthdir_x(len, image_angle + 90);
-gunsArray[1] = y + lengthdir_y(len, image_angle + 90);
-gunsArray[2] = x + lengthdir_x(hypotenuse, image_angle + 135);
-gunsArray[3] = y + lengthdir_y(hypotenuse, image_angle + 135);
-gunsArray[4] = x + lengthdir_x(hypotenuse, image_angle + 45);
-gunsArray[5] = y + lengthdir_y(hypotenuse, image_angle + 45);
+gunsArray[0] = 0;
+gunsArray[1] = 0;
+gunsArray[2] = 0;
+gunsArray[3] = 0;
+gunsArray[4] = 0;
+gunsArray[5] = 0;
 
 radarSprite = sprShrimper;
 radarSpriteTarget = sprShrimperTarget;

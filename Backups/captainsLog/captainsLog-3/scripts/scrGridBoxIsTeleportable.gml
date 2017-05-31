@@ -1,7 +1,7 @@
 var gridBox = argument0;
 var distantObject = noone;
 
-if(object_is_ancestor(object_index, objPlayerShip)) {
+if(object_is_ancestor(object_index, objShip)) {
     distantObject = gridBox;
 } else if(object_index == objGridBox) {
     distantObject = global.player;

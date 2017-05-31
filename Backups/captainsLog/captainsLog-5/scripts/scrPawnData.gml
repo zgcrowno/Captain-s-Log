@@ -8,8 +8,8 @@ requiredPPThrusters = maxPP / 4;
 requiredPPThrustersRotate = maxPP / 2;
 requiredPPGuns = maxPP / 2
 
-gunsArray[0] = x;
-gunsArray[1] = y;
+gunsArray[0] = 0;
+gunsArray[1] = 0;
 
 radarSprite = sprPawn;
 radarSpriteTarget = sprPawnTarget;

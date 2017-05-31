@@ -1,6 +1,6 @@
 var objectFaced = argument0;
 
-return (scrIsFacingLeft() && scrIsLeft(objectFaced))
-        || (scrIsFacingRight() && scrIsRight(objectFaced))
-        || (scrIsFacingUp() && scrIsAbove(objectFaced))
-        || (scrIsFacingDown() && scrIsBelow(objectFaced))
+return (scrIsFacingLeft(self) && scrIsLeft(objectFaced))
+        || (scrIsFacingRight(self) && scrIsRight(objectFaced))
+        || (scrIsFacingUp(self) && scrIsAbove(objectFaced))
+        || (scrIsFacingDown(self) && scrIsBelow(objectFaced))

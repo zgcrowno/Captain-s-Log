@@ -18,3 +18,6 @@ if(object_is_ancestor(object_index, objPlayerShip)) {
     scrShieldManagement();
 }
 scrResetActionMap();
+if(object_is_ancestor(object_index, objEnemyShip)) {
+    scrBehavior();
+}
