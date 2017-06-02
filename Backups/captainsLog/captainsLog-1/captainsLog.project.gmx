@@ -23,6 +23,7 @@
       <sprites name="cockpit">
         <sprite>sprites\sprPixelHud</sprite>
         <sprite>sprites\sprShutter</sprite>
+        <sprite>sprites\sprCockpit</sprite>
       </sprites>
     </sprites>
     <sprites name="ship">
@@ -331,6 +332,27 @@
           </scripts>
           <scripts name="fire">
             <script>scripts\scrActiveFire.gml</script>
+            <scripts name="halitosis">
+              <script>scripts\scrHalitosisActiveFire.gml</script>
+            </scripts>
+            <scripts name="ricecake">
+              <script>scripts\scrRicecakeActiveFire.gml</script>
+            </scripts>
+            <scripts name="sidecar">
+              <script>scripts\scrSidecarActiveFire.gml</script>
+            </scripts>
+            <scripts name="pincer">
+              <script>scripts\scrPincerActiveFire.gml</script>
+            </scripts>
+            <scripts name="mezzanine">
+              <script>scripts\scrMezzanineActiveFire.gml</script>
+            </scripts>
+            <scripts name="flasher">
+              <script>scripts\scrFlasherActiveFire.gml</script>
+            </scripts>
+            <scripts name="nomad">
+              <script>scripts\scrNomadActiveFire.gml</script>
+            </scripts>
           </scripts>
         </scripts>
         <scripts name="cannon">

@@ -30,6 +30,7 @@ instance_create(312, 87, objNomad);
 instance_create(0, 0, objGUI);
 global.gui = instance_find(objGUI, 0);
 global.allGridBoxes = scrGetGridBoxes();
+global.deadEnemies = ds_map_create();
 global.input = "";</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>

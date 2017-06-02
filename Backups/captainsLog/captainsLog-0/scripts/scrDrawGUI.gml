@@ -14,7 +14,7 @@ if(global.util.paused) {
     draw_sprite(sprRadarBlack, -1, view_xport[global.util.radarPort], view_yport[global.util.radarPort]);
 }
 
-draw_sprite(sprPixelHud, -1, 0, 0);
+draw_sprite(sprCockpit, -1, 0, 0);
             
 //Draw the typing prompt
 draw_sprite(sprTypingPrompt, 

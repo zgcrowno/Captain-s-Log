@@ -23,6 +23,7 @@
       <sprites name="cockpit">
         <sprite>sprites\sprPixelHud</sprite>
         <sprite>sprites\sprShutter</sprite>
+        <sprite>sprites\sprCockpit</sprite>
       </sprites>
     </sprites>
     <sprites name="ship">
