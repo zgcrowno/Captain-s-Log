@@ -1,5 +1,8 @@
-if(target == noone && !ds_map_empty(global.deadEnemies)) {
-    target = ds_map_find_value(global.deadEnemies, ds_map_find_first(global.deadEnemies));
-    nearestTargetProximalGridBox = scrGetNearestEpitaphTargetPerimeterGridBox();
-    toRevive = global.deadEnemies[? target];
+if(target == noone && array_length_1d(global.deadEnemies) != 0) {
+    var index = irandom(array_length_1d(global.deadEnemies) - 1);
+    if(array_length_2d(global.deadEnemies, index) != 0) {
+        toRevive = global.deadEnemies[index, 0];
+        target = global.deadEnemies[index, 1];
+        nearestTargetProximalGridBox = scrGetNearestEpitaphTargetPerimeterGridBox();
+    }
 }

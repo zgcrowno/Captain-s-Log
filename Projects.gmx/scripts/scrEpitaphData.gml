@@ -7,6 +7,7 @@ currentPP = maxPP;
 requiredPPThrusters = maxPP / 4;
 requiredPPThrustersRotate = maxPP / 2;
 requiredPPGuns = maxPP / 2
+requiredPPPassive = maxPP * 0.2;
 
 //The target variable represents the gridBox at which the enemy ship died,
 //the nearestTargetProximalGridBox variable represents the closest gridBox

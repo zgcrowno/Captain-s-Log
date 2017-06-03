@@ -497,6 +497,9 @@
             <scripts name="cannonBehavior">
               <script>scripts\scrCannonBehavior.gml</script>
             </scripts>
+            <scripts name="passive">
+              <script>scripts\scrPassiveBehavior.gml</script>
+            </scripts>
           </scripts>
         </scripts>
         <scripts name="guns">

@@ -2,7 +2,9 @@ if(!object_is_ancestor(object_index, objPlayerShip)) {
     if(currentHP <= 0) {
         var gridBoxTouching = instance_position(x, y, objGridBox);
         if(gridBoxTouching != noone) {
-            ds_map_add(global.deadEnemies, object_index, gridBoxTouching);
+            var deadEnemiesLength = array_length_1d(global.deadEnemies);
+            global.deadEnemies[deadEnemiesLength, 0] = object_index;
+            global.deadEnemies[deadEnemiesLength, 1] = gridBoxTouching;
         }
         if(id == global.player.target) {
             global.player.target = noone;

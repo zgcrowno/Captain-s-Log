@@ -1,3 +1,4 @@
 scrMovementBehavior();
 scrGunsBehavior();
 scrCannonBehavior();
+scrPassiveBehavior();
