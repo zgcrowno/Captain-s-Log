@@ -1,8 +1,17 @@
 var enemiesAndProjectiles = scrGetEnemiesAndProjectiles();
+var epitaphs = scrGetEpitaphs();
 var gridBoxes = global.allGridBoxes;
 
 draw_set_color(c_white);
 draw_set_font(fntMain);
+
+//Draw the epitaph target radius
+for(i = 0; i < array_length_1d(epitaphs); i++) {
+    var epitaph = epitaphs[i];
+    if(epitaph.target != noone) {
+        draw_sprite(sprEpitaphTargetRadius, -1, view_xport[global.util.radarPort] + epitaph.target.x - global.util.epitaphTargetRadius, view_yport[global.util.radarPort] + epitaph.target.y - global.util.epitaphTargetRadius);
+    }
+}
 
 //Draw the skybox, enemy background sprites, projectile background sprites and HUD
 draw_sprite(sprBlueSky, -1, 0, 0);

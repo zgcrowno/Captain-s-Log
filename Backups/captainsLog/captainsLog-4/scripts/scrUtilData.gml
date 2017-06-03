@@ -39,6 +39,8 @@ radarView = 1;
 //The distance by which the background moves when the player ship's thrusters are active
 backgroundMovementDistance = 50;
 
+epitaphTargetRadius = 3 * sprite_get_width(sprGridBox);
+
 //The number of pixels beyond the background's play area
 //(this will change if backgroundMovementDistance does)
 backgroundBuffer = 562;

@@ -54,5 +54,55 @@ if(scrMovementChance()) {
                 }
             }
         }
+    } else if(object_index == objEpitaph) {
+        if(target != noone) {
+            if(distance_to_object(target) > global.util.epitaphTargetRadius) {
+                if(scrIsFacingUp(self)) {
+                    if(scrIsLeft(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersStarboardString] == 0) {
+                        scrThrustersStarboard(ceil(distance_to_point(nearestTargetProximalGridBox.x, y) / sprite_get_width(sprGridBox)));
+                    } else if(scrIsRight(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersPortString] == 0) {
+                        scrThrustersPort(ceil(distance_to_point(nearestTargetProximalGridBox.x, y) / sprite_get_width(sprGridBox)));
+                    }
+                    if(scrIsAbove(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersSternString] == 0) {
+                        scrThrustersStern(ceil(distance_to_point(x, nearestTargetProximalGridBox.y) / sprite_get_width(sprGridBox)));
+                    } else if(scrIsBelow(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersBowString] == 0) {
+                        scrThrustersBow(ceil(distance_to_point(x, nearestTargetProximalGridBox.y) / sprite_get_width(sprGridBox)));
+                    }
+                } else if(scrIsFacingLeft(self)) {
+                    if(scrIsLeft(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersSternString] == 0) {
+                        scrThrustersStern(ceil(distance_to_point(nearestTargetProximalGridBox.x, y) / sprite_get_width(sprGridBox)));
+                    } else if(scrIsRight(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersBowString] == 0) {
+                        scrThrustersBow(ceil(distance_to_point(nearestTargetProximalGridBox.x, y) / sprite_get_width(sprGridBox)));
+                    }
+                    if(scrIsAbove(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersPortString] == 0) {
+                        scrThrustersPort(ceil(distance_to_point(x, nearestTargetProximalGridBox.y) / sprite_get_width(sprGridBox)));
+                    } else if(scrIsBelow(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersStarboardString] == 0) {
+                        scrThrustersStarboard(ceil(distance_to_point(x, nearestTargetProximalGridBox.y) / sprite_get_width(sprGridBox)));
+                    }
+                } else if(scrIsFacingDown(self)) {
+                    if(scrIsLeft(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersPortString] == 0) {
+                        scrThrustersPort(ceil(distance_to_point(nearestTargetProximalGridBox.x, y) / sprite_get_width(sprGridBox)));
+                    } else if(scrIsRight(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersStarboardString] == 0) {
+                        scrThrustersStarboard(ceil(distance_to_point(nearestTargetProximalGridBox.x, y) / sprite_get_width(sprGridBox)));
+                    }
+                    if(scrIsAbove(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersBowString] == 0) {
+                        scrThrustersBow(ceil(distance_to_point(x, nearestTargetProximalGridBox.y) / sprite_get_width(sprGridBox)));
+                    } else if(scrIsBelow(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersSternString] == 0) {
+                        scrThrustersStern(ceil(distance_to_point(x, nearestTargetProximalGridBox.y) / sprite_get_width(sprGridBox)));
+                    }
+                } else if(scrIsFacingRight(self)) {
+                    if(scrIsLeft(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersBowString] == 0) {
+                        scrThrustersBow(ceil(distance_to_point(nearestTargetProximalGridBox.x, y) / sprite_get_width(sprGridBox)));
+                    } else if(scrIsRight(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersSternString] == 0) {
+                        scrThrustersStern(ceil(distance_to_point(nearestTargetProximalGridBox.x, y) / sprite_get_width(sprGridBox)));
+                    }
+                    if(scrIsAbove(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersStarboardString] == 0) {
+                        scrThrustersStarboard(ceil(distance_to_point(x, nearestTargetProximalGridBox.y) / sprite_get_width(sprGridBox)));
+                    } else if(scrIsBelow(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersPortString] == 0) {
+                        scrThrustersPort(ceil(distance_to_point(x, nearestTargetProximalGridBox.y) / sprite_get_width(sprGridBox)));
+                    }
+                }
+            }
+        }
     }
 }

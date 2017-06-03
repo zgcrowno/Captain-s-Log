@@ -4,9 +4,8 @@ maxPP = 100;
 currentHP = maxHP;
 currentPP = maxPP;
 
-requiredPPThrusters = maxPP / 4;
-requiredPPThrustersRotate = maxPP / 2;
-requiredPPGuns = maxPP / 2
+requiredPPCannon = maxPP * 0.75;
+requiredPPActive = maxPP * 0.75;
 
 radarSprite = sprNomad;
 radarSpriteTarget = sprNomadTarget;

@@ -10,6 +10,7 @@
       <sprite>sprites\sprTypingPrompt</sprite>
       <sprite>sprites\sprTimelineHorizontal</sprite>
       <sprite>sprites\sprTimelineVertical</sprite>
+      <sprite>sprites\sprEpitaphTargetRadius</sprite>
     </sprites>
     <sprites name="hud">
       <sprites name="gridBox">
@@ -17,13 +18,13 @@
         <sprite>sprites\sprGridBoxShield</sprite>
         <sprite>sprites\sprGridBoxStatic</sprite>
       </sprites>
-      <sprites name="util">
-        <sprite>sprites\sprRadarBlack</sprite>
-      </sprites>
       <sprites name="cockpit">
         <sprite>sprites\sprPixelHud</sprite>
         <sprite>sprites\sprShutter</sprite>
         <sprite>sprites\sprCockpit</sprite>
+      </sprites>
+      <sprites name="util">
+        <sprite>sprites\sprRadarBlack</sprite>
       </sprites>
     </sprites>
     <sprites name="ship">
@@ -451,6 +452,10 @@
           <scripts name="util">
             <script>scripts\scrSetDesignation.gml</script>
             <script>scripts\scrHighlightIfTarget.gml</script>
+            <script>scripts\scrSetEpitaphTarget.gml</script>
+            <script>scripts\scrGetNearestEpitaphTargetPerimeterGridBox.gml</script>
+            <script>scripts\scrGetEpitaphTargetProximalGridBoxes.gml</script>
+            <script>scripts\scrIsInEpitaphTargetRadius.gml</script>
           </scripts>
           <scripts name="behavior">
             <script>scripts\scrBehavior.gml</script>
@@ -644,6 +649,7 @@
       <script>scripts\scrIsOutOfBounds.gml</script>
       <script>scripts\scrGetRoomNames.gml</script>
       <script>scripts\scrGetEnemiesAndProjectiles.gml</script>
+      <script>scripts\scrGetEpitaphs.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">

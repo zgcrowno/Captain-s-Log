@@ -1,8 +1,19 @@
 var enemiesAndProjectiles = scrGetEnemiesAndProjectiles();
+var epitaphs = scrGetEpitaphs();
 var gridBoxes = global.allGridBoxes;
 
 draw_set_color(c_white);
 draw_set_font(fntMain);
+
+//Draw the epitaph target radius
+for(i = 0; i < array_length_1d(epitaphs); i++) {
+    var epitaph = epitaphs[i];
+    if(epitaph.target != noone) {
+        show_debug_message(epitaph.target.x - global.util.epitaphTargetRadius);
+        show_debug_message(epitaph.target.y - global.util.epitaphTargetRadius);
+        draw_sprite(sprEpitaphTargetRadius, -1, epitaph.target.x - global.util.epitaphTargetRadius, epitaph.target.y = global.util.epitaphTargetRadius);
+    }
+}
 
 //Draw the skybox, enemy background sprites, projectile background sprites and HUD
 draw_sprite(sprBlueSky, -1, 0, 0);
@@ -14,7 +25,7 @@ if(global.util.paused) {
     draw_sprite(sprRadarBlack, -1, view_xport[global.util.radarPort], view_yport[global.util.radarPort]);
 }
 
-draw_sprite(sprPixelHud, -1, 0, 0);
+draw_sprite(sprCockpit, -1, 0, 0);
             
 //Draw the typing prompt
 draw_sprite(sprTypingPrompt, 

@@ -27,9 +27,11 @@ instance_create(262, 212, objPawn);
 instance_create(262, 162, objPawn);
 instance_create(212, 112, objShrimper);
 instance_create(312, 87, objNomad);
+instance_create(362, 87, objEpitaph);
 instance_create(0, 0, objGUI);
 global.gui = instance_find(objGUI, 0);
 global.allGridBoxes = scrGetGridBoxes();
+global.deadEnemies = ds_map_create();
 global.input = "";</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
