@@ -56,7 +56,10 @@ if(scrMovementChance()) {
         }
     } else if(object_index == objEpitaph) {
         if(target != noone) {
-            if(distance_to_object(target) > global.util.epitaphTargetRadius) {
+            if(x < target.x - (3 * target.sprite_width)
+               || x > target.x + (4 * target.sprite_width)
+               || y < target.y - (3 * target.sprite_width)
+               || y > target.y + (4 * target.sprite_width)) {
                 //Keep an eye on the use of floors and ceils here. It may need to be reworked.
                 if(scrIsFacingUp(self)) {
                     if(scrIsLeft(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersStarboardString] == 0) {

@@ -1,6 +1,23 @@
 if(object_is_ancestor(object_index, objPlayerShip)) {
     scrResetNonShield();
 }
+if(object_index == objEpitaph) {
+    if(target != noone) {
+        if(x > target.x - (3 * target.sprite_width)
+           && x < target.x + (4 * target.sprite_width)
+           && y > target.y - (3 * target.sprite_width)
+           && y < target.y + (4 * target.sprite_width)) {
+            if(actionMap[? global.util.actionMapPassiveString] == active) {
+                instance_create(target.x + (target.sprite_width / 2), target.y + (target.sprite_width / 2), toRevive);
+                target = noone;
+                nearestTargetProximalGridBox = noone;
+                toRevive = noone
+                deadEnemiesIndex = noone;
+            }
+        }
+    }
+    scrSetEpitaphTarget();
+}
 for(i = 0; i < ds_list_size(actionQueue); i++) {
     if(string_pos(global.util.actionMapGunsString, actionQueue[| i]) != 0) {
         scrSetGuns();

@@ -1,6 +1,8 @@
-if(target == noone && array_length_1d(global.deadEnemies) != 0) {
-    var index = irandom(array_length_1d(global.deadEnemies) - 1);
-    toRevive = global.deadEnemies[index, 0];
-    target = global.deadEnemies[index, 1];
+if(target == noone && !ds_list_empty(global.deadEnemies)) {
+    deadEnemiesIndex = irandom(ds_list_size(global.deadEnemies) - 1);
+    var listElement = global.deadEnemies[| deadEnemiesIndex];
+    toRevive = listElement[0];
+    target = listElement[1];
     nearestTargetProximalGridBox = scrGetNearestEpitaphTargetPerimeterGridBox();
+    ds_list_delete(global.deadEnemies, deadEnemiesIndex);
 }

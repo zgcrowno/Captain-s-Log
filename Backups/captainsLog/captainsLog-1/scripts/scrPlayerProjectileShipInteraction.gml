@@ -3,7 +3,9 @@ var enemyTouching = instance_position(x, y, objEnemyShip);
 if(enemyTouching != noone) {
     if(object_index == objPlayerBullet) {
         instance_create(x, y, objPlayerBulletContact);
-        enemyTouching.currentHP -= damage;
+        if(!(enemyTouching.object_index == objEpitaph && enemyTouching.actionMap[? global.util.actionMapPassiveString] == enemyTouching.inactive)) {
+            enemyTouching.currentHP -= damage;
+        }
         instance_destroy();
     } else if(object_index == objPlayerCannonBullet) {
         if(global.player.object_index == objRiceCake) {
@@ -13,6 +15,8 @@ if(enemyTouching != noone) {
         }
         instance_destroy();
     } else if(object_index == objPlayerEnergyBall) {
-        enemyTouching.currentHP -= damage;
+        if(!(enemyTouching.object_index == objEpitaph && enemyTouching.actionMap[? global.util.actionMapPassiveString] == enemyTouching.inactive)) {
+            enemyTouching.currentHP -= damage;
+        }
     }
 }

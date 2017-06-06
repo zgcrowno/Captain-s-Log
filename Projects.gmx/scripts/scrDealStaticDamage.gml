@@ -8,6 +8,8 @@ if(sprite_index == sprGridBoxStatic) {
                                            true);
     
     if(shipTouching != noone) {
-        shipTouching.currentHP -= global.util.staticDamage;
+        if(!(shipTouching.object_index == objEpitaph && shipTouching.actionMap[? global.util.actionMapPassiveString] == shipTouching.inactive)) {
+            shipTouching.currentHP -= global.util.staticDamage;
+        }
     }
 }

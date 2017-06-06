@@ -726,6 +726,7 @@
     <rooms name="test">
       <room>rooms\rmTestMainMenu</room>
       <room>rooms\rmTestSidecar</room>
+      <room>rooms\rmTestNoEnemies</room>
       <room>rooms\rmTestMezzanine</room>
       <room>rooms\rmTestFlasher</room>
       <room>rooms\rmTestRiceCake</room>

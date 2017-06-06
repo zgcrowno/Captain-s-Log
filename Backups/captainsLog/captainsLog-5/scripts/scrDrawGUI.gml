@@ -10,7 +10,7 @@ for(i = 0; i < array_length_1d(epitaphs); i++) {
     var epitaph = epitaphs[i];
     if(epitaph.target != noone) {
         draw_sprite(sprEpitaphTargetRadius, -1, view_xport[global.util.radarPort] + epitaph.target.x - global.util.epitaphTargetRadius, view_yport[global.util.radarPort] + epitaph.target.y - global.util.epitaphTargetRadius);
-        draw_sprite_ext(object_get_sprite(epitaph.toRevive), -1, epitaph.target.x + (epitaph.target.sprite_width / 2), epitaph.target.y + (epitaph.target.sprite_width / 2), 1, 1, 0, c_white, 0.5);
+        draw_sprite_ext(object_get_sprite(epitaph.toRevive), -1,view_xport[global.util.radarPort] + epitaph.target.x + (epitaph.target.sprite_width / 2), view_yport[global.util.radarPort] + epitaph.target.y + (epitaph.target.sprite_width / 2), 1, 1, 0, c_white, 0.5);
     }
 }
 

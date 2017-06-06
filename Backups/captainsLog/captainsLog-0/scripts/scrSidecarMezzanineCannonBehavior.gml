@@ -16,7 +16,9 @@ if(collision_rectangle(x - (sprite_width / 2),
                                false, 
                                true)) {
             var enemy = instance_find(objEnemyShip, i);
-            enemy.currentHP -= ship.cannonDamage;
+            if(!(enemy.object_index == objEpitaph && enemy.actionMap[? global.util.actionMapPassiveString] == enemy.inactive)) {
+                enemy.currentHP -= ship.cannonDamage;
+            }
         }
     }
 }
