@@ -3,10 +3,9 @@ if(object_is_ancestor(object_index, objPlayerShip)) {
 }
 if(object_index == objEpitaph) {
     if(target != noone) {
-        if(point_distance(x, y, target.x, target.y) <= (sqrt(2 * sqr(sprite_get_width(sprEpitaphTargetRadius))) / 2)) {
+        if(scrIsInEpitaphTargetRadius()) {
             if(actionMap[? global.util.actionMapPassiveString] == active) {
                 instance_create(target.x + (target.sprite_width / 2), target.y + (target.sprite_width / 2), toRevive);
-                ds_list_delete(global.deadEnemies, deadEnemiesIndex);
                 target = noone;
                 nearestTargetProximalGridBox = noone;
                 toRevive = noone
@@ -14,6 +13,7 @@ if(object_index == objEpitaph) {
             }
         }
     }
+    scrSetEpitaphTarget();
 }
 for(i = 0; i < ds_list_size(actionQueue); i++) {
     if(string_pos(global.util.actionMapGunsString, actionQueue[| i]) != 0) {

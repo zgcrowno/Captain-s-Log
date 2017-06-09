@@ -1,7 +1,7 @@
 //TODO: Maybe clean this up. It's possible that the Pawn can function almost exactly like the
 //shrimper (with significantly less code). If so, numerous scripts can be deleted.
 if(scrMovementChance()) {
-    if(object_index == objPawn) {
+    if(object_index == objPawn || object_index == objInfiniteRegress) {
         if(scrIsFacing(global.player)) {
         
         }
@@ -56,7 +56,7 @@ if(scrMovementChance()) {
         }
     } else if(object_index == objEpitaph) {
         if(target != noone) {
-            if(point_distance(x, y, target.x, target.y) > (sqrt(2 * sqr(sprite_get_width(sprEpitaphTargetRadius))) / 2)) {
+            if(!scrIsInEpitaphTargetRadius()) {
                 //Keep an eye on the use of floors and ceils here. It may need to be reworked.
                 if(scrIsFacingUp(self)) {
                     if(scrIsLeft(nearestTargetProximalGridBox) && actionMap[? global.util.actionMapThrustersStarboardString] == 0) {

@@ -4,4 +4,5 @@ if(target == noone && !ds_list_empty(global.deadEnemies)) {
     toRevive = listElement[0];
     target = listElement[1];
     nearestTargetProximalGridBox = scrGetNearestEpitaphTargetPerimeterGridBox();
+    ds_list_delete(global.deadEnemies, deadEnemiesIndex);
 }

@@ -3,10 +3,7 @@ if(object_is_ancestor(object_index, objPlayerShip)) {
 }
 if(object_index == objEpitaph) {
     if(target != noone) {
-        if(x > target.x - (3 * target.sprite_width)
-           && x < target.x + (4 * target.sprite_width)
-           && y > target.y - (3 * target.sprite_width)
-           && y < target.y + (4 * target.sprite_width)) {
+        if(scrIsInEpitaphTargetRadius()) {
             if(actionMap[? global.util.actionMapPassiveString] == active) {
                 instance_create(target.x + (target.sprite_width / 2), target.y + (target.sprite_width / 2), toRevive);
                 target = noone;

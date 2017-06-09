@@ -11,6 +11,8 @@
       <sprite>sprites\sprTimelineHorizontal</sprite>
       <sprite>sprites\sprTimelineVertical</sprite>
       <sprite>sprites\sprEpitaphTargetRadius</sprite>
+      <sprite>sprites\sprPortalBlue</sprite>
+      <sprite>sprites\sprPortalOrange</sprite>
     </sprites>
     <sprites name="hud">
       <sprites name="gridBox">
@@ -170,6 +172,16 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="misc">
+      <scripts name="portal">
+        <scripts name="data">
+          <script>scripts\scrPortalData.gml</script>
+        </scripts>
+        <scripts name="util">
+          <script>scripts\scrMoveToTarget.gml</script>
+        </scripts>
+      </scripts>
+    </scripts>
     <scripts name="input">
       <script>scripts\scrInput.gml</script>
       <scripts name="stateChecks">
@@ -354,6 +366,9 @@
             <scripts name="nomad">
               <script>scripts\scrNomadActiveFire.gml</script>
             </scripts>
+            <scripts name="infiniteRegress">
+              <script>scripts\scrInfiniteRegressActiveFire.gml</script>
+            </scripts>
           </scripts>
         </scripts>
         <scripts name="cannon">
@@ -452,10 +467,12 @@
           <scripts name="util">
             <script>scripts\scrSetDesignation.gml</script>
             <script>scripts\scrHighlightIfTarget.gml</script>
-            <script>scripts\scrSetEpitaphTarget.gml</script>
-            <script>scripts\scrGetNearestEpitaphTargetPerimeterGridBox.gml</script>
-            <script>scripts\scrGetEpitaphTargetProximalGridBoxes.gml</script>
-            <script>scripts\scrIsInEpitaphTargetRadius.gml</script>
+            <scripts name="epitaph">
+              <script>scripts\scrGetEpitaphTargetProximalGridBoxes.gml</script>
+              <script>scripts\scrIsInEpitaphTargetRadius.gml</script>
+              <script>scripts\scrSetEpitaphTarget.gml</script>
+              <script>scripts\scrGetNearestEpitaphTargetPerimeterGridBox.gml</script>
+            </scripts>
           </scripts>
           <scripts name="behavior">
             <script>scripts\scrBehavior.gml</script>
@@ -719,6 +736,11 @@
       </objects>
       <objects name="environment">
         <object>objects\objBlueSky</object>
+      </objects>
+      <objects name="misc">
+        <object>objects\objPortal</object>
+        <object>objects\objPortalBlue</object>
+        <object>objects\objPortalOrange</object>
       </objects>
     </objects>
   </objects>

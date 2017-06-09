@@ -12,6 +12,8 @@
         scrMezzanineActiveFire();
     } else if(object_index == objNomad) {
         scrNomadActiveFire();
+    } else if(object_index == objInfiniteRegress) {
+        scrInfiniteRegressActiveFire();
     }
     if(object_is_ancestor(object_index, objPlayerShip)) {
         scrSetState(global.util.initState);

@@ -1,7 +1,7 @@
 //TODO: Maybe clean this up. It's possible that the Pawn can function almost exactly like the
 //shrimper (with significantly less code). If so, numerous scripts can be deleted.
 if(scrMovementChance()) {
-    if(object_index == objPawn) {
+    if(object_index == objPawn || object_index == objInfiniteRegress) {
         if(scrIsFacing(global.player)) {
         
         }
