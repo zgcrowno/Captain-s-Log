@@ -1,7 +1,6 @@
 //TODO: modify this to move the portals at different speeds for different difficulties
-show_debug_message(position);
 if(position == left) {
-    if(distance_to_point(target.x + 4, target.y + 13) > 10) {
+    if(distance_to_point(target.x + 4, target.y + 13) >= 10) {
         if(image_angle != 90 && image_angle != 180) {
             image_angle += (90 / distance_to_point(target.x + 3, target.y + 13)) * 10;
         }
@@ -12,7 +11,7 @@ if(position == left) {
         y = target.y + 13;
     }
 } else if(position == right) {
-    if(distance_to_point(target.x + 20, target.y + 13) > 10) {
+    if(distance_to_point(target.x + 20, target.y + 13) >= 10) {
         if(image_angle != 90 && image_angle != 180) {
             image_angle += (90 / distance_to_point(target.x + 20, target.y + 13)) * 10;
         }
@@ -23,7 +22,7 @@ if(position == left) {
         y = target.y + 13;
     }
 } else if(position == bottom) {
-    if(distance_to_point(target.x + 13, target.y + 20) > 10) {
+    if(distance_to_point(target.x + 13, target.y + 20) >= 10) {
         if(image_angle == 90 || image_angle == 180) {
             image_angle -= (90 / distance_to_point(target.x + 13, target.y + 20)) * 10;
         }
@@ -34,7 +33,7 @@ if(position == left) {
         y = target.y + 20;
     }
 } else if(position == top) {
-    if(distance_to_point(target.x + 13, target.y + 4) > 10) {
+    if(distance_to_point(target.x + 13, target.y + 4) >= 10) {
         if(image_angle == 90 || image_angle == 180) {
             image_angle -= (90 / distance_to_point(target.x + 13, target.y + 4)) * 10;
         }

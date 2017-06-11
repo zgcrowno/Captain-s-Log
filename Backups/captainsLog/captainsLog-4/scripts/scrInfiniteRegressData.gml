@@ -14,3 +14,8 @@ gunsArray[1] = 0;
 radarSprite = sprInfiniteRegress;
 radarSpriteTarget = sprInfiniteRegressTarget;
 backgroundSprite = sprInfiniteRegressBackground;
+
+portalBlue = noone;
+portalOrange = noone;
+
+activeOffset = 35;

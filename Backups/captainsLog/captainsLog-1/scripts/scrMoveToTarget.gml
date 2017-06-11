@@ -1,38 +1,47 @@
 //TODO: modify this to move the portals at different speeds for different difficulties
+show_debug_message(position);
 if(position == left) {
-    if(distance_to_point(target.x + 3, target.y + 13) >= 10) {
-        if(image_angle != 90) {
+    if(distance_to_point(target.x + 4, target.y + 13) > 10) {
+        if(image_angle != 90 && image_angle != 180) {
             image_angle += (90 / distance_to_point(target.x + 3, target.y + 13)) * 10;
         }
-        move_towards_point(target.x + 3, target.y + 13, 10);
-    } else if(distance_to_point(target.x + 3, target.y + 13) != 0) {
-        if(image_angle != 90) {
-            image_angle += (90 / distance_to_point(target.x + 3, target.y + 13));
-        }
-        move_towards_point(target.x + 3, target.y + 13, 1);
+        move_towards_point(target.x + 4, target.y + 13, 10);
+    } else {
+        image_angle = 90;
+        x = target.x + 4;
+        y = target.y + 13;
     }
 } else if(position == right) {
-    if(distance_to_point(target.x + 22, target.y + 13) >= 10) {
-        if(image_angle != 90) {
-            image_angle += (90 / distance_to_point(target.x + 22, target.y + 13)) * 10;
+    if(distance_to_point(target.x + 20, target.y + 13) > 10) {
+        if(image_angle != 90 && image_angle != 180) {
+            image_angle += (90 / distance_to_point(target.x + 20, target.y + 13)) * 10;
         }
-        move_towards_point(target.x + 22, target.y + 13, 10);
-    } else if(distance_to_point(target.x + 22, target.y + 13) != 0) {
-        if(image_angle != 90) {
-            image_angle += (90 / distance_to_point(target.x + 22, target.y + 13));
-        }
-        move_towards_point(target.x + 22, target.y + 13, 1);
+        move_towards_point(target.x + 20, target.y + 13, 10);
+    } else {
+        image_angle = 90;
+        x = target.x + 20;
+        y = target.y + 13;
     }
 } else if(position == bottom) {
-    if(distance_to_point(target.x + 13, target.y + 22) >= 10) {
-        move_towards_point(target.x + 13, target.y + 22, 10);
-    } else if(distance_to_point(target.x + 13, target.y + 22) != 0) {
-        move_towards_point(target.x + 13, target.y + 22, 1);
+    if(distance_to_point(target.x + 13, target.y + 20) > 10) {
+        if(image_angle == 90 || image_angle == 180) {
+            image_angle -= (90 / distance_to_point(target.x + 13, target.y + 20)) * 10;
+        }
+        move_towards_point(target.x + 13, target.y + 20, 10);
+    } else {
+        image_angle = 0;
+        x = target.x + 13;
+        y = target.y + 20;
     }
 } else if(position == top) {
-    if(distance_to_point(target.x + 13, target.y + 3) >= 10) {
-        move_towards_point(target.x + 13, target.y + 3, 10);
-    } else if(distance_to_point(target.x + 13, target.y + 3) != 0) {
-        move_towards_point(target.x + 13, target.y + 3, 1);
+    if(distance_to_point(target.x + 13, target.y + 4) > 10) {
+        if(image_angle == 90 || image_angle == 180) {
+            image_angle -= (90 / distance_to_point(target.x + 13, target.y + 4)) * 10;
+        }
+        move_towards_point(target.x + 13, target.y + 4, 10);
+    } else {
+        image_angle = 0;
+        x = target.x + 13;
+        y = target.y + 4;
     }
 }

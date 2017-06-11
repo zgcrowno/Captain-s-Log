@@ -1,5 +1,4 @@
 //TODO: modify this to move the portals at different speeds for different difficulties
-show_debug_message(position);
 if(position == left) {
     if(distance_to_point(target.x + 4, target.y + 13) > 10) {
         if(image_angle != 90 && image_angle != 180) {
