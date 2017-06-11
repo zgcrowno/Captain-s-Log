@@ -4,7 +4,7 @@ target = noone;
 //These represent the possible positionings of the portal in relation to
 //its gridBox target
 left = 0;
-right = 0;
+right = 1;
 bottom = 2;
 top = 3;
 

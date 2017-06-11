@@ -14,4 +14,11 @@ if(portalBlue == noone) {
     
     portalBlue.image_angle += 90;
     portalOrange.image_angle += 90;
+    
+    with(portalBlue) {
+        scrMoveToTarget();
+    }
+    with(portalOrange) {
+        scrMoveToTarget();
+    }
 }

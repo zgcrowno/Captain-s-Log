@@ -1,12 +1,35 @@
 var enemiesAndProjectiles = scrGetEnemiesAndProjectiles();
 var epitaphs = scrGetEpitaphs();
+var infiniteRegresses = scrGetInfiniteRegresses();
 var gridBoxes = global.allGridBoxes;
 
 draw_set_color(c_white);
 draw_set_font(fntMain);
 
+//Draw the infiniteRegress portal creation lines
+for(var i = 0; i < array_length_1d(infiniteRegresses); i++) {
+    var infiniteRegress = infiniteRegresses[i];
+    if(infiniteRegress.portalBlue != noone) {
+        if(infiniteRegress.portalBlue.sprite_index == sprPortalBlueCreate) {
+            with(infiniteRegress) {
+                draw_set_color(c_blue);
+                draw_line(view_xport[global.util.radarPort] + x + lengthdir_x(activeOffset, image_angle),
+                          view_yport[global.util.radarPort] + y + lengthdir_y(activeOffset, image_angle),
+                          view_xport[global.util.radarPort] + portalBlue.x,
+                          view_yport[global.util.radarPort] + portalBlue.y);
+                draw_set_color(c_orange);
+                draw_line(view_xport[global.util.radarPort] + x - lengthdir_x(activeOffset, image_angle),
+                          view_yport[global.util.radarPort] + y - lengthdir_y(activeOffset, image_angle),
+                          view_xport[global.util.radarPort] + portalOrange.x,
+                          view_yport[global.util.radarPort] + portalOrange.y);
+            }
+        }
+    }
+}
+draw_set_color(c_white);
+
 //Draw the epitaph target radius and toRevive ship
-for(i = 0; i < array_length_1d(epitaphs); i++) {
+for(var i = 0; i < array_length_1d(epitaphs); i++) {
     var epitaph = epitaphs[i];
     if(epitaph.target != noone) {
         draw_sprite(sprEpitaphTargetRadius, -1, view_xport[global.util.radarPort] + epitaph.target.x - global.util.epitaphTargetRadius, view_yport[global.util.radarPort] + epitaph.target.y - global.util.epitaphTargetRadius);
