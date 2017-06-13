@@ -12,6 +12,9 @@ if(portalBlue == noone) {
     portalBlue.target = blueTarget;
     portalOrange.target = orangeTarget;
     
+    portalBlue.otherPortal = portalOrange;
+    portalOrange.otherPortal = portalBlue;
+    
     portalBlue.image_angle += 90;
     portalOrange.image_angle += 90;
     

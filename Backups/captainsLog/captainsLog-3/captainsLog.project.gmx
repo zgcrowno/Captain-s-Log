@@ -12,6 +12,8 @@
       <sprite>sprites\sprTimelineVertical</sprite>
       <sprite>sprites\sprEpitaphTargetRadius</sprite>
       <sprite>sprites\sprPortalBlue</sprite>
+      <sprite>sprites\sprPortalBlueCreate</sprite>
+      <sprite>sprites\sprPortalOrangeCreate</sprite>
       <sprite>sprites\sprPortalOrange</sprite>
     </sprites>
     <sprites name="hud">
@@ -670,6 +672,7 @@
       <script>scripts\scrGetRoomNames.gml</script>
       <script>scripts\scrGetEnemiesAndProjectiles.gml</script>
       <script>scripts\scrGetEpitaphs.gml</script>
+      <script>scripts\scrGetInfiniteRegresses.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
