@@ -42,8 +42,4 @@ if(gridBoxTouching != noone) {
             }
         }
     }
-    x += sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));
-    y -= sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
-    x = gridBoxTouching.x + (sprite_get_width(sprGridBox) / 2);     //Note: This is causing the projectiles' background sprites to appear off.
-    y = gridBoxTouching.y + (sprite_get_height(sprGridBox) / 2);
 }

@@ -24,6 +24,7 @@ if(gridBoxTouching != noone) {
                     }
                 }
             } else {
+                show_debug_message(projectile.image_angle);
                 if(projectile.image_angle % 90 == 0) {
                     projectile.x += sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));
                     projectile.y -= sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
@@ -41,11 +42,5 @@ if(gridBoxTouching != noone) {
                 other.y -= sqrt(sqr(sprite_get_width(sprGridBox)) + sqr(sprite_get_width(sprGridBox))) * sin(degtorad(other.image_angle + 90));
             }
         }
-    }
-    var gridBoxTouchingAgain = instance_position(x, y, objGridBox);
-    
-    if(gridBoxTouchingAgain != noone) {
-        x = gridBoxTouching.x + (sprite_get_width(sprGridBox) / 2);     //Note: This is causing the projectiles' background sprites to appear off.
-        y = gridBoxTouching.y + (sprite_get_height(sprGridBox) / 2);
     }
 }
