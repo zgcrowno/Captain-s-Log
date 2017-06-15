@@ -4,7 +4,8 @@ if(gridBoxTouching != noone) {
     var projectile = self;
     with(gridBoxTouching) {
         var portalTouching = instance_place(x, y, objPortal);
-        if(portalTouching != noone) {
+        //TODO: Keep an eye on this conditional. I may add other projectile types that will need checking here.
+        if(portalTouching != noone && (other.object_index == objEnemyBullet || other.object_index == objEnemyEnergyBall)) {
             if(portalTouching.position == portalTouching.left && other.image_angle == 90
                || portalTouching.position == portalTouching.right && other.image_angle == 270
                || portalTouching.position == portalTouching.bottom && other.image_angle == 180
@@ -25,11 +26,11 @@ if(gridBoxTouching != noone) {
                 }
             } else {
                 if(projectile.image_angle % 90 == 0) {
-                    projectile.x += sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));
-                    projectile.y -= sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
+                    projectile.x += sprite_get_width(sprGridBox) * cos(degtorad(projectile.image_angle + 90));
+                    projectile.y -= sprite_get_width(sprGridBox) * sin(degtorad(projectile.image_angle + 90));
                 } else {
-                    projectile.x += sqrt(sqr(sprite_get_width(sprGridBox)) + sqr(sprite_get_width(sprGridBox))) * cos(degtorad(image_angle + 90));
-                    projectile.y -= sqrt(sqr(sprite_get_width(sprGridBox)) + sqr(sprite_get_width(sprGridBox))) * sin(degtorad(image_angle + 90));
+                    projectile.x += sqrt(sqr(sprite_get_width(sprGridBox)) + sqr(sprite_get_width(sprGridBox))) * cos(degtorad(projectile.image_angle + 90));
+                    projectile.y -= sqrt(sqr(sprite_get_width(sprGridBox)) + sqr(sprite_get_width(sprGridBox))) * sin(degtorad(projectile.image_angle + 90));
                 }
             }
         } else {
@@ -42,6 +43,4 @@ if(gridBoxTouching != noone) {
             }
         }
     }
-    //x = gridBoxTouching.x + (sprite_get_width(sprGridBox) / 2);     //Note: This is causing the projectiles' background sprites to appear off.
-    //y = gridBoxTouching.y + (sprite_get_height(sprGridBox) / 2);
 }

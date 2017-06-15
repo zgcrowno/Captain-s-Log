@@ -13,6 +13,21 @@
   <code>//Force the GUI to fit within the display
 display_set_gui_size(1920, 1080);
 
+//Variables representing the waves of enemies the player will face in this room
+global.waveArray = noone;
+firstWaveArray = noone;
+secondWaveArray = noone;
+thirdWaveArray = noone;
+firstWaveArray[0] = objPawn;
+secondWaveArray[0] = objPawn;
+secondWaveArray[1] = objShrimper;
+thirdWaveArray[0] = objInfiniteRegress;
+thirdWaveArray[1] = objEpitaph;
+global.waveArray[0] = firstWaveArray;
+global.waveArray[1] = secondWaveArray;
+global.waveArray[2] = thirdWaveArray;
+global.waveIndex = 0;
+
 instance_create(0, 0, objUtil);
 global.util = instance_find(objUtil, 0);
 instance_create(0, 0, objHud);

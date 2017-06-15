@@ -673,6 +673,8 @@
       <script>scripts\scrGetEnemiesAndProjectiles.gml</script>
       <script>scripts\scrGetEpitaphs.gml</script>
       <script>scripts\scrGetInfiniteRegresses.gml</script>
+      <script>scripts\scrSpawnWave.gml</script>
+      <script>scripts\scrIncrementWave.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
