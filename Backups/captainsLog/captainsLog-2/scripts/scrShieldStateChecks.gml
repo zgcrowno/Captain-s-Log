@@ -10,28 +10,28 @@ if(keyboard_check_pressed(vk_enter)) {
             scrShieldsPort();
         } else {
             scrSetState(global.util.initState);
-            //TO DO: Error about user input
+            scrLog(global.util.warnShieldHealth);
         }
     } else if(global.input == global.util.starboardStringLower) {
         if (currentHPShieldsStarboard > 0) {
             scrShieldsStarboard();
         } else {
             scrSetState(global.util.initState);
-            //TO DO: Error about user input
+            scrLog(global.util.warnShieldHealth);
         }
     } else if(global.input == global.util.bowStringLower) {
         if (currentHPShieldsBow > 0) {
             scrShieldsBow();
         } else {
             scrSetState(global.util.initState);
-            //TO DO: Error about user input
+            scrLog(global.util.warnShieldHealth);
         }
     } else if(global.input == global.util.sternStringLower) {
         if (currentHPShieldsStern > 0) {
             scrShieldsStern();
         } else {
             scrSetState(global.util.initState);
-            //TO DO: Error about user input
+            scrLog(global.util.warnShieldHealth);
         }
     } else if(global.input == global.util.allStringLower) {
         scrShieldsAll();

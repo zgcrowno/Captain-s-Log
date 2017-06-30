@@ -13,6 +13,21 @@
   <code>//Force the GUI to fit within the display
 display_set_gui_size(1920, 1080);
 
+//Variables representing the waves of enemies the player will face in this room
+global.waveArray = noone;
+firstWaveArray = noone;
+secondWaveArray = noone;
+thirdWaveArray = noone;
+firstWaveArray[0] = objPawn;
+secondWaveArray[0] = objPawn;
+secondWaveArray[1] = objShrimper;
+thirdWaveArray[0] = objInfiniteRegress;
+thirdWaveArray[1] = objEpitaph;
+global.waveArray[0] = firstWaveArray;
+global.waveArray[1] = secondWaveArray;
+global.waveArray[2] = thirdWaveArray;
+global.waveIndex = 0;
+
 instance_create(0, 0, objUtil);
 global.util = instance_find(objUtil, 0);
 instance_create(0, 0, objHud);
@@ -23,12 +38,6 @@ instance_create(0, 0, objTimelineVertical);
 global.timelineVertical = instance_find(objTimelineVertical, 0);
 instance_create(262, 262, objPincer);
 global.player = instance_find(objPlayerShip, 0);
-instance_create(262, 212, objPawn);
-instance_create(262, 162, objPawn);
-instance_create(212, 112, objShrimper);
-instance_create(312, 87, objNomad);
-instance_create(362, 87, objEpitaph);
-instance_create(262, 337, objInfiniteRegress);
 instance_create(0, 0, objGUI);
 global.gui = instance_find(objGUI, 0);
 global.allGridBoxes = scrGetGridBoxes();

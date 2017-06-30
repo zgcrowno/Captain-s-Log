@@ -28,6 +28,9 @@ paused = false;
 //The Difficulty Modifier for the Game
 difficultyModifier = 2;
 
+//The player's console log
+log = ds_list_create();
+
 //The different ports which make up the game's overall view
 hudPort = 0;
 radarPort = 1;
@@ -509,6 +512,13 @@ actionMapGunsString = "Guns";
 actionMapCannonString = "Cannon";
 actionMapActiveString = "Active";
 actionMapPassiveString = "Passive";
+
+warnInputString = "Input";
+warnShipFormString = "Form";
+warnCooldownString = "Cooldown";
+warnPowerString = "Power";
+warnThrusterHealth = "Thruster";
+warnShieldHealth = "Shield";
 
 actionQueueThrustersString = "Thrst";
 

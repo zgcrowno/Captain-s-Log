@@ -1,6 +1,8 @@
 //TODO: Make this script more accurate; bring more perspective.
 //Also, this isn't working for sprites that are supposed to cover more
-//than one gridBox.
+//than one gridBox. Might need to use the drawBegin and drawEnd events
+//to fix issues with nearer objects being covered up by ones that are 
+//farther away.
 objectArray = scrProximitySort(argument0);
 
 for(i = 0; i < array_length_1d(objectArray); i++) {

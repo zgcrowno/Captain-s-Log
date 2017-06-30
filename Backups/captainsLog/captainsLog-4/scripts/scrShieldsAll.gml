@@ -46,7 +46,7 @@ if(!((requiredPPShields * 4) > currentPP) && !(actionMap[? global.util.actionMap
 } else if(!(requiredPPShields > currentPP) && (actionMap[? global.util.actionMapShieldsPortString] == active) && (actionMap[? global.util.actionMapShieldsStarboardString] == active) && (actionMap[? global.util.actionMapShieldsBowString] == active) && !(actionMap[? global.util.actionMapShieldsSternString] == active)) {
     scrChangeStateAction(global.util.actionMapShieldsSternString, global.util.actionQueueShieldsSternString, global.util.actionQueueCutShieldsSternString);
 } else if(!((actionMap[? global.util.actionMapShieldsPortString] == active) && (actionMap[? global.util.actionMapShieldsStarboardString] == active) && (actionMap[? global.util.actionMapShieldsBowString] == active) && (actionMap[? global.util.actionMapShieldsSternString] == active))) {
-    //To Do: Error to user about lack of power...
+    scrLog(global.util.warnPowerString);
 }
 
 if(object_is_ancestor(object_index, objPlayerShip)) {

@@ -2,10 +2,10 @@ if(requiredPPCannon <= currentPP) {
     if(currentPPCannon == 0) {
         scrChangeStateAction(global.util.actionMapCannonString, noone, noone);
     } else {
-        //To Do: Error to user about cooldown...
+        scrLog(global.util.warnCooldownString);
     }
 } else {
-    //To Do: Error to user about lack of power...
+    scrLog(global.util.warnPowerString);
 }
 if(object_is_ancestor(object_index, objPlayerShip)) {
     scrSetState(global.util.initState);

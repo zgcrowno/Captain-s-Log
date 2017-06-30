@@ -5,5 +5,5 @@ if(object_is_ancestor(object_index, objPlayerShip)) {
 if(requiredPPGuns <= currentPP) {
     scrChangeStateAction(global.util.actionMapGunsString, noone, noone);
 } else {
-    //To Do: Error to user about lack of power...
+    scrLog(global.util.warnPowerString);
 }

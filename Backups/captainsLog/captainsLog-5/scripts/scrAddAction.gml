@@ -11,7 +11,7 @@ if(currentHP == noone) {
         actionQueue[| ds_list_find_index(actionQueue, strQueue + string(actionMap[? strMap]))] = strQueue + string(actionMap[? strMap] + increment);
         actionMap[? strMap] = actionMap[? strMap] + real(increment);
     } else {
-        //To Do: Error to user about lack of power...
+        scrLog(global.util.warnPowerString);
     }
 } else {
     if(!(requiredPPThrusters > currentPP) && !(actionMap[? strMap] > 0) && currentHP > 0) {
@@ -20,8 +20,10 @@ if(currentHP == noone) {
     } else if(actionMap[? strMap] > 0 && currentHP > 0) {
         actionQueue[| ds_list_find_index(actionQueue, strQueue + string(actionMap[? strMap]))] = strQueue + string(actionMap[? strMap] + increment);
         actionMap[? strMap] = actionMap[? strMap] + real(increment);
+    } else if(currentHP <= 0) {
+        scrLog(global.util.warnThrusterHealth);
     } else {
-        //To Do: Error to user about lack of power and/or thrusters health
+        scrLog(global.util.warnPowerString);
     }
 }
 //TODO: Maybe add conditions for other types of actions (non-thrusters) in the future.

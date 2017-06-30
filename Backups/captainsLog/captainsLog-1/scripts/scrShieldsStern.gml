@@ -5,5 +5,5 @@ if(object_is_ancestor(object_index, objPlayerShip)) {
 if(!(requiredPPShields > currentPP) && !(actionMap[? global.util.actionMapShieldsSternString] == active)) {
     scrChangeStateAction(global.util.actionMapShieldsSternString, global.util.actionQueueShieldsSternString, global.util.actionQueueCutShieldsSternString);
 } else if(!(actionMap[? global.util.actionMapShieldsSternString] == active)) {
-    //To Do: Error to user about lack of power...
+    scrLog(global.util.warnPowerString);
 } 

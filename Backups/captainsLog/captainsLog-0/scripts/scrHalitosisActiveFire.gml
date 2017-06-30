@@ -6,5 +6,5 @@ if(sprite_index != sprHalitosisPassive) {
     }
     currentPPActive = requiredPPActive;
 } else {
-    //TODO: Error to user about ship form
+    scrLog(global.util.warnShipFormString);
 }

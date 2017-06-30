@@ -257,6 +257,7 @@
         </scripts>
         <scripts name="input">
           <script>scripts\scrDrawInput.gml</script>
+          <script>scripts\scrDrawLog.gml</script>
         </scripts>
         <scripts name="gridBox">
           <script>scripts\scrDrawGridBoxNumbers.gml</script>
@@ -674,6 +675,8 @@
       <script>scripts\scrGetEpitaphs.gml</script>
       <script>scripts\scrGetInfiniteRegresses.gml</script>
       <script>scripts\scrSpawnWave.gml</script>
+      <script>scripts\scrIncrementWave.gml</script>
+      <script>scripts\scrLog.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
