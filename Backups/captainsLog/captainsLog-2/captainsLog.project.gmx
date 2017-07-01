@@ -164,6 +164,9 @@
           </sprites>
         </sprites>
       </sprites>
+      <sprites name="explosion">
+        <sprite>sprites\sprExplosion</sprite>
+      </sprites>
     </sprites>
     <sprites name="environment">
       <sprite>sprites\sprBlueSky</sprite>
@@ -338,6 +341,11 @@
             <scripts name="enemy">
               <script>scripts\scrEnemyEnergyBallData.gml</script>
             </scripts>
+          </scripts>
+        </scripts>
+        <scripts name="explosion">
+          <scripts name="data">
+            <script>scripts\scrExplosionData.gml</script>
           </scripts>
         </scripts>
       </scripts>
@@ -740,6 +748,7 @@
           <object>objects\objEnemyEnergyBall</object>
         </objects>
         <object>objects\objEnergyBall</object>
+        <object>objects\objExplosion</object>
       </objects>
       <objects name="environment">
         <object>objects\objBlueSky</object>

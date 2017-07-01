@@ -31,7 +31,7 @@ difficultyModifier = 2;
 //The player's console log
 log = ds_list_create();
 
-//The different ports which make up the game's overall view
+//The different s which make up the game's overall view
 hudPort = 0;
 radarPort = 1;
 

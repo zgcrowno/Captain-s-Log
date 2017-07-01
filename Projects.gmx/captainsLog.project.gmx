@@ -164,6 +164,9 @@
           </sprites>
         </sprites>
       </sprites>
+      <sprites name="explosion">
+        <sprite>sprites\sprExplosion</sprite>
+      </sprites>
     </sprites>
     <sprites name="environment">
       <sprite>sprites\sprBlueSky</sprite>
@@ -322,6 +325,7 @@
             <script>scripts\scrPlayerProjectileShipInteraction.gml</script>
             <script>scripts\scrEnemyEnergyBallShipInteraction.gml</script>
             <script>scripts\scrEnemyEnergyBallShieldsInteraction.gml</script>
+            <script>scripts\scrSpawnExplosion.gml</script>
           </scripts>
           <scripts name="orientation">
             <script>scripts\scrIsFacingSideOfShip.gml</script>
@@ -338,6 +342,11 @@
             <scripts name="enemy">
               <script>scripts\scrEnemyEnergyBallData.gml</script>
             </scripts>
+          </scripts>
+        </scripts>
+        <scripts name="explosion">
+          <scripts name="data">
+            <script>scripts\scrExplosionData.gml</script>
           </scripts>
         </scripts>
       </scripts>
@@ -740,6 +749,7 @@
           <object>objects\objEnemyEnergyBall</object>
         </objects>
         <object>objects\objEnergyBall</object>
+        <object>objects\objExplosion</object>
       </objects>
       <objects name="environment">
         <object>objects\objBlueSky</object>
