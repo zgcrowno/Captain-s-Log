@@ -6,12 +6,6 @@ var gridBoxes = global.allGridBoxes;
 draw_set_color(c_white);
 draw_set_font(fntMain);
 
-effect_create_above(ef_explosion, 
-                    global.hud.primeMeridian, 
-                    global.hud.enemyBackgroundSpriteY, 
-                    2, 
-                    c_red);
-
 //Draw the infiniteRegress portal creation lines
 for(var i = 0; i < array_length_1d(infiniteRegresses); i++) {
     var infiniteRegress = infiniteRegresses[i];

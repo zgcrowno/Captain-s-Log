@@ -325,6 +325,7 @@
             <script>scripts\scrPlayerProjectileShipInteraction.gml</script>
             <script>scripts\scrEnemyEnergyBallShipInteraction.gml</script>
             <script>scripts\scrEnemyEnergyBallShieldsInteraction.gml</script>
+            <script>scripts\scrSpawnExplosion.gml</script>
           </scripts>
           <scripts name="orientation">
             <script>scripts\scrIsFacingSideOfShip.gml</script>
