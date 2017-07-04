@@ -7,4 +7,3 @@ if(scrIsPlayerProjectile()) {
     scrEnemyEnergyBallShipInteraction();
     scrEnemyEnergyBallShieldsInteraction();
 }
-instance_create(x, y, objExplosion);

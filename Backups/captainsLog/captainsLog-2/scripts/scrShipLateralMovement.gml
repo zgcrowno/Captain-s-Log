@@ -199,6 +199,6 @@ if(actionMap[? strMap] > 0) {
         }
     } else {
         scrDecrementAction(strMap, strQueue, true);
-        //TODO: Error about leaving airspace
+        scrLog(global.util.warnPosition);
     }
 }

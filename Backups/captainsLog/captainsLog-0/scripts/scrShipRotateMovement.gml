@@ -43,6 +43,6 @@ if(actionMap[? strMap] > 0) {
             }
         }
     } else {
-        //TODO: error about leaving airspace
+        scrLog(global.util.warnPosition);
     }
 }

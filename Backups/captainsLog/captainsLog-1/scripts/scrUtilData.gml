@@ -519,6 +519,7 @@ warnCooldownString = "Cooldown";
 warnPowerString = "Power";
 warnThrusterHealth = "Thruster";
 warnShieldHealth = "Shield";
+warnPosition = "Position";
 
 actionQueueThrustersString = "Thrst";
 

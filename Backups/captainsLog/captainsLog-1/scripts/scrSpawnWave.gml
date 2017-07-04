@@ -9,7 +9,16 @@ if(room != rmTestNoEnemies) {
                 var gridBox = instance_find(objGridBox, irandom(array_length_1d(gridBoxes)));
                 var wave = global.waveArray[global.waveIndex];
                 
-                instance_create(gridBox.x + (gridBox.sprite_width / 2), gridBox.y + (gridBox.sprite_width / 2), wave[i]);
+                var enemy = instance_create(gridBox.x + (gridBox.sprite_width / 2), gridBox.y + (gridBox.sprite_width / 2), wave[i]);
+                
+                //Make sure enemy spawns on spawnable area
+                with(enemy) {
+                    while(place_meeting(x, y, objShip) || place_meeting(x, y, objPlayerBullet) || place_meeting(x, y, objPlayerEnergyBall)) {
+                        var nextGridBox = instance_find(objGridBox, irandom(array_length_1d(gridBoxes)));
+                        x = nextGridBox.x + (gridBox.sprite_width / 2);
+                        y = nextGridBox.y + (gridBox.sprite_width / 2);
+                    }
+                }
             }
         }
     }
