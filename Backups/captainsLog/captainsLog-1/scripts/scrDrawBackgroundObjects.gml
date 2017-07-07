@@ -1,4 +1,4 @@
-//TODO: Make this script more accurate; bring more perspective.
+//TODO: Use global.util variables for angle degrees.
 //Also, this isn't working for sprites that are supposed to cover more
 //than one gridBox. Might need to use the drawBegin and drawEnd events
 //to fix issues with nearer objects being covered up by ones that are 
@@ -54,7 +54,7 @@ for(i = 0; i < array_length_1d(objectArray); i++) {
             }
             draw_sprite_ext(object.backgroundSprite,
                             subImage, 
-                            global.hud.primeMeridian + ((((((global.player.x - object.x) / halfPerspectivePlane) * (global.player.x - object.x)) * view_wview[global.util.hudView]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[global.util.hudView] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
+                            global.hud.primeMeridian + ((((((global.player.x - object.x) / halfPerspectivePlane) * abs(global.player.x - object.x)) * view_wview[global.util.hudView]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[global.util.hudView] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
                             global.hud.enemyBackgroundSpriteY, 
                             distance / sqr(distance), 
                             distance / sqr(distance), 
@@ -69,7 +69,7 @@ for(i = 0; i < array_length_1d(objectArray); i++) {
             }
             draw_sprite_ext(object.backgroundSprite,
                             subImage, 
-                            global.hud.primeMeridian + ((((((global.player.y - object.y) / halfPerspectivePlane) * (global.player.y - object.y)) * view_wview[global.util.hudView]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[global.util.hudView] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
+                            global.hud.primeMeridian + ((((((global.player.y - object.y) / halfPerspectivePlane) * abs(global.player.y - object.y)) * view_wview[global.util.hudView]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[global.util.hudView] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
                             global.hud.enemyBackgroundSpriteY, 
                             distance / sqr(distance), 
                             distance / sqr(distance), 

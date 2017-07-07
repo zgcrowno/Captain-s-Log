@@ -7,6 +7,9 @@ objectArray = scrProximitySort(argument0);
 var hypotenuse = noone;
 var halfPerspectivePlane = noone;
 
+//TODO: 50 is equal to half of the degrees of the player ship's range of sight (at this point)
+//In the future, make the perspective work perfectly, and adjust sprites to be the correct size
+//for this perspective.
 for(i = 0; i < array_length_1d(objectArray); i++) {
     var object = objectArray[i];
     if(scrCanSeeObject(global.player, object)) {
