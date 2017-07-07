@@ -4,9 +4,12 @@ if(!keyboard_get_numlock()) {
     keyboard_set_numlock(true);
 } 
 if(keyboard_check_pressed(vk_tab)) {
-    //TODO: Account for pause menu
     if(room != asset_get_index(room_get_name(rmTestMainMenu))) {
-        scrSetState(global.util.initState);
+        if(!global.util.paused) {
+            scrSetState(global.util.initState);
+        } else {
+            //TODO: Revert to pause menu init state
+        }
     } else {
         scrSetState(global.util.menuInitState);
     }

@@ -18,67 +18,141 @@ if(strMap == global.util.actionMapThrustersPortString) {
 
 if(actionMap[? strMap] > 0) {
     if(!adjacency) {
-        //TODO: Prevent sidecar from going outside bounds of radarScreen
         if(object_index == objSidecar && actionMap[? global.util.actionMapPassiveString] == active) {
             if(actionMap[? strMap] >= 2) {
                 if(strMap == global.util.actionMapThrustersPortString) {
-                    x += (2 * sprite_get_width(sprGridBox)) * sin(degtorad(image_angle + 90));
-                    y += (2 * sprite_get_width(sprGridBox)) * cos(degtorad(image_angle + 90));
+                    x += sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
+                    y += sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));
                     if(object_is_ancestor(object_index, objPlayerShip)) {
                         if(scrIsFacingUp(self)) {
-                            view_xview[global.util.hudView] += 2 * global.util.backgroundMovementDistance;
+                            view_xview[global.util.hudView] += global.util.backgroundMovementDistance;
                         } else if(scrIsFacingLeft(self)) {
-                            view_yview[global.util.hudView] += 2 * global.util.backgroundMovementDistance;
+                            view_yview[global.util.hudView] += global.util.backgroundMovementDistance;
                         } else if(scrIsFacingDown(self)) {
-                            view_xview[global.util.hudView] -= 2 * global.util.backgroundMovementDistance;
+                            view_xview[global.util.hudView] -= global.util.backgroundMovementDistance;
                         } else {
-                            view_yview[global.util.hudView] -= 2 * global.util.backgroundMovementDistance;
+                            view_yview[global.util.hudView] -= global.util.backgroundMovementDistance;
                         }
+                    }
+                    if(!scrRadarBoundIsStarboardAdjacent(self)) {
+                        x += sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
+                        y += sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));
+                        if(object_is_ancestor(object_index, objPlayerShip)) {
+                            if(scrIsFacingUp(self)) {
+                                view_xview[global.util.hudView] += global.util.backgroundMovementDistance;
+                            } else if(scrIsFacingLeft(self)) {
+                                view_yview[global.util.hudView] += global.util.backgroundMovementDistance;
+                            } else if(scrIsFacingDown(self)) {
+                                view_xview[global.util.hudView] -= global.util.backgroundMovementDistance;
+                            } else {
+                                view_yview[global.util.hudView] -= global.util.backgroundMovementDistance;
+                            }
+                        }
+                        scrDecrementAction(strMap, strQueue, false);
+                    } else {
+                        scrDecrementAction(strMap, strQueue, true);
+                        scrLog(global.util.warnPosition);
                     }
                 } else if(strMap == global.util.actionMapThrustersStarboardString) {
-                    x -= (2 * sprite_get_width(sprGridBox)) * sin(degtorad(image_angle + 90));
-                    y -= (2 * sprite_get_width(sprGridBox)) * cos(degtorad(image_angle + 90));
+                    x -= sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
+                    y -= sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));
                     if(object_is_ancestor(object_index, objPlayerShip)) {
                         if(scrIsFacingUp(self)) {
-                            view_xview[global.util.hudView] -= 2 * global.util.backgroundMovementDistance;
+                            view_xview[global.util.hudView] -= global.util.backgroundMovementDistance;
                         } else if(scrIsFacingLeft(self)) {
-                            view_yview[global.util.hudView] -= 2 * global.util.backgroundMovementDistance;
+                            view_yview[global.util.hudView] -= global.util.backgroundMovementDistance;
                         } else if(scrIsFacingDown(self)) {
-                            view_xview[global.util.hudView] += 2 * global.util.backgroundMovementDistance;
+                            view_xview[global.util.hudView] += global.util.backgroundMovementDistance;
                         } else {
-                            view_yview[global.util.hudView] += 2 * global.util.backgroundMovementDistance;
+                            view_yview[global.util.hudView] += global.util.backgroundMovementDistance;
                         }
+                    }
+                    if(!scrRadarBoundIsPortAdjacent(self)) {
+                        x -= sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
+                        y -= sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));
+                        if(object_is_ancestor(object_index, objPlayerShip)) {
+                            if(scrIsFacingUp(self)) {
+                                view_xview[global.util.hudView] -= global.util.backgroundMovementDistance;
+                            } else if(scrIsFacingLeft(self)) {
+                                view_yview[global.util.hudView] -= global.util.backgroundMovementDistance;
+                            } else if(scrIsFacingDown(self)) {
+                                view_xview[global.util.hudView] += global.util.backgroundMovementDistance;
+                            } else {
+                                view_yview[global.util.hudView] += global.util.backgroundMovementDistance;
+                            }
+                        }
+                        scrDecrementAction(strMap, strQueue, false);
+                    } else {
+                        scrDecrementAction(strMap, strQueue, true);
+                        scrLog(global.util.warnPosition);
                     }
                 } else if(strMap == global.util.actionMapThrustersBowString) {
-                    x -= (2 * sprite_get_width(sprGridBox)) * cos(degtorad(image_angle + 90));
-                    y += (2 * sprite_get_width(sprGridBox)) * sin(degtorad(image_angle + 90));
+                    x -= sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));
+                    y += sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
                     if(object_is_ancestor(object_index, objPlayerShip)) {
                         if(scrIsFacingUp(self)) {
-                            view_yview[global.util.hudView] += 2 * global.util.backgroundMovementDistance;
+                            view_yview[global.util.hudView] += global.util.backgroundMovementDistance;
                         } else if(scrIsFacingLeft(self)) {
-                            view_xview[global.util.hudView] -= 2 * global.util.backgroundMovementDistance;
+                            view_xview[global.util.hudView] -= global.util.backgroundMovementDistance;
                         } else if(scrIsFacingDown(self)) {
-                            view_yview[global.util.hudView] -= 2 * global.util.backgroundMovementDistance;
+                            view_yview[global.util.hudView] -= global.util.backgroundMovementDistance;
                         } else {
-                            view_xview[global.util.hudView] += 2 * global.util.backgroundMovementDistance;
+                            view_xview[global.util.hudView] += global.util.backgroundMovementDistance;
                         }
+                    }
+                    if(!scrRadarBoundIsSternAdjacent(self)) {
+                        x -= sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));
+                        y += sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
+                        if(object_is_ancestor(object_index, objPlayerShip)) {
+                            if(scrIsFacingUp(self)) {
+                                view_yview[global.util.hudView] += global.util.backgroundMovementDistance;
+                            } else if(scrIsFacingLeft(self)) {
+                                view_xview[global.util.hudView] -= global.util.backgroundMovementDistance;
+                            } else if(scrIsFacingDown(self)) {
+                                view_yview[global.util.hudView] -= global.util.backgroundMovementDistance;
+                            } else {
+                                view_xview[global.util.hudView] += global.util.backgroundMovementDistance;
+                            }
+                        }
+                        scrDecrementAction(strMap, strQueue, false);
+                    } else {
+                        scrDecrementAction(strMap, strQueue, true);
+                        scrLog(global.util.warnPosition);
                     }
                 } else if(strMap == global.util.actionMapThrustersSternString) {
-                    x += (2 *sprite_get_width(sprGridBox)) * cos(degtorad(image_angle + 90));
-                    y -= (2 * sprite_get_width(sprGridBox)) * sin(degtorad(image_angle + 90));
+                    x += sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));
+                    y -= sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
                     if(object_is_ancestor(object_index, objPlayerShip)) {
                         if(scrIsFacingUp(self)) {
-                            view_yview[global.util.hudView] -= 2 * global.util.backgroundMovementDistance;
+                            view_yview[global.util.hudView] -= global.util.backgroundMovementDistance;
                         } else if(scrIsFacingLeft(self)) {
-                            view_xview[global.util.hudView] += 2 * global.util.backgroundMovementDistance;
+                            view_xview[global.util.hudView] += global.util.backgroundMovementDistance;
                         } else if(scrIsFacingDown(self)) {
-                            view_yview[global.util.hudView] += 2 * global.util.backgroundMovementDistance;
+                            view_yview[global.util.hudView] += global.util.backgroundMovementDistance;
                         } else {
-                            view_xview[global.util.hudView] -= 2 * global.util.backgroundMovementDistance;
+                            view_xview[global.util.hudView] -= global.util.backgroundMovementDistance;
                         }
                     }
+                    if(!scrRadarBoundIsBowAdjacent(self)) {
+                        x += sprite_get_width(sprGridBox) * cos(degtorad(image_angle + 90));
+                        y -= sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
+                        if(object_is_ancestor(object_index, objPlayerShip)) {
+                            if(scrIsFacingUp(self)) {
+                                view_yview[global.util.hudView] -= global.util.backgroundMovementDistance;
+                            } else if(scrIsFacingLeft(self)) {
+                                view_xview[global.util.hudView] += global.util.backgroundMovementDistance;
+                            } else if(scrIsFacingDown(self)) {
+                                view_yview[global.util.hudView] += global.util.backgroundMovementDistance;
+                            } else {
+                                view_xview[global.util.hudView] -= global.util.backgroundMovementDistance;
+                            }
+                        }
+                        scrDecrementAction(strMap, strQueue, false);
+                    } else {
+                        scrDecrementAction(strMap, strQueue, true);
+                        scrLog(global.util.warnPosition);
+                    }
                 }
-                scrDecrementAction(strMap, strQueue, false);
             } else {
                 if(strMap == global.util.actionMapThrustersPortString) {
                     x += sprite_get_width(sprGridBox) * sin(degtorad(image_angle + 90));
@@ -199,6 +273,6 @@ if(actionMap[? strMap] > 0) {
         }
     } else {
         scrDecrementAction(strMap, strQueue, true);
-        //TODO: Error about leaving airspace
+        scrLog(global.util.warnPosition);
     }
 }

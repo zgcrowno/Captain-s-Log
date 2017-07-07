@@ -12,6 +12,7 @@ if(room != rmTestNoEnemies) {
                 var enemy = instance_create(gridBox.x + (gridBox.sprite_width / 2), gridBox.y + (gridBox.sprite_width / 2), wave[i]);
                 
                 //Make sure enemy spawns on spawnable area
+                //TODO: maybe update this to be more efficient/move it to its own script
                 with(enemy) {
                     while(place_meeting(x, y, objShip) || place_meeting(x, y, objPlayerBullet) || place_meeting(x, y, objPlayerEnergyBall)
                           || bbox_right > global.hud.radarRightBound || bbox_left < global.hud.radarLeftBound || bbox_bottom > global.hud.radarLowerBound
