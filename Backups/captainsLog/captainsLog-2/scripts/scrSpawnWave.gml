@@ -3,8 +3,6 @@ if(room != rmTestNoEnemies) {
         var gridBoxes = global.allGridBoxes;
         
         if(global.waveArray != noone) {
-            //TODO: Augment this such that enemies are only spawned on empty gridBoxes where no point
-            //of their area is touching another ship or hazard, or leaving the bounds of the radar screen
             for(var i = 0; i < array_length_1d(global.waveArray[global.waveIndex]); i++) {
                 var gridBox = instance_find(objGridBox, irandom(array_length_1d(gridBoxes)));
                 var wave = global.waveArray[global.waveIndex];
@@ -12,7 +10,7 @@ if(room != rmTestNoEnemies) {
                 var enemy = instance_create(gridBox.x + (gridBox.sprite_width / 2), gridBox.y + (gridBox.sprite_width / 2), wave[i]);
                 
                 //Make sure enemy spawns on spawnable area
-                //TODO: maybe update this to be more efficient/move it to its own script
+                //TODO: maybe update this to be more efficient/move it to its own script. Also, maybe account for environmental hazards, if those are added in the future.
                 with(enemy) {
                     while(place_meeting(x, y, objShip) || place_meeting(x, y, objPlayerBullet) || place_meeting(x, y, objPlayerEnergyBall)
                           || bbox_right > global.hud.radarRightBound || bbox_left < global.hud.radarLeftBound || bbox_bottom > global.hud.radarLowerBound

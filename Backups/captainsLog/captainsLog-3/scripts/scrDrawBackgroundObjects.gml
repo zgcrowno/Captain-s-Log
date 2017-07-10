@@ -1,4 +1,4 @@
-//TODO: Make this script more accurate; bring more perspective.
+//TODO: Use global.util variables for angle degrees.
 //Also, this isn't working for sprites that are supposed to cover more
 //than one gridBox. Might need to use the drawBegin and drawEnd events
 //to fix issues with nearer objects being covered up by ones that are 
