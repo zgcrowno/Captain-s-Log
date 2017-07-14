@@ -1,4 +1,4 @@
-//TODO: Make this script more accurate; bring more perspective.
+//TODO: Use global.util variables for angle degrees.
 //Also, this isn't working for sprites that are supposed to cover more
 //than one gridBox. Might need to use the drawBegin and drawEnd events
 //to fix issues with nearer objects being covered up by ones that are 
@@ -7,6 +7,9 @@ objectArray = scrProximitySort(argument0);
 var hypotenuse = noone;
 var halfPerspectivePlane = noone;
 
+//TODO: 50 is equal to half of the degrees of the player ship's range of sight (at this point)
+//In the future, make the perspective work perfectly, and adjust sprites to be the correct size
+//for this perspective.
 for(i = 0; i < array_length_1d(objectArray); i++) {
     var object = objectArray[i];
     if(scrCanSeeObject(global.player, object)) {
@@ -24,10 +27,11 @@ for(i = 0; i < array_length_1d(objectArray); i++) {
             }
             draw_sprite_ext(object.backgroundSprite,
                             subImage, 
-                            global.hud.primeMeridian - ((((((global.player.x - object.x) / halfPerspectivePlane) * abs(global.player.x - object.x)) * view_wview[global.util.hudView]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[global.util.hudView] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
+                            //global.hud.primeMeridian - ((((((global.player.x - object.x) / halfPerspectivePlane) * abs(global.player.x - object.x)) * view_wview[global.util.hudView]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[global.util.hudView] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
+                            global.hud.primeMeridian - (((global.player.x - object.x) / halfPerspectivePlane) * (view_wview[global.util.hudView] / sprite_get_width(sprGridBox))),
                             global.hud.enemyBackgroundSpriteY, 
-                            distance / sqr(distance), 
-                            distance / sqr(distance), 
+                            1 / distance,
+                            1 / distance,
                             0, 
                             c_white, 
                             1);
@@ -41,8 +45,8 @@ for(i = 0; i < array_length_1d(objectArray); i++) {
                             subImage, 
                             global.hud.primeMeridian - ((((((global.player.y - object.y) / halfPerspectivePlane) * abs(global.player.y - object.y)) * view_wview[global.util.hudView]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[global.util.hudView] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
                             global.hud.enemyBackgroundSpriteY, 
-                            distance / sqr(distance), 
-                            distance / sqr(distance), 
+                            1 / distance, 
+                            1 / distance, 
                             0, 
                             c_white, 
                             1);
@@ -54,10 +58,10 @@ for(i = 0; i < array_length_1d(objectArray); i++) {
             }
             draw_sprite_ext(object.backgroundSprite,
                             subImage, 
-                            global.hud.primeMeridian + ((((((global.player.x - object.x) / halfPerspectivePlane) * (global.player.x - object.x)) * view_wview[global.util.hudView]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[global.util.hudView] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
+                            global.hud.primeMeridian + ((((((global.player.x - object.x) / halfPerspectivePlane) * abs(global.player.x - object.x)) * view_wview[global.util.hudView]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[global.util.hudView] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
                             global.hud.enemyBackgroundSpriteY, 
-                            distance / sqr(distance), 
-                            distance / sqr(distance), 
+                            1 / distance, 
+                            1 / distance, 
                             0, 
                             c_white, 
                             1);
@@ -69,10 +73,10 @@ for(i = 0; i < array_length_1d(objectArray); i++) {
             }
             draw_sprite_ext(object.backgroundSprite,
                             subImage, 
-                            global.hud.primeMeridian + ((((((global.player.y - object.y) / halfPerspectivePlane) * (global.player.y - object.y)) * view_wview[global.util.hudView]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[global.util.hudView] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
+                            global.hud.primeMeridian + ((((((global.player.y - object.y) / halfPerspectivePlane) * abs(global.player.y - object.y)) * view_wview[global.util.hudView]) / (global.hud.radarRightBound - global.hud.radarLeftBound)) * (view_wview[global.util.hudView] / (global.hud.radarRightBound - global.hud.radarLeftBound))), 
                             global.hud.enemyBackgroundSpriteY, 
-                            distance / sqr(distance), 
-                            distance / sqr(distance), 
+                            1 / distance, 
+                            1 / distance, 
                             0, 
                             c_white, 
                             1);

@@ -1,4 +1,5 @@
-//TODO: Ensure that this doesn't lead to enemy ships being assigned designations equal to the empty string.
+//TODO: Possibly change this in the future, assuming I want the player to fight an ungodly 
+//number of enemies.
 while(designation == "") {
     designation = global.util.designationArray[random(array_length_1d(global.util.designationArray))];
 }

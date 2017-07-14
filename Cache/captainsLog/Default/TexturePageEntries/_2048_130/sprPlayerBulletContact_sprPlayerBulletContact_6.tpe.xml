@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TPE>
+  <w>16</w>
+  <h>16</h>
+  <name>Default</name>
+  <hasAlpha>True</hasAlpha>
+  <hash>2163857004</hash>
+  <xoffset>7</xoffset>
+  <yoffset>7</yoffset>
+  <cropWidth>16</cropWidth>
+  <cropHeight>16</cropHeight>
+  <ow>30</ow>
+  <oh>30</oh>
+  <image>sprPlayerBulletContact_sprPlayerBulletContact_6.tpe.png</image>
+</TPE>

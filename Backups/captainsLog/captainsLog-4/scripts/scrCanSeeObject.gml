@@ -1,3 +1,4 @@
+//TODO: Use global.util variables for angle degrees.
 playerArg = argument0;
 objectArg = argument1;
 pointDirection = point_direction(playerArg.x, playerArg.y, objectArg.x, objectArg.y);

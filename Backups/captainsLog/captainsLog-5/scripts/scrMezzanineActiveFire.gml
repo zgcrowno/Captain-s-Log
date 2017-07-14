@@ -7,6 +7,6 @@ if(global.input == global.util.portStringLower) {
 } else if(global.input == global.util.sternStringLower) {
     sprite_index = sprMezzanineStern;
 } else {
-    //TODO: Error about input
+    scrLog(global.util.warnInputString);
 }
 currentPPActive = requiredPPActive;

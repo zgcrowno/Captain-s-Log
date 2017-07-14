@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TPE>
+  <w>42</w>
+  <h>42</h>
+  <name>Default</name>
+  <hasAlpha>True</hasAlpha>
+  <hash>4104102832</hash>
+  <xoffset>80</xoffset>
+  <yoffset>80</yoffset>
+  <cropWidth>42</cropWidth>
+  <cropHeight>42</cropHeight>
+  <ow>200</ow>
+  <oh>200</oh>
+  <image>sprPincerActive_sprPincerActive_4.tpe.png</image>
+</TPE>

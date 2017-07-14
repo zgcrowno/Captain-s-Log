@@ -29,5 +29,5 @@ if (sprite_index == sprHalitosis) {
     }
     numEnergyBalls = 2;
 } else {
-    //TODO: Error about ship form
+    scrLog(global.util.warnShipFormString);
 }

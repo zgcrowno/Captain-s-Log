@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\fxError</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="misc">
       <sprite>sprites\sprTypingPrompt</sprite>
