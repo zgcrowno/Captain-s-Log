@@ -20,6 +20,12 @@ nearestTargetProximalGridBox = noone;
 toRevive = noone;
 deadEnemiesIndex = noone;
 
+hasThrusters = true;
+hasGuns = false;
+hasCannon = false;
+hasActive = false;
+hasPassive = true;
+
 radarSprite = sprEpitaph;
 radarSpriteTarget = sprEpitaphTarget;
 backgroundSprite = sprEpitaphBackground;

@@ -9,7 +9,9 @@ var halfPerspectivePlane = noone;
 
 //TODO: 50 is equal to half of the degrees of the player ship's range of sight (at this point)
 //In the future, make the perspective work perfectly, and adjust sprites to be the correct size
-//for this perspective.
+//for this perspective. The draw_sprite_ext functions work more accurately to scale when dividing
+//view_wview[global.util.hudView] by 2, but they currently map more accurately to the enemy sprites
+//when dividing by sprite_get_width(sprGridBox). Change this value when upgrading sprites?
 for(i = 0; i < array_length_1d(objectArray); i++) {
     var object = objectArray[i];
     if(scrCanSeeObject(global.player, object)) {
@@ -27,7 +29,7 @@ for(i = 0; i < array_length_1d(objectArray); i++) {
             }
             draw_sprite_ext(object.backgroundSprite,
                             subImage,
-                            global.hud.primeMeridian - (((global.player.x - object.x) / halfPerspectivePlane) * (view_wview[global.util.hudView] / 2)),
+                            global.hud.primeMeridian - (((global.player.x - object.x) / halfPerspectivePlane) * (view_wview[global.util.hudView] / sprite_get_width(sprGridBox))),
                             global.hud.enemyBackgroundSpriteY, 
                             1 / distance,
                             1 / distance,

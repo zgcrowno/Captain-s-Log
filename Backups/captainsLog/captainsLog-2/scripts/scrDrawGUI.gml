@@ -42,9 +42,13 @@ draw_sprite(sprBlueSky, -1, 0, 0);
 
 scrDrawBackgroundObjects(enemiesAndProjectiles);
 
+//The following conditional code is purely a placeholder until I find something better.
 if(global.util.paused) {
     draw_sprite(sprShutter, -1, 2, 2);
     draw_sprite(sprRadarBlack, -1, view_xport[global.util.radarPort], view_yport[global.util.radarPort]);
+    draw_text(global.util.primeMeridian - (string_width(global.util.pausedString) / 2), 
+              global.util.equator - (global.util.equator / 2), 
+              global.util.pausedString);
 }
 
 draw_sprite(sprCockpit, -1, 0, 0);

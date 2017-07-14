@@ -521,6 +521,8 @@ warnThrusterHealth = "Thruster";
 warnShieldHealth = "Shield";
 warnPosition = "Position";
 
+pausedString = "PAUSED";
+
 actionQueueThrustersString = "Thrst";
 
 actionQueueThrustersPortString = "Thrst#Port#";

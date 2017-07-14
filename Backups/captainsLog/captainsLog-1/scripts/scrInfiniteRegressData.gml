@@ -15,6 +15,12 @@ radarSprite = sprInfiniteRegress;
 radarSpriteTarget = sprInfiniteRegressTarget;
 backgroundSprite = sprInfiniteRegressBackground;
 
+hasThrusters = true;
+hasGuns = true;
+hasCannon = false;
+hasActive = true;
+hasPassive = false;
+
 portalBlue = noone;
 portalOrange = noone;
 
