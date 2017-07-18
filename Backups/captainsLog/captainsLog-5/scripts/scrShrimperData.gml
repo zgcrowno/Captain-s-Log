@@ -15,6 +15,12 @@ gunsArray[3] = 0;
 gunsArray[4] = 0;
 gunsArray[5] = 0;
 
+hasThrusters = true;
+hasGuns = true;
+hasCannon = false;
+hasActive = false;
+hasPassive = false;
+
 radarSprite = sprShrimper;
 radarSpriteTarget = sprShrimperTarget;
 backgroundSprite = sprShrimperBackground;

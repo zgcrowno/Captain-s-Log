@@ -46,8 +46,8 @@ scrDrawBackgroundObjects(enemiesAndProjectiles);
 if(global.util.paused) {
     draw_sprite(sprShutter, -1, 2, 2);
     draw_sprite(sprRadarBlack, -1, view_xport[global.util.radarPort], view_yport[global.util.radarPort]);
-    draw_text(global.util.primeMeridian - (string_width(global.util.pausedString) / 2), 
-              global.util.equator - (global.util.equator / 2), 
+    draw_text(global.hud.primeMeridian - (string_width(global.util.pausedString) / 2), 
+              global.hud.equator - (global.hud.equator / 2), 
               global.util.pausedString);
 }
 

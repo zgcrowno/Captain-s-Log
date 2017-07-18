@@ -32,7 +32,23 @@ draw_set_color(c_white);
 for(var i = 0; i < array_length_1d(epitaphs); i++) {
     var epitaph = epitaphs[i];
     if(epitaph.target != noone) {
-        draw_sprite(sprEpitaphTargetRadius, -1, view_xport[global.util.radarPort] + epitaph.target.x - global.util.epitaphTargetRadius, view_yport[global.util.radarPort] + epitaph.target.y - global.util.epitaphTargetRadius);
+        var left = 0;
+        var top = 0;
+        var width = sprite_get_width(sprEpitaphTargetRadius);
+        var height = sprite_get_width(sprEpitaphTargetRadius);
+        if(epitaph.target.x - (sprite_get_width(sprEpitaphTargetRadius) / 2) < 0) {
+            left = abs(epitaph.target.x - (sprite_get_width(sprEpitaphTargetRadius) / 2));
+            width -= abs(epitaph.target.x - (sprite_get_width(sprEpitaphTargetRadius) / 2));
+        } else if(epitaph.target.x + (sprite_get_width(sprEpitaphTargetRadius) / 2) > (global.hud.radarRightBound - global.hud.radarLeftBound)) {
+            width -= (epitaph.target.x + (sprite_get_width(sprEpitaphTargetRadius) / 2) - (global.hud.radarRightBound - global.hud.radarLeftBound));
+        }
+        if(epitaph.target.y - (sprite_get_width(sprEpitaphTargetRadius) / 2) < 0) {
+            top = abs(epitaph.target.y - (sprite_get_width(sprEpitaphTargetRadius) / 2));
+            height -= abs(epitaph.target.y - (sprite_get_width(sprEpitaphTargetRadius) / 2));
+        } else if(epitaph.target.y + (sprite_get_width(sprEpitaphTargetRadius) / 2) > (global.hud.radarLowerBound - global.hud.radarUpperBound)) {
+            height -= (epitaph.target.y + (sprite_get_width(sprEpitaphTargetRadius) / 2) - (global.hud.radarUpperBound - global.hud.radarLowerBound));
+        }
+        draw_sprite_part(sprEpitaphTargetRadius, -1, left, top, width, height, view_xport[global.util.radarPort] + epitaph.target.x - global.util.epitaphTargetRadius, view_yport[global.util.radarPort] + epitaph.target.y - global.util.epitaphTargetRadius);
         draw_sprite_ext(object_get_sprite(epitaph.toRevive), -1,view_xport[global.util.radarPort] + epitaph.target.x + (epitaph.target.sprite_width / 2), view_yport[global.util.radarPort] + epitaph.target.y + (epitaph.target.sprite_width / 2), 1, 1, 0, c_white, 0.5);
     }
 }
